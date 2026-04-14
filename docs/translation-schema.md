@@ -34,6 +34,25 @@
 }
 ```
 
+Actor compendium packs can also include embedded item translations:
+
+```json
+{
+  "label": "Beast World",
+  "entries": {
+    "Wolf": {
+      "name": "늑대 Wolf",
+      "items": {
+        "Bite": {
+          "name": "물기 Bite",
+          "description": "<p>...</p>"
+        }
+      }
+    }
+  }
+}
+```
+
 ## World
 
 `localization/world/ko/*.json`
@@ -47,6 +66,38 @@
       "description": "<p>번역된 HTML</p>",
       "originalName": "Original Name",
       "originalDescription": "<p>Original HTML</p>"
+    }
+  }
+}
+```
+
+Downloaded template files may also include a `compendiums` block. This is the export format used to generate external pack translation files:
+
+```json
+{
+  "compendiums": {
+    "label": "Compendiums",
+    "entries": {
+      "world.beast-world": {
+        "label": "Beast World",
+        "documentName": "Actor",
+        "entries": {
+          "Wolf": {
+            "name": "",
+            "description": "",
+            "originalName": "Wolf",
+            "originalDescription": "<p>...</p>",
+            "items": {
+              "Bite": {
+                "name": "",
+                "description": "",
+                "originalName": "Bite",
+                "originalDescription": "<p>...</p>"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

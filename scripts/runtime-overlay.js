@@ -107,7 +107,7 @@ export class RuntimeOverlay {
       const entryId = row.dataset.documentId ?? row.dataset.entryId;
       const entry = pack.index?.get?.(entryId) ?? [...(pack.index?.values?.() ?? [])].find((candidate) => candidate._id === entryId);
       if (!entry) return;
-      const translation = this.store.compendium.get(pack.collection)?.entries?.[entry.name];
+      const translation = this.store._getCompendiumEntry(pack.collection, entry.name);
       if (!translation?.name) return;
       const label = row.querySelector(".entry-name, h3, h4, .document-name");
       if (label) label.textContent = translation.name;

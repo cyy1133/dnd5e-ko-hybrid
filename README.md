@@ -96,13 +96,22 @@ localization/
 GM으로 접속한 상태에서 브라우저 콘솔에서 아래를 실행하면 번역 템플릿 JSON을 다운로드할 수 있습니다.
 
 ```js
-dnd5eKoHybrid.downloadTemplates({ onlyEnglish: true });
+await dnd5eKoHybrid.downloadTemplates({ onlyEnglish: true });
 ```
 
 메모리 내 객체만 보고 싶다면:
 
 ```js
-dnd5eKoHybrid.exportTemplates({ onlyEnglish: true });
+await dnd5eKoHybrid.exportTemplates({ onlyEnglish: true });
+```
+
+기본값으로 `dnd5e` 시스템 팩을 제외한 `module`/`world` 컴펜디움도 같이 추출합니다. 예를 들어 `world.beast-world` 같은 외부 팩이 여기에 포함됩니다.
+
+```js
+await dnd5eKoHybrid.downloadTemplates({
+  onlyEnglish: true,
+  includeSystemCompendiums: true
+});
 ```
 
 ## 현재 단계

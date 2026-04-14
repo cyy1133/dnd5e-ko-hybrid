@@ -305,6 +305,50 @@ const COMMON_NAME_TRANSLATIONS = {
   "Wild Magic": "야생 마법",
   "Wing Gusts": "날개 돌풍",
   "Words of Terror": "공포의 속삭임",
+  "Age": "나이",
+  "Ancestral Legacy: Deception": "선조의 유산: 기만",
+  "Ancestral Legacy: Insight": "선조의 유산: 통찰",
+  "Archer's Eye": "궁수의 눈",
+  "Borrowed Knowledge": "지식 차용",
+  "Catnap": "선잠",
+  "Ceremony": "의식",
+  "Commanding Spores": "지배 포자",
+  "Dissonant Whispers": "불협화음의 속삭임",
+  "Elemental Adept (Fire)": "원소 숙련 (화염)",
+  "Enthralling Performance": "매혹적인 공연",
+  "Explode": "폭발",
+  "Friends": "우정",
+  "Gift of Gab": "말재주",
+  "Hempen Rope (50 feet)": "삼줄 밧줄 (50피트)",
+  "Holy Water": "성수",
+  "Holy Weapon": "신성한 무기",
+  "Inflict Wounds (Legacy)": "상처 가하기 (구판)",
+  "Inspire": "고무",
+  "Javelin (Melee)": "재블린 (근접)",
+  "Javelin (Ranged)": "재블린 (원거리)",
+  "Life Transference": "생명 전이",
+  "Magic Stone": "마법 돌",
+  "Melf's Acid Arrow": "멜프의 산 화살",
+  "Mind Spike": "정신 가시",
+  "Multiattack (Humanoid or Hybrid Form Only)": "다중공격 (인간형 또는 혼성 형태에서만)",
+  "Multiattack (Vampire Form Only)": "다중공격 (흡혈귀 형태에서만)",
+  "Nightmare Breath": "악몽의 숨결",
+  "Noxious Miasma": "유독한 독기",
+  "Oath Spells": "맹세 주문",
+  "Paralyzing Touch": "마비의 손길",
+  "Robe": "로브",
+  "Searing Smite": "작열 강타",
+  "Shadow Touched (Charisma): Inflict Wounds": "그림자 물듦(매력): 상처 가하기",
+  "Shape Water": "물 다루기",
+  "Sorcerous Burst": "마력 폭발",
+  "Spellcasting (Psionics)": "주문 시전 (사이오닉)",
+  "Toxic Spores": "독성 포자",
+  "Vine Staff": "덩굴 지팡이",
+  "Viral Aura": "바이러스 오라",
+  "Virulent Miasma": "맹독성 독기",
+  "Vitriolic Sphere": "부식 구체",
+  "Watery Sphere": "물 구체",
+  "Wrathful Smite (Legacy)": "분노의 강타 (구판)",
   "Wyvern Poison": "와이번 독"
 };
 
@@ -393,6 +437,20 @@ const SUBJECT_TRANSLATIONS = {
 const subjectToKo = (value) => {
   const normalized = normalizeText(value).replace(/^the\s+/iu, "").toLowerCase();
   return SUBJECT_TRANSLATIONS[normalized] ?? normalizeText(value).replace(/^The\s+/u, "");
+};
+
+const formatBilingualName = (sourceName, translatedName) => {
+  const source = normalizeText(sourceName);
+  const translated = normalizeText(translatedName);
+
+  if (!source || !translated) return translated;
+  if (!/[A-Za-z]/u.test(source)) return translated;
+  if (/[가-힣]/u.test(source)) return translated;
+  if (translated === source) return translated;
+  if (translated.includes(source)) return translated;
+  if (/[A-Za-z]/u.test(translated)) return translated;
+
+  return `${translated} ${source}`;
 };
 
 const nameToKo = (value) => {
@@ -501,9 +559,9 @@ export class TranslationStore {
   getActorTranslation(actor) {
     if (!actor) return null;
     if (actor.uuid && this.world.actors.has(actor.uuid)) {
-      return this.world.actors.get(actor.uuid) ?? null;
+      return this._withFormattedName(actor.name, this.world.actors.get(actor.uuid));
     }
-    return this._getCompendiumActorFallback(actor);
+    return this._withFormattedName(actor.name, this._getCompendiumActorFallback(actor));
   }
 
   getItemTranslation(item) {
@@ -511,23 +569,23 @@ export class TranslationStore {
 
     if (item.parent instanceof Actor) {
       return this._mergeTranslations(
-        this.world.actorItems.get(item.uuid),
-        this._getSharedItemTranslation(item),
-        this._getCompendiumSignatureFallback(item),
-        this._getCompendiumNameFallback(item),
+        this._withFormattedName(item.name, this.world.actorItems.get(item.uuid)),
+        this._withFormattedName(item.name, this._getSharedItemTranslation(item)),
+        this._withFormattedName(item.name, this._getCompendiumSignatureFallback(item)),
+        this._withFormattedName(item.name, this._getCompendiumNameFallback(item)),
         this._getGeneratedItemTranslation(item)
       );
     }
 
     if (item.pack) {
-      return this._getCompendiumEntry(item.pack, item.name);
+      return this._withFormattedName(item.name, this._getCompendiumEntry(item.pack, item.name));
     }
 
     return this._mergeTranslations(
-      this.world.items.get(item.uuid),
-      this._getSharedItemTranslation(item),
-      this._getCompendiumSignatureFallback(item),
-      this._getCompendiumNameFallback(item),
+      this._withFormattedName(item.name, this.world.items.get(item.uuid)),
+      this._withFormattedName(item.name, this._getSharedItemTranslation(item)),
+      this._withFormattedName(item.name, this._getCompendiumSignatureFallback(item)),
+      this._withFormattedName(item.name, this._getCompendiumNameFallback(item)),
       this._getGeneratedItemTranslation(item)
     );
   }
@@ -539,10 +597,10 @@ export class TranslationStore {
       const collection = page.parent?.pack ?? page.pack;
       const entryName = page.parent?.name;
       const entry = this._getCompendiumEntry(collection, entryName);
-      return entry?.pages?.[page.name] ?? null;
+      return this._withFormattedName(page.name, entry?.pages?.[page.name] ?? null);
     }
 
-    return this.world.journalPages.get(page.uuid) ?? null;
+    return this._withFormattedName(page.name, this.world.journalPages.get(page.uuid));
   }
 
   getCompendiumPackLabel(collection) {
@@ -649,15 +707,15 @@ export class TranslationStore {
     return null;
   }
 
-  createWorldTemplate({ onlyEnglish = true } = {}) {
-    const isEnglishCandidate = (text) => {
-      if (!text) return false;
-      return /[A-Za-z]/.test(text);
-    };
-
+  async createWorldTemplate({
+    onlyEnglish = true,
+    includeCompendiums = true,
+    includeSystemCompendiums = false,
+    packFilter = null
+  } = {}) {
     const shouldInclude = (name, description) => {
       if (!onlyEnglish) return true;
-      return isEnglishCandidate(name) || isEnglishCandidate(description);
+      return this._hasEnglishText(name) || this._hasEnglishText(description);
     };
 
     const items = {};
@@ -707,7 +765,7 @@ export class TranslationStore {
       }
     }
 
-    return {
+    const template = {
       metadata: {
         module: MODULE_ID,
         generatedAt: new Date().toISOString(),
@@ -732,6 +790,199 @@ export class TranslationStore {
         entries: journalPages
       }
     };
+
+    if (includeCompendiums) {
+      template.compendiums = await this._createCompendiumTemplate({
+        onlyEnglish,
+        includeSystemCompendiums,
+        packFilter
+      });
+    }
+
+    return template;
+  }
+
+  async _createCompendiumTemplate({
+    onlyEnglish = true,
+    includeSystemCompendiums = false,
+    packFilter = null
+  } = {}) {
+    const shouldInclude = (name, content) => {
+      if (!onlyEnglish) return true;
+      return this._hasEnglishText(name) || this._hasEnglishText(content);
+    };
+
+    const compendiums = {};
+    const filter = this._normalizePackFilter(packFilter);
+
+    for (const pack of game.packs ?? []) {
+      if (!this._shouldIncludeCompendiumPack(pack, { includeSystemCompendiums, filter })) continue;
+
+      let documents;
+      try {
+        documents = await pack.getDocuments();
+      } catch (error) {
+        console.warn(`${MODULE_ID} | Failed to export compendium template for ${pack.collection}`, error);
+        continue;
+      }
+
+      const entries = {};
+      for (const document of documents) {
+        const translation = this._getCompendiumEntry(pack.collection, document.name);
+        const templateEntry = this._createCompendiumEntryTemplate(document, translation, shouldInclude);
+        if (templateEntry) {
+          entries[document.name] = templateEntry;
+        }
+      }
+
+      if (!Object.keys(entries).length) continue;
+
+      const folders = this._extractCompendiumFolderLabels(pack);
+      compendiums[pack.collection] = {
+        label: this.getCompendiumPackLabel(pack.collection) ?? pack.metadata?.label ?? pack.title ?? pack.collection,
+        documentName: pack.documentName ?? null,
+        packageType: pack.metadata?.packageType ?? pack.metadata?.package ?? null,
+        packageName: pack.metadata?.packageName ?? null,
+        folders,
+        entries
+      };
+    }
+
+    return {
+      label: "Compendiums",
+      entries: compendiums
+    };
+  }
+
+  _createCompendiumEntryTemplate(document, translation, shouldInclude) {
+    switch (document.documentName) {
+      case "Actor":
+        return this._createCompendiumActorTemplate(document, translation, shouldInclude);
+      case "Item":
+        return this._createCompendiumItemTemplate(document, translation, shouldInclude);
+      case "JournalEntry":
+        return this._createCompendiumJournalTemplate(document, translation, shouldInclude);
+      default:
+        if (!shouldInclude(document.name, "")) return null;
+        return {
+          name: translation?.name ?? "",
+          originalName: document.name
+        };
+    }
+  }
+
+  _createCompendiumActorTemplate(document, translation, shouldInclude) {
+    const description = this._extractActorDescription(document);
+    const items = {};
+
+    for (const item of document.items ?? []) {
+      const itemDescription = this._extractItemDescription(item);
+      if (!shouldInclude(item.name, itemDescription)) continue;
+      const itemTranslation = translation?.items?.[item.name] ?? null;
+      items[item.name] = {
+        name: itemTranslation?.name ?? "",
+        description: itemTranslation?.description ?? "",
+        originalName: item.name,
+        originalDescription: itemDescription,
+        type: item.type,
+        source: item.system?.source ?? null
+      };
+    }
+
+    if (!shouldInclude(document.name, description) && !Object.keys(items).length) return null;
+
+    return {
+      name: translation?.name ?? "",
+      description: translation?.description ?? "",
+      originalName: document.name,
+      originalDescription: description,
+      type: document.type,
+      items
+    };
+  }
+
+  _createCompendiumItemTemplate(document, translation, shouldInclude) {
+    const description = this._extractItemDescription(document);
+    if (!shouldInclude(document.name, description)) return null;
+
+    return {
+      name: translation?.name ?? "",
+      description: translation?.description ?? "",
+      originalName: document.name,
+      originalDescription: description,
+      type: document.type,
+      source: document.system?.source ?? null
+    };
+  }
+
+  _createCompendiumJournalTemplate(document, translation, shouldInclude) {
+    const pages = {};
+    for (const page of document.pages ?? []) {
+      const pageText = page.text?.content ?? "";
+      if (!shouldInclude(page.name, pageText)) continue;
+      const pageTranslation = translation?.pages?.[page.name] ?? null;
+      pages[page.name] = {
+        name: pageTranslation?.name ?? "",
+        text: pageTranslation?.text ?? "",
+        originalName: page.name,
+        originalText: pageText,
+        type: page.type
+      };
+    }
+
+    if (!shouldInclude(document.name, "") && !Object.keys(pages).length) return null;
+
+    return {
+      name: translation?.name ?? "",
+      originalName: document.name,
+      pages
+    };
+  }
+
+  _extractActorDescription(actor) {
+    return actor?.system?.details?.biography?.value
+      ?? actor?.system?.details?.description
+      ?? actor?.system?.description?.value
+      ?? "";
+  }
+
+  _extractItemDescription(item) {
+    return item?.system?.description?.value
+      ?? item?.system?.description
+      ?? "";
+  }
+
+  _extractCompendiumFolderLabels(pack) {
+    const folders = pack?.folders?.contents ?? pack?.folders ?? [];
+    const labels = {};
+    for (const folder of folders) {
+      if (!folder?.name) continue;
+      labels[folder.name] = folder.name;
+    }
+    return Object.keys(labels).length ? labels : undefined;
+  }
+
+  _hasEnglishText(value = "") {
+    return /[A-Za-z]/u.test(normalizeText(value));
+  }
+
+  _normalizePackFilter(packFilter) {
+    if (!packFilter) return null;
+    if (packFilter instanceof Set) return packFilter;
+    if (Array.isArray(packFilter)) {
+      return new Set(packFilter.map((value) => normalizeText(value)).filter(Boolean));
+    }
+    if (typeof packFilter === "string") {
+      return new Set(packFilter.split(",").map((value) => normalizeText(value)).filter(Boolean));
+    }
+    return null;
+  }
+
+  _shouldIncludeCompendiumPack(pack, { includeSystemCompendiums = false, filter = null } = {}) {
+    if (!pack?.collection) return false;
+    if (filter?.size && !filter.has(pack.collection)) return false;
+    if (!includeSystemCompendiums && pack.collection.startsWith("dnd5e.")) return false;
+    return true;
   }
 
   _getWorldLabelByUuid(uuid) {
@@ -743,7 +994,12 @@ export class TranslationStore {
   }
 
   _getCompendiumEntry(collection, entryName) {
-    return this.compendium.get(collection)?.entries?.[entryName] ?? null;
+    const entry = this.compendium.get(collection)?.entries?.[entryName] ?? null;
+    if (!entry) return null;
+    return {
+      ...entry,
+      name: formatBilingualName(entryName, entry.name)
+    };
   }
 
   _getGeneratedItemTranslation(item) {
@@ -753,8 +1009,16 @@ export class TranslationStore {
       return null;
     }
     return {
-      name: translatedName,
+      name: formatBilingualName(item?.name, translatedName),
       description: translatedDescription
+    };
+  }
+
+  _withFormattedName(sourceName, translation) {
+    if (!translation?.name) return translation ?? null;
+    return {
+      ...translation,
+      name: formatBilingualName(sourceName, translation.name)
     };
   }
 
@@ -994,6 +1258,26 @@ export class TranslationStore {
 
         if (document.documentName === "Actor" && translation?.name) {
           this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), translation);
+        }
+
+        if (document.documentName === "Actor" && translation?.items) {
+          for (const item of document.items ?? []) {
+            const itemTranslation = translation.items?.[item.name];
+            if (!itemTranslation) continue;
+
+            const content = this._extractItemDescription(item);
+            const key = signatureFor({
+              type: item.type,
+              name: item.name,
+              content
+            });
+
+            this.compendiumSignatureIndex.set(key, itemTranslation);
+            this._addCompendiumNameCandidate(collection, item.name, itemTranslation);
+            if (itemTranslation.name) {
+              this.compendiumDocLabels.set(item.uuid, itemTranslation.name);
+            }
+          }
         }
       }
 

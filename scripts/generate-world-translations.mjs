@@ -3,7 +3,6 @@ import path from "path";
 import { TranslationStore, nameToKo } from "./translation-store.js";
 
 const ROOT = path.resolve("A:/TRPG/Compendium Translator");
-const TEMPLATE_PATH = path.join(ROOT, "dnd5e-ko-hybrid-template-2026-04-14T22-12-46.207Z.json");
 const COMPENDIUM_DIR = path.join(ROOT, "localization/compendium/ko");
 const WORLD_DIR = path.join(ROOT, "localization/world/ko");
 
@@ -35,6 +34,19 @@ const stripMarkup = (value = "") =>
 const hasEnglish = (value = "") => /[A-Za-z]/.test(value);
 const hasKorean = (value = "") => /[가-힣]/.test(value);
 
+const formatBilingualName = (originalName, translatedName) => {
+  const source = String(originalName ?? "").trim();
+  const translated = String(translatedName ?? "").trim();
+
+  if (!source || !translated) return translated;
+  if (!hasEnglish(source) || hasKorean(source)) return translated;
+  if (translated === source) return translated;
+  if (translated.includes(source)) return translated;
+  if (hasEnglish(translated)) return translated;
+
+  return `${translated} ${source}`;
+};
+
 const isPureEnglish = (name = "", body = "") => {
   const visible = `${name} ${stripMarkup(body)}`.trim();
   return hasEnglish(visible) && !hasKorean(visible);
@@ -44,6 +56,19 @@ const sortObject = (object) =>
   Object.fromEntries(Object.entries(object).sort(([a], [b]) => a.localeCompare(b)));
 
 const readJson = async (filePath) => JSON.parse(await fs.readFile(filePath, "utf8"));
+
+const findLatestTemplatePath = async () => {
+  const candidates = (await fs.readdir(ROOT))
+    .filter((fileName) => /^dnd5e-ko-hybrid-template-.*\.json$/u.test(fileName))
+    .sort()
+    .reverse();
+
+  if (!candidates.length) {
+    throw new Error("No downloaded template file was found.");
+  }
+
+  return path.join(ROOT, candidates[0]);
+};
 
 const preferredCollectionsForType = (type) => {
   switch (type) {
@@ -95,13 +120,17 @@ const findCompendiumEntry = (compendium, type, originalName) => {
 const translateName = (originalName, type, compendiumEntry) => {
   if (!originalName) return "";
   if (hasKorean(originalName)) return "";
-  return compendiumEntry?.name ?? GENERIC_PAGE_NAME_TRANSLATIONS[originalName] ?? nameToKo(originalName);
+  const translated =
+    compendiumEntry?.name ??
+    GENERIC_PAGE_NAME_TRANSLATIONS[originalName] ??
+    nameToKo(originalName);
+  return formatBilingualName(originalName, translated);
 };
 
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
   if (!originalBody || hasKorean(stripMarkup(originalBody))) return "";
 
-  if (mode === "items" && compendiumEntry?.description) {
+  if ((mode === "items" || mode === "actorItems") && compendiumEntry?.description) {
     return compendiumEntry.description;
   }
 
@@ -124,8 +153,9 @@ const ensureRecord = (currentEntries, uuid, labelKey) => {
 };
 
 const main = async () => {
+  const templatePath = await findLatestTemplatePath();
   const [template, compendium, itemsJson, actorItemsJson, journalJson] = await Promise.all([
-    readJson(TEMPLATE_PATH),
+    readJson(templatePath),
     loadCompendiumByCollection(),
     readJson(WORLD_FILES.items),
     readJson(WORLD_FILES.actorItems),
@@ -140,9 +170,10 @@ const main = async () => {
     if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
     const record = ensureRecord(itemsJson.entries, uuid, "description");
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
-    if (!record.name) {
-      const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-      if (translatedName && translatedName !== entry.originalName) {
+    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
+    if (translatedName && translatedName !== entry.originalName) {
+      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         itemNames += 1;
       }
@@ -163,9 +194,10 @@ const main = async () => {
     if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
     const record = ensureRecord(actorItemsJson.entries, uuid, "description");
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
-    if (!record.name) {
-      const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-      if (translatedName && translatedName !== entry.originalName) {
+    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
+    if (translatedName && translatedName !== entry.originalName) {
+      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         actorItemNames += 1;
       }
@@ -185,9 +217,10 @@ const main = async () => {
   for (const [uuid, entry] of Object.entries(template.journalPages.entries ?? {})) {
     if (!isPureEnglish(entry.originalName, entry.originalText)) continue;
     const record = ensureRecord(journalJson.entries, uuid, "text");
-    if (!record.name) {
-      const translatedName = translateName(entry.originalName, entry.type, null);
-      if (translatedName && translatedName !== entry.originalName) {
+    const translatedName = translateName(entry.originalName, entry.type, null);
+    if (translatedName && translatedName !== entry.originalName) {
+      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         journalNames += 1;
       }
