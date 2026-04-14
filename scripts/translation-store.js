@@ -19,7 +19,8 @@ const NAME_FALLBACK_TYPES = new Set([
   "race",
   "spell",
   "subclass",
-  "tool"
+  "tool",
+  "weapon"
 ]);
 
 const normalizeText = (value) => String(value ?? "").trim().replace(/\r\n/g, "\n");
@@ -283,6 +284,7 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Major Mutations": "중대 돌연변이",
   "Masks and Personas.": "가면과 페르소나.",
   "Minor Mutations": "경미한 돌연변이",
+  "More Details": "자세히 보기",
   "Mutations": "돌연변이",
   "Mutations.": "돌연변이.",
   "Personality": "성격",
@@ -526,6 +528,7 @@ export class TranslationStore {
       ".entry-title-inner",
       ".rd__data-embed-name",
       ".rd__list-item-name",
+      "summary",
       "caption",
       "th",
       ".summary td"
@@ -695,6 +698,12 @@ export class TranslationStore {
     output = output
       .replace(/Note: importing a class as an item is provided for display purposes only\. If you wish to import a class to a character sheet, please use the importer on the sheet instead\./gu, "참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.")
       .replace(/Mastery: Vex\./gu, "숙련: 벡스.")
+      .replace(/Cantrips? \(at will\):/gu, "캔트립 (상시 사용 가능):")
+      .replace(/At will:/gu, "상시 사용 가능:")
+      .replace(/([1-9])\/day each:/gu, (_, uses) => `각각 하루 ${uses}회:`)
+      .replace(/([1-9])\/day:/gu, (_, uses) => `하루 ${uses}회:`)
+      .replace(/([1-9]|1[0-9]|20)(st|nd|rd|th) level \(([0-9]+) slots?\):/gu, (_, level, __, slots) => `${level}레벨 (${slots} 슬롯):`)
+      .replace(/([1-9]|1[0-9]|20)(st|nd|rd|th) level \(([0-9]+) slot\):/gu, (_, level, __, slots) => `${level}레벨 (${slots} 슬롯):`)
       .replace(/Melee Weapon Attack:/gu, "근접 무기 공격:")
       .replace(/Ranged Weapon Attack:/gu, "원거리 무기 공격:")
       .replace(/Melee Attack Roll:/gu, "근접 공격 굴림:")
@@ -929,6 +938,7 @@ export class TranslationStore {
       case "equipment":
       case "loot":
       case "tool":
+      case "weapon":
         return ["dnd5e.items", "dnd5e.tradegoods"];
       case "feat":
         return ["dnd5e.monsterfeatures", "dnd5e.classfeatures", "dnd5e.heroes"];
