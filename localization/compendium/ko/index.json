@@ -1,0 +1,17 @@
+{
+  "files": [
+    "localization/compendium/ko/dnd5e.backgrounds.json",
+    "localization/compendium/ko/dnd5e.classes.json",
+    "localization/compendium/ko/dnd5e.classfeatures.json",
+    "localization/compendium/ko/dnd5e.heroes.json",
+    "localization/compendium/ko/dnd5e.items.json",
+    "localization/compendium/ko/dnd5e.monsterfeatures.json",
+    "localization/compendium/ko/dnd5e.monsters.json",
+    "localization/compendium/ko/dnd5e.races.json",
+    "localization/compendium/ko/dnd5e.rules.json",
+    "localization/compendium/ko/dnd5e.spells.json",
+    "localization/compendium/ko/dnd5e.subclasses.json",
+    "localization/compendium/ko/dnd5e.tables.json",
+    "localization/compendium/ko/dnd5e.tradegoods.json"
+  ]
+}

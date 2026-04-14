@@ -1,0 +1,41 @@
+{
+  "id": "dnd5e-ko-hybrid",
+  "title": "Translation: Korean [D&D5e Hybrid Overlay]",
+  "description": "Extends Korean D&D5e translation to runtime world data while preserving Foundry references and reverting automatically when disabled.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331"
+  },
+  "authors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/dnd5e-ko-hybrid.css"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "localization/languages/ko.json"
+    }
+  ],
+  "url": "https://github.com/cyy1133/dnd5e-ko-hybrid",
+  "manifest": "https://raw.githubusercontent.com/cyy1133/dnd5e-ko-hybrid/main/module.json",
+  "download": "https://github.com/cyy1133/dnd5e-ko-hybrid/archive/refs/heads/main.zip",
+  "readme": "README.md",
+  "license": "LICENSE"
+}

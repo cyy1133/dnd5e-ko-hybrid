@@ -1,0 +1,1169 @@
+{
+	"label": "클래스&서브클래스 특성 (SRD)",
+	"folders": {
+        "Barbarian": "바바리안",
+        "Barbarian Features": "바바리안 특성",
+        "Path of the Berserker Features": "광전사의 길 특성",
+		"Bard": "바드",
+		"Bard Features": "바드 특성",
+		"College of Lore Features": "전승학파 특성",
+		"Cleric": "클레릭",
+		"Cleric Features": "클레릭 특성",
+		"Life Domains Features": "생명 권역 특성",
+        "Druid": "드루이드",
+        "Druid Features": "드루이드 특성",
+		"Circle of the Land Features": "대지의 회합 특성",
+		"Fighter": "파이터",
+		"Fighter Features": "파이터 특성",
+		"Champion Features": "챔피언 특성",
+		"Monk": "몽크",
+		"Monk Features": "몽크 특성",
+		"Way of the Open Hand Featuers": "열린 손의 길 특성",
+		"Paladin": "팔라딘",
+		"Paladin Features": "팔라딘 특성",
+		"Oath of Devotion Features": "헌신의 맹세 특성",
+		"Ranger": "레인저",
+		"Ranger Features": "레인저 특성",
+		"Hunter Features": "헌터 특성",
+		"Rogue": "로그",
+		"Rogue Features": "로그 특성",
+		"Thief Features": "시프 특성",
+		"Shared Features": "공통 특성",
+		"Fighting Styles": "전투 유파",
+		"Sorcerer": "소서러",
+		"Sorcerer Features": "소서러 특성",
+		"Metamagic": "마법변형",
+		"Draconic Bloodline Features": "용의 혈통 특성",
+		"Warlock": "워락",
+		"Warlock Features": "워락 특성",
+		"Eldritch Invocations": "섬뜩한 영창",
+		"The Fiend Features": "악마 특성",
+		"Wizard": "위저드",
+		"Wizard Features": "위저드 특성",
+		"School of Evocation Features": "방출학파 특성"
+    },
+	"mapping": {
+		"requirements": "system.requirements"
+	  },
+	  "entries": {
+		"Ability Score Improvement": {
+		  "name": "능력치 향상",
+		  "requirements": "로그 4",
+		  "description": "<p>4레벨, 8레벨, 10레벨, 12레벨, 16레벨, 19레벨에 이르면, 원하는 능력치 1개를 2만큼 올리거나, 서로 다른 능력치 2개를 1만큼 올릴 수 있습니다. 이 특성으로 올리는 능력치는 20을 초과할 수 없습니다.</p>"
+		},
+		"Action Surge": {
+		  "name": "행동 연쇄",
+		  "requirements": "파이터 2",
+		  "description": "<p>파이터 2레벨 때부터, 사용자는 짧은 시간 동안 자신의 한계를 넘어서는 활약을 하도록 스스로를 몰아붙일 수 있습니다. 사용자는 자기 턴에 행동 하나를 더 사용할 수 있습니다. 이 행동은 보통 행동과 추가 행동에 더해 사용할 수 있습니다.</p><p>이 특성을 한 번 사용했다면, 짧은 휴식이나 긴 휴식을 마치고 나서야 다시 이 특성을 사용할 수 있습니다. 17레벨부터, 사용자는 휴식을 취하기 전에 이 특성을 2번 사용할 수 있으나 턴당 한 번씩만 사용할 수 있습니다.</p>"
+		},
+		"Additional Fighting Style": {
+		  "name": "추가 전투 유파",
+		  "requirements": "챔피언 10",
+		  "description": "<p>다음 목록에서 두번째 전투 유파 클래스 특성을 고르십시오.</p><p>@Compendium[dnd5e.classfeatures.8YwPFv3UAPjWVDNf]{궁술}</p><p>@Compendium[dnd5e.classfeatures.zSlV0O2rQMdoq6pB]{방어술}</p><p>@Compendium[dnd5e.classfeatures.hCop9uJrWhF1QPb4]{결투술}</p><p>@Compendium[dnd5e.classfeatures.3Nc6u9pyStByuJsm]{대형 무기 전투술}</p><p>@Compendium[dnd5e.classfeatures.06NVMYf58Z76O85O]{보호술}</p><p>@Compendium[dnd5e.classfeatures.mHcSjcHJ8oZu3hkb]{쌍수 전투술}</p><p>추가 전투 유파는 반드시 레벨 1에 선택한 것과 달라야 합니다.</p><p>캐릭터 시트 위에 드래그하면 자동으로 반영됩니다.</p>"
+		},
+		"Additional Magical Secrets": {
+		  "name": "추가 마법적 비밀",
+		  "requirements": "전승학파 6",
+		  "description": "<p>바드 6레벨에 모든 클래스의 주문 중 원하는 것 2개를 골라 습득합니다. 고를 수 있는 것은 시전 가능한 레벨의 주문이거나 소마법이어야 합니다. 선택한 주문들은 바드 주문으로 취급하지만, 알고 있는 주문 수에는 포함되지 않습니다.</p>"
+		},
+		"Agonizing Blast": {
+		  "name": "고뇌의 파동",
+		  "requirements": "워락 2, 섬뜩한 방출",
+		  "description": "<p>당신이 @Compendium[dnd5e.spells.Z9p1vezIn95jw1Yw]{섬뜩한 방출}을 시전할 때, 주는 피해량에 매력 수정치를 더합니다.</p>"
+		},
+		"Arcane Recovery": {
+		  "name": "비전 회복",
+		  "requirements": "위저드 1",
+		  "description": "<p>당신은 주문책을 연구하며 소비한 마력 일부를 회복하는 법을 배웠습니다. 하루 한 번, 짧은 휴식을 마칠 때 소비한 주문 슬롯 일부를 회복할 수 있습니다. 회복되는 주문 슬롯의 레벨 합계는 당신의 위저드 레벨 절반(나머지 올림)만큼이며, 6레벨 이상의 슬롯은 회복할 수 없습니다.</p><p>예를 들어 4레벨 위저드라면, 합계 2레벨까지의 주문 슬롯을 회복할 수 있습니다. 2레벨 슬롯 하나를 회복하거나, 1레벨 슬롯 2개를 회복할 수 있습니다.</p>"
+		},
+		"Arcane Tradition": {
+		  "name": "비전 전통",
+		  "requirements": "위저드 2",
+		  "description": "<p>위저드 2레벨에 도달하면, 마법의 8대 학파 중 하나를 선택하여 비전 전통의 길을 따를 수 있습니다. 8대 학파는 방출학파, 방호학파, 변환학파, 사령학파, 예지학파, 조형학파, 환영학파, 환혹학파입니다.</p><p>자신이 선택한 전통에 따라 2, 6, 10, 14레벨에 새로운 특성을 추가로 얻을 수 있습니다.</p>"
+		},
+		"Archdruid": {
+		  "name": "대드루이드",
+		  "requirements": "드루이드 20",
+		  "description": "<p>드루이드 20레벨에 도달하면, 횟수 제한 없이 @Compendium[dnd5e.classfeatures.swK0r5TOIxredxWS]{야생 변신}을 사용할 수 있습니다.</p><p>또한 드루이드 주문을 시전할 때 음성과 동작 요소를 무시할 수 있으며, 물질요소 중 비용이 없고 주문에 의해 소모되지 않는 것도 무시할 수 있습니다. 이 효과는 평소 모습과 야생 형상 모두에 적용됩니다.</p>"
+		},
+		"Archery": {
+		  "name": "궁술",
+		  "requirements": "파이터 1, 챔피언 10, 레인저 2",
+		  "description": "<p>원거리 무기를 사용해 공격할 시 공격 굴림에 +2 합니다.</p>"
+		},
+		"Armor of Shadows": {
+		  "name": "그림자 갑옷",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 쓰지 않고도 언제든 자신에게 @Compendium[dnd5e.spells.CKZTpZlxj7hjjo2H]{마법 갑주} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Ascendant Step": {
+		  "name": "승천의 발걸음",
+		  "requirements": "워락 9",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 쓰지 않고도 언제든 자신에게 @UUID[Compendium.dnd5e.spells.Item.MRxldJd6C4bsBo3O]{부양} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Aura of Courage": {
+		  "name": "용기의 오라",
+		  "requirements": "팔라딘 10",
+		  "description": "<p>팔라딘 10레벨에 도달하면, 당신과 주변 10ft 이내의 우호적인 크리처는 당신의 의식이 있는 한 공포 상태에 면역이 됩니다.</p><p>18레벨에 도달하면 이 오오라의 범위는 주변 30ft로 확대됩니다.</p>"
+		},
+		"Aura of Devotion": {
+		  "name": "헌신의 오라",
+		  "requirements": "헌신의 맹세 7",
+		  "description": "<p>팔라딘 7레벨에 도달하면, 당신과 주변 10ft 이내의 모든 우호적인 크리처들은 당신의 의식이 있는 한 매혹 상태에 면역이 됩니다.</p><p>팔라딘 18레벨에 도달하면 이 오라의 범위는 주변 30ft로 확대됩니다.</p>"
+		},
+		"Aura of Protection": {
+		  "name": "보호의 오라",
+		  "requirements": "팔라딘 6",
+		  "description": "<p>팔라딘 6레벨에 도달하면, 당신이나 주변 10ft 내의 우호적인 크리처가 내성 굴림을 굴려야 할 때, 해당 크리처는 내성 굴림에 당신의 매력 수정치만큼의 보너스를 받습니다. (최소 +1) 보너스를 부여하려면 당신의 의식이 깨어있어야 합니다.</p><p>18레벨에 도달하면 이 오라의 범위는 주변 30ft로 확대됩니다.</p>"
+		},
+		"Bard College": {
+		  "name": "바드 학파",
+		  "requirements": "바드 3",
+		  "description": "<p>바드 3레벨에, 전승 학파 등과 같이 원하는 바드 학파를 하나 선택해 더 발전된 기교를 익힐 수 있습니다.  3, 6, 14레벨에 각각 새로운 특성을 얻을 수 있습니다.</p>"
+		},
+		"Bardic Inspiration": {
+		  "name": "바드의 고양감",
+		  "requirements": "바드 1",
+		  "description": "<p>당신은 가슴을 북돋는 말이나 음악을 통해 다른 사람들을 고무시킬 수 있습니다. 자신의 턴에 추가행동을 사용하여 반경 60ft 이내의, 자신 이외의 크리처 하나를 선택해야 합니다. 이 때 크리처는 당신의 노랫소리를 들을 수 있는 상태여야 합니다. 선택된 크리처는 바드의 고양감 주사위(d6) 하나를 얻습니다. 이후 10분 간, 그 크리처는 능력 판정이나 명중 굴림, 혹은 내성 굴림을 할 때 바드의 고양감 주사위를 함께 굴려, 그 결과를 굴림 결과에 더할 수 있습니다. d20을 굴린 다음에 바드의 고양감을 사용할지 여부를 결정할 수 있지만, GM이 성공 혹은 실패를 선언한 다음에는 사용할 수 없습니다. 한번 바드의 고양감 주사위를 사용하면 그 주사위는 사라집니다. 바드의 고양감 주사위는 크리처 당 하나만 가질 수 있습니다</p><p>이 특성은 [당신의 매력 수정치] 회만큼 사용할 수 있습니다 (최소 1회).</p><p>소비한 사용횟수는 긴 휴식을 마치면 모두 회복됩니다.</p><p>바드의 고양감 주사위는 특정 바드 레벨에 도달하면 변화합니다. 5레벨에 d8, 10레벨에 d10, 15레벨에 d12 로 변화합니다.</p><section class=\"secret\" id=\"secret-eL25CzgN1MY7TpsR\"><p><strong>파운드리 노트</strong></p><p>회복은 긴 휴식으로 설정되어 있습니다. (이는 아직 @UUID[Compendium.dnd5e.classfeatures.Item.3VDZGs5Ug3hIE322]{고양감의 샘} 특성을 획득할 레벨이 아닌 캐릭터를 위함입니다.) 필요 시 조정하십시오.</p></section>"
+		},
+		"Beast Speech": {
+		  "name": "짐승의 언어",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 쓰지 않고도 언제든 @Compendium[dnd5e.spells.aL1F8fvYLtNzUbKu]{동물과의 대화} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Beast Spells": {
+		  "name": "야수 주문",
+		  "requirements": "드루이드 18",
+		  "description": "<p>18레벨부터 @UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생 변신}으로 어떤 형태를 취하든 관계 없이, 대부분의 드루이드 주문을 시전할 수 있습니다. 야수 형태로도 음성과 동작 요소로 드루이드 주문을 사용할 수 있지만, 물질 요소는 사용할 수 없습니다. </p>"
+		},
+		"Beguiling Influence": {
+		  "name": "기만의 영향력",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 기만과 설득 기술에 숙련됩니다.</p>"
+		},
+		"Bewitching Whispers": {
+		  "name": "홀리는 속삭임",
+		  "requirements": "워락 7",
+		  "description": "<p>워락 주문 슬롯을 사용해 @UUID[Compendium.dnd5e.spells.Item.P6f1PPKPd9BCb742]{충동} 주문을 한 번 시전할 수 있습니다. 한 번 사용하면 긴 휴식을 취한 뒤에 다시 사용할 수 있습니다.</p>"
+		},
+		"Blessed Healer": {
+		  "name": "축복받은 치유사",
+		  "requirements": "생명 권역 6",
+		  "description": "<p>클레릭 6레벨부터 당신이 다른 이에게 치유 주문을 시전하면 자신도 치유됩니다. </p> <p> 1레벨 이상의 주문을 시전해 다른 크리처의 hp를 회복하면 자신도 2 + 주문 레벨만큼의 hp를 회복합니다.</p><section class=\"secret foundry-note\" id=\"secret-8pxfORAMtA2mWG44\"><p><em>**파운드리 노트 : 회복 수식은 2로 설정되어 있습니다. 주문 레벨에 따라 수동으로 회복량을 추가해주세요.</em></p></section>"
+		},
+		"Blindsense": {
+		  "name": "맹안감각",
+		  "requirements": "로그 14",
+		  "description": "<p>로그 14레벨부터, 소리를 들을 수 있는 상태라면 주변 10ft 이내의 은신 상태나 투명 상태인 모든 크리처의 위치를 인지합니다.</p>"
+		},
+		"Bonus Cantrip": {
+		  "name": "추가 소마법",
+		  "requirements": "대지의 회합 2",
+		  "description": "<p>2레벨에 이 회합을 선택한 경우, 원하는 드루이드 소마법 1개를 추가로 습득합니다.</p>"
+		},
+		"Bonus Proficiencies": {
+		  "name": "추가 숙련",
+		  "requirements": "전승학파 3",
+		  "description": "<p>3레벨에 전승 학파를 선택하면, 원하는 기술 3개에 숙련됩니다.</p>"
+		},
+		"Bonus Proficiency": {
+		  "name": "추가 숙련",
+		  "requirements": "생명 권역 1",
+		  "description": "<p>1레벨에 이 권역을 선택하면, 중갑 숙련을 얻습니다.</p>"
+		},
+		"Book of Ancient Secrets": {
+		  "name": "고대 비밀의 서",
+		  "requirements": "워락 3, 고서의 계약",
+		  "description": "<p>당신은 이제 그림자의 책에 마법 의식을 기록할 수 있습니다. 모든 클래스의 1레벨 주문 중 의식 태그가 붙은 주문 2개를 선택합니다(같은 목록에서 주문 2개를 고를 필요는 없습니다). 그림자의 책에는 이 주문들이 수록되며, 이 주문은 당신이 알고 있는 주문의 개수에 포함되지 않습니다. 당신은 그림자의 책을 손에 들고 있을 때, 이 주문들을 의식으로 시전할 수 있습니다. 당신이 다른 방식으로 해당 주문을 알고 있는 것이 아닌 한, 의식이 아닌 방법으로는 시전할 수 없습니다. 또한 당신이 알고 있는 워락 주문 중 의식 태그가 붙은 것이 있다면, 해당 주문 역시 의식 형태로 시전할 수 있습니다.</p><p>당신이 모험 도중 다른 의식 주문을 발견했다면, 그 주문들도 그림자의 책에 옮겨 넣을 수 있습니다. 당신은 자신의 워락 레벨 절반(나머지 올림)과 같거나 그보다 낮은 레벨의 의식 주문을 그림자의 책에 옮겨 쓸 수 있습니다. 주문을 옮겨쓰기 위해서는 주문 레벨당 2시간이 들어가며, 주문 레벨당 50gp 정도 가치의 희귀한 잉크가 필요합니다.</p>"
+		},
+		"Brutal Critical": {
+		  "name": "야만적인 치명타",
+		  "requirements": "바바리안 9",
+		  "description": "<p>바바리안 9레벨부터 근거리 공격으로 치명타를 가했을 때, 치명타로 인한 추가 피해를 결정할 때 무기 피해 주사위 1개를 추가하여 굴릴 수 있습니다. 추가하는 주사위는 13레벨에 2개, 17레벨에 3개로 증가합니다.</p>"
+		},
+		"Careful Spell": {
+		  "name": "주문 세심화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 다른 크리처가 내성 굴림을 굴려야 하는 주문을 시전할 때, 목표 중 일부를 보호해 주문의 힘을 부분적으로 막아낼 수 있습니다. 주문을 시전 시 술법 점수 1점을 소비하고 당신의 매력 수정치(최소 1체)만큼 크리처를 선택합니다. 선택된 크리처들은 주문내성 굴림에 자동 성공합니다.</p>"
+		},
+		"Chains of Carceri": {
+		  "name": "카르케리의 사슬",
+		  "requirements": "워락 15, 사슬의 계약",
+		  "description": "<p>목표가 천상체나 악마, 원소라면, 언제든 주문 슬롯이나 물질 요소를 소비하지 않고 @UUID[Compendium.dnd5e.spells.Item.l9Ju5KE7bbn3WpTm]{괴물 포박Hold Monster} 주문을 시전할 수 있습니다. 단, 같은 크리처에게 다시 이 영창을 사용하려면 긴 휴식을 취해야 합니다.</p>"
+		},
+		"Channel Divinity": {
+		  "name": "신성 변환",
+		  "requirements": "클레릭 2",
+		  "description": "<p>클레릭 2레벨에 신에게서 직접 받은 신성한 힘을 변환하는 능력을 얻습니다. 그 신성한 힘으로 마법적 효과를 불러일으킵니다. 처음에는 언데드 퇴치와 선택한 권역에 지정된 효과, 총 2가지 효과를 얻습니다. 몇몇 권역들은 레벨이 오를수록 추가로 효과를 습득할 수 있습니다. 상세는 각 권역 설명에 나와 있습니다.</p><p>신성 변환을 사용할 때, 어느 효과를 발휘할지 선택합니다. 한 번 신성 변환을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p><p>몇몇 신성 변환은 내성 굴림이 필요합니다. 내성 굴림을 요구하는 효과를 사용할 때, 내성 굴림 DC는 당신의 클레릭 주문 내성 DC와 같습니다.</p>6레벨부터, 당신은 휴식과 휴식 사이에 신성 변환을 2번 사용할 수 있습니다. 또한, 18레벨부터 당신은 휴식과 휴식 사이에 신성 변환을 3번 사용할 수 있습니다. 짧은 휴식이나 긴 휴식을 마치면 소비한 신성 변환 횟수를 모두 회복할 수 있습니다.<section class=\"secret foundry-note\" id=\"secret-AZYZtT1NonF68bPW\"><p><strong>파운드리 노트</strong></p><p>: 각종 클레릭 신성 변환의 사용 횟수를 기록할 때 이것을 사용하세요.</p></section>"
+		},
+		"Channel Divinity: Preserve Life": {
+		  "name": "신성 변환: 생명 보존",
+		  "requirements": "생명 권역 2",
+		  "description": "<p>클레릭 2레벨부터, 당신은 신성 변환을 사용하여 심각한 부상을 입은 자들을 치료할 수 있습니다.</p><p>행동을 사용하여 성표를 보여주면, 당신의 클레릭 레벨 × 5 만큼의 hp를 회복시킬 수 있습니다. 주변 30ft 이내의 크리처를 원하는 만큼 고릅니다. 여러 크리처에게 회복량을 나누어 줄 수 있습니다. 이 특성으로 각 크리처의 최대 hp의 절반까지만 회복할 수 있습니다. 언데드나 구조물에게는 이 특성을 사용할 수 없습니다.</p>"
+		},
+		"Channel Divinity: Sacred Weapon": {
+		  "name": "신성 변환: 무기 축성",
+		  "requirements": "헌신의 맹세 3",
+		  "description": "<p>행동을 사용하면, 당신이 들고 있는 무기 하나에 이로운 힘을 불어넣을 수 있습니다. 이후 1분 간, 해당 무기의 모든 명중 굴림에 자신의 매력 수정치를 더합니다(최소 +1). 또한, 그 무기는 20ft 반경에 밝은 빛을, 추가로 20ft에 약한 빛을 냅니다. 비마법적 무기라면, 지속 시간 동안 마법 무기로 취급됩니다.</p><p>자기 턴에 다른 어떤 행동을 하든지 그 일부로 이 효과를 중단할 수 있습니다. 또한 이 무기를 더는 들고 있지 않거나 또는 소지하지 않거나, 의식불명 상태에 빠지면 이 효과는 종료됩니다.</p>"
+		},
+		"Channel Divinity: Turn the Unholy": {
+		  "name": "신성 변환: 불경함 퇴치",
+		  "requirements": "헌신의 맹세 3",
+		  "description": "<p>행동으로써 성표를 내보이며 악마와 언데드를 물리치는 기도를 읊습니다. 당신을 보거나 들을 수 있는 30ft 내의 모든 악마나 언데드는 지혜 내성 굴림을 굴려야 합니다. 실패한 크리처는 1분간 퇴치됩니다. 대미지를 입으면 효과가 종료됩니다.</p><p>퇴치당한 크리처는 자신의 턴이 될 때마다 전력을 다해 당신으로부터 멀어져야 하며, 자신의 의지로 당신 주변 30ft에 접근할 수 없습니다. 또한, 퇴치당한 상태에서는 반응행동을 사용할 수 없습니다. 퇴치당한 동안에는 오직 질주 행동을 사용하거나, 이동을 방해하는 효과에서 벗어나는 시도만 할 수 있습니다. 만약 더이상 이동할 수 있는 곳이 없다면, 퇴치당한 크리처는 회피행동만 사용할 수 있습니다.</p>"
+		},
+		"Channel Divinity: Turn Undead": {
+		  "name": "신성 변환: 언데드 퇴치",
+		  "requirements": "클레릭 2",
+		  "description": "<p>행동으로써 성표를 내보이며 언데드를 물리치는 기도를 읊습니다. 당신을 보거나 들을 수 있는 30ft 내의 모든 언데드는 지혜 내성 굴림을 굴려야 합니다. 실패한 크리처는 1분간 퇴치됩니다. 대미지를 입으면 효과가 종료됩니다.</p><p>퇴치당한 크리처는 자신의 턴이 될 때마다 전력을 다해 당신으로부터 멀어져야 하며, 자신의 의지로 당신 주변 30ft에 접근할 수 없습니다. 또한, 퇴치당한 상태에서는 반응행동을 사용할 수 없습니다. 퇴치당한 동안에는 오직 질주 행동을 사용하거나, 이동을 방해하는 효과에서 벗어나는 시도만 할 수 있습니다. 만약 더이상 이동할 수 있는 곳이 없다면, 퇴치당한 크리처는 회피행동만 사용할 수 있습니다.</p>"
+		},
+		"Circle Spells": {
+		  "name": "회합 주문",
+		  "requirements": "대지의 회합 3",
+		  "description": "<p>당신은 대지와의 신비한 연결을 통해 특정한 주문을 시전하는 능력을 얻습니다. 드루이드 3, 5, 7, 9레벨이 될 때마다, 당신이 어떤 대지에서 드루이드가 되었는지에 따라 그 대지에 관련된 회합 주문을 시전할 수 있게 됩니다. 극지, 늪, 사막, 산, 숲, 언더다크, 초원, 해안 중 하나를 고르면 그에 따르는 주문 목록을 얻을 수 있습니다.12일단 회합 주문을 시전할 수 있게 되면 해당 주문은 언제나 준비된 것으로 칩니다. 이 주문은 당신이 매일 준비하는 주문 개수 제한에 포함되지 않습니다. 드루이드 주문 목록에 없는 주문이 회합 주문으로 주어졌다면, 당신은 그 주문을 드루이드 주문으로 시전할 수 있습니다.</p><table><caption>Arctic</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4]{Hold Person}, @UUID[Compendium.dnd5e.spells.Item.9gYGkrL6qFTsE6fw]{Spike Growth}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.dhqBY4TvVjxVmOZd]{Sleet Storm}, @UUID[Compendium.dnd5e.spells.Item.yqUDoxk4x0NWG5Bz]{Slow}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT]{Freedom of Movement}, @UUID[Compendium.dnd5e.spells.Item.WN2LWEljYU6QqnRH]{Ice Storm}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.d54VDyFulD9xxY7J]{Commune}, @UUID[Compendium.dnd5e.spells.Item.RpKjTlYASrfqUPVA]{Cone of Cold}</td></tr></tbody></table><table><caption>Coast</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.X4c8xCkmF8U9HUMz]{Mirror Image}, @UUID[Compendium.dnd5e.spells.Item.wqfAVANuQonNBgnL]{Misty Step}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.13uVuBQP6VaiSPvC]{Water Breathing}, @UUID[Compendium.dnd5e.spells.Item.YBda6nLKjxdT1LbS]{Water Walk}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.7fFHlBk3UNX8gPKL]{Control Water}, @UUID[Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT]{Freedom of Movement}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.1LkZvINag7KqBmDR]{Conjure Elemental}, @UUID[Compendium.dnd5e.spells.Item.fVbCxFRaORalHB20]{Scrying}</td></tr></tbody></table><table><caption>Desert</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.UDUnlfPsOAbq2RSE]{Blur}, @UUID[Compendium.dnd5e.spells.Item.5VhqFROQYjr1P9lp]{Silence}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.BV0mpbHh29IbbIj5]{Create Food and Water}, @UUID[Compendium.dnd5e.spells.Item.j8NtLXOOJ3GAKF8I]{Protection from Energy}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.pybg5MNc3lkerH4Y]{Blight}, @UUID[Compendium.dnd5e.spells.Item.sTIkQK7KuQNOyY0C]{Hallucinatory Terrain}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.OVikYmSdHliAG2YD]{Insect Plague}, @UUID[Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY]{Wall of Stone}</td></tr></tbody></table><table><caption>Forest</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.JPwIEfgUPVebr5AH]{Barkskin}, @UUID[Compendium.dnd5e.spells.Item.KJRVzeMQXPj8Gtyx]{Spider Climb}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.ehvmg9U9fcMEhE4z]{Call Lightning}, @UUID[Compendium.dnd5e.spells.Item.YWtwzp6ZnQJMEmVW]{Plant Growth}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.XqzXSKNR75ZdYTA9]{Divination}, @UUID[Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT]{Freedom of Movement}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.dp6xny4v8PDoIGjh]{Commune with Nature}, @UUID[Compendium.dnd5e.spells.Item.DUBgwHPakcLDkB6W]{Tree Stride}</td></tr></tbody></table><table><caption>Grassland</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B]{Invisibility}, @UUID[Compendium.dnd5e.spells.Item.pRMvmknwLf2tdMTj]{Pass without Trace}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.BP3GCwa66IAw1yTG]{Daylight}, @UUID[Compendium.dnd5e.spells.Item.Szvk5FEVQW3uhJi5]{Haste}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.XqzXSKNR75ZdYTA9]{Divination}, @UUID[Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT]{Freedom of Movement}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.kSPRpeIx3w3nihrF]{Dream}, @UUID[Compendium.dnd5e.spells.Item.OVikYmSdHliAG2YD]{Insect Plague}</td></tr></tbody></table><table><caption>Mountain</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.KJRVzeMQXPj8Gtyx]{Spider Climb}, @UUID[Compendium.dnd5e.spells.Item.9gYGkrL6qFTsE6fw]{Spike Growth}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.IyikgTEOTv701jgQ]{Lightning Bolt}, @UUID[Compendium.dnd5e.spells.Item.64uo4fHriHLjRUrX]{Meld into Stone}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.QvGcdRUSNRKEQJlK]{Stone Shape}, @UUID[Compendium.dnd5e.spells.Item.ReMbjfeOKoSj3O79]{Stoneskin}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.d9MwcXi7Il3HROXd]{Passwall}, @UUID[Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY]{Wall of Stone}</td></tr></tbody></table><table><caption>Swamp</caption><thead><tr><td><strong>드루이드 레벨</strong></td><td><strong>Circle Spells</strong></td></tr></thead><tbody><tr><td>3rd</td><td>@UUID[Compendium.dnd5e.spells.Item.4H6YgYdKgnX6ZQ8M]{Acid Arrow}, @UUID[Compendium.dnd5e.spells.Item.S7VbUetIfVT7B6Eq]{Darkness}</td></tr><tr><td>5th</td><td>@UUID[Compendium.dnd5e.spells.Item.YBda6nLKjxdT1LbS]{Water Walk}, @UUID[Compendium.dnd5e.spells.Item.TwlD4PLcltv7Xh7j]{Stinking Cloud}</td></tr><tr><td>7th</td><td>@UUID[Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT]{Freedom of Movement}, @UUID[Compendium.dnd5e.spells.Item.gXtzz9t1DTzJeLr4]{Locate Creature}</td></tr><tr><td>9th</td><td>@UUID[Compendium.dnd5e.spells.Item.OVikYmSdHliAG2YD]{Insect Plague}, @UUID[Compendium.dnd5e.spells.Item.fVbCxFRaORalHB20]{Scrying}</td></tr></tbody></table>"
+		},
+		"Cleansing Touch": {
+		  "name": "정화의 손길",
+		  "requirements": "팔라딘 14",
+		  "description": "<p>팔라딘 14레벨부터, 당신은 행동을 사용하여 당신 자신이나, 당신이 접촉하고 있는 크리처 중 원하는 크리처 하나의 주문 1개를 종료시킬 수 있습니다.</p><p>이 특성은 [당신의 매력 수정치] 회만큼 사용할 수 있습니다. (최소 1회) 긴 휴식을 마치고 나면 소모한 사용 횟수를 모두 회복하게 됩니다.</p>"
+		},
+		"Colossus Slayer": {
+		  "name": "거체 학살자",
+		  "requirements": "헌터 3",
+		  "description": "<p>당신의 집요함은 아무리 강인한 적이라도 지쳐 떨어지게 합니다. 최대 hp 상태가 아닌 크리처에게 무기 공격을 명중시켰다면, 추가로 1d8점의 피해를 줍니다. 이 추가 피해는 매 턴 한 번씩만 줄 수 있습니다.</p>"
+		},
+		"Countercharm": {
+		  "name": "매혹반사",
+		  "requirements": "바드 6",
+		  "description": "<p>바드 6레벨에, 당신은 음표나 음악의 힘이 담긴 말을 이용해 정신에 간섭하는 효과를 방해할 수 있습니다. 행동으로써 연주를 시작할 수 있습니다. 연주는 다음 턴 종료 시까지 지속됩니다. 지속시간 동안, 당신과 주변 30ft 내의 모든 우호적인 크리처는 공포와 매혹 상태에 대한 내성 굴림에 유리함을 받습니다. 단, 당신의 소리를 들을 수 있는 크리처만 이 효과를 받을 수 있습니다. 당신이 행동불능 상태가 되거나 침묵 상태가 되면 연주가 중단되며, 언제든 스스로 연주를 그만둘 수 있습니다. (행동 불필요)</p>"
+		},
+		"Cunning Action": {
+		  "name": "교활한 행동",
+		  "requirements": "로그 2",
+		  "description": "<p>로그 2레벨부터, 당신은 순발력와 기민함을 살려 신속하게 움직이고 행동할 수 있게 됩니다. 당신은 전투 중 자기 턴마다 추가 행동을 사용해 은신, 질주, 퇴각 행동 중 하나를 할 수 있습니다.</p>"
+		},
+		"Cutting Words": {
+		  "name": "날카로운 언어",
+		  "requirements": "전승학파 3",
+		  "description": "<p>3레벨이 되면, 재치를 발휘해 상대를 괴롭히고, 혼란시키고, 상대의 자신감과 효능감을 떨구는 방법을 터득합니다.</p> <p>주변 60ft 내 시야에 있는 크리처 하나가 명중 굴림이나 능력 판정, 피해 굴림을 하려 할 때, 반응행동을 사용해 @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{바드의 고양감} 1회를 소모하면, 바드의 고양감 주사위를 굴려 그 결과값만큼 상대의 판정 결과값을 제할 수 있습니다. </p><p>상대가 주사위를 굴린 후에도 이 특성을 사용하겠다고 선언할 수 있지만, GM이 성패 여부를 확정했거나 상대가 피해를 부여한 이후에는 사용할 수 없습니다. 소리를 듣지 못하거나 매혹 상태에 면역인 크리처는 이 특성에 면역입니다.</p>"
+		},
+		"Danger Sense": {
+		  "name": "위험 감지",
+		  "requirements": "바바리안 2",
+		  "description": "<p>바바리안 2레벨에, 위험이 다가오거나 수상한 것이 근처에 있을 때 본능적으로 이를 알아차릴 수 있는 비범한 감각을 얻게 됩니다.</p><p>함정이나 주문 등 당신이 볼 수 있는 효과에 대한 민첩 내성 굴림에 유리함을 받습니다. 단, 실명 혹은 실청 상태이거나 행동불능 상태일 때는 이 효과를 받을 수 없습니다.</p>"
+		},
+		"Dark One's Blessing": {
+		  "name": "어두운 이의 축복",
+		  "requirements": "악마 1",
+		  "description": "<p>워락 1레벨부터, 적대적 크리처의 hp를 0으로 만들었을 때 당신의 매력 수정치 + 워락 레벨만큼 임시 hp를 얻습니다. (최소 1)</p>"
+		},
+		"Dark One's Own Luck": {
+		  "name": "어두운 이의 명운",
+		  "requirements": "악마 6",
+		  "description": "<p>워락 6레벨부터, 후견자에게 당신을 위해 운명을 조작해 달라고 요청할 수 있습니다. 능력 판정이나 내성 굴림을 굴릴 때, 이 특성을 사용하면 굴림에 d10을 더할 수 있습니다. 굴림 후에도 이 특성을 사용할 수 있지만, 효과가 확정된 다음에는 사용할 수 없습니다.</p><p>이 특성을 한 번 사용했다면, 짧은 휴식이나 긴 휴식을 마친 후에 다시 사용할 수 있습니다.</p>"
+		},
+		"Defense": {
+		  "name": "방어술",
+		  "requirements": "파이터 1, 챔피언 10, 팔라딘 2, 레인저 2",
+		  "description": "<p>갑옷 착용 시, AC에 +1.</p>"
+		},
+		"Defensive Tactics": {
+		  "name": "방어 전술",
+		  "requirements": "헌터 7",
+		  "description": "<p>7레벨에, 아래의 특성 중 원하는 것 한 개를 골라 습득합니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.pAQMJU5R9SGUmzHU]{무리 탈출}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.slelvrm83v9UAKZU]{다중공격 방어}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.zbHu0NvHuII8lR7W]{강철의 의지}</p><p>선택한 것을 캐릭터 시트 위로 드래그하면 자동으로 반영됩니다.</p>"
+		},
+		"Deflect Missiles": {
+		  "name": "투사체 쳐내기",
+		  "requirements": "몽크 3",
+		  "description": "<p>3레벨부터, 원거리 무기 공격에 명중당했을 때 반응행동을 사용해 투사체를 쳐내거나 잡아낼 수 있습니다. 이 때, 해당 공격으로 받는 피해는 1d10 + 당신의 민첩 수정치 + 당신의 몽크 레벨만큼 감소합니다.</p><p>만약 이 특성으로 해당 원거리 공격의 피해를 0점으로 감소시켰다면, 그 투사체를 잡은 것으로 취급합니다. 단, 이렇게 잡으려면 투사체의 크기가 한 손으로 잡을 수 있을 만큼 작아야 하고, 당신 역시 최소 한 손은 비어 있는 상태여야 합니다. 이렇게 투사체를 잡은 경우, 당신은 @Compendium[dnd5e.classfeatures.10b6z2W1txNkrGP7]{기}  1점을 소비해 그 반응행동에서 하는 행위의 일부로 취급하여, 잡아낸 무기 혹은 탄으로 원거리 공격을 할 수 있습니다. 그에 대한 숙련이 없어도 이 공격에 대해서는 숙련 보너스를 받을 수 있으며, 당신이 던지는 투사체는 몽크 무기로 취급됩니다. 이 원거리 공격의 사거리는 보통 20ft, 장거리 60ft입니다.</p><section class=\"secret foundry-note\" id=\"secret-ilfImwMJMJ8c9dEF\"><p><strong>파운드리 노트</strong></p><p>기타 수식란에 감소되는 피해량 굴림이 계산되어 있습니다. </p></section>"
+		},
+		"Destroy Undead": {
+		  "name": "언데드 파괴",
+		  "requirements": "클레릭 5",
+		  "description": "<p>클레릭 5레벨에 도달하면, 당신이 사용한 @Compendium[dnd5e.classfeatures.r91UIgwFdHwkXdia]{언데드 퇴치Turn Undead}의 내성 굴림에 실패한 언데드들 중 도전 지수가 일정 수치 이하인 것은 퇴치되어 도망가는 대신 즉시 파괴됩니다. 파괴되는 도전 지수는 아래 언데드 파괴 표를 참조하시기 바랍니다.</p><h4><strong>언데드 파괴</strong></h4><table style=\"width: 244px;\" border=\"1\"><tbody><tr><td style=\"width: 81px;\"><strong>클레릭 레벨</strong></td><td style=\"width: 156px;\"><strong>파괴되는 언데드 CR</strong></td></tr><tr><td style=\"width: 81px;\">5레벨</td><td style=\"width: 156px;\">1/2 이하</td></tr><tr><td style=\"width: 81px;\">8레벨</td><td style=\"width: 156px;\">1 이하</td></tr><tr><td style=\"width: 81px;\">11레벨</td><td style=\"width: 156px;\">2 이하</td></tr><tr><td style=\"width: 81px;\">14레벨</td><td style=\"width: 156px;\">3 이하</td></tr><tr><td style=\"width: 81px;\">17레벨</td><td style=\"width: 156px;\">4 이하</td></tr></tbody></table>"
+		},
+		"Devil's Sight": {
+		  "name": "악마의 시야",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 비마법적이든 마법적이든 관계없이, 모든 종류의 어둠 속에서 120ft까지의 범위를 통상과 같이 볼 수 있습니다.</p>"
+		},
+		"Diamond Soul": {
+		  "name": "금강혼",
+		  "requirements": "몽크 14",
+		  "description": "<p>몽크 14레벨에 도달하면, 당신은 기에 통달해 모든 내성 굴림에 숙련을 얻습니다. 또한 당신은 내성 굴림을 할 때 기 1점을 소비해 주사위를 다시 굴릴 수 있지만, 이때 반드시 다시 굴린 주사위 결과를 사용해야 합니다.</p>"
+		},
+		"Disciple of Life": {
+		  "name": "생명의 사도",
+		  "requirements": "생명 권역 1",
+		  "description": "<p>1레벨부터, 당신의 치료 주문은 특히 효과적입니다. hp를 회복하는 1레벨 이상의 주문을 시전할 때마다, 회복되는 크리처는 2 + 주문 레벨만큼의 hp를 추가로 회복합니다.</p>"
+		},
+		"Distant Spell": {
+		  "name": "주문 원거리화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 5ft 이상의 사거리를 지닌 주문을 시전할 때 술법 점수 1점을 소비해 해당 주문의 사거리를 2배로 늘릴 수 있습니다.</p><p>또, 당신은 사거리가 접촉인 주문을 시전할 때, 술법 점수 1점을 소비해 해당 주문의 사거리를 30ft로 늘릴 수 있습니다.</p>"
+		},
+		"Divine Domain": {
+		  "name": "신성 권역",
+		  "requirements": "클레릭 1",
+		  "description": "</p>생명 권역 등 여러 권역 중에 당신의 신과 연관된 것 하나를 선택해야 합니다. 당신은 1레벨에 권역을 선택하면서 권역에 따른 주문과 추가 특성을 얻습니다. 또한 2레벨에 권역에 따른 신성 변환의 추가 사용법을 알게 되며, 6, 8, 17레벨에도 선택에 따른 추가적 특성을 얻을 수 있습니다.</p><h5>권역 주문 Domain Spells</h5><p>권역마다 권역 주문이라 부르는 주문들의 목록이 있습니다. 이 주문들은 당신의 클레릭 레벨에 따라 얻을 수 있는 것들이며 권역 설명에 자세히 나와 있습니다. 일단 권역 주문을 얻었다면 당신은 언제나 이 주문들을 준비하고 있는 것이며, 권역 주문은 매일 준비할 수 있는 주문 개수에 포함되지 않습니다.</p><p>만약 당신이 클레릭 주문 목록에 없는 주문을 권역 주문으로 받은 경우, 당신은 해당 주문을 클레릭 주문으로 취급합니다.</p>"
+		},
+		"Divine Health": {
+		  "name": "신성한 건강",
+		  "requirements": "팔라딘 3",
+		  "description": "<p>팔라딘 3레벨부터, 몸속에 흐르는 신성한 마법으로 인해 당신은 모든 질병에 면역을 얻습니다.</p>"
+		},
+		"Divine Intervention": {
+		  "name": "신의 간섭",
+		  "requirements": "클레릭 10",
+		  "description": "<p>클레릭 10레벨에 도달하면, 당신은 진정 위급할 때 당신의 신에게 도움을 청하며 탄원을 올릴 수 있습니다.</p><p>신의 도움을 요청하기 위해서는 행동을 사용해야 합니다. 당신이 원하는 도움을 이야기한 다음, d100을 굴립니다. d100의 결과가 당신의 클레릭 레벨 이하로 나왔다면, 당신의 신이 그 탄원을 듣고 당신이 원하는 도움을 줄 것입니다. GM은 실제로 발휘되는 간섭의 형태를 결정할 수 있습니다. 간섭으로는 클레릭 주문이나 신에 연관된 권역 주문의 형태가 가장 많이 사용됩니다.</p><p>만약 당신의 신이 도움을 줬다면, 당신은 이후 7일간 다시 이 특성을 사용하지 못합니다. 신의 도움을 받지 못한 경우 긴 휴식을 마치고 나면 다시 이 특성을 사용할 수 있습니다.</p><p>20레벨에 도달하면, 당신이 신에게 도움을 청할 때 주사위 굴림 없이 자동 성공한 것으로 칩니다.</p>"
+		},
+		"Divine Sense": {
+		  "name": "신성한 감각",
+		  "requirements": "팔라딘 1",
+		  "description": "<p>당신은 강한 악이 존재하는 곳에서 마치 스며드는 악취를 맡듯이 악을 느낄 수 있습니다. 또한, 강력한 선이 존재하는 곳에서 당신은 마치 귀에 천상의 음악이 들리듯이 선을 느낄 수 있습니다. 행동을 사용하여 선악의 존재에 오감을 집중할 수 있습니다. 당신의 다음 턴이 끝날 때까지, 당신은 60ft 내에 있는 천상체, 악마, 언데드의 위치를 알 수 있습니다. 단, 완전 엄폐를 제공하는 장애물 뒤에 가려진 크리처는 느낄 수 없습니다. 당신은 감지한 크리처의 종류(천상체, 악마, 언데드)를 파악할 수 있지만, 정확한 정체를 파악하지는 못합니다. (예를 들어, 언데드인 것은 알아도 뱀파이어 백작인 스트라드 폰 자로비치라는 사실은 알 수 없습니다.) 당신은 같은 반경 내에서 @UUID[Compendium.dnd5e.spells.Item.SLxA9QhrggTz0taU]{신성화 Hallow} 주문 등으로 신성하거나 불경하게 변한 물건이나 장소를 파악할 수 있습니다.</p><p>당신은 이 특성을 (1 + 당신의 매력 수정치) 회 사용할 수 있습니다. 긴 휴식을 마치면 소비한 사용 횟수를 모두 회복할 수 있습니다.</p>"
+		},
+		"Divine Smite": {
+		  "name": "신성한 강타",
+		  "requirements": "팔라딘 2",
+		  "description": "<p>팔라딘 2레벨부터, 크리처 하나를 근거리 무기 공격하여 명중했을 때, 주문 슬롯 하나를 소비하면 목표에게 무기 피해에 더해 추가로 광휘 피해를 가할 수 있습니다.</p><p>1레벨 슬롯을 사용한 경우 추가 피해는 2d8점이며, 슬롯이 1레벨 높아질 때마다 피해는 1d8점씩 증가합니다. 최대로 줄 수 있는 피해는 5d8점입니다. 공격한 목표가 언데드나 악마라면 추가로 1d8점의 피해를 가할 수 있습니다.</p>"
+		},
+		"Divine Strike": {
+		  "name": "신성한 일격",
+		  "requirements": "생명 권역 8",
+		  "description": "<p>클레릭 8레벨에, 당신은 무기를 사용한 일격에 신성한 힘을 불어넣는 능력을 얻습니다. 매 턴 1회, 무기 공격을 하여 크리처 하나에 명중했을 때, 당신은 추가로 1d8점의 광휘 피해를 가할 수 있습니다. 이 추가 피해는 14레벨에 2d8점으로 증가합니다.</p><p><em>**Foundry 주: 피해 주사위는 기본값인 1d8으로 설정되어 있으며, 다용도 피해는 2d8입니다.</em></p>"
+		},
+		"Draconic Presence": {
+		  "name": "드래곤의 존재감",
+		  "requirements": "용의 혈통 18",
+		  "description": "<p>소서러 18레벨부터, 당신은 선조룡의 무시무시한 존재감을 드러내 주변을 공포에 빠트리거나 위축시킬 수 있습니다. 행동을 사용함으로써, 술법 점수 5점을 소비해 이 힘을 발휘할 수 있습니다. 발동 시 압도의 오오라와 공포의 오오라 중 하나를 선택하여 반경 60ft 범위에 발산합니다. 이 오오라는 1분 간 지속되며, 그 전이라도 당신이 집중을 중단하면 종료됩니다(집중 주문을 시전할 때 동일). 범위 내의 모든 적대적 크리처는 자기 턴이 시작할 때 지혜 내성을 굴립니다. 압도의 오오라를 사용하는 경우, 내성에 실패하면 매혹 상태가 됩니다. 공포의 오오라를 사용하는 경우, 내성에 실패하면 공포 상태가 됩니다. 이 상태는 오오라가 지속되는 동안 유지됩니다. 오오라에 대한 내성을 성공한 크리처는 이후 24시간 동안 당신의 오오라에 대해 면역을 얻습니다.</p>"
+		},
+		"Draconic Resilience": {
+		  "name": "드래곤의 회복력",
+		  "requirements": "용의 혈통 1",
+		  "description": "<p>당신은 몸속을 흐르는 마력 덕분에 선조룡의 신체적 특징을 이어받을 수 있었습니다. 1레벨 때 당신의 최대 hp가 1점 증가하며, 소서러 레벨이 올라갈 때마다 1점씩 추가로 hp가 늘어납니다.</p><p>또한 당신의 피부는 부분부분 윤기나는 드래곤의 비늘 같은 것으로 얇게 덮여있습니다. 갑옷을 착용하지 않은 경우, 당신의 AC는 13 + 민첩 수정치가 됩니다.</p>"
+		},
+		"Dragon Ancestor": {
+		  "name": "선조룡",
+		  "requirements": "용의 혈통 1",
+		  "description": "<p> 1레벨에 이 기원을 선택하면서 어떤 드래곤이 당신의 선조였는지 선택합니다. 드래곤의 종류에 따라 피해 타입이 달라지며, 이후 클래스 특성에도 영향을 주게 됩니다.</p><h4><strong>선조룡</strong></h4><table style=\"height: 187px; width: 153px;\" border=\"1\"><tbody><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\"><strong>드래곤</strong></td><td style=\"height: 17px; width: 87px;\"><strong>피해 종류</strong></td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">블랙</td><td style=\"height: 17px; width: 87px;\">산성</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">블루</td><td style=\"height: 17px; width: 87px;\">번개</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">브라스</td><td style=\"height: 17px; width: 87px;\">화염</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">브론즈</td><td style=\"height: 17px; width: 87px;\">번개</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">카퍼</td><td style=\"height: 17px; width: 87px;\">산성</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">골드</td><td style=\"height: 17px; width: 87px;\">화염</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">그린</td><td style=\"height: 17px; width: 87px;\">독성</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">레드</td><td style=\"height: 17px; width: 87px;\">화염</td></tr><tr style=\"height: 17px;\"><td style=\"height: 17px; width: 59px;\">실버</td><td style=\"height: 17px; width: 87px;\">냉기</td></tr><tr style=\"height: 17px;\"><td style=\"width: 59px; height: 17px;\">화이트</td><td style=\"width: 87px; height: 17px;\">냉기</td></tr></tbody></table><p>당신은 용언으로 말할 수 있으며, 용언을 읽고 쓸 수 있습니다. 또한 당신이 드래곤과 교섭하며 매력 판정을 할 때는 숙련 보너스를 2배로 적용받게 됩니다.</p>"
+		},
+		"Dragon Wings": {
+		  "name": "드래곤의 날개",
+		  "requirements": "용의 혈통 14",
+		  "description": "<p>소서러 14레벨에, 등에서 드래곤의 날개가 돋아나게 하는 능력을 얻습니다. 날개를 펴면 현재의 속도와 동일한 비행 속도를 얻습니다. 자신의 턴에 추가행동을 사용해 날개를 펼 수 있습니다. 이 날개는 계속 유지되며, 다시 추가행동을 사용해 사라지게 할 수 있습니다.</p><p>날개에 맞추어 제작된 갑옷이 아니라면, 갑옷을 입은 상태에서는 이 능력을 사용할 수 없습니다. 또한 옷 역시 날개에 맞춰 제작된 것이 아니라면 날개를 펼칠 때 옷이 찢어져 파괴될 수 있습니다.</p>"
+		},
+		"Dreadful Word": {
+		  "name": "공포의 언어",
+		  "requirements": "워락 7",
+		  "description": "<p>당신은 워락 주문 슬롯 하나를 소비해 @UUID[Compendium.dnd5e.spells.Item.9hQXdMSmerkTsHDe]{혼란} 주문을 한 번 시전할 수 있습니다. 한 번 사용하면, 긴 휴식을 마쳐야 다시 사용할 수 있습니다.</p>"
+		},
+		"Druid Circle": {
+		  "name": "드루이드 회합",
+		  "requirements": "드루이드 2",
+		  "description": "<p>드루이드 2레벨에, 대지의 회합 등의 회합 중 하나에 가입할 수 있습니다. 선택한 회합의 특성에 따라 2, 6, 10, 14레벨에 새로운 특성을 추가로 얻을 수 있습니다.</p>"
+		},
+		"Druidic": {
+		  "name": "드루이드어",
+		  "requirements": "드루이드 1",
+		  "description": "<p>드루이드의 비밀 언어인 드루이드어를 알고 있습니다. 드루이드어로 말할 수 있으며 숨겨진 메시지를 남길 때 드루이드어를 사용할 수 있습니다. 드루이드어를 아는 사람은 자동적으로 이 메시지를 찾을 수 있습니다. 드루이드어를 모르는 사람은 이 메시지의 존재를 DC 15 지혜 (감지) 판정 성공으로 알아낼 수 있지만, 마법 없이는 이를 해독할 수 없습니다.</p>"
+		},
+		"Dueling": {
+		  "name": "결투술",
+		  "requirements": "파이터 1, 챔피언 10, 팔라딘 2, 레인저 2",
+		  "description": "<p>한 손에 근접 무기를 들고 다른 손에 무기를 들지 않았다면, 그 무기의 피해 굴림에 +2 보너스를 줍니다.</p>"
+		},
+		"Eldritch Invocations": {
+		  "name": "섬뜩한 영창",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 신비한 전승을 배우는 과정을 통해 기이한 마법적 능력을 부여해 주는 금단의 지식인 섬뜩한 영창을 얻게 됩니다.</p><p>2레벨 때 섬뜩한 영창 2가지를 선택해 배울 수 있습니다. 당신이 선택 가능한 영창 목록은 클래스 상세 설명에 수록되어 있습니다. 당신이 워락 레벨을 올리면, 워락 표에 나와 있는 대로 더 많은 영창을 배울 수 있습니다.</p><p> 또한 당신은 워락 레벨을 올릴 때마다 자신이 이미 알고 있는 섬뜩한 영창 중의 하나를 해당 레벨에서 배울 수 있는 다른 영창으로 교체할 수 있습니다.</p><h5>섬뜩한 영창</h5><p>요구사항이 있는 항목은 해당 사항을 만족시켜야 배울 수 있다는 뜻입니다. 요구사항을 만족시키면 그와 동시에 영창을 배울 수 있습니다. 요구사항에 표기된 레벨은 워락 클래스 레벨입니다.</p><table><caption>섬뜩한 영창</caption><thead><tr><td colspan=\"2\">요구사항</td><td rowspan=\"2\">영창</td></tr><tr><td>클래스 레벨</td><td>기타</td></tr></thead><tbody><tr><td rowspan=\"16\">2nd</td><td>@UUID[Compendium.dnd5e.spells.Item.Z9p1vezIn95jw1Yw]{섬뜩한 방출 Eldritch Blast}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.2fyuw7MiCnocDeAU]{Agonizing Blast}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.alUqO6c6OEKFQJdb]{Armor of Shadows}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.61kXR1sniXHjvN17]{Beast Speech}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.eNvpIaSnJUdF8fHl]{Beguiling Influence}</td></tr><tr><td>@UUID[Compendium.dnd5e.classfeatures.Item.MYM908WLZ1lVvA1u]{고서의 계약 Pact of the Tome}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.CFIYXDmbmSP8BXjN]{Book of Ancient Secrets}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.3sN91lT1R3oxcDKd]{Devil's Sight}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.bbUEsCPTLzbbwK6o]{Eldritch Sight}</td></tr><tr><td>@UUID[Compendium.dnd5e.spells.Item.Z9p1vezIn95jw1Yw]{섬뜩한 방출 Eldritch Blast}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.r01WtcxTg4yTHm9m]{Eldritch Spear}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.lEZKbWaVrSljRa9n]{Eyes of the Rune Keeper}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.id0gmGvzNZBEdzbx]{Fiendish Vigor}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.65ReXU4ZWqcSs3Cm]{Gaze of Two Minds}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.MhJfdBl1B7PdU4oZ]{Mask of Many Faces}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.k5DU0mMuYVHejiqz]{Misty Visions}</td></tr><tr><td>@UUID[Compendium.dnd5e.spells.Item.Z9p1vezIn95jw1Yw]{섬뜩한 방출 Eldritch Blast}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.rdBPd6CwqXT64iJM]{Repelling Blast}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.rhbwDZ9XNTmdkX2u]{다섯 숙명의 도둑 Thief of Five Fates}</td></tr><tr><td>@UUID[Compendium.dnd5e.classfeatures.Item.Ic1CSjvbWKudVUv9]{사슬의 계약 Pact of the Chain}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.k5M8gsl7MMcdjOjs]{Voice of the Chain Master}</td></tr><tr><td rowspan=\"4\">5th</td><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.DjXi0IkCTbJx1gsp]{Mire the Mind}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.KfnUyjUWAk0bAAus]{One With Shadows}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.dTSV0xZMpY5CxkRk]{Sign of Ill Omen}</td></tr><tr><td>@UUID[Compendium.dnd5e.classfeatures.Item.9dSSa68mIPoX2ezA]{칼날의 계약 Pact of the Blade}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.pJADgAxxefgcATWr]{Thirsting Blade}</td></tr><tr><td rowspan=\"3\">7th</td><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.KygHql3cTj4IRrvZ]{Bewitching Whispers}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.QBk1RsuTIEF4GEBC]{Dreadful Word}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.Xa2MLUJGCReJ28B7]{Sculptor of Flesh}</td></tr><tr><td rowspan=\"4\">9th</td><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.QEuH5TeBN4PPYT2g]{Ascendant Step}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.QnRKYXb2bXpnNd2k]{Minions of Chaos}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.8zciiglzEOZo7DDN]{Otherwordly Leap}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.gFjxo01hAN4c9hDG]{Whispers of the Grave}</td></tr><tr><td>12th</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.9dSSa68mIPoX2ezA]{칼날의 계약 Pact of the Blade}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.zUIAzBnyt0NDvVXb]{Life Drinker}</td></tr><tr><td rowspan=\"4\">15th</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.Ic1CSjvbWKudVUv9]{사슬의 계약 Pact of the Chain}</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.Phy02H5x0TKHd7T3]{Chains of Carceri}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.lxfdjLer3uKjyZqU]{Master of Myriad Forms}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.zYIdNAjqRyhS6qWs]{Visions of Distant Realms}</td></tr><tr><td> </td><td>@UUID[Compendium.dnd5e.classfeatures.Item.snsjxGfmzWfZR5Nh]{Witch Sight}</td></tr></tbody></table><section class=\"secret foundry-note\"><p><strong>파운드리 노트</strong></p><p>원하는 항목을 캐릭터 시트에 드래그하면 자동으로 적용됩니다.</p></section>"
+		},
+		"Eldritch Master": {
+		  "name": "섬뜩한 주인",
+		  "requirements": "워락 20",
+		  "description": "<p>워락 20레벨에 도달하면, 후견자에게 청원하면서 내면의 신비한 힘을 끌어내 소비한 주문 슬롯을 회복할 수 있습니다. 이렇게 계약 마법 슬롯을 모두 회복하려면 1분간 후견자에게 청원을 해야 합니다. 일단 한 번 주문 슬롯을 이렇게 회복했다면 긴 휴식을 마쳐야 다시 이 특성을 사용할 수 있습니다.</p>"
+		},
+		"Eldritch Sight": {
+		  "name": "섬뜩한 시야",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 쓰지 않고도 원하는 때에 @UUID[Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8]{마법 탐지} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Eldritch Spear": {
+		  "name": "섬뜩한 창",
+		  "requirements": "워락 2, 섬뜩한 방출",
+		  "description": "<p>@UUID[Compendium.dnd5e.spells.Item.Z9p1vezIn95jw1Yw]{섬뜩한 방출 Eldritch Blast} 을 시전할 때, 사거리가 300ft가 됩니다.</p>"
+		},
+		"Elemental Affinity": {
+		  "name": "원소 친화성",
+		  "requirements": "용의 혈통 6",
+		  "description": "<p>소서러 6레벨에 도달하면, 당신은 선조룡에 연관된 피해를 가하는 주문을 시전할 때, 피해 주사위 중 하나에 당신의 매력 수정치를 더할 수 있습니다. 또 당신은 술법 점수 1점을 소비해 1시간 동안 해당 피해 종류에 대해 내성을 얻을 수 있습니다.</p>"
+		},
+		"Elusive": {
+		  "name": "회피본능",
+		  "requirements": "로그 18",
+		  "description": "<p>로그 18레벨부터, 당신의 몸놀림은 너무나 교묘해서 공격자들이 거의 우위를 점할 수 없습니다. 행동불능 상태가 아닌 한, 당신에게 가해지는 공격은 명중 굴림에 유리함을 받을 수 없습니다.</p>"
+		},
+		"Empowered Evocation": {
+		  "name": "강화된 방출",
+		  "requirements": "방출학파 10",
+		  "description": "<p>위저드 10레벨부터, 당신은 방출계 위저드 주문을 시전할 때마다 피해 굴림 중 하나에 당신의 지능 수정치를 더할 수 있습니다.</p>"
+		},
+		"Empowered Spell": {
+		  "name": "주문 강력화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신이 주문의 피해 주사위를 굴릴 때, 술법 점수 1점을 소비해 최대 당신의 매력 수정치와 같은 개수만큼(최소 1개) 주사위를 한 번씩 다시 굴릴 수 있습니다. 단, 이때 반드시 새로 나온 주사위 값을 사용해야 합니다.</p><p>주문 강력화는 이미 다른 마법 변형을 적용한 주문에 대해서도 사용할 수 있습니다.</p>"
+		},
+		"Empty Body": {
+		  "name": "허공체",
+		  "requirements": "몽크 18",
+		  "description": "<p>18레벨부터 행동을 사용하여 기4점을 소비하면, 1분간 투명 상태가 됩니다. 이렇게 투명해진 동안, 당신은 역장 피해를 제외한 모든 피해에 저항을 얻습니다.</p><p>또한 당신은 기 8점을 소비해 @UUID[Compendium.dnd5e.spells.Item.TIoadMIsUKD4edXi]{아스트랄체 투영 Astral Projection} 주문을 시전할 수 있으며, 이 때 물질 구성 요소는 사용하지 않습니다. 단, 이 방식으로 주문을 시전할 때는 다른 크리처들을 데려갈 수 없습니다.</p>"
+		},
+		"Escape the Horde": {
+		  "name": "무리 탈출",
+		  "requirements": "헌터 7",
+		  "description": "<p>당신에 대한 모든 기회 공격에 불리함이 붙습니다.</p>"
+		},
+		"Evasion": {
+		  "name": "회피기동",
+		  "requirements": "헌터 15",
+		  "description": "<p>레드 드래곤의 화염 숨결이나 번개 주문 등과 같이 민첩 내성에 성공하면 절반의 피해를 입는 효과의 대상이 되었을 때, 절반의 피해 대신 아예 피해를 입지 않게 됩니다. 또한, 내성에 실패해도 절반의 피해만 받게 됩니다.</p>"
+		},
+		"Evocation Savant": {
+		  "name": "방출계 전공",
+		  "requirements": "방출학파 2",
+		  "description": "<p>위저드 2레벨부터, 당신은 방출계 주문을 자신의 주문책에 옮겨적을 때 드는 시간과 비용이 절반이 됩니다.</p>"
+		},
+		"Expanded Spell List": {
+		  "name": "확장된 주문 목록",
+		  "requirements": "악마 1",
+		  "description": "<p>워락 주문을 습득할 때, 악마는 확장된 주문 목록 중에서 당신이 주문을 고를 수 있도록 허합니다. 아래 주문이 워락 주문 목록에 추가됩니다.</p><table border=\\\"1\\\"><tbody><tr><td style=\\\"width: 57px;\\\"><strong>주문 레벨</strong></td><td style=\\\"width: 339px;\\\"><strong>주문</strong></td></tr><tr><td style=\\\"width: 57px;\\\">1레벨</td><td style=\\\"width: 339px;\\\">@UUID[Compendium.dnd5e.spells.Item.5SuJewoa1CRWaj1F]{타오르는 손}, @UUID[Compendium.dnd5e.spells.Item.arzCrMRgcNiQuh43]{명령}</td></tr><tr><td style=\\\"width: 57px;\\\">2레벨</td><td style=\\\"width: 339px;\\\">@UUID[Compendium.dnd5e.spells.Item.zwGsAv6kmwzYGhh3]{시각/청각 박탈}, @UUID[Compendium.dnd5e.spells.Item.7u2obDvuvtZBkTfq]{타오르는 광선}</td></tr><tr><td style=\\\"width: 57px;\\\">3레벨</td><td style=\\\"width: 339px;\\\">@UUID[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0]{화염구}, @UUID[Compendium.dnd5e.spells.Item.TwlD4PLcltv7Xh7j]{악취 구름}</td></tr><tr><td style=\\\"width: 57px;\\\">4레벨</td><td style=\\\"width: 339px;\\\">@UUID[Compendium.dnd5e.spells.Item.avD5XUtkBPQQR97c]{화염 방패}, @UUID[Compendium.dnd5e.spells.Item.X3DrXgxjwI2dvkD6]{화염 장벽}</td></tr><tr><td style=\\\"width: 57px;\\\">5레벨</td><td style=\\\"width: 339px;\\\">@UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{화염 직격}, @UUID[Compendium.dnd5e.spells.Item.SLxA9QhrggTz0taU]{신성화}</td></tr></tbody></table>"
+		},
+		"Expertise": {
+		  "name": "전문분야",
+		  "requirements": "바드 3",
+		  "description": "<p>3레벨에, 숙련된 기술 2개를 선택합니다. 그 기술을 사용하는 능력 판정 시 숙련 보너스를 두 배로 적용합니다. 바드 10레벨에, 당신은 선택한 것 이외의 숙련된 기술 2개를 추가로 선택할 수 있습니다.</p>"
+		},
+		"Extended Spell": {
+		  "name": "주문 연장화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 지속시간 1분 이상의 주문을 시전할 때, 술법 점수 1점을 소비해 지속시간을 2배로 늘릴 수 있습니다. 단, 24시간 이상으로 지속시간을 늘릴 수는 없습니다.</p>"
+		},
+		"Extra Attack": {
+		  "name": "추가 공격",
+		  "requirements": "파이터 5",
+		  "description": "<p>당신은 자기 턴에 공격 행동을 할 때마다 공격을 두 번씩 할 수 있습니다.</p><p>가할 수 있는 공격 횟수는 파이터 11레벨에 3번, 20레벨에 4번으로 늘어납니다.</p>"
+		},
+		"Eyes of the Rune Keeper": {
+		  "name": "룬 수호자의 눈",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 모든 글을 읽을 수 있습니다.</p>"
+		},
+		"Fast Hands": {
+		  "name": "빠른 손놀림",
+		  "requirements": "시프 3",
+		  "description": "<p>로그 3레벨 때부터 @UUID[Compendium.dnd5e.classfeatures.Item.01pcLg6PRu5zGrsb]{교활한 행동} 특성을 통해 사용하는 추가 행동으로 민첩(손놀림) 판정, 도둑 도구를 사용한 함정을 해제 또는 자물쇠 따기, 물건을 사용하는 등의 행동도 취할 수 있습니다.</p>"
+		},
+		"Fast Movement": {
+		  "name": "빠른 이동",
+		  "requirements": "바바리안 5",
+		  "description": "<p>중장갑을 착용하지 않은 상태일 때, 속도가 10ft 증가합니다.</p>"
+		},
+		"Favored Enemy": {
+		  "name": "선호하는 적",
+		  "requirements": "레인저 1",
+		  "description": "<p>레인저 1레벨부터, 특정한 종류의 적에 대해 공부하고, 추적하고, 심지어는 대화까지 해본, 중대한 경험이 있습니다. </p><p>기괴체, 야수, 천상체, 구조물, 용족, 원소, 요정, 악마, 거인, 괴물류, 점액류, 식물, 언데드 중 한 가지 종류를 정해 선호하는 적으로 정합니다. 혹은 인간형 크리처 종족 둘(예를 들자면 놀과 오크 등)을 정해 선호하는 적으로 삼을 수도 있습니다.</p><p>선호하는 적을 추적할 때 지혜(생존) 판정에 유리함을 받으며, 그러한 적들에 대한 정보를 떠올리기 위한 지능 판정에도 유리함을 받습니다.</p><p>선호하는 적으로 선택한 종족이 대화를 나눌 수 있는 능력을 지니고 있다면, 이 특성을 얻을 때 적이 사용하는 언어 한 가지도 배우게 됩니다.</p><p>6레벨과 14레벨에 각각 추가로 한 종류씩 선호하는 적을 선택할 수 있으며, 이때 새로운 언어도 하나씩 배울 수 있습니다. 새로이 선호하는 적을 고를 때는 반드시 지금까지의 모험에서 마주친 몬스터의 종류를 반영해야 합니다.</p><section class=\"secret foundry-note\" id=\"secret-2vKbF8oen9AQiV1L\"><p><strong>파운드리 노트</strong></p><p>원한다면 다음 내용을 직접 수정해 선택한 적의 종류를 기재해도 좋습니다:</p><ul><li><em>1레벨</em></li></li><em>6레벨</em></li></li><em>14레벨</em></li></ul></section>"
+		},
+		"Feral Instinct": {
+		  "name": "야생의 본능",
+		  "requirements": "바바리안 7",
+		  "description": "<p>바바리안 7레벨에, 당신의 본능은 더욱 예리해져 우선권 판정에 유리함을 받을 수 있습니다.</p><p>또한, 전투가 시작될 때 행동불능 상태가 아니었는데 기습을 당했다면, 첫 번째 턴에 정상적으로 행동할 수 있습니다. 다만, 그 턴에는 우선 격노에 들어가야 다른 행동을 할 수 있습니다.</p>"
+		},
+		"Feral Senses": {
+		  "name": "야생 감각",
+		  "requirements": "레인저 18",
+		  "description": "<p>레인저 18레벨에, 당신은 보이지 않는 적과 싸울 때 유용한 초자연적 감각을 얻게 됩니다. 당신은 보이지 않는 크리처를 공격할 때 명중 굴림에 불리함을 받지 않습니다.</p><p>또한, 주변 30ft 내에 보이지 않는 크리처가 있다면, 당신은 그 위치를 파악할 수 있습니다. 단, 은신한 적도 자동 발견하는 것은 아닙니다. 실명이나 실청 상태가 아니어야 합니다.</p>"
+		},
+		"Fiendish Resilience": {
+		  "name": "악마의 회복력",
+		  "requirements": "악마 10",
+		  "description": "<p>악마 10레벨부터, 짧은 휴식이나 긴 휴식을 마칠 때마다 한 가지 속성의 피해를 선택해 그 피해에 대한 저항을 얻을 수 있습니다. 얻은 저항은 이 특성을 이용해 다른 종류의 피해를 선택할 때까지 유지됩니다. 마법 무기나 은제 무기를 이용한 피해는 이 저항을 무시합니다.</p>"
+		},
+		"Fiendish Vigor": {
+		  "name": "악마의 활력",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 소비 없이 언제든 @UUID[Compendium.dnd5e.spells.Item.7e3QXF10hLNDEdr6]{거짓된 생명} 주문을 1레벨로 자신에게 시전할 수 있습니다.</p>"
+		},
+		"Fighting Style": {
+		  "name": "전투 유파",
+		  "requirements": "레인저 2",
+		  "description": "<p>전투 유파 한 가지를 자신의 전문분야로 삼을 수 있습니다. 아래 선택지 중 하나를 선택하십시오. 이후 다시 전투 유파를 선택하게 된다 해도, 이전에 선택한 유파를 다시 고를 수는 없습니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.8YwPFv3UAPjWVDNf]{궁술}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.zSlV0O2rQMdoq6pB]{방어술}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.hCop9uJrWhF1QPb4]{결투술}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.mHcSjcHJ8oZu3hkb]{쌍수 전투술}</p>"
+		},
+		"Flurry of Blows": {
+		  "name": "질풍타",
+		  "requirements": "몽크 2",
+		  "description": "<p>당신은 자기 턴에 공격 행동을 한 직후, 기 1점을 소비해 추가 행동으로 비무장 공격을 2회 가할 수 있습니다.</p>"
+		},
+		"Foe Slayer": {
+		  "name": "적 학살자",
+		  "requirements": "레인저 20",
+		  "description": "<p>레인저 20레벨에, 당신은 선호하는 적을 사냥할 때, 그 누구도 따라올 수 없는 실력의 사냥꾼이 됩니다. 당신은 자기 턴마다 한 번씩, 선호하는 적 하나에 대한 명중 굴림이나 피해 굴림에 자신의 지혜 수정치를 더할 수 있습니다. 당신은 주사위 굴림 전과 후 모두에 이 능력을 사용한다고 선언할 수 있지만, 굴림이 적용되어 효과가 나타난 후에는 사용 선언을 할 수 없습니다.</p>"
+		},
+		"Font of Inspiration": {
+		  "name": "고양감의 샘",
+		  "requirements": "바드 5",
+		  "description": "<p>5레벨부터, 사용한 @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{바드의 고양감} 은 긴 휴식 뿐만 아니라 짧은 휴식을 마칠 때에도 회복합니다. </p><section class=\"secret foundry-note\" id=\"secret-2Ixwv0urEA2kot3D\"><strong>파운드리 노트</strong><p><p>파운드리에서는 바드의 고양감이 긴 휴식 시 회복으로  기본 설정되어 있는 점에 주의할 것. 5레벨부터는 짧은 휴식 시 회복으로 변경하세요.</p></section>"
+		},
+		"Font of Magic": {
+		  "name": "마법의 샘",
+		  "requirements": "소서러 2",
+		  "description": "<p>소서러 2레벨에 도달하면, 내면 깊은 곳에 존재하는 마력의 샘에서 힘을 끌어올 수 있습니다. 이 샘의 힘은 술법 점수로 나타나며, 이 점수를 이용하면 다양한 마법적 효과를 일으킬 수 있습니다.</p><h4><strong>술법 점수 Sorcery Points</strong></h4><p>당신은 술법 점수 2점을 얻습니다. 소서러 레벨이 올라갈수록, 점점 더 많은 술법 점수를 지닐 수 있습니다. 지닐 수 있는 술법 점수는 소서러 레벨과 같습니다. 4레벨 소서러는 술법 점수 4점을 가지며, 16레벨 소서러는 술법 점수 16점을 가집니다. 자기 레벨 이상으로 술법 점수를 축적할 수 없습니다. 당신이 소비한 술법 점수는 긴 휴식을 마칠 때 모두 회복됩니다.</p><h4><strong>유연한 주문시전 Flexible Casting</strong></h4><p>당신은 술법 점수를 소비해 추가 주문 슬롯을 얻거나, 주문 슬롯을 소비해 추가 술법 점수를 얻을 수 있습니다. 소서러 레벨이 올라가면 술법 점수를 사용하는 다른 방법들도 배울 수 있습니다.</p><p><em><strong>주문 슬롯 만들기.</strong></em><em>&nbsp;</em>자기 턴에 추가 행동을 사용하고 술법 점수를 소비해 주문 슬롯을 하나 만들어 낼 수 있습니다. 주문 슬롯 생성 표를 참조하면 만들고자 하는 주문 슬롯의 레벨에 따라 얼마나 많은 술법 점수를 소비해야 하는지 알 수 있습니다. 6레벨 이상의 주문 슬롯은 술법 점수로 만들 수 없습니다.</p><p>술법 점수로 얻은 추가 주문 슬롯은 긴 휴식을 마칠 때 그대로 사라집니다.</p><h4><strong>주문 슬롯 생성</strong></h4><table style=\"width: 233px;\" border=\"1\"><tbody><tr><td style=\"width: 106px;\">주문 슬롯 레벨</td><td style=\"width: 120px;\"><strong>술법 점수 비용</strong></td></tr><tr><td style=\"width: 106px;\">1레벨</td><td style=\"width: 120px;\">2</td></tr><tr><td style=\"width: 106px;\">2레벨</td><td style=\"width: 120px;\">3</td></tr><tr><td style=\"width: 106px;\">3레벨</td><td style=\"width: 120px;\">5</td></tr><tr><td style=\"width: 106px;\">4레벨</td><td style=\"width: 120px;\">6</td></tr><tr><td style=\"width: 106px;\">5레벨</td><td style=\"width: 120px;\">7</td></tr></tbody></table><p><em><strong>주문 슬롯을 술법 점수로 변환.</strong></em> 당신은 자기 턴에 추가 행동을 사용하여 주문 슬롯을 소비하고, 그렇게 소비한 주문 슬롯의 레벨만큼 술법 점수를 얻을 수 있습니다.</p><section class=\"secret foundry-note\" id=\"secret-6nrlbnZxIbKqf5Ul\"><p><strong>파운드리 노트</strong></p><p>다양한 술법 점수 사용 횟수를 기록을 위해 이 항목을 사용하십시오.</p></section>"
+		},
+		"Frenzy": {
+		  "name": "광분",
+		  "requirements": "광전사의 길 3",
+		  "description": "<p>3레벨에 이 원시의 길을 선택할 때부터, @UUID[Compendium.dnd5e.classfeatures.Item.VoR0SUrNX5EJVPIO]{격노}에 들어설 때마다 아예 광분에 빠지는 것을 선택할 수 있습니다. 광분에 빠지게 되면, 격노가 지속되는 동안 매번 자기 턴에 추가 행동으로 근접 무기 공격을 1회 가할 수 있습니다. 단, 격노가 끝나면 탈진 1단계를 얻게 됩니다(부록 A 참조).</p>"
+		},
+		"Gaze of Two Minds": {
+		  "name": "두 마음의 시선",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 행동을 사용해서 자발적으로 효과를 받고자 하는 인간형 생물에 접촉해 다음 턴이 끝날 때까지 그 크리처의 감각을 통해 느낄 수 있게 됩니다. 이 효과는 당신과 해당 크리처가 같은 세계 내에 있다면, 당신은 자기 턴이 될 때마다 계속 행동을 사용하여 이 감각 연결을 유지할 수 있습니다. 행동을 사용할 때마다 지속시간은 다음 턴이 끝날 때까지로 연장됩니다. 다른 크리처의 감각을 이용하고 있는 동안 당신은 그 크리처가 지닌 특수 감각을 이용할 수 있으며, 당신 자신은 실명 및 실청 상태가 되어 주변 환경을 인지하지 못합니다.</p>"
+		},
+		"Giant Killer": {
+		  "name": "거체 살해자",
+		  "requirements": "헌터 3",
+		  "description": "<p>대형 이상 크기의 크리처가 당신의 주변 5ft 내에서 당신을 공격해 명중하거나 빗나갔을 때, 반응행동을 사용하여 즉시 상대에게 공격을 가할 수 있습니다. 단, 이때 공격해 온 적을 볼 수 있어야만 합니다.</p>"
+		},
+		"Grappler": {
+		  "name": "그래플러",
+		  "requirements": "근력 13 이상",
+		  "description": "<p><em>전제조건: 근력 13이상</em></p><p>당신은 인접한 적을 붙잡아가며 싸우는 기술을 익혔습니다. 아래와 같은 이점을 얻습니다.</p><ul><li>당신은 자신이 속박하고 있는 크리처에 대한 명중 굴림에 유리함을 얻습니다.</li><li>당신은 행동을 사용하여 속박한 상대를 고정시킬 수 있습니다. 고정시키려면 속박 판정을 한 번 더 해야 합니다. 그 판정에 성공하면, 당신과 속박한 크리처 모두는 속박 상태가 끝날 때까지 포박 상태가 됩니다.</li></ul>"
+		},
+		"Great Weapon Fighting": {
+		  "name": "대형 무기 전투술",
+		  "requirements": "파이터 1, 챔피언 10, 팔라딘 2",
+		  "description": "<p>당신이 양손으로 잡아야 하는 근접 무기를 사용해 공격할 때, 무기 피해 굴림 주사위에서 1이나 2가 나왔다면 그 주사위를 재굴림할 수 있습니다. 단, 반드시 재굴림 결과를 사용해야 합니다. 재굴림해서 또 1이나 2가 나왔다 해도 그대로 그 결과를 사용합니다. 양손 속성이나 다용도 속성이 있는 무기를 사용할 때에만 이 효과가 적용됩니다.</p>"
+		},
+		"Heightened Spell": {
+		  "name": "주문 상승화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 내성 굴림으로 효과에 저항할 수 있는 주문을 시전할 때, 술법 점수 3점을 소비해 주문의 목표 중 하나를 선택합니다. 이 목표는 주문에 대한 첫 번째 내성 굴림에 불리함을 받습니다.</p>"
+		},
+		"Hide in Plain Sight": {
+		  "name": "눈앞에서 사라지기",
+		  "requirements": "레인저 10",
+		  "description": "<p>레인저 10레벨에 도달하면 1분의 시간을 들여 자신의 모습을 위장할 수 있습니다. 위장을 하려면 주변에 흙이나 점토, 나뭇가지, 그을음 등의 자연적 재료가 있어야 합니다.</p><p>일단 이런 방식으로 위장하고 나면 나무나 벽 등 당신보다 큰 고체 표면이나 물체에 몸을 바싹 붙여 은신을 시도할 수 있습니다. 이렇게 위장한 상태로 움직이거나 행동하지 않고 있을 때, 민첩(은신) 판정에 +10 보너스를 받습니다. 일단 움직이거나 행동 또는 반응행동을 사용한 경우, 다시 시간을 들여 위장을 해야만 이 효과를 또 받을 수 있습니다.</p>"
+		},
+		"Holy Nimbus": {
+		  "name": "신성한 후광",
+		  "requirements": "헌신의 맹세 20",
+		  "description": "<p>팔라딘 20레벨에 도달하면, 행동을 사용하여 태양광 오라를 방출할 수 있습니다. 이후 1분간, 팔라딘의 주변 30ft까지는 밝은 빛, 추가로 30ft까지는 약한 빛 환경이 됩니다.</p><p>적대적 크리처는 이 밝은 빛의 범위 안에서 자신의 턴을 시작할 때마다 10점의 광휘 피해를 받습니다.</p><p>또한, 이 빛이 지속되는 동안 사용자는 악마나 언데드의 주문에 대한 내성 굴림에 유리함을 받습니다.</p><p>이 특성을 한번 사용했다면, 긴 휴식을 마칠 때까지는 다시 이 특성을 사용할 수 없습니다.</p>"
+		},
+		"Horde Breaker": {
+		  "name": "무리 파쇄자",
+		  "requirements": "헌터 3",
+		  "description": "<p>매 턴 한 번씩 무기 공격을 가할 때, 같은 무기를 사용해 기존 목표의 주변 5ft 내의, 무기의 사거리에 있는 다른 크리처 하나에게도 같은 공격을 한 번 할 수 있습니다.</p>"
+		},
+		"Hunter's Prey": {
+		  "name": "헌터의 사냥감",
+		  "requirements": "헌터 3",
+		  "description": "<p>3레벨이 되면 원하는 특성 한 개를 골라 습득합니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.5gx1O0sxK08awEO9]{거체 학살자}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.StfmqK1twVfukpa0]{거체 살해자}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.C6sHdDGmCMo0cYHd]{무리 파쇄자}</p><p>고른 것을 캐릭터 시트 위로 드래그하면 자동으로 반영됩니다. </p>"
+		},
+		"Hurl Through Hell": {
+		  "name": "지옥 떨구기",
+		  "requirements": "악마 14",
+		  "description": "<p>워락 14레벨에 도달하면, 어떤 크리처를 공격하여 명중시켰을 때 이 특성을 사용해 즉시 목표를 하계로 던져버릴 수 있습니다. 이 크리처는 즉시 사라져 악몽 같은 공간으로 날아갑니다.</p><p>목표는 워락의 다음 턴이 끝날 때 자신이 사라졌던 자리에 나타납니다. 만약 그 자리가 점유되었다면, 가장 가까운 점유되지 않은 자리에 나타날 것입니다. 목표가 악마가 아니었다면, 지옥에서의 끔찍한 경험으로 인해 10d10점의 정신 피해를 받습니다.</p><p>이 특성을 한 번 사용했다면, 긴 휴식을 마쳐야 다시 사용할 수 있습니다.</p>"
+		},
+		"Improved Critical": {
+		  "name": "향상된 치명타",
+		  "requirements": "챔피언 3",
+		  "description": "<p>무기 공격은 공격 굴림 주사위에서 19-20이 나왔을 때 치명타를 가하게 됩니다.</p>"
+		},
+		"Improved Divine Smite": {
+		  "name": "향상된 신성한 강타",
+		  "requirements": "팔라딘 11",
+		  "description": "<p>11레벨에 도달하면, 정의의 힘이 충만해지며 팔라딘이 가하는 모든 근접 무기 공격에 신성한 힘이 깃들게 됩니다. 팔라딘이 근접 무기로 다른 크리처를 공격해 명중시킬 때마다, 해당 크리처는 추가로 1d8점의 광휘 피해를 받습니다. 만약 공격하면서 @UUID[Compendium.dnd5e.classfeatures.Item.ySMPQ6zNSlvkrl2f]{신성한 강타}를 사용했다면, 신성한 강타의 추가 피해에 이 피해가 더해집니다.</p>"
+		},
+		"Indomitable": {
+		  "name": "불요불굴",
+		  "requirements": "파이터 9",
+		  "description": "<p>당신은 실패한 내성 굴림을 다시 한 번 굴릴 수 있습니다. 이 효과로 재굴림 시 무조건 새로 나온 결과를 사용해야 하며, 한번 사용하면 긴 휴식을 마친 후 다시 사용할 수 있습니다.</p><p>13레벨부터 휴식 사이에 이 특성을 2번 사용할 수 있게 되며, 17레벨에 도달하면 3번 사용할 수 있게 됩니다.</p>"
+		},
+		"Indomitable Might": {
+		  "name": "불굴의 힘",
+		  "requirements": "바바리안 18",
+		  "description": "<p>바바리안 18레벨에 도달하면 본인의 근력 판정 결과가 자신의 근력 점수보다 낮을 경우, 대신 근력 점수를 판정 결과로 사용할 수 있습니다.</p>"
+		},
+		"Intimidating Presence": {
+		  "name": "위협적 존재감",
+		  "requirements": "광전사의 길 10",
+		  "description": "<p>바바리안 10레벨 때부터, 당신은 행동을 사용해 적들에게 위협적으로 보이는 능력을 얻습니다. 주변 30ft 내에서 당신이 볼 수 있는 크리처 하나를 목표로 정합니다. 목표 역시 당신을 보거나 들을 수 있다면 지혜 내성을 굴려야 합니다. (DC는 8 + 당신의 숙련 보너스 + 당신의 매력 수정치입니다) 내성에 실패할 시, 목표는 당신의 다음 턴이 끝날 때까지 당신에 대하여 공포 상태가 됩니다. 당신의 다음 턴에도 행동을 사용한다면 목표의 공포 상태를 다시 다음 턴이 끝날 때까지로 연장할 수 있습니다.</p><p>목표가 당신이 보이지 않는 곳까지 도망가거나, 당신에게서 60ft 이상 떨어진 장소에서 턴을 종료한 경우 효과는 종료됩니다.</p><p>목표가 내성에 성공한 경우, 당신은 이후 24시간 동안 해당 목표에게 이 특성을 사용할 수 없습니다.</p>"
+		},
+		"Jack of All Trades": {
+		  "name": "팔방미인",
+		  "requirements": "바드 2",
+		  "description": "<p>바드 2레벨부터, 숙련 보너스를 받지 않는 모든 능력 판정에 자신의 숙련 보너스 절반(나머지 버림)을 더할 수 있습니다.</p>"
+		},
+		"Ki": {
+		  "name": "기",
+		  "requirements": "몽크 2",
+		  "description": "<p>몽크 2레벨부터, 수련을 거듭한 끝에 신비한 기의 힘을 다룰 수 있게 됩니다. 기를 얼마나 잘 다룰 수 있는가는 당신이 보유한 기 포인트로 나타납니다. 보유할 수 있는 기 포인트는 자신의 몽크 레벨과 같습니다. 2레벨 몽크는 2점의 기 포인트가 있으며, 16레벨 몽크는 16점의 기 포인트가 있습니다.</p><p>당신은 기 포인트를 소비해 다양한 기 특성을 사용할 수 있습니다. 처음에는 다음과 같은 3가지 특성을 습득합니다. : @UUID[Compendium.dnd5e.classfeatures.Item.5MwNlVZK7m6VolOH]{기 : 연타}, @UUID[Compendium.dnd5e.classfeatures.Item.TDglPcxIVEzvVSgK]{기: 인내의 방어}, @UUID[Compendium.dnd5e.classfeatures.Item.yrSFIGTaQOH2PFRI]{기: 바람 걸음}. 몽크 클래스의 레벨이 높아지면 더 다양한 기 특성을 배울 수 있게 될 것입니다.</p><p>한번 소비한 점수는 휴식을 취하기 전까지 쓸 수 없으며, 짧은 휴식이나 긴 휴식을 마칠 때 소비한 기 점수를 모두 회복할 수 있습니다. 단, 기 점수를 회복하려면 최소 30분 정도 휴식하며 명상을 취해야만 합니다.</p><p>기 특성 중 몇 가지는 목표에게 내성 굴림을 허용하기도 합니다. 이런 경우, 내성 굴림의 DC는 아래와 같습니다.</p><p><em><strong>기 내성 DC</strong> = 8 + 당신의 숙련 보너스 + 당신의 지혜 수정치</em></p><section class=\"secret foundry-note\" id=\"secret-gGH32momMmy9KjV3\"><p><strong>파운드리 노트</strong></p><p>기 사용횟수를 기록하기 위해 이 항목을 사용하십시오.</p></section>"
+		},
+		"Ki-Empowered Strikes": {
+		  "name": "강기 일격",
+		  "requirements": "몽크 6",
+		  "description": "<p>몽크 6레벨부터, 당신의 비무장 공격이 비마법적 공격과 피해에 대한 저항이나 면역으로 인해 저지되었을 경우, 마법 무기로 취급해 돌파할 수 있습니다.</p>"
+		},
+		"Ki: Quivering Palm": {
+		  "name": "기: 진동장",
+		  "requirements": "열린 손의 길 17",
+		  "description": "<p>몽크 17레벨에 도달하면, 당신은 상대의 몸에 치명적인 진동을 가할 수 있습니다. 당신이 비무장 공격으로 적을 명중시켰다면, 기 점수 3점을 소비해 감지 불가능한 진동을 가할 수 있습니다. 이 진동은 당신의 몽크 1레벨당 하루씩 지속됩니다. 이 진동은 당신이 행동을 사용해 종료시키기 전까지는 아무 해도 끼치지 않습니다. 당신이 진동을 정지시키려면, 당신은 목표와 같은 세계에 있어야 합니다. 당신이 행동을 사용해 진동을 정지시킨다면, 목표는 건강 내성을 굴려야 합니다. 목표가 내성에 실패하면 hp가 0으로 떨어집니다. 내성에 성공한 경우 10d10점의 사령 피해를 받습니다.</p><p>당신은 오직 한 번에 하나의 상대에게만 진동장을 가해 놓을 수 있습니다. 또한 당신은 아무런 피해 없이 진동을 종료시켜 줄 수 있으며, 이때는 행동을 사용할 필요가 없습니다.</p>"
+		},
+		"Land's Stride": {
+		  "name": "대지의 활보",
+		  "requirements": "레인저 8",
+		  "description": "<p>8레벨에 도달하면 당신은 비마법적인 어려운 지형을 통과할 때 추가로 이동력을 소모할 필요가 없습니다. 또한 느려지지 않고 비마법적 식물들이 있는 공간을 통과할 수 있으며, 나무의 바늘이나 가시 등에 아무런 해도 입지 않습니다.</p><p>@UUID[Compendium.dnd5e.spells.Item.gMrWeG8fMDPRFiVe]{옭아매기 Entangle} 주문처럼, 이동을 방해하기 위해 마법적으로 창조되었거나 조작된 식물에 대한 내성 굴림에 유리함을 받습니다.</p>"
+		},
+		"Lay on Hands": {
+		  "name": "치유의 손길",
+		  "requirements": "팔라딘 1",
+		  "description": "<p>당신의 축복받은 손길은 상처를 치료할 수 있습니다. 당신은 긴 휴식을 마칠 때마다 다시 채워지는 치유력 풀을 갖습니다. 이 풀에 총합 [당신의 팔라딘레벨 x 5] 점의 hp를 담아둘 수 있습니다. </p><p>행동을 사용해, 크리처에 접촉한 후 치유력 풀에서 원하는 만큼의 hp를 사용해 그 크리처를 치료할 수 있습니다. 당신은 한 번에 치유력 풀을 최대치까지 사용할 수도 있으며, 여러 번 나누어 사용할 수도 있습니다.</p><p>또한, 당신은 치유력 풀에서 hp 5점을 사용하여 목표의 질병이나 독 중 하나를 제거할 수 있습니다. 치유의 손길을 한 번 사용하여 여러 개의 독과 질병을 동시에 치료할 수 있지만, 독이나 질병 하나당 각각 Hp를 소비해야 합니다.</p><p>이 특성은 언데드나 구조물에게는 효과가 없습니다.</p>"
+		},
+		"Lifedrinker": {
+		  "name": "생명을 마시는 자",
+		  "requirements": "워락 12, 칼날의 계약",
+		  "description": "<p>크리처 하나에게 계약 무기를 사용한 공격을 하여 명중했다면, 목표는 당신의 매력 수정치만큼 추가로 사령 피해를 받습니다. (최소 1)</p>"
+		},
+		"Magical Secrets": {
+		  "name": "마법적 비밀",
+		  "requirements": "바드 10",
+		  "description": "<p>바드 10레벨에 도달하면, 당신은 광범위한 수련을 통해 마법적 지식을 습득할 수 있습니다. 당신은 바드를 포함해 모든 클래스의 주문 중 2개를 선택해 배울 수 있습니다. 단, 이렇게 배우려는 주문은 바드 표에 따라서 바드로서 시전할 수 있는 레벨 이하여야 합니다. 소마법을 배우는 것도 가능합니다.</p><p>당신은 이렇게 선택한 주문을 바드 주문으로 시전할 수 있으며, 이 주문들은 당신이 알고 있는 주문 숫자에 포함됩니다.</p><p>당신은 바드 14레벨과 18레벨이 되었을 때 다시 모든 클래스의 주문 목록 중 원하는 것을 2개씩 선택해 배울 수 있습니다.</p>"
+		},
+		"Martial Archetype": {
+		  "name": "무예 아키타입",
+		  "requirements": "파이터 3",
+		  "description": "<p>당신은 파이터 3레벨에 자신의 전투 기법과 기교를 종합해 챔피언 등의 아키타입을 선택할 수 있습니다. 이렇게 선택한 아키타입에 따라 당신은 3, 7, 10, 15, 18레벨 때 추가적 특성을 얻을 수 있습니다.</p>"
+		},
+		"Martial Arts": {
+		  "name": "무술",
+		  "requirements": "몽크 1",
+		  "description": "<p>당신은 몽크 1레벨 때부터 무술 수행을 통해 비무장 공격과 몽크 무기를 사용한 전투법에 통달하게 됩니다. 몽크 무기란 숏소드와, 양손이나 중량형 속성을 지니지 않은 단순 무기들을 말합니다.</p><p>당신이 갑옷과 방패를 착용하지 않은 상태이며 맨손이거나 몽크 무기만 장비하고 있다면, 아래 이익을 얻을 수 있습니다.</p><ul><li>당신은 근력 대신 민첩 능력치를 사용해 비무장 공격과 몽크 무기의 명중과 피해 굴림을 할 수 있습니다.</li><li>비무장 공격을 하거나 몽크 무기를 사용하여 공격할 때, 일반 피해 주사위 대신 d4를 사용할 수 있습니다. 이 피해 주사위는 몽크 레벨이 올라갈수록 커집니다. 레벨에 따른 주사위 변화는 몽크 표의 무술 항목을 참조하십시오.</li><li>자기 턴에 공격 행동으로 비무장 공격을 하거나 몽크 무기를 사용하여 공격했다면, 당신은 추가 행동으로 비무장 공격을 한 번 가할 수 있습니다. 예를 들어, 만약 당신이 쿼터스태프로 공격 행동을 했을 경우, 당신은 추가 행동으로 비무장 공격을 한 번 가할 수 있습니다. 단, 그 턴에 이미 추가 행동을 하지 않았을 때만 이렇게 공격을 할 수 있습니다.</li></ul><p>수도원에 따라 특별한 몽크 무기를 쓰기도 합니다. 예를 들어 짧은 사슬로 나무 곤봉 두 개를 연결한 것(쌍절곤이라고 합니다)을 쓰거나, 짧고 곧은 날붙이가 달린 낫(카마라고 합니다)을 쓰는 경우도 있습니다. 몽크 무기의 이름이 무엇이든 몽크 무기의 게임적 기능과 정보를 사용할 수 있습니다.</p>"
+		},
+		"Mask of Many Faces": {
+		  "name": "수많은 얼굴의 가면",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯을 소비하지 않고 언제나 @UUID[Compendium.dnd5e.spells.Item.A3q2gTNqG6fvNGrv]{자기 위장} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Master of Myriad Forms": {
+		  "name": "수많은 형태의 달인",
+		  "requirements": "워락 15",
+		  "description": "<p>당신은 주문 슬롯 소비 없이 원하는 때에  @UUID[Compendium.dnd5e.spells.Item.8RTDOt80u8aBv9qx]{자기 변형} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Metamagic": {
+		  "name": "마법변형",
+		  "requirements": "소서러 3",
+		  "description": "<p>소서러 3레벨에, 당신은 필요에 따라 자신의 주문을 수정하고 조절할 수 있는 능력을 얻습니다. 아래 선택지 중 원하는 것 2가지를 골라 습득할 수 있습니다. 이후 소서러 10레벨과 17레벨에 각각 하나씩 더 골라 습득할 수 있습니다. 마법 변형은 주문 시전시, 별도의 내용이 없다면 한 주문 당 하나만 사용할 수 있습니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.zElYrOcCFFMhB6Xl]{신중한 주문 Careful Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.DZpAa3LzMNBexbmX]{머나먼 주문 Distant Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.IWpe0Y9uAStHGiH1]{강력화 주문 Empowered Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.tQxlKyAx9sgPrbgj]{확장된 주문 Extended Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.tNG2qi9zhmXEkecA]{상향화 주문 Heightened Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.nViGf6bZ6DQAJhkw]{신속한 주문 Quickened Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.fXa0DMhoVLtbBu9l]{은밀한 주문 Subtle Spell}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.Qb391hakCfmH4w8p]{2연속 주문 Twinned Spell}</p><section class=\"secret foundry-note\"><p></strong>파운드리 노트</strong></p><p>캐릭터 시트에 위의 선택지 중 하나를 골라 드래그하면 자동으로 반영됩니다.</p></section>"
+		},
+		"Mindless Rage": {
+		  "name": "무아지경의 격노",
+		  "requirements": "광전사의 길 6",
+		  "description": "<p>6레벨부터 격노 상태 중에 공포나 매혹 상태가 되지 않습니다. 만약 당신이 공포나 매혹 상태일 때 @UUID[Compendium.dnd5e.classfeatures.Item.VoR0SUrNX5EJVPIO]{격노}에 들어가면, 격노 도중에는 억제되어 있다가 격노가 끝나면 효과를 발휘합니다.</p>"
+		},
+		"Minions of Chaos": {
+		  "name": "혼돈의 졸개",
+		  "requirements": "워락 9",
+		  "description": "<p>워락 주문 슬롯을 사용하여 @UUID[Compendium.dnd5e.spells.Item.1LkZvINag7KqBmDR]{원소 소환Conjure Elemental} 주문을 한 번 시전할 수 있습니다. 이 영창은 한 번 사용했다면 긴 휴식을 취해야 다시 사용할 수 있습니다.</p>"
+		},
+		"Mire the Mind": {
+		  "name": "마음 몰아넣기",
+		  "requirements": "워락 5",
+		  "description": "<p>당신은 워락 주문 슬롯을 사용하여  @UUID[Compendium.dnd5e.spells.Item.yqUDoxk4x0NWG5Bz]{저속화Slow} 주문을 한 번 시전할 수 있습니다. 이 영창은 한 번 사용했다면 긴 휴식을 취해야 다시 사용할 수 있습니다.</p>"
+		},
+		"Misty Visions": {
+		  "name": "안개의 시야",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 소비하지 않고 언제나 @UUID[Compendium.dnd5e.spells.Item.BrBZdCCrJRIVg7YX]{조용한 영상Silent Image} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Monastic Tradition": {
+		  "name": "문파 전통",
+		  "requirements": "몽크 3",
+		  "description": "<p>당신은 몽크 3레벨이 되었을 때 열린 손의 길과 같은 하나의 문파를 선택해 그 길을 따를 수 있습니다. 당신은 선택한 문파에 따라 3, 6, 11, 17레벨에 추가적 특성을 얻을 수 있습니다.</p>"
+		},
+		"7zlTRRXT1vWSBGjX": {
+		  "name": "다중공격",
+		  "requirements": "헌터 11",
+		  "description": "<p>11레벨이 되면, 다음 중 원하는 특성 한 개를 골라 습득합니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.l7W6JB9yWLLLtQKP]{포격 Volley}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.1DY8w3CXeD7PHDXF]{회오리바람 공격 Whirlwind Attack}</p>"
+		},
+		"Multiattack Defense": {
+		  "name": "다중공격 방어",
+		  "requirements": "헌터 7",
+		  "description": "<p>크리처 하나가 당신을 향한 공격이 명중했다면 그 턴에 이어지는, 그 크리처의 모든 공격에 대한 AC에 +4 할 수 있습니다.</p>"
+		},
+		"Multiattack: Volley": {
+		  "name": "다중공격: 연사",
+		  "requirements": "헌터 11",
+		  "description": "<p>당신은 행동을 사용해 무기의 사거리 내에서 당신이 볼 수 있는 지점 하나를 지정하여, 주변 10ft 반경 내의 모든 크리처에게 한 번씩 장거리 무기 공격을 가할 수 있습니다. 이렇게 공격하려면 공격 한 번당 하나의 탄환을 소모해야 하며, 명중 굴림은 공격하는 대상마다 따로 굴려야 합니다.</p>"
+		},
+		"Mystic Arcanum": {
+		  "name": "신비의 비밀",
+		  "requirements": "워락 11",
+		  "description": "<p>11레벨이 되면, 당신의 후견자는 신비의 비밀이라 부르는 마법적인 비밀을 알려줍니다. 당신은 워락 주문 목록에서 6레벨 주문 하나를 골라 신비의 비밀로 정할 수 있습니다.</p><p>주문 슬롯을 소비하지 않고 신비의 비밀을 한 번 시전할 수 있습니다. 이후 다시 신비의 비밀을 시전하려면 긴 휴식을 마쳐야 합니다.</p><p>레벨이 높아지면 당신은 더 많은 워락 주문을 골라 시전할 수 있습니다. 13레벨에 7레벨 주문 하나를, 15레벨에 8레벨 주문 하나를, 17레벨에 9레벨 주문 하나를 각각 신비의 비밀로 정할 수 있습니다. 신비의 비밀은 각 주문 레벨당 한 번만 시전할 수 있으며, 긴 휴식을 마치면 모든 레벨의 신비한 비밀을 다시 회복할 수 있습니다.</p>"
+		},
+		"Natural Explorer": {
+		  "name": "자연의 탐험가",
+		  "requirements": "레인저 1",
+		  "description": "<p>당신은 여러 자연환경 중 특히 한 가지 환경에 익숙하며, 그러한 환경에서 여행하고 생존하는 것이야말로 특기 분야라 할 수 있습니다. 극지, 해안, 사막, 숲, 초원, 산, 늪, 언더다크 중 한 가지 환경을 선호하는 지역으로 선택합니다. 선호하는 지형과 연관된 지능이나 지혜 판정을 할 때, 당신이 숙련을 지닌 기술을 사용한다면 그 숙련 보너스를 2배로 적용할 수 있습니다.</p><p>또한, 선호하는 지역을 1시간 이상 여행하고 있으면, 아래와 같은 이익을 얻을 수 있습니다.</p><ul><li>어려운 지형으로 인해 일행의 이동속도가 느려지지 않습니다.</li><li>일행은 마법적인 수단을 제외하면 절대 길을 잃지 않습니다.</li><li>조달이나 길 찾기, 추적 등 여행 중 다른 활동을 하고 있으면서도 항상 주변에 대한 경계를 유지할 수 있습니다.</li><li>홀로 여행하고 있는 경우, 은신을 유지하면서도 보통 속도로 여행할 수 있습니다.</li><li>당신은 식량 조달을 할 때, 보통보다 2배 더 많은 음식을 얻을 수 있습니다.</li><li>다른 크리처를 추적할 때, 당신은 추적하는 상대의 정확한 숫자, 크기, 얼마나 오래 전에 해당 지역을 지나갔는지를 파악할 수 잇습니다.</li></ul><p>당신은 6, 10레벨에 도달할 때 각각 한 종류씩 선호하는 지형을 추가로 선택할 수 있습니다.</p><section class=\"secret\" id=\"secret-xtmITx8xwrAenwFl\"><p><strong>파운드리 노트</strong></p><p>다음 항목을 편집해 어떤 지형을 선택했는지 적어두면 편리합니다:</p><ul><li><em>1레벨</em></li><li><em>6레벨</em></li><li><em>10레벨</em></li></ul></section>"
+		},
+		"Natural Recovery": {
+		  "name": "자연의 회복력",
+		  "requirements": "대지의 회합 2",
+		  "description": "<p>당신은 드루이드 2레벨부터 잠시 앉아서 명상하고 자연과 교감하여 마법의 힘을 약간 회복할 수 있습니다. 짧은 휴식 동안, 당신은 이미 소비한 주문 슬롯을 회복할 수 있습니다. 회복하는 주문 슬롯들의 레벨 합계는 당신의 드루이드 레벨 절반 이하만큼입니다(나머지 올림). 단, 6레벨 이상의 슬롯은 회복할 수 없습니다. 당신이 한번 이 특성을 사용했다면 긴 휴식을 마쳐야만 다시 사용할 수 있습니다.</p><p>예를 들어, 당신이 4레벨 드루이드라면 당신은 짧은 휴식을 마칠 때 도합 2레벨의 주문 슬롯을 회복할 수 있습니다. 2레벨 슬롯 하나를 회복하거나, 1레벨 슬롯 2개를 회복할 수 있을 것입니다.</p>"
+		},
+		"Nature's Sanctuary": {
+		  "name": "자연의 성역",
+		  "requirements": "대지의 회합 14",
+		  "description": "<p>드루이드 14레벨에 도달하면, 자연계의 크리처는 당신과 자연 사이의 연결을 감지하고 쉽사리 당신을 공격하려 하지 않게 됩니다. 야수나 식물 크리처가 당신을 공격할 때, 해당 크리처는 당신의 주문 내성 DC를 목표로 지혜 내성에 성공해야 공격을 가할 수 있습니다. 내성에 실패하면 해당 크리처는 다른 목표를 골라야 하며, 아니면 공격 자체가 자동으로 빗나갑니다. 내성에 성공한 크리처는 24시간 동안 이 효과에 면역을 얻습니다.</p><p>크리처는 당신을 공격하기 전에 이 효과에 대해 먼저 느낄 수 있습니다.</p>"
+		},
+		"Nature's Ward": {
+		  "name": "자연의 보호",
+		  "requirements": "대지의 회합 10",
+		  "description": "<p>드루이드 10레벨에 도달하면, 당신은 원소나 요정에 의해 매혹되거나 공포 상태가 되지 않습니다. 또한 당신은 독과 질병에 면역이 됩니다.</p>"
+		},
+		"One With Shadows": {
+		  "name": "그림자의 동행",
+		  "requirements": "워락 5",
+		  "description": "<p>당신이 약한 빛이나 어두운 지역에 있을 때, 행동을 사용하여 투명화할 수 있습니다. 이 투명화는 이동하거나 행동, 추가행동 혹은 반응행동을 취할 때까지 유지됩니다.</p>"
+		},
+		"Open Hand Technique": {
+		  "name": "열린 손의 기법",
+		  "requirements": "열린 손의 길 3",
+		  "description": "<p>3레벨에 이 문파를 선택할 때부터, 자신의 기를 통해 적의 기를 조작하는 법을 배우게 됩니다. 당신이 @UUID[Compendium.dnd5e.classfeatures.Item.5MwNlVZK7m6VolOH]{연타 Flurry of Blows} 특성로 얻은 공격을 크리처에게 명중시켰다면, 목표에게 아래 선택지 중 한 가지 효과를 가할 수 있습니다.</p><ul><li>목표는 민첩 내성에 실패할 시 넘어짐 상태가 됩니다.</li><li>목표는 근력 내성에 실패할 시 당신으로부터 15ft 만큼 멀어집니다.</li><li>목표는 당신의 다음 턴이 끝날 때까지 반응행동을 할 수 없습니다.</li></ul>"
+		},
+		"Otherworldly Leap": {
+		  "name": "외세계의 후견자",
+		  "requirements": "워락 9",
+		  "description": "<p>당신은 주문 슬롯이나 물질 요소를 소비하지 않고 언제나 자신에게 @UUID[Compendium.dnd5e.spells.Item.ZrTc23tToJ0JpH2h]{도약} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Otherworldly Patron": {
+		  "name": "외세계의 후견자",
+		  "requirements": "워락 1",
+		  "description": "당신은 워락 1레벨 때 악마 등 어떤 존재와 계약을 맺은 것인지 결정해야 합니다. 당신은 자신이 선택한 후견자에 따라 6, 10, 14레벨에 추가적 특성을 얻을 수 있습니다."
+		},
+		"Overchannel": {
+		  "name": "과전환",
+		  "requirements": "방출학파 14",
+		  "description": "<p>위저드 14레벨에 도달하면, 당신은 단순한 주문의 위력을 더욱 증가시킬 수 있습니다. 당신이 1레벨 이상 5레벨 이하의, 피해를 가하는 위저드 주문을 시전할 때, 그 주문의 피해량을 최대치로 만들 수 있습니다.</p><p>이 특성을 처음 사용할 때는 어떠한 부작용도 없습니다. 그러나 당신이 긴 휴식을 취하기 전 이 특성을 두 번째로 사용한 경우, 당신은 시전한 주문 레벨 당 2d12점의 사령 피해를 받습니다. 긴 휴식을 취하기 전 이 특성을 한 번씩 더 사용할 때마다, 레벨 당 사령 피해는 1d12점씩 증가합니다. 이 사령 피해는 저항이나 면역을 무시합니다.</p><section class=\"secret foundry-note\" id=\"secret-Dyr8peTt64lvnGQN\"><p><strong>파운드리 노트</strong></p><p>이 항목의 사용 횟수는 과전환의 안전한 첫 번째 사용을 기록하기 위함입니다. 피해 공식은 기본값인 2d12로 설정되어 있습니다. 다용도 공식은 추가 피해를 더할 수 있도록 1d12로 설정되어 있습니다.</p></section>"
+		},
+		"Pact Boon": {
+		  "name": "계약의 은혜",
+		  "requirements": "워락 3",
+		  "description": "<p>3레벨에 외세계의 후견자가 당신의 충성에 대한 보상을 줍니다. 아래의 특성 중 한 가지 특성을 선택해 습득합니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.9dSSa68mIPoX2ezA]{칼날의 계약 Pact of the Blade}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.Ic1CSjvbWKudVUv9]{사슬의 계약 Pact of the Chain}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.MYM908WLZ1lVvA1u]{고서의 계약 Pact of the Tome}</p>"
+		},
+		"Pact Magic": {
+		  "name": "계약 마법",
+		  "requirements": "워락 1",
+		  "description": "<p>당신은 비전 연구와 후견자가 부여한 마법을 통해 주문의 재능을 얻었습니다.</p><h3>소마법</h3><p>워락 주문 목록에서 원하는 소마법 2개를 습득합니다. 레벨이 오르면 원하는 워락 소마법을 추가로 습득할 수 있습니다. 워락 표의 습득 가능한 소마법 항목을 참고하세요.</p><h3>주문 슬롯</h3><p>워락 표를 통해 주문 슬롯을 몇 개 가지고 있는지 알 수 있습니다. 표에는 주문 슬롯의 레벨도 나타나있는데, 모든 주문 슬롯 레벨은 서로 같습니다. 1레벨 이상의 워락 주문을 사용하려면 주문 슬롯을 확장해야 합니다. 짧은 휴식이나 긴 휴식 후에 확장한 주문 슬롯을 회복할 수 있습니다.</p><p>예를 들어, 당신이 5레벨일 경우, 3레벨 주문 슬롯을 2개 가지고 있는 것이 됩니다. 이 때 1레벨 주문인 '천둥파도' (Thunderwave)를 시전하려면, 슬롯을 하나 소모하고 3레벨 주문으로 취급하여 시전해야 합니다. </p><h3>1레벨 이상에서 습득하는 주문</h3><p>1레벨에서는 워락 주문 목록 중 원하는 1레벨 주문 2개를 선택해 습득합니다.</p><p>워락 표에서 '습득 가능한 주문' 항목을 보면 1레벨 이상일 때 어느 시기에 원하는 주문을 더 습득할 수 있는지 알 수 있습니다. 주문을 선택할 때, 당신의 레벨에 해당하는 슬롯 레벨보다 높은 레벨의 것을 선택할 수 없습니다. 예를 들어 당신이 6레벨이라면, 새로운 워락 주문을 한 가지 배울 때 1, 2, 3 레벨 주문 중에서 고를 수 있습니다.</p><p>또한, 이 클래스의 레벨이 1 오를 때마다 알고 있는 워락 주문 중 1개를 골라 워락 주문 목록의 다른 것과 교체할 수 있습니다. 교체한 주문 또한 주문 슬롯 레벨과 맞아야 합니다. <h3>주문시전 능력</h3><p>매력은 워락 주문을 시전하는 능력과 관련이 있습니다. 따라서 사용하려는 주문이 주문시전 능력을 참조할 때에는 매력을 사용합니다. 또한, 시전하려는 워락 주문의 내성 굴림 DC를 설정할 때나, 공격 굴림을 할 때에는 매력 수정치를 사용합니다.</p><p><strong>주문 내성 DC</strong> = 8 + 숙련 보너스 + 매력 수정치</p><p><strong>주문 공격 수정치 </strong>= 숙련 보너스 + 매력 수정치</p><h3>주문시전 매개체</h3><p>워락 주문을 사용할 때 비전 매개체를 주문시전 매개체로 사용할 수 있습니다.</p>"
+		},
+		"Pact of the Blade": {
+		  "name": "칼날의 계약",
+		  "requirements": "워락 3",
+		  "description": "<p>당신은 행동을 사용해 빈손에서 계약 무기를 만들어 낼 수 있습니다. 당신은 매번 계약 무기를 불러닐 때마다 원하는 근접 무기의 형태를 취하도록 할 수 있습니다. 당신은 계약 무기를 장비하고 있는 동안 그 무기에 대한 숙련도 얻을 수 있습니다. 이 무기는 비마법적 공격에 대한 저항이나 면역을 극복할 때 마법 무기로 취급합니다.</p><p>당신의 계약 무기는 당신으로부터 5ft 이상 떨어진 채 1분 이상 지나면 사라집니다. 또한 당신이 이 특성을 다시 사용하거나, 스스로 무기를 없애려 할 경우(행동 필요 없음), 혹은 당신이 사망할 경우에도 사라집니다.</p><p>당신은 마법 무기를 들고 있을 때 특별한 의식을 거행해서 당신의 계약 무기로 삼을 수 있습니다. 이 의식은 1시간이 걸리며, 짧은 휴식 동안 거행할 수 있습니다. 계약 무기로 결속하면 당신은 이 무기를 사라지게 하면서 이차원 공간 어딘가에 두고, 계약 무기를 만들어 낼 때 다시 불러올 수 있습니다. 유물이나 의식을 지닌 무기는 계약 무기로 만들 수 없습니다. 당신이 사망할 경우 계약 무기와의 결속도 깨지게 됩니다. 또한 당신이 다른 무기로 1시간 동안 의식을 거행해 계약 무기로 만들 경우, 기존의 계약 무기는 결속이 깨집니다. 결속이 깨진 무기는 이차원 공간에서 빠져나와 당신의 발밑에 떨어질 것입니다.</p>"
+		},
+		"Pact of the Chain": {
+		  "name": "사슬의 계약",
+		  "requirements": "워락 3",
+		  "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.JGT5bNqu9REL7Fuz]{패밀리어 찾기Find Familiar} 주문을 배우며 의식으로 시전할 수 있게 됩니다. 이 주문은 당신이 알고 있는 주문 개수에 포함되지 않습니다.</p><p>당신은 이 주문을 시전할 때, 일반적인 형태 대신 @UUID[Compendium.dnd5e.monsters.Actor.dLQiESMsfsXijD5c]{임프}, 슈도드래곤, @UUID[Compendium.dnd5e.monsters.Actor.bwtkdzavdNHISgp4]{콰짓},@UUID[Compendium.dnd5e.monsters.Actor.MUpBNDoJEr09bLaO]{스프라이트} 형상의 패밀리어를 부를 수 있습니다.</p><p>또, 당신이 공격 행동을 할 때, 당신은 자신의 공격 한 번을 포기하는 대신 패밀리어가 반응행동을 사용해 한 번 공격하도록 할 수 있습니다.</p>"
+		},
+		"Pact of the Tome": {
+		  "name": "고서의 계약",
+		  "requirements": "워락 3",
+		  "description": "<p>당신의 후견자는 당신에게 그림자의 책이라 부르는 마도서를 주었습니다. 당신은 이 특성을 얻을 때, 모든 클래스의 주문 목록 중 원하는 소마법을 3개 가져올 수 있습니다. (각 소마법은 서로 다른 클래스의 주문 목록에서 가져올 수 있습니다.) 이 책을 지니고 있는 동안, 당신은 이 소마법들을 자유로이 시전할 수 있습니다. 당신이 그림자의 책에 가져온 소마법들은 워락 주문으로 취급합니다.</p><p>당신이 그림자의 책을 잃어버렸다면, 1시간 길이의 의식을 통해 후견자에게 다시 책을 받을 수 있습니다. 이 의식은 짧은 휴식이나 긴 휴식 동안 거행할 수 있으며, 책을 새로 받았다면 기존의 책은 파괴됩니다. 또한 당신이 사망한 경우 그림자의 책은 재가 되어 사라집니다.</p>"
+		},
+		"Patient Defense": {
+		  "name": "침착한 방어",
+		  "requirements": "몽크 2",
+		  "description": "<p>당신은 자기 턴에 기 1점을 소비하여 추가 행동으로 회피 행동을 할 수 있습니다.</p>"
+		},
+		"Peerless Skill": {
+		  "name": "독보적인 기술",
+		  "requirements": "전승학파 14",
+		  "description": "<p>14레벨부터, 당신은 능력 판정을 할 때 @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{바드의 고양감}을 1회 소비할 수 있습니다,</p><p>바드의 고양감 주사위를 굴려 나온 결과값을 당신의 능력 판정 결과에 더합니다.</p><p>이 특성은 당신이 능력 판정 주사위를 굴린 다음에도 사용할 수 있으나, GM이 성공이나 실패를 확정한 다음에는 사용할 수 없습니다.</p>"
+		},
+		"Perfect Self": {
+		  "name": "자기 충족",
+		  "requirements": "몽크 20",
+		  "description": "<p>몽크 20레벨에 도달하면, 당신이 우선권 굴림을 굴릴 때 기 점수가 하나도 남지 않은 경우 기 4점을 회복할 수 있습니다.</p>"
+		},
+		"Persistent Rage": {
+		  "name": "끊임없는 격노",
+		  "requirements": "바바리안 15",
+		  "description": "<p>15레벨부터, 당신의 @UUID[Compendium.dnd5e.classfeatures.Item.VoR0SUrNX5EJVPIO]{격노}는 너무나 격렬해서 무의식 상태에 빠지거나 스스로 끝내기 전까지 계속 지속됩니다.</p>"
+		},
+		"Potent Cantrip": {
+		  "name": "강화된 소마법",
+		  "requirements": "방출학파 6",
+		  "description": "<p>위저드 6레벨부터, 당신이 사용하는 소마법 중 피해를 주는 것들은 상대 크리처가 피하더라도 영향을 발휘하게 됩니다. 목표로 한 크리처가 당신이 가한 소마법의 내성 굴림에 성공했을 경우, 해당 크리처는 소마법에 설정된 피해의 절반을 입습니다. 단, 이 경우 소마법의 효과는 추가로 받지 않습니다. </p>"
+		},
+		"Primal Champion": {
+		  "name": "원시의 투사",
+		  "requirements": "바바리안 20",
+		  "description": "<p>바바리안 20레벨에 도달하면, 당신은 야생 그 자체의 힘을 체현하는 존재가 됩니다. 당신의 근력과 건강 점수는 4점씩 증가하며, 두 능력치 점수의 최대치 역시 24로 증가합니다.</p>"
+		},
+		"Primal Path": {
+		  "name": "원초의 길",
+		  "requirements": "바바리안 3",
+		  "description": "<p>당신은 바바리안 3레벨이 되었을 때, 광전사의 길처럼 자신이 가진 격노가 향하는 방향인 '길' 을 선택합니다. 당신은 이렇게 선택한 길에 따라 3, 6, 10, 14레벨에 추가적 특성을 얻을 수 있습니다.</p>"
+		},
+		"Primeval Awareness": {
+		  "name": "원초적 육감",
+		  "requirements": "레인저 3",
+		  "description": "<p>레인저 3레벨부터, 행동을 사용해 레인저 주문 슬롯 하나를 소비하면 주변 환경에 오감을 집중할 수 있습니다. 당신은 기괴체, 천상체, 용족, 원소, 요정, 악마, 언데드 중 한 가지 괴물의 존재 여부를 감지할 수 있습니다. 이 효과의 지속시간은 소비한 주문슬롯 레벨 당 1분씩입니다. 감지 범위는 1마일입니다. (선호하는 지형이라면 6마일). 단, 이 특성은 괴물의 존재 유무만 파악할 수 있을 뿐, 정확한 위치나 숫자는 파악할 수 없습니다.</p>"
+		},
+		"Protection": {
+		  "name": "보호",
+		  "requirements": "파이터 1, 챔피언 10, 팔라딘 2",
+		  "description": "<p>볼 수 있는 크리처 하나가 당신 주변 5ft 이내의 다른 크리처를 목표로 공격을 가할 때, 당신은 반응행동을 사용해 그 명중 굴림에 불리함을 가할 수 있습니다. 이 특성을 사용하려면 방패를 장비하고 있어야 합니다.</p>"
+		},
+		"Purity of Body": {
+		  "name": "신체 정화",
+		  "requirements": "몽크 10",
+		  "description": "<p>몽크 10레벨에 도달하면, 당신은 자기 몸속의 기를 다스려 질병과 독에 대한 면역을 얻습니다.</p>"
+		},
+		"Purity of Spirit": {
+		  "name": "영혼 정화",
+		  "requirements": "헌신의 맹세 15",
+		  "description": "<p>15레벨부터, 당신은 상시로 @UUID[Compendium.dnd5e.spells.Item.xmDBqZhRVrtLP8h2]{악과 선으로부터의 보호} 주문의 효과를 받습니다.</p>"
+		},
+		"Quickened Spell": {
+		  "name": "주문 신속화",
+		  "requirements": "소서러 3",
+		  "description": "<p>시전 시간이 1 행동인 주문을 시전할 때, 술법 점수 2점을 소비해 본래 시전시간 대신 1 추가 행동으로 주문을 시전할 수 있습니다.</p>"
+		},
+		"Rage": {
+		  "name": "격노",
+		  "requirements": "바바리안 1",
+		  "description": "<p>전투가 벌어질 때, 당신은 원시의 격렬함을 불러일으켜 싸움에 뛰어듭니다. 당신은 자기 턴에 추가 행동을 사용해 격노에 들어설 수 있습니다. 격노 상태일 때 중장 갑옷을 입지 않았다면, 당신은 다음과 같은 이로운 효과를 얻습니다:</p><ul><li><p>당신은 근력 판정과 근력 내성 굴림에 유리함을 받습니다..</p></li><li><p>당신이 근력을 사용한 근접 무기 공격을 할 때, 당신은 피해 굴림에 보너스를 더할 수 있습니다. 이 보너스는 바바리안 표에 격노 피해 항목으로 나와 있습니다.</p></li><li><p>당신은 타격, 관통, 참격 피해에 저항입니다.</p></li></ul><p>당신에게 주문시전 능력이 있더라도, 격노 중에는 주문을 시전하거나 집중을 유지할 수 없습니다.</p><p>격노는 한 번 들어간 후 1분간 지속됩니다. 무의식 상태가 되거나, 지난 턴 이후 피해를 받지 않았거나 당신이 적대적 크리처를 공격하지 않고 턴을 종료했다면 1분이 되기 전에도 종료될 수 있습니다. 또한 당신은 자기 턴에 언제든 추가 행동으로 스스로 격노를 종료할 수 있습니다.</p><p>바바리안 표의 현재 바바리안 레벨에 해당하는 격노 횟수만큼 격노를 모두 사용했다면, 긴 휴식을 마쳐야 격노 사용 횟수를 회복할 수 있습니다.</p>"
+		},
+		"Ranger Archetype": {
+		  "name": "레인저 아키타입",
+		  "requirements": "레인저 3",
+		  "description": "<p>당신은 레인저 3레벨이 되었을 때, 헌터와 같은 아키타입을 하나 선택해 그 길에 매진하게 됩니다. 당신은 선택한 길에 따라 3, 7, 11, 15레벨에 추가적 특성을 얻을 수 있습니다.</p>"
+		},
+		"Reckless Attack": {
+		  "name": "무모한 공격",
+		  "requirements": "바바리안 2",
+		  "description": "<p>바바리안 2레벨부터, 당신은 방어를 포기하고 무모하게 공격을 가할 수 있습니다. 당신은 자기 턴에 처음으로 공격을 가할 때, 무모한 공격을 하겠다고 선언할 수 있습니다. 무모한 공격을 사용하면, 당신은 이번 턴 동안 근력을 사용하는 모든 근거리 무기 공격 굴림에 유리함을 받을 수 있습니다. 단, 당신의 다음 턴이 시작될 때까지 당신을 공격하는 모든 명중 굴림 역시 유리함을 받게 됩니다.</p>"
+		},
+		"Relentless Rage": {
+		  "name": "끈질긴 격노",
+		  "requirements": "바바리안 11",
+		  "description": "<p>바바리안 11레벨에 도달하면, 당신은 치명적인 부상을 입은 상태에서도 격노의 힘을 통해 싸움을 계속할 수 있는 능력을 얻습니다. 당신이 격노 상태일 때 hp가 0으로 떨어졌으나 즉사는 하지 않았다면, 당신은 DC 10의 건강 내성을 굴릴 수 있습니다. 이 내성에 성공할 시, 당신은 hp 1을 남길 수 있습니다.</p><p>이 특성은 처음 발동된 후 다시 발동될 때마다 DC 5씩 증가합니다. 일단 당신이 짧은 휴식이나 긴 휴식을 마치면 DC는 다시 기본값인 10으로 돌아옵니다.</p>"
+		},
+		"Reliable Talent": {
+		  "name": "믿음직한 재능",
+		  "requirements": "로그 11",
+		  "description": "<p>로그 11레벨에 도달하면, 당신은 자신이 연마한 기술을 더욱 완벽하게 펼칠 수 있습니다. 당신이 숙련 보너스를 받고 능력 판정을 할 때, d20에서 9 이하의 값이 나온 경우 그것을 10으로 바꿀 수 있습니다.</p>"
+		},
+		"Remarkable Athlete": {
+		  "name": "뛰어난 운동능력",
+		  "requirements": "챔피언 7",
+		  "description": "<p>파이터 7레벨에 도달하면, 당신은 숙련 보너스를 더하지 못하는 모든 근력, 민첩, 건강 능력 판정에 숙련 보너스의 절반(나머지 올림)을 더할 수 있습니다.</p><p>또한, 당신이 도움닫기 후 도약을 한다면, 당신이 뛰어넘는 거리는 당신의 근력 수정치 +1당 1ft만큼 증가합니다.</p>"
+		},
+		"Repelling Blast": {
+		  "name": "격퇴의 마탄",
+		  "requirements": "워락 2, 섬뜩한 방출",
+		  "description": "<p>당신이 @UUID[Compendium.dnd5e.spells.Item.Z9p1vezIn95jw1Yw]{섬뜩한 방출}로 크리처를 명중시켰을 때 그 크리처를 당신에게서 멀어지는 방향으로, 직선으로 10ft 밀어낼 수 있습니다.</p>"
+		},
+		"Retaliation": {
+		  "name": "보복",
+		  "requirements": "광전사의 길 14",
+		  "description": "<p>바바리안 14레벨부터, 주변 5ft 내의 크리처에게 피해를 입었을 때 반응행동을 사용하여 해당 크리처에게 근거리 무기 공격을 1회 가할 수 있습니다.</p>"
+		},
+		"Roguish Archetype": {
+		  "name": "로그 아키타입",
+		  "requirements": "로그 3",
+		  "description": "<p>당신은 로그 3레벨이 되었을 때 시프와 같은 아키타입 중 하나를 선택해 그 길을 따를 수 있습니다.</p><p>당신은 선택한 아키타입에 따라 3, 9, 13, 17레벨에 추가적 특성을 얻을 수 있습니다.</p>"
+		},
+		"Sacred Oath": {
+		  "name": "성스러운 맹세",
+		  "requirements": "팔라딘 3",
+		  "description": "<p>3레벨이 되면, 당신은 앞으로도 영원히 지켜야 하는 성스러운 맹세를 하게 됩니다. 지금까지의 시간은 그저 준비 단계였을 뿐이며, 맹세를 거쳐야 진정한 팔라딘이 되는 것입니다. 당신은 복수의 맹세, 선조의 맹세, 헌신의 맹세 중 한 가지를 택할 수 있습니다.</p><p>당신은 선택한 맹세에 따라 3, 7, 15, 20레벨에 추가적 특성을 얻을 수 있습니다. 이 추가적 특성 중에는 맹세 주문과 신성 변환도 포함되어 있습니다.</p><h4><strong>맹세 주문 Oath Spells</strong></h4><p>각 맹세마다 그에 연관된 주문의 목록이 있습니다. 당신은 맹세 설명에 명시된 레벨이 되면 이 주문들을 사용할 수 있게 됩니다. 일단 당신이 맹세 주문을 쓸 수 있게 되면, 이 주문들은 언제나 준비된 상태가 됩니다. 맹세 주문들은 당신이 하루에 준비할 수 있는 주문의 개수에 포함되지 않습니다.</p><p>만약 팔라딘 주문 목록에 없는 주문이 맹세 주문으로 포함되어 있어도, 당신은 해당 주문을 팔라딘 주문으로 취급합니다.</p><h5>신성 변환</h5><p>@UUID[Compendium.dnd5e.classfeatures.Item.8M7uOPhbTxoxxJSo]{신성 변환} 참조.</p>"
+		},
+		"Sculpt Spells": {
+		  "name": "주문 조정",
+		  "requirements": "방출학파 2",
+		  "description": "<p>위저드 2레벨 때부터, 당신은 방출계 주문을 시전할 때 효과 범위 중에서 비교적 안전한 공간을 만들어 낼 수 있습니다. 당신이 볼 수 있는 크리처들에게 영향을 주는 방출계 주문을 시전할 때, 당신은 1 + 주문 레벨만큼 크리처를 선택할 수 있습니다. 이렇게 선택된 크리처들은 자동으로 해당 주문의 내성 굴림에 성공하며, 내성에 성공할 시 절반의 피해만 입는 주문일 경우 이렇게 지정된 크리처들은 아예 피해를 입지 않을 수 있습니다.</p>"
+		},
+		"Sculptor of Flesh": {
+		  "name": "육신의 조각가",
+		  "requirements": "워락 7",
+		  "description": "<p>당신은 워락 주문 슬롯을 사용하여 @UUID[Compendium.dnd5e.spells.Item.04nMsTWkIFvkbXlY]{변신} 주문을 시전할 수 있습니다. 이 영창은 한번 사용하면 긴 휴식을 취해야 다시 사용할 수 있습니다.</p>"
+		},
+		"Second Wind": {
+		  "name": "재기의 바람",
+		  "requirements": "파이터 1",
+		  "description": "<p>당신은 위험으로부터 스스로를 보호할 때 한정적으로나마 사용할 수 있는 체력의 근원을 지니고 있습니다. 당신은 자기 턴에 추가 행동을 사용하여 1d10 + 당신의 파이터 레벨만큼 hp를 회복할 수 있습니다.</p><p>당신이 이 특성을 한 번 사용했다면, 짧은 휴식이나 긴 휴식을 마치고 나서야 다시 이 특성을 사용할 수 있습니다.</p>"
+		},
+		"Second-Story Work": {
+		  "name": "성큼뛰기",
+		  "requirements": "시프 3",
+		  "description": "<p>당신이 로그 3레벨에 이 아키타입을 선택하면, 평소보다 더 빠르게 등반할 수 있는 능력을 얻게 됩니다. 당신은 등반 시 추가로 이동력을 소모하지 않습니다.</p><p>또한, 당신이 도움닫기를 한 후 도약할 때, 당신의 멀리뛰기 거리는 당신의 민첩수정치 +1당 1ft만큼 증가합니다.</p>"
+		},
+		"Sign of Ill Omen": {
+		  "name": "불운의 징조",
+		  "requirements": "워락 5",
+		  "description": "<p>당신은 워락 주문 슬롯 하나를 사용하여 @UUID[Compendium.dnd5e.spells.Item.pO4zGe5LmFIYqJiL]{저주 부여} 주문을 시전할 수 있습니다. 이 영창은 한번 사용하면 긴 휴식을 마친 후 다시 사용할 수 있습니다.</p>"
+		},
+		"Signature Spells": {
+		  "name": "대표 주문",
+		  "requirements": "위저드 20",
+		  "description": "<p>위저드 20레벨에 도달하면, 당신은 강력한 주문 두 개를 선택해 훨씬 가벼운 노력으로 시전할 수 있게 됩니다. 당신의 주문책에서 3레벨 주문 2개를 자신의 대표 주문으로 선택합니다. 이 주문들은 언제나 준비된 상태로 취급하며, 준비하는 주문 개수에 포함되지 않습니다. 당신이 이 주문을 3레벨 형태로 시전할 때, 한 번은 주문 슬롯을 소비하지 않을 수 있습니다. 이 주문을 두 번 이상 시전하려면 여전히 주문 슬롯을 소비해야 합니다. 짧은 휴식이나 긴 휴식을 마치고 나면 다시 한 번씩은 주문 슬롯을 소비하지 않고 시전할 수 있습니다.</p><p>만약 당신이 대표 주문을 상위시전하려고 한다면 일반적인 경우와 마찬가지로 주문 슬롯을 소비해야 합니다.</p>"
+		},
+		"Slippery Mind": {
+		  "name": "유연한 마음가짐",
+		  "requirements": "로그 15",
+		  "description": "<p>로그 15레벨에 도달하면 당신은 강력한 정신력을 얻게 됩니다. 당신은 지혜 내성 굴림에 숙련을 얻습니다.</p>"
+		},
+		"Slow Fall": {
+		  "name": "저속 낙하",
+		  "requirements": "몽크 4",
+		  "description": "<p>몽크 4레벨에 도달하면, 당신은 추락할 때 반응행동을 사용해 당신이 받을 낙하 피해를 당신의 몽크 레벨 × 5점만큼 감소시킬 수 있습니다.</p>"
+		},
+		"Sneak Attack": {
+		  "name": "암습 공격",
+		  "requirements": "로그 1",
+		  "description": "<p>당신은 로그 1레벨 때부터 적의 빈틈을 찔러 교묘한 일격을 가하는 방법을 익혔습니다. 턴마다 한 번, 당신은 유리함을 받은 채로 명중 굴림을 굴려 명중시킨 공격의 피해에 추가로 1d6점을 더할 수 있습니다. 이 공격은 교묘함 속성을 지닌 무기나 장거리 무기로 가한 것이어야 합니다. 또한 목표 주변 5ft 내에 당신 외에도 목표가 적대하는 다른 크리처가 있는 경우, 명중 굴림에 유리함이 없어도 추가 피해를 줄 수 있습니다. 단, 당신의 명중 굴림에 불리함이 없어야 하며, 목표의 적대 크리처는 행동불능 상태가 아니어야 합니다.</p><p>추가 피해의 양은 로그 레벨이 올라갈수록 커집니다. 로그 표의 암습 공격 항목을 참조하십시오.</p>"
+		},
+		"Song of Rest": {
+		  "name": "휴식의 노래",
+		  "requirements": "바드 2",
+		  "description": "<p>바드 2레벨부터, 당신은 부드러운 음악을 연주하거나 노래를 불러 짧은 휴식 동안 상처입은 동료들의 회복을 도울 수 있습니다.</p><p>만약 당신이나 당신의 공연을 듣는 우호적인 크리처가 짧은 휴식 동안 하나 이상의 히트 다이스를 소비했다면, 해당 크리처는 각각 추가로 1d6점의 hp를 회복할 수 있습니다.</p><p>추가로 회복되는 hp의 양은 바드 레벨이 상승할 수록 증가합니다. 9레벨에 1d8, 13레벨에 1d10, 17레벨에 1d12점의 hp를 회복할 수 있습니다.</p>"
+		},
+		"Sorcerous Origins": {
+		  "name": "마술의 기원",
+		  "requirements": "소서러 1",
+		  "description": "<p>당신은 용의 혈통 등의 기원을 택해 자기 내면의 마력이 어디서 유래한 것인가 정할 수 있습니다. 당신은 자신이 선택한 기원에 따라 1, 6, 14, 18레벨에 추가적 특성들을 얻을 수 있습니다.</p>"
+		},
+		"Sorcerous Restoration": {
+		  "name": "술법 회복",
+		  "requirements": "소서러 20",
+		  "description": "<p>당신이 소서러 20레벨에 도달하면, 짧은 휴식을 마칠 때마다 술법 점수 4점을 회복할 수 있습니다.</p>"
+		},
+		"Spell Mastery": {
+		  "name": "주문 통달",
+		  "requirements": "위저드 18",
+		  "description": "<p>위저드 18레벨에 도달하면, 당신은 몇몇 주문에 완전히 통달해 언제든 마음대로 시전할 수 있게 됩니다. 당신은 주문책에서 1레벨 주문과 2레벨 주문을 각각 하나씩 선택합니다. 당신이 이렇게 선택한 주문들을 가장 낮은 레벨 형태로 시전할 때, 당신은 주문 슬롯을 소비하지 않고 시전할 수 있습니다. 만약 당신이 이 주문들을 더 높은 형태로 시전하고자 한다면 여전히 주문 슬롯을 소비해야 합니다.</p><p>당신은 8시간 동안 연구해서 선택했던 주문들 중 전부나 주문들 중 하나를 동일한 레벨의 다른 주문으로 교체할 수 있습니다.</p><section class=\"secret foundry-note\" id=\"secret-0RuufEpTBv0uYysU\"><p><strong>파운드리 노트</strong></p><p>필요에 따라 이 항목을 편집해 선택한 주문을 기록하십시오:</p><ul><li><em>1레벨 주문</em></li><li><em>2레벨 주문</em></li></ul></section>"
+		},
+		"v4gKwLhAq9vuqza7": {
+		  "name": "주문시전",
+		  "requirements": "클레릭 1",
+		  "description": "<p>신의 힘을 중개하는 사람으로서, 당신은 클레릭 주문을 시전할 수 있습니다.</p><h5>소마법</h5><p>1레벨에 클레릭 주문 목록에서 원하는 소마법 3개를 골라 습득합니다. 클레릭 표의 습득 소마법 열을 참조하면 더 높은 레벨에서 추가로 습득할 수 있는 소마법을 찾을 수 있습니다.</p><h5>주문 준비와 시전</h5><p>클레릭 표를 보면 1레벨 이상의 주문을 시전하는데 주문 슬롯이 얼마나 드는지 알 수 있습니다. 표에 있는 주문 중 하나를 시전하려면, 주문 레벨 이상의 레벨을 가진 주문 슬롯을 소비해야 합니다. 긴 휴식을 마치면 소비한 주문 슬롯을 모두 회복할 수 있습니다.</p><p>클레릭 주문 목록에서 고른, 시전 가능한 주문 목록을 준비합니다. 그 후, 지혜 수정치 + 클레릭 레벨만큼의 개수대로 클레릭 주문을 고릅니다(최소 1개).</p><p>예를 들어, 만약 당신이 3레벨 클레릭이라면, 주문 슬롯은 1레벨 4개, 2레벨 2개를 갖고 있습니다. 지혜 16으로는 1~2레벨 주문 중에서 총 6개를 준비한 주문 목록에 포함시킬 수 있습니다. 1레벨 주문인 상처 치료 (Cure wounds)를 준비한다면, 1레벨이나 2레벨 주문 슬롯을 사용해 시전할 수 있습니다. 주문을 시전해도 준비된 주문 목록에서 사라지지 않습니다.</p><p>긴 휴식을 마치면 준비한 주문 목록을 변경할 수 있습니다. 준비한 주문 목록을 새로 만드려면 기도와 명상에 시간을 소비할 필요가 있습니다. 각 주문의 주문 레벨 당 최소 1분은 소요됩니다.<h3>주문시전 능력</h3><p>클레릭 주문의 주문시전 능력은 '지혜' 입니다. 당신의 주문의 힘은 당신이 섬기는 신에 대한 헌신에서 오는 것이기 때문입니다. 클레릭 주문이 주문시전 능력을 참조할 때 지혜를 사용합니다. 또한, 클레릭 주문의 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 지혜 수정치를 사용합니다. </p><p><strong>주문 내성 DC</strong>= 8 + 숙련 보너스 + 지혜 수정치</p><p><strong>주문 공격 수정치</strong>= 숙련 보너스 + 지혜 수정치</p><h5>의식 시전</h5><p>클레릭 주문에 의식 태그가 붙어있고 준비된 상태일 경우, 그 주문을 의식으로서 시전할 수 있습니다.</p><h5>주문시전 매개체</h5><p>성표를 클레릭 주문의 주문시전 매개체로 사용할 수 있습니다. @UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM.JournalEntryPage.AjavRU4yPfI9hfaI]{여행 장비 Adventuring Gear} 참조.</p>"
+		},
+		"u4NLajXETJhJU31v": {
+			"name": "주문시전",
+		  	"requirements": "바드 1",
+		  	"description": "<p>당신은 현실이라는 옷감을 소망과 음악이라는 실로 자아내고 다듬어내는 법을 터득했습니다. 당신의 주문은 다양한 상황에 맞춰 조율할 수 있는, 방대한 레퍼토리 중 하나입니다.</p><h5>소마법</h5><p>바드 주문 목록에서 2개의 소마법을 골라 습득합니다. 바드 표의 '습득 소마법' 열을 참조하면 더 높은 레벨에서 추가로 습득할 수 있는 소마법을 찾을 수 있습니다.</p><h5>주문 슬롯</h5><p>바드 표는 1레벨 이상의 주문을 시전할 때 얼마나 많은 주문 슬롯을 가지고 있는지 나타냅니다. 주문을 시전하기 위해서는 주문 레벨 이상의 레벨을 가진 슬롯을 소비해야 합니다. 긴 휴식을 마치면 사용한 슬롯이 모두 회복됩니다.</p><p>예를 들어, 1레벨 주문인 상처 치료 Cure wounds를 습득 중이고 1레벨 주문 슬롯과 2레벨 주문 슬롯을 사용할 수 있다면, 두 슬롯 중 어느 하나를 소모해서 상처 치료를 시전할 수 있습니다.</p><h5>1레벨 이상의 습득 주문</h5><p>바드 주문 목록에서 원하는 1레벨 주문 4개를 습득합니다.</p><p>바드 표의 '습득 주문' 열을 보면 어느 시기에 원하는 바드 주문을 추가로 습득하는지 알 수 있습니다. 각 주문은 가지고 있는 주문 슬롯의 레벨과 같아야 합니다. 바드 클래스 3레벨에 도달했을 때, 1~2 레벨 주문 중 1개를 골라 추가로 습득할 수 있습니다.</p><p>또한, 바드 레벨이 1 오를 때마다 습득한 주문 중 1개를 골라 바드 주문 목록에 있는 다른 주문으로 교체할 수 있습니다. 교체할 주문 또한 갖고 있는 주문 슬롯 레벨 이하여야 합니다.</p><h5>주문시전 능력</h5><p>바드 주문의 주문시전 능력은 '매력' 입니다. 당신의 마법은 당신의 이야기나 음악 속에 녹아있는 마음과 영혼으로부터 흘러나오는 것이기 때문입니다. 주문이 주문시전 능력을 참조할 때 매력을 참조합니다. 또한, 바드 주문의 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 매력 수정치를 사용합니다.</p><p><strong>주문 내성 DC</strong>= 8 + 숙련 보너스 + 매력 수정치</p><p><strong>주문 공격 수정치</strong>= 숙련 보너스 + 매력 수정치</p><h5>의식 시전</h5><p>의식 태그가 붙어있는 주문은 의식으로서 시전할 수 있습니다.</p><h5>주문시전 매개체</h5><p>악기를 바드 주문의 주문시전 매개체로 사용할 수 있습니다. (@UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM.JournalEntryPage.AjavRU4yPfI9hfaI]{모험 장비 Adventuring Gear} 참조)</p>"
+		},
+		"i6tPm3FNK13Ftc9v": {
+			"name": "주문시전",
+		  	"requirements": "드루이드 1",
+			"description": "<p>자연 본연의 신성한 정수를 끌어오는 드루이드로서, 당신은 그 정수를 자유자재로 다루기 위한 주문을 시전할 수 있습니다.</p><h3>소마법</h3><p>1레벨에 드루이드 주문 목록에서 원하는 소마법 2개를 골라 습득합니다. 드루이드 표의 '습득 소마법' 열을 참조하면 더 높은 레벨에서 습득할 수 있는 추가 드루이드 소마법을 찾을 수 있습니다.</p><h3>주문 준비와 시전</h3><p>드루이드 표를 보면 1레벨 이상 주문을 시전할 때 주문 슬롯이 얼마나 드는지 알 수 있습니다. 드루이드 주문을 시전하려면, 주문의 레벨 이상의 레벨을 가진 주문 슬롯을 소비해야 합니다. 긴 휴식을 마치면 소비한 주문 슬롯이 모두 회복됩니다.</p><p>드루이드 주문 목록에서 고른, 시전 가능한 드루이드 주문 목록을 준비합니다. 그 후, 지혜 수정치 + 드루이드 레벨만큼의 개수대로 드루이드 주문을 고릅니다(최소 한 개). 선택한 주문은 반드시 갖고 있는 주문 슬롯 레벨에 맞는 레벨이어야 합니다.</p><p>예를 들어, 만약 당신이 3레벨 드루이드라면, 주문 슬롯은 1레벨 4개, 2레벨 2개를 갖고 있습니다. 지혜 16으로는 1~2레벨 주문 중에서 총 6개를 준비된 주문 목록에 포함시킬 수 있습니다. 1레벨 주문인 상처 치료 (Cure wounds)를 준비한다면, 1레벨이나 2레벨 주문 슬롯을 사용해 시전할 수 있습니다. 주문을 시전해도 준비된 주문 목록에서 사라지지 않습니다.</p><p>긴 휴식을 마치면 준비한 주문 목록을 변경할 수 있습니다. 준비한 주문 목록을 새로 만드려면 기도와 명상에 시간을 소비할 필요가 있습니다. 각 주문의 주문 레벨 당 최소 1분은 소요됩니다.</p>\n<h5>주문시전 능력</h5><p>드루이드 주문의 주문시전 능력은 '지혜' 입니다. 당신의 주문은 자연에의 헌신과 조화로부터 오는 것이기 때문입니다. 주문이 주문시전 능력을 참조할 때 지혜를 사용합니다. 또한, 드루이드 주문의 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 지혜 수정치를 사용합니다.</p><p><strong>주문 내성 DC</strong> = 8 + 숙련 보너스 + 지혜 수정치</p><p><strong>주문 공격 수정치</strong> = 숙련 보너스 + 지혜 수정치</p><h5>의식 시전</h5><p>드루이드 주문에 의식 태그가 붙어있고 준비된 상태일 경우, 그 주문을 의식으로서 시전할 수 있습니다.</p><h5>주문시전 매개체</h5><p>드루이드 매개체를 드루이드 주문의 주문시전 매개체로 사용할 수 있습니다. (@UUID[Compendium.dnd5e.rules.JournalEntry.BYFd9hiJGo9L5aOM.JournalEntryPage.AjavRU4yPfI9hfaI]{여행 장비 Adventuring Gear} 참조.)</p>"
+		},
+		"ihoQHsmVZlyDbPhX": {
+			"name": "주문시전",
+			"requirements": "팔라딘 1",
+			"description": "<p>2레벨이 되면, 클레릭처럼 명상과 기도를 통해 성스러운 주문을 시전하는 법을 습득합니다.</p><h5>주문 준비와 시전</h5><p>팔라딘 표를 보면 1레벨 이상의 주문을 시전하는데 주문 슬롯이 얼마나 드는지 알 수 있습니다. 표에 있는 주문 중 하나를 시전하려면, 주문 레벨 이상의 레벨을 가진 주문 슬롯을 소비해야 합니다. 긴 휴식을 마치면 소비한 주문 슬롯을 모두 회복할 수 있습니다.</p><p>팔라딘 주문 목록에서 고른, 시전 가능한 주문 목록을 준비합니다. 준비가 완료되면, 매력 수정치 + 팔라딘 레벨의 절반(나머지 내림)만큼의 개수대로 클레릭 주문을 고릅니다(최소 1개).</p><p>예를 들어, 만약 당신이 5레벨 팔라딘이라면, 주문 슬롯은 1레벨 4개, 2레벨 2개를 갖고 있습니다. 매력 14로는 1~2레벨 주문 총 4개를 준비한 주문 목록에 포함시킬 수 있습니다. 1레벨 주문인 상처 치료 (Cure wounds)를 준비한다면, 1레벨이나 2레벨 주문 슬롯을 사용해 시전할 수 있습니다. 주문을 시전해도 준비된 주문 목록에서 사라지지 않습니다.</p><p>긴 휴식을 마치면 준비한 주문 목록을 변경할 수 있습니다. 준비한 주문 목록을 새로 만드려면 기도와 명상에 시간을 소비할 필요가 있습니다. 각 주문의 주문 레벨 당 최소 1분은 소요됩니다.</p><h5>주문시전 능력</h5><p>팔라딘 주문의 주문시전 능력은 '매력' 입니다. 팔라딘의 주문의 힘은 신념의 강함에서 오기 때문입니다. 팔라딘 주문이 주문시전 능력을 참조할 때마다 매력을 사용합니다. 또한, 팔라딘 주문의 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 매력 수정치를 사용합니다.</p><p><strong>주문 내성 DC</strong> = 8 + 숙련 보너스 + 매력 수정치</p><p><strong>주문 공격 수정치 </strong>= 숙련 보너스 + 매력 수정치</p><h5>주문시전 매개체</h5><p>성표를 팔라딘 주문의 주문시전 매개체로 사용할 수 있습니다.</p>"
+		},
+		"u6xV3Ki3TXRrD7zg": {
+			"name": "주문시전",
+			"requirements": "레인저 1",
+			"description": "<p>2레벨에 도달할 때, 드루이드처럼 자연의 마법적 정수를 다루기 위해 주문을 시전하는 법을 습득합니다.</p><h5>주문 슬롯</h5><p>레인저 표는 1레벨 이상의 주문을 시전할 때 얼마나 많은 주문 슬롯을 가지고 있는지 나타냅니다. 주문을 시전하기 위해서는 주문 레벨 이상의 레벨을 가진 슬롯을 소비해야 합니다. 긴 휴식을 마치면 사용한 슬롯이 모두 회복됩니다.</p><p>예를 들어, 1레벨 주문인 동물 친밀화 (Animal Friendship)를 습득 중이고 1레벨 주문 슬롯과 2레벨 주문 슬롯을 사용할 수 있다면, 두 슬롯 중 어느 하나를 소모해서 동물 친밀화를 시전할 수 있습니다.<h5>1레벨 이상에서 습득 가능한 주문</h5><p>레인저 주문 목록에서 원하는 1레벨 주문 2개를 습득합니다.</p><p>레인저 표의 '습득 주문' 열을 보면 어느 시기에 원하는 레인저 주문을 추가로 습득하는지 알 수 있습니다. 각 주문은 가지고 있는 주문 슬롯의 레벨과 같아야 합니다. 레인저 클래스 5레벨에 도달했을 때, 1~2 레벨 주문 중 1개를 골라 추가로 습득할 수 있습니다.</p><p>또한, 레인저 레벨이 1 오를 때마다 습득한 주문 중 1개를 골라 레인저 주문 목록에 있는 다른 주문으로 교체할 수 있습니다. 교체할 주문 또한 갖고 있는 주문 슬롯 레벨 이하여야 합니다.</p>주문시전 능력<p>레인저 주문의 주문시전 능력은 '지혜' 입니다. 당신의 마법은 자연과의 조화에서 오는 것이기 때문입니다. 레인저 주문이 주문시전 능력을 참조할 때 지혜를 사용합니다. 또한, 레인저 주문 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 지혜 수정치를 사용합니다.</p><p><strong>주문 내성 DC </strong>= 8 + 숙련 보너스 + 지혜 수정치</p><p><strong>주문 공격 수정치 </strong>= 숙련 보너스 + 지혜 수정치</p>"
+		},
+		"oygRF3ZjTv2T7z0Y": {
+			"name": "주문시전",
+			"requirements": "소서러 1",
+			"description": "<p>자신이나 부모, 선조의 과거에 있었던 한 사건은 당신에게 지울 수 없는 흔적을 남겼습니다. 당신에게 비전 마법이 깃든 것은 그 때문입니다. 그 근원이 무엇이든간에, 이러한 마법은 당신의 주문을 더욱 강하게 만듭니다.</p><h5>소마법</h5><p>1레벨에 소서러 주문 목록에서 원하는 소마법 4개를 골라 습득합니다. 소서러 표의 '습득 소마법' 열을 참조하면 더 높은 레벨에서 추가로 습득할 수 있는 소마법을 찾을 수 있습니다.</p><h5>주문 슬롯</h5><p>소서러 표는 1레벨 이상의 주문을 시전할 때 얼마나 많은 주문 슬롯을 가지고 있는지 나타냅니다. 주문을 시전하기 위해서는 주문 레벨 이상의 레벨을 가진 슬롯을 소비해야 합니다. 긴 휴식을 마치면 사용한 슬롯이 모두 회복됩니다.</p><p>예를 들어, 1레벨 주문인 타오르는 손길(Burning Hands)을 습득 중이고 1레벨 주문 슬롯과 2레벨 주문 슬롯을 사용할 수 있다면, 두 슬롯 중 어느 하나를 소모해서 타오르는 손길을 시전할 수 있습니다.</p><h5>1레벨 이상의 습득 주문</h5><p>소서러 주문 목록에서 원하는 1레벨 주문 2개를 습득합니다.</p><p>소서러 표의 '습득 주문' 열을 보면 어느 시기에 원하는 소서러 주문을 추가로 습득하는지 알 수 있습니다. 각 주문은 가지고 있는 주문 슬롯의 레벨 이하여야 합니다.예를 들어, 소서러 클래스 3레벨에 도달했을 때, 1~2레벨 주문 하나를 새로이 습득할 수 있습니다.</p><p>또한, 소서러 레벨이 1 오를 때마다 습득한 주문 중 1개를 골라 소서러 주문 목록에 있는 다른 주문으로 교체할 수 있습니다. 교체할 주문 또한 갖고 있는 주문 슬롯 레벨 이하여야 합니다.</p><h5>주문시전 능력</h5><p>소서러 주문의 주문 시전 능력은 '매력' 입니다. 당신의 마법은 당신의 의지를 세계에 관철하는 능력에 달려있기 때문입니다. 소서러 주문이 주문 시전 능력을 참조할 때 매력을 사용합니다. 또한, 소서러 주문 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 매력 수정치를 사용합니다.</p><p><strong>주문 내성 DC </strong>= 8 + 숙련 보너스 + 매력 수정치</p><p><strong>주문 공격 수정치 </strong>= 숙련 보너스 + 매력 수정치</p><h5>주문시전 매개체</h5><p>비전 매개체를 소서러 주문의 주문시전 매개체로 사용할 수 있습니다.</p>"
+		},
+		"gbNo5eVPaqr8IVKL": {
+			"name": "주문시전",
+			"requirements": "위저드 1",
+			"description": "<p>비전 마법을 배우는 자로서, 당신은 주문책을 소지하고 있습니다. 주문책에는 당신이 가진 진정한 힘의 광채를 선보여줄 주문이 담겨있습니다.</p><h5>소마법</h5><p>1레벨에 위저드 주문 목록에서 원하는 소마법 3개를 골라 습득합니다. 위저드 표의 '습득 소마법' 열을 참조하면 더 높은 레벨에서 추가로 습득할 수 있는 소마법을 찾을 수 있습니다.</p><h5>주문책</h5><p>당신은 1레벨에 원하는 위저드 주문 6개가 담긴 주문책을 소지합니다. 주문서는 습득한 위저드 주문을 저장하는 저장소입니다. 단, 소마법은 정신 속에 고정되어 있기 때문에 예외입니다.</p><h5>주문 준비와 시전</h5><p>위저드 표를 보면 1레벨 이상의 주문을 시전하는데 주문 슬롯이 얼마나 드는지 알 수 있습니다. 표에 있는 주문 중 하나를 시전하려면, 주문 레벨 이상의 레벨을 가진 주문 슬롯을 소비해야 합니다. 긴 휴식을 마치면 소비한 주문 슬롯을 모두 회복할 수 있습니다.</p><p>위저드 주문 목록에서 고른, 시전 가능한 주문 목록을 준비합니다. 주문을 준비하려면, 주문책에서 지능 수정치 + 위저드 레벨만큼의 개수대로 위저드 주문을 고릅니다(최소 1개). 주문의 레벨은 갖고 있는 주문 슬롯의 레벨 이하여야 합니다.</p><p>예를 들어, 만약 당신이 3레벨 위저드라면, 주문 슬롯은 1레벨 4개, 2레벨 2개를 갖고 있습니다. 지능은 16이므로 1~2레벨 주문 총 6개를 주문책에서 골라 준비한 주문 목록에 포함시킬 수 있습니다. 1레벨 주문인 마법 화살 (Magic Missile)을 준비한다면, 1레벨이나 2레벨 주문 슬롯을 사용해 시전할 수 있습니다. 주문을 시전해도 준비된 주문 목록에서 사라지지 않습니다.</p><p>긴 휴식을 마치면 준비한 주문 목록을 변경할 수 있습니다. 준비한 주문 목록을 새로 만드려면 주문책을 공부하고 시전에 필요한 주구와 동작을 외울 시간이 필요합니다. 각 주문의 주문레벨 당 최소 1분은 소요됩니다.</p><h5>주문시전 능력</h5><p>위저드 주문의 주문시전 능력은 '지능' 입니다. 주문은 꾸준한 학습과 암기를 통해 습득되기 때문입니다. 위저드 주문이 주문 시전 능력을 참조할 때 지능을 사용합니다. 또한, 위저드 주문 내성 굴림 DC를 설정할 때와 공격 굴림을 할 때 지능 수정치를 사용합니다.</p><p><strong>주문 내성 DC</strong> = 8 + 숙련 보너스 + 지능 수정치</p><p><strong>주문 공격 수정치 </strong>= 숙련 보너스 + 지능 수정치</p><h5>의식 시전</h5><p>위저드 주문에 의식 태그가 붙어있고 주문책에 해당 주문이 있을 경우, 그 주문을 의식으로서 시전할 수 있습니다. 주문이 준비된 상태일 필요는 없습니다.</p><h5>주문시전 매개체</h5><p>비전 매개체를 위저드 주문의 주문시전 매개체로 사용할 수 있습니다.</p><h5>1레벨 이상의 주문 습득</h5><p>위저드 레벨이 1 오를 때마다 주문책에 원하는 위저드 주문 2개를 시간과 비용 소비 없이 추가할 수 있습니다. 각 주문은 위저드 표에 기재된 바와 같이, 가지고 있는 주문 슬롯의 레벨과 같아야 합니다. 모험을 통해 새로운 주문을 찾아 주문책에 추가할 수도 있습니다.(\"Your Spellbook\" 사이드바 참조).</p>"
+		},
+		"Stand Against the Tide": {
+		  "name": "파도 거스르기",
+		  "requirements": "헌터 15",
+		  "description": "<p>적대적인 크리처가 당신에게 근접 공격을 가했으나 빗나간 경우, 반응행동을 소비하면 (공격자 이외의) 다른 크리처 중 하나에게 그 공격을 다시 가하도록 할 수 있습니다.</p>"
+		},
+		"Steel Will": {
+		  "name": "강철의 의지",
+		  "requirements": "헌터 7",
+		  "description": "<p>당신은 공포 상태에 대한 내성 굴림에 유리함을 받습니다.</p>"
+		},
+		"Step of the Wind": {
+		  "name": "바람 걸음",
+		  "requirements": "몽크 2",
+		  "description": "<p>당신은 자기 턴에 기 1점을 소비해 추가 행동으로 질주나 퇴각 행동을 할 수 있으며, 그 턴 동안 당신의 도약 거리는 2배가 됩니다.</p>"
+		},
+		"Stillness of Mind": {
+		  "name": "부동심",
+		  "requirements": "몽크 7",
+		  "description": "<p>몽크 7레벨에 도달하면, 당신은 행동을 사용해 당신을 매혹 또는 공포 상태로 만드는 당신에게 걸린 효과 하나를 즉시 종료시킬 수 있습니다.</p>"
+		},
+		"Stroke of Luck": {
+		  "name": "행운의 일격",
+		  "requirements": "로그 20",
+		  "description": "<p>로그 20레벨에 도달하면, 당신은 절체절명의 상황에서 무언가를 반드시 성공시켜야 할 때 이를 마음먹은 대로 해낼 수 있는 놀라운 직감을 얻습니다. 당신이 사거리 내의 목표를 공격했을 때 빗나간 경우, 당신은 이 빗나간 공격을 명중으로 바꿀 수 있습니다. 또한 당신이 능력 판정에서 실패한 경우, 당신은 d20에서 20이 나온 것으로 판정의 결과를 바꿀 수 있습니다.</p><p>이 특성은 한 번 사용하고 나면 짧은 휴식이나 긴 휴식을 마치기 전에는 다시 사용할 수 없습니다.</p>"
+		},
+		"Stunning Strike": {
+		  "name": "충격의 일격",
+		  "requirements": "몽크 5",
+		  "description": "<p>몽크 5레벨에 도달하면, 당신은 상대 몸속의 기 흐름을 교란하는 공격을 가할 수 있습니다. 당신이 근접 무기 공격으로 다른 크리처를 명중시켰다면, 기 1점을 소비해 충격의 일격을 시도할 수 있습니다. 목표는 건강 내성을 굴려 실패할 시 당신의 다음 턴이 끝날 때까지 기절 상태가 됩니다.</p>"
+		},
+		"Subtle Spell": {
+		  "name": "주문 미묘화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 주문을 시전할 때, 술법 점수 1점을 소비해 동작이나 음성 요소를 무시하고 주문을 시전할 수 있습니다.</p>"
+		},
+		"Superior Critical": {
+		  "name": "우수한 치명타",
+		  "requirements": "챔피언 15",
+		  "description": "<p>파이터 15레벨에 도달하면, 당신의 무기 공격은 명중 굴림 주사위에서 18-20이 나왔을 때 치명타를 가하게 됩니다.</p>"
+		},
+		"Superior Hunter's Defense": {
+		  "name": "우수한 헌터의 방어",
+		  "requirements": "헌터 15",
+		  "description": "<p>15레벨이 되면, 다음 중 원하는 특성 하나를 골라 습득합니다.</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.laVHAIOKIsUeezWd]{Evasion}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.Xf763cJoDHPPWSGG]{Stand Against the Tide}</p><p>@UUID[Compendium.dnd5e.classfeatures.Item.7pyZjz5vlUWV01qQ]{Uncanny Dodge}</p>"
+		},
+		"Superior Inspiration": {
+		  "name": "우수한 고양감",
+		  "requirements": "바드 20",
+		  "description": "<p>20레벨에, 당신이 우선권을 굴릴 때 @UUID[Compendium.dnd5e.classfeatures.Item.hpLNiGq7y67d2EHA]{바드의 고양감}을 모두 소진한 상태일 경우, 바드의 고양감 사용횟수를 1회 회복합니다.</p>"
+		},
+		"Supreme Healing": {
+		  "name": "최상의 치유력",
+		  "requirements": "생명 권역 17",
+		  "description": "<p>클레릭 17레벨에 도달하면, 당신이 hp를 회복하는 주문을 사용하여 주사위를 굴려 회복량을 정할 때, 주사위를 굴리는 대신 주사위마다 최대치가 나온 것으로 취급할 수 있습니다. 예를 들어, 당신이 2d6점의 hp를 회복하는 주문을 시전한 경우 12점을 회복할 수 있습니다.</p>"
+		},
+		"Supreme Sneak": {
+		  "name": "뛰어난 은신술",
+		  "requirements": "시프 9",
+		  "description": "<p>로그 9레벨에 도달하면, 당신은 자기 턴에 이동 속도의 절반 이하만 움직였을 때 민첩(은신) 판정에 유리함을 받을 수 있습니다.</p>"
+		},
+		"Survivor": {
+		  "name": "생존의 대가",
+		  "requirements": "챔피언 18",
+		  "description": "<p>파이터 18레벨에 도달하면, 타격을 견뎌내는 당신의 힘은 정점에 도달하게 됩니다. 당신의 hp가 절반 이하라면, 당신은 자기 턴이 시작할 때마다 5 + 당신의 건강 수정치만큼 hp를 회복합니다. 단, 당신의 hp가 0으로 떨어졌을 때는 이 특성의 이익을 받지 못합니다.</p>"
+		},
+		"Thief of Five Fates": {
+		  "name": "다섯 숙명의 도둑",
+		  "requirements": "워락 2",
+		  "description": "<p>당신은 워락 주문 슬롯 하나를 소비해 @Compendium[dnd5e.spells.95K2aUhAGV9qXjnf]{억압} 주문을 시전할 수 있습니다. 이 특성은 한 번 사용하면 긴 휴식을 마쳐야 다시 사용할 수 있습니다.</p>"
+		},
+		"Thief's Reflexes": {
+		  "name": "시프의 반사신경",
+		  "requirements": "시프 17",
+		  "description": "<p>로그 17레벨에 도달하면, 당신은 매복이나 위험 회피에 놀랍도록 능숙해집니다. 당신은 전투 첫 라운드에 두 번의 턴을 행사할 수 있습니다. 첫 번째 턴은 일반적인 우선권 순서에 따라 행동하며, 두 번째 턴은 우선권 -10 순서에 행동합니다. 기습을 당했을 때는 이 특성의 효과를 받을 수 없습니다.</p>"
+		},
+		"Thieves' Cant": {
+		  "name": "도둑의 속어",
+		  "requirements": "로그 1",
+		  "description": "<p>당신은 로그로서 훈련을 받을 때 도둑들의 속어에 대해 배웠습니다. 이 속어는 여러 방언과 은어, 암호가 섞인 것이며, 이것을 사용하면 보통 대화 도중 비밀리에 메시지를 보낼 수 있습니다. 도둑의 속어를 배운 자들만이 이렇게 숨겨진 메시지를 이해할 수 있습니다. 보통 대화 속에 메시지를 숨겨 전달하려면 평범하게 말하는 시간의 4배가 필요합니다.</p><p>당신은 또한 비밀 표식이나 상징을 통해, 이 지역은 위험하다 거나 다른 도적 길드의 영토라는 경고, 근처에 사냥감이 있다거나 점 찍은 호구를 나타내는 표시, 안전 가옥을 제공중이라는 등의 간단한 메시지를 읽고 이해할 수 있습니다.</p>"
+		},
+		"Thirsting Blade": {
+		  "name": "갈망하는 칼날",
+		  "requirements": "워락 5, 칼날의 계약",
+		  "description": "<p>당신이 자기 턴에 계약 무기로 공격 행동을 행할 때, 당신은 두 번 공격을 가할 수 있습니다.</p>"
+		},
+		"Timeless Body": {
+		  "name": "시간을 초월한 몸",
+		  "requirements": "몽크 15",
+		  "description": "<p>몽크 15레벨에 도달하면, 기가 육신을 지탱시켜 주기 때문에 고령으로 인해 몸이 약해지지 않고, 마법적으로 나이를 먹지도 않게 됩니다. 하지만 여전히 고령으로 죽을 수는 있습니다. 또한 당신은 더는 먹고 마실 필요가 없어집니다.</p>"
+		},
+		"Tongue of the Sun and Moon": {
+		  "name": "태양과 달의 언어",
+		  "requirements": "몽크 13",
+		  "description": "<p>몽크 13레벨에 도달하면, 당신은 다른 이들의 기에 접촉해 모든 언어를 듣고 이해하는 능력을 얻습니다. 또한 언어를 이해할 수 있는 모든 크리처는 당신의 말을 이해할 수 있게 됩니다.</p>"
+		},
+		"Tranquility": {
+		  "name": "평정심",
+		  "requirements": "열린 손의 길 11",
+		  "description": "<p>몽크 11레벨에 도달하면, 당신은 주변을 평화의 기운으로 감싸는 특별한 명상에 들어갈 수 있습니다. 긴 휴식을 끝낼 때, 당신은 @UUID[Compendium.dnd5e.spells.Item.gvdA9nPuWLck4tBl]{성역화Sanctuary} 주문의 효과를 얻습니다. 이 효과는 당신의 다음 긴 휴식이 시작될 때까지 지속됩니다. (일반적인 성역화 주문처럼 사전에 종료될 수 있습니다.) 이 주문의 내성 DC는 8 + 당신의 지혜 수정치 + 당신의 숙련 보너스입니다.</p>"
+		},
+		"Twinned Spell": {
+		  "name": "주문 이중화",
+		  "requirements": "소서러 3",
+		  "description": "<p>당신은 사거리가 자신이 아니며 크리처 하나만을 목표로 하는 주문을 시전할 때, 해당 주문 레벨만큼의 술법 점수를 소비해 주문의 사거리 내에서 두 번째 크리처를 목표로 지정할 수 있습니다. (소마법의 경우 술법 점수 1점이 필요합니다.)</p><p>이 마법변형은 본래 레벨에서 크리처 하나만을 목표로 하는 주문에만 사용할 수 있습니다. 예를 들어, @UUID[Compendium.dnd5e.spells.Item.41JIhpDyM9Anm7cs]{마법 화살Magic Missile}이나 @UUID[Compendium.dnd5e.spells.Item.7u2obDvuvtZBkTfq]{타오르는 광선Scorching Ray}은 불가능하며, @UUID[Compendium.dnd5e.spells.Item.ctW81uiX56xZR2c5]{서리 광선Ray of Frost}은 가능합니다.</p>"
+		},
+		"Two-Weapon Fighting": {
+		  "name": "쌍수 전투술",
+		  "requirements": "파이터 1, 챔피언 10, 레인저 2",
+		  "description": "<p>양손에 각각 무기를 들고 싸울 때, 두번째 공격의 피해에도 능력 수정치를 더할 수 있습니다.</p>"
+		},
+		"Unarmed Strike": {
+		  "name": "비무장 공격",
+		  "description": "<p></p>"
+		},
+		"Unarmored Defense": {
+		  "name": "비무장 방어",
+		  "requirements": "몽크 1",
+		  "description": "<p>1레벨부터 갑옷 및 방패를 착용하지 않은 경우, 당신의 AC는 10 + 민첩 수정치 + 지혜 수정치가 됩니다.</p>"
+		},
+		"Unarmored Defense (Barbarian)": {
+		  "name": "비무장 방어 (바바리안)",
+		  "requirements": "바바리안 1",
+		  "description": "<p>만약 어떠한 갑옷도 착용하지 않았다면, 당신의 AC는 10 + 당신의 민첩 수정치 + 당신의 건강 수정치가 됩니다. 당신이 방패를 착용해도 이 이익을 받을 수 있습니다.</p>"
+		},
+		"Unarmored Movement": {
+		  "name": "비무장 이동",
+		  "requirements": "몽크 2",
+		  "description": "<p>2레벨부터, 갑옷을 착용하지 않았거나 방패를 들고 있지 않을 때 당신의 속도는 10ft 증가합니다. 이 속도 보너스는 특정 몽크 레벨에 도달할 수록 점점 늘어납니다. 자세한 것은 몽크 표 참조.</p><p>9레벨에, 자기 턴의 이동 중 떨어지지 않고 수직면 위로 움직일 수 있는 능력과 액체 위를 걸을 수 있는 능력을 얻습니다. </p>"
+		},
+		"Uncanny Dodge": {
+		  "name": "놀라운 회피",
+		  "requirements": "로그 5",
+		  "description": "<p>로그 5레벨에 도달하면, 당신은 눈에 보이는 공격자에게 공격받아 명중당했을 때, 반응행동을 사용하여 그 공격의 피해를 절반으로 줄일 수 있습니다.</p>"
+		},
+		"Use Magic Device": {
+		  "name": "마법 도구 사용",
+		  "requirements": "시프 13",
+		  "description": "<p>로그 13레벨에 도달하면, 당신은 마법의 작동 원리에 익숙해져 평소라면 당신이 쓸 수 없을 법한 물건도 어떻게든 다룰 수 있게 됩니다. 당신은 마법 물건의 클래스나 종족, 레벨 요구조건을 무시하고 해당 물건을 사용할 수 있습니다.</p>"
+		},
+		"Vanish": {
+		  "name": "사라지기",
+		  "requirements": "레인저 14",
+		  "description": "<p>레인저 14레벨에 도달하면, 당신은 자기 턴에 행동 대신 추가 행동을 써서 은신 시도를 할 수 있습니다. 또한 당신이 일부러 흔적을 남기지 않는 한, 비마법적 수단을 사용하는 것만으로는 당신을 추적할 수 없습니다.</p>"
+		},
+		"Visions of Distant Realms": {
+		  "name": "머나먼 땅의 영상",
+		  "requirements": "워락 15",
+		  "description": "<p>당신은 주문 슬롯 소비 없이 언제든 @UUID[Compendium.dnd5e.spells.Item.ImlCJQwR1VL40Qem]{비전의 눈 Arcane Eye} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Voice of the Chain Master": {
+		  "name": "사슬 주인의 목소리",
+		  "requirements": "워락 3, 사슬의 계약",
+		  "description": "<p>당신은 같은 세계에 위치하는 한, 거리를 무시하고 패밀리어와 정신감응으로 의사소통할 수 있으며 패밀리어의 감각으로 보고 들을 수 있습니다. 또한 당신이 패밀리어의 감각을 사용하고 있을 때, 당신은 패밀리어를 통해 자신의 목소리로 말할 수 있습니다. 패밀리어에게 말하는 능력이 없더라도 이렇게 말하는 것은 가능합니다.</p>"
+		},
+		"Whirlwind Attack": {
+		  "name": "회오리바람 공격",
+		  "requirements": "헌터 11",
+		  "description": "<p>당신은 행동을 사용해 주변 5ft 내에 있는 모든 크리처에게 1번씩 근접 공격을 가할 수 있습니다. 이때 명중 굴림은 공격하는 대상마다 따로 굴려야 합니다.</p>"
+		},
+		"Whispers of the Grave": {
+		  "name": "무덤의 속삭임",
+		  "requirements": "워락 9",
+		  "description": "<p>당신은 주문 슬롯을 소비하지 않고 언제든  @UUID[Compendium.dnd5e.spells.Item.I2LUSF5ogc7Bj62e]{죽은 자와의 대화Speak with Dead} 주문을 시전할 수 있습니다.</p>"
+		},
+		"Wholeness of Body": {
+		  "name": "신체의 완전화",
+		  "requirements": "열린 손의 길 6",
+		  "description": "<p>몽크 6레벨에 도달하면, 당신은 스스로를 치료할 수 있는 능력을 얻습니다. 당신은 행동을 사용해 자신의 몽크 레벨 × 3만큼 hp를 회복할 수 있습니다. 이 특성을 한 번 사용했다면, 긴 휴식을 마치고 나야 다시 이 특성의 사용 능력을 회복하게 됩니다.</p>"
+		},
+		"Wild Shape": {
+		  "name": "야생 변신",
+		  "requirements": "드루이드 2",
+		  "description": "<p>당신은 2레벨부터 행동을 사용해 마법적으로 당신이 직접 본 적이 있는 야수 크리처의 모습으로 변신할 수 있습니다. 당신은 이 특성을 2번 사용할 수 있습니다. 짧은 휴식이나 긴 휴식을 마치면 사용한 횟수가 다시 회복됩니다.</p><p>당신이 어떤 야수로 변신할 수 있는지는 드루이드 레벨에 따라 달라집니다. 야수 형상 표에 이러한 제한이 나와 있습니다. 예를 들어, 2레벨이라면 당신은 비행이나 수영 이동속도가 없는 도전지수 1/4 이하의 야수로 변신할 수 있습니다.</p><h4><strong>야수 형상</strong></h4><table style=\"width: 352px;\" border=\"1\"><tbody><tr><td style=\"width: 35px;\"><strong>레벨</strong></td><td style=\"width: 49px;\"><strong>최대 CR</strong></td><td style=\"width: 182px;\"><strong>제한</strong></td><td style=\"width: 73px;\"><strong>예시</strong></td></tr><tr><td style=\"width: 35px;\">2레벨</td><td style=\"width: 49px;\">1/4</td><td style=\"width: 182px;\">비행이나 수영 이동속도 없음</td><td style=\"width: 73px;\">@UUID[Compendium.dnd5e.monsters.Actor.yawTeS8u2FCfzzZH]{늑대}</td></tr><tr><td style=\"width: 35px;\">4th</td><td style=\"width: 49px;\">1/2</td><td style=\"width: 182px;\">비행 이동속도 없음</td><td style=\"width: 73px;\">@UUID[Compendium.dnd5e.monsters.Actor.8aCTKP5qaBPFOqxM]{악어}</td></tr><tr><td style=\"width: 35px;\">8th</td><td style=\"width: 49px;\">1</td><td style=\"width: 182px;\">--</td><td style=\"width: 73px;\">@UUID[Compendium.dnd5e.monsters.Actor.9bHoR8k5D2DKHaF3]{거대 독수리}</td></tr></tbody></table><p>당신은 드루이드 레벨 ÷ 2 (나머지 버림) 시간까지 변신한 모습을 유지할 수 있습니다. 지속시간이 끝나면 다시 해당 특성을 사용하지 않는 한 원래 모습으로 돌아옵니다. 자기 턴에 추가 행동을 사용해도 원래 모습으로 돌아올 수 있습니다. 무의식 상태가 되거나, hp가 0으로 떨어지거나, 죽는 경우에도 자동으로 원래 모습으로 돌아옵니다.</p><p>변신 중에는 아래와 같은 규칙이 적용됩니다.</p><ul><li><p>당신의 게임 자료는 변신한 야수의 것을 따릅니다. 단, 당신의 성향과 개성, 그리고 지혜, 지능, 매력 능력치는 그대로 당신의 것을 사용합니다. 또한 당신은 기술과 내성 숙련을 유지할 수 있으며, 변신한 형태의 것도 추가로 얻습니다. 만약 변신한 형태가 이미 당신이 지닌 숙련과 같은 것을 지니고 있다면, 둘 중 더 높은 보너스를 사용할 수 있습니다. 단, 해당 형태가 전설적 행동이나 본거지 행동을 지니고 있어도 당신은 그러한 것을 사용할 수 없습니다.</p></li><li><p>당신은 변신할 때 새 형태의 hp와 히트 다이스를 얻습니다. 당신이 다시 원래 모습으로 돌아오면 변신하기 직전의 본래 hp로 돌아옵니다. 하지만 당신이 변신 중 hp가 0으로 떨어져 본래 형태로 돌아온 경우, 0으로 떨어진 다음 남은 몫의 피해는 원래 형태의 hp에 가해집니다. 예를 들어 당신이 변신 중 hp가 1점만 남았을 때 10점의 피해를 받게 되었다면, 0점이 되어 다시 원래 형태로 돌아온 다음 나머지 9점의 피해를 받게 됩니다. 이렇게 남겨진 피해로 인해 원래 형태의 hp까지 0으로 떨어지지 않는 한 당신은 무의식 상태로 쓰러지지 않고 견딜 수 있습니다.</p></li><li><p>변신 중에는 주문을 시전할 수 없으며, 새로운 형태에 따라 말을 하거나 손을 사용하는 행동도 제한될 수 있습니다. 그러나 변신 중에도 이미 시전한 주문의 정신집중은 유지할 수 있으며, 이미 시전한 주문의 일부인 행동(번개 소환 주문 등)도 계속 취할 수 있습니다.</p></li><li><p>당신은 새로운 형태가 신체적으로 허락하는 한 자신의 클래스나 종족, 기타 조건으로 얻은 모든 특성의 효과를 유지하고 사용할 수 있습니다. 단, 암시야 등의 특수 감각은 새로운 형태도 동일하게 가진 것이 아니라면 사용할 수 없습니다.</p></li><li><p>당신은 장비를 그 자리에 떨어뜨리거나, 새로운 형태에 녹아들게 하거나, 새로운 형태에 착용하는 방식 중 하나를 선택할 수 있습니다. 착용한 장비는 본래대로 기능하지만, 새로운 형태에서 쓸모가 있는지는 새 형태의 크기나 모습에 따라 GM이 결정합니다. 새로운 형태가 착용할 수 없는 장비는 녹아들지 않는 한 바닥에 떨어질 것입니다. 몸에 녹아든 장비는 변신 중에 아무런 효과도 발휘하지 않습니다.</p></li></ul>"
+		},
+		"Witch Sight": {
+		  "name": "주술 시야",
+		  "requirements": "워락 15",
+		  "description": "<p>당신은 30ft 내의 시야 내에 있는 모든 변신자, 혹은 변환계나 환영계 주문으로 모습을 바꾸거나 가린 크리처들의 본래 모습을 파악할 수 있습니다.</p>"
+		}
+	  }
+}

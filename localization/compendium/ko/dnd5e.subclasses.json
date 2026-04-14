@@ -1,0 +1,53 @@
+{
+	"label": "서브클래스 (SRD)",
+	"entries": {
+		"Champion": {
+			"name": "챔피언",
+			"description": "<p>챔피언 아키타입은 맨몸으로 치명적인 힘을 발휘하도록 단련하는 데에 중점을 두고 있습니다. 이 아키타입을 목표로 하는 자들은 혹독한 훈련으로 신체를 완벽하게 갈고 닦아 파괴적인 일격을 가합니다.</p>"
+		},
+		"Circle of the Land": {
+			"name": "대지의 회합",
+			"description": "<p>대지의 회합은 신비주의자와 현자들로 이루어진 집단입니다. 그들은 고대의 지식과 의식을 방대한 구전 전승으로 이어오며 지키고 있습니다. 이러한 드루이드들은 나무나 우뚝 솟은 바위로 둘러싼 성스러운 원 안에서 모입니다. 그곳에서 원초의 비밀을 드루이드 어로 속삭입니다. 회합에서 가장 현명한 자는 회합의 사제장으로 임명되어 사회를 보며, '오랜 서약' 을 지키고 드루이드를 이끄는 수장의 조언자 역할을 합니다. 이 회합의 일원으로서, 당신의 마법은 회합의 신비로운 의식을 받은 대지의 영향을 받습니다. </p>"
+		},
+		"College of Lore": {
+			"name": "전승 학파",
+			"description": "<p>전승학파의 바드들은 대부분의 것에 대한 잡다한 지식을 모아 습득했습니다. 그 유래는 전문 서적에서부터 시작해 농민들의 이야기에 이르기까지 다양합니다. 선술집에서 민요를 부르는 바드든 궁중에서 우아한 노래를 연주하는 바드든, 이러한 바드는 청중을 매료시키는 데에 자신의 재능을 발휘합니다. 박수갈채가 멎을 때 쯤, 지역 사원에서 사제 일을 하며 품은 신앙에서부터 시작해 왕에게 품은 충성심에 이르기까지, 청중은 자신이 믿던 모든 것이 과연 사실인지 의문을 품을지도 모릅니다.</p>\n<p>이러한 바드들이 추구하는 것은 군주에 대한 충성이나 신의 교리가 아니라 아름다움과 진실입니다. 그들이 정치적인 계산을 하기보다는 정직하다는 것을 잘 알기에, 귀족들은 그러한 바드들을 전령관이나 조언자로 두기도 합니다 .</p>\n<p>학파의 일원은 도서관에서, 혹은 교실이나 기숙사가 완비된 실제 학교에서 만나기도 하며, 서로 자신이 얻은 전승을 공유합니다. 또한, 축제나 국가의 일로 만나기도 하는데, 그러한 자리에서 부패를 폭로하거나, 거짓을 밝혀내고, 자기중심적인 권위를 희화화하기도 합니다.</p>"
+		},
+		"Draconic Bloodline": {
+			"name": "드래곤의 혈통",
+			"description": "<p>당신이 선천적으로 사용하는 마법은 당신 자신이나 그 조상의 피에 섞인 드래곤의 마법이 근원입니다. 이 기원을 가진 소서러들은 대부분 고대의 한 강력한 소서러로 유래를 거슬러 올라가곤 합니다. 조상이 되는 소서러는 드래곤과 거래를 했거나 심지어는 부모 중 하나가 드래곤이었을 수도 있습니다. 이 혈통을 가진 몇몇 소서러는 세간의 인정을 받곤 하지만, 대부분은 잘 알려져 있지 않습니다. 계약이나 다른 특별한 상황에 의해 후천적으로 소서러가 된 사람이라면 누구나 새로운 혈통의 시초가 될 수 있습니다.</p>"
+		},
+		"Hunter": {
+			"name": "헌터",
+			"description": "<p>헌터 아키타입을 따르는 것은 당신이 있는 곳이 문명과 야생의 공포 사이를 지키는 보루라는 것을 받아들인다는 뜻입니다. 헌터의 길을 걸으면, 날뛰는 오우거와 오크 무리부터 시작해서 우뚝 선 거인과 무시무시한 드래곤에 이르기까지 다양한 위협과 마주했을 때, 그에 맞서 싸우는 데에 특화된 기술을 배웁니다.</p>"
+		},
+		"Life Domain": {
+			"name": "생명 권역",
+			"description": "<p>생명 권역은 생명력이 넘치는 긍정적인 에너지에 초점을 맞추고 있습니다. 그 에너지는 모든 생명을 지탱하는, 우주의 근본적인 힘 중 하나입니다. 생명의 신들은 병든 자나 다친 자를 치유하고, 도움이 필요한 사람을 돌보며, 죽음과 언데드의 기운을 물리침으로써 활력과 건강을 도모합니다. 사악하지 않은 신이라면 누구든 이 권역에 영향을 미칠 수 있으며, 특히 농경신(챠운티, 아라와이, 데메테르 등), 태양신(라샌더, 펠러, 라 호라크티 등), 치료 혹은 인내의 신(일마터, 미타칼, 아폴로, 디안세트 등), 가정과 공동체의 신(헤스티아, 하토르, 볼드레이 등)과 같은 신들이 생명 권역과 관련이 깊습니다.</p>\n<h2>생명 권역 주문</h2><table border=\"1\"><thead><tr><td><strong>클레릭 레벨</strong></td><td><strong>주문</strong></td></tr></thead><tbody><tr><td>1레벨</td><td>@Compendium[dnd5e.spells.8dzaICjGy6mTUaUr]{축복}, @Compendium[dnd5e.spells.uUWb1wZgtMou0TVP]{상처 치료}</td></tr><tr><td>3레벨</td><td>@Compendium[dnd5e.spells.F0GsG0SJzsIOacwV]{하급 회복}, @Compendium[dnd5e.spells.JbxsYXxSOTZbf9I0]{영체 무기}</td></tr><tr><td>5레벨</td><td>@Compendium[dnd5e.spells.ZU9d6woBdUP8pIPt]{희망의 봉화}, @Compendium[dnd5e.spells.LmRHHMtplpxr9fX6]{재활성화}</td></tr><tr><td>7레벨</td><td>@Compendium[dnd5e.spells.VtCXMdyM6mAdIJZb]{죽음 방비}, @Compendium[dnd5e.spells.TgHsuhNasPbhu8MO]{신앙의 수호자}</td></tr><tr><td>9레벨</td><td>@Compendium[dnd5e.spells.Pyzmm8R7rVsNAPsd]{다중 상처 치료}, @Compendium[dnd5e.spells.AGFMPAmuzwWO6Dfz]{사자 소생}</td></tr></tbody></table>"
+		},
+		"Oath of Devotion": {
+			"name": "헌신의 맹세",
+			"description": "<p>헌신의 맹세를 통해 팔라딘은 정의, 미덕, 질서라는 가장 고결한 이상에 사로잡힙니다. 이들은 종종 슈발리에, 백기사, 성기사 등으로 불리기도 합니다. 이러한 팔라딘들은 빛나는 갑옷을 입고, 정의와 더 나은 선을 추구하며, 명예를 갖고 행동하는 기사의 이미지와 맞물리기 때문입니다. 그들은 스스로에 대해 높은 행동 기준을 설정하며, 몇몇은 세상의 모든 것을 이러한 기준으로 판단합니다. 이 맹세를 한 대부분의 사람들은 질서의 신을 섬기며, 그 신의 교리를 신념의 척도로 삼습니다. 완전한 선의 하수인인 천사를 우상으로 삼고 있기 때문에 헬멧이나 갑옷의 겉면에 천사의 날개 모양을 새기기도 합니다.</p><h2>헌신의 교리</h2><p> 헌신의 맹세를 하는 정확한 단어와 구조는 다양하기 때문에, 맹세를 하는 팔라디는 다음과 같은 교리를 공유합니다.</p><p><strong>정직</strong>거짓말하거나 속이지 않는다. 모든 말을 자신과의 약속으로 삼으라.</p><p><strong>용기</strong>행동하기를 두려워 말되, 주의하는 것 또한 현명함이다.</p><p><strong>이타심</strong>타인을 돕고, 약자를 보호하며, 약자를 위협하는 자를 벌하라. 적에게 자비를 보이되, 지혜롭게 자비를 조절할 줄도 알아야 한다.</p><p><strong>명예</strong>타인을 공평히 대하고, 타인에게 모범이 되도록 명예로운 행동을 하라. 악행은 최소한으로 줄이고, 선행을 최대한 많이 베풀라.</p><p><strong>책임감</strong>자신의 행동과 그 결과에 대해 책임을 갖고, 자신을 믿어준 사람을 보호하며, 자신에게 정당한 권한을 행사할 수 있는 사람에게 복종하라.</p><h3>맹세 주문</h3><p>다음 목록에 기재된 팔라딘 레벨에 맹세 주문을 습득합니다.</p><table><thead><tr><td><strong>팔라딘 레벨</strong></td><td><strong>주문</strong></td></tr></thead><tbody><tr><td>3레벨</td><td>@Compendium[dnd5e.spells.xmDBqZhRVrtLP8h2]{악과 선으로부터의 보호}, @Compendium[dnd5e.spells.gvdA9nPuWLck4tBl]{성역화}</td></tr><tr><td>5레벨</td><td>@Compendium[dnd5e.spells.F0GsG0SJzsIOacwV]{하급 회복}, @Compendium[dnd5e.spells.CylBa7jR8DSbo8Z3]{진실의 공간}</td></tr><tr><td>9레벨</td><td>@Compendium[dnd5e.spells.ZU9d6woBdUP8pIPt]{희망의 봉화}, @Compendium[dnd5e.spells.15Fa6q1nH27XfbR8]{마법 무효화}</td></tr><tr><td>13레벨</td><td>@Compendium[dnd5e.spells.da0a1t2FqaTjRZGT]{이동의 자유}, @Compendium[dnd5e.spells.TgHsuhNasPbhu8MO]{신앙의 수호자}</td></tr><tr><td>17레벨</td><td>@Compendium[dnd5e.spells.d54VDyFulD9xxY7J]{회화}, @Compendium[dnd5e.spells.5e1xTohkzqFqbYH4]{화염의 일격}</td></tr></tbody></table>"
+		},
+		"Path of the Berserker": {
+			"name": "광전사의 길",
+			"description": "<p>어떤 바바리안에게 분노란, 특정한 목표를 위한 수단입니다. 바로 폭력 그 자체가 된다는 목표 말입니다. 광전사의 길은 피로 칠해진, 제약없는 분노의 길입니다. 광전사의 격노에 접어들면 전투의 혼돈에 전율하게 되며, 자신의 안전이나 신변은 눈에 들어오지 않습니다.</p>"
+		},
+		"School of Evocation": {
+			"name": "방출 학파",
+			"description": "<p>당신은 극한의 냉기나 타오르는 불꽃, 찢어지는 천둥, 번쩍이는 번개, 또는 지독한 산과 같이 강력한 원소의 효과를 다루는 마법을 연구하는데 중점을 두고 있습니다. 몇몇 방출술사는 원거리에서 적군을 쓸어버리는 포격수로 일하기도 합니다. 어떤 방출술사는 강력한 힘으로 약자를 보호하기도 하며, 또 다른 자들은 도둑이나 모험가, 또는 야심찬 폭군이 되어 자신들의 이익을 추구하기도 합니다.</p>"
+		},
+		"The Fiend": {
+			"name": "악마",
+			"description": "<p>당신은 하계의 악마와 계약을 맺었습니다. 하계의 악마에게는 사악한 목적이 있으며, 피후견자가 자신에게 저항하려 애써도 포기하지 않습니다. 이러한 존재는 만물의 타락이나 파괴를 갈망하며, 궁극적으로 그 대상에는 결국 캐릭터 본인도 포함될 것입니다. 계약을 구축할 정도로 강력한 악마로는 데모고르곤, 오르쿠스, 프래즈어브루, 바포메트 등의 데몬 군주, 아스모데우스, 디스패터, 메피스토펠레스, 벨리알 등의 아크데빌, 특히 강한 핏 핀드나 발러, 그리고 울트롤로스나 유골로스의 다른 군주 등이 있습니다.</p><h2>확장된 주문 목록</h2><p>워락 주문을 습득할 때, 악마는 확장된 주문 목록 중에서 당신이 주문을 고를 수 있도록 허가합니다. 아래 주문이 워락 주문 목록에 추가됩니다.</p><table border=\\\"1\\\"><tbody><tr><td><strong>주문 레벨</strong></td><td><strong>주문</strong></td></tr><tr><td style=\\\"width: 57px;\\\">1레벨</td><td>@Compendium[dnd5e.spells.5SuJewoa1CRWaj1F]{타오르는 손}, @Compendium[dnd5e.spells.arzCrMRgcNiQuh43]{명령}</td></tr><tr><td>2레벨</td><td>@Compendium[dnd5e.spells.zwGsAv6kmwzYGhh3]{시각/청각 박탈}, @Compendium[dnd5e.spells.7u2obDvuvtZBkTfq]{타오르는 광선}</td></tr><tr><td>3레벨</td><td>@Compendium[dnd5e.spells.ztgcdrWPshKRpFd0]{화염구}, @Compendium[dnd5e.spells.TwlD4PLcltv7Xh7j]{악취 구름}</td></tr><tr><td>4레벨</td><td>@Compendium[dnd5e.spells.avD5XUtkBPQQR97c]{화염 방패}, @Compendium[dnd5e.spells.X3DrXgxjwI2dvkD6]{불꽃의 벽}</td></tr><tr><td>5레벨</td><td>@Compendium[dnd5e.spells.5e1xTohkzqFqbYH4]{화염의 일격}, @Compendium[dnd5e.spells.SLxA9QhrggTz0taU]{신성화}</td></tr></tbody></table>"
+		},
+		"Thief": {
+			"name": "시프",
+			"description": "당신은 절도의 기술을 갈고닦았습니다. 절도범, 도적, 소매치기 등등의 범죄자들이 보통 이 아키타입을 따릅니다. 그러나 스스로를 전문적인 보물 탐색꾼, 탐험가, 탐구자, 조사자라고 생각하는 로그도 이러한 아키타입을 따르기도 합니다. 기민함과 은신술을 갈고 닦는 것 뿐만 아니라, 고대 유적에 파고들고, 익숙하지 않은 언어를 읽고, 평소의 당신이라면 조작할 수 없는 마법 아이템을 사용하는 등에 필요한 기술을 알고 있습니다."
+		},
+		"Way of the Open Hand": {
+			"name": "열린 손의 길",
+			"description": "열린 손의 길을 선택한 몽크는 무예를 이용한 전투에 특화된 궁극의 달인입니다. 무장 상태든 비무장 상태든 관계없이 말입니다. 그들은 상대를 밀어내고 넘어뜨리는 기술을 익혔으며, 기를 조종해 자신의 몸에 입은 피해를 회복하고, 위협으로부터 자신을 보호할 수 있도록 고도의 명상법을 연습합니다."
+		}
+	}
+}

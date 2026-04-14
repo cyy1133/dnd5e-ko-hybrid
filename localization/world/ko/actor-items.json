@@ -1,0 +1,113 @@
+{
+  "label": "Actor Embedded Items",
+  "entries": {
+    "Actor.Kgg4YVY2c8js6oLU.Item.8ZHfIkw3MfYI15qD": {
+      "name": "다중공격",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>에어로사우르는 물기 공격 한 번과 발톱 공격 한 번을 합니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
+    },
+    "Actor.Kgg4YVY2c8js6oLU.Item.joxMzbb5RlFfzh7u": {
+      "name": "물기",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+12]]{+12} 명중, 사거리 10피트, 목표 하나. <i>명중:</i> 27 ([[/damage 3d12 + 8 type=piercing]]) 관통 피해. 목표가 거대 이하 생물이라면 &amp;Reference[condition=grappled] 상태가 됩니다(탈출 DC <span class=\"rd__dc\">18</span>). 이 붙잡기가 유지되는 동안 대상은 &amp;Reference[condition=restrained] 상태가 되며, 에어로사우르는 다른 목표를 물 수 없습니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
+    },
+    "Actor.Kgg4YVY2c8js6oLU.Item.rohhrHvoVky3TaLK": {
+      "name": "발톱",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+12]]{+12} 명중, 사거리 10피트, 목표 하나. <i>명중:</i> 24 ([[/damage 3d10 + 8 type=slashing]]) 참격 피해.</p><div class=\"rd__spc-inline-post\"></div></div>"
+    },
+    "Actor.Kgg4YVY2c8js6oLU.Item.Yr7xvlrTwnMbddDd": {
+      "name": "날개 돌풍",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>에어로사우르는 날개를 퍼덕여 천둥 같은 힘의 돌풍을 일으킵니다. 에어로사우르스에서 10피트 안에 있는 모든 생물은 [[/save ability=strength dc=20]] 내성 굴림을 해야 합니다. 실패하면 38 ([[/damage 7d10 type=thunder]]) 천둥 피해를 받고, 에어로사우르스로부터 수평으로 최대 30피트 밀려나며 &amp;Reference[condition=prone] 상태가 됩니다. 성공하면 피해를 절반만 받고 수평으로 최대 15피트 밀려납니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
+    },
+    "Actor.Kgg4YVY2c8js6oLU.Item.bu6HEPYKwYDo408P": {
+      "name": "마법 저항",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>에어로사우르는 주문 및 기타 마법 효과에 대한 내성 굴림에 이점을 받습니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.gpmEs3qPv7cPTuOJ": {
+      "name": "다중공격",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>고대 블랙 드래곤은 찢기 공격을 세 번 합니다. 그중 한 번을 주문시전으로 대체하여 @spell[Melf's Acid Arrow|XPHB] (4레벨 버전)을 시전할 수 있습니다.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.AOQQTOcTiL8JbvM0": {
+      "name": "찢기",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 공격 굴림:</i> [[/r 1d20+15]]{+15}, 사거리 15피트. <i>명중:</i> 17 ([[/damage 2d8 + 8 type=slashing]]) 참격 피해에 더해 9 ([[/damage 2d8 type=acid]]) 산성 피해.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.iH68KZK5igT0mYsV": {
+      "name": "산성 숨결",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>민첩 내성 굴림:</i> DC <span class=\"rd__dc\">22</span>, 길이 90피트 너비 10피트의 @variantrule[Line [Area of Effect]|XPHB|직선형 범위] 안의 모든 생물. <i>실패:</i> 67 ([[/damage 15d8 type=acid]]) 산성 피해. <i>성공:</i> 절반 피해.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.fnxpFuy4S24ZpDnj": {
+      "name": "수륙양용",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>고대 블랙 드래곤은 공기와 물속에서 모두 숨을 쉴 수 있습니다.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.Oc4CSZNW5E6Sp1pu": {
+      "name": "전설적 저항",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤이 내성 굴림에 실패하면, 대신 성공하도록 선택할 수 있습니다.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.dwrKv1N4nO25NP0b": {
+      "name": "곤충 구름",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>민첩 내성 굴림:</i> DC <span class=\"rd__dc\">21</span>, 드래곤이 볼 수 있는 120피트 내의 목표 하나. <i>실패:</i> 33 ([[/damage 6d10 type=poison]]) 독 피해를 받고, 자신의 다음 턴이 끝날 때까지 @status[Concentration|XPHB] 유지 내성 굴림에 @variantrule[Disadvantage|XPHB]를 받습니다. <i>실패 또는 성공:</i> 드래곤은 자신의 다음 턴 시작 전까지 이 행동을 다시 사용할 수 없습니다.</p></div>"
+    },
+    "Actor.KJxxXeB9VWoqct9r.Item.irGhcXlIWEbYe4Wx": {
+      "name": "공포의 존재감",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>고대 블랙 드래곤은 주문시전으로 @spell[Fear|XPHB]를 시전합니다. 드래곤은 자신의 다음 턴 시작 전까지 이 행동을 다시 사용할 수 없습니다.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.PPlD3J6E9h8Rv8Sj": {
+      "name": "다중공격",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>고대 블루 드래곤은 찢기 공격을 세 번 합니다. 그중 한 번을 주문시전으로 대체하여 @spell[Shatter|XPHB] (3레벨 버전)을 시전할 수 있습니다.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.lSgGzVJ0QBeYAXSf": {
+      "name": "찢기",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 공격 굴림:</i> [[/r 1d20+16]]{+16}, 사거리 15피트. <i>명중:</i> 18 ([[/damage 2d8 + 9 type=slashing]]) 참격 피해에 더해 11 ([[/damage 2d10 type=lightning]]) 번개 피해.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.y4RkeKy4aU9MyL0x": {
+      "name": "번개 숨결",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>민첩 내성 굴림:</i> DC <span class=\"rd__dc\">23</span>, 길이 120피트 너비 10피트의 @variantrule[Line [Area of Effect]|XPHB|직선형 범위] 안의 모든 생물. <i>실패:</i> 88 ([[/damage 16d10 type=lightning]]) 번개 피해. <i>성공:</i> 절반 피해.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.H4d2U7NWisNsYR8m": {
+      "name": "전설적 저항",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤이 내성 굴림에 실패하면, 대신 성공하도록 선택할 수 있습니다.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.fPsNJspE4MeNWhRe": {
+      "name": "은폐 비행",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 자신에게 @spell[Invisibility|XPHB]를 시전하기 위해 주문시전을 사용하고, 자신의 @variantrule[Fly Speed|XPHB|비행 속도]의 절반까지 날 수 있습니다. 드래곤은 자신의 다음 턴 시작 전까지 이 행동을 다시 할 수 없습니다.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.j7PHdqvBDAGwS6RA": {
+      "name": "음파 폭발",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 주문시전으로 @spell[Shatter|XPHB] (3레벨 버전)을 시전합니다. 드래곤은 자신의 다음 턴 시작 전까지 이 행동을 다시 사용할 수 없습니다.</p></div>"
+    },
+    "Actor.ri2dpaAV2axzUXH9.Item.yjgeSCtxabAZdIV1": {
+      "name": "꼬리 휩쓸기",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 찢기 공격을 한 번 합니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.jBzsz5GXETZ8T6oE": {
+      "name": "다중공격",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>고대 딥 드래곤은 물기 공격 한 번과 발톱 공격 두 번을 합니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.5KQrIyHE7WaHDDs5": {
+      "name": "물기",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+12]]{+12} 명중, 사거리 10피트, 목표 하나. <i>명중:</i> 17 ([[/damage 2d10 + 6 type=piercing]]) 관통 피해에 더해 11 ([[/damage 2d10 type=poison]]) 독 피해.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.LN3OBnZHW4YmETSY": {
+      "name": "발톱",
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+12]]{+12} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 13 ([[/damage 2d6 + 6 type=slashing]]) 참격 피해.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.d6QjEtYiElDBgkfO": {
+      "name": "형상 변화",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 자신의 게임 수치(크기를 제외하고)를 유지한 채 Medium 또는 Small 크기의 아무 생물로든 마법적으로 변신합니다. 이 변신은 드래곤의 HP가 0이 되거나, 드래곤이 행동을 사용해 종료하면 끝납니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.CVmky58cdQqRATPm": {
+      "name": "전설적 저항",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤이 내성 굴림에 실패하면, 대신 성공하도록 선택할 수 있습니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.sIZrWNdf9hHGN273": {
+      "name": "꼬리",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 꼬리 공격을 한 번 합니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.NIcSY1kIH3ugmWMU": {
+      "name": "깊은 혼수",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 @spell[slow] 주문을 시전합니다. 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 카리스마입니다 (주문 내성 DC <span class=\"rd__dc\">16</span>). 이 주문은 드래곤이 이 둥지 행동을 다시 사용하거나 드래곤이 죽으면 조기에 종료됩니다.</p></div>"
+    },
+    "Actor.ihUbscpiPEvMuMnf.Item.BdZIYP3tUh4Mmtai": {
+      "name": "이끼 진흙",
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤은 둥지 안의 표면을 잠시 뒤덮는 진흙 같은 이끼를 불러냅니다. 둥지의 천장, 바닥, 벽은 다음 라운드의 이니셔티브 카운트 20까지 &amp;Reference[rule=difficultterrain]{험난한 지형}이 됩니다.</p></div>"
+    }
+  }
+}
