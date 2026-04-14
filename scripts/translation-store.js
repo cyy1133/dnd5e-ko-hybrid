@@ -40,6 +40,68 @@ const COMMON_NAME_TRANSLATIONS = {
   "Arms of Hadar": "하다르의 팔",
   "Arrows": "화살",
   "Arrows (20)": "화살 (20)",
+  "Assassin": "???",
+  "Active Elements": "?? ??",
+  "Background": "??",
+  "Barbed Tail": "?? ??",
+  "Battle Master": "??? ??",
+  "Bastard Sword": "???? ??",
+  "Bites": "??",
+  "Bites (Half Hit Points)": "?? (?? ??)",
+  "Bless": "??",
+  "Blowgun": "????",
+  "Bardic Inspiration": "??? ??",
+  "Bedroll": "??",
+  "Claws": "??",
+  "Club": "??",
+  "Combat Superiority": "?? ???",
+  "Command": "??",
+  "Countermeasures": "???",
+  "Crowbar": "????",
+  "Changeling Instincts": "????? ??",
+  "Deathless Nature": "?? ?? ??",
+  "Description": "??",
+  "Detect Magic": "?? ??",
+  "Disguise Kit": "?? ??",
+  "Dispel Magic": "?? ??",
+  "Divine Aid": "??? ??",
+  "Divine Smite": "??? ??",
+  "Dynamic Elements": "??? ??",
+  "Eldritch Knight": "???? ???",
+  "Energy Drain (Melee)": "??? ?? (??)",
+  "Energy Drain (Ranged)": "??? ?? (???)",
+  "Extra Attack": "?? ??",
+  "Faerie Fire": "??? ??",
+  "Fear": "??",
+  "Fey Ancestry": "?? ??",
+  "Fighting Style: Defense": "?? ??: ??",
+  "Fighting Style: Great Weapon Fighting": "?? ??: ?? ?? ??",
+  "Grasping Tendrils": "??? ??",
+  "Healing Word": "??? ??",
+  "Innate Spellcasting": "?? ????",
+  "Invisibility": "???",
+  "Lay on Hands Pool": "?? ?? ?",
+  "Legendary Actions": "?? ??",
+  "Life Drain": "??? ??",
+  "Light": "?",
+  "Longsword": "???",
+  "Piton": "??",
+  "Ray of Cold": "??? ??",
+  "Reel": "?????",
+  "Regional Effects": "?? ??",
+  "Regeneration": "??",
+  "Sanctuary": "??",
+  "Second Wind": "??? ??",
+  "Shapechanger": "?????",
+  "Slam": "??",
+  "Song of Rest": "??? ??",
+  "Student of War": "??? ??",
+  "Tendril": "??",
+  "The Hexblade": "??????",
+  "Tinderbox": "??? ??",
+  "Toll the Dead": "??? ???",
+  "Torch": "??",
+  "Wrathful Smite": "??? ??",
   "Artillerist": "포격술사",
   "Bite": "물기",
   "Backpack": "배낭",
@@ -343,6 +405,25 @@ const plainLabelToKo = (value) => {
   return STATIC_LABEL_TRANSLATIONS[normalized] ?? COMMON_NAME_TRANSLATIONS[normalized] ?? normalized;
 };
 
+const abilityToKo = (value) => {
+  switch (normalizeText(value).toLowerCase()) {
+    case "strength":
+      return "근력";
+    case "dexterity":
+      return "민첩";
+    case "constitution":
+      return "건강";
+    case "intelligence":
+      return "지능";
+    case "wisdom":
+      return "지혜";
+    case "charisma":
+      return "매력";
+    default:
+      return normalizeText(value);
+  }
+};
+
 const escapeHtml = (value) => {
   const div = document.createElement("div");
   div.textContent = value ?? "";
@@ -373,20 +454,20 @@ export class TranslationStore {
     this.ready = false;
 
     const [actors, items, actorItems, journalPages, sharedItems] = await Promise.all([
-      this.#loadJson(WORLD_TRANSLATION_FILES.actors),
-      this.#loadJson(WORLD_TRANSLATION_FILES.items),
-      this.#loadJson(WORLD_TRANSLATION_FILES.actorItems),
-      this.#loadJson(WORLD_TRANSLATION_FILES.journalPages),
-      this.#loadJson(WORLD_TRANSLATION_FILES.sharedItems)
+      this._loadJson(WORLD_TRANSLATION_FILES.actors),
+      this._loadJson(WORLD_TRANSLATION_FILES.items),
+      this._loadJson(WORLD_TRANSLATION_FILES.actorItems),
+      this._loadJson(WORLD_TRANSLATION_FILES.journalPages),
+      this._loadJson(WORLD_TRANSLATION_FILES.sharedItems)
     ]);
 
-    this.world.actors = this.#toEntryMap(actors);
-    this.world.items = this.#toEntryMap(items);
-    this.world.actorItems = this.#toEntryMap(actorItems);
-    this.world.journalPages = this.#toEntryMap(journalPages);
-    this.sharedItems = this.#toEntryMap(sharedItems);
+    this.world.actors = this._toEntryMap(actors);
+    this.world.items = this._toEntryMap(items);
+    this.world.actorItems = this._toEntryMap(actorItems);
+    this.world.journalPages = this._toEntryMap(journalPages);
+    this.sharedItems = this._toEntryMap(sharedItems);
 
-    const compendiumFiles = await this.#discoverCompendiumFiles();
+    const compendiumFiles = await this._discoverCompendiumFiles();
     this.compendium.clear();
     this.compendiumDocLabels.clear();
     this.compendiumPageLabels.clear();
@@ -397,9 +478,9 @@ export class TranslationStore {
     this.compendiumActorNameIndex.clear();
 
     for (const filePath of compendiumFiles) {
-      const data = await this.#loadJson(filePath);
+      const data = await this._loadJson(filePath);
       if (!data) continue;
-      const collection = this.#collectionFromPath(filePath);
+      const collection = this._collectionFromPath(filePath);
       this.compendium.set(collection, data);
       if (data.label) {
         this.compendiumPackLabels.set(collection, data.label);
@@ -409,7 +490,7 @@ export class TranslationStore {
       }
     }
 
-    await this.#indexCompendiumTranslations();
+    await this._indexCompendiumTranslations();
     this.ready = true;
   }
 
@@ -422,32 +503,32 @@ export class TranslationStore {
     if (actor.uuid && this.world.actors.has(actor.uuid)) {
       return this.world.actors.get(actor.uuid) ?? null;
     }
-    return this.#getCompendiumActorFallback(actor);
+    return this._getCompendiumActorFallback(actor);
   }
 
   getItemTranslation(item) {
     if (!item) return null;
 
     if (item.parent instanceof Actor) {
-      return this.#mergeTranslations(
+      return this._mergeTranslations(
         this.world.actorItems.get(item.uuid),
-        this.#getSharedItemTranslation(item),
-        this.#getCompendiumSignatureFallback(item),
-        this.#getCompendiumNameFallback(item),
-        this.#getGeneratedItemTranslation(item)
+        this._getSharedItemTranslation(item),
+        this._getCompendiumSignatureFallback(item),
+        this._getCompendiumNameFallback(item),
+        this._getGeneratedItemTranslation(item)
       );
     }
 
     if (item.pack) {
-      return this.#getCompendiumEntry(item.pack, item.name);
+      return this._getCompendiumEntry(item.pack, item.name);
     }
 
-    return this.#mergeTranslations(
+    return this._mergeTranslations(
       this.world.items.get(item.uuid),
-      this.#getSharedItemTranslation(item),
-      this.#getCompendiumSignatureFallback(item),
-      this.#getCompendiumNameFallback(item),
-      this.#getGeneratedItemTranslation(item)
+      this._getSharedItemTranslation(item),
+      this._getCompendiumSignatureFallback(item),
+      this._getCompendiumNameFallback(item),
+      this._getGeneratedItemTranslation(item)
     );
   }
 
@@ -457,7 +538,7 @@ export class TranslationStore {
     if (page.pack) {
       const collection = page.parent?.pack ?? page.pack;
       const entryName = page.parent?.name;
-      const entry = this.#getCompendiumEntry(collection, entryName);
+      const entry = this._getCompendiumEntry(collection, entryName);
       return entry?.pages?.[page.name] ?? null;
     }
 
@@ -475,7 +556,7 @@ export class TranslationStore {
   getLinkLabel(anchor) {
     const uuid = anchor.dataset.uuid;
     if (uuid) {
-      const directWorldLabel = this.#getWorldLabelByUuid(uuid);
+      const directWorldLabel = this._getWorldLabelByUuid(uuid);
       if (directWorldLabel) return directWorldLabel;
       const directCompendiumPageLabel = this.compendiumPageLabels.get(uuid);
       if (directCompendiumPageLabel) return directCompendiumPageLabel;
@@ -653,7 +734,7 @@ export class TranslationStore {
     };
   }
 
-  #getWorldLabelByUuid(uuid) {
+  _getWorldLabelByUuid(uuid) {
     return this.world.actors.get(uuid)?.name
       ?? this.world.items.get(uuid)?.name
       ?? this.world.actorItems.get(uuid)?.name
@@ -661,13 +742,13 @@ export class TranslationStore {
       ?? null;
   }
 
-  #getCompendiumEntry(collection, entryName) {
+  _getCompendiumEntry(collection, entryName) {
     return this.compendium.get(collection)?.entries?.[entryName] ?? null;
   }
 
-  #getGeneratedItemTranslation(item) {
+  _getGeneratedItemTranslation(item) {
     const translatedName = nameToKo(item?.name);
-    const translatedDescription = this.#translateGeneratedDescription(item?.system?.description?.value ?? "");
+    const translatedDescription = this._translateGeneratedDescription(item?.system?.description?.value ?? "");
     if (translatedName === item?.name && translatedDescription === (item?.system?.description?.value ?? "")) {
       return null;
     }
@@ -677,7 +758,7 @@ export class TranslationStore {
     };
   }
 
-  #mergeTranslations(...translations) {
+  _mergeTranslations(...translations) {
     const merged = {};
 
     for (const translation of translations) {
@@ -690,7 +771,7 @@ export class TranslationStore {
     return Object.keys(merged).length ? merged : null;
   }
 
-  #translateGeneratedDescription(description) {
+  _translateGeneratedDescription(description) {
     if (!description) return description;
 
     let output = description;
@@ -709,6 +790,7 @@ export class TranslationStore {
       .replace(/Melee Attack Roll:/gu, "근접 공격 굴림:")
       .replace(/Ranged Attack Roll:/gu, "원거리 공격 굴림:")
       .replace(/Melee Spell Attack:/gu, "근접 주문 공격:")
+      .replace(/Ranged Spell Attack:/gu, "원거리 주문 공격:")
       .replace(/Strength Saving Throw:/gu, "근력 내성 굴림:")
       .replace(/Dexterity Saving Throw:/gu, "민첩 내성 굴림:")
       .replace(/Constitution Saving Throw:/gu, "건강 내성 굴림:")
@@ -725,6 +807,21 @@ export class TranslationStore {
       .replace(/<i>Hit:<\/i>/gu, "<i>명중:</i>")
       .replace(/<i>Failure:<\/i>/gu, "<i>실패:</i>")
       .replace(/<i>Success:<\/i>/gu, "<i>성공:</i>")
+      .replace(/On a failed save, /gu, "내성 굴림에 실패하면, ")
+      .replace(/On a successful save, /gu, "내성 굴림에 성공하면, ")
+      .replace(/The target must succeed on a ([A-Za-z]+) saving throw or ([^.]+)\./gu, (_, ability, effect) => `대상은 ${abilityToKo(ability)} 내성 굴림에 성공해야 하며, 실패하면 ${effect}.`)
+      .replace(/The target must make a ([A-Za-z]+) saving throw/gu, (_, ability) => `대상은 ${abilityToKo(ability)} 내성 굴림을 해야 합니다`)
+      .replace(/If the saving throw fails by ([0-9]+) or more, ([^.]+)\./gu, (_, amount, effect) => `내성 굴림에 ${amount} 이상 차이로 실패하면, 추가로 ${effect}.`)
+      .replace(/The creature wakes up if it takes damage or if another creature takes an action to shake it awake\./gu, "피해를 받거나 다른 생물이 행동을 사용해 흔들어 깨우면 그 생물은 깨어납니다.")
+      .replace(/A creature can use its action to make a ([A-Za-z]+) check, freeing itself or another creature within its reach on a success\./gu, (_, ability) => `생물은 행동을 사용해 ${abilityToKo(ability)} 판정을 할 수 있으며, 성공하면 자신이나 손이 닿는 거리 내 다른 생물 하나를 풀어줄 수 있습니다.`)
+      .replace(/The target drops whatever it is holding and then ends its turn\./gu, "대상은 들고 있는 것을 떨어뜨리고 그 턴을 끝냅니다.")
+      .replace(/The target spends its turn moving away from you by the fastest available means\./gu, "대상은 가능한 가장 빠른 수단으로 당신에게서 멀어지는 데 자신의 턴을 사용합니다.")
+      .replace(/Immediately after another creature's turn, ([^.]+?) can expend a use to take one of the following actions\./gu, (_, subject) => `다른 생물의 턴 직후, ${subjectToKo(subject)}는 사용 횟수 1회를 소모해 다음 행동 중 하나를 할 수 있습니다.`)
+      .replace(/([A-Z][^.]+?) can't take this action again until the start of its next turn\./gu, (_, subject) => `${subjectToKo(subject)}는 자신의 다음 턴 시작 전까지 이 행동을 다시 사용할 수 없습니다.`)
+      .replace(/([A-Z][^.]+?) regains all expended uses at the start of each of its turns\./gu, (_, subject) => `${subjectToKo(subject)}는 자신의 각 턴 시작 시 소모한 모든 사용 횟수를 회복합니다.`)
+      .replace(/If the dragon fails a saving throw, it can choose to succeed instead\./gu, "드래곤이 내성 굴림에 실패하면, 대신 성공으로 선택할 수 있습니다.")
+      .replace(/Recharge ([0-9]-[0-9])\./gu, "재충전 $1.")
+      .replace(/The target dies if its hit point maximum is reduced to 0\./gu, "대상의 최대 HP가 0이 되면 그 대상은 죽습니다.")
       .replace(/\bHalf damage\./gu, "절반 피해.")
       .replace(/\bdamage plus\b/gu, "피해에 더해")
       .replace(/\bdamage, or\b/gu, "피해, 또는")
@@ -772,36 +869,36 @@ export class TranslationStore {
       .replace(/The ([^.]+?) makes one ([^.]+?) attack\./gu, (_, subject, attack) => `${subjectToKo(subject)}는 ${nameToKo(attack)} 공격을 한 번 합니다.`)
       .replace(/The ([^.]+?) moves up to half its @variantrule\[Speed\|XPHB\], and it makes one ([^.]+?) attack\./gu, (_, subject, attack) => `${subjectToKo(subject)}는 자신의 @variantrule[Speed|XPHB] 절반까지 이동한 뒤 ${nameToKo(attack)} 공격을 한 번 합니다.`)
       .replace(/The ([^.]+?) uses Spellcasting to cast (.+?)\./gu, (_, subject, spellPart) => `${subjectToKo(subject)}는 주문시전을 사용해 ${spellPart}를 시전합니다.`)
-      .replace(/The ([^.]+?) casts the (.+?) spell, requiring no spell components and using Charisma as the spellcasting ability \(spell save DC <span class=\"rd__dc\">([0-9]+)<\/span>\)\./gu, (_, subject, spellName, dc) => `${subjectToKo(subject)}는 ${spellName} 주문을 시전합니다. 이때 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 매력입니다 (주문 내성 DC <span class=\"rd__dc\">${dc}</span>).`)
+      .replace(/The ([^.]+?) casts the (.+?) spell, requiring no spell components and using Charisma as the spellcasting ability \(spell save DC <span class="rd__dc">([0-9]+)<\/span>\)\./gu, (_, subject, spellName, dc) => `${subjectToKo(subject)}는 ${spellName} 주문을 시전합니다. 이때 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 매력입니다 (주문 내성 DC <span class="rd__dc">${dc}</span>).`)
       .replace(/The ([^.]+?) casts the (.+?) spell, requiring no spell components and using Charisma as the spellcasting ability \(spell save DC ([0-9]+) ?\)\./gu, (_, subject, spellName, dc) => `${subjectToKo(subject)}는 ${spellName} 주문을 시전합니다. 이때 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 매력입니다 (주문 내성 DC ${dc}).`)
-      .replace(/<span class=\"entry-title-inner\">Psychic Blades<\/span>/gu, "<span class=\"entry-title-inner\">정신 칼날</span>")
-      .replace(/<span class=\"entry-title-inner\">Words of Terror<\/span>/gu, "<span class=\"entry-title-inner\">공포의 속삭임</span>")
-      .replace(/<span class=\"entry-title-inner\">Mantle of Whispers<\/span>/gu, "<span class=\"entry-title-inner\">속삭임의 망토</span>")
-      .replace(/<span class=\"entry-title-inner\">Shadow Lore<\/span>/gu, "<span class=\"entry-title-inner\">그림자 비전</span>")
-      .replace(/<span class=\"entry-title-inner\">Whispers of the Dead<\/span>/gu, "<span class=\"entry-title-inner\">죽은 자의 속삭임</span>")
-      .replace(/<span class=\"entry-title-inner\">Leporine Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">토끼 감각.</span>")
-      .replace(/<span class=\"entry-title-inner\">Superior Darkvision\.<\/span>/gu, "<span class=\"entry-title-inner\">상급 암시야.</span>")
-      .replace(/<span class=\"entry-title-inner\">Keen Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">예리한 감각.</span>")
-      .replace(/<span class=\"entry-title-inner\">Sunlight Sensitivity\.<\/span>/gu, "<span class=\"entry-title-inner\">햇빛 민감성.</span>")
-      .replace(/<span class=\"entry-title-inner\">Drow Magic\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 마법.</span>")
-      .replace(/<span class=\"entry-title-inner\">Drow Weapon Training\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 무기 수련.</span>")
-      .replace(/<span class=\"entry-title-inner\">Shapechanger\.<\/span>/gu, "<span class=\"entry-title-inner\">변신체.</span>")
-      .replace(/<span class=\"entry-title-inner\">Changeling Instincts\.<\/span>/gu, "<span class=\"entry-title-inner\">체인질링의 본능.</span>")
-      .replace(/<span class=\"entry-title-inner\">Activating the Armor\.<\/span>/gu, "<span class=\"entry-title-inner\">갑옷 활성화.</span>")
-      .replace(/<span class=\"entry-title-inner\">Augmented Physicality\.<\/span>/gu, "<span class=\"entry-title-inner\">강화된 신체 능력.</span>")
-      .replace(/<span class=\"entry-title-inner\">Environmental Adaptation\.<\/span>/gu, "<span class=\"entry-title-inner\">환경 적응.</span>")
-      .replace(/<span class=\"entry-title-inner\">Force Field\.<\/span>/gu, "<span class=\"entry-title-inner\">역장.</span>")
-      .replace(/<span class=\"entry-title-inner\">Propulsion\.<\/span>/gu, "<span class=\"entry-title-inner\">추진.</span>")
-      .replace(/<span class=\"entry-title-inner\">Replacing the Energy Cell\.<\/span>/gu, "<span class=\"entry-title-inner\">에너지 셀 교체.</span>")
-      .replace(/<span class=\"entry-title-inner\">Harvesting Troll Blood<\/span>/gu, "<span class=\"entry-title-inner\">트롤 피 채취</span>")
-      .replace(/<span class=\"entry-title-inner\">Instant Death and Mutations<\/span>/gu, "<span class=\"entry-title-inner\">즉사와 돌연변이</span>")
-      .replace(/<span class=\"entry-title-inner\">Instant Death<\/span>/gu, "<span class=\"entry-title-inner\">즉사</span>")
-      .replace(/<span class=\"entry-title-inner\">Mutations\.<\/span>/gu, "<span class=\"entry-title-inner\">돌연변이.</span>");
+      .replace(/<span class="entry-title-inner">Psychic Blades<\/span>/gu, "<span class=\"entry-title-inner\">정신 칼날</span>")
+      .replace(/<span class="entry-title-inner">Words of Terror<\/span>/gu, "<span class=\"entry-title-inner\">공포의 속삭임</span>")
+      .replace(/<span class="entry-title-inner">Mantle of Whispers<\/span>/gu, "<span class=\"entry-title-inner\">속삭임의 망토</span>")
+      .replace(/<span class="entry-title-inner">Shadow Lore<\/span>/gu, "<span class=\"entry-title-inner\">그림자 비전</span>")
+      .replace(/<span class="entry-title-inner">Whispers of the Dead<\/span>/gu, "<span class=\"entry-title-inner\">죽은 자의 속삭임</span>")
+      .replace(/<span class="entry-title-inner">Leporine Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">토끼 감각.</span>")
+      .replace(/<span class="entry-title-inner">Superior Darkvision\.<\/span>/gu, "<span class=\"entry-title-inner\">상급 암시야.</span>")
+      .replace(/<span class="entry-title-inner">Keen Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">예리한 감각.</span>")
+      .replace(/<span class="entry-title-inner">Sunlight Sensitivity\.<\/span>/gu, "<span class=\"entry-title-inner\">햇빛 민감성.</span>")
+      .replace(/<span class="entry-title-inner">Drow Magic\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 마법.</span>")
+      .replace(/<span class="entry-title-inner">Drow Weapon Training\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 무기 수련.</span>")
+      .replace(/<span class="entry-title-inner">Shapechanger\.<\/span>/gu, "<span class=\"entry-title-inner\">변신체.</span>")
+      .replace(/<span class="entry-title-inner">Changeling Instincts\.<\/span>/gu, "<span class=\"entry-title-inner\">체인질링의 본능.</span>")
+      .replace(/<span class="entry-title-inner">Activating the Armor\.<\/span>/gu, "<span class=\"entry-title-inner\">갑옷 활성화.</span>")
+      .replace(/<span class="entry-title-inner">Augmented Physicality\.<\/span>/gu, "<span class=\"entry-title-inner\">강화된 신체 능력.</span>")
+      .replace(/<span class="entry-title-inner">Environmental Adaptation\.<\/span>/gu, "<span class=\"entry-title-inner\">환경 적응.</span>")
+      .replace(/<span class="entry-title-inner">Force Field\.<\/span>/gu, "<span class=\"entry-title-inner\">역장.</span>")
+      .replace(/<span class="entry-title-inner">Propulsion\.<\/span>/gu, "<span class=\"entry-title-inner\">추진.</span>")
+      .replace(/<span class="entry-title-inner">Replacing the Energy Cell\.<\/span>/gu, "<span class=\"entry-title-inner\">에너지 셀 교체.</span>")
+      .replace(/<span class="entry-title-inner">Harvesting Troll Blood<\/span>/gu, "<span class=\"entry-title-inner\">트롤 피 채취</span>")
+      .replace(/<span class="entry-title-inner">Instant Death and Mutations<\/span>/gu, "<span class=\"entry-title-inner\">즉사와 돌연변이</span>")
+      .replace(/<span class="entry-title-inner">Instant Death<\/span>/gu, "<span class=\"entry-title-inner\">즉사</span>")
+      .replace(/<span class="entry-title-inner">Mutations\.<\/span>/gu, "<span class=\"entry-title-inner\">돌연변이.</span>");
 
     return output;
   }
 
-  #getSharedItemTranslation(item) {
+  _getSharedItemTranslation(item) {
     const key = signatureFor({
       type: item?.type,
       name: item?.name,
@@ -810,7 +907,7 @@ export class TranslationStore {
     return this.sharedItems.get(key) ?? null;
   }
 
-  #getCompendiumSignatureFallback(item) {
+  _getCompendiumSignatureFallback(item) {
     const key = signatureFor({
       type: item?.type,
       name: item?.name,
@@ -819,11 +916,11 @@ export class TranslationStore {
     return this.compendiumSignatureIndex.get(key) ?? null;
   }
 
-  #getCompendiumNameFallback(item) {
+  _getCompendiumNameFallback(item) {
     if (!item?.name || !NAME_FALLBACK_TYPES.has(item.type)) return null;
     const key = normalizeText(item.name).toLowerCase();
     const candidates = this.compendiumNameIndex.get(key) ?? [];
-    const preferredCollections = this.#preferredCollectionsForType(item.type);
+    const preferredCollections = this._preferredCollectionsForType(item.type);
     for (const collection of preferredCollections) {
       const match = candidates.find((candidate) => candidate.collection === collection);
       if (match?.translation) return match.translation;
@@ -831,20 +928,20 @@ export class TranslationStore {
     return candidates[0]?.translation ?? null;
   }
 
-  #getCompendiumActorFallback(actor) {
+  _getCompendiumActorFallback(actor) {
     if (!actor?.name) return null;
     const key = normalizeText(actor.name).toLowerCase();
     return this.compendiumActorNameIndex.get(key) ?? null;
   }
 
-  async #loadJson(relativePath) {
+  async _loadJson(relativePath) {
     const url = `modules/${MODULE_ID}/${relativePath}`;
     const response = await fetch(url, { cache: "no-cache" });
     if (!response.ok) return null;
     return response.json();
   }
 
-  #toEntryMap(data) {
+  _toEntryMap(data) {
     if (Array.isArray(data?.entries)) {
       return new Map(data.entries
         .filter((entry) => entry?.signature)
@@ -853,19 +950,19 @@ export class TranslationStore {
     return new Map(Object.entries(data?.entries ?? {}));
   }
 
-  async #discoverCompendiumFiles() {
+  async _discoverCompendiumFiles() {
     const response = await fetch(`modules/${MODULE_ID}/localization/compendium/ko/index.json`, { cache: "no-cache" });
     if (!response.ok) return [];
     const data = await response.json();
     return Array.isArray(data.files) ? data.files : [];
   }
 
-  #collectionFromPath(relativePath) {
+  _collectionFromPath(relativePath) {
     const fileName = relativePath.split("/").at(-1) ?? "";
     return fileName.replace(/\.json$/u, "");
   }
 
-  async #indexCompendiumTranslations() {
+  async _indexCompendiumTranslations() {
     for (const [collection, data] of this.compendium.entries()) {
       const pack = game.packs.get(collection);
       if (!pack) continue;
@@ -875,7 +972,7 @@ export class TranslationStore {
         const translation = data.entries?.[entry.name];
         if (!translation?.name) continue;
         this.compendiumDocLabels.set(`Compendium.${collection}.${entry.documentName ?? pack.documentName}.${entry._id}`, translation.name);
-        this.#addCompendiumNameCandidate(collection, entry.name, translation);
+        this._addCompendiumNameCandidate(collection, entry.name, translation);
       }
 
       const journalEntries = Object.entries(data.entries ?? {}).filter(([, entry]) => entry?.pages);
@@ -918,7 +1015,7 @@ export class TranslationStore {
     }
   }
 
-  #addCompendiumNameCandidate(collection, entryName, translation) {
+  _addCompendiumNameCandidate(collection, entryName, translation) {
     const key = normalizeText(entryName).toLowerCase();
     if (!key || !translation) return;
     if (!this.compendiumNameIndex.has(key)) {
@@ -927,7 +1024,7 @@ export class TranslationStore {
     this.compendiumNameIndex.get(key).push({ collection, translation });
   }
 
-  #preferredCollectionsForType(type) {
+  _preferredCollectionsForType(type) {
     switch (type) {
       case "background":
         return ["dnd5e.backgrounds"];
@@ -954,4 +1051,4 @@ export class TranslationStore {
   }
 }
 
-export { MODULE_ID };
+export { MODULE_ID, nameToKo, plainLabelToKo };
