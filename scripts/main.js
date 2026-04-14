@@ -11,9 +11,17 @@ const saveJson = (filename, data) => {
 
 const createApi = () => ({
   store,
+  loadError: null,
   async refresh() {
-    await store.refresh();
-    overlay.rerenderOpenApplications();
+    try {
+      await store.refresh();
+      overlay.rerenderOpenApplications();
+      this.loadError = null;
+    } catch (error) {
+      this.loadError = error;
+      console.error(`${MODULE_ID} | Refresh failed`, error);
+      throw error;
+    }
   },
   exportTemplates(options = {}) {
     return store.createWorldTemplate(options);
@@ -56,11 +64,18 @@ Hooks.once("init", () => {
 });
 
 Hooks.once("ready", async () => {
-  await store.load();
-  overlay.activate();
+  const api = createApi();
+  game.modules.get(MODULE_ID).api = api;
+  globalThis.dnd5eKoHybrid = api;
 
-  game.modules.get(MODULE_ID).api = createApi();
-  globalThis.dnd5eKoHybrid = game.modules.get(MODULE_ID).api;
+  try {
+    await store.load();
+    overlay.activate();
+    api.loadError = null;
+  } catch (error) {
+    api.loadError = error;
+    console.error(`${MODULE_ID} | Failed to initialize translation store`, error);
+  }
 
   if (game.settings.get(MODULE_ID, "debug")) {
     console.info(`${MODULE_ID} | Loaded translation store`, store);
