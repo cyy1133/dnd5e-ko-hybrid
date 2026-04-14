@@ -35,7 +35,7 @@
   ],
   "url": "https://github.com/cyy1133/dnd5e-ko-hybrid",
   "manifest": "https://raw.githubusercontent.com/cyy1133/dnd5e-ko-hybrid/main/module.json",
-  "download": "https://github.com/cyy1133/dnd5e-ko-hybrid/archive/refs/heads/main.zip",
+  "download": "https://github.com/cyy1133/dnd5e-ko-hybrid/releases/download/v0.1.0/dnd5e-ko-hybrid-v0.1.0.zip",
   "readme": "README.md",
   "license": "LICENSE"
 }
