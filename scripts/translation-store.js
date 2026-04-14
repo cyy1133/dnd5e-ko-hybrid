@@ -40,68 +40,68 @@ const COMMON_NAME_TRANSLATIONS = {
   "Arms of Hadar": "하다르의 팔",
   "Arrows": "화살",
   "Arrows (20)": "화살 (20)",
-  "Assassin": "???",
-  "Active Elements": "?? ??",
-  "Background": "??",
-  "Barbed Tail": "?? ??",
-  "Battle Master": "??? ??",
-  "Bastard Sword": "???? ??",
-  "Bites": "??",
-  "Bites (Half Hit Points)": "?? (?? ??)",
-  "Bless": "??",
-  "Blowgun": "????",
-  "Bardic Inspiration": "??? ??",
-  "Bedroll": "??",
-  "Claws": "??",
-  "Club": "??",
-  "Combat Superiority": "?? ???",
-  "Command": "??",
-  "Countermeasures": "???",
-  "Crowbar": "????",
-  "Changeling Instincts": "????? ??",
-  "Deathless Nature": "?? ?? ??",
-  "Description": "??",
-  "Detect Magic": "?? ??",
-  "Disguise Kit": "?? ??",
-  "Dispel Magic": "?? ??",
-  "Divine Aid": "??? ??",
-  "Divine Smite": "??? ??",
-  "Dynamic Elements": "??? ??",
-  "Eldritch Knight": "???? ???",
-  "Energy Drain (Melee)": "??? ?? (??)",
-  "Energy Drain (Ranged)": "??? ?? (???)",
-  "Extra Attack": "?? ??",
-  "Faerie Fire": "??? ??",
-  "Fear": "??",
-  "Fey Ancestry": "?? ??",
-  "Fighting Style: Defense": "?? ??: ??",
-  "Fighting Style: Great Weapon Fighting": "?? ??: ?? ?? ??",
-  "Grasping Tendrils": "??? ??",
-  "Healing Word": "??? ??",
-  "Innate Spellcasting": "?? ????",
-  "Invisibility": "???",
-  "Lay on Hands Pool": "?? ?? ?",
-  "Legendary Actions": "?? ??",
-  "Life Drain": "??? ??",
-  "Light": "?",
-  "Longsword": "???",
-  "Piton": "??",
-  "Ray of Cold": "??? ??",
-  "Reel": "?????",
-  "Regional Effects": "?? ??",
-  "Regeneration": "??",
-  "Sanctuary": "??",
-  "Second Wind": "??? ??",
-  "Shapechanger": "?????",
-  "Slam": "??",
-  "Song of Rest": "??? ??",
-  "Student of War": "??? ??",
-  "Tendril": "??",
-  "The Hexblade": "??????",
-  "Tinderbox": "??? ??",
-  "Toll the Dead": "??? ???",
-  "Torch": "??",
-  "Wrathful Smite": "??? ??",
+  "Assassin": "암살자",
+  "Active Elements": "활성 요소",
+  "Background": "배경",
+  "Barbed Tail": "가시 꼬리",
+  "Battle Master": "배틀 마스터",
+  "Bastard Sword": "바스타드 소드",
+  "Bites": "물기",
+  "Bites (Half Hit Points)": "물기 (절반 HP)",
+  "Bless": "축복",
+  "Blowgun": "바람총",
+  "Bardic Inspiration": "바드의 고양감",
+  "Bedroll": "침낭",
+  "Claws": "발톱",
+  "Club": "곤봉",
+  "Combat Superiority": "전투 우월성",
+  "Command": "명령",
+  "Countermeasures": "대응책",
+  "Crowbar": "쇠지렛대",
+  "Changeling Instincts": "체인질링 본능",
+  "Deathless Nature": "죽지 않는 본성",
+  "Description": "설명",
+  "Detect Magic": "마법 탐지",
+  "Disguise Kit": "변장 키트",
+  "Dispel Magic": "마법 무효화",
+  "Divine Aid": "신성한 도움",
+  "Divine Smite": "신성한 강타",
+  "Dynamic Elements": "가변 요소",
+  "Eldritch Knight": "엘드리치 나이트",
+  "Energy Drain (Melee)": "에너지 흡수 (근접)",
+  "Energy Drain (Ranged)": "에너지 흡수 (원거리)",
+  "Extra Attack": "추가 공격",
+  "Faerie Fire": "요정 불꽃",
+  "Fear": "공포",
+  "Fey Ancestry": "요정 혈통",
+  "Fighting Style: Defense": "전투 스타일: 방어",
+  "Fighting Style: Great Weapon Fighting": "전투 스타일: 대형 무기 전투",
+  "Grasping Tendrils": "움켜쥐는 덩굴손",
+  "Healing Word": "치료의 단어",
+  "Innate Spellcasting": "선천적 주문시전",
+  "Invisibility": "투명화",
+  "Lay on Hands Pool": "치유력 풀",
+  "Legendary Actions": "전설적 행동",
+  "Life Drain": "생명력 흡수",
+  "Light": "빛",
+  "Longsword": "장검",
+  "Piton": "등반용 고리못",
+  "Ray of Cold": "냉기의 광선",
+  "Reel": "끌어당기기",
+  "Regional Effects": "지역 효과",
+  "Regeneration": "재생",
+  "Sanctuary": "성역화",
+  "Second Wind": "재기의 바람",
+  "Shapechanger": "형태변환자",
+  "Slam": "강타",
+  "Song of Rest": "휴식의 노래",
+  "Student of War": "전쟁의 수련생",
+  "Tendril": "촉수",
+  "The Hexblade": "헥스블레이드",
+  "Tinderbox": "부싯깃통",
+  "Toll the Dead": "죽은 자의 종소리",
+  "Torch": "횃불",
+  "Wrathful Smite": "분노의 강타",
   "Artillerist": "포격술사",
   "Bite": "물기",
   "Backpack": "배낭",
@@ -1038,7 +1038,11 @@ export class TranslationStore {
   _translateGeneratedDescription(description) {
     if (!description) return description;
 
-    let output = description;
+    let output = String(description ?? "");
+
+    output = output
+      .replace(/\u00a0/gu, " ")
+      .replace(/<span class="No-Break">([^<]+)<\/span>/gu, "$1");
 
     output = output
       .replace(/Note: importing a class as an item is provided for display purposes only\. If you wish to import a class to a character sheet, please use the importer on the sheet instead\./gu, "참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.")
@@ -1065,6 +1069,7 @@ export class TranslationStore {
       .replace(/reach ([0-9]+) ft\./gu, "사거리 $1피트")
       .replace(/range ([0-9/]+) ft\./gu, "사거리 $1피트")
       .replace(/\bone target\b/gu, "목표 하나")
+      .replace(/\bone creature\b/gu, "크리처 하나")
       .replace(/\btwo targets\b/gu, "목표 둘")
       .replace(/\bthree targets\b/gu, "목표 셋")
       .replace(/<span class="entry-title-inner">Special\.<\/span>/gu, "<span class=\"entry-title-inner\">특수.</span>")
@@ -1080,6 +1085,10 @@ export class TranslationStore {
       .replace(/A creature can use its action to make a ([A-Za-z]+) check, freeing itself or another creature within its reach on a success\./gu, (_, ability) => `생물은 행동을 사용해 ${abilityToKo(ability)} 판정을 할 수 있으며, 성공하면 자신이나 손이 닿는 거리 내 다른 생물 하나를 풀어줄 수 있습니다.`)
       .replace(/The target drops whatever it is holding and then ends its turn\./gu, "대상은 들고 있는 것을 떨어뜨리고 그 턴을 끝냅니다.")
       .replace(/The target spends its turn moving away from you by the fastest available means\./gu, "대상은 가능한 가장 빠른 수단으로 당신에게서 멀어지는 데 자신의 턴을 사용합니다.")
+      .replace(/A Humanoid reduced to 0 hit points by this attack dies and instantly transforms into a free-willed shadow under the DM's control\./gu, "이 공격으로 HP가 0이 된 인간형은 죽으며, 즉시 DM의 통제 아래 있는 자유의지를 지닌 그림자로 변합니다.")
+      .replace(/The priest casts (.+?), using the same spellcasting ability as Spellcasting\./gu, (_, spells) => `사제는 주문 시전과 같은 주문시전 능력치를 사용해 ${spells}을(를) 시전합니다.`)
+      .replace(/When the vampirate is reduced to 0 hit points, it explodes in a cloud of ash\./gu, "뱀파이러트의 HP가 0이 되면, 잿빛 구름으로 폭발합니다.")
+      .replace(/Any creature within 5 feet of it must succeed on a ([A-Za-z]+) saving throw or take ([^.]+)\./gu, (_, ability, effect) => `그것으로부터 5피트 이내의 모든 크리처는 ${abilityToKo(ability)} 내성 굴림에 성공해야 하며, 실패하면 ${effect}.`)
       .replace(/Immediately after another creature's turn, ([^.]+?) can expend a use to take one of the following actions\./gu, (_, subject) => `다른 생물의 턴 직후, ${subjectToKo(subject)}는 사용 횟수 1회를 소모해 다음 행동 중 하나를 할 수 있습니다.`)
       .replace(/([A-Z][^.]+?) can't take this action again until the start of its next turn\./gu, (_, subject) => `${subjectToKo(subject)}는 자신의 다음 턴 시작 전까지 이 행동을 다시 사용할 수 없습니다.`)
       .replace(/([A-Z][^.]+?) regains all expended uses at the start of each of its turns\./gu, (_, subject) => `${subjectToKo(subject)}는 자신의 각 턴 시작 시 소모한 모든 사용 횟수를 회복합니다.`)
@@ -1158,6 +1167,26 @@ export class TranslationStore {
       .replace(/<span class="entry-title-inner">Instant Death and Mutations<\/span>/gu, "<span class=\"entry-title-inner\">즉사와 돌연변이</span>")
       .replace(/<span class="entry-title-inner">Instant Death<\/span>/gu, "<span class=\"entry-title-inner\">즉사</span>")
       .replace(/<span class="entry-title-inner">Mutations\.<\/span>/gu, "<span class=\"entry-title-inner\">돌연변이.</span>");
+
+    output = output
+      .replace(/<h1>Description<\/h1>/gu, "<h1>설명</h1>")
+      .replace(/<h1>Class Features<\/h1>/gu, "<h1>클래스 특성</h1>")
+      .replace(/<strong>Hit Die:<\/strong>/gu, "<strong>히트 다이스:</strong>")
+      .replace(/<strong>Primary Ability:<\/strong>/gu, "<strong>주요 능력:</strong>")
+      .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>")
+      .replace(/A master of martial combat, skilled with a variety of weapons and armor/gu, "다양한 무기와 갑옷에 능숙한 무예의 대가")
+      .replace(/A wielder of magic that is derived from a bargain with an extraplanar entity/gu, "차원 너머 존재와의 계약에서 비롯된 마법을 휘두르는 자")
+      .replace(/You learn maneuvers that are fueled by superiority dice\./gu, "당신은 전투 우월성 주사위로 구동되는 전술 기교를 배웁니다.")
+      .replace(/Maneuvers enhance an attack in some way\./gu, "전술 기교는 공격을 다양한 방식으로 강화합니다.")
+      .replace(/You have \[\[\/roll @scale\.battle-master\.combat-superiority\]\] superiority dice per short rest\./gu, "짧은 휴식마다 [[/roll @scale.battle-master.combat-superiority]]개의 전투 우월성 주사위를 가집니다.")
+      .replace(/You have a pool of healing power that can restore \[\[@classes\.paladin\.levels\*5\]\] HP per long rest\./gu, "당신은 긴 휴식마다 [[@classes.paladin.levels*5]] HP를 회복할 수 있는 치유력 풀을 지닙니다.")
+      .replace(/As an action, you can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature\./gu, "행동으로 크리처 하나에 접촉해 남아 있는 치유력 풀에서 원하는 만큼의 HP를 회복시키거나, HP 5점을 소모해 그 크리처를 괴롭히는 질병 하나를 치료하거나 독 하나를 중화할 수 있습니다.")
+      .replace(/Your blessed touch can heal wounds\. You have a pool of healing power that replenishes when you take a long rest\./gu, "당신의 축복받은 손길은 상처를 치유합니다. 당신은 긴 휴식을 취하면 다시 차오르는 치유력 풀을 지닙니다.")
+      .replace(/With that pool, you can restore a total number of hit points equal to your paladin level × 5\./gu, "이 풀로 당신은 팔라딘 레벨 × 5와 같은 총합의 HP를 회복시킬 수 있습니다.")
+      .replace(/As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool\./gu, "행동으로 크리처 하나에 접촉해 치유력 풀에서 힘을 끌어와, 그 풀에 남아 있는 최대치까지 원하는 만큼의 HP를 회복시킬 수 있습니다.")
+      .replace(/Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it\./gu, "또는 치유력 풀에서 HP 5점을 소모해 목표 하나의 질병 한 가지를 치료하거나 목표에게 영향을 주는 독 한 가지를 중화할 수 있습니다.")
+      .replace(/You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one\./gu, "치유의 손길 한 번으로 여러 질병을 치료하고 여러 독을 중화할 수 있지만, 각각에 대해 HP를 따로 소모해야 합니다.")
+      .replace(/This feature has no effect on undead and constructs\./gu, "이 특성은 언데드와 구조물에게는 아무 효과가 없습니다.");
 
     return output;
   }

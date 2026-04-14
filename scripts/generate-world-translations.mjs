@@ -32,7 +32,27 @@ const stripMarkup = (value = "") =>
     .trim();
 
 const hasEnglish = (value = "") => /[A-Za-z]/.test(value);
+const hasBrokenTranslation = (value = "") => /\?{2,}|�/u.test(String(value));
 const hasKorean = (value = "") => /[가-힣]/.test(value);
+
+const translationScore = (value = "") => {
+  const visible = stripMarkup(value);
+  const korean = (visible.match(/[가-힣]/gu) ?? []).length;
+  const english = (visible.match(/[A-Za-z]/gu) ?? []).length;
+  const broken = (visible.match(/\?{2,}|\ufffd/gu) ?? []).length;
+  return (korean * 2) - english - (broken * 20);
+};
+
+const shouldReplaceBody = (currentValue, candidateValue, originalValue = "") => {
+  if (!candidateValue || candidateValue === originalValue) return false;
+  if (!currentValue || currentValue === originalValue) return true;
+  return translationScore(candidateValue) > (translationScore(currentValue) + 10);
+};
+
+const extractEnglishTail = (value = "") => {
+  const match = String(value).match(/([A-Za-z][A-Za-z0-9:'(),/+ -]*)$/u);
+  return match?.[1]?.trim() ?? "";
+};
 
 const formatBilingualName = (originalName, translatedName) => {
   const source = String(originalName ?? "").trim();
@@ -117,6 +137,14 @@ const findCompendiumEntry = (compendium, type, originalName) => {
   return null;
 };
 
+const findAnyCompendiumEntry = (compendium, originalName) => {
+  if (!originalName) return null;
+  for (const entries of compendium.values()) {
+    if (entries?.[originalName]) return entries[originalName];
+  }
+  return null;
+};
+
 const translateName = (originalName, type, compendiumEntry) => {
   if (!originalName) return "";
   if (hasKorean(originalName)) return "";
@@ -125,6 +153,21 @@ const translateName = (originalName, type, compendiumEntry) => {
     GENERIC_PAGE_NAME_TRANSLATIONS[originalName] ??
     nameToKo(originalName);
   return formatBilingualName(originalName, translated);
+};
+
+const inferOriginalName = (currentName = "", currentBody = "") => {
+  const englishTail = extractEnglishTail(currentName);
+  if (englishTail) return englishTail;
+  if (/Lay on Hands/i.test(currentBody) || /치유력 풀/u.test(currentBody)) return "Lay on Hands Pool";
+  return "";
+};
+
+const repairBrokenName = (currentName, currentBody, originalName, type, compendiumEntry, compendium) => {
+  if (!currentName || !hasBrokenTranslation(currentName)) return "";
+  const englishName = originalName || inferOriginalName(currentName, currentBody);
+  if (!englishName) return "";
+  const fallbackEntry = compendiumEntry ?? findCompendiumEntry(compendium, type, englishName) ?? findAnyCompendiumEntry(compendium, englishName);
+  return translateName(englishName, type, fallbackEntry);
 };
 
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
@@ -172,18 +215,16 @@ const main = async () => {
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
     const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
     if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
       if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         itemNames += 1;
       }
     }
-    if (!record.description) {
-      const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "items");
-      if (translatedDescription && translatedDescription !== entry.originalDescription) {
-        record.description = translatedDescription;
-        itemBodies += 1;
-      }
+    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "items");
+    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+      record.description = translatedDescription;
+      itemBodies += 1;
     }
     itemsJson.entries[uuid] = record;
   }
@@ -196,18 +237,16 @@ const main = async () => {
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
     const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
     if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
       if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         actorItemNames += 1;
       }
     }
-    if (!record.description) {
-      const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actorItems");
-      if (translatedDescription && translatedDescription !== entry.originalDescription) {
-        record.description = translatedDescription;
-        actorItemBodies += 1;
-      }
+    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actorItems");
+    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+      record.description = translatedDescription;
+      actorItemBodies += 1;
     }
     actorItemsJson.entries[uuid] = record;
   }
@@ -219,20 +258,54 @@ const main = async () => {
     const record = ensureRecord(journalJson.entries, uuid, "text");
     const translatedName = translateName(entry.originalName, entry.type, null);
     if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && !hasEnglish(record.name);
+      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
       if (!record.name || shouldNormalizeName) {
         record.name = translatedName;
         journalNames += 1;
       }
     }
-    if (!record.text) {
-      const translatedText = maybeBodyTranslation(store, entry.originalText, entry.type, null, "journalPages");
-      if (translatedText && translatedText !== entry.originalText) {
-        record.text = translatedText;
-        journalBodies += 1;
-      }
+    const translatedText = maybeBodyTranslation(store, entry.originalText, entry.type, null, "journalPages");
+    if (shouldReplaceBody(record.text, translatedText, entry.originalText)) {
+      record.text = translatedText;
+      journalBodies += 1;
     }
     journalJson.entries[uuid] = record;
+  }
+
+  for (const [uuid, record] of Object.entries(itemsJson.entries)) {
+    if (!hasBrokenTranslation(record.name)) continue;
+    const source = template.items.entries?.[uuid];
+    const compendiumEntry =
+      findCompendiumEntry(compendium, source?.type, source?.originalName)
+      ?? findAnyCompendiumEntry(compendium, source?.originalName ?? extractEnglishTail(record.name));
+    const repairedName = repairBrokenName(record.name, record.description, source?.originalName, source?.type, compendiumEntry, compendium);
+    if (repairedName && repairedName !== record.name) {
+      record.name = repairedName;
+      itemNames += 1;
+    }
+  }
+
+  for (const [uuid, record] of Object.entries(actorItemsJson.entries)) {
+    if (!hasBrokenTranslation(record.name)) continue;
+    const source = template.actorItems.entries?.[uuid];
+    const compendiumEntry =
+      findCompendiumEntry(compendium, source?.type, source?.originalName)
+      ?? findAnyCompendiumEntry(compendium, source?.originalName ?? extractEnglishTail(record.name));
+    const repairedName = repairBrokenName(record.name, record.description, source?.originalName, source?.type, compendiumEntry, compendium);
+    if (repairedName && repairedName !== record.name) {
+      record.name = repairedName;
+      actorItemNames += 1;
+    }
+  }
+
+  for (const [uuid, record] of Object.entries(journalJson.entries)) {
+    if (!hasBrokenTranslation(record.name)) continue;
+    const source = template.journalPages.entries?.[uuid];
+    const repairedName = repairBrokenName(record.name, record.text, source?.originalName, source?.type, null, compendium);
+    if (repairedName && repairedName !== record.name) {
+      record.name = repairedName;
+      journalNames += 1;
+    }
   }
 
   itemsJson.entries = sortObject(itemsJson.entries);

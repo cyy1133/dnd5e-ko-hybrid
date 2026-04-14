@@ -1,0 +1,11 @@
+{
+  "label": "JB2A Sequencer Macros",
+  "entries": {
+    "Bless": {
+      "name": "축복 Bless"
+    },
+    "Shield": {
+      "name": "방패 Shield"
+    }
+  }
+}

@@ -1,5 +1,22 @@
 {
   "files": [
+    "localization/compendium/ko/ATL.premade.json",
+    "localization/compendium/ko/ActiveAuras.aa-aura-items.json",
+    "localization/compendium/ko/JB2A_DnD5e.jb2a-actors.json",
+    "localization/compendium/ko/JB2A_DnD5e.jb2a-sequencer.json",
+    "localization/compendium/ko/beast-world.class-features.json",
+    "localization/compendium/ko/beast-world.homeland-traits.json",
+    "localization/compendium/ko/beast-world.items.json",
+    "localization/compendium/ko/beast-world.monsters.json",
+    "localization/compendium/ko/beast-world.rules.json",
+    "localization/compendium/ko/beast-world.species-traits.json",
+    "localization/compendium/ko/beast-world.species.json",
+    "localization/compendium/ko/beast-world.spells.json",
+    "localization/compendium/ko/beast-world.subclasses.json",
+    "localization/compendium/ko/beast-world.wagon-components.json",
+    "localization/compendium/ko/beast-world.wagon-model-features.json",
+    "localization/compendium/ko/beast-world.wild-cards.json",
+    "localization/compendium/ko/combat-utility-belt.conditionsdnd5e.json",
     "localization/compendium/ko/dnd5e.backgrounds.json",
     "localization/compendium/ko/dnd5e.classes.json",
     "localization/compendium/ko/dnd5e.classfeatures.json",
@@ -12,6 +29,10 @@
     "localization/compendium/ko/dnd5e.spells.json",
     "localization/compendium/ko/dnd5e.subclasses.json",
     "localization/compendium/ko/dnd5e.tables.json",
-    "localization/compendium/ko/dnd5e.tradegoods.json"
+    "localization/compendium/ko/dnd5e.tradegoods.json",
+    "localization/compendium/ko/item-piles.item-piles-custom-items.json",
+    "localization/compendium/ko/midi-qol.midiqol-sample-items.json",
+    "localization/compendium/ko/world.ddb---ddb-monsters.json",
+    "localization/compendium/ko/world.ddb---ddb-summons.json"
   ]
 }

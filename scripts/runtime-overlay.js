@@ -40,6 +40,14 @@ export class RuntimeOverlay {
     Hooks.on("renderJournalSheet", this.#onRenderJournalSheet.bind(this));
     Hooks.on("renderJournalPageSheet", this.#onRenderJournalPageSheet.bind(this));
     Hooks.on("renderChatMessage", this.#onRenderChatMessage.bind(this));
+    Hooks.on("createItem", this.#onDocumentMutation.bind(this));
+    Hooks.on("updateItem", this.#onDocumentMutation.bind(this));
+    Hooks.on("createActor", this.#onDocumentMutation.bind(this));
+    Hooks.on("updateActor", this.#onDocumentMutation.bind(this));
+    Hooks.on("createJournalEntry", this.#onDocumentMutation.bind(this));
+    Hooks.on("updateJournalEntry", this.#onDocumentMutation.bind(this));
+    Hooks.on("createJournalEntryPage", this.#onDocumentMutation.bind(this));
+    Hooks.on("updateJournalEntryPage", this.#onDocumentMutation.bind(this));
   }
 
   rerenderOpenApplications() {
@@ -54,6 +62,11 @@ export class RuntimeOverlay {
 
   #enabled() {
     return game.settings.get(MODULE_ID, "enable-runtime-overlay");
+  }
+
+  #onDocumentMutation() {
+    if (!this.#enabled()) return;
+    queueMicrotask(() => this.rerenderOpenApplications());
   }
 
   #decorateHtml(root) {

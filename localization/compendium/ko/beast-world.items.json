@@ -1,0 +1,11 @@
+{
+  "label": "Items",
+  "entries": {
+    "Bellarmure, the Beautiful Armor of Allemance": {
+      "description": "<p><em>Medium armor (Breastplate), requires attunement</em></p><p><br />This suit of breastplate is said to contain the love of the Allemagnian people, rubbed with magic seed oil every day for ten years. While wearing this armor, you gain a +3 bonus to AC. You are considered proficient with this armor even if you lack proficiency with medium armor. The armor sheds dirt and debris, and as an action you can sweep its cape to make the armor take the appearance of any outfit you wish.</p><p>Additionally, as a reaction to being targeted by an attack or harmful effect, you can speak the armor’s command word to cloak yourself in its true majesty for 10 minutes or until you are no longer wearing the armor. Any creature that targets you with an attack or harmful effect (including the triggering creature) must make a DC 19 Wisdom saving throw. Creatures immune to being charmed automatically pass the save. 내성 굴림에 실패하면, the creature is charmed by you for the effect’s duration. 내성 굴림에 성공하면, the target is unaffected and immune to this effect for the next 24 hours. Once this special action is used, you can’t use it again until the next dawn.</p>"
+    },
+    "Mabikubo, the Counterweight of the Causeway": {
+      "description": "<p><em>Wondrous item, requires attunement</em><br /><br />This stone cube is engraved with the names of the Causeway’s chief builders. It was once used to haul enormous stones at the site of its construction. You can use a bonus action to speak its command word to cause the stone to magically shrink to 2 inches on a side and 5 pounds. Speaking it again causes it to grow to 2 feet on a side and 1,000 pounds.</p><p>Additionally, while the cube is miniature, you can speak the command word while using it as ammunition for a sling. The cube retains its speed in flight after growing. On a hit, the 1,000 pound cube deals an extra 6d10 bludgeoning 피해. It lands unharmed after use.</p><p>Leaving the cube on a prone creature while it is 1,000 pounds restrains them (escape DC 18).</p>"
+    }
+  }
+}
