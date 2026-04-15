@@ -38,8 +38,21 @@
     "localization/compendium/ko/monks-active-tiles.active-tile-macros.json",
     "localization/compendium/ko/token-attacher.example-macros.json",
     "localization/compendium/ko/wall-height.wall-height-macros.json",
+    "localization/compendium/ko/world.ddb---ddb-backgrounds.json",
+    "localization/compendium/ko/world.ddb---ddb-class-features.json",
+    "localization/compendium/ko/world.ddb---ddb-classes.json",
+    "localization/compendium/ko/world.ddb---ddb-feats.json",
+    "localization/compendium/ko/world.ddb---ddb-items.json",
+    "localization/compendium/ko/world.ddb---ddb-journals.json",
     "localization/compendium/ko/world.ddb---ddb-monsters.json",
+    "localization/compendium/ko/world.ddb---ddb-override.json",
+    "localization/compendium/ko/world.ddb---ddb-races.json",
+    "localization/compendium/ko/world.ddb---ddb-racial-traits.json",
+    "localization/compendium/ko/world.ddb---ddb-species.json",
+    "localization/compendium/ko/world.ddb---ddb-spells.json",
+    "localization/compendium/ko/world.ddb---ddb-subclasses.json",
     "localization/compendium/ko/world.ddb---ddb-summons.json",
-    "localization/compendium/ko/world.ddb---ddb-tables.json"
+    "localization/compendium/ko/world.ddb---ddb-tables.json",
+    "localization/compendium/ko/world.ddb---ddb-vehicles.json"
   ]
 }
