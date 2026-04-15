@@ -107,10 +107,13 @@ const formatBilingualName = (originalName, translatedName) => {
   return `${translated} - ${source}`;
 };
 
-const isPureEnglish = (name = "", body = "") => {
+const needsTranslationPass = (name = "", body = "") => {
   const visible = `${name} ${stripMarkup(body)}`.trim();
-  return hasEnglish(visible) && !hasKorean(visible);
+  return hasEnglish(visible);
 };
+
+const makeSourceKey = (type = "", originalName = "") =>
+  `${String(type ?? "").trim().toLowerCase()}::${String(originalName ?? "").trim().toLowerCase()}`;
 
 const sortObject = (object) =>
   Object.fromEntries(Object.entries(object).sort(([a], [b]) => a.localeCompare(b)));
@@ -174,7 +177,7 @@ const findCompendiumEntry = (compendium, type, originalName) => {
     const entry = compendium.get(collection)?.[originalName];
     if (entry) return entry;
   }
-  return null;
+  return findAnyCompendiumEntry(compendium, originalName);
 };
 
 const findAnyCompendiumEntry = (compendium, originalName) => {
@@ -218,18 +221,26 @@ const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) 
   const visibleOriginal = stripMarkup(originalBody);
   if (hasKorean(visibleOriginal) && !hasEnglish(visibleOriginal)) return "";
 
+  const candidates = [];
+
   if ((mode === "items" || mode === "actorItems" || mode === "actors") && compendiumEntry?.description) {
-    return compendiumEntry.description;
+    candidates.push(compendiumEntry.description);
+  }
+
+  if ((mode === "items" || mode === "actorItems" || mode === "actors") && compendiumEntry?._sharedDescription) {
+    candidates.push(compendiumEntry._sharedDescription);
   }
 
   const generated = store._translateGeneratedDescription(originalBody);
-  if (generated !== originalBody) return generated;
+  if (generated !== originalBody) candidates.push(generated);
 
   if (mode === "journalPages" && compendiumEntry?.text) {
-    return compendiumEntry.text;
+    candidates.push(compendiumEntry.text);
   }
 
-  return "";
+  return candidates
+    .filter(Boolean)
+    .sort((left, right) => translationScore(right) - translationScore(left))[0] ?? "";
 };
 
 const ensureRecord = (currentEntries, uuid, labelKey) => {
@@ -237,6 +248,43 @@ const ensureRecord = (currentEntries, uuid, labelKey) => {
   return {
     ...existing,
     [labelKey]: existing[labelKey] ?? ""
+  };
+};
+
+const buildSharedTranslationIndex = (templateEntries, currentEntries) => {
+  const index = new Map();
+
+  for (const [uuid, source] of Object.entries(templateEntries ?? {})) {
+    const record = currentEntries?.[uuid];
+    if (!record?.description && !record?.name) continue;
+    const key = makeSourceKey(source?.type, source?.originalName);
+    if (!key || key === "::") continue;
+
+    const current = index.get(key);
+    const candidateScore =
+      translationScore(record.description ?? "") +
+      translationScore(record.name ?? "");
+    const currentScore = current
+      ? translationScore(current.description ?? "") + translationScore(current.name ?? "")
+      : Number.NEGATIVE_INFINITY;
+
+    if (!current || candidateScore > currentScore) {
+      index.set(key, {
+        name: record.name ?? "",
+        description: record.description ?? ""
+      });
+    }
+  }
+
+  return index;
+};
+
+const attachSharedDescription = (entry, sharedIndex, type, originalName) => {
+  const shared = sharedIndex.get(makeSourceKey(type, originalName));
+  if (!shared?.description) return entry;
+  return {
+    ...(entry ?? {}),
+    _sharedDescription: shared.description
   };
 };
 
@@ -256,16 +304,18 @@ const main = async () => {
   let actorNames = 0;
   let actorBodies = 0;
   for (const [uuid, entry] of Object.entries(template.actors?.entries ?? {})) {
-    if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
     const record = ensureRecord(actorsJson.entries, uuid, "description");
-    const compendiumEntry = findAnyCompendiumEntry(compendium, entry.originalName);
-    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+    const sourceName = entry.originalName || inferOriginalName(record.name, record.description);
+    const sourceDescription = entry.originalDescription || record.description || "";
+    if (!needsTranslationPass(sourceName, sourceDescription)) continue;
+    const compendiumEntry = findAnyCompendiumEntry(compendium, sourceName);
+    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       actorNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actors");
-    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "actors");
+    if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       actorBodies += 1;
     }
@@ -275,35 +325,49 @@ const main = async () => {
   let itemNames = 0;
   let itemBodies = 0;
   for (const [uuid, entry] of Object.entries(template.items.entries ?? {})) {
-    if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
     const record = ensureRecord(itemsJson.entries, uuid, "description");
-    const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
-    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+    const sourceName = entry.originalName || inferOriginalName(record.name, record.description);
+    const sourceDescription = entry.originalDescription || record.description || "";
+    if (!needsTranslationPass(sourceName, sourceDescription)) continue;
+    const compendiumEntry = findCompendiumEntry(compendium, entry.type, sourceName);
+    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       itemNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "items");
-    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "items");
+    if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       itemBodies += 1;
     }
     itemsJson.entries[uuid] = record;
   }
 
+  const sharedItemTranslations = buildSharedTranslationIndex(
+    template.items.entries ?? {},
+    itemsJson.entries ?? {}
+  );
+
   let actorItemNames = 0;
   let actorItemBodies = 0;
   for (const [uuid, entry] of Object.entries(template.actorItems.entries ?? {})) {
-    if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
     const record = ensureRecord(actorItemsJson.entries, uuid, "description");
-    const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
-    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+    const sourceName = entry.originalName || inferOriginalName(record.name, record.description);
+    const sourceDescription = entry.originalDescription || record.description || "";
+    if (!needsTranslationPass(sourceName, sourceDescription)) continue;
+    const compendiumEntry = attachSharedDescription(
+      findCompendiumEntry(compendium, entry.type, sourceName),
+      sharedItemTranslations,
+      entry.type,
+      sourceName
+    );
+    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       actorItemNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actorItems");
-    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "actorItems");
+    if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       actorItemBodies += 1;
     }
@@ -313,15 +377,17 @@ const main = async () => {
   let journalNames = 0;
   let journalBodies = 0;
   for (const [uuid, entry] of Object.entries(template.journalPages.entries ?? {})) {
-    if (!isPureEnglish(entry.originalName, entry.originalText)) continue;
     const record = ensureRecord(journalJson.entries, uuid, "text");
-    const translatedName = translateName(entry.originalName, entry.type, null);
-    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+    const sourceName = entry.originalName || inferOriginalName(record.name, record.text);
+    const sourceText = entry.originalText || record.text || "";
+    if (!needsTranslationPass(sourceName, sourceText)) continue;
+    const translatedName = translateName(sourceName, entry.type, null);
+    if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       journalNames += 1;
     }
-    const translatedText = maybeBodyTranslation(store, entry.originalText, entry.type, null, "journalPages");
-    if (shouldReplaceBody(record.text, translatedText, entry.originalText)) {
+    const translatedText = maybeBodyTranslation(store, sourceText, entry.type, null, "journalPages");
+    if (shouldReplaceBody(record.text, translatedText, sourceText)) {
       record.text = translatedText;
       journalBodies += 1;
     }
