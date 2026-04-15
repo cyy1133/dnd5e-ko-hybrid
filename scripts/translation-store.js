@@ -31,6 +31,7 @@ const signatureFor = ({ type = "", name = "", content = "" } = {}) =>
 const COMMON_NAME_TRANSLATIONS = {
   "+1 Breastplate": "+1 브레스트플레이트",
   "Absorb Elements": "원소 흡수",
+  "Acid": "산성병",
   "Alchemist": "연금술사",
   "Alchemist's Fire": "연금술사의 불",
   "Alchemy": "연금술",
@@ -52,6 +53,7 @@ const COMMON_NAME_TRANSLATIONS = {
   "Blowgun": "바람총",
   "Bardic Inspiration": "바드의 고양감",
   "Bedroll": "침낭",
+  "Bigby's Hand": "빅비의 손",
   "Claws": "발톱",
   "Club": "곤봉",
   "Combat Superiority": "전투 우월성",
@@ -117,6 +119,7 @@ const COMMON_NAME_TRANSLATIONS = {
   "Breastplate of Gleaming": "빛나는 브레스트플레이트",
   "Candle": "초",
   "Cause Fear": "공포 유발",
+  "Chaos Bolt": "혼돈 탄환",
   "Chain Mail": "체인 메일",
   "Chain Shirt": "체인 셔츠",
   "Changeling": "체인질링",
@@ -475,6 +478,8 @@ const COMMON_NAME_TRANSLATIONS = {
   "Armor of Psychic Resistance, Chain Mail": "정신 저항 체인 메일 갑옷",
   "Armor of Radiant Resistance, Splint": "광휘 저항 스플린트 갑옷",
   "Armor of Thunder Resistance, Breastplate": "천둥 저항 브레스트플레이트 갑옷",
+  "Armor of Vulnerability": "취약성의 갑옷",
+  "Armor of Vulnerability (Bludgeoning)": "취약성의 갑옷 (타격)",
   "Half Plate Armor of Vulnerability (Slashing)": "참격 취약성 하프 플레이트 갑옷",
   "Blood Drinker Vampire": "피를 마시는 뱀파이어",
   "Ink Cloud": "먹물 구름",
@@ -1944,10 +1949,30 @@ export class TranslationStore {
       .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>")
       .replace(/This armor is cursed, a fact that is revealed only when an <strong>identify<\/strong> spell is cast on the armor or you attune to it\./gu, "이 갑옷은 저주받았으며, 그 사실은 갑옷에 <strong>식별</strong> 주문을 시전하거나 당신이 갑옷에 조율할 때에만 드러납니다.")
       .replace(/Attuning to the armor curses you until you are targeted by the (@UUID\[[^\]]+\](?:\{[^}]+\})?) spell or similar magic; removing the armor fails to end the curse\./gu, (_, spell) => `갑옷에 조율하면 ${spell} 주문이나 유사한 마법의 대상이 되기 전까지 저주가 이어지며, 갑옷을 벗는 것만으로는 저주가 끝나지 않습니다.`)
-      .replace(/When you cast the spell and as a 추가 행동 on your later turns, you can move the hand up to ([0-9]+) feet and then cause one of the following effects:\./gu, (_, distance) => `주문을 시전할 때와 이후 당신의 턴에 추가 행동으로, 그 손을 최대 ${distance}피트까지 이동시킨 뒤 다음 효과 중 하나를 일으킬 수 있습니다.`)
+      .replace(/When you cast the spell and as a (?:bonus action|추가 행동) on your later turns, you can move the hand up to ([0-9]+) feet and then cause one of the following effects:/gu, (_, distance) => `주문을 시전할 때와 이후 당신의 턴에 추가 행동으로, 그 손을 최대 ${distance}피트까지 이동시킨 뒤 다음 효과 중 하나를 일으킬 수 있습니다:`)
+      .replace(/<strong>Clenched Fist\.<\/strong>/gu, "<strong>쥔 주먹.</strong>")
+      .replace(/<strong>Forceful Hand\.<\/strong>/gu, "<strong>강권의 손.</strong>")
+      .replace(/<strong>Grasping Hand\.<\/strong>/gu, "<strong>붙잡는 손.</strong>")
+      .replace(/<strong>Interposing Hand\.<\/strong>/gu, "<strong>가로막는 손.</strong>")
+      .replace(/The hand strikes a target within 5 feet of it\./gu, "그 손은 자신으로부터 5피트 이내의 대상 하나를 내리칩니다.")
+      .replace(/Make a melee spell attack\./gu, "근접 주문 공격을 합니다.")
+      .replace(/The hand attempts to push a Huge or smaller creature within 5 feet of it\./gu, "그 손은 자신으로부터 5피트 이내의 거대형 이하 크리처 하나를 밀어내려 합니다.")
+      .replace(/The target must succeed on a Strength saving throw, or the hand pushes the target up to ([0-9]+) feet plus a number of feet equal to five times your spellcasting ability modifier\./gu, (_, distance) => `대상은 근력 내성 굴림에 성공해야 하며, 실패하면 그 손이 대상을 최대 ${distance}피트에 더해 당신의 주문시전 능력 수정치의 다섯 배만큼 밀어냅니다.`)
+      .replace(/The hand moves with the target, remaining within 5 feet of it\./gu, "그 손은 대상과 함께 이동하며, 대상의 5피트 이내에 머뭅니다.")
+      .replace(/The hand attempts to grapple a Huge or smaller creature within 5 feet of it\./gu, "그 손은 자신으로부터 5피트 이내의 거대형 이하 크리처 하나를 붙잡으려 합니다.")
+      .replace(/The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC\./gu, "대상은 민첩 내성 굴림에 성공해야 하며, 실패하면 당신의 주문 내성 DC와 같은 탈출 DC를 가진 붙잡힘 상태가 됩니다.")
+      .replace(/While the hand grapples the target, you can take a (?:bonus action|추가 행동) to cause the hand to crush it, dealing ([^.]+?) to the target equal to ([0-9]+d[0-9]+) plus your spellcasting ability modifier\./gu, (_, damageType, damage) => `그 손이 대상을 붙잡고 있는 동안, 추가 행동으로 손이 대상을 짓뭉개게 하여 ${damage} + 당신의 주문시전 능력 수정치만큼의 ${damageType}를 입힐 수 있습니다.`)
+      .replace(/Clenched Fist의 피해는 ([0-9]+)레벨을 넘는 슬롯 레벨마다 ([0-9]+d[0-9]+)씩 증가하고, Grasping Hand의 피해는 ([0-9]+d[0-9]+)씩 증가합니다\./gu, (_, level, fistDamage, graspDamage) => `쥔 주먹의 피해는 ${level}레벨을 넘는 슬롯 레벨마다 ${fistDamage}씩 증가하고, 붙잡는 손의 피해는 ${graspDamage}씩 증가합니다.`)
       .replace(/It manifests in an unoccupied space that you can see within range and uses the <strong>Aberrant Spirit<\/strong> stat block\./gu, "사거리 내에서 당신이 볼 수 있는 비어 있는 공간에 나타나며 <strong>Aberrant Spirit</strong> 능력치 블록을 사용합니다.")
+      .replace(/<strong>Curse\.<\/strong>/gu, "<strong>저주.</strong>")
       .replace(/<strong>Immunities<\/strong>\s*&Reference\[psychic\]\{정신\}/gu, "<strong>면역</strong> &Reference[psychic]{정신}")
-      .replace(/<strong>Senses<\/strong>\s*&Reference\[darkvision\]\{Darkvision\} ([0-9]+) ft\.; Passive Perception ([0-9]+)/gu, (_, distance, passive) => `<strong>감각</strong> &Reference[darkvision]{암시야} ${distance}피트; 수동 지각 ${passive}`)
+      .replace(/<strong>Senses<\/strong>\s*&Reference\[darkvision\]\{(?:Darkvision|암시야)\}\s*([0-9]+) ft\.; Passive Perception ([0-9]+)/gu, (_, distance, passive) => `<strong>감각</strong> &Reference[darkvision]{암시야} ${distance}피트; 수동 지각 ${passive}`)
+      .replace(/<strong>Languages<\/strong>\s*Deep Speech, understands the languages you know/gu, "<strong>언어</strong> 심층어, 당신이 아는 언어를 이해함")
+      .replace(/<strong>CR<\/strong>\s*None \(XP 0; PB equals your Proficiency Bonus\)/gu, "<strong>CR</strong> 없음 (XP 0; PB는 당신의 숙련 보너스와 같음)")
+      .replace(/<p>Medium Aberration, Neutral<\/p>/gu, "<p>중형 변이체, 중립</p>")
+      .replace(/<p><strong>AC<\/strong> 11 \+ the spell[’']s level<\/p>/gu, "<p><strong>AC</strong> 11 + 주문 레벨</p>")
+      .replace(/<p><strong>HP<\/strong> 40 \+ 10 for each spell level above 4<\/p>/gu, "<p><strong>HP</strong> 40 + 4레벨을 넘는 주문 레벨마다 10</p>")
+      .replace(/<p><strong>속도<\/strong> 30 ft\.; Fly 30 ft\. \(hover; Beholderkin only\)<\/p>/gu, "<p><strong>속도</strong> 30피트, 비행 30피트 (호버; 비홀더킨 전용)</p>")
       .replace(/&amp;Reference\[/gu, "&Reference[");
 
     return output;
@@ -2112,6 +2137,12 @@ export class TranslationStore {
       .replace(/In combat, the creature shares your Initiative count, but it takes its turn immediately after yours\./gu, "전투 중 그 크리처는 당신과 같은 우선권을 공유하지만, 당신의 직후에 자신의 턴을 가집니다.")
       .replace(/If you don[’']t issue any, it takes the Dodge action and uses its move to avoid danger\./gu, "당신이 아무 명령도 내리지 않으면, 그 크리처는 회피 행동을 하고 위험을 피하기 위해 이동을 사용합니다.")
       .replace(/Use the spell slot[’']s level for the spell[’']s level in the stat block\./gu, "능력치 블록에 적힌 주문 레벨은 사용한 주문 슬롯의 레벨을 사용합니다.")
+      .replace(/<strong><em>Regeneration \(Slaad Only\)\.<\/em><\/strong> The spirit regains 5 Hit Points at the start of its turn if it has at least 1 Hit Point\./gu, "<strong><em>재생 (슬라드 전용).</em></strong> 정령은 자신의 턴 시작 시 HP가 1 이상 남아 있다면 HP를 5 회복합니다.")
+      .replace(/<strong><em>Whispering Aura \(Mind Flayer Only\)\.<\/em><\/strong> At the start of each of the spirit[’']s turns, the spirit emits psionic energy if it doesn[’']t have the Incapacitated condition\./gu, "<strong><em>속삭이는 오라 (마인드 플레이어 전용).</em></strong> 정령은 무력화 상태가 아니라면 자신의 각 턴 시작 시 사이오닉 에너지를 방출합니다.")
+      .replace(/<strong><em>Multiattack\.<\/em><\/strong> The spirit makes a number of attacks equal to half this spell[’']s level \(round down\)\./gu, "<strong><em>다중공격.</em></strong> 정령은 이 주문 레벨의 절반(내림)과 같은 횟수만큼 공격합니다.")
+      .replace(/<strong><em>Claw \(Slaad Only\)\.<\/em><\/strong>/gu, "<strong><em>발톱 (슬라드 전용).</em></strong>")
+      .replace(/<strong><em>Eye Ray \(Beholderkin Only\)\.<\/em><\/strong>/gu, "<strong><em>안광선 (비홀더킨 전용).</em></strong>")
+      .replace(/<strong><em>Psychic Slam \(Mind Flayer Only\)\.<\/em><\/strong>/gu, "<strong><em>정신 강타 (마인드 플레이어 전용).</em></strong>")
       .replace(/The damage is of the same type dealt by the original attack\./gu, "이 피해 유형은 원래 공격이 준 피해와 같습니다.")
       .replace(/The target drops whatever it is holding and then ends its turn\./gu, "대상은 들고 있는 것을 떨어뜨리고 그 턴을 끝냅니다.")
       .replace(/The target spends its turn moving away from you by the fastest available means\./gu, "대상은 가능한 가장 빠른 수단으로 당신에게서 멀어지는 데 자신의 턴을 사용합니다.")
