@@ -272,6 +272,15 @@ const createApi = () => ({
   }
 });
 
+const installDdbImporterCompatWithRetry = (installer, { debug = false, attempt = 0 } = {}) => {
+  if (typeof installer !== "function") return;
+  const installed = installer({ debug });
+  if (installed || attempt >= 6) return;
+
+  const delay = [250, 750, 1500, 3000, 5000, 8000][attempt] ?? 8000;
+  setTimeout(() => installDdbImporterCompatWithRetry(installer, { debug, attempt: attempt + 1 }), delay);
+};
+
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "enable-runtime-overlay", {
     name: "DND5E-KO-HYBRID.Settings.Enable.Name",
@@ -305,12 +314,16 @@ Hooks.once("ready", async () => {
   const api = createApi();
   game.modules.get(MODULE_ID).api = api;
   globalThis.dnd5eKoHybrid = api;
+  const debug = game.settings.get(MODULE_ID, "debug");
 
   try {
-    const [{ TranslationStore }, { RuntimeOverlay }] = await Promise.all([
+    const [{ installDdbImporterPatches }, { TranslationStore }, { RuntimeOverlay }] = await Promise.all([
+      import("./ddb-importer-patches.js"),
       import("./translation-store.js"),
       import("./runtime-overlay.js")
     ]);
+
+    installDdbImporterCompatWithRetry(installDdbImporterPatches, { debug });
 
     store = new TranslationStore();
     overlay = new RuntimeOverlay(store);
@@ -325,7 +338,7 @@ Hooks.once("ready", async () => {
     console.error(`${MODULE_ID} | Failed to initialize translation modules`, error);
   }
 
-  if (game.settings.get(MODULE_ID, "debug")) {
+  if (debug) {
     console.info(`${MODULE_ID} | Loaded translation store`, store);
   }
 });

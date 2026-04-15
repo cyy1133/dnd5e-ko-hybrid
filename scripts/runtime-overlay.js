@@ -58,9 +58,9 @@ export class RuntimeOverlay {
     Hooks.on("createFolder", this.#onDocumentMutation.bind(this));
     Hooks.on("updateFolder", this.#onDocumentMutation.bind(this));
     Hooks.on("deleteFolder", this.#onDocumentMutation.bind(this));
+    Hooks.on("ddb-importer.characterProcessDataComplete", this.#onDocumentMutation.bind(this));
 
     for (const hookName of [
-      "ddb-importer.characterProcessDataComplete",
       "ddb-importer.itemsCompendiumUpdateComplete",
       "ddb-importer.spellsCompendiumUpdateComplete",
       "ddb-importer.featuresCompendiumUpdateComplete",
@@ -69,7 +69,7 @@ export class RuntimeOverlay {
       "ddb-importer.vehiclesCompendiumUpdateComplete",
       "ddb-importer.monsterAddToCompendiumComplete"
     ]) {
-      Hooks.on(hookName, this.#onImporterMutation.bind(this));
+      Hooks.on(hookName, this.#onImporterCompendiumMutation.bind(this));
     }
   }
 
@@ -94,7 +94,7 @@ export class RuntimeOverlay {
     queueMicrotask(() => this.rerenderOpenApplications());
   }
 
-  #onImporterMutation() {
+  #onImporterCompendiumMutation() {
     if (!this.#enabled()) return;
     this.#scheduleStoreRefresh();
   }
@@ -104,7 +104,11 @@ export class RuntimeOverlay {
     this.pendingStoreRefresh = setTimeout(async () => {
       this.pendingStoreRefresh = null;
       try {
-        await this.store.refresh();
+        if (typeof this.store.refreshCompendiums === "function") {
+          await this.store.refreshCompendiums();
+        } else {
+          await this.store.refresh();
+        }
       } catch (error) {
         console.warn(`${MODULE_ID} | Failed to refresh translation store after importer update`, error);
       }

@@ -1058,52 +1058,21 @@ export class TranslationStore {
   async load() {
     this.ready = false;
 
-    const [actors, items, actorItems, journalPages, sharedItems] = await Promise.all([
-      this._loadJson(WORLD_TRANSLATION_FILES.actors),
-      this._loadJson(WORLD_TRANSLATION_FILES.items),
-      this._loadJson(WORLD_TRANSLATION_FILES.actorItems),
-      this._loadJson(WORLD_TRANSLATION_FILES.journalPages),
-      this._loadJson(WORLD_TRANSLATION_FILES.sharedItems)
+    await Promise.all([
+      this._loadWorldTranslations(),
+      this._loadCompendiumTranslations()
     ]);
-
-    this.world.actors = this._toEntryMap(actors);
-    this.world.items = this._toEntryMap(items);
-    this.world.actorItems = this._toEntryMap(actorItems);
-    this.world.journalPages = this._toEntryMap(journalPages);
-    this.sharedItems = this._toEntryMap(sharedItems);
-
-    const compendiumFiles = await this._discoverCompendiumFiles();
-    this.compendium.clear();
-    this.compendiumDocLabels.clear();
-    this.compendiumPageLabels.clear();
-    this.compendiumPackLabels.clear();
-    this.compendiumFolderLabels.clear();
-    this.compendiumSignatureIndex.clear();
-    this.compendiumNameIndex.clear();
-    this.compendiumActorNameIndex.clear();
-
-    for (const filePath of compendiumFiles) {
-      const data = await this._loadJson(filePath);
-      if (!data) continue;
-      const collection = this._collectionFromPath(filePath);
-      this.compendium.set(collection, data);
-      if (data.label) {
-        this.compendiumPackLabels.set(collection, plainLabelToKo(data.label));
-      }
-      if (data.folders) {
-        this.compendiumFolderLabels.set(
-          collection,
-          new Map(Object.entries(data.folders).map(([name, label]) => [name, plainLabelToKo(label)]))
-        );
-      }
-    }
-
-    await this._indexCompendiumTranslations();
     this.ready = true;
   }
 
   async refresh() {
     await this.load();
+  }
+
+  async refreshCompendiums() {
+    this.ready = false;
+    await this._loadCompendiumTranslations();
+    this.ready = true;
   }
 
   getActorTranslation(actor) {
@@ -1930,6 +1899,56 @@ export class TranslationStore {
     if (!response.ok) return [];
     const data = await response.json();
     return Array.isArray(data.files) ? data.files : [];
+  }
+
+  async _loadWorldTranslations() {
+    const [actors, items, actorItems, journalPages, sharedItems] = await Promise.all([
+      this._loadJson(WORLD_TRANSLATION_FILES.actors),
+      this._loadJson(WORLD_TRANSLATION_FILES.items),
+      this._loadJson(WORLD_TRANSLATION_FILES.actorItems),
+      this._loadJson(WORLD_TRANSLATION_FILES.journalPages),
+      this._loadJson(WORLD_TRANSLATION_FILES.sharedItems)
+    ]);
+
+    this.world.actors = this._toEntryMap(actors);
+    this.world.items = this._toEntryMap(items);
+    this.world.actorItems = this._toEntryMap(actorItems);
+    this.world.journalPages = this._toEntryMap(journalPages);
+    this.sharedItems = this._toEntryMap(sharedItems);
+  }
+
+  async _loadCompendiumTranslations() {
+    const compendiumFiles = await this._discoverCompendiumFiles();
+    this._clearCompendiumIndexes();
+
+    for (const filePath of compendiumFiles) {
+      const data = await this._loadJson(filePath);
+      if (!data) continue;
+      const collection = this._collectionFromPath(filePath);
+      this.compendium.set(collection, data);
+      if (data.label) {
+        this.compendiumPackLabels.set(collection, plainLabelToKo(data.label));
+      }
+      if (data.folders) {
+        this.compendiumFolderLabels.set(
+          collection,
+          new Map(Object.entries(data.folders).map(([name, label]) => [name, plainLabelToKo(label)]))
+        );
+      }
+    }
+
+    await this._indexCompendiumTranslations();
+  }
+
+  _clearCompendiumIndexes() {
+    this.compendium.clear();
+    this.compendiumDocLabels.clear();
+    this.compendiumPageLabels.clear();
+    this.compendiumPackLabels.clear();
+    this.compendiumFolderLabels.clear();
+    this.compendiumSignatureIndex.clear();
+    this.compendiumNameIndex.clear();
+    this.compendiumActorNameIndex.clear();
   }
 
   _collectionFromPath(relativePath) {
