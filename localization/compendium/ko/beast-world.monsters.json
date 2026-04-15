@@ -240,7 +240,7 @@
         },
         "Legendary Resistance": {
           "name": "전설적 저항 - Legendary Resistance",
-          "description": "<p> [[lookup @details.type.config.label lowercase]]의 내성 굴림이 실패한 경우, 대신 성공했다고 간주할 수 있습니다.</p>"
+          "description": "<p>뱀파이어가 내성 굴림에 실패하면, 대신 성공하도록 선택할 수 있습니다.</p>"
         },
         "Move": {
           "name": "이동 - Move"
@@ -266,7 +266,7 @@
         },
         "Unarmed Strike": {
           "name": "비무장 공격 - Unarmed Strike",
-          "description": "<p></p>"
+          "description": "<p>뱀파이어는 비무장 공격 공격을 한 번 합니다.</p>"
         }
       }
     },

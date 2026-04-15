@@ -1,4 +1,283 @@
 {
   "label": "Actors",
-  "entries": {}
+  "entries": {
+    "Actor.1KSH0A35mX6vH4Kb": {
+      "description": ""
+    },
+    "Actor.3P5WtA9LmbrxEKak": {
+      "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "트롤 - Troll"
+    },
+    "Actor.4kir5GIOETH7enyf": {
+      "description": "<div class=\"rd__b  rd__b--0\"><p>Ancient green dragons are creatures of legend, rarely seen by their servants or foes. Via magic and well-hidden agents, these dragons stoke suspicion between allies and undermine noble works. As bonds fray, the dragons reap rewards of greater wealth and control. Eventually the ambitions of ancient green dragons stretch beyond their territories as they seek control over empires, planar realms, or death itself.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Green Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">녹색 Dragons</span></h1> <p><i>Dragons of Deceit and Derision</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">Habitat:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:forest=1\">Forest</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">Treasure:</span> @table[Random Magic Items - Arcana|XDMG|Arcana]</p></li></ul><p>From forbidden forest depths, green dragons whisper evils into the world and manipulate the lives of those who listen. Elusive, conniving, and egotistical, these chromatic dragons patiently prey on the fears of shorter-lived beings, corrupting and isolating them. 녹색 dragons might lurk amid labyrinthine wildernesses for centuries without revealing themselves; even their most devoted followers might know them only as the voice of the woodlands or a whisper in their dreams.</p><p>Despite their might, most green dragons disdain physical violence, viewing combat as servants' work and preferring to trick foes into dangerous or exploitative scenarios. These dragons collect \"baubles\" that embody their webs of manipulation and serve as tools of extortion, such as compromising documents, family heirlooms, and sentimental treasures.</p><div data-roll-name-ancestor=\"Green Dragon Lairs\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"2\"> <span class=\"entry-title-inner\">녹색 Dragon Lairs</span></h2> <p>녹색 dragons lair in ancient forests, often shaping stands of massive trees into compounds of interwoven branches, hollow trunks, and caverns amid mighty roots. They might also dwell amid forested ruins, particularly the former homes of those they've conquered.</p><p>The region containing an adult or ancient green dragon's lair is warped by its presence, creating the following effects:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Beast Spies\"><span class=\"bold rd__list-item-name\">Beast Spies.</span> Tiny Beasts magically gain the ability to understand Draconic and can communicate telepathically with the dragon while within 1 mile of the lair.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Poisonous Thicket\"><span class=\"bold rd__list-item-name\">Poisonous Thicket.</span> Ordinary plants growing within 1 mile of the lair poison the air around them. Whenever a creature other than the dragon or its allies finishes a @variantrule[Long Rest|XPHB] in that area, it must succeed on a [[/save ability=con dc=15]] saving throw or have the &Reference[condition=Poisoned] condition for 1 hour.</p></li></ul><p>If the dragon dies or moves its lair elsewhere, these effects end immediately.</p></div></div>",
+      "name": "그린 드래곤 원시체 - Ancient Green Dragon"
+    },
+    "Actor.55RQaolnMLBuDIra": {
+      "description": ""
+    },
+    "Actor.6GWPl99fessqM3u0": {
+      "description": "",
+      "name": "발리스타 - Ballista"
+    },
+    "Actor.8d7Lwm6BGNkQkKV3": {
+      "description": ""
+    },
+    "Actor.8JnHjtGPykuf6PCM": {
+      "description": ""
+    },
+    "Actor.9vgWiWtDB7toHOV2": {
+      "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "웨어랫 - Wererat"
+    },
+    "Actor.aEEKrpDu2FeGc1Zh": {
+      "description": "<p>세계 곳곳의 도적은 그 형태와 규모가 다양합니다. 하플링 소매치기에서부터 불운한 선박을 약탈하는 속이 시커먼 드래곤본 선장까지, 이들은 다양한 형태를 취하고 있습니다. 여기에서 “도적” 등급의 범죄자로 간주되는 존재들의 공통점을 알아보겠습니다. 이 정보를 검토하면서, 모든 도적을 경멸의 눈으로 봐야 하는 것은 아니라는 점에 유의하세요. 많은 도적이 목표에게 해를 입히거나 재물을 탐하지만, 어떤 도적은 불공평하기 그지없는 세계에서 살아남고자 도둑질을 합니다.</p>\n<p><strong>좋은 놈.</strong> “고결한 범죄자”로 간주할 수 있는 도적들부터 시작하겠습니다. 이런 도적들은 국민 중에서도 가장 짓밟혀 왔던 사람들, 자신이 손에 쥘 수 있는 일말의 위안이나마 필사적으로 긁어모으기 위해 가난과 압제에 시달리며 투쟁해 온 사람들입니다. 어떤 사람이 강도 행위를 저지르거나 마을 거리에서 공개적으로 도둑질을 했다면, 왜 이런 선택을 할 정도로 절박한 상황에 몰렸을지 그 이유를 생각해 보세요. 더 고결한 부류의 도적이라고 해도, 훔쳐낸 것으로 자기 자신이나 직계 가족의 삶을 풍요롭게 하는 등 자신이 약탈한 수익을 두고 이기적으로 굴 수 있습니다. 하지만 어떤 도적들은 자신들이 훔쳐낸 물건을 사용하여 더 가난한 주민들의 삶을 개선하려고 하기도 합니다. 이러한 도적들은 특히나 강도 행위를 저지를 때 자포자기하고 겁에 질려 있는 경우가 많다는 점에 유의하세요. 이들은 두려움에 질려 있고, 열악한 환경 탓에 범죄를 저지르게 되었으므로 피해자에게 신체적인 위해를 가하지 않는 경우가 더 많으므로 이들을 해산시키는 데에는 폭력이 필요하지 않을 수도 있습니다. 젊은 모험가들을 위해 조언하자면, 세계를 여행할 때 편견은 내려놓고 상황이 바뀌었다면 이렇게 작은 범죄 행위에 대해 자비를 바라는 것은 당신이었을 수도 있음을 기억하세요.</p>\n<p><strong>나쁜 놈, 이상한 놈.</strong> 마음씨 고운 자들은 지나치게 많이 가진 자들에게 빼앗아 불운한 자들에게 이를 주기도 하지만, 때때로 가까운 길가의 덤불 속에 숨어 이상한 낌새를 알아차리지 못한 희생자를 덮치려고 기다리는, 진짜 악한들도 존재하는 법입니다. 모험가들이 여행할 때 맞닥뜨리게 되는 강도 행위란 대개 이런 형태일 것입니다. 검, 몽둥이, 활로 무장한 더 부도덕한 도적들은 언덕과 나무 그늘 속에 숨어 목표를 습격할 순간을 기다리며, 눈치채지 못한 여행자 일행을 붙잡곤 합니다. 이 위험한 도둑들은 자신들의 수가 더 적을 때는 일행을 갈라 속임수를 써서 목표가 방심하도록 유도할 것입니다. 도적에게는 국경이나 지역의 경계가 없으므로, 숲이 우거진 길을 걷고 있든, 명성을 얻기 위해 섬에서 섬을 오가며 외해로 항해할 때든 조심해야 합니다. 세계 곳곳에는 위험이 도사리고 있으니, 모험가들은 도적단과 마주치더라도 미리 대비하고 분별력 있게 행동하여 자신의 행적이 전설로 기록되기 전에 먼저 모험이 끝장나 버리는 일이 없도록 주의해야 합니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
+      "name": "도적 - Bandit"
+    },
+    "Actor.AsFFRQ3RGODJxmqf": {
+      "description": "",
+      "name": "늑대 - Wolf"
+    },
+    "Actor.AtFlOtNJ3YMQowXO": {
+      "description": "",
+      "name": "피를 마시는 뱀파이어 - Blood Drinker Vampire"
+    },
+    "Actor.AY16C6tqdnFno9g6": {
+      "description": ""
+    },
+    "Actor.bhITvhsWKSt9OHeC": {
+      "description": ""
+    },
+    "Actor.CozHUk6z3DE8uKCZ": {
+      "description": ""
+    },
+    "Actor.ddRxpWgCnnl8MpKz": {
+      "description": ""
+    },
+    "Actor.dNqQhcYiB6aNg4do": {
+      "description": "<div class=\"rd__b  rd__b--0\"><p>Mind flayers create cranium rats by bombarding rats with psionic energy. Cranium rats are somewhat smarter than ordinary rats and behave as such. If enough cranium rats come together to form a swarm, they merge their minds into a single intelligence with the accumulated memories of all the swarm's constituents. The rats become smarter as a result, and retain their heightened intelligence for as long as the swarm persists. The swarm also awakens latent psionic abilities implanted within each cranium rat by its mind flayer creators, bestowing upon the swarm psionic powers.</p><p>A single cranium rat uses its natural telepathy to communicate hunger, fear, and other base emotions. A swarm of cranium rats communicating telepathically \"speaks\" as 크리처 하나, often referring to itself using the collective pronouns \"we\" and \"us.\" Some mind flayer colonies use cranium rats as spies. The rats invade communities and act as eyes and ears for the colony's elder brain, transmitting their thoughts when they swarm and are within range of the elder brain's telepathy.</p></div>"
+    },
+    "Actor.DZmqGsP5VguWueJ5": {
+      "description": ""
+    },
+    "Actor.e0fyyWZp5VsYUZzw": {
+      "description": "<p>오물 속의 거주자이자 하수구의 청소부, 감염의 매개체인 쥐처럼 인류의 삶에 큰 영향을 미칠 수 있는 단일 동물은 없다고 봐도 좋습니다. 무질서하게 개발된 대도시의 도심부터 가난한 농부의 작은 헛간까지, 쥐는 재빠르게 들어갈 수 있을 만한 곳이라면 구석구석 어디에나 퍼져 있습니다. 손바닥보다 크지 않은 크기부터 (꼬리를 포함하여) 팔뚝만 한 길이까지 다양한 이 작은 설치류는 사뭇 수완이 좋은 작은 도둑입니다. 쥐들은 문 아랫부분 사이의 틈처럼 좁은 공간에도 몸을 욱여넣을 수 있을 정도로 자신의 몸을 압축할 수 있습니다. 수영할 수 있으며 어둠 속에서도 길을 찾을 수 있으므로, 어떤 쥐들은 작은 배관용 파이프를 기어 올라와 터널을 날쌔게 통과하여 상인의 집으로 들어가는 모습이 관측되기도 합니다.</p>\n<p><strong>정말 대단하쥐.</strong> 많은 사람은 쥐를 평범한 유해동물 그 이상으로 생각하지 않지만, 마법적인 패밀리어로 활용되지 않는 쥐조차도 매우 지능이 뛰어납니다. 연구자들은 쥐가 복잡한 미로를 통과하고, 지렛대 방식의 퍼즐을 풀고, 다른 동물에게는 찾아볼 수 없었던 수준으로 주변 세계를 이해하고 있다는 사실을 관측해냈습니다. 어떤 머리 좋은 거리의 주민은 쥐를 훈련시켜 적절한 보상을 받는 대가로 음식을 훔치거나 남들이 보고 있지 않을 때 동전 지갑에서 몇 개의 반짝거리는 동전을 훔쳐내도록 하기도 합니다. 그러나 동료로 쥐를 선택할 때는 신중하게 고려하는 것이 좋습니다. 어떤 쥐들은 그 짧은 털가죽 사이에 거주하는 곤충을 통해 감염되는 치명적인 질병을 옮길 수도 있기 때문입니다. 날카롭고 꼭 달라붙는 발톱과 함께, 쥐는 가늘고 길쭉한 앞니로 세게 물어버릴 수도 있습니다. 젊은 영웅이여, 근처에 쥐가 있다면 주의를 기울이십시오. 그렇게 단순한 작은 동물조차도 그 까맣고 깜빡이지 않는 눈 속에 비밀을 품고 있을 수도 있으니 말입니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>\n",
+      "name": "거대 쥐 - Giant Rat"
+    },
+    "Actor.e16QsYwPL51Ub3ey": {
+      "description": ""
+    },
+    "Actor.E3SqVhQfN3m5c2Ve": {
+      "description": "<blockquote>\n<p>“.... 그러더니 그 녀석이 내게 이렇게 말하더군. “믹! 또 왕실 경비대를 속일 수 있다고 생각한 건 아니죠? 이번에는 절대 안 됩니다!” 그렇게 말했지. 글쎄다, 이 미키 어르신은 이런 경우를 대비해서 한두 가지 속임수를 준비해 두고 있거든. 그리고 늙은 머나밴드 대장이 언제나 지껄여대는 퍼플 포지스 스피리츠 한 병이면 속임수를 쓰고 도망칠 필요도 없단 말이지. 미키 텐티스만큼이나 똑똑하고 잘생긴 경비대원은 없다네!”</p>\n</blockquote>\n<p>- 친근한 플럼프 여관에서 엿들은 이야기.</p>\n<p>왕국 국민 중 살면서 경비대원 부류와 아직 한 번이라도 교류해보지 않은 사람이 누가 있을까요? 넓은 지역에 걸친 해안 도시에 거주하는 사람들은 거리를 순찰하고, 출입구를을 지키고, 화물을 검사하고, 물론 공정한 도시의 시민들을 지원(하거나 체포)하는 무장한 경비대를 매일 가까이서 봅니다. 그러나 경비대원은 도시의 성곽이나 문에만 있는 것이 아닙니다. 용병이든 전문직이든, 경비대원은 종종 상대적으로 덜 안정적인 지역을 여행하면서 길을 순찰하고 길 잃은 동물이나 도적 떼를 쓸어버리거나, 소중한 화물이나 중요한 시민을 보호하기 위해 경계하곤 합니다. 이 서적에서 다뤘던 도적이나 사교도처럼, 경비대원은 그 종류가 매우 다양합니다. 많은 경비대원이 고도로 훈련되고 조직된 것처럼 보일 수도 있지만, 대부분의 경비대원은 시장의 번화한 거리에서 몸싸움을 하거나 뒤집힌 마차에서 떨어진 물건을 줍는 도적 몇 명을 해산시키는 것 외에는 별다른 행동을 관찰하지 않는다는 점을 고려해야 합니다. 경비대원은 조직 상부에서 흔히 연상하곤 하는, 머리가 희끗희끗해진 단련된 전직 군인 유형의 인물들이 아닙니다. 젊은 모험가여, 세심하게 관찰하고 법의 경고를 주의 깊게 관찰하십시오. 그대들의 악랄한 시선에 경비대원은 별다른 위협처럼 보이지 않을 수도 있지만, 도시의 지하 감옥에서 기다리고 있는 것들은 이런 위협을 감수할 가치가 없을지도 모릅니다!</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
+      "name": "경비대원 - Guard"
+    },
+    "Actor.e7dBzDD3FJRaV6uK": {
+      "description": ""
+    },
+    "Actor.EIopSkVDOZ0PgDZM": {
+      "description": "<p> </p>\n<blockquote>\n<p>직접 점멸 개를 목욕시키는 것은 그 자체로 일련의 도전입니다. 종종 당신의 소중한 강아지가 청소를 마치자마자 가장 가까운 진흙 웅덩이로 순간이동해 버릴 가능성이 높기 때문에, (상황이 허락하는 한) 이 야수가 스스로 청결을 유지하게끔 하는 것이 가장 좋습니다.\n<br /><em>당신의 점멸 개 돌보기, 46페이지.\n</em></p>\n</blockquote>\n<p>점멸 개는 일반적인 개과 동물 중에서도 주목할 만한 특이한 짐승입니다. 외관만 보았을 때, 이 개는 황갈색을 띤 노리끼리한 털결을 지니고 높이가 약 2.5~3ft에 달하는 평균적인 크기에 특이점이 있다고 볼 만한 흔적이 없으므로, 일견 대부분의 사냥개와 비슷해 보입니다. 하지만, 이 개의 진정한 비밀은 그 안에 내재되어 있습니다. 점멸 개는 원하는 대로 눈 깜빡할 사이에 한 장소에서 다른 장소로 “점멸”하거나 순간이동하는 기이한 능력이 있습니다. 마법사들이 순식간에 먼 거리를 이동하기 위해 사용하는 주문과 비슷한 맥락으로, 점멸 개는 현실의 구조를 찢어발겨 즉시 사라져 원래의 장소로부터 최대 40ft 이상 떨어진 장소에 나타납니다. 점멸 개가 살아있는 것을 운반하여 같이 이동할 수는 없으나, 개가 소지하고 있는 장비나 물건은 모두 함께 순간이동됩니다. 점멸 개는 다른 개과 동물과 비교했을 때 평균을 넘어선 지능을 보유하며, 다른 개과 동물에게 “점멸 개 언어”라고 하는 자신만의 언어로 말할 수 있습니다. 이들이 무슨 말을 하는지는 비밀에 싸여 있으나, 점멸 개는 또다른 에테리얼 네발 야수에게 달려드는 것으로 알려져 있으므로 아마도 이들에 대한 강력한 증오심을 토로하는 것이 아닐까 추측되고 있습니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
+      "name": "점멸 개 - Blink Dog"
+    },
+    "Actor.FgjHoHXVAcGEUlH5": {
+      "description": ""
+    },
+    "Actor.flxEMNBsvEt68dPT": {
+      "description": ""
+    },
+    "Actor.FoYfFjFGNEuuO2Wu": {
+      "description": "",
+      "name": "절멸의 구 - Sphere of Annihilation"
+    },
+    "Actor.FRLqkRgtXFnygciY": {
+      "description": ""
+    },
+    "Actor.FxyAWzWVDD0G0egT": {
+      "description": ""
+    },
+    "Actor.gBovuWOm8K1NVOeh": {
+      "description": ""
+    },
+    "Actor.H6IdaQAUZWCkKpev": {
+      "description": ""
+    },
+    "Actor.hK0fBl7nF0viERd2": {
+      "description": "",
+      "name": "춤추는 불빛 (청록/파랑) - Dancing Lights (Blue Teal)"
+    },
+    "Actor.HO1veItHcsjHy03r": {
+      "description": ""
+    },
+    "Actor.huzvGd2s5UGAEUPW": {
+      "description": ""
+    },
+    "Actor.ihUbscpiPEvMuMnf": {
+      "description": "<p>Making their lairs in the depths of the Underdark, deep dragons are nightmarish cousins of chromatic dragons. The warped magical energy of their subterranean realm gives them the ability to exhale magical spores that instill fear and scar the mind.</p>\n<p>Deep dragons' black-and-gray hide is smooth like a salamander's, and their eyes are pale. As they age, their spore breath causes fungi to bloom across their skin, especially around the head and neck. Their wings are attached to their front legs and can fold in close to the body, allowing deep dragons to easily maneuver through relatively narrow tunnels.</p>\n<p>Deep dragons often hoard secrets, delighting in knowledge of far-off lands. Many seek out new insights and tricks that they can use against other denizens of the Underdark, preferring social manipulation and crafty dealmaking to exerting themselves in combat. Deep dragons look down on any creature that isn't useful to them, though they are willing to bargain for knowledge they lack.</p>\n<h3 id=\"CreatingaDeepDragon\" class=\"compendium-hr\">Creating a Deep Dragon</h3>\n<p>Use the Deep Dragon Personality Traits and Deep Dragon Ideals tables to inspire your portrayal of distinctive deep dragon characters, and use the Deep Dragon Spellcasting table to help select spells for a spellcasting dragon.</p>\n<h4 id=\"DeepDragonPersonalityTraits\" class=\"compendium-hr quick-menu-exclude\">Deep Dragon Personality Traits</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d8</th>\n<th>Trait</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>I will not risk injury at the hands of weaker creatures—especially while I can turn them against one another and have them fight in my stead.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>It is difficult for anyone not of dragonkind to penetrate the twisting labyrinth of my thoughts.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>I might disagree with other dragons, but we are superior beings and should not lower ourselves to direct conflict.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>I have no interest in going to the surface world. It's where one sends one's servants.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>While the petty squabbles of other creatures bore and irritate me, I might hear out those who demonstrate an appreciation for the finer things in life by bringing me delicacies like clams or aboleth flesh.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>I might be willing to exert myself to take out a mind flayer. Those disgusting creatures must be stopped.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>I dream of seeing the deepest places in the ocean.</td>\n</tr>\n<tr>\n<td>8</td>\n<td>I find I rather enjoy the company of people—as long as they remain unaware of my true nature.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"DeepDragonIdeals\" class=\"compendium-hr quick-menu-exclude\">Deep Dragon Ideals</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d6</th>\n<th>Ideal</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td><strong>Understanding.</strong> True power comes from the ability to discern other creatures' motivations better than they can discern yours. (Any)</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Kindred.</strong> All dragons are kin to one another, and we would all do well to prioritize that kinship. (Any)</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Mystery.</strong> I appreciate a question I cannot answer, so I strive to be an enigma for other creatures. (Any)</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Adaptability.</strong> Whether taking on a new form, making new allies, or trying a new strategy, flexibility keeps one youthful. (Chaotic)</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Superiority.</strong> Weaker creatures cannot be trusted, so I constantly remind my servants of my power. (Evil)</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>Patience.</strong> All creatures might teach me something, and I'm willing to wait and find out what that might be rather than acting in haste. (Good)</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"DeepDragonSpellcasting\" class=\"compendium-hr quick-menu-exclude\">Deep Dragon Spellcasting</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>연령</th>\n<th>Spell Save DC</th>\n<th>Spells Known</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Ancient Deep Dragon;Ancient</td>\n<td>19</td>\n<td>command, dissonant whispers, faerie fire, passwall, water breathing</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3 id=\"DeepDragonAdventures\" class=\"compendium-hr\">Deep Dragon Adventures</h3>\n<p>The Deep Dragon Adventure Hooks table offers suggestions for stories and adventures involving deep dragons.</p>\n<h4 id=\"DeepDragonAdventureHooks\" class=\"compendium-hr quick-menu-exclude\">Deep Dragon Adventure Hooks</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d8</th>\n<th>Adventure Hook</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Unfamiliar drow adventurers have been prowling a city's streets at night and have been overheard talking about the dragon they serve.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Svirfneblin hire the characters to deliver tribute to their deep dragon neighbor.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>A disguised deep dragon offers access to rare artifacts—to a party who is willing to partner up on a seafood shipping business.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>A talented young ranger is kidnapped by a deep dragon who wants a hunting partner.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>A friendly young copper dragon seeks an entourage, hoping to impress the deep dragon holding the copper dragon's inheritance in trust.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>A deep dragon wants to know if rumors of a sea monster in an Underdark lake are true, so the dragon hires adventurers to investigate.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Two Underdark settlements are about to go to war, having been carefully manipulated by a deep dragon. A desperate ruler offers a reward to anyone who can uncover the true cause of the hostility.</td>\n</tr>\n<tr>\n<td>8</td>\n<td>A deep dragon wants someone to manufacture a scenario that will get the dragon out of an old commitment to protect a city.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"ConnectedCreatures7\" class=\"compendium-hr\">Connected Creatures</h4>\n<p>Deep dragons appreciate the company of other dragons. Although they view most other species as inferior to dragonkind, having worth only as servants or tools, the rare individuals who impress them can sometimes earn respect as partners—albeit junior ones.</p>\n<h4 id=\"AncientDeepDragonConnections\" class=\"compendium-hr quick-menu-exclude\">Ancient Deep Dragon Connections</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d4</th>\n<th>Connected Creatures</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>An ancient deep dragon has taken on a young red shadow dragon as a protégé.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Two ancient dragon lovers—one ancient deep dragon;deep and one ancient white dragon;white—see each other only once every hundred years, when they choose targets for a deadly hunting spree.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Two ancient deep dragons fight over territory. Unwilling to move against each other directly, they use local settlements—and any competent visitors—as pawns in their struggle.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>An ancient deep dragon has put the folk of a city to work building the dragon a metropolis to rule in the center of a vast underground salt lake.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3 id=\"DeepDragonLairs\" class=\"compendium-hr\">Deep Dragon Lairs</h3>\n<p>Deep dragons make their lairs in the recesses of the Underdark, often near the settlements of people with whom they have alliances or enmities. Their lairs are highly individual. Some are woven from networks of living fungus. Others are built upon the ruins of ancient cities or carved into caves near underground lakes.</p>\n<p>Deep dragons' lairs serve as bases for the dragons' explorations, as well as providing safe storage for their hoards. When these curious creatures are away from home searching out new environments and seeing new vistas, they usually leave their lairs protected by servitors, allies, magic, traps, or some combination of these protections.</p>\n<h4 id=\"DeepDragonLairFeatures\" class=\"compendium-hr\">Deep Dragon Lair Features</h4>\n<p>A deep dragon lair might share the same basic structure as the sapphire dragon lair shown on <a title=\"map 5.12\" href=\"https://www.dndbeyond.com/sources/ftod/draconomicon-continued#Map512sapphiredragonlair\">map 5.12</a>, but instead of being formed from stone, it might consist of chambers hollowed out within a fungus network growing near an underground river. Whatever the setup, a deep dragon festoons the narrow, twisting passages between the lair's fungal walls with magical and mundane traps. A typical lair has the following features:</p>\n<p><strong>Connecting Passages.</strong> Because a deep dragon lacks a sapphire dragon's ability to shape stone, add a few connecting passages or secret doors to otherwise inaccessible chambers, possibly including connections to the adjacent underground stream as entrances to the lair.</p>\n<p><strong>Reception Hall.</strong> The dragon uses one of the large chambers in the lair as a reception hall for allies and servitors. Like the rest of the lair, this chamber is lit by phosphorescent fungal blooms that give off soft green, blue, and purple light.</p>\n<p><strong>Hoard Chamber.</strong> The dragon's hoard is hidden away in a more remote chamber, draped in illusion spells and protected by traps and magical alarms. When triggered, those alarms summon the dragon's minions and allies first, followed by the dragon.</p>\n<p><strong>Underground River.</strong> Where an underground river runs along the outside edge of the lair, the dragon has slowed its flow with a rocky dam, creating a small pool in which to bathe and raise aquatic delicacies.</p>\n<p><strong>Guest Suite.</strong> A large chamber with connected smaller chambers, such as that seen toward the bottom of the map, forms a suite used as guest lodgings for visiting dragons. Though any treasures with significant financial or sentimental value to the host dragon are stored away in the protected hoard, these tastefully appointed visitors' chambers contain lesser treasures from inaccessible or storied locales, chosen to pique visitors' curiosity and provide an excuse for the host to tell these items' tales.</p>"
+    },
+    "Actor.JC0nNWK1up5BiVc1": {
+      "description": ""
+    },
+    "Actor.JpXEGUfKECDnwDpe": {
+      "description": ""
+    },
+    "Actor.K2MmHacMgH3RrNyG": {
+      "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "불량배 - Thug"
+    },
+    "Actor.KGezOxu0Qm81kPGD": {
+      "description": ""
+    },
+    "Actor.Kgg4YVY2c8js6oLU": {
+      "description": ""
+    },
+    "Actor.KJxxXeB9VWoqct9r": {
+      "description": "<div class=\"rd__b  rd__b--0\"><p>Ancient black dragons plot the ruin of whole realms. They seek magic to corrupt the land, raise undead hordes, bind fiends, and replicate magical disasters. Ancient black dragons strive to create vast, dead domains where they are the greatest things that remain.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Black Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">흑색 Dragons</span></h1> <p><i>Dragons of Decay and Despair</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">Habitat:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:swamp=1\">Swamp</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">Treasure:</span> @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>흑색 dragons delight in suffering and ruin. While other chromatic dragons scheme for power and wealth, these dragons seek to tear down all they see and rule over what remains.</p><p>흑색 dragons are terrifying creatures with curved horns and withered visages suggestive of fiendish skulls. They typically inhabit stagnant swamps, crumbling ruins, or places of magical or environmental corruption. Their acid breath scars their domains, eroding the features from ancient statues and leaving nature with festering wounds.</p><p>흑색 dragons hoard tarnished symbols of hope and relics of fallen empires. The more sought-after the treasure, the more black dragons prize it—particularly if they were responsible for it being lost.</p><div data-roll-name-ancestor=\"Black Dragon Lairs\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"2\"> <span class=\"entry-title-inner\">흑색 Dragon Lairs</span></h2> <p>흑색 dragons lurk in dismal ruins, polluted bogs, or other sites gripped by decay.</p><p>The region containing an adult or ancient black dragon's lair is warped by its presence, creating the following effects:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Acrid Haze\"><span class=\"bold rd__list-item-name\">Acrid Haze.</span> Odorous and stifling fog covers the area within 1 mile of the lair, rendering that area @variantrule[Lightly Obscured|XPHB]. Travel for creatures other than the dragon and its allies takes twice the usual time in that area.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Foul Water\"><span class=\"bold rd__list-item-name\">Foul Water.</span> Water sources within 1 mile of the lair are supernaturally fouled. A creature that drinks such water must succeed on a [[/save ability=con dc=15]] saving throw or have the &Reference[condition=Poisoned] condition for 1 hour.</p></li></ul><p>If the dragon dies or moves its lair elsewhere, these effects end immediately.</p></div></div>",
+      "name": "블랙 드래곤 원시체 - Ancient Black Dragon"
+    },
+    "Actor.kVpDaTb0N2z77vyG": {
+      "description": ""
+    },
+    "Actor.kyfXSKhgNrJZ6p8X": {
+      "description": ""
+    },
+    "Actor.KZW3pnEO5K3o6Kn4": {
+      "description": ""
+    },
+    "Actor.ljLQu8u6RS6fna49": {
+      "description": "<p>로퍼는 지하 세계의 사냥꾼이자 매복자입니다. 그들은 석순이나 기타 암석의 형태를 취하도록 진화했습니다. 로퍼는 살아있는 생물이 가까이 오기를 기다리다가, 튀어나온 덩굴손으로 목표물을 사로잡아 힘을 약화시킵니다. 로퍼는 먹잇감을 이빨이 난 커다란 아가리로 끌어당겨 천천히 먹어치웁니다.</p>\n<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "로퍼 - Roper"
+    },
+    "Actor.lQgacBGNCx5aLVOB": {
+      "description": ""
+    },
+    "Actor.lVXqXvhULDaYlWkc": {
+      "description": "<p>드루이드는 다음과 같은 클래스 특성을 보유합니다.</p><h3>히트 포인트</h3><p><strong>히트 다이스:</strong> 드루이드 레벨당 1d8<br><strong>1레벨 히트 포인트:</strong> 8 + 건강 수정치<br><strong>레벨 상승 시의 히트 포인트:</strong> 드루이드 레벨 1 상승 시마다 1d8 (또는 5) + 건강 수정치</p><h3>숙련</h3><p><strong>갑옷:</strong> 경장갑, 중장갑, 방패 (드루이드는 철로 된 갑옷이나 방패를 장비하지 않습니다)<br><strong>무기:</strong> 곤봉, 단검, 다트, 투창, 철퇴, 육척봉, 만곡도, 낫, 무릿매, 창<br><strong>도구:</strong> 약초학 키트<br><strong>내성 굴림:</strong> 지능, 지혜<br><strong>기술:</strong> 비전학, 동물조련, 통찰력, 의학, 자연학, 감지, 종교학, 생존술 중 2개 선택</p><h3>장비</h3><p>캐릭터가 배경에서 받는 장비에 추가로 아래의 장비를 얻고 시작합니다.</p><ul><li>(a) 나무 방패 한 개 (b) 아무 간이 무기</li><li>(a) 만곡도 한 개 (b) 간이 근접 무기</li><li>레더 아머, 모험가의 꾸러미, 드루이드 매개체</li></ul><h1>드루이드 성장</h1><table><thead><tr><td>레벨</td><td>숙련 보너스</td><td>기능</td></tr></thead><tbody><tr><td>1레벨</td><td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.LzJ5ayHt0OlSVGxi]{드루이드어}, @UUID[Compendium.dnd5e.classfeatures.Item.i6tPm3FNK13Ftc9v]{주문시전}</td>\n</tr>\n<tr>\n<td>2레벨</td>\n<td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생변신 (최대 CR ¼}, @UUID[Compendium.dnd5e.classfeatures.Item.u6Du2P9s81SWuGbi]{드루이드 회합}</td>\n</tr>\n<tr>\n<td>3레벨</td>\n<td>+2</td>\n<td>2레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>4레벨</td>\n<td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생변신 (최대 CR ½}, @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>5레벨</td>\n<td>+3</td>\n<td>3레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>6레벨</td>\n<td>+3</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>7레벨</td>\n<td>+3</td>\n<td>4레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>8레벨</td>\n<td>+3</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생 변신 (최대 CR 1}, @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>9레벨</td>\n<td>+4</td>\n<td>5레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>10레벨</td>\n<td>+4</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>11레벨</td>\n<td>+4</td>\n<td>6레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>12레벨</td>\n<td>+4</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>13레벨</td>\n<td>+5</td>\n<td>7레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>14레벨</td>\n<td>+5</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>15레벨</td>\n<td>+5</td>\n<td>8레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>16레벨</td>\n<td>+5</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>17레벨</td>\n<td>+6</td>\n<td>9레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>18레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.cVDEQo0ow1WJT7Wl]{시간을 초월한 몸}, @UUID[Compendium.dnd5e.classfeatures.Item.xvgPu1O57DgXCM86]{야수 주문}</td>\n</tr>\n<tr>\n<td>19레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>20레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.ip4bvmGoz3qkoqes]{대드루이드}</td>\n</tr>\n</tbody>\n</table>\n<div class=\"sidebar-block\"><h4>신성한 식물과 나무</h4><p>드루이드는 특정한 식물을 신성하게 여깁니다. 특히 신성하게 여기는 식물은 오리나무, 물푸레나무, 자작나무, 딱총나무, 개암나무, 호랑가시나무, 향나무, 겨우살이, 참나무, 마가목, 버드나무, 주목나무입니다. 드루이드는 이러한 식물을 주문시전 매개체의 일부로써 사용하곤 하는데, 참나무나 주목나무, 혹은 겨우살이의 잔가지 길이를 주문시전 매개체에 함께 포함시켜 사용합니다.</p><p>이와 비슷한 맥락으로, 드루이드는 이러한 나무를 무기나 방패와 같은 다른 물건을 만들 때에도 사용합니다. 주목나무는 죽음이나 소생과 관련지어 생각하기 때문에, 만곡도나 낫과 같은 무기의 손잡이는 주목나무로 만들기도 합니다. 물푸레나무는 생명, 참나무는 힘과 관련이 있습니다. 이러한 나무는 물건에 손잡이를 만드는 데 쓰거나, 곤봉이나 육척봉 같이 하나의 무기를 만드는데 쓰이기도 하며, 방패로 만들기도 합니다. 오리나무는 바람과 관련이 있어 다트나 투창같은 투척 무기를 만드는데 쓰이곤 합니다.</p><p>위에서 언급한 식물이 적은 지역에 사는 드루이드는 물건을 만들 때 다른 식물을 선택합니다. 예를 들어, 사막 지역에 사는 드루이드는 유카나무나 선인장과 식물 등을 더욱 많이 활용할 것입니다.</p></div><div class=\"sidebar-block\"><h4>드루이드와 신</h4><p>일부 드루이드는 자연의 힘 그 자체를 숭배하지만, 대부분의 드루이드들은 멀티버스의 자연신 중 하나를 섬깁니다(@UUID[Compendium.dnd5e.rules.JournalEntry.udVPA9JW5wy5t3G5]{부록 B}에 그러한 신을 정리한 목록이 실려 있습니다). 이러한 신들에 대한 숭배는 클레릭과 시골 사람들의 신앙보다 더 오래된 전통입니다.</p></div><h1>드루이드 회합</h1><p>@Compendium[dnd5e.subclasses.4Ae2SPZRXEVbVs0M]{대지의 회합 Circle of Land}</p>",
+      "name": "드루이드 - Druid"
+    },
+    "Actor.M6F0l7ujPbU74Qi5": {
+      "description": ""
+    },
+    "Actor.MBm4pIqgYC9vtYDT": {
+      "description": ""
+    },
+    "Actor.MDWcGjtNaF07bFdC": {
+      "description": ""
+    },
+    "Actor.nBe9306a8ZoEp0s5": {
+      "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "리치 - Lich"
+    },
+    "Actor.ns5JqQiFrQ5vwkEJ": {
+      "description": ""
+    },
+    "Actor.NwL1Ye1YLZUFqckK": {
+      "description": "<p>죽음의 개는 평원과 사막을 배회하는, 머리가 둘 달린 못생긴 사냥개입니다. 죽음의 개의 심장에는 증오가 타오르고 있으며, 인간형 종족의 살점에 대한 들끓는 식욕으로 여행자와 탐험가들을 공격합니다. 죽음의 개 타액은 역병을 유발하는데, 그 타액에 당한 희생자는 살점이 천천히 썩어 뼈에서 떨어지게 됩니다.</p>\n<p></p><p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "죽음의 개 - Death Dog"
+    },
+    "Actor.Oiv4u0IyEmhF98gQ": {
+      "description": ""
+    },
+    "Actor.OPAAvQQmDKDFe09B": {
+      "description": ""
+    },
+    "Actor.opXOilaFe459dy3s": {
+      "description": ""
+    },
+    "Actor.OzQoWnvESBhfB2xO": {
+      "description": ""
+    },
+    "Actor.PdkolBw8zfeBLcBL": {
+      "description": ""
+    },
+    "Actor.pgp1eqpxWXwt8Evw": {
+      "description": "",
+      "name": "쥐 - Rat"
+    },
+    "Actor.pRnPkWLkLrWehiIn": {
+      "description": ""
+    },
+    "Actor.q0SFDcB9t7yyoiSR": {
+      "description": "",
+      "name": "춤추는 불빛 (파랑/노랑) - Dancing Lights (Blue Yellow)"
+    },
+    "Actor.QnBUbafM27QsjnEd": {
+      "description": ""
+    },
+    "Actor.QyAbyNiFDVkweDe3": {
+      "description": ""
+    },
+    "Actor.REbEvkienhIhnVpY": {
+      "description": ""
+    },
+    "Actor.ri2dpaAV2axzUXH9": {
+      "description": "<div class=\"rd__b  rd__b--0\"><p>Ancient blue dragons think beyond dominating groups of short-lived servants. Instead, they seek to claim their places above other dragons and their world's most powerful inhabitants. If world domination seems too tedious or cliché, these dragons might seek to seize control of extraplanar realms, multiworld empires, or forces of reality—like life, storms, or time itself.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Blue Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">청색 Dragons</span></h1> <p><i>Dragons of Tyranny and Tempests</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">Habitat:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:desert=1\">Desert</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">Treasure:</span> @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>Arrogant and imperious, blue dragons are chromatic dragons that crave control and collect followers like other dragons hoard treasure. They seek to transform their territories into empires, domains to be feared by nations.</p><p>청색 dragons have sharp features with piercing horns and scales that range from sapphire to the shades of stormy skies. They dwell in deserts and badlands, particularly regions with dramatic spires from whose tops they might see for miles. They seek lairs near sites of symbolic power, such as the abandoned fortresses of giants, the colossi of fallen empires, or monuments raised by their followers.</p><p>Regalia of rulership and artistic masterpieces fill blue dragons' hoards. These dragons have no interest in treasures that are common or flawed, preferring one-of-a-kind gemstones, the crowns of fallen royals, and magic items capable of spreading the dragons' influence.</p><div data-roll-name-ancestor=\"Blue Dragon Lairs\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"2\"> <span class=\"entry-title-inner\">청색 Dragon Lairs</span></h2> <p>청색 dragons dwell in arid lands. Their lairs might be death traps meant to entomb invaders or ostentatious fortresses where they plot domination.</p><p>The region containing an adult or ancient blue dragon's lair is changed by its presence, creating the following effects:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Sinkholes\"><span class=\"bold rd__list-item-name\">Sinkholes.</span> Sinkholes form more frequently in the area within 1 mile of the lair. Whenever a creature in that area other than the dragon and its allies finishes a @variantrule[Long Rest|XPHB], roll [[/r 1d20]]. On a 1, a sinkhole opens beneath the creature, and the creature must succeed on a [[/save ability=dex dc=15]] saving throw or fall [[/r 2d4 * 10]]{2d4 × 10} feet into the sinkhole.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Spiteful Storms\"><span class=\"bold rd__list-item-name\">Spiteful Storms.</span> Dust devils and thunderstorms rage within 1 mile of the lair. The area is @variantrule[Lightly Obscured|XPHB].</p></li></ul><p>If the dragon dies or moves its lair elsewhere, these effects end immediately.</p></div></div>",
+      "name": "블루 드래곤 원시체 - Ancient Blue Dragon"
+    },
+    "Actor.S4sblYwZ9NKOwSh2": {
+      "description": "<p>뱀파이어가 사람들을 사냥하면 그들은 뱀파이어 스폰이라는 언데드 크리처로 변하기도 합니다. 뱀파이어와 마찬가지로, 스폰 또한 자신의 관 및 무덤의 토양이 있는 범위에서 벗어날 수 없습니다. 뱀파이어 스폰의 모습은 살아있을 때와 비슷해 보이지만, 성격은 그보다 더 포악하며, 외형도 포식자처럼 변합니다.</p>\n<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "name": "뱀파이어 스폰 - Vampire Spawn"
+    },
+    "Actor.SmrB1etW3geF5Yr2": {
+      "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Ixitxachitl (pronounced ick-zit-zah-chit-ul) are aquatic creatures resembling manta rays, with small, clawed hands at the ends of their \"wings\" and black eyes gleaming with sinister intelligence. Many creatures mistake ixitxachitl for common manta rays, but this can prove a deadly mistake. The ixitxachitl are as evil as they are cunning, leading to their common nickname \"demon rays.\" They inhabit bodies of fresh and salt water, but their violent nature means that little is known of them.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Struggle for Survival.</span></span> <p> Ixitxachitl emerge from eggs as tiny creatures little more than a hand span in width. From that time onward, they struggle to survive at all costs, growing throughout their lives. Those ixitxachitl that master the secrets of survival gain powers of regeneration and feed on the life force of other creatures.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">All Consuming.</span></span> <p>Ixitxachitl hollow out coral reefs or other natural aquatic formations to create labyrinthine dens, often compelling aid from captured aquatic species they enslave. They typically strip an area bare before moving on to new fertile grounds, leaving their abandoned dens behind. Schools of ixitxachitl often war on other aquatic creatures to claim feeding grounds and territory.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Demon Worshipers.</span></span> <p>The ixitxachitl venerate and serve various demons, particularly Demogorgon, whom they consider their patron and creator. They have an intense rivalry with the merrow over which of them are the greatest and most favored servants of the Prince of Demons.</p><div class=\"rd__spc-inline-post\"></div></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Variant: Ixitxachitl Cleric.</span></span> <p>Some ixitxachitl and vampiric ixitxachitl are able to cast divine spells. Such a creature gains the following feature.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> <p>The ixitxachitl is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (spell save DC 11, +3 명중 with spell attacks). The ixitxachitl has the following cleric spells prepared:</p><div class=\"rd__spc-inline-post\"></div><p>캔트립 (상시 사용 가능): guidance, thaumaturgy</p><p>1st Level (4 slots): charm person, create or destroy water</p><p>2nd Level (3 slots): hold person, silence</p><p>3rd Level (2 slots): @spell[dispel magic], tongues</p></div></div></div></div>"
+    },
+    "Actor.Stjz0jlXwQl1xWVB": {
+      "description": ""
+    },
+    "Actor.TKjdBr65jC9Qdfrv": {
+      "description": ""
+    },
+    "Actor.tuLXLYd8OZw1KQeu": {
+      "description": ""
+    },
+    "Actor.u68qEvx7qvjXcwP8": {
+      "description": "",
+      "name": "절멸의 구 - Sphere of Annihilation"
+    },
+    "Actor.UF8v3eDPC7oXcJoy": {
+      "description": ""
+    },
+    "Actor.uUjZ271VxYDwR9ro": {
+      "description": ""
+    },
+    "Actor.VC0g1cT4VKEmLvW9": {
+      "description": "<p>세계 곳곳의 도적은 그 형태와 규모가 다양합니다. 하플링 소매치기에서부터 불운한 선박을 약탈하는 속이 시커먼 드래곤본 선장까지, 이들은 다양한 형태를 취하고 있습니다. 여기에서 “도적” 등급의 범죄자로 간주되는 존재들의 공통점을 알아보겠습니다. 이 정보를 검토하면서, 모든 도적을 경멸의 눈으로 봐야 하는 것은 아니라는 점에 유의하세요. 많은 도적이 목표에게 해를 입히거나 재물을 탐하지만, 어떤 도적은 불공평하기 그지없는 세계에서 살아남고자 도둑질을 합니다.</p>\n<p><strong>좋은 놈.</strong> “고결한 범죄자”로 간주할 수 있는 도적들부터 시작하겠습니다. 이런 도적들은 국민 중에서도 가장 짓밟혀 왔던 사람들, 자신이 손에 쥘 수 있는 일말의 위안이나마 필사적으로 긁어모으기 위해 가난과 압제에 시달리며 투쟁해 온 사람들입니다. 어떤 사람이 강도 행위를 저지르거나 마을 거리에서 공개적으로 도둑질을 했다면, 왜 이런 선택을 할 정도로 절박한 상황에 몰렸을지 그 이유를 생각해 보세요. 더 고결한 부류의 도적이라고 해도, 훔쳐낸 것으로 자기 자신이나 직계 가족의 삶을 풍요롭게 하는 등 자신이 약탈한 수익을 두고 이기적으로 굴 수 있습니다. 하지만 어떤 도적들은 자신들이 훔쳐낸 물건을 사용하여 더 가난한 주민들의 삶을 개선하려고 하기도 합니다. 이러한 도적들은 특히나 강도 행위를 저지를 때 자포자기하고 겁에 질려 있는 경우가 많다는 점에 유의하세요. 이들은 두려움에 질려 있고, 열악한 환경 탓에 범죄를 저지르게 되었으므로 피해자에게 신체적인 위해를 가하지 않는 경우가 더 많으므로 이들을 해산시키는 데에는 폭력이 필요하지 않을 수도 있습니다. 젊은 모험가들을 위해 조언하자면, 세계를 여행할 때 편견은 내려놓고 상황이 바뀌었다면 이렇게 작은 범죄 행위에 대해 자비를 바라는 것은 당신이었을 수도 있음을 기억하세요.</p>\n<p><strong>나쁜 놈, 이상한 놈.</strong> 마음씨 고운 자들은 지나치게 많이 가진 자들에게 빼앗아 불운한 자들에게 이를 주기도 하지만, 때때로 가까운 길가의 덤불 속에 숨어 이상한 낌새를 알아차리지 못한 희생자를 덮치려고 기다리는, 진짜 악한들도 존재하는 법입니다. 모험가들이 여행할 때 맞닥뜨리게 되는 강도 행위란 대개 이런 형태일 것입니다. 검, 몽둥이, 활로 무장한 더 부도덕한 도적들은 언덕과 나무 그늘 속에 숨어 목표를 습격할 순간을 기다리며, 눈치채지 못한 여행자 일행을 붙잡곤 합니다. 이 위험한 도둑들은 자신들의 수가 더 적을 때는 일행을 갈라 속임수를 써서 목표가 방심하도록 유도할 것입니다. 도적에게는 국경이나 지역의 경계가 없으므로, 숲이 우거진 길을 걷고 있든, 명성을 얻기 위해 섬에서 섬을 오가며 외해로 항해할 때든 조심해야 합니다. 세계 곳곳에는 위험이 도사리고 있으니, 모험가들은 도적단과 마주치더라도 미리 대비하고 분별력 있게 행동하여 자신의 행적이 전설로 기록되기 전에 먼저 모험이 끝장나 버리는 일이 없도록 주의해야 합니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
+      "name": "도적 - Bandit"
+    },
+    "Actor.VcRFUXSmn2nQhY9I": {
+      "description": ""
+    },
+    "Actor.vDfSk5VuDDlburtU": {
+      "description": ""
+    },
+    "Actor.VGOe2YE3jqjL4nA7": {
+      "description": ""
+    },
+    "Actor.WmPavoD3FOBN7pjc": {
+      "description": "",
+      "name": "짐수레 말 - Draft Horse"
+    },
+    "Actor.wT4SiXyviOZqrQvy": {
+      "description": ""
+    },
+    "Actor.xUscL13UUIs95hVX": {
+      "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Ixitxachitl (pronounced ick-zit-zah-chit-ul) are aquatic creatures resembling manta rays, with small, clawed hands at the ends of their \"wings\" and black eyes gleaming with sinister intelligence. Many creatures mistake ixitxachitl for common manta rays, but this can prove a deadly mistake. The ixitxachitl are as evil as they are cunning, leading to their common nickname \"demon rays.\" They inhabit bodies of fresh and salt water, but their violent nature means that little is known of them.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Struggle for Survival.</span></span> <p> Ixitxachitl emerge from eggs as tiny creatures little more than a hand span in width. From that time onward, they struggle to survive at all costs, growing throughout their lives. Those ixitxachitl that master the secrets of survival gain powers of regeneration and feed on the life force of other creatures.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">All Consuming.</span></span> <p>Ixitxachitl hollow out coral reefs or other natural aquatic formations to create labyrinthine dens, often compelling aid from captured aquatic species they enslave. They typically strip an area bare before moving on to new fertile grounds, leaving their abandoned dens behind. Schools of ixitxachitl often war on other aquatic creatures to claim feeding grounds and territory.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Demon Worshipers.</span></span> <p>The ixitxachitl venerate and serve various demons, particularly Demogorgon, whom they consider their patron and creator. They have an intense rivalry with the merrow over which of them are the greatest and most favored servants of the Prince of Demons.</p><div class=\"rd__spc-inline-post\"></div></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Variant: Ixitxachitl Cleric.</span></span> <p>Some ixitxachitl and vampiric ixitxachitl are able to cast divine spells. Such a creature gains the following feature.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> <p>The ixitxachitl is a 5th-level spellcaster that uses Wisdom as its spellcasting ability (spell save DC 11, +3 명중 with spell attacks). The ixitxachitl has the following cleric spells prepared:</p><div class=\"rd__spc-inline-post\"></div><p>캔트립 (상시 사용 가능): guidance, thaumaturgy</p><p>1st Level (4 slots): charm person, create or destroy water</p><p>2nd Level (3 slots): hold person, silence</p><p>3rd Level (2 slots): @spell[dispel magic], tongues</p></div></div></div></div>"
+    },
+    "Actor.Yj0atgRvhV6CnHIw": {
+      "description": ""
+    },
+    "Actor.Ywax7BUGWqW9qVMX": {
+      "description": ""
+    },
+    "Actor.yYVBSI3bdEbAGWFm": {
+      "description": "",
+      "name": "병사 - Soldier"
+    },
+    "Actor.z0HZn0xdWSjI4Qqm": {
+      "description": ""
+    },
+    "Actor.Z3QC5S44dUVrc7J2": {
+      "description": ""
+    },
+    "Actor.ZOCXhpLULSsU5xG2": {
+      "description": ""
+    }
+  }
 }

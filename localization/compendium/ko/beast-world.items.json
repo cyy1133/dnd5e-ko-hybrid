@@ -9,13 +9,14 @@
     },
     "Bellarmure, the Beautiful Armor of Allemance": {
       "name": "Bellarmure, the Beautiful 갑옷 의 - Allemance",
-      "description": "<p><em>Medium armor (Breastplate), requires attunement</em></p><p><br />This suit of breastplate is said to contain the love of the Allemagnian people, rubbed with magic seed oil every day for ten years. While wearing this armor, you gain a +3 bonus to AC. You are considered proficient with this armor even if you lack proficiency with medium armor. The armor sheds dirt and debris, and as an action you can sweep its cape to make the armor take the appearance of any outfit you wish.</p><p>Additionally, as a reaction to being targeted by an attack or harmful effect, you can speak the armor’s command word to cloak yourself in its true majesty for 10 minutes or until you are no longer wearing the armor. Any creature that targets you with an attack or harmful effect (including the triggering creature) must make a DC 19 Wisdom saving throw. Creatures immune to being charmed automatically pass the save. 내성 굴림에 실패하면, the creature is charmed by you for the effect’s duration. 내성 굴림에 성공하면, the target is unaffected and immune to this effect for the next 24 hours. Once this special action is used, you can’t use it again until the next dawn.</p>"
+      "description": "<p><em>Medium armor (Breastplate), requires attunement</em></p><p><br>This suit of breastplate is said to contain the love of the Allemagnian people, rubbed with magic seed oil every day for ten years. While wearing this armor, you gain a +3 bonus to AC. You are considered proficient with this armor even if you lack proficiency with medium armor. The armor sheds dirt and debris, and as an action you can sweep its cape to make the armor take the appearance of any outfit you wish.</p><p>Additionally, as a reaction to being targeted by an attack or harmful effect, you can speak the armor’s command word to cloak yourself in its true majesty for 10 minutes or until you are no longer wearing the armor. Any creature that targets you with an attack or harmful effect (including the triggering creature) must make a DC 19 Wisdom saving throw. Creatures immune to being charmed automatically pass the save. 내성 굴림에 실패하면, the creature is charmed by you for the effect’s duration. 내성 굴림에 성공하면, the target is unaffected and immune to this effect for the next 24 hours. Once this special action is used, you can’t use it again until the next dawn.</p>"
     },
     "Blanket of Safekeeping": {
       "name": "보호의 담요 - Blanket of Safekeeping"
     },
     "Bubble Armor": {
-      "name": "거품 갑옷 - Bubble Armor"
+      "name": "거품 갑옷 - Bubble Armor",
+      "description": "<p><em>Armor (light, medium, or heavy), requires attunement</em></p><p>By capturing a small part of a safer world around itself, <em>bubble armor</em> allows its wearer to survive some of the Broken World’s more dangerous regions. As an action, you can expend a vial of bubble soap to activate the armor’s protective effects. An iridescent bubble forms from the armor’s collar and surrounds your head with breathable, comfortable air. For the next 10 minutes, you are no longer exposed. If you take damage, the bubble bursts and the property ceases to function until the end of your next turn.</p><p></p><section class=\"secret\" id=\"secret-ftMhhcNCLtSul7Xj\"><p><strong>Foundry Note</strong><br>To use this item, edit its Details pane to match what armor it is based off of, and set its Resource Consumption target to Bubble Soap, which must be in your inventory</p></section>"
     },
     "Bubble Soap": {
       "name": "거품 비누 - Bubble Soap"
@@ -30,26 +31,30 @@
       "name": "Cloak 의 Happy 고양이"
     },
     "Deck of the Cheated": {
-      "name": "속임수의 덱 - Deck of the Cheated"
+      "name": "속임수의 덱 - Deck of the Cheated",
+      "description": "<p><em>Wondrous Item</em></p><p><br>While all its cards are within 30 feet of each other, this deck of playing cards has normal vision out to 60 feet. It can roll Wisdom (Perception) and Wisdom (Insight) checks with a +5 modifier. If the deck spots someone cheating during a game, the face cards emit an ear-piercing shriek for 1 minute.</p>"
     },
     "Eyes of the Ineffable Archivist": {
       "name": "Eyes 의 - Ineffable Archivist"
     },
     "Jadu, the Boarding Cord of Al'ar": {
-      "name": "Jadu, the Boarding Cord 의 - Al'ar"
+      "name": "Jadu, the Boarding Cord 의 - Al'ar",
+      "description": "<p><em>Wondrous Item, requires attunement</em></p><p><br>This magically elastic, animated silk cord is dyed red with Rutgy flowers that grow around the rim of Al’ari volcanoes. The cord has AC 23, 100 hit points, and a flying speed of 10 feet. If the cord drops to 0 hit points, it is destroyed. It regains 10 hit points at the start of each round. If the cord takes fire damage, it doesn’t regain hit points that round.</p><p>It can hold up to 5,000 pounds, and it can stretch or contract between 10 and 100 feet long. While climbing or walking on the cord, it bends and coils to aid balance and movement. While climbing or walking on it, you and creatures friendly to you can move up to your speed without an ability check.</p><p>You can also wield the cord as a whip. You gain a +3 bonus to attack and damage rolls made with it, and are treated as proficient even if you aren’t proficient with the whip. Your reach is 30 feet while wielding this weapon.</p>"
     },
     "Jyristä, the Lightning Blade of Oria": {
-      "name": "Jyristä, the 번개 칼날 의 - Oria"
+      "name": "Jyristä, the 번개 칼날 의 - Oria",
+      "description": "<p><em>Weapon (longsword), requires attunement</em><br><br>The copper core of this green glass longsword was the first object created in a Covenant Forge. You gain a +3 bonus to attack and damage rolls made with this magic weapon, and it deals an extra 1d10 lightning damage to any target it hits.</p><p>Additionally, when you take lightning damage, you can use your reaction to prevent the damage and channel it into the blade. Until the end of your next turn, your first hit with an attack made with this weapon deals an extra 5d10 lightning damage (instead of the normal 1d10 damage). <br><em>(Roll the Other Formula for this additional damage)</em></p><p>The blade also emits a constant lightning aura while drawn. At the end of each of your turns, the blade deals 1 lightning damage to creatures within 120 feet touching a metal object or body of liquid it also touches.</p>"
     },
     "Lantern of Unnature's Revealing": {
-      "name": "부자연의 폭로 랜턴 - Lantern of Unnature's Revealing"
+      "name": "부자연의 폭로 랜턴 - Lantern of Unnature's Revealing",
+      "description": "<p><em>Wondrous item</em><br><br>Dramphinian paladins have used these lamps for centuries to seek out demons that slither in shadows. The lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Undead, fiends, and creatures under the effects of their abilities are outlined with a black halo when illuminated by the lantern’s light. They can’t benefit from being invisible, and Perception checks made against them have advantage.</p>"
     },
     "Mabikubo, the Counterweight of the Causeway": {
       "name": "Mabikubo, the Counterweight 의 - Causeway",
-      "description": "<p><em>Wondrous item, requires attunement</em><br /><br />This stone cube is engraved with the names of the Causeway’s chief builders. It was once used to haul enormous stones at the site of its construction. You can use a bonus action to speak its command word to cause the stone to magically shrink to 2 inches on a side and 5 pounds. Speaking it again causes it to grow to 2 feet on a side and 1,000 pounds.</p><p>Additionally, while the cube is miniature, you can speak the command word while using it as ammunition for a sling. The cube retains its speed in flight after growing. On a hit, the 1,000 pound cube deals an extra 6d10 bludgeoning 피해. It lands unharmed after use.</p><p>Leaving the cube on a prone creature while it is 1,000 pounds restrains them (escape DC 18).</p>"
+      "description": "<p><em>Wondrous item, requires attunement</em><br><br>This stone cube is engraved with the names of the Causeway’s chief builders. It was once used to haul enormous stones at the site of its construction. You can use a bonus action to speak its command word to cause the stone to magically shrink to 2 inches on a side and 5 pounds. Speaking it again causes it to grow to 2 feet on a side and 1,000 pounds.</p><p>Additionally, while the cube is miniature, you can speak the command word while using it as ammunition for a sling. The cube retains its speed in flight after growing. On a hit, the 1,000 pound cube deals an extra 6d10 bludgeoning 피해. It lands unharmed after use.</p><p>Leaving the cube on a prone creature while it is 1,000 pounds restrains them (escape DC 18).</p>"
     },
     "Maintenance Kit, Greater": {
-      "name": "정비 키트, - Greater"
+      "name": "정비 키트, 상급 - Maintenance Kit, Greater"
     },
     "Maintenance Kit, Lesser": {
       "name": "정비 키트, - Lesser"
@@ -66,6 +71,9 @@
     "Neckwear of Nativeness": {
       "name": "고향의 목장식 - Neckwear of Nativeness"
     },
+    "Netherworld Intrusion Ritual Kit": {
+      "description": "<section class=\"secret\" id=\"secret-AX66SQlylakupGEI\"><p><span>Consequences - This is for GMs. Go away players!</span></p><p>… are they gone? I leave the combat mechanics of ghosts and the consequences of botching this ritual up to you for now. Much like with 5e's rules for curses, you would probably do something more interesting than I'd write, anyway. If someone drops the spike and something weird happens, send me an email!</p></section><p><span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\"><br><br>Instructions</span></span></p><ol><li><p>Your ritual kit contains <span class=\"fontstyle0\">a silver chalice and a bottle of </span><span class=\"fontstyle2\"><em>aqua vitae</em> </span><span class=\"fontstyle0\">(ethanol). Rest the chalice on the flat surface you intend to stand on in the Netherworld. Fill it to the brim with the </span><span class=\"fontstyle2\"><em>aqua vitae</em>.</span></p></li><li><p><span class=\"fontstyle0\">Remove the bag of powder from the kit. This is a blend of black tourmaline, silver, salt, and secret ingredients. Pour it in a thin, unbroken line around the flat surface you intend to travel on. The region can be any shape, but the line’s ends must both make contact with the chalice.</span></p></li><li><p><span class=\"fontstyle0\">Dip the red thread into the chalice, letting the end dangle over the side and against the powder line.</span></p></li><li><p><span class=\"fontstyle0\">Drink the entire contents of the included blend of blue algae. The bitter taste is a substance that neutralizes stomach acid and keeps the algae alive during your journey. Abdominal pain is normal, and not any cause to send us letters.</span></p></li><li><p><span class=\"fontstyle0\">Hold the silver spike in your non-dominant hand. This spike is filled with a witch wood core, and keeps your body attached to the physical world.</span></p><p style=\"font-size:150%\"><strong>DO NOT DROP THE SPIKE. DO NOT HEED ANY GHOST'S ATTEMPT TO MAKE YOU LET GO OF THE SPIKE.</strong></p></li><li><p><span class=\"fontstyle0\">Stand with your feet together near the center of the region designated by the powder line. Your assistant should now administer the included feed-spray in a sweeping motion. The spray’s contents are not rotten. The smell is normal.</span></p></li><li><p><span class=\"fontstyle0\">Your assistant should release the skull moths, while simultaneously igniting the end of the powder line opposite the red thread. The moths will move through the area, eating the feedspray and allowing the intruder’s physical form to slide into the Netherworld.</span></p></li></ol><p>The silver in the powder glitters in the Netherworld, outlining the region your physical body is allowed to occupy. Leaving this space can yield unpredictable results and is not recommended.</p><p>The intrusion lasts as long as the line is burning (about twenty minutes, when applied correctly). Once the flame reaches the red thread, the aqua vitae ignites, forcing the intruder’s body back into physical space.</p>"
+    },
     "Potion of Appending": {
       "name": "추가의 물약 - Potion of Appending"
     },
@@ -73,16 +81,20 @@
       "name": "에너지 전환 반지 - Ring of Energy Conversion"
     },
     "Scroll of Self-Teaching, Common": {
-      "name": "자가 학습 두루마리, 일반 - Scroll of Self-Teaching, Common"
+      "name": "자가 학습 두루마리, 일반 - Scroll of Self-Teaching, Common",
+      "description": "<p>This scroll has a diagram of all the base components used to copy a spell written on it, and can quickly capture the thesis for a spell cast on its owner. As a reaction to being targeted by a spell while this scroll is on your person, you can speak its command word. When you do, the scroll of self-teaching permanently transforms into a scroll of that spell. The maximum level spell the scroll can capture is based on its rarity, as shown in the Scroll of Self-Teaching Rarity table.</p><p></p><p></p><table><tbody><tr><td><p style=\"text-align:center\"><strong>Rarity</strong></p></td><td><p style=\"text-align:center\"><strong>Maximum 주문 레벨</strong></p></td></tr><tr><td><p style=\"text-align:center\">공통</p></td><td><p style=\"text-align:center\">1st</p></td></tr><tr><td><p style=\"text-align:center\">비범</p></td><td><p style=\"text-align:center\">3rd</p></td></tr><tr><td><p style=\"text-align:center\">희귀</p></td><td><p style=\"text-align:center\">5th</p></td></tr><tr><td><p style=\"text-align:center\">매우 희귀</p></td><td><p style=\"text-align:center\">8th</p></td></tr></tbody></table>"
     },
     "Scroll of Self-Teaching, Rare": {
-      "name": "자가 학습 두루마리, 희귀 - Scroll of Self-Teaching, Rare"
+      "name": "자가 학습 두루마리, 희귀 - Scroll of Self-Teaching, Rare",
+      "description": "<p>This scroll has a diagram of all the base components used to copy a spell written on it, and can quickly capture the thesis for a spell cast on its owner. As a reaction to being targeted by a spell while this scroll is on your person, you can speak its command word. When you do, the scroll of self-teaching permanently transforms into a scroll of that spell. The maximum level spell the scroll can capture is based on its rarity, as shown in the Scroll of Self-Teaching Rarity table.</p><p></p><p></p><table><tbody><tr><td><p style=\"text-align:center\"><strong>Rarity</strong></p></td><td><p style=\"text-align:center\"><strong>Maximum 주문 레벨</strong></p></td></tr><tr><td><p style=\"text-align:center\">공통</p></td><td><p style=\"text-align:center\">1st</p></td></tr><tr><td><p style=\"text-align:center\">비범</p></td><td><p style=\"text-align:center\">3rd</p></td></tr><tr><td><p style=\"text-align:center\">희귀</p></td><td><p style=\"text-align:center\">5th</p></td></tr><tr><td><p style=\"text-align:center\">매우 희귀</p></td><td><p style=\"text-align:center\">8th</p></td></tr></tbody></table>"
     },
     "Scroll of Self-Teaching, Uncommon": {
-      "name": "자가 학습 두루마리, 비범 - Scroll of Self-Teaching, Uncommon"
+      "name": "자가 학습 두루마리, 비범 - Scroll of Self-Teaching, Uncommon",
+      "description": "<p>This scroll has a diagram of all the base components used to copy a spell written on it, and can quickly capture the thesis for a spell cast on its owner. As a reaction to being targeted by a spell while this scroll is on your person, you can speak its command word. When you do, the scroll of self-teaching permanently transforms into a scroll of that spell. The maximum level spell the scroll can capture is based on its rarity, as shown in the Scroll of Self-Teaching Rarity table.</p><p></p><p></p><table><tbody><tr><td><p style=\"text-align:center\"><strong>Rarity</strong></p></td><td><p style=\"text-align:center\"><strong>Maximum 주문 레벨</strong></p></td></tr><tr><td><p style=\"text-align:center\">공통</p></td><td><p style=\"text-align:center\">1st</p></td></tr><tr><td><p style=\"text-align:center\">비범</p></td><td><p style=\"text-align:center\">3rd</p></td></tr><tr><td><p style=\"text-align:center\">희귀</p></td><td><p style=\"text-align:center\">5th</p></td></tr><tr><td><p style=\"text-align:center\">매우 희귀</p></td><td><p style=\"text-align:center\">8th</p></td></tr></tbody></table>"
     },
     "Scroll of Self-Teaching, Very Rare": {
-      "name": "자가 학습 두루마리, 매우 희귀 - Scroll of Self-Teaching, Very Rare"
+      "name": "자가 학습 두루마리, 매우 희귀 - Scroll of Self-Teaching, Very Rare",
+      "description": "<p>This scroll has a diagram of all the base components used to copy a spell written on it, and can quickly capture the thesis for a spell cast on its owner. As a reaction to being targeted by a spell while this scroll is on your person, you can speak its command word. When you do, the scroll of self-teaching permanently transforms into a scroll of that spell. The maximum level spell the scroll can capture is based on its rarity, as shown in the Scroll of Self-Teaching Rarity table.</p><p></p><p></p><table><tbody><tr><td><p style=\"text-align:center\"><strong>Rarity</strong></p></td><td><p style=\"text-align:center\"><strong>Maximum 주문 레벨</strong></p></td></tr><tr><td><p style=\"text-align:center\">공통</p></td><td><p style=\"text-align:center\">1st</p></td></tr><tr><td><p style=\"text-align:center\">비범</p></td><td><p style=\"text-align:center\">3rd</p></td></tr><tr><td><p style=\"text-align:center\">희귀</p></td><td><p style=\"text-align:center\">5th</p></td></tr><tr><td><p style=\"text-align:center\">매우 희귀</p></td><td><p style=\"text-align:center\">8th</p></td></tr></tbody></table>"
     },
     "Single-Hand Rein": {
       "name": "한손 고삐 - Single-Hand Rein"
@@ -94,7 +106,8 @@
       "name": "여섯 힘의 돌 - Stone of Six Strengths"
     },
     "Teapot of Rooted Memory": {
-      "name": "뿌리내린 기억의 찻주전자 - Teapot of Rooted Memory"
+      "name": "뿌리내린 기억의 찻주전자 - Teapot of Rooted Memory",
+      "description": "<p><em>Wondrous item</em><br><br>When this teapot is used to brew the roots or leaves of a plant harvested in the last 24 hours, up to six creatures can drink the tea to enter a meditative trance for 10 minutes. During the trance, the creatures mentally receive visual information from a moment in time they choose, as far back as when the plant first sprouted. They see as if the plant had normal vision out to 30 feet, and tremorsense out to 120 feet. As an action, a creature in the trance can change the observed point in time.</p>"
     },
     "Vine of Close Calls": {
       "name": "Vine 의 아슬한 위기"

@@ -1,24 +1,5 @@
 {
   "label": "Homeland Traits",
-  "folders": {
-    "Brethren (Human)": "Brethren (Human)",
-    "Dragon": "Dragon",
-    "Ursine": "Ursine",
-    "Bat": "Bat",
-    "Equine": "Equine",
-    "Celerine": "Celerine",
-    "Ovine": "Ovine",
-    "Canine": "Canine",
-    "Vulpine": "Vulpine",
-    "Bovine": "Bovine",
-    "Tenebrine": "Tenebrine",
-    "Laetine": "Laetine",
-    "Cervine": "Cervine",
-    "Murine": "Murine",
-    "Ligonine": "Ligonine",
-    "Kobold": "Kobold",
-    "Feline": "Feline"
-  },
   "entries": {
     "Alley Cat (Allemance)": {
       "name": "Alley 고양이 (Allemance)"
@@ -55,7 +36,7 @@
       "name": "Corked 갑옷 (Vinyot)"
     },
     "Cove Lineage": {
-      "description": "<p><em><strong>Amphibious</strong></em>. You have a swimming speed equal to your walking speed. You can breathe air and water.</p><p><em><strong>Acidic Scales</strong></em>. You have resistance to acid 피해.</p><p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.KKAkAur7CabVNXTK]{Acid Breath}. </strong></em>Your breath weapon is a targeted burst of acid that destroys objects. As an action, you can exhale a focused spray of acid targeting a creature or object you can see within 30 feet, which splashes in a 5-foot radius on impact. The target, as well as each creature and object within 5 feet of it, must make a Dexterity saving throw with a DC equal to 8 + your proficiency bonus + your Constitution or Dexterity modifier (your choice). The target takes 4d4 acid damage on a failed save, or half as much on a successful one. Each creature and object within 5 feet of the target takes half the damage on a failed save, but no damage on a successful one. Acid Breath deals double damage to objects and structures.</p><p>The damage, range, and splash radius all increase based on the Acid Breath table below. You can use your breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"4\"><p><span style=\"text-decoration:underline\"><em><strong><span style=\"text-decoration:underline\">Acid Breath</span></strong></em></span></p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>Level</p></td><td style=\"text-align:center;width:19.1542%\"><p>Range</p></td><td style=\"text-align:center;width:24.1294%\"><p>Damage</p></td><td style=\"text-align:center;width:41.0448%\"><p>Splash Radius</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>1st</p></td><td style=\"text-align:center;width:19.1542%\"><p>30 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>4d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>5 ft.</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>5th</p></td><td style=\"text-align:center;width:19.1542%\"><p>60 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>8d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>10 ft.</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>11th</p></td><td style=\"text-align:center;width:19.1542%\"><p>90 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>16d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>15 ft</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>17th</p></td><td style=\"text-align:center;width:19.1542%\"><p>120 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>32d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>20 ft.</p></td></tr></tbody></table><p> </p>"
+      "description": "<p><em><strong>양서</strong></em>. You have a swimming speed equal to your walking speed. You can breathe air and water.</p><p><em><strong>Acidic Scales</strong></em>. You have resistance to acid 피해.</p><p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.KKAkAur7CabVNXTK]{Acid Breath}. </strong></em>Your breath weapon is a targeted burst of acid that destroys objects. As an action, you can exhale a focused spray of acid targeting a creature or object you can see within 30 feet, which splashes in a 5-foot radius on impact. The target, as well as each creature and object within 5 feet of it, must make a Dexterity saving throw with a DC equal to 8 + your proficiency bonus + your Constitution or Dexterity modifier (your choice). The target takes 4d4 acid damage on a failed save, or half as much on a successful one. Each creature and object within 5 feet of the target takes half the damage on a failed save, but no damage on a successful one. Acid Breath deals double damage to objects and structures.</p><p>The damage, range, and splash radius all increase based on the Acid Breath table below. You can use your breath weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"4\"><p><span style=\"text-decoration:underline\"><em><strong><span style=\"text-decoration:underline\">Acid Breath</span></strong></em></span></p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>Level</p></td><td style=\"text-align:center;width:19.1542%\"><p>Range</p></td><td style=\"text-align:center;width:24.1294%\"><p>Damage</p></td><td style=\"text-align:center;width:41.0448%\"><p>Splash Radius</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>1st</p></td><td style=\"text-align:center;width:19.1542%\"><p>30 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>4d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>5 ft.</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>5th</p></td><td style=\"text-align:center;width:19.1542%\"><p>60 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>8d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>10 ft.</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>11th</p></td><td style=\"text-align:center;width:19.1542%\"><p>90 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>16d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>15 ft</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>17th</p></td><td style=\"text-align:center;width:19.1542%\"><p>120 ft.</p></td><td style=\"text-align:center;width:24.1294%\"><p>32d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>20 ft.</p></td></tr></tbody></table><p> </p>"
     },
     "Deadman's Drop (Al'ar)": {
       "name": "Deadman's 낙하 (Al'ar)"
@@ -94,6 +75,9 @@
     },
     "Insistent Strike (Allemance)": {
       "name": "Insistent 강타 (Allemance)"
+    },
+    "Jury-Rig (Vinyot)": {
+      "description": "<p>You can improvise solutions to mechanical problems and adapt as a situation changes. You carry a kit of invaluable tools that seems like a pack of junk to anyone else. With 1 minute of studious work, you can roll an Intelligence check to perform one of the following effects. The DC of each effect is given in the Jury-Rig table below.</p><p></p><table><tbody><tr><td data-colwidth=\"687\"><p><strong>효과</strong></p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\"><strong>DC</strong></p></td></tr><tr><td data-colwidth=\"687\"><p>Opening a door or hatch springs a trap that deals 1d6 bludgeoning, piercing, or slashing damage (your choice). The DC to detect or disarm the trap is equal to the result of the Intelligence check.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">12</p></td></tr><tr><td data-colwidth=\"687\"><p>Waterproof a modified Huge or smaller vehicle for 24 hours, allowing it to float on water.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>Increase the break DC of a modified Large or smaller object by 2d4 for 1 hour.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>The first hit with an attack made with a modified weapon against a construct in the next hour is treated as a critical hit.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">20</p></td></tr></tbody></table>"
     },
     "Keepsake of a Lost Home (Broken World)": {
       "name": "Keepsake 의 - a Lost Home (Broken World)"

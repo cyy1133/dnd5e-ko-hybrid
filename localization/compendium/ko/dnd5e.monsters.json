@@ -198,7 +198,7 @@
 			"description": "<p>문명화되지 않은 땅에서 고함치는, 예측할 수 없는 광전사들은 전투 집단으로 결집하여 어디서든 호시탐탐 갈등이 벌어지는 곳을 찾아다닙니다.</p>\n<p><em>Token artwork by Forgotten Adventures.</em></p>"
 		},
 		"Black Bear": {
-			"name": "검은곰",
+			"name": "흑곰",
 			"description": "<p><em>Token artwork by Forgotten Adventures.</em></p>"
 		},
 		"Black Dragon Wyrmling": {
@@ -238,7 +238,7 @@
 			"description": ""
 		},
 		"Brown Bear": {
-			"name": "갈색곰",
+			"name": "불곰",
 			"description": "<p><em>Token artwork by Forgotten Adventures.</em></p>"
 		},
 		"Bugbear": {

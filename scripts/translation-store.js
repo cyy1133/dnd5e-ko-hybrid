@@ -1146,6 +1146,85 @@ const abilityToKo = (value) => {
   }
 };
 
+const damageTypeToKo = (value, { linked = false } = {}) => {
+  const normalized = normalizeText(value).toLowerCase();
+  let translated = "";
+  switch (normalized) {
+    case "acid":
+      translated = "산성";
+      break;
+    case "bludgeoning":
+      translated = "타격";
+      break;
+    case "cold":
+      translated = "냉기";
+      break;
+    case "fire":
+      translated = "화염";
+      break;
+    case "force":
+      translated = "역장";
+      break;
+    case "lightning":
+      translated = "번개";
+      break;
+    case "necrotic":
+      translated = "강령";
+      break;
+    case "piercing":
+      translated = "관통";
+      break;
+    case "poison":
+      translated = "독";
+      break;
+    case "psychic":
+      translated = "정신";
+      break;
+    case "radiant":
+      translated = "광휘";
+      break;
+    case "slashing":
+      translated = "참격";
+      break;
+    case "thunder":
+      translated = "천둥";
+      break;
+    default:
+      translated = normalizeText(value);
+      break;
+  }
+
+  if (!linked || !translated || translated === normalizeText(value)) return translated;
+  return `&Reference[${normalized}]{${translated}}`;
+};
+
+const colorToKo = (value) => {
+  switch (normalizeText(value).toLowerCase()) {
+    case "green":
+      return "녹색";
+    case "blue":
+      return "청색";
+    case "red":
+      return "적색";
+    case "white":
+      return "백색";
+    case "yellow":
+      return "황색";
+    case "black":
+      return "흑색";
+    case "violet":
+      return "보랏빛";
+    case "silver":
+      return "은색";
+    case "gold":
+      return "금색";
+    case "orange":
+      return "주황색";
+    default:
+      return normalizeText(value);
+  }
+};
+
 const escapeHtml = (value) => {
   const div = document.createElement("div");
   div.textContent = value ?? "";
@@ -1825,6 +1904,17 @@ export class TranslationStore {
   _translateGeneratedDescription(description) {
     if (!description) return description;
 
+    let current = String(description ?? "").replace(/\u00a0/gu, " ");
+    for (let pass = 0; pass < 4; pass += 1) {
+      const next = this._translateGeneratedDescriptionPass(current);
+      if (next === current) return next;
+      current = next;
+    }
+
+    return current;
+  }
+
+  _translateGeneratedDescriptionPass(description) {
     const source = String(description ?? "").replace(/\u00a0/gu, " ");
     const template = document.createElement("template");
     template.innerHTML = source;
@@ -1851,7 +1941,14 @@ export class TranslationStore {
       .replace(/<h1>Class Features<\/h1>/gu, "<h1>클래스 특성</h1>")
       .replace(/<strong>Hit Die:<\/strong>/gu, "<strong>히트 다이스:</strong>")
       .replace(/<strong>Primary Ability:<\/strong>/gu, "<strong>주요 능력:</strong>")
-      .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>");
+      .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>")
+      .replace(/This armor is cursed, a fact that is revealed only when an <strong>identify<\/strong> spell is cast on the armor or you attune to it\./gu, "이 갑옷은 저주받았으며, 그 사실은 갑옷에 <strong>식별</strong> 주문을 시전하거나 당신이 갑옷에 조율할 때에만 드러납니다.")
+      .replace(/Attuning to the armor curses you until you are targeted by the (@UUID\[[^\]]+\](?:\{[^}]+\})?) spell or similar magic; removing the armor fails to end the curse\./gu, (_, spell) => `갑옷에 조율하면 ${spell} 주문이나 유사한 마법의 대상이 되기 전까지 저주가 이어지며, 갑옷을 벗는 것만으로는 저주가 끝나지 않습니다.`)
+      .replace(/When you cast the spell and as a 추가 행동 on your later turns, you can move the hand up to ([0-9]+) feet and then cause one of the following effects:\./gu, (_, distance) => `주문을 시전할 때와 이후 당신의 턴에 추가 행동으로, 그 손을 최대 ${distance}피트까지 이동시킨 뒤 다음 효과 중 하나를 일으킬 수 있습니다.`)
+      .replace(/It manifests in an unoccupied space that you can see within range and uses the <strong>Aberrant Spirit<\/strong> stat block\./gu, "사거리 내에서 당신이 볼 수 있는 비어 있는 공간에 나타나며 <strong>Aberrant Spirit</strong> 능력치 블록을 사용합니다.")
+      .replace(/<strong>Immunities<\/strong>\s*&Reference\[psychic\]\{정신\}/gu, "<strong>면역</strong> &Reference[psychic]{정신}")
+      .replace(/<strong>Senses<\/strong>\s*&Reference\[darkvision\]\{Darkvision\} ([0-9]+) ft\.; Passive Perception ([0-9]+)/gu, (_, distance, passive) => `<strong>감각</strong> &Reference[darkvision]{암시야} ${distance}피트; 수동 지각 ${passive}`)
+      .replace(/&amp;Reference\[/gu, "&Reference[");
 
     return output;
   }
@@ -1882,6 +1979,52 @@ export class TranslationStore {
 
     const { text: protectedText, tokens } = this._protectFoundryInlineSyntax(text);
     let output = protectedText
+      .replace(/At Higher Levels\./gu, "상위 레벨 시전.")
+      .replace(/Using a Higher-Level Spell Slot\./gu, "상위 레벨 주문 슬롯 사용.")
+      .replace(/Random Properties\./gu, "무작위 속성.")
+      .replace(/Tattoo Attunement\./gu, "문신 조율.")
+      .replace(/Damage Resistance\./gu, "피해 저항.")
+      .replace(/Damage Absorption\./gu, "피해 흡수.")
+      .replace(/Magic Tattoo Coverage/gu, "마법 문신 적용 범위")
+      .replace(/Tattoo Rarity/gu, "문신 희귀도")
+      .replace(/Area Covered/gu, "적용 부위")
+      .replace(/Spellwrought Tattoo/gu, "주문새김 문신")
+      .replace(/Spell Level/gu, "주문 레벨")
+      .replace(/Save DC/gu, "내성 DC")
+      .replace(/Attack Bonus/gu, "공격 보너스")
+      .replace(/Produced by a special needle, this magic tattoo features ([^.]+?) designs\./gu, (_, design) => `특수한 바늘로 새겨지는 이 마법 문신은 ${colorToKo(design)} 무늬를 띱니다.`)
+      .replace(/Produced by a special needle, this magic tattoo features designs that emphasize one color\./gu, "특수한 바늘로 새겨지는 이 마법 문신은 특정한 한 색을 강조한 무늬를 띱니다.")
+      .replace(/To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process\./gu, "이 물건에 조율하려면 문신이 나타나길 원하는 피부에 바늘을 대고, 조율이 끝날 때까지 그 자리에 계속 눌러 두어야 합니다.")
+      .replace(/When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin\./gu, "조율이 완료되면 바늘은 잉크로 변해 피부 위에 문신으로 나타납니다.")
+      .replace(/If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space\./gu, "문신과의 조율이 끝나면 문신은 사라지고 바늘은 당신의 공간에 다시 나타납니다.")
+      .replace(/While the tattoo is on your skin, you have resistance to a type of damage associated with that color, as shown on the table below\. The DM chooses the color or determines it randomly\./gu, "문신이 피부 위에 있는 동안 아래 표의 색과 연관된 피해 유형 하나에 저항을 가집니다. DM은 그 색을 정하거나 무작위로 결정합니다.")
+      .replace(/While wearing this armor, you have Resistance to ([A-Za-z]+) damage\./gu, (_, type) => `이 갑옷을 착용하고 있는 동안 ${damageTypeToKo(type, { linked: true })} 피해에 저항을 가집니다.`)
+      .replace(/While wearing this armor, you have resistance to ([A-Za-z]+) (?:damage|피해)\./gu, (_, type) => `이 갑옷을 착용하고 있는 동안 ${damageTypeToKo(type, { linked: true })} 피해에 저항을 가집니다.`)
+      .replace(/When you take ([A-Za-z]+) damage, you can use your reaction to gain immunity against that instance of the damage, and you regain a number of hit points equal to half the damage you would have taken\./gu, (_, type) => `${damageTypeToKo(type, { linked: true })} 피해를 받을 때 반응을 사용해 그 한 번의 피해에 면역을 얻고, 원래 받았을 피해의 절반만큼 HP를 회복할 수 있습니다.`)
+      .replace(/This armor is cursed, a fact that is revealed only when the Identify spell is cast on the armor or you attune to it\./gu, "이 갑옷은 저주받았으며, 그 사실은 갑옷에 식별 주문을 시전하거나 당신이 갑옷에 조율할 때에만 드러납니다.")
+      .replace(/Attuning to the armor curses you until you are targeted by a Remove Curse spell or similar magic; removing the armor fails to end the curse\./gu, "갑옷에 조율하면 해제 주문이나 유사한 마법의 대상이 되기 전까지 저주가 이어지며, 갑옷을 벗는 것만으로는 저주가 끝나지 않습니다.")
+      .replace(/While cursed, you have Vulnerability to two of the three damage types associated with the armor \(not the one to which it grants Resistance\)\./gu, "저주받은 동안에는 이 갑옷이 저항을 주는 피해 유형을 제외한 나머지 둘에 취약해집니다.")
+      .replace(/Once this reaction is used, it can[’']t be used again until the next dawn\./gu, "이 반응은 한 번 사용하면 다음 새벽까지 다시 사용할 수 없습니다.")
+      .replace(/This weapon has the following mastery property\./gu, "이 무기는 다음 숙련 특성을 가집니다.")
+      .replace(/To use this property, you must have a feature that lets you use it\./gu, "이 특성을 사용하려면 이를 사용할 수 있게 해 주는 능력이 필요합니다.")
+      .replace(/It obeys your verbal commands \(no action required by you\)\./gu, "이 존재는 당신의 언어 명령에 복종합니다(당신의 행동은 필요하지 않습니다).")
+      .replace(/This special action can[’']t be used again until the next dawn\./gu, "이 특수 행동은 다음 새벽까지 다시 사용할 수 없습니다.")
+      .replace(/A spell scroll bears the words of a single spell, written in a mystical cipher\./gu, "주문 두루마리에는 하나의 주문이 신비한 암호문으로 기록되어 있습니다.")
+      .replace(/If the spell is on your class[’']s spell list, you can read the scroll and cast its spell without providing any material components\./gu, "그 주문이 당신의 클래스 주문 목록에 있다면, 물질 구성 요소 없이 두루마리를 읽어 주문을 시전할 수 있습니다.")
+      .replace(/Otherwise, the scroll is unintelligible\./gu, "그렇지 않다면 두루마리의 내용을 이해할 수 없습니다.")
+      .replace(/Casting the spell by reading the scroll requires the spell[’']s normal casting time\./gu, "두루마리를 읽어 주문을 시전할 때는 그 주문의 원래 시전 시간이 그대로 필요합니다.")
+      .replace(/Once the spell is cast, the words on the scroll fade, and it crumbles to dust\./gu, "주문이 시전되면 두루마리의 글자는 사라지고 두루마리는 먼지로 부서집니다.")
+      .replace(/If the casting is interrupted, the scroll is not lost\./gu, "시전이 방해받더라도 두루마리는 소모되지 않습니다.")
+      .replace(/If the spell is on your class[’']s spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully\./gu, "그 주문이 당신의 클래스 주문 목록에 있지만 평소 시전 가능한 레벨보다 높다면, 주문시전 능력치로 능력 판정을 하여 시전 성공 여부를 결정해야 합니다.")
+      .replace(/On a failed check, the spell disappears from the scroll with no other effect\./gu, "판정에 실패하면 주문은 아무런 추가 효과 없이 두루마리에서 사라집니다.")
+      .replace(/A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied\./gu, "주문 두루마리에 적힌 위저드 주문은 주문서의 주문을 필사하듯 그대로 옮겨 적을 수 있습니다.")
+      .replace(/If the check succeeds, the spell is successfully copied\./gu, "판정에 성공하면 주문 필사에 성공합니다.")
+      .replace(/Whether the check succeeds or fails, the spell scroll is destroyed\./gu, "판정 성공 여부와 관계없이 주문 두루마리는 파괴됩니다.")
+      .replace(/It manifests in an unoccupied space that you can see within range\./gu, "사정거리 내에서 당신이 볼 수 있는 비어 있는 공간에 나타납니다.")
+      .replace(/The creature disappears when it drops to 0 hit points or when the spell ends\./gu, "그 크리처는 HP가 0이 되거나 주문이 종료되면 사라집니다.")
+      .replace(/The creature is an ally to you and your companions\./gu, "그 크리처는 당신과 당신의 동료들에게 우호적입니다.")
+      .replace(/In combat, the creature shares your initiative count, but it takes its turn immediately after yours\./gu, "전투 중에는 당신과 같은 이니셔티브 값을 사용하지만, 당신의 턴 직후에 자기 턴을 가집니다.")
+      .replace(/If you don[’']t issue any, it takes the Dodge action and uses its move to avoid danger\./gu, "당신이 아무 명령도 내리지 않으면 회피 행동을 취하고, 위험을 피하는 데 이동을 사용합니다.")
       .replace(/Note: importing a class as an item is provided for display purposes only\. If you wish to import a class to a character sheet, please use the importer on the sheet instead\./gu, "참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.")
       .replace(/Mastery: Vex\./gu, "숙련: 벡스.")
       .replace(/Cantrips? \(at will\):/gu, "캔트립 (상시 사용 가능):")
@@ -1909,6 +2052,29 @@ export class TranslationStore {
       .replace(/\bone creature\b/gu, "크리처 하나")
       .replace(/\btwo targets\b/gu, "목표 둘")
       .replace(/\bthree targets\b/gu, "목표 셋")
+      .replace(/\bDamage Type\b/gu, "피해 유형")
+      .replace(/\bColor\b/gu, "색상")
+      .replace(/\bCommon\b/gu, "공통")
+      .replace(/\bUncommon\b/gu, "비범")
+      .replace(/\bVery Rare\b/gu, "매우 희귀")
+      .replace(/\bRare\b/gu, "희귀")
+      .replace(/\bLegendary\b/gu, "전설")
+      .replace(/\bGreen\b/gu, colorToKo("green"))
+      .replace(/\bBlue\b/gu, colorToKo("blue"))
+      .replace(/\bRed\b/gu, colorToKo("red"))
+      .replace(/\bWhite\b/gu, colorToKo("white"))
+      .replace(/\bYellow\b/gu, colorToKo("yellow"))
+      .replace(/\bBlack\b/gu, colorToKo("black"))
+      .replace(/\bViolet\b/gu, colorToKo("violet"))
+      .replace(/\bSilver\b/gu, colorToKo("silver"))
+      .replace(/\bGold\b/gu, colorToKo("gold"))
+      .replace(/\bOrange\b/gu, colorToKo("orange"))
+      .replace(/>(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder)</gu, (_, type) => `>${damageTypeToKo(type, { linked: true })}<`)
+      .replace(/<td>\s*(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder)\s*<\/td>/gu, (_, type) => `<td>${damageTypeToKo(type, { linked: true })}</td>`)
+      .replace(/\b(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder) damage\b/gu, (_, type) => `${damageTypeToKo(type, { linked: true })} 피해`)
+      .replace(/\b(Acid|Bludgeoning|Cold|Fire|Force|Lightning|Necrotic|Piercing|Poison|Psychic|Radiant|Slashing|Thunder) 피해\b/gu, (_, type) => `${damageTypeToKo(type, { linked: true })} 피해`)
+      .replace(/\b([0-9dD]+(?:\s*\+\s*[0-9dD]+)*) ([A-Za-z]+) 피해\b/gu, (_, amount, type) => `${amount} ${damageTypeToKo(type, { linked: true })} 피해`)
+      .replace(/\b([0-9dD]+(?:\s*\+\s*[0-9dD]+)*) ([A-Za-z]+) 피해([를은이가와도에])\b/gu, (_, amount, type, suffix) => `${amount} ${damageTypeToKo(type, { linked: true })} 피해${suffix}`)
       .replace(/<span class="entry-title-inner">Special\.<\/span>/gu, "<span class=\"entry-title-inner\">특수.</span>")
       .replace(/<i>Hit:<\/i>/gu, "<i>명중:</i>")
       .replace(/<i>Failure:<\/i>/gu, "<i>실패:</i>")
@@ -1923,6 +2089,29 @@ export class TranslationStore {
       .replace(/The creature wakes up if it takes damage or if another creature takes an action to shake it awake\./gu, "피해를 받거나 다른 생물이 행동을 사용해 흔들어 깨우면 그 생물은 깨어납니다.")
       .replace(/A creature can use its action to make a ([A-Za-z]+) check, freeing itself or another creature within its reach on a success\./gu, (_, ability) => `생물은 행동을 사용해 ${abilityToKo(ability)} 판정을 할 수 있으며, 성공하면 자신이나 손이 닿는 거리 내 다른 생물 하나를 풀어줄 수 있습니다.`)
       .replace(/A creature can take this damage only once per turn\./gu, "한 생물은 이 피해를 한 턴에 한 번만 받을 수 있습니다.")
+      .replace(/This sticky, adhesive fluid ignites when exposed to air\./gu, "이 끈적하고 점착성 있는 액체는 공기에 노출되면 불이 붙습니다.")
+      .replace(/As an action, you can throw this flask up to 20 feet, shattering it on impact\./gu, "행동으로 이 플라스크를 최대 20피트까지 던질 수 있으며, 충돌하면 산산이 부서집니다.")
+      .replace(/Make a ranged attack against a creature or object, treating the alchemist[’']s fire as an improvised weapon\./gu, "연금술사의 불을 즉흥 무기로 취급하여 크리처나 물체 하나를 상대로 원거리 공격을 합니다.")
+      .replace(/On a hit, the target takes\s*(__FVTT_TOKEN_\d+__) damage at the start of each of its turns\./gu, (_, damage) => `명중 시, 대상은 자신의 각 턴 시작마다 ${damage} 피해를 받습니다.`)
+      .replace(/A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames\./gu, "크리처는 행동을 사용해 DC 10 민첩 판정을 성공시켜 불길을 꺼 이 피해를 끝낼 수 있습니다.")
+      .replace(/The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack\./gu, "주문이 밀려오는 에너지 일부를 붙잡아 당신에게 미치는 영향을 줄이고, 그 힘을 다음 근접 공격을 위해 저장합니다.")
+      .replace(/You have resistance to the triggering damage type until the start of your next turn\./gu, "다음 턴 시작까지 방아쇠가 된 피해 유형에 저항을 가집니다.")
+      .replace(/Also, the first time you hit with a melee attack on your next turn, the target takes an extra ([^.]+?) damage of the triggering type, and the spell ends\./gu, (_, damage) => `또한 다음 턴에 처음으로 근접 공격을 명중시키면, 대상은 방아쇠가 된 피해 유형의 추가 ${damage} 피해를 받고 주문은 끝납니다.`)
+      .replace(/An aura radiates from you in a 30-foot Emanation for the duration\./gu, "지속시간 동안 당신을 중심으로 30피트 발산 범위의 오라가 퍼져나갑니다.")
+      .replace(/When you create the aura and at the start of each of your turns while it persists, you can restore ([^.]+?) Hit Points to one creature in it\./gu, (_, amount) => `오라를 처음 만들 때와 그 오라가 지속되는 동안 당신의 각 턴 시작마다, 그 안에 있는 크리처 하나의 HP를 ${amount}만큼 회복시킬 수 있습니다.`)
+      .replace(/You brandish the weapon used in the spell[’']s casting and make a melee attack with it against one creature within 5 feet of you\./gu, "주문 시전에 사용한 무기를 치켜들고, 5피트 내의 크리처 하나를 상대로 그 무기로 근접 공격을 합니다.")
+      .replace(/On a hit, the target suffers the weapon attack[’']s normal effects and then becomes sheathed in booming energy until the start of your next turn\./gu, "명중하면 목표는 무기 공격의 일반적인 효과를 받고, 다음 턴 시작까지 울려 퍼지는 에너지에 휩싸입니다.")
+      .replace(/If the target willingly moves 5 feet or more before then, the target takes ([^.]+?) thunder damage, and the spell ends\./gu, (_, damage) => `그 전에 목표가 자발적으로 5피트 이상 이동하면 ${damage} 천둥 피해를 받고 주문은 끝납니다.`)
+      .replace(/This spell[’']s damage increases when you reach certain levels\./gu, "이 주문의 피해는 특정 레벨에 도달하면 증가합니다.")
+      .replace(/At 5th level, the melee attack deals an extra ([^.]+?) thunder damage to the target on a hit, and the damage the target takes for moving increases to ([^.]+?)\./gu, (_, damageA, damageB) => `5레벨부터는 근접 공격이 명중했을 때 목표에게 추가로 ${damageA} 천둥 피해를 주고, 이동했을 때 받는 피해는 ${damageB}로 증가합니다.`)
+      .replace(/Both damage rolls increase by ([^.]+?) at 11th level \(([^)]+)\) and again at 17th level \(([^)]+)\)\./gu, (_, step, values11, values17) => `두 피해 굴림은 11레벨에 각각 ${step}씩 더 증가하고(${values11}), 17레벨에 다시 한 번 증가합니다(${values17}).`)
+      .replace(/The target hit by the strike takes an extra ([^.]+?) Radiant damage from the attack, and the target has the Blinded condition until the spell ends\./gu, (_, damage) => `이 타격에 명중한 대상은 공격으로부터 추가 ${damage} 광휘 피해를 받고, 주문이 끝날 때까지 &Reference[condition=blinded]{실명} 상태가 됩니다.`)
+      .replace(/At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success\./gu, "대상은 자신의 각 턴이 끝날 때마다 건강 내성 굴림을 하며, 성공하면 자신에게 걸린 이 주문을 끝냅니다.")
+      .replace(/The creature disappears when it drops to 0 Hit Points or when the spell ends\./gu, "그 크리처는 HP가 0이 되거나 주문이 끝나면 사라집니다.")
+      .replace(/The creature is an ally to you and your companions\./gu, "그 크리처는 당신과 당신의 동료들에게 우호적입니다.")
+      .replace(/In combat, the creature shares your Initiative count, but it takes its turn immediately after yours\./gu, "전투 중 그 크리처는 당신과 같은 우선권을 공유하지만, 당신의 직후에 자신의 턴을 가집니다.")
+      .replace(/If you don[’']t issue any, it takes the Dodge action and uses its move to avoid danger\./gu, "당신이 아무 명령도 내리지 않으면, 그 크리처는 회피 행동을 하고 위험을 피하기 위해 이동을 사용합니다.")
+      .replace(/Use the spell slot[’']s level for the spell[’']s level in the stat block\./gu, "능력치 블록에 적힌 주문 레벨은 사용한 주문 슬롯의 레벨을 사용합니다.")
       .replace(/The damage is of the same type dealt by the original attack\./gu, "이 피해 유형은 원래 공격이 준 피해와 같습니다.")
       .replace(/The target drops whatever it is holding and then ends its turn\./gu, "대상은 들고 있는 것을 떨어뜨리고 그 턴을 끝냅니다.")
       .replace(/The target spends its turn moving away from you by the fastest available means\./gu, "대상은 가능한 가장 빠른 수단으로 당신에게서 멀어지는 데 자신의 턴을 사용합니다.")
@@ -2011,17 +2200,98 @@ export class TranslationStore {
       .replace(/The clear red liquid has tiny bubbles of light in it\./gu, "맑은 붉은 액체 안에는 작은 빛의 거품이 떠다닙니다.")
       .replace(/You draw the moisture from every creature in a ([0-9-]+-foot cube) centered on a point you choose within range\./gu, (_, area) => `사거리 내 당신이 선택한 한 지점을 중심으로 한 ${area} 범위 안의 모든 크리처로부터 수분을 빨아들입니다.`)
       .replace(/Each creature in that area must make a Constitution saving throw\./gu, "그 범위 안의 각 크리처는 건강 내성 굴림을 해야 합니다.")
-      .replace(/Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage\./gu, "구조물과 언데드는 영향을 받지 않으며, 식물과 물의 정령은 이 내성 굴림에 불리점을 받습니다.")
-      .replace(/A creature takes ([^.]+?) damage on a failed save, or half as much damage on a successful one\./gu, (_, damage) => `실패한 크리처는 ${damage} 피해를 받고, 성공한 크리처는 그 절반만 받습니다.`);
+      .replace(/Constructs and undead aren[’']t affected, and plants and water elementals make this saving throw with disadvantage\./gu, "구조물과 언데드는 영향을 받지 않으며, 식물과 물의 정령은 이 내성 굴림에 불리점을 받습니다.")
+      .replace(/Nonmagical plants in the area that aren[’']t creatures, such as trees and shrubs, wither and die instantly\./gu, "그 범위 안의 비마법 식물(나무와 관목 등) 중 생물이 아닌 것은 즉시 시들어 죽습니다.")
+      .replace(/A creature takes ([^.]+?) damage on a failed save, or half as much damage on a successful one\./gu, (_, damage) => `실패한 크리처는 ${damage} 피해를 받고, 성공한 크리처는 그 절반만 받습니다.`)
+      .replace(/When you create the aura and at the start of each of your turns while it persists, you can restore ([^.]+?) Hit Points to (?:one creature|크리처 하나) in it\./gu, (_, amount) => `오라를 처음 만들 때와 그 오라가 지속되는 동안 당신의 각 턴 시작마다, 그 안에 있는 크리처 하나의 HP를 ${amount}만큼 회복시킬 수 있습니다.`)
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, the extra damage increases by ([^.]+?) for each slot level above ([0-9]+)(?:st|nd|rd|th)\./gu, (_, slotLevel, amount, baseLevel) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, 추가 피해가 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${amount}씩 증가합니다.`)
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, the damage increases by ([^.]+?) for each slot level above ([0-9]+)(?:st|nd|rd|th)\./gu, (_, slotLevel, amount, baseLevel) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, 피해가 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${amount}씩 증가합니다.`)
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, you can target one additional creature for each slot level above ([0-9]+)(?:st|nd|rd|th)\./gu, (_, slotLevel, baseLevel) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, ${baseLevel}레벨을 넘는 슬롯 레벨마다 대상 크리처를 하나 더 지정할 수 있습니다.`)
+      .replace(/The creatures must be within ([0-9]+) feet of each other when you target them\./gu, (_, distance) => `그 크리처들은 대상을 지정할 때 서로 ${distance}피트 이내에 있어야 합니다.`)
+      .replace(/The Temporary Hit Points and the ([A-Za-z]+) damage both increase by ([0-9]+) for each spell slot level above ([0-9]+)\./gu, (_, type, amount, baseLevel) => `임시 HP와 ${damageTypeToKo(type, { linked: true })} 피해는 모두 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${amount}씩 증가합니다.`)
+      .replace(/The billowing flames of a dragon blast from your feet, granting you explosive speed\./gu, "용의 불꽃이 당신의 발밑에서 폭발하듯 솟구치며 폭발적인 속도를 부여합니다.")
+      .replace(/For the duration, your speed increases by ([0-9]+) feet and moving doesn[’']t provoke opportunity attacks\./gu, (_, distance) => `지속시간 동안 당신의 속도는 ${distance}피트 증가하며, 이동해도 기회공격을 유발하지 않습니다.`)
+      .replace(/When you move within 5 feet of a creature or an object that isn[’']t being worn or carried, it takes ([^.]+?) fire damage from your trail of heat\./gu, (_, amount) => `당신이 크리처나 착용하거나 들고 있지 않은 물체의 5피트 이내로 이동하면, 그 대상은 당신이 남긴 열기의 자취로 ${amount} 화염 피해를 받습니다.`)
+      .replace(/A creature or object can take this damage only once during a turn\./gu, "한 크리처나 물체는 한 턴 동안 이 피해를 한 번만 받을 수 있습니다.")
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, increase your speed by ([0-9]+) feet for each spell slot level above ([0-9]+)(?:st|nd|rd|th)\. The spell deals an additional ([^.]+?) ([A-Za-z]+) damage for each slot level above ([0-9]+)(?:st|nd|rd|th)\./gu, (_, slotLevel, speed, baseLevel, amount, type, damageBase) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, ${baseLevel}레벨을 넘는 슬롯 레벨마다 속도가 ${speed}피트씩 증가합니다. 또한 주문은 ${damageBase}레벨을 넘는 슬롯 레벨마다 추가로 ${amount} ${damageTypeToKo(type, { linked: true })} 피해를 줍니다.`)
+      .replace(/You awaken the sense of mortality in (?:one creature|크리처 하나) you can see within range\./gu, "사거리 내에서 당신이 볼 수 있는 크리처 하나에게 죽음의 감각을 일깨웁니다.")
+      .replace(/A construct or an undead is immune to this effect\./gu, "구조물과 언데드는 이 효과에 면역입니다.")
+      .replace(/대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 become frightened of you until the spell ends\./gu, "대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 주문이 끝날 때까지 당신을 두려워하게 됩니다.")
+      .replace(/The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success\./gu, "두려움에 빠진 대상은 자신의 각 턴 종료 시마다 내성 굴림을 다시 할 수 있으며, 성공하면 자신에게 걸린 효과를 끝냅니다.")
+      .replace(/You hurl an undulating, warbling mass of chaotic energy at (?:one creature|크리처 하나) in range\./gu, "사정거리 내의 크리처 하나를 향해 요동치며 울려 퍼지는 혼돈의 에너지 덩어리를 던집니다.")
+      .replace(/명중 시, 대상은 ([^.]+?) damage를 받습니다\./gu, (_, amount) => `명중 시, 대상은 ${amount} 피해를 받습니다.`)
+      .replace(/Choose one of the d8s\. The number rolled on that die determines the attack[’']s damage type, as shown below\./gu, "d8 중 하나를 선택합니다. 그 주사위에 나온 숫자가 아래 표에 따라 공격의 피해 유형을 결정합니다.")
+      .replace(/If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within ([0-9]+) feet of it\./gu, (_, distance) => `두 d8에서 같은 숫자가 나오면, 혼돈의 에너지는 대상에게서 ${distance}피트 이내에 있는 다른 크리처 하나에게 도약합니다.`)
+      .replace(/Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again\./gu, "새 대상에게 새로운 공격 굴림을 하고 새 피해 굴림을 합니다. 그 결과 혼돈의 에너지가 다시 도약할 수도 있습니다.")
+      .replace(/A creature can be targeted only once by each casting of this spell\./gu, "한 크리처는 이 주문 한 번의 시전마다 한 번만 대상이 될 수 있습니다.")
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, each target takes ([^.]+?) extra damage of the type rolled for each slot level above ([0-9]+)(?:st|nd|rd|th)\./gu, (_, slotLevel, amount, baseLevel) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, 각 대상은 ${baseLevel}레벨을 넘는 슬롯 레벨마다 굴린 피해 유형의 추가 ${amount} 피해를 받습니다.`)
+      .replace(/When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid\. Target (?:one creature|크리처 하나) or object you can see within ([0-9]+) feet of yourself\. The target must succeed on a Dexterity saving throw \(DC 8 plus your Dexterity modifier and Proficiency Bonus\) or take\s*(__FVTT_TOKEN_\d+__) (?:damage|피해)\./gu, (_, distance, damage) => `공격 행동을 할 때 공격 하나를 산성 병을 던지는 것으로 대체할 수 있습니다. 자신으로부터 ${distance}피트 이내에서 볼 수 있는 크리처 하나 또는 물체 하나를 대상으로 삼습니다. 대상은 DC 8 + 당신의 민첩 수정치 + 숙련 보너스의 민첩 내성 굴림에 성공해야 하며, 실패하면 ${damage} 피해를 받습니다.`)
+      .replace(/When you take damage of the chosen type, you can use your reaction to gain immunity against that instance of the damage, and you regain a number of hit points equal to half the damage you would have taken\./gu, "선택한 피해 유형의 피해를 받을 때 반응을 사용해 그 한 번의 피해에 면역이 될 수 있으며, 원래 받았을 피해의 절반만큼 HP를 회복합니다.")
+      .replace(/While wearing this armor, you have resistance to ([A-Za-z]+) 피해\./gu, (_, type) => `이 갑옷을 착용하고 있는 동안 ${damageTypeToKo(type, { linked: true })} 피해에 저항을 가집니다.`)
+      .replace(/While cursed, you have vulnerability to ([A-Za-z]+) and ([A-Za-z]+) 피해\./gu, (_, typeA, typeB) => `저주받은 동안 ${damageTypeToKo(typeA, { linked: true })} 피해와 ${damageTypeToKo(typeB, { linked: true })} 피해에 취약해집니다.`)
+      .replace(/명중 시, 대상은\s*(__FVTT_TOKEN_\d+__) damage at the start of each of its turns를 받습니다\./gu, (_, damage) => `명중 시, 대상은 자신의 각 턴 시작마다 ${damage} 피해를 받습니다.`)
+      .replace(/<strong>Curse\.<\/strong>/gu, "<strong>저주.</strong>")
+      .replace(/<strong>identify<\/strong>/gu, "<strong>식별<\/strong>")
+      .replace(/\bDamage Threshold\b/gu, "피해 한계")
+      .replace(/\bCrew\b/gu, "승무원")
+      .replace(/\bPassengers\b/gu, "승객")
+      .replace(/\bCargo\b/gu, "적재량")
+      .replace(/\bTemporary Hit Points\b/gu, "임시 HP")
+      .replace(/\bBonus Action\b/gu, "추가 행동")
+      .replace(/\bDisadvantage\b/gu, "불리점")
+      .replace(/\bAdvantage\b/gu, "이점")
+      .replace(/\bImmunity to\b/gu, "면역:")
+      .replace(/\bImmunities\b/gu, "면역")
+      .replace(/\bResistance to\b/gu, "저항:")
+      .replace(/\bVulnerability to\b/gu, "취약:")
+      .replace(/\bThe spell ends early if you have no Temporary Hit Points\./gu, "당신에게 임시 HP가 남아 있지 않으면 주문은 일찍 끝납니다.")
+      .replace(/\bThe spell ends early if you have no 임시 HP\./gu, "당신에게 임시 HP가 남아 있지 않으면 주문은 일찍 끝납니다.")
+      .replace(/Protective magical frost surrounds you\./gu, "보호하는 마법의 서리가 당신을 둘러쌉니다.")
+      .replace(/You gain ([0-9]+) Temporary Hit Points\./gu, (_, amount) => `당신은 임시 HP ${amount}를 얻습니다.`)
+      .replace(/You gain ([0-9]+) 임시 HP\./gu, (_, amount) => `당신은 임시 HP ${amount}를 얻습니다.`)
+      .replace(/If a creature hits you with a melee attack roll before the spell ends, the creature takes ([0-9]+) ([A-Za-z]+) 피해\./gu, (_, amount, type) => `주문이 끝나기 전에 어떤 크리처가 근접 공격 굴림으로 당신을 명중시키면, 그 크리처는 ${amount} ${damageTypeToKo(type, { linked: true })} 피해를 받습니다.`)
+      .replace(/If a creature hits you with a melee attack roll before the spell ends, the creature takes ([^.]+?) 피해\./gu, (_, effect) => `주문이 끝나기 전에 어떤 크리처가 근접 공격 굴림으로 당신을 명중시키면, 그 크리처는 ${effect} 피해를 받습니다.`)
+      .replace(/The 임시 HP and the ([A-Za-z]+) 피해 both increase by ([0-9]+) for each spell slot level above ([0-9]+)\./gu, (_, type, amount, baseLevel) => `임시 HP와 ${damageTypeToKo(type, { linked: true })} 피해는 모두 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${amount}씩 증가합니다.`)
+      .replace(/The 임시 HP and the ([^.]+?) 피해 both increase by ([0-9]+) for each spell slot level above ([0-9]+)\./gu, (_, effect, amount, baseLevel) => `임시 HP와 ${effect} 피해는 모두 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${amount}씩 증가합니다.`)
+      .replace(/You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range\./gu, "사거리 내에서 당신이 볼 수 있는 비어 있는 공간에 반짝이는 마법 에너지로 이루어진 대형 손 하나를 만들어 냅니다.")
+      .replace(/The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand\./gu, "그 손은 지속시간 동안 남아 있으며, 당신의 명령에 따라 움직이고 당신 손의 움직임을 흉내 냅니다.")
+      .replace(/The hand is an object that has AC 20 and Hit Points equal to your Hit Point maximum\./gu, "그 손은 AC 20과 당신의 최대 HP와 같은 HP를 가진 물체입니다.")
+      .replace(/If it drops to 0 Hit Points, the spell ends\./gu, "그 손의 HP가 0이 되면 주문은 끝납니다.")
+      .replace(/The hand doesn[’']t occupy its space\./gu, "그 손은 자신의 공간을 점유하지 않습니다.")
+      .replace(/When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to ([0-9]+) feet and then cause one of the following effects:\./gu, (_, distance) => `주문을 시전할 때와 이후 당신의 턴에 추가 행동으로, 그 손을 최대 ${distance}피트까지 이동시킨 뒤 다음 효과 중 하나를 일으킬 수 있습니다.`)
+      .replace(/When you cast the spell and as a 추가 행동 on your later turns, you can move the hand up to ([0-9]+) feet and then cause one of the following effects:\./gu, (_, distance) => `주문을 시전할 때와 이후 당신의 턴에 추가 행동으로, 그 손을 최대 ${distance}피트까지 이동시킨 뒤 다음 효과 중 하나를 일으킬 수 있습니다.`)
+      .replace(/Make a ranged spell attack against the target\./gu, "대상을 상대로 원거리 주문 공격을 합니다.")
+      .replace(/The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it\./gu, "그 손은 그 손의 공간에서 시작되거나 그 공간을 통과하는 공격 및 다른 효과에 대해 당신에게 반엄폐를 제공합니다.")
+      .replace(/In addition, its space counts as Difficult Terrain for your enemies\./gu, "또한 그 손이 차지한 공간은 적에게 험난한 지형으로 간주됩니다.")
+      .replace(/The damage of the Clenched Fist increases by ([^.]+?) and the damage of the Grasping Hand increases by ([^.]+?) for each spell slot level above ([0-9]+)\./gu, (_, fist, grasp, baseLevel) => `Clenched Fist의 피해는 ${baseLevel}레벨을 넘는 슬롯 레벨마다 ${fist}씩 증가하고, Grasping Hand의 피해는 ${grasp}씩 증가합니다.`)
+      .replace(/Each creature in the line must make a Dexterity saving throw\./gu, "선 안에 있는 각 크리처는 민첩 내성 굴림을 해야 합니다.")
+      .replace(/A line of roaring flame ([0-9]+) feet long and ([0-9]+) feet wide emanates from you in a direction you choose\./gu, (_, length, width) => `당신이 선택한 방향으로 길이 ${length}피트, 너비 ${width}피트의 포효하는 화염선이 당신에게서 뻗어 나갑니다.`)
+      .replace(/You call forth a bestial spirit\./gu, "야수의 정령을 불러냅니다.")
+      .replace(/This corporeal form uses the Bestial Spirit stat block\./gu, "이 실체화된 형상은 Bestial Spirit 능력치 블록을 사용합니다.")
+      .replace(/When you cast the spell, choose an environment: Air, Land, or Water\./gu, "주문을 시전할 때 환경 하나를 선택합니다: 공중, 육지, 물.")
+      .replace(/The creature resembles an animal of your choice that is native to the chosen environment, which determines certain traits in its stat block\./gu, "그 크리처는 선택한 환경에 서식하는 동물 하나를 닮으며, 그 선택이 능력치 블록의 일부 특성을 결정합니다.")
+      .replace(/You call forth an aberrant spirit\./gu, "변이체의 정령을 불러냅니다.")
+      .replace(/In combat, it shares your Initiative count, but it takes its turn immediately after yours\./gu, "전투 중에는 당신과 같은 이니셔티브 값을 사용하지만, 당신의 턴 직후에 자기 턴을 가집니다.")
+      .replace(/If you don[’']t issue any, it takes the Dodge action and uses its movement to avoid danger\./gu, "당신이 아무 명령도 내리지 않으면 회피 행동을 취하고, 위험을 피하는 데 이동을 사용합니다.")
+      .replace(/It manifests in an unoccupied space that you can see within range and uses the <strong>Aberrant Spirit<\/strong> stat block\./gu, "사거리 내에서 당신이 볼 수 있는 비어 있는 공간에 나타나며 <strong>Aberrant Spirit</strong> 능력치 블록을 사용합니다.")
+      .replace(/When you cast the spell, choose Beholderkin, Mind Flayer, or Slaad\./gu, "주문을 시전할 때 Beholderkin, Mind Flayer, 또는 Slaad 중 하나를 선택합니다.")
+      .replace(/The creature resembles an Aberration of that kind, which determines certain details in its stat block\./gu, "그 크리처는 선택한 종류의 변이체를 닮으며, 그 선택이 능력치 블록의 일부 세부 사항을 결정합니다.")
+      .replace(/The creature is an ally to you and your allies\./gu, "그 크리처는 당신과 당신의 동료들에게 우호적입니다.")
+      .replace(/When you cast this spell using a spell slot of ([0-9]+)(?:st|nd|rd|th) level or higher, use the higher level wherever the spell[’']s level appears in the stat block\./gu, (_, slotLevel) => `이 주문을 ${slotLevel}레벨 이상의 주문 슬롯으로 시전하면, 능력치 블록에서 주문 레벨이 언급되는 모든 곳에 더 높은 레벨을 사용합니다.`)
+      .replace(/Use the spell slot’s level for the spell’s level in the stat block\./gu, "능력치 블록에서 주문 레벨이 언급되는 부분에는 사용한 주문 슬롯의 레벨을 사용합니다.")
+      .replace(/Use the higher level wherever the spell[’']s level appears in the stat block\./gu, "능력치 블록에 주문 레벨이 적힌 곳마다 더 높은 레벨을 사용합니다.");
 
     const normalizedOutput = normalizeText(output);
-    const translatedLabel = plainLabelToKo(normalizedOutput);
+    const exactDamageType = damageTypeToKo(normalizedOutput, { linked: true });
+    const translatedLabel = exactDamageType !== normalizedOutput
+      ? exactDamageType
+      : plainLabelToKo(normalizedOutput);
     const restored = this._restoreFoundryInlineSyntax(
       translatedLabel !== normalizedOutput ? translatedLabel : output,
       tokens
     );
 
-    return restored;
+    return restored.replace(/&amp;Reference\[/gu, "&Reference[");
   }
 
   _getSharedItemTranslation(item) {

@@ -23,7 +23,14 @@ const main = async () => {
   try {
     const page = context.pages()[0] ?? await context.newPage();
     await page.goto(GAME_URL, { waitUntil: "domcontentloaded", timeout: 120000 });
-    await page.waitForTimeout(5000);
+    try {
+      await page.waitForFunction(
+        () => typeof game !== "undefined" && !!game.user?.name && !!globalThis.dnd5eKoHybrid?.exportTemplates,
+        { timeout: 60000 }
+      );
+    } catch {
+      await page.waitForTimeout(5000);
+    }
 
     const loginState = await page.evaluate(() => {
       const hasGame = typeof game !== "undefined";
@@ -34,7 +41,9 @@ const main = async () => {
         hasGame,
         worldTitle: hasGame ? game.world?.title ?? null : null,
         userName: hasGame ? game.user?.name ?? null : null,
+        moduleVersion: hasGame ? game.modules.get("dnd5e-ko-hybrid")?.version ?? null : null,
         moduleActive: hasGame ? game.modules.get("dnd5e-ko-hybrid")?.active ?? null : null,
+        hasApi: hasGame ? !!game.modules.get("dnd5e-ko-hybrid")?.api : false,
         apiReady: hasGame ? typeof globalThis.dnd5eKoHybrid?.exportTemplates === "function" : false
       };
     });

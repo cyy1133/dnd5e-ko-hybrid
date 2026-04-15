@@ -1,0 +1,12 @@
+{
+  "label": "가구",
+  "entries": {
+    "양초": {
+      "items": {
+        "양초 Candle": {
+          "name": "양초 - Candle"
+        }
+      }
+    }
+  }
+}

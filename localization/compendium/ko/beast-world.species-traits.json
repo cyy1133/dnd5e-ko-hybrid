@@ -1,24 +1,5 @@
 {
   "label": "Species Traits",
-  "folders": {
-    "Equine": "Equine",
-    "Bat": "Bat",
-    "Kobold": "Kobold",
-    "Ovine": "Ovine",
-    "Canine": "Canine",
-    "Ursine": "Ursine",
-    "Tenebrine": "Tenebrine",
-    "Murine": "Murine",
-    "Ligonine": "Ligonine",
-    "Cervine": "Cervine",
-    "Celerine": "Celerine",
-    "Jackal": "Jackal",
-    "Laetine": "Laetine",
-    "Bovine": "Bovine",
-    "Feline": "Feline",
-    "Dragon": "Dragon",
-    "Vulpine": "Vulpine"
-  },
   "entries": {
     "A Head for Knots": {
       "name": "매듭에 밝은 머리 - A Head for Knots"
@@ -180,6 +161,9 @@
     },
     "Slow and Steady": {
       "name": "Slow 및 - Steady"
+    },
+    "Soil Sense": {
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">Moles close off their sense of sight to temporarily gain a new way of perceiving the world. You can use a bonus action to gain tremorsense out to a range of 15 feet for the next 1 minute. While using this ability you lose the ability to see by conventional means, and also lose the benefit of darkvision. Once you use this ability, you can’t use it again until you finish a short or long rest.</span><br class=\"Apple-interchange-newline\"></p>"
     },
     "Stackable Intellect": {
       "description": "<p>You gain a bonus to ability checks based on the number of kobolds within 60 feet of you. The bonus is determined by the Kobold Stacking table below.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"2\"><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Kobold Stacking</span></strong></span></p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>Number of Kobolds</p></td><td style=\"width:36.2906%;text-align:center\"><p>Ability Check Bonus</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>2</p></td><td style=\"width:36.2906%;text-align:center\"><p>+1</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>4</p></td><td style=\"width:36.2906%;text-align:center\"><p>+2</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>8</p></td><td style=\"width:36.2906%;text-align:center\"><p>+3</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>16</p></td><td style=\"width:36.2906%;text-align:center\"><p>+4</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>32+</p></td><td style=\"width:36.2906%;text-align:center\"><p>+5</p></td></tr></tbody></table>"

@@ -1,11 +1,5 @@
 {
   "label": "Lock & Key",
-  "folders": {
-    "Player": "Player",
-    "Various": "Various",
-    "Examples": "Examples",
-    "GM": "GM"
-  },
   "entries": {
     "Update Lock & Key world formulas": {
       "name": "Update 잠금 & - Key world formulas"

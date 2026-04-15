@@ -1,9 +1,21 @@
 import fs from "fs/promises";
 import path from "path";
+import "./node-dom-shim.mjs";
 import { TranslationStore, nameToKo } from "./translation-store.js";
 
 const ROOT = path.resolve("A:/TRPG/Compendium Translator");
 const COMPENDIUM_DIR = path.join(ROOT, "localization/compendium/ko");
+const SHARED_ITEMS_PATH = path.join(ROOT, "localization/world/ko/shared-items.json");
+
+const normalizeText = (value = "") =>
+  String(value ?? "")
+    .replace(/\r\n?/gu, "\n")
+    .replace(/\u00a0/gu, " ")
+    .replace(/\s+/gu, " ")
+    .trim();
+
+const signatureFor = ({ type = "", name = "", content = "" } = {}) =>
+  `${normalizeText(type)}::${normalizeText(name)}::${normalizeText(content)}`;
 
 const stripMarkup = (value = "") =>
   String(value)
@@ -56,6 +68,14 @@ const formatBilingualName = (originalName, translatedName) => {
   return `${translated} - ${source}`;
 };
 
+const translationScore = (value = "", originalValue = "") => {
+  const visible = stripMarkup(value);
+  const korean = (visible.match(/\p{Script=Hangul}/gu) ?? []).length;
+  const english = (visible.match(/[A-Za-z]/gu) ?? []).length;
+  const unchanged = normalizeText(value) === normalizeText(originalValue);
+  return (korean * 3) - english - (unchanged ? 200 : 0);
+};
+
 const GENERIC_PAGE_NAME_TRANSLATIONS = {
   Image: "이미지",
   Text: "텍스트",
@@ -104,6 +124,16 @@ const readJsonIfExists = async (filePath) => {
   }
 };
 
+const loadSharedItemTranslations = async () => {
+  const data = await readJsonIfExists(SHARED_ITEMS_PATH);
+  const map = new Map();
+  for (const entry of data?.entries ?? []) {
+    if (!entry?.signature) continue;
+    map.set(normalizeText(entry.signature), entry);
+  }
+  return map;
+};
+
 const writeJson = async (filePath, data) => {
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 };
@@ -149,6 +179,13 @@ const findCompendiumActorEntry = (compendium, originalName) => {
     ?? null;
 };
 
+const findSharedItemEntry = (sharedItems, type, originalName, originalBody) =>
+  sharedItems.get(normalizeText(signatureFor({
+    type,
+    name: originalName,
+    content: originalBody
+  }))) ?? null;
+
 const translateName = (originalName, type, compendiumEntry) => {
   if (!originalName) return "";
   if (splitBilingualName(originalName)) {
@@ -163,20 +200,34 @@ const translateName = (originalName, type, compendiumEntry) => {
 };
 
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
-  if (!originalBody || hasKorean(stripMarkup(originalBody))) return "";
+  if (!originalBody) return "";
+  const visibleOriginal = stripMarkup(originalBody);
+  if (hasKorean(visibleOriginal) && !hasEnglish(visibleOriginal)) return "";
+
+  const candidates = [];
 
   if ((mode === "items" || mode === "actorItems" || mode === "actors") && compendiumEntry?.description) {
-    return compendiumEntry.description;
+    candidates.push(compendiumEntry.description);
+  }
+
+  if (mode === "journalPages" && compendiumEntry?.text) {
+    candidates.push(compendiumEntry.text);
   }
 
   const generated = store._translateGeneratedDescription(originalBody);
-  if (generated !== originalBody) return generated;
+  if (generated !== originalBody) candidates.push(generated);
 
-  if (mode === "journalPages" && compendiumEntry?.text) {
-    return compendiumEntry.text;
+  let best = "";
+  let bestScore = translationScore("", originalBody);
+  for (const candidate of candidates) {
+    const score = translationScore(candidate, originalBody);
+    if (score > bestScore) {
+      best = candidate;
+      bestScore = score;
+    }
   }
 
-  return "";
+  return best;
 };
 
 const shouldReplaceText = (currentValue, candidateValue, originalValue = "") => {
@@ -186,17 +237,7 @@ const shouldReplaceText = (currentValue, candidateValue, originalValue = "") => 
 
   if (!candidate || candidate === original) return false;
   if (!current) return true;
-
-  const currentHasKorean = hasKorean(current);
-  const candidateHasKorean = hasKorean(candidate);
-  const currentEnglishOnly = hasEnglish(current) && !currentHasKorean;
-  const candidateEnglishOnly = hasEnglish(candidate) && !candidateHasKorean;
-
-  if (candidateHasKorean && !currentHasKorean) return true;
-  if (candidateHasKorean && currentEnglishOnly) return true;
-  if (candidateHasKorean && currentHasKorean && hasEnglish(current) && !candidateEnglishOnly) return true;
-
-  return false;
+  return translationScore(candidate, original) > translationScore(current, original);
 };
 
 const shouldReplaceName = (currentValue, candidateValue, originalValue = "") => {
@@ -221,6 +262,40 @@ const hasAnyTranslation = (entry) => {
   return false;
 };
 
+const stabilizeRecord = (store, record, templateRecord = null) => {
+  if (!record) return record;
+
+  if (record.description) {
+    const originalDescription = templateRecord?.originalDescription ?? "";
+    const candidate = store._translateGeneratedDescription(record.description);
+    if (shouldReplaceText(record.description, candidate, originalDescription)) {
+      record.description = candidate;
+    }
+  }
+
+  if (record.text) {
+    const originalText = templateRecord?.originalText ?? "";
+    const candidate = store._translateGeneratedDescription(record.text);
+    if (shouldReplaceText(record.text, candidate, originalText)) {
+      record.text = candidate;
+    }
+  }
+
+  if (record.items) {
+    for (const [itemName, itemRecord] of Object.entries(record.items)) {
+      stabilizeRecord(store, itemRecord, templateRecord?.items?.[itemName] ?? null);
+    }
+  }
+
+  if (record.pages) {
+    for (const [pageName, pageRecord] of Object.entries(record.pages)) {
+      stabilizeRecord(store, pageRecord, templateRecord?.pages?.[pageName] ?? null);
+    }
+  }
+
+  return record;
+};
+
 const buildPackSkeleton = (packTemplate, existingPack = null) => ({
   label: existingPack?.label ?? packTemplate.label ?? "",
   ...(packTemplate.folders ? { folders: existingPack?.folders ?? packTemplate.folders } : {}),
@@ -239,11 +314,12 @@ const normalizeEntry = (record = {}) => {
 
 const main = async () => {
   const templatePath = await findLatestTemplatePath();
-  const [template, compendium, store] = await Promise.all([
+  const [template, compendium, sharedItems] = await Promise.all([
     readJson(templatePath),
     loadCompendiumByCollection(),
-    Promise.resolve(new TranslationStore())
+    loadSharedItemTranslations()
   ]);
+  const store = new TranslationStore();
 
   const externalPacks = template.compendiums?.entries ?? {};
   if (!Object.keys(externalPacks).length) {
@@ -275,7 +351,14 @@ const main = async () => {
       switch (packTemplate.documentName) {
         case "Item": {
           const compendiumEntry = findCompendiumEntry(compendium, templateEntry.type, templateEntry.originalName);
-          const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumEntry);
+          const sharedEntry = findSharedItemEntry(
+            sharedItems,
+            templateEntry.type,
+            templateEntry.originalName,
+            templateEntry.originalDescription
+          );
+          const translationEntry = sharedEntry ? { ...(compendiumEntry ?? {}), ...sharedEntry } : compendiumEntry;
+          const translatedName = translateName(templateEntry.originalName, templateEntry.type, translationEntry);
           if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             itemNames += 1;
@@ -285,11 +368,22 @@ const main = async () => {
             store,
             templateEntry.originalDescription,
             templateEntry.type,
-            compendiumEntry,
+            translationEntry,
             "items"
           );
           if (shouldReplaceText(existingEntry.description, translatedDescription, templateEntry.originalDescription)) {
             existingEntry.description = translatedDescription;
+            itemBodies += 1;
+          }
+          const stabilizedDescription = maybeBodyTranslation(
+            store,
+            existingEntry.description,
+            templateEntry.type,
+            translationEntry,
+            "items"
+          );
+          if (shouldReplaceText(existingEntry.description, stabilizedDescription, templateEntry.originalDescription)) {
+            existingEntry.description = stabilizedDescription;
             itemBodies += 1;
           }
           break;
@@ -313,12 +407,30 @@ const main = async () => {
             existingEntry.description = translatedDescription;
             actorBodies += 1;
           }
+          const stabilizedDescription = maybeBodyTranslation(
+            store,
+            existingEntry.description,
+            templateEntry.type,
+            compendiumActor,
+            "actors"
+          );
+          if (shouldReplaceText(existingEntry.description, stabilizedDescription, templateEntry.originalDescription)) {
+            existingEntry.description = stabilizedDescription;
+            actorBodies += 1;
+          }
 
           existingEntry.items = existingEntry.items ?? {};
           for (const [itemName, itemTemplate] of Object.entries(templateEntry.items ?? {})) {
             const existingItem = existingEntry.items[itemName] ?? {};
             const compendiumEntry = findCompendiumEntry(compendium, itemTemplate.type, itemTemplate.originalName);
-            const translatedItemName = translateName(itemTemplate.originalName, itemTemplate.type, compendiumEntry);
+            const sharedEntry = findSharedItemEntry(
+              sharedItems,
+              itemTemplate.type,
+              itemTemplate.originalName,
+              itemTemplate.originalDescription
+            );
+            const translationEntry = sharedEntry ? { ...(compendiumEntry ?? {}), ...sharedEntry } : compendiumEntry;
+            const translatedItemName = translateName(itemTemplate.originalName, itemTemplate.type, translationEntry);
             if (shouldReplaceName(existingItem.name, translatedItemName, itemTemplate.originalName)) {
               existingItem.name = translatedItemName;
               actorItemNames += 1;
@@ -328,11 +440,22 @@ const main = async () => {
               store,
               itemTemplate.originalDescription,
               itemTemplate.type,
-              compendiumEntry,
+              translationEntry,
               "actorItems"
             );
             if (shouldReplaceText(existingItem.description, translatedDescription, itemTemplate.originalDescription)) {
               existingItem.description = translatedDescription;
+              actorItemBodies += 1;
+            }
+            const stabilizedDescription = maybeBodyTranslation(
+              store,
+              existingItem.description,
+              itemTemplate.type,
+              translationEntry,
+              "actorItems"
+            );
+            if (shouldReplaceText(existingItem.description, stabilizedDescription, itemTemplate.originalDescription)) {
+              existingItem.description = stabilizedDescription;
               actorItemBodies += 1;
             }
 
@@ -373,6 +496,17 @@ const main = async () => {
               existingPage.text = translatedText;
               journalBodies += 1;
             }
+            const stabilizedText = maybeBodyTranslation(
+              store,
+              existingPage.text,
+              pageTemplate.type,
+              null,
+              "journalPages"
+            );
+            if (shouldReplaceText(existingPage.text, stabilizedText, pageTemplate.originalText)) {
+              existingPage.text = stabilizedText;
+              journalBodies += 1;
+            }
 
             if (hasAnyTranslation(existingPage)) {
               existingEntry.pages[pageName] = normalizeEntry(existingPage);
@@ -394,7 +528,7 @@ const main = async () => {
       }
 
       if (hasAnyTranslation(existingEntry)) {
-        packJson.entries[entryName] = normalizeEntry(existingEntry);
+        packJson.entries[entryName] = normalizeEntry(stabilizeRecord(store, existingEntry, templateEntry));
         entries += 1;
       }
     }

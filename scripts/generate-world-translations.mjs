@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import "./node-dom-shim.mjs";
 import { TranslationStore, nameToKo } from "./translation-store.js";
 
 const ROOT = path.resolve("A:/TRPG/Compendium Translator");
@@ -213,7 +214,9 @@ const repairBrokenName = (currentName, currentBody, originalName, type, compendi
 };
 
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
-  if (!originalBody || hasKorean(stripMarkup(originalBody))) return "";
+  if (!originalBody) return "";
+  const visibleOriginal = stripMarkup(originalBody);
+  if (hasKorean(visibleOriginal) && !hasEnglish(visibleOriginal)) return "";
 
   if ((mode === "items" || mode === "actorItems" || mode === "actors") && compendiumEntry?.description) {
     return compendiumEntry.description;

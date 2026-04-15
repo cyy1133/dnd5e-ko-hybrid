@@ -1,14 +1,5 @@
 {
   "label": "(TA)Example Macros",
-  "folders": {
-    "Other": "Other",
-    "Follow": "Follow",
-    "Mounting": "Mounting",
-    "Template": "Template",
-    "Animation": "Animation",
-    "Migration": "Migration",
-    "Clean up": "Clean up"
-  },
   "entries": {
     "(TA)Create Template and attach to Token": {
       "name": "(TA)Create Template 및 - attach to Token"
