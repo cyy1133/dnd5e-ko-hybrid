@@ -437,6 +437,45 @@ const COMMON_NAME_TRANSLATIONS = {
   "Steam Engine": "증기 엔진",
   "Dimension Door": "차원문",
   "Flame Strike": "화염 강타",
+  "Aura of Vitality": "활력의 오라",
+  "Bones of the Earth": "대지의 뼈",
+  "Burnt Othur Fumes": "불탄 오투르 증기",
+  "Cast-Off Armor, Chain Shirt": "탈착 갑옷, 체인 셔츠",
+  "Cast-Off Armor, Leather": "탈착 갑옷, 가죽",
+  "Coin of Decisionry": "결정의 동전",
+  "Create Bonfire": "모닥불 창조",
+  "Crusader's Mantle": "성전사의 망토",
+  "Distort Value": "가치 왜곡",
+  "Elixir of Health": "건강의 영약",
+  "Find Greater Steed": "상급 군마 찾기",
+  "Flame Tongue Pike": "화염의 혀 파이크",
+  "Illusory Dragon": "환영의 드래곤",
+  "Ice Knife": "얼음 나이프",
+  "Investiture of Stone": "돌의 현신",
+  "Jim's Glowing Coin": "짐의 빛나는 동전",
+  "Loadstone": "자철석",
+  "Longship": "롱십",
+  "Mordenkainen's Sword": "모르덴카이넨의 검",
+  "Musket": "머스킷",
+  "Moon-Touched Sword, Glaive": "달빛 물든 검, 글레이브",
+  "Power Word Fortify": "권능어 강화",
+  "Quiver of Ehlonna": "엘론나의 화살통",
+  "Rary's Telepathic Bond": "레어리의 텔레파시 결속",
+  "Ray of Sickness": "질병의 광선",
+  "Spyglass of Clairvoyance": "투시의 망원경",
+  "Summon Celestial": "천계 존재 소환",
+  "Summon Undead": "언데드 소환",
+  "Thunderclap": "천둥손뼉",
+  "Tsunami": "해일",
+  "Wrath of Nature": "자연의 분노",
+  "Crossbow Bolts, +2": "+2 크로스보우 볼트",
+  "Armor of Cold Resistance, Padded": "냉기 저항 패디드 갑옷",
+  "Armor of Force Resistance, Padded": "역장 저항 패디드 갑옷",
+  "Armor of Necrotic Resistance, Breastplate": "사령 저항 브레스트플레이트 갑옷",
+  "Armor of Psychic Resistance, Chain Mail": "정신 저항 체인 메일 갑옷",
+  "Armor of Radiant Resistance, Splint": "광휘 저항 스플린트 갑옷",
+  "Armor of Thunder Resistance, Breastplate": "천둥 저항 브레스트플레이트 갑옷",
+  "Half Plate Armor of Vulnerability (Slashing)": "참격 취약성 하프 플레이트 갑옷",
   "Blood Drinker Vampire": "피를 마시는 뱀파이어",
   "Ink Cloud": "먹물 구름",
   "Keen Hearing and Sight": "예리한 청각과 시야",
@@ -587,6 +626,7 @@ const formatBilingualName = (sourceName, translatedName) => {
   const translated = normalizeText(translatedName);
   const sourceBilingual = splitBilingualName(source);
   const translatedBilingual = splitBilingualName(translated);
+  const translatedHasKorean = hasKoreanText(translated);
 
   if (!source || !translated) return translated;
   if (sourceBilingual) {
@@ -603,7 +643,9 @@ const formatBilingualName = (sourceName, translatedName) => {
     const head = translated.slice(0, -source.length).replace(/\s*-\s*$/u, "").trim();
     if (head) return `${head} - ${source}`;
   }
-  if (/[A-Za-z]/u.test(translated)) return source;
+  if (/[A-Za-z]/u.test(translated)) {
+    return translatedHasKorean ? `${translated} - ${source}` : source;
+  }
 
   return `${translated} - ${source}`;
 };
@@ -885,7 +927,13 @@ const autoTranslateName = (value) => {
     .replace(/\bArms\b/gu, "무장")
     .replace(/\bAudience\b/gu, "관객")
     .replace(/\bAura\b/gu, "오라")
+    .replace(/\bAutomatic\b/gu, "자동")
+    .replace(/\bAbsorbing\b/gu, "흡수")
     .replace(/\bBlade\b/gu, "칼날")
+    .replace(/\bBones\b/gu, "뼈")
+    .replace(/\bBolt\b/gu, "볼트")
+    .replace(/\bBullets\b/gu, "탄환")
+    .replace(/\bBarrage\b/gu, "탄막")
     .replace(/\bBlood\b/gu, "피")
     .replace(/\bBond\b/gu, "결속")
     .replace(/\bBody\b/gu, "몸체")
@@ -899,83 +947,152 @@ const autoTranslateName = (value) => {
     .replace(/\bChest\b/gu, "상자")
     .replace(/\bChime\b/gu, "차임")
     .replace(/\bClaw\b/gu, "발톱")
+    .replace(/\bCelestial\b/gu, "천계")
+    .replace(/\bChain\b/gu, "체인")
+    .replace(/\bCold\b/gu, "냉기")
     .replace(/\bCloud\b/gu, "구름")
     .replace(/\bClose\b/gu, "아슬한")
+    .replace(/\bConjure\b/gu, "소환")
     .replace(/\bContract\b/gu, "계약")
     .replace(/\bCounter\b/gu, "역추")
     .replace(/\bCourage\b/gu, "용기")
     .replace(/\bCrate\b/gu, "상자")
+    .replace(/\bCreate\b/gu, "창조")
+    .replace(/\bCrusader'?s\b/gu, "성전사의")
+    .replace(/\bDance\b/gu, "춤")
     .replace(/\bCuriosity\b/gu, "호기심")
     .replace(/\bDaydream\b/gu, "백일몽")
     .replace(/\bDeath\b/gu, "죽음")
+    .replace(/\bDistort\b/gu, "왜곡")
     .replace(/\bDream\b/gu, "꿈")
     .replace(/\bDoor\b/gu, "문")
     .replace(/\bDrop\b/gu, "낙하")
+    .replace(/\bEarth\b/gu, "대지")
+    .replace(/\bElemental\b/gu, "원소")
     .replace(/\bEvening\b/gu, "저녁")
+    .replace(/\bEssence\b/gu, "정수")
     .replace(/\bEye\b/gu, "눈")
+    .replace(/\bFeather\b/gu, "깃털")
     .replace(/\bFeet\b/gu, "발")
     .replace(/\bFire\b/gu, "불")
+    .replace(/\bForce\b/gu, "역장")
     .replace(/\bFootlocker\b/gu, "풋락커")
     .replace(/\bFocus\b/gu, "집중")
+    .replace(/\bFortify\b/gu, "강화")
+    .replace(/\bFortress\b/gu, "요새")
     .replace(/\bFriendship\b/gu, "우정")
     .replace(/\bFriend\b/gu, "친구")
     .replace(/\bGarden\b/gu, "정원")
+    .replace(/\bGate\b/gu, "관문")
+    .replace(/\bGleaming\b/gu, "광채")
+    .replace(/\bGreater\b/gu, "상급")
     .replace(/\bGrace\b/gu, "은총")
     .replace(/\bGuard\b/gu, "수호")
+    .replace(/\bHail\b/gu, "우박")
     .replace(/\bHarvest\b/gu, "수확")
     .replace(/\bHeart\b/gu, "심장")
     .replace(/\bHidden\b/gu, "숨겨진")
     .replace(/\bHook\b/gu, "갈고리")
+    .replace(/\bHunger\b/gu, "굶주림")
     .replace(/\bHunter\b/gu, "사냥꾼")
+    .replace(/\bIce\b/gu, "얼음")
+    .replace(/\bIllusory\b/gu, "환영의")
     .replace(/\bInterior\b/gu, "내부")
+    .replace(/\bInvestiture\b/gu, "현신")
     .replace(/\bJump\b/gu, "도약")
     .replace(/\bKid\b/gu, "아이")
+    .replace(/\bKnife\b/gu, "나이프")
     .replace(/\bLamp\b/gu, "램프")
     .replace(/\bLadder\b/gu, "사다리")
+    .replace(/\bLaser\b/gu, "레이저")
+    .replace(/\bLeather\b/gu, "가죽")
     .replace(/\bLife\b/gu, "생명")
     .replace(/\bLightning\b/gu, "번개")
     .replace(/\bLock\b/gu, "잠금")
     .replace(/\bLoft\b/gu, "다락")
     .replace(/\bLuck\b/gu, "행운")
     .replace(/\bMagic\b/gu, "마법")
+    .replace(/\bMail\b/gu, "메일")
+    .replace(/\bMantle\b/gu, "망토")
+    .replace(/\bMansion\b/gu, "대저택")
     .replace(/\bMemory\b/gu, "기억")
     .replace(/\bMercy\b/gu, "자비")
     .replace(/\bMind\b/gu, "정신")
     .replace(/\bMoon\b/gu, "달")
+    .replace(/\bMoon\b/gu, "달")
+    .replace(/\bMusket\b/gu, "머스킷")
     .replace(/\bNight\b/gu, "밤")
+    .replace(/\bNature\b/gu, "자연")
+    .replace(/\bNecrotic\b/gu, "사령")
     .replace(/\bOrb\b/gu, "구체")
+    .replace(/\bPadded\b/gu, "패디드")
+    .replace(/\bPiercing\b/gu, "관통")
+    .replace(/\bPlate\b/gu, "플레이트")
+    .replace(/\bPotion\b/gu, "물약")
     .replace(/\bPoison\b/gu, "독")
+    .replace(/\bPower\b/gu, "권능")
     .replace(/\bPrivacy\b/gu, "사생활")
+    .replace(/\bPrivate\b/gu, "개인의")
+    .replace(/\bPsychic\b/gu, "정신")
+    .replace(/\bRadiant\b/gu, "광휘")
+    .replace(/\bRay\b/gu, "광선")
+    .replace(/\bResistance\b/gu, "저항")
     .replace(/\bResolve\b/gu, "결의")
+    .replace(/\bRevolver\b/gu, "리볼버")
+    .replace(/\bRifle\b/gu, "라이플")
+    .replace(/\bSanctum\b/gu, "성소")
     .replace(/\bSchool\b/gu, "학파")
+    .replace(/\bScroll\b/gu, "두루마리")
     .replace(/\bShadow\b/gu, "그림자")
+    .replace(/\bShard\b/gu, "파편")
+    .replace(/\bShirt\b/gu, "셔츠")
     .replace(/\bShelf\b/gu, "선반")
     .replace(/\bSilence\b/gu, "침묵")
+    .replace(/\bSickness\b/gu, "질병")
     .replace(/\bSnow\b/gu, "눈")
     .replace(/\bSolar\b/gu, "태양")
     .replace(/\bSoul\b/gu, "영혼")
     .replace(/\bSpell\b/gu, "주문")
+    .replace(/\bSplint\b/gu, "스플린트")
     .replace(/\bSpirit\b/gu, "영혼")
     .replace(/\bStar\b/gu, "별")
     .replace(/\bStone\b/gu, "돌")
+    .replace(/\bStrike\b/gu, "강타")
+    .replace(/\bStudded\b/gu, "스터디드")
+    .replace(/\bSummon\b/gu, "소환")
     .replace(/\bStorm\b/gu, "폭풍")
     .replace(/\bStrike\b/gu, "강타")
     .replace(/\bSun\b/gu, "태양")
     .replace(/\bSword\b/gu, "검")
     .replace(/\bTable\b/gu, "테이블")
+    .replace(/\bTattoo\b/gu, "문신")
     .replace(/\bTank\b/gu, "탱크")
     .replace(/\bTail\b/gu, "꼬리")
+    .replace(/\bTelepathic\b/gu, "텔레파시")
+    .replace(/\bThorns\b/gu, "가시")
+    .replace(/\bThunder\b/gu, "천둥")
+    .replace(/\bThunderous\b/gu, "천둥의")
     .replace(/\bThoughts\b/gu, "생각")
     .replace(/\bThrower\b/gu, "발사기")
     .replace(/\bTouch\b/gu, "손길")
     .replace(/\bTrail\b/gu, "궤적")
     .replace(/\bTruth\b/gu, "진실")
+    .replace(/\bTsunami\b/gu, "해일")
+    .replace(/\bUndead\b/gu, "언데드")
+    .replace(/\bValue\b/gu, "가치")
+    .replace(/\bVicious\b/gu, "잔혹한")
+    .replace(/\bVitality\b/gu, "활력")
+    .replace(/\bVulnerability\b/gu, "취약성")
     .replace(/\bWindow\b/gu, "창문")
     .replace(/\bViolence\b/gu, "폭력")
     .replace(/\bVision\b/gu, "시야")
+    .replace(/\bWall\b/gu, "벽")
+    .replace(/\bWard\b/gu, "수호막")
     .replace(/\bWheels\b/gu, "바퀴")
     .replace(/\bWings\b/gu, "날개")
     .replace(/\bWinter\b/gu, "겨울")
+    .replace(/\bWind\b/gu, "바람")
+    .replace(/\bWord\b/gu, "언어")
     .replace(/\bof the\b/gu, "의")
     .replace(/\bof\b/gu, "의")
     .replace(/\band\b/gu, "및")
@@ -1093,27 +1210,22 @@ export class TranslationStore {
   getItemTranslation(item) {
     if (!item) return null;
     const sourceName = this._getPreferredItemSourceName(item);
+    const fallbackCandidates = this._getItemTranslationFallbacks(item, { includePackEntry: !!item.pack });
 
     if (item.parent instanceof Actor) {
       return this._mergeTranslations(
         this._withFormattedName(sourceName, this.world.actorItems.get(item.uuid)),
-        this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
-        this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
-        this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
-        this._getGeneratedItemTranslation(item)
+        ...fallbackCandidates
       );
     }
 
     if (item.pack) {
-      return this._withFormattedName(sourceName, this._getCompendiumEntry(item.pack, item.name));
+      return this._mergeTranslations(...fallbackCandidates);
     }
 
     return this._mergeTranslations(
       this._withFormattedName(sourceName, this.world.items.get(item.uuid)),
-      this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
-      this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
-      this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
-      this._getGeneratedItemTranslation(item)
+      ...fallbackCandidates
     );
   }
 
@@ -1847,6 +1959,24 @@ export class TranslationStore {
     return null;
   }
 
+  _getItemTranslationFallbacks(item, { includePackEntry = false } = {}) {
+    const sourceName = this._getPreferredItemSourceName(item);
+    const fallbacks = [];
+
+    if (includePackEntry && item?.pack) {
+      fallbacks.push(this._withFormattedName(sourceName, this._getCompendiumEntry(item.pack, item.name)));
+    }
+
+    fallbacks.push(
+      this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
+      this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
+      this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
+      this._getGeneratedItemTranslation(item)
+    );
+
+    return fallbacks;
+  }
+
   _getCompendiumSignatureFallback(item) {
     for (const key of this._getItemLookupSignatures(item)) {
       const translation = this.compendiumSignatureIndex.get(key);
@@ -1962,6 +2092,7 @@ export class TranslationStore {
       if (!pack) continue;
 
       data.entries ??= {};
+      this._indexCompendiumDataFallback(collection, data);
       const translatedPackLabel = plainLabelToKo(this.compendiumPackLabels.get(collection) ?? pack.metadata?.label ?? pack.title ?? collection);
       if (translatedPackLabel) {
         this.compendiumPackLabels.set(collection, translatedPackLabel);
@@ -1991,7 +2122,10 @@ export class TranslationStore {
           const entry = data.entries?.[document.name] ?? {};
 
           if (document.documentName === "Item") {
-            const translation = this._mergeCompendiumEntry(entry, this._getGeneratedItemTranslation(document), {
+            const generatedFallback = this._mergeTranslations(
+              ...this._getItemTranslationFallbacks(document)
+            );
+            const translation = this._mergeCompendiumEntry(entry, generatedFallback, {
               name: document.name,
               description: this._extractItemDescription(document)
             });
@@ -2025,7 +2159,10 @@ export class TranslationStore {
             data.entries[document.name].items ??= {};
             for (const item of document.items ?? []) {
               const itemEntry = data.entries[document.name].items?.[item.name] ?? {};
-              const itemTranslation = this._mergeCompendiumEntry(itemEntry, this._getGeneratedItemTranslation(item), {
+              const generatedFallback = this._mergeTranslations(
+                ...this._getItemTranslationFallbacks(item)
+              );
+              const itemTranslation = this._mergeCompendiumEntry(itemEntry, generatedFallback, {
                 name: item.name,
                 description: this._extractItemDescription(item)
               });
