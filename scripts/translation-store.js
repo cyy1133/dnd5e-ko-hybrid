@@ -468,8 +468,10 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Augmented Physicality": "강화된 신체 능력",
   "Augmented Physicality.": "강화된 신체 능력.",
   "Barterers of Lore.": "지식의 교환자들.",
+  "Class & Subclass Features": "클래스 및 서브클래스 특성",
   "Class Features": "클래스 특성",
   "Classes & Class Features": "클래스 및 클래스 특성",
+  "Classes": "클래스",
   "Cat's Talents.": "고양이의 재능.",
   "Changeling Instincts.": "체인질링의 본능.",
   "Changeling Names.": "체인질링 이름.",
@@ -482,6 +484,7 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Enemy:": "적:",
   "Force Field": "역장",
   "Force Field.": "역장.",
+  "Feats": "특성",
   "Fleeting Fancies.": "덧없는 변덕.",
   "Gender": "성별",
   "Gender:": "성별:",
@@ -493,6 +496,9 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Instant Death and Mutations": "즉사와 돌연변이",
   "Item": "아이템",
   "Items": "아이템",
+  "Races": "종족",
+  "Spells": "주문",
+  "Supernatural Gifts and Rewards": "초자연적 축복과 보상",
   "Keen Senses.": "예리한 감각.",
   "Languages": "언어",
   "Languages.": "언어.",
@@ -1117,26 +1123,27 @@ export class TranslationStore {
 
   getItemTranslation(item) {
     if (!item) return null;
+    const sourceName = this._getPreferredItemSourceName(item);
 
     if (item.parent instanceof Actor) {
       return this._mergeTranslations(
-        this._withFormattedName(item.name, this.world.actorItems.get(item.uuid)),
-        this._withFormattedName(item.name, this._getSharedItemTranslation(item)),
-        this._withFormattedName(item.name, this._getCompendiumSignatureFallback(item)),
-        this._withFormattedName(item.name, this._getCompendiumNameFallback(item)),
+        this._withFormattedName(sourceName, this.world.actorItems.get(item.uuid)),
+        this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
+        this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
+        this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
         this._getGeneratedItemTranslation(item)
       );
     }
 
     if (item.pack) {
-      return this._withFormattedName(item.name, this._getCompendiumEntry(item.pack, item.name));
+      return this._withFormattedName(sourceName, this._getCompendiumEntry(item.pack, item.name));
     }
 
     return this._mergeTranslations(
-      this._withFormattedName(item.name, this.world.items.get(item.uuid)),
-      this._withFormattedName(item.name, this._getSharedItemTranslation(item)),
-      this._withFormattedName(item.name, this._getCompendiumSignatureFallback(item)),
-      this._withFormattedName(item.name, this._getCompendiumNameFallback(item)),
+      this._withFormattedName(sourceName, this.world.items.get(item.uuid)),
+      this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
+      this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
+      this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
       this._getGeneratedItemTranslation(item)
     );
   }
@@ -1522,6 +1529,48 @@ export class TranslationStore {
       ?? "";
   }
 
+  _getPreferredItemSourceName(item) {
+    return this._getItemLookupNames(item)[0] ?? item?.name ?? "";
+  }
+
+  _getItemLookupNames(item) {
+    const names = [];
+    const pushName = (value) => {
+      const normalized = normalizeText(value);
+      if (!normalized || names.includes(normalized)) return;
+      names.push(normalized);
+    };
+
+    pushName(item?.flags?.ddbimporter?.originalName);
+    pushName(item?.flags?.ddbimporter?.definition?.name);
+    pushName(item?.flags?.ddbimporter?.dndbeyond?.originalName);
+    pushName(splitBilingualName(item?.name)?.source);
+    pushName(item?.name);
+
+    return names;
+  }
+
+  _getItemLookupSignatures(item) {
+    const signatures = [];
+    const descriptions = [
+      this._extractItemDescription(item),
+      item?.system?.description?.value ?? ""
+    ].map((value) => normalizeText(value)).filter(Boolean);
+
+    for (const name of this._getItemLookupNames(item)) {
+      for (const content of descriptions.length ? descriptions : [""]) {
+        const key = signatureFor({
+          type: item?.type,
+          name,
+          content
+        });
+        if (!signatures.includes(key)) signatures.push(key);
+      }
+    }
+
+    return signatures;
+  }
+
   _extractCompendiumFolderLabels(pack) {
     const folders = pack?.folders?.contents ?? pack?.folders ?? [];
     const labels = {};
@@ -1822,33 +1871,36 @@ export class TranslationStore {
   }
 
   _getSharedItemTranslation(item) {
-    const key = signatureFor({
-      type: item?.type,
-      name: item?.name,
-      content: item?.system?.description?.value ?? ""
-    });
-    return this.sharedItems.get(key) ?? null;
+    for (const key of this._getItemLookupSignatures(item)) {
+      const translation = this.sharedItems.get(key);
+      if (translation) return translation;
+    }
+    return null;
   }
 
   _getCompendiumSignatureFallback(item) {
-    const key = signatureFor({
-      type: item?.type,
-      name: item?.name,
-      content: item?.system?.description?.value ?? ""
-    });
-    return this.compendiumSignatureIndex.get(key) ?? null;
+    for (const key of this._getItemLookupSignatures(item)) {
+      const translation = this.compendiumSignatureIndex.get(key);
+      if (translation) return translation;
+    }
+    return null;
   }
 
   _getCompendiumNameFallback(item) {
     if (!item?.name || !NAME_FALLBACK_TYPES.has(item.type)) return null;
-    const key = normalizeText(item.name).toLowerCase();
-    const candidates = this.compendiumNameIndex.get(key) ?? [];
     const preferredCollections = this._preferredCollectionsForType(item.type);
-    for (const collection of preferredCollections) {
-      const match = candidates.find((candidate) => candidate.collection === collection);
-      if (match?.translation) return match.translation;
+
+    for (const name of this._getItemLookupNames(item)) {
+      const key = normalizeText(name).toLowerCase();
+      const candidates = this.compendiumNameIndex.get(key) ?? [];
+      for (const collection of preferredCollections) {
+        const match = candidates.find((candidate) => candidate.collection === collection);
+        if (match?.translation) return match.translation;
+      }
+      if (candidates[0]?.translation) return candidates[0].translation;
     }
-    return candidates[0]?.translation ?? null;
+
+    return null;
   }
 
   _getCompendiumActorFallback(actor) {

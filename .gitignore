@@ -7,4 +7,5 @@ desktop.ini
 
 node_modules/
 tmp/
+.playwright-mcp/
 dnd5e-ko-hybrid-template-*.json

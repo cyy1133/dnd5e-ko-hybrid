@@ -317,6 +317,8 @@ Hooks.once("ready", async () => {
 
     await store.load();
     overlay.activate();
+    overlay.rerenderOpenApplications();
+    setTimeout(() => overlay?.rerenderOpenApplications?.(), 1500);
     api.loadError = null;
   } catch (error) {
     api.loadError = error;
