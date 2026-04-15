@@ -1957,90 +1957,106 @@ export class TranslationStore {
         this.compendiumFolderLabels.set(collection, folderLabels);
       }
 
-      const documents = await pack.getDocuments();
+      let documents = [];
+      let documentsLoaded = false;
+      try {
+        documents = await pack.getDocuments();
+        documentsLoaded = true;
+      } catch (error) {
+        console.warn(`${MODULE_ID} | Failed to index compendium documents for ${collection}`, error);
+        this._indexCompendiumDataFallback(collection, data);
+      }
 
-      for (const document of documents) {
-        const entry = data.entries?.[document.name] ?? {};
+      if (documentsLoaded) {
+        for (const document of documents) {
+          const entry = data.entries?.[document.name] ?? {};
 
-        if (document.documentName === "Item") {
-          const translation = this._mergeCompendiumEntry(entry, this._getGeneratedItemTranslation(document), {
-            name: document.name,
-            description: this._extractItemDescription(document)
-          });
-          if (translation) data.entries[document.name] = translation;
-
-          const content = document.system?.description?.value ?? "";
-          const key = signatureFor({
-            type: document.type,
-            name: document.name,
-            content
-          });
-          if (translation) {
-            this.compendiumSignatureIndex.set(key, translation);
-            if (translation.name) {
-              this._addCompendiumNameCandidate(collection, document.name, translation);
-            }
-          }
-        }
-
-        if (document.documentName === "Actor") {
-          const translation = this._mergeCompendiumEntry(entry, this._getGeneratedActorTranslation(document), {
-            name: document.name,
-            description: this._extractActorDescription(document)
-          });
-          data.entries[document.name] = translation ?? entry ?? {};
-          if (data.entries[document.name]?.name) {
-            this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), data.entries[document.name]);
-            this._addCompendiumNameCandidate(collection, document.name, data.entries[document.name]);
-          }
-
-          data.entries[document.name].items ??= {};
-          for (const item of document.items ?? []) {
-            const itemEntry = data.entries[document.name].items?.[item.name] ?? {};
-            const itemTranslation = this._mergeCompendiumEntry(itemEntry, this._getGeneratedItemTranslation(item), {
-              name: item.name,
-              description: this._extractItemDescription(item)
+          if (document.documentName === "Item") {
+            const translation = this._mergeCompendiumEntry(entry, this._getGeneratedItemTranslation(document), {
+              name: document.name,
+              description: this._extractItemDescription(document)
             });
-            if (!itemTranslation) continue;
-            data.entries[document.name].items[item.name] = itemTranslation;
+            if (translation) data.entries[document.name] = translation;
 
-            const content = this._extractItemDescription(item);
+            const content = document.system?.description?.value ?? "";
             const key = signatureFor({
-              type: item.type,
-              name: item.name,
+              type: document.type,
+              name: document.name,
               content
             });
-
-            this.compendiumSignatureIndex.set(key, itemTranslation);
-            this._addCompendiumNameCandidate(collection, item.name, itemTranslation);
-            if (itemTranslation.name) {
-              this.compendiumDocLabels.set(item.uuid, itemTranslation.name);
+            if (translation) {
+              this.compendiumSignatureIndex.set(key, translation);
+              if (translation.name) {
+                this._addCompendiumNameCandidate(collection, document.name, translation);
+              }
             }
           }
-        }
 
-        if (document.documentName === "JournalEntry") {
-          const translation = data.entries?.[document.name] ?? {};
-          translation.pages ??= {};
-          for (const page of document.pages ?? []) {
-            const pageEntry = translation.pages?.[page.name] ?? {};
-            const pageTranslation = this._mergeCompendiumEntry(pageEntry, this._getGeneratedPageTranslation(page), {
-              name: page.name,
-              text: page.text?.content ?? ""
+          if (document.documentName === "Actor") {
+            const translation = this._mergeCompendiumEntry(entry, this._getGeneratedActorTranslation(document), {
+              name: document.name,
+              description: this._extractActorDescription(document)
             });
-            if (!pageTranslation) continue;
-            translation.pages[page.name] = pageTranslation;
-            if (pageTranslation.name) {
-              this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+            data.entries[document.name] = translation ?? entry ?? {};
+            if (data.entries[document.name]?.name) {
+              this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), data.entries[document.name]);
+              this._addCompendiumNameCandidate(collection, document.name, data.entries[document.name]);
+            }
+
+            data.entries[document.name].items ??= {};
+            for (const item of document.items ?? []) {
+              const itemEntry = data.entries[document.name].items?.[item.name] ?? {};
+              const itemTranslation = this._mergeCompendiumEntry(itemEntry, this._getGeneratedItemTranslation(item), {
+                name: item.name,
+                description: this._extractItemDescription(item)
+              });
+              if (!itemTranslation) continue;
+              data.entries[document.name].items[item.name] = itemTranslation;
+
+              const content = this._extractItemDescription(item);
+              const key = signatureFor({
+                type: item.type,
+                name: item.name,
+                content
+              });
+
+              this.compendiumSignatureIndex.set(key, itemTranslation);
+              this._addCompendiumNameCandidate(collection, item.name, itemTranslation);
+              if (itemTranslation.name) {
+                this.compendiumDocLabels.set(item.uuid, itemTranslation.name);
+              }
             }
           }
-          if (Object.keys(translation.pages).length) {
-            data.entries[document.name] = translation;
+
+          if (document.documentName === "JournalEntry") {
+            const translation = data.entries?.[document.name] ?? {};
+            translation.pages ??= {};
+            for (const page of document.pages ?? []) {
+              const pageEntry = translation.pages?.[page.name] ?? {};
+              const pageTranslation = this._mergeCompendiumEntry(pageEntry, this._getGeneratedPageTranslation(page), {
+                name: page.name,
+                text: page.text?.content ?? ""
+              });
+              if (!pageTranslation) continue;
+              translation.pages[page.name] = pageTranslation;
+              if (pageTranslation.name) {
+                this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+              }
+            }
+            if (Object.keys(translation.pages).length) {
+              data.entries[document.name] = translation;
+            }
           }
         }
       }
 
-      const index = await pack.getIndex();
+      let index = [];
+      try {
+        index = await pack.getIndex();
+      } catch (error) {
+        console.warn(`${MODULE_ID} | Failed to index compendium index for ${collection}`, error);
+      }
+
       for (const entry of index.values()) {
         const translation = data.entries?.[entry.name];
         if (!translation?.name) continue;
@@ -2055,7 +2071,13 @@ export class TranslationStore {
         const match = index.find((entry) => entry.name === entryName);
         if (!match) continue;
 
-        const document = await pack.getDocument(match._id);
+        let document = null;
+        try {
+          document = await pack.getDocument(match._id);
+        } catch (error) {
+          console.warn(`${MODULE_ID} | Failed to index compendium journal ${collection}:${match._id}`, error);
+          continue;
+        }
         if (!document?.pages) continue;
 
         for (const page of document.pages) {
@@ -2063,6 +2085,21 @@ export class TranslationStore {
           if (!pageTranslation?.name) continue;
           this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
         }
+      }
+    }
+  }
+
+  _indexCompendiumDataFallback(collection, data) {
+    for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
+      if (translation?.name) {
+        if (data.documentName === "Actor") {
+          this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
+        }
+        this._addCompendiumNameCandidate(collection, entryName, translation);
+      }
+      for (const [itemName, itemTranslation] of Object.entries(translation?.items ?? {})) {
+        if (!itemTranslation) continue;
+        this._addCompendiumNameCandidate(collection, itemName, itemTranslation);
       }
     }
   }
