@@ -1,6 +1,6 @@
 {
   "name": "dnd5e-ko-hybrid",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "type": "module",
   "dependencies": {
     "playwright-core": "^1.59.1"

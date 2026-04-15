@@ -15,71 +15,155 @@
   },
   "entries": {
     "Arcane Eye": {
-      "name": "Arcane 눈"
+      "name": "비전의 눈 - Arcane Eye"
     },
     "Arcane Hand (Blue)": {
+      "name": "비전 손 (파랑) - Arcane Hand (Blue)",
       "items": {
         "Clenched Fist": {
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. On a hit, the target takes 4d8 force 피해.</p>"
+          "name": "쥔 주먹 - Clenched Fist",
+          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force damage를 받습니다.</p>"
+        },
+        "Forceful Hand": {
+          "name": "강권의 손 - Forceful Hand"
+        },
+        "Grasping Hand": {
+          "name": "붙잡는 손 - Grasping Hand"
         },
         "Interposing Hand": {
+          "name": "가로막는 손 - Interposing Hand",
           "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
         }
       }
     },
     "Arcane Hand (Green)": {
+      "name": "비전 손 (초록) - Arcane Hand (Green)",
       "items": {
         "Clenched Fist": {
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. On a hit, the target takes 4d8 force 피해.</p>"
+          "name": "쥔 주먹 - Clenched Fist",
+          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force damage를 받습니다.</p>"
+        },
+        "Forceful Hand": {
+          "name": "강권의 손 - Forceful Hand"
+        },
+        "Grasping Hand": {
+          "name": "붙잡는 손 - Grasping Hand"
         },
         "Interposing Hand": {
+          "name": "가로막는 손 - Interposing Hand",
           "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
         }
       }
     },
     "Arcane Hand (Purple)": {
+      "name": "비전 손 (보라) - Arcane Hand (Purple)",
       "items": {
         "Clenched Fist": {
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. On a hit, the target takes 4d8 force 피해.</p>"
+          "name": "쥔 주먹 - Clenched Fist",
+          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force damage를 받습니다.</p>"
+        },
+        "Forceful Hand": {
+          "name": "강권의 손 - Forceful Hand"
+        },
+        "Grasping Hand": {
+          "name": "붙잡는 손 - Grasping Hand"
         },
         "Interposing Hand": {
+          "name": "가로막는 손 - Interposing Hand",
           "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
         }
       }
     },
     "Arcane Hand (Red)": {
+      "name": "비전 손 (빨강) - Arcane Hand (Red)",
       "items": {
         "Clenched Fist": {
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. On a hit, the target takes 4d8 force 피해.</p>"
+          "name": "쥔 주먹 - Clenched Fist",
+          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force damage를 받습니다.</p>"
+        },
+        "Forceful Hand": {
+          "name": "강권의 손 - Forceful Hand"
+        },
+        "Grasping Hand": {
+          "name": "붙잡는 손 - Grasping Hand"
         },
         "Interposing Hand": {
+          "name": "가로막는 손 - Interposing Hand",
           "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
         }
       }
     },
     "Arcane Sword (Spectral Green)": {
-      "name": "Arcane 검 (Spectral Green)",
+      "name": "Arcane 검 (Spectral - Green)",
       "items": {
         "Attack": {
-          "name": "공격 Attack"
+          "name": "공격 - Attack"
         }
       }
     },
+    "Dancing Lights (Blue Teal)": {
+      "name": "춤추는 불빛 (청록/파랑) - Dancing Lights (Blue Teal)"
+    },
+    "Dancing Lights (Blue Yellow)": {
+      "name": "춤추는 불빛 (파랑/노랑) - Dancing Lights (Blue Yellow)"
+    },
+    "Dancing Lights (Green)": {
+      "name": "춤추는 불빛 (초록) - Dancing Lights (Green)"
+    },
+    "Dancing Lights (Pink)": {
+      "name": "춤추는 불빛 (분홍) - Dancing Lights (Pink)"
+    },
+    "Dancing Lights (Purple Green)": {
+      "name": "춤추는 불빛 (보라/초록) - Dancing Lights (Purple Green)"
+    },
+    "Dancing Lights (Red)": {
+      "name": "춤추는 불빛 (빨강) - Dancing Lights (Red)"
+    },
+    "Dancing Lights (Yellow)": {
+      "name": "춤추는 불빛 (노랑) - Dancing Lights (Yellow)"
+    },
     "Hound of Ill Omen": {
-      "name": "Hound 의 Ill Omen",
+      "name": "Hound 의 - Ill Omen",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<section class=\"secret\">\n<p><em>근접 무기 공격:</em><strong>+5 명중,</strong>, <strong>5 ft.,</strong> 목표 하나. Hit: <strong>10 (2d6 + 3) <em>piercing damage</em></strong>.</p>\n<p>If the target is a creature, it must succeed on a  <strong>DC 13 Strength</strong> saving throw or be knocked prone.</p>\n</section>\n<p>The Dire Wolf attacks with its Bite. If the target is a creature, it must make a <strong>Strength</strong> saving throw or be knocked prone.</p>"
         },
         "Keen Hearing and Smell": {
-          "name": "예리한 청각과 후각 Keen Hearing and Smell"
+          "name": "예리한 청각과 후각 - Keen Hearing and Smell"
         },
         "Pack Tactics": {
-          "name": "무리 전술 Pack Tactics",
+          "name": "무리 전술 - Pack Tactics",
           "description": "<p>[[lookup @name lowercase]] 의 아군이 하나 이상 한 크리처의 주변 <strong>5ft</strong> 이내에 있으며 해당 아군이 행동불능 상태가 아닌 경우, 해당 크리처에 대한 [[lookup @name lowercase]] 의 공격 굴림에는 <strong>유리함</strong>이 적용됩니다.</p>"
         }
       }
+    },
+    "Illusionary Creature": {
+      "name": "환영 생물 - Illusionary Creature"
+    },
+    "Illusionary Object": {
+      "name": "환영 물체 - Illusionary Object"
+    },
+    "Illusionary Sound": {
+      "name": "환영 소리 - Illusionary Sound"
+    },
+    "Invisible Sensor": {
+      "name": "보이지 않는 감지체 - Invisible Sensor"
+    },
+    "Mage Hand (Blue)": {
+      "name": "마법사의 손 (파랑) - Mage Hand (Blue)"
+    },
+    "Mage Hand (Green)": {
+      "name": "마법사의 손 (초록) - Mage Hand (Green)"
+    },
+    "Mage Hand (Purple)": {
+      "name": "마법사의 손 (보라) - Mage Hand (Purple)"
+    },
+    "Mage Hand (Red)": {
+      "name": "마법사의 손 (빨강) - Mage Hand (Red)"
+    },
+    "Unseen Servant": {
+      "name": "보이지 않는 하인 - Unseen Servant"
     }
   }
 }

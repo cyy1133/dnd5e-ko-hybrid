@@ -77,9 +77,9 @@ const describeActors = (actors) => {
     if (!shouldInclude(actor.name, biography)) continue;
     entries[`Actor.${actor._id}`] = {
       name: "",
-      biography: "",
+      description: "",
       originalName: actor.name,
-      originalBiography: biography,
+      originalDescription: biography,
       type: actor.type,
       englishOnly: hasEnglish(`${actor.name} ${biography}`) && !hasKorean(`${actor.name} ${biography}`)
     };

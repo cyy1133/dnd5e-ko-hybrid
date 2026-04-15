@@ -2,19 +2,61 @@
   "label": "DDB Tables",
   "entries": {
     "Background: Acolyte: Bond": {
-      "name": "Background: Acolyte: 결속"
+      "name": "배경: 수행사제: 유대 - Background: Acolyte: Bond"
+    },
+    "Background: Acolyte: Flaw": {
+      "name": "배경: 수행사제: 결점 - Background: Acolyte: Flaw"
+    },
+    "Background: Acolyte: Ideal": {
+      "name": "배경: 수행사제: 이상 - Background: Acolyte: Ideal"
+    },
+    "Background: Acolyte: Personality Trait": {
+      "name": "배경: 수행사제: 성격 특성 - Background: Acolyte: Personality Trait"
+    },
+    "Background: Faction Agent: Acolyte": {
+      "name": "배경: 파벌 요원: 수행사제 - Background: Faction Agent: Acolyte"
     },
     "Background: Faction Agent: Bond": {
-      "name": "Background: Faction Agent: 결속"
+      "name": "배경: 파벌 요원: 유대 - Background: Faction Agent: Bond"
+    },
+    "Background: Faction Agent: Flaw": {
+      "name": "배경: 파벌 요원: 결점 - Background: Faction Agent: Flaw"
+    },
+    "Background: Faction Agent: Ideal": {
+      "name": "배경: 파벌 요원: 이상 - Background: Faction Agent: Ideal"
     },
     "Background: Folk Hero: Bond": {
-      "name": "Background: Folk Hero: 결속"
+      "name": "배경: 민중 영웅: 유대 - Background: Folk Hero: Bond"
+    },
+    "Background: Folk Hero: Defining Event": {
+      "name": "배경: 민중 영웅: 결정적 사건 - Background: Folk Hero: Defining Event"
+    },
+    "Background: Folk Hero: Flaw": {
+      "name": "배경: 민중 영웅: 결점 - Background: Folk Hero: Flaw"
+    },
+    "Background: Folk Hero: Ideal": {
+      "name": "배경: 민중 영웅: 이상 - Background: Folk Hero: Ideal"
+    },
+    "Background: Folk Hero: Personality Trait": {
+      "name": "배경: 민중 영웅: 성격 특성 - Background: Folk Hero: Personality Trait"
     },
     "Background: Hermit: Life of Seclusion": {
-      "name": "Background: Hermit: 생명 의 Seclusion"
+      "name": "배경: Hermit: 생명 의 - Seclusion"
     },
     "Background: Soldier: Bond": {
-      "name": "Background: Soldier: 결속"
+      "name": "배경: 병사: 유대 - Background: Soldier: Bond"
+    },
+    "Background: Soldier: Flaw": {
+      "name": "배경: 병사: 결점 - Background: Soldier: Flaw"
+    },
+    "Background: Soldier: Ideal": {
+      "name": "배경: 병사: 이상 - Background: Soldier: Ideal"
+    },
+    "Background: Soldier: Personality Trait": {
+      "name": "배경: 병사: 성격 특성 - Background: Soldier: Personality Trait"
+    },
+    "Background: Soldier: Specialty": {
+      "name": "배경: 병사: 전문 분야 - Background: Soldier: Specialty"
     }
   }
 }

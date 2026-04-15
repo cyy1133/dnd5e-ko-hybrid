@@ -23,10 +23,10 @@
       }
     },
     "Prone": {
-      "name": "넘어짐 Prone",
+      "name": "넘어짐 - Prone",
       "pages": {
         "Prone": {
-          "name": "넘어짐 Prone"
+          "name": "넘어짐 - Prone"
         }
       }
     }

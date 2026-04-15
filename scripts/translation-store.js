@@ -349,7 +349,110 @@ const COMMON_NAME_TRANSLATIONS = {
   "Vitriolic Sphere": "부식 구체",
   "Watery Sphere": "물 구체",
   "Wrathful Smite (Legacy)": "분노의 강타 (구판)",
-  "Wyvern Poison": "와이번 독"
+  "Wyvern Poison": "와이번 독",
+  "Rapier": "레이피어",
+  "Net": "그물",
+  "Lance": "랜스",
+  "Maul": "마울",
+  "Morningstar": "모닝스타",
+  "Sling": "슬링",
+  "Battleaxe": "배틀액스",
+  "Whip": "채찍",
+  "Handaxe": "손도끼",
+  "Rod": "막대",
+  "Bell": "종",
+  "Blanket": "담요",
+  "Hammer": "망치",
+  "Book": "책",
+  "Glass Bottle": "유리병",
+  "Common Clothes": "평민 복장",
+  "Antitoxin": "해독제",
+  "Censer": "향로",
+  "Vestments": "사제복",
+  "Potion of Healing": "치유의 물약",
+  "Potion of Poison": "독의 물약",
+  "Aid": "원호",
+  "Silence": "침묵",
+  "Find Familiar": "패밀리어 찾기",
+  "Color Spray": "색 분사",
+  "Eldritch Blast": "섬뜩한 방출",
+  "Mage Hand": "마법사의 손",
+  "Spider Climb": "거미 등반",
+  "Water Breathing": "수중 호흡",
+  "Greater Invisibility": "상급 투명화",
+  "Clenched Fist": "쥔 주먹",
+  "Forceful Hand": "강권의 손",
+  "Grasping Hand": "붙잡는 손",
+  "Interposing Hand": "가로막는 손",
+  "Vampire Weaknesses": "뱀파이어 약점",
+  "Echolocation": "반향정위",
+  "Beak": "부리",
+  "Gore": "뿔받기",
+  "Heal": "치유",
+  "Harm": "해악",
+  "Harmed by Running Water": "흐르는 물의 해",
+  "Bound to a Circle": "원에 속박됨",
+  "Fascinated by Oblivion": "망각에 매혹됨",
+  "Parry": "쳐내기",
+  "Keen Hearing": "예리한 청각",
+  "Keen Sight": "예리한 시야",
+  "Standing Leap": "제자리 도약",
+  "Tentacles": "촉수",
+  "Hold Breath": "숨 참기",
+  "Underwater Camouflage": "수중 위장",
+  "Flyby": "스쳐 날기",
+  "Poisonous Snake": "독사",
+  "Mimicry": "흉내내기",
+  "Web Sense": "거미줄 감지",
+  "Web Walker": "거미줄 보행",
+  "Charm": "매혹",
+  "Misty Escape": "안개 탈출",
+  "Unseen Servant": "보이지 않는 하인",
+  "Invisible Sensor": "보이지 않는 감지체",
+  "Illusionary Creature": "환영 생물",
+  "Illusionary Object": "환영 물체",
+  "Illusionary Sound": "환영 소리",
+  "Black Tentacles": "검은 촉수",
+  "Moonbeam": "달빛 기둥",
+  "Grease": "기름",
+  "Spike Growth": "가시 성장",
+  "Insect Plague": "곤충 역병",
+  "Bullseye Lantern": "집광 랜턴",
+  "Hooded Lantern": "후드 랜턴",
+  "Arcane Hand": "비전 손",
+  "None Light": "조명 없음",
+  "Vampire Spawn": "뱀파이어 스폰",
+  "Zombie": "좀비",
+  "Crab": "게",
+  "Frog": "개구리",
+  "Hawk": "매",
+  "Lizard": "도마뱀",
+  "Octopus": "문어",
+  "Owl": "올빼미",
+  "Raven": "큰까마귀",
+  "Spider": "거미",
+  "Weasel": "족제비",
+  "Vampire": "뱀파이어",
+  "Ghoul": "구울",
+  "Steam Engine": "증기 엔진",
+  "Dimension Door": "차원문",
+  "Flame Strike": "화염 강타",
+  "Blood Drinker Vampire": "피를 마시는 뱀파이어",
+  "Ink Cloud": "먹물 구름",
+  "Keen Hearing and Sight": "예리한 청각과 시야",
+  "Blood Frenzy": "피의 광란",
+  "Sea Horse": "해마",
+  "Children of the Night": "밤의 권속",
+  "Arcane Eye": "비전의 눈",
+  "Goggles of Night": "밤의 고글",
+  "Spirit Guardians": "영혼 수호자",
+  "Magic Circle": "마법진",
+  "Incendiary Cloud": "화염성 구름",
+  "Aura of Protection": "보호의 오라",
+  "Folk Hero": "민중 영웅",
+  "Acolyte": "수행사제",
+  "Hooded Lantern Bright": "밝은 후드 랜턴",
+  "Hooded Lantern Dim": "희미한 후드 랜턴"
 };
 
 const STATIC_LABEL_TRANSLATIONS = {
@@ -461,18 +564,42 @@ const subjectToKo = (value) => {
   return SUBJECT_TRANSLATIONS[normalized] ?? normalizeText(value).replace(/^The\s+/u, "");
 };
 
+const splitBilingualName = (value = "") => {
+  const normalized = normalizeText(value);
+  const match = normalized.match(/^(.*?)(?:\s*-\s*|\s+)([A-Za-z][A-Za-z0-9:'(),/+ -]*)$/u);
+  if (!match) return null;
+
+  const translated = normalizeText(match[1]);
+  const source = normalizeText(match[2]);
+  if (!translated || !source || !/[가-힣]/u.test(translated)) return null;
+
+  return { translated, source };
+};
+
 const formatBilingualName = (sourceName, translatedName) => {
   const source = normalizeText(sourceName);
   const translated = normalizeText(translatedName);
+  const sourceBilingual = splitBilingualName(source);
+  const translatedBilingual = splitBilingualName(translated);
 
   if (!source || !translated) return translated;
+  if (sourceBilingual) {
+    return `${translatedBilingual?.translated ?? sourceBilingual.translated} - ${translatedBilingual?.source ?? sourceBilingual.source}`;
+  }
+  if (translatedBilingual) {
+    return translatedBilingual.source === source
+      ? `${translatedBilingual.translated} - ${translatedBilingual.source}`
+      : source;
+  }
   if (!/[A-Za-z]/u.test(source)) return translated;
-  if (/[가-힣]/u.test(source)) return translated;
   if (translated === source) return translated;
-  if (translated.includes(source)) return translated;
-  if (/[A-Za-z]/u.test(translated)) return translated;
+  if (translated.endsWith(source)) {
+    const head = translated.slice(0, -source.length).replace(/\s*-\s*$/u, "").trim();
+    if (head) return `${head} - ${source}`;
+  }
+  if (/[A-Za-z]/u.test(translated)) return source;
 
-  return `${translated} ${source}`;
+  return `${translated} - ${source}`;
 };
 
 const nameToKo = (value) => {
@@ -689,9 +816,57 @@ const NAME_FRAGMENT_TRANSLATIONS = [
   ["Brethren", "형제단"]
 ];
 
+const NAME_SUFFIX_TRANSLATIONS = {
+  "Blue": "파랑",
+  "Green": "초록",
+  "Purple": "보라",
+  "Red": "빨강",
+  "Yellow": "노랑",
+  "Pink": "분홍",
+  "Blue Teal": "청록/파랑",
+  "Blue Yellow": "파랑/노랑",
+  "Purple Green": "보라/초록",
+  "No preset": "프리셋 없음"
+};
+
+const BACKGROUND_LABEL_TRANSLATIONS = {
+  "Defining Event": "결정적 사건",
+  "Personality Trait": "성격 특성",
+  "Ideal": "이상",
+  "Flaw": "결점",
+  "Bond": "유대",
+  "Specialty": "전문 분야"
+};
+
 const autoTranslateName = (value) => {
   let output = normalizeText(value);
   if (!output || hasKoreanText(output) || !/[A-Za-z]/u.test(output)) return output;
+
+  const unidentifiedMatch = output.match(/^Unidentified\s+(.+)$/u);
+  if (unidentifiedMatch) {
+    const translatedTail = nameToKo(unidentifiedMatch[1]);
+    if (translatedTail !== unidentifiedMatch[1]) {
+      return `미식별된 ${translatedTail}`;
+    }
+  }
+
+  const backgroundMatch = output.match(/^Background:\s*([^:]+):\s*(.+)$/u);
+  if (backgroundMatch) {
+    const translatedBackground = nameToKo(backgroundMatch[1]);
+    const translatedLabel = BACKGROUND_LABEL_TRANSLATIONS[backgroundMatch[2]] ?? nameToKo(backgroundMatch[2]);
+    if (translatedBackground !== backgroundMatch[1] || translatedLabel !== backgroundMatch[2]) {
+      return `배경: ${translatedBackground}: ${translatedLabel}`;
+    }
+  }
+
+  const suffixMatch = output.match(/^(.*)\s+\(([^()]+)\)$/u);
+  if (suffixMatch) {
+    const translatedStem = nameToKo(suffixMatch[1]);
+    const translatedSuffix = NAME_SUFFIX_TRANSLATIONS[suffixMatch[2]] ?? nameToKo(suffixMatch[2]);
+    if (translatedStem !== suffixMatch[1] || translatedSuffix !== suffixMatch[2]) {
+      return `${translatedStem} (${translatedSuffix})`;
+    }
+  }
 
   for (const [source, target] of NAME_FRAGMENT_TRANSLATIONS) {
     output = output.replaceAll(source, target);
@@ -800,6 +975,11 @@ const autoTranslateName = (value) => {
     .replace(/\band\b/gu, "및")
     .replace(/\s{2,}/gu, " ")
     .trim();
+
+  const outsideParentheses = output.replace(/\([^)]*\)/gu, "");
+  if (/[A-Za-z]/u.test(outsideParentheses)) {
+    return normalizeText(value);
+  }
 
   return output;
 };
@@ -1094,6 +1274,19 @@ export class TranslationStore {
       return this._hasEnglishText(name) || this._hasEnglishText(description);
     };
 
+    const actors = {};
+    for (const actor of game.actors) {
+      const description = this._extractActorDescription(actor);
+      if (!shouldInclude(actor.name, description)) continue;
+      actors[actor.uuid] = {
+        name: "",
+        description: "",
+        originalName: actor.name,
+        originalDescription: description,
+        type: actor.type
+      };
+    }
+
     const items = {};
     for (const item of game.items) {
       const description = item.system?.description?.value ?? "";
@@ -1151,7 +1344,7 @@ export class TranslationStore {
       },
       actors: {
         label: "Actors",
-        entries: {}
+        entries: actors
       },
       items: {
         label: "World Items",
@@ -1503,13 +1696,23 @@ export class TranslationStore {
       .replace(/<i>Success:<\/i>/gu, "<i>성공:</i>")
       .replace(/On a failed save, /gu, "내성 굴림에 실패하면, ")
       .replace(/On a successful save, /gu, "내성 굴림에 성공하면, ")
+      .replace(/taking ([^.]+?) on a failed save, or half as much damage on a successful one\./gu, (_, effect) => `실패 시 ${effect}를 받고, 성공 시 그 절반의 피해만 받습니다.`)
       .replace(/The target must succeed on a ([A-Za-z]+) saving throw or ([^.]+)\./gu, (_, ability, effect) => `대상은 ${abilityToKo(ability)} 내성 굴림에 성공해야 하며, 실패하면 ${effect}.`)
       .replace(/The target must make a ([A-Za-z]+) saving throw/gu, (_, ability) => `대상은 ${abilityToKo(ability)} 내성 굴림을 해야 합니다`)
+      .replace(/If the target succeeds on its saving throw, ([^.]+)\./gu, (_, effect) => `대상이 내성 굴림에 성공하면, ${effect}.`)
       .replace(/If the saving throw fails by ([0-9]+) or more, ([^.]+)\./gu, (_, amount, effect) => `내성 굴림에 ${amount} 이상 차이로 실패하면, 추가로 ${effect}.`)
       .replace(/The creature wakes up if it takes damage or if another creature takes an action to shake it awake\./gu, "피해를 받거나 다른 생물이 행동을 사용해 흔들어 깨우면 그 생물은 깨어납니다.")
       .replace(/A creature can use its action to make a ([A-Za-z]+) check, freeing itself or another creature within its reach on a success\./gu, (_, ability) => `생물은 행동을 사용해 ${abilityToKo(ability)} 판정을 할 수 있으며, 성공하면 자신이나 손이 닿는 거리 내 다른 생물 하나를 풀어줄 수 있습니다.`)
+      .replace(/A creature can take this damage only once per turn\./gu, "한 생물은 이 피해를 한 턴에 한 번만 받을 수 있습니다.")
+      .replace(/The damage is of the same type dealt by the original attack\./gu, "이 피해 유형은 원래 공격이 준 피해와 같습니다.")
       .replace(/The target drops whatever it is holding and then ends its turn\./gu, "대상은 들고 있는 것을 떨어뜨리고 그 턴을 끝냅니다.")
       .replace(/The target spends its turn moving away from you by the fastest available means\./gu, "대상은 가능한 가장 빠른 수단으로 당신에게서 멀어지는 데 자신의 턴을 사용합니다.")
+      .replace(/Until the grapple ends, the target is ([^.]+)\./gu, (_, effect) => `붙잡기가 끝날 때까지 대상은 ${effect}.`)
+      .replace(/The target moves toward you by the shortest and most direct route([^.]*)\./gu, (_, suffix) => `대상은 가장 짧고 직접적인 경로로 당신 쪽으로 이동합니다${suffix}.`)
+      .replace(/It deals ([^.]+?) on a hit\./gu, (_, effect) => `명중 시 ${effect}를 줍니다.`)
+      .replace(/On a hit, the target takes ([^.]+?)\./gu, (_, effect) => `명중 시, 대상은 ${effect}를 받습니다.`)
+      .replace(/When you attack with this bite and hit a creature, ([^.]+)\./gu, (_, effect) => `이 물기로 생물을 공격해 명중시키면, ${effect}.`)
+      .replace(/When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks\./gu, "어떤 생물이 이 임시 HP를 얻으면, 즉시 반응행동을 사용해 자신의 속도만큼 이동할 수 있으며 기회공격을 유발하지 않습니다.")
       .replace(/A Humanoid reduced to 0 hit points by this attack dies and instantly transforms into a free-willed shadow under the DM's control\./gu, "이 공격으로 HP가 0이 된 인간형은 죽으며, 즉시 DM의 통제 아래 있는 자유의지를 지닌 그림자로 변합니다.")
       .replace(/The priest casts (.+?), using the same spellcasting ability as Spellcasting\./gu, (_, spells) => `사제는 주문 시전과 같은 주문시전 능력치를 사용해 ${spells}을(를) 시전합니다.`)
       .replace(/When the vampirate is reduced to 0 hit points, it explodes in a cloud of ash\./gu, "뱀파이러트의 HP가 0이 되면, 잿빛 구름으로 폭발합니다.")
@@ -1594,6 +1797,7 @@ export class TranslationStore {
       .replace(/<span class="entry-title-inner">Mutations\.<\/span>/gu, "<span class=\"entry-title-inner\">돌연변이.</span>");
 
     output = output
+      .replace(/Hit:\s*([^.]+?) plus ([^.]+?)\./gu, (_, base, extra) => `명중: ${base}에 더해 ${extra}.`)
       .replace(/<h1>Description<\/h1>/gu, "<h1>설명</h1>")
       .replace(/<h1>Class Features<\/h1>/gu, "<h1>클래스 특성</h1>")
       .replace(/<strong>Hit Die:<\/strong>/gu, "<strong>히트 다이스:</strong>")

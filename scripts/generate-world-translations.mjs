@@ -49,22 +49,61 @@ const shouldReplaceBody = (currentValue, candidateValue, originalValue = "") => 
   return translationScore(candidateValue) > (translationScore(currentValue) + 10);
 };
 
+const shouldReplaceName = (currentValue, candidateValue, originalValue = "") => {
+  const current = String(currentValue ?? "").trim();
+  const candidate = String(candidateValue ?? "").trim();
+  const original = String(originalValue ?? "").trim();
+
+  if (!candidate || candidate === original) return false;
+  if (!current) return true;
+  if (hasBrokenTranslation(current) || !hasKorean(current)) return true;
+  if (candidate === original && hasEnglish(current) && hasKorean(current) && !current.endsWith(original)) return true;
+  if (candidate.includes(" - ") && current !== candidate && original && current.endsWith(original)) return true;
+
+  return false;
+};
+
 const extractEnglishTail = (value = "") => {
   const match = String(value).match(/([A-Za-z][A-Za-z0-9:'(),/+ -]*)$/u);
   return match?.[1]?.trim() ?? "";
 };
 
+const splitBilingualName = (value = "") => {
+  const normalized = String(value ?? "").trim();
+  const match = normalized.match(/^(.*?)(?:\s*-\s*|\s+)([A-Za-z][A-Za-z0-9:'(),/+ -]*)$/u);
+  if (!match) return null;
+
+  const translated = match[1].trim();
+  const source = match[2].trim();
+  if (!translated || !source || !hasKorean(translated)) return null;
+
+  return { translated, source };
+};
+
 const formatBilingualName = (originalName, translatedName) => {
   const source = String(originalName ?? "").trim();
   const translated = String(translatedName ?? "").trim();
+  const sourceBilingual = splitBilingualName(source);
+  const translatedBilingual = splitBilingualName(translated);
 
   if (!source || !translated) return translated;
+  if (sourceBilingual) {
+    return `${translatedBilingual?.translated ?? sourceBilingual.translated} - ${translatedBilingual?.source ?? sourceBilingual.source}`;
+  }
+  if (translatedBilingual) {
+    return translatedBilingual.source === source
+      ? `${translatedBilingual.translated} - ${translatedBilingual.source}`
+      : source;
+  }
   if (!hasEnglish(source) || hasKorean(source)) return translated;
   if (translated === source) return translated;
-  if (translated.includes(source)) return translated;
-  if (hasEnglish(translated)) return translated;
+  if (translated.endsWith(source)) {
+    const head = translated.slice(0, -source.length).replace(/\s*-\s*$/u, "").trim();
+    if (head) return `${head} - ${source}`;
+  }
+  if (hasEnglish(translated)) return source;
 
-  return `${translated} ${source}`;
+  return `${translated} - ${source}`;
 };
 
 const isPureEnglish = (name = "", body = "") => {
@@ -147,6 +186,9 @@ const findAnyCompendiumEntry = (compendium, originalName) => {
 
 const translateName = (originalName, type, compendiumEntry) => {
   if (!originalName) return "";
+  if (splitBilingualName(originalName)) {
+    return formatBilingualName(originalName, compendiumEntry?.name ?? originalName);
+  }
   if (hasKorean(originalName)) return "";
   const translated =
     compendiumEntry?.name ??
@@ -173,7 +215,7 @@ const repairBrokenName = (currentName, currentBody, originalName, type, compendi
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
   if (!originalBody || hasKorean(stripMarkup(originalBody))) return "";
 
-  if ((mode === "items" || mode === "actorItems") && compendiumEntry?.description) {
+  if ((mode === "items" || mode === "actorItems" || mode === "actors") && compendiumEntry?.description) {
     return compendiumEntry.description;
   }
 
@@ -197,15 +239,35 @@ const ensureRecord = (currentEntries, uuid, labelKey) => {
 
 const main = async () => {
   const templatePath = await findLatestTemplatePath();
-  const [template, compendium, itemsJson, actorItemsJson, journalJson] = await Promise.all([
+  const [template, compendium, actorsJson, itemsJson, actorItemsJson, journalJson] = await Promise.all([
     readJson(templatePath),
     loadCompendiumByCollection(),
+    readJson(WORLD_FILES.actors),
     readJson(WORLD_FILES.items),
     readJson(WORLD_FILES.actorItems),
     readJson(WORLD_FILES.journalPages)
   ]);
 
   const store = new TranslationStore();
+
+  let actorNames = 0;
+  let actorBodies = 0;
+  for (const [uuid, entry] of Object.entries(template.actors?.entries ?? {})) {
+    if (!isPureEnglish(entry.originalName, entry.originalDescription)) continue;
+    const record = ensureRecord(actorsJson.entries, uuid, "description");
+    const compendiumEntry = findAnyCompendiumEntry(compendium, entry.originalName);
+    const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
+    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+      record.name = translatedName;
+      actorNames += 1;
+    }
+    const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actors");
+    if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
+      record.description = translatedDescription;
+      actorBodies += 1;
+    }
+    actorsJson.entries[uuid] = record;
+  }
 
   let itemNames = 0;
   let itemBodies = 0;
@@ -214,12 +276,9 @@ const main = async () => {
     const record = ensureRecord(itemsJson.entries, uuid, "description");
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
     const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-    if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
-      if (!record.name || shouldNormalizeName) {
-        record.name = translatedName;
-        itemNames += 1;
-      }
+    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+      record.name = translatedName;
+      itemNames += 1;
     }
     const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "items");
     if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
@@ -236,12 +295,9 @@ const main = async () => {
     const record = ensureRecord(actorItemsJson.entries, uuid, "description");
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, entry.originalName);
     const translatedName = translateName(entry.originalName, entry.type, compendiumEntry);
-    if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
-      if (!record.name || shouldNormalizeName) {
-        record.name = translatedName;
-        actorItemNames += 1;
-      }
+    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+      record.name = translatedName;
+      actorItemNames += 1;
     }
     const translatedDescription = maybeBodyTranslation(store, entry.originalDescription, entry.type, compendiumEntry, "actorItems");
     if (shouldReplaceBody(record.description, translatedDescription, entry.originalDescription)) {
@@ -257,12 +313,9 @@ const main = async () => {
     if (!isPureEnglish(entry.originalName, entry.originalText)) continue;
     const record = ensureRecord(journalJson.entries, uuid, "text");
     const translatedName = translateName(entry.originalName, entry.type, null);
-    if (translatedName && translatedName !== entry.originalName) {
-      const shouldNormalizeName = record.name && (!hasKorean(record.name) || hasBrokenTranslation(record.name));
-      if (!record.name || shouldNormalizeName) {
-        record.name = translatedName;
-        journalNames += 1;
-      }
+    if (shouldReplaceName(record.name, translatedName, entry.originalName)) {
+      record.name = translatedName;
+      journalNames += 1;
     }
     const translatedText = maybeBodyTranslation(store, entry.originalText, entry.type, null, "journalPages");
     if (shouldReplaceBody(record.text, translatedText, entry.originalText)) {
@@ -270,6 +323,17 @@ const main = async () => {
       journalBodies += 1;
     }
     journalJson.entries[uuid] = record;
+  }
+
+  for (const [uuid, record] of Object.entries(actorsJson.entries)) {
+    if (!hasBrokenTranslation(record.name)) continue;
+    const source = template.actors.entries?.[uuid];
+    const compendiumEntry = findAnyCompendiumEntry(compendium, source?.originalName ?? extractEnglishTail(record.name));
+    const repairedName = repairBrokenName(record.name, record.description, source?.originalName, source?.type, compendiumEntry, compendium);
+    if (repairedName && repairedName !== record.name) {
+      record.name = repairedName;
+      actorNames += 1;
+    }
   }
 
   for (const [uuid, record] of Object.entries(itemsJson.entries)) {
@@ -308,17 +372,21 @@ const main = async () => {
     }
   }
 
+  actorsJson.entries = sortObject(actorsJson.entries);
   itemsJson.entries = sortObject(itemsJson.entries);
   actorItemsJson.entries = sortObject(actorItemsJson.entries);
   journalJson.entries = sortObject(journalJson.entries);
 
   await Promise.all([
+    fs.writeFile(WORLD_FILES.actors, `${JSON.stringify(actorsJson, null, 2)}\n`, "utf8"),
     fs.writeFile(WORLD_FILES.items, `${JSON.stringify(itemsJson, null, 2)}\n`, "utf8"),
     fs.writeFile(WORLD_FILES.actorItems, `${JSON.stringify(actorItemsJson, null, 2)}\n`, "utf8"),
     fs.writeFile(WORLD_FILES.journalPages, `${JSON.stringify(journalJson, null, 2)}\n`, "utf8")
   ]);
 
   console.log(JSON.stringify({
+    actorNames,
+    actorBodies,
     itemNames,
     itemBodies,
     actorItemNames,

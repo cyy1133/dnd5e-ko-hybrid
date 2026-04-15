@@ -59,6 +59,19 @@ const createFallbackWorldTemplate = async ({
     };
   }
 
+  const actors = {};
+  for (const actor of game.actors ?? []) {
+    const description = extractActorDescription(actor);
+    if (!shouldInclude(actor.name, description)) continue;
+    actors[actor.uuid] = {
+      name: "",
+      description: "",
+      originalName: actor.name,
+      originalDescription: description,
+      type: actor.type
+    };
+  }
+
   const actorItems = {};
   for (const actor of game.actors ?? []) {
     for (const item of actor.items ?? []) {
@@ -102,7 +115,7 @@ const createFallbackWorldTemplate = async ({
     },
     actors: {
       label: "Actors",
-      entries: {}
+      entries: actors
     },
     items: {
       label: "World Items",

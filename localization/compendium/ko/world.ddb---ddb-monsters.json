@@ -6,247 +6,255 @@
   },
   "entries": {
     "Bat": {
-      "name": "박쥐 Bat",
+      "name": "박쥐 - Bat",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+0\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+0</span> 명중, 사거리 5피트, 크리처 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         },
         "Echolocation": {
-          "name": "반향정위 Echolocation",
+          "name": "반향정위 - Echolocation",
           "description": "<p>[[lookup @name lowercase]] 은/는 실청 상태인 동안 맹시야를 사용할 수 없습니다.</p>"
+        },
+        "Keen Hearing": {
+          "name": "예리한 청각 - Keen Hearing"
         }
       }
     },
     "Blood Drinker Vampire": {
-      "name": "피 Drinker Vampire",
+      "name": "피를 마시는 뱀파이어 - Blood Drinker Vampire",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+7]]{+7} 명중, 사거리 5피트, one willing creature, or a creature that is &amp;Reference[condition=grappled] by the vampire, &amp;Reference[condition=incapacitated], or &amp;Reference[condition=restrained]. <i>명중:</i> 7 ([[/damage 1d6 + 4 type=piercing]]) 피해에 더해 7 ([[/damage 2d6 type=necrotic]]) 피해. If the target is humanoid, it must succeed on a [[/save ability=charisma dc=15]] saving throw or be &amp;Reference[condition=charmed] by the vampire for 1 minute. While &amp;Reference[condition=charmed] in this way, the target is infatuated with the vampire. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. 대상의 최대 HP가 0이 되면 그 대상은 죽습니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Multiattack": {
-          "name": "다중공격 Multiattack",
+          "name": "다중공격 - Multiattack",
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Parry": {
-          "name": "쳐내기 Parry",
+          "name": "쳐내기 - Parry",
           "description": "<p>[[lookup @name lowercase]] 에게 명중할 수 있는 근거리 공격 1회에 AC 보너스를 2 추가합니다. 이렇게 하려면 [[lookup @name lowercase]] 에게 공격자가 보이며 근거리 무기를 착용하고 있어야 합니다.</p>"
         },
         "Rapier": {
-          "name": "레이피어 Rapier",
+          "name": "레이피어 - Rapier",
           "description": "<p>얇고 탄력있는 금속제 칼날로, 무게는 가볍지만 사거리가 길어 번개같은 신속함으로 적의 방어가 약한 지점을 재빨리 공격할 수 있도록 고안되었습니다.</p>"
         },
         "Unarmed Strike": {
-          "name": "비무장 공격 Unarmed Strike",
+          "name": "비무장 공격 - Unarmed Strike",
           "description": "<p>주먹질, 발차기, 박치기, 그 외 유사한 폭력 (무기로 취급되지 않는 종류). 명중하면, 1 + 자신의 근력 수정치 만큼의 타격 피해를 줍니다. 당신은 비무장 공격에 숙련입니다.</p>"
         }
       }
     },
     "Cat": {
-      "name": "고양이 Cat",
+      "name": "고양이 - Cat",
       "items": {
         "Claws": {
-          "name": "발톱 Claws",
+          "name": "발톱 - Claws",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+0\" data-rolltype=\"명중\" data-rollaction=\"Claws\">+0</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 slashing 피해.</p>\n</div>"
         },
         "Keen Smell": {
-          "name": "예리한 후각 Keen Smell"
+          "name": "예리한 후각 - Keen Smell"
         }
       }
     },
     "Crab": {
-      "name": "게 Crab",
+      "name": "게 - Crab",
       "items": {
         "Amphibious": {
-          "name": "양서류 Amphibious",
+          "name": "양서류 - Amphibious",
           "description": "<p>[[lookup @name lowercase]] 은/는 공기 및 물에서 호흡할 수 있습니다.</p>"
         },
         "Claw": {
-          "name": "발톱 Claw",
+          "name": "발톱 - Claw",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+0\" data-rolltype=\"명중\" data-rollaction=\"Claw\">+0</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 bludgeoning 피해.</p>\n</div>"
         }
       }
     },
     "Frog": {
-      "name": "개구리 Frog",
+      "name": "개구리 - Frog",
       "description": "<p>개구리는 우리 행성에 사는 가장 흔한 양서류입니다. 개구리는 대부분의 삶을 수원 근처에서 살며 그 때문에 늪과 습지, 수렁 근처에서 자주 볼 수 있습니다. 이는 당연하게도, 가까운 수원이 없으면 개구리의 매끄러운 피부가 말라붙어 죽을 수도 있기 때문입니다. 벌레를 먹는 생물인 개구리는 길고 끈적끈적한 혀로 모든 종류의 곤충을 잡아먹습니다(저자 주: 남부의 늪지대에서, 공중에서 바로 작은 새의 털을 뽑아내고 잡아먹을 정도로 커다란 개구리 종을 목격했다고 장담한 제보자들도 있었습니다!). 개구리는 뒷다리가 앞다리에 비해 훨씬 더 길고 접혀 있으므로, 기묘한 방식으로 이동합니다. 이 독특한 진화 때문에 개구리는 뒷다리를 완전히 뻗어 멋지게 점프해서 폴짝폴짝 뛸 수 있게 되었습니다.</p>\n<p><strong>올챙이는 개구리로 진화합니다.</strong> 개구리가 처음 태어났을 땐 새끼 손톱만한 크기의, 젤리같은 알 상태입니다. 부화하면 작은 개구리는 이제 살아있는 작은 혜성처럼 생긴 올챙이 상태가 되며, 알처럼 둥근 머리와 길고 잽싸게 움직이는 긴 꼬리로 물에서 헤엄쳐 다닐 수 있게 됩니다. 몇 주의 과정을 거쳐 새끼 개구리로부터 사지가 자라나며, 올챙이는 좀 더 알아보기 쉬운 모습의 성체로 진화합니다. 연구원들이 “탈바꿈” 이라고 명명한, 곤충에게서 가장 많이 볼 수 있는 매혹적인 발달 과정이죠. 변화무쌍한 세계에서, 평범한 개구리만큼이나 환상적인 변신 과정을 거치는 크리처가 달리 있을까요?</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "items": {
         "Amphibious": {
-          "name": "양서류 Amphibious",
+          "name": "양서류 - Amphibious",
           "description": "<p>[[lookup @name lowercase]] 은/는 공기 및 물에서 호흡할 수 있습니다.</p>"
         },
         "Standing Leap": {
-          "name": "제자리 도약 Standing Leap",
+          "name": "제자리 도약 - Standing Leap",
           "description": "<p>도움닫기 유무와는 관계없이, [[lookup @name lowercase]] 의 멀리뛰기 거리는 최대 <strong>30ft</strong>에 달하며, 높이뛰기 거리는 최대 <strong>15ft</strong>에 달합니다.</p>"
         }
       }
     },
     "Ghoul": {
-      "name": "구울 Ghoul",
+      "name": "구울 - Ghoul",
       "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+2]]{+2} 명중, 사거리 5피트, 크리처 하나. <i>명중:</i> 9 ([[/damage 2d6 + 2 type=piercing]]) 피해.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Claws": {
-          "name": "발톱 Claws",
+          "name": "발톱 - Claws",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 7 ([[/damage 2d4 + 2 type=slashing]]) 피해. If the target is a creature other than an elf or undead, it must succeed on a [[/save ability=constitution dc=10]] saving throw or be &amp;Reference[condition=paralyzed] for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p><div class=\"rd__spc-inline-post\"></div></div>"
         }
       }
     },
     "Hawk": {
-      "name": "매 Hawk",
+      "name": "매 - Hawk",
       "items": {
+        "Keen Sight": {
+          "name": "예리한 시야 - Keen Sight"
+        },
         "Talons": {
-          "name": "발톱 Talons",
+          "name": "발톱 - Talons",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+5\" data-rolltype=\"명중\" data-rollaction=\"Talons\">+5</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 slashing 피해.</p>\n</div>"
         }
       }
     },
     "Lizard": {
-      "name": "도마뱀 Lizard",
+      "name": "도마뱀 - Lizard",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+0\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+0</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         }
       }
     },
     "Octopus": {
-      "name": "문어 Octopus",
+      "name": "문어 - Octopus",
       "items": {
         "Hold Breath": {
-          "name": "숨 참기 Hold Breath",
+          "name": "숨 참기 - Hold Breath",
           "description": "<p>[[lookup @name lowercase]] 은/는 <strong>15분</strong> 동안 숨을 참을 수 있습니다.</p>"
         },
         "Ink Cloud": {
-          "name": "먹구름 Ink Cloud",
+          "name": "먹구름 - Ink Cloud",
           "description": "<section class=\"secret\">\n<p>[[lookup @name lowercase]] 이/가 수중에 있는 경우, 사방으로 반경 20ft에 먹구름을 뿜어냅니다. 해당 구역은 1분 동안 심하게 가려진 상태가 되지만, 강한 물살로 먹물을 흩어버릴 수 있습니다. 먹물을 뿜어낸 후 [[lookup @name lowercase]] 은/는 추가 행동으로 질주를 사용할 수 있습니다. 1회의 짧은 휴식이나 긴 휴식 후에 충전됩니다 </p>\n</section>\n<p>수중에 있는 경우, [[lookup @name lowercase]] 이/가 사방으로 반경 20ft에 먹구름을 뿜어냅니다.</p>"
         },
         "Tentacles": {
+          "name": "촉수 - Tentacles",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+4\" data-rolltype=\"명중\" data-rollaction=\"Tentacles\">+4</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 bludgeoning damage, and the target is &amp;Reference[grappled]{grappled} (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.</p>\n</div>"
         },
         "Underwater Camouflage": {
-          "name": "수중 위장 Underwater Camouflage",
+          "name": "수중 위장 - Underwater Camouflage",
           "description": "<p>수중에서 은신을 시도할 때, [[lookup @name lowercase]] 의 민첩(은신) 판정에<strong> 유리함</strong>이 적용됩니다.</p>"
         },
         "Water Breathing": {
-          "name": "수중 호흡 Water Breathing",
+          "name": "수중 호흡 - Water Breathing",
           "description": "<p>[[lookup @name lowercase]] 은/는 수중에서만 호흡할 수 있습니다.</p>"
         }
       }
     },
     "Owl": {
-      "name": "부엉이 Owl",
+      "name": "부엉이 - Owl",
       "items": {
         "Flyby": {
-          "name": "근접 비행 Flyby",
+          "name": "근접 비행 - Flyby",
           "description": "<p>[[lookup @name lowercase]] 은/는 적의 범위 밖으로 날아갈 때 기회 공격을 유발하지 않습니다.</p>"
         },
         "Keen Hearing and Sight": {
-          "name": "Keen Hearing 및 Sight"
+          "name": "예리한 청각과 시야 - Keen Hearing and Sight"
         },
         "Talons": {
-          "name": "발톱 Talons",
+          "name": "발톱 - Talons",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+3\" data-rolltype=\"명중\" data-rollaction=\"Talons\">+3</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 slashing 피해.</p>\n</div>"
         }
       }
     },
     "Poisonous Snake": {
-      "name": "독사 Poisonous Snake",
+      "name": "독사 - Poisonous Snake",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
-          "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+5\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+5</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 <span data-dicenotation=\"2d4\" data-rolltype=\"damage\" data-rollaction=\"Bite\" data-rolldamagetype=\"poison\">(2d4)</span> poison damage on a failed save, or half as much damage on a successful one.</p>\n</div>"
+          "name": "물기 - Bite",
+          "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+5\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+5</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing damage, and the target must make a DC 10 Constitution saving throw, 실패 시 5 <span data-dicenotation=\"2d4\" data-rolltype=\"damage\" data-rollaction=\"Bite\" data-rolldamagetype=\"poison\">(2d4)</span> poison damage를 받고, 성공 시 그 절반의 피해만 받습니다.</p>\n</div>"
         }
       }
     },
     "Quipper": {
-      "name": "퀴퍼 Quipper",
+      "name": "퀴퍼 - Quipper",
       "description": "<blockquote>\n<p>수 세기 전 일부 스비프네블린 문화권에서 시작된 소문에 의하면, 굶주린 퀴퍼 떼 하나가 1분 이내로 말 한 마리를 통째로 먹어 치울 수 있다고 합니다. 그러나 지금까지는 그 누구도 이 허무맹랑한 이야기가 진실인지 시험하기 위해 자신의 말을 희생하겠다고 내어놓지 않았습니다.<br /><em>- 언더다크에 대한 나의 연구물 주석에서 발췌.</em></p>\n</blockquote>\n<p>퀴퍼는 장소와 관계없이, 거의 모든 수역에서 찾아볼 수 있고 종류가 다양한 육식성 어류입니다. 대략 인간 성인의 주먹만 한 크기의 이 작은 짐승은 근처에서 음식의 일부분이라도 감지하면 매우 게걸스럽게 변모합니다. 퀴퍼의 턱은 단검처럼 날카롭고 삐죽삐죽한 이빨이 안쪽에 나 있으며, 퀴퍼는 이 이빨로 쏜살같이 빠르게 뼈에서 살을 분리해냅니다. 몹시 차가운 동굴 호수의 어둠 속에서조차도 볼 수 있는 퀴퍼의 시각적 능력은 실수로 어두운 물에 빠지곤 하는 부주의한 여행자들에게는 매우 위험합니다. 퀴퍼 한 마리가 홀로 다니는 일도 없진 않지만, 보통 퀴퍼는 무리를 지어 떼로 몰려다니곤 합니다. 칼날 같은 이빨을 자랑하는 이 물고기 떼는 아주 멀리 떨어진 거리에서도 물속에 흐른 피를 감지할 수 있으며, 200리터가 넘는 물에 피 한 방울이 떨어지기만 해도 그 냄새를 맡을 수 있습니다. 그러므로 나는 모험가들에게 어떤 물에서든 퀴퍼가 나올 수 있으니, 어디에서든 처신을 조심하라고 권유하고 싶습니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+5\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+5</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         },
         "Blood Frenzy": {
-          "name": "피의 광란 Blood Frenzy",
+          "name": "피의 광란 - Blood Frenzy",
           "description": "<p><strong>히트 포인트</strong>가 모두 차 있지 않은 크리처를 대상으로 한 [[lookup @name lowercase]] 의 근거리 공격 굴림에는 <strong>유리함</strong>이 적용됩니다.</p>"
         },
         "Water Breathing": {
-          "name": "수중 호흡 Water Breathing",
+          "name": "수중 호흡 - Water Breathing",
           "description": "<p>[[lookup @name lowercase]] 은/는 수중에서만 호흡할 수 있습니다.</p>"
         }
       }
     },
     "Rat": {
-      "name": "쥐 Rat",
+      "name": "쥐 - Rat",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+0\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+0</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         },
         "Keen Smell": {
-          "name": "예리한 후각 Keen Smell"
+          "name": "예리한 후각 - Keen Smell"
         }
       }
     },
     "Raven": {
-      "name": "큰까마귀 Raven",
+      "name": "큰까마귀 - Raven",
       "items": {
         "Beak": {
+          "name": "부리 - Beak",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+4\" data-rolltype=\"명중\" data-rollaction=\"Beak\">+4</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         },
         "Mimicry": {
-          "name": "흉내 Mimicry",
+          "name": "흉내 - Mimicry",
           "description": "<section class=\"secret\">\n<p>[[lookup @name lowercase]] 은/는 동물의 소리와 인간형의 목소리를 흉내낼 수 있습니다. 흉내내는 소리를 들은 한 크리처는 <strong>DC 14 지혜(통찰력) 판정</strong>에 성공하면 이것이 모방한 소리라는 사실을 알 수 있습니다.</p>\n</section>\n<p>[[lookup @name lowercase]] 은/는 동물의 소리와 인간형의 목소리를 흉내낼 수 있습니다. 흉내내는 소리를 들은 한 크리처는 지혜(통찰력) 판정에 성공하면 이것이 모방한 소리라는 사실을 알 수 있습니다.</p>"
         }
       }
     },
     "Sea Horse": {
-      "name": "해마 Sea Horse",
+      "name": "해마 - Sea Horse",
       "items": {
         "Water Breathing": {
-          "name": "수중 호흡 Water Breathing",
+          "name": "수중 호흡 - Water Breathing",
           "description": "<p>[[lookup @name lowercase]] 은/는 수중에서만 호흡할 수 있습니다.</p>"
         }
       }
     },
     "Spider": {
-      "name": "거미 Spider",
+      "name": "거미 - Spider",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+4\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+4</span> 명중, 사거리 5피트, 크리처 하나. <em>Hit:</em> 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 <span data-dicenotation=\"1d4\" data-rolltype=\"damage\" data-rollaction=\"Bite\" data-rolldamagetype=\"poison\">(1d4)</span> poison 피해.</p>\n</div>"
         },
         "Spider Climb": {
-          "name": "거미 등반 Spider Climb",
+          "name": "거미 등반 - Spider Climb",
           "description": "<p>[[lookup @name lowercase]] 은/는 능력 판정 없이도 천장에 거꾸로 매달리는 행위를 포함하여 어려운 표면을 등반할 수 있습니다.</p>"
         },
         "Web Sense": {
-          "name": "거미줄 감지 Web Sense",
+          "name": "거미줄 감지 - Web Sense",
           "description": "<p>[[lookup @name lowercase]] 은/는 거미줄에 접촉해 있는 동안 동일한 거미줄에 접촉한 다른 모든 크리처의 정확한 위치를 파악합니다.</p>"
         },
         "Web Walker": {
-          "name": "거미줄 보행 Web Walker",
+          "name": "거미줄 보행 - Web Walker",
           "description": "<p>[[lookup @name lowercase]] 은/는 거미줄로 인한 이동 제한을 무시합니다.</p>"
         }
       }
     },
     "Swarm of Zombie Limbs": {
-      "name": "Swarm 의 Zombie Limbs",
+      "name": "Swarm 의 - Zombie Limbs",
       "items": {
         "Grasping Limbs": {
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 0피트, 크리처 하나 in the swarm's space. <i>명중:</i> 7 ([[/damage 2d6 type=necrotic]]) damage, and the creature must succeed on a [[/save ability=strength dc=12]] saving throw or be &amp;Reference[condition=restrained]. The creature can repeat the saving throw at the end of each of its turns, taking 7 ([[/damage 2d6 type=necrotic]]) damage on a failed save. The creature is freed if it succeeds on this saving throw, the swarm moves out of the creature's space, or the swarm dies.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Multiattack": {
-          "name": "다중공격 Multiattack",
+          "name": "다중공격 - Multiattack",
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Swarm": {
-          "name": "무리 Swarm",
+          "name": "무리 - Swarm",
           "description": "<p>무리는 다른 크리처가 점유한 공간에 들어갈 수 있고 다른 크리처 역시 무리가 점유한 공간에 들어올 수 있으며, 무리는 초소형 [[lookup @name lowercase]] 하나가 통과하기에 충분한 크기의 구멍 하나만 있으면 통과해서 움직일 수 있습니다. 무리는 <strong>히트 포인트</strong>를 회복하거나 임시 <strong>히트 포인트</strong>를 얻을 수 없습니다.</p>"
         },
         "Undead Mass": {
@@ -256,130 +264,130 @@
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 0피트, 목표 하나 in the swarm's space. <i>명중:</i> 4 ([[/damage 1d4 + 2 type=bludgeoning]]) damage if the swarm has half of its hit points or fewer.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Unusual Nature": {
-          "name": "기이한 본성 Unusual Nature"
+          "name": "기이한 본성 - Unusual Nature"
         }
       }
     },
     "Vampire": {
-      "name": "뱀파이어 Vampire",
+      "name": "뱀파이어 - Vampire",
       "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<section class=\"secret\">\n<p>근거리 무기 공격: 명중 +11, 사정거리 10ft, 단일 목표. 명중 시: 17(2d10 + 6)점의 관통 피해.</p>\n</section>\n<p>[[lookup @name lowercase]] 이/가 물기 공격을 합니다.</p>"
         },
         "Bite (Bat or Vampire Form Only)": {
-          "name": "Bite (박쥐 or Vampire Form Only)",
+          "name": "물기 (Bat - or Vampire Form Only)",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+9]]{+9} 명중, 사거리 5피트, one willing creature, or a creature that is &amp;Reference[condition=grappled] by the vampire, &amp;Reference[condition=incapacitated], or &amp;Reference[condition=restrained]. <i>명중:</i> 7 ([[/damage 1d6 + 4 type=piercing]]) 피해에 더해 10 ([[/damage 3d6 type=necrotic]]) 피해. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a @creature[vampire spawn] under the vampire's control.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Charm": {
-          "name": "매혹 Charm",
+          "name": "매혹 - Charm",
           "description": "<section class=\"secret\">\n<p>[[lookup @name lowercase]] 의 주변 30ft 이내에 있으며 대상이 볼 수 있는 인간형 크리처 하나는 <strong>지혜</strong> 내성 굴림에 성공하지 못할 경우 1일 동안 마법적으로 매혹당합니다. 매혹당한 목표는 [[lookup @name lowercase]] 의 음성 혹은 정신감응 명령에 복종합니다.</p><p>만약에 해당 목표가 피해를 입거나 자멸적인 명령을 받은 경우, 이 목표는 내성 굴림을 반복할 수 있으며 성공할 경우 효과가 종료됩니다. 목표가 해당 효과에 대한 내성 굴림에 성공하거나 효과가 종료되면 해당 목표는 다음 24시간 동안 [[lookup @name lowercase]] 의 매혹에 면역을 얻습니다. [[lookup @name lowercase]] 은/는 한 번에 하나의 목표만 매혹할 수 있습니다. 만약에 다른 목표를 매혹했다면 이전 목표에게 적용된 효과는 종료됩니다.</p>\n</section>\n<p>[[lookup @name lowercase]] 의 주변 30ft 이내에 있으며 대상이 볼 수 있는 인간형 크리처 하나는 <strong>지혜</strong> 내성 굴림에 성공하지 못할 경우 1일 동안 마법적으로 매혹당합니다.</p>"
         },
         "Children of the Night": {
-          "name": "밤의 아이들 Children of the Night",
+          "name": "밤의 아이들 - Children of the Night",
           "description": "<section class=\"secret\"><p>[[lookup @name lowercase]] 은/는 해가 떠 있지 않을 때 마법적으로 2d4개체의 박쥐 무리나 쥐 무리를 소환합니다. 야외에서, [[lookup @name lowercase]] 은/는 박쥐 무리나 쥐 무리 대신 3d6마리의 늑대를 소환할 수도 있습니다. </p><p>소환된 크리처는 1d4라운드 후에 도착하며, [[lookup @name lowercase]] 의 아군으로 행동하며 대상이 말로 한 명령에 복종합니다. 해당 동물들은 [[lookup @name lowercase]] 이/가 사망하거나 [[lookup @name lowercase]] 이/가 추가 행동으로 해산시키지 않는다면 1시간 동안 계속 남아 있습니다.</p></section><p>[[lookup @name lowercase]] 은/는 마법적으로 박쥐 무리나 쥐 무리를 소환합니다. 야외에서, [[lookup @name lowercase]] 은/는 박쥐 무리나 쥐 무리 대신 늑대를 소환할 수도 있습니다. </p>"
         },
         "Legendary Actions": {
-          "name": "전설적 행동 Legendary Actions",
+          "name": "전설적 행동 - Legendary Actions",
           "description": "<section class=\"secret\">\n<p>[[lookup @name lowercase]] 은/는 전설적 행동을 3회 취할 수 있습니다. 한 번에 오로지 하나의 전설적 행동만 사용할 수 있으며, 다른 크리처의 턴이 끝날 때에만 할 수 있습니다. [[lookup @name lowercase]] 의 턴이 시작될 때 소모된 전설적 행동을 회복합니다.</p>\n</section>\n<p>[[lookup @name lowercase]] 은/는 전설적 행동을 3회 취할 수 있습니다.</p>"
         },
         "Legendary Resistance": {
-          "name": "전설적 저항 Legendary Resistance",
+          "name": "전설적 저항 - Legendary Resistance",
           "description": "<p> [[lookup @details.type.config.label lowercase]]의 내성 굴림이 실패한 경우, 대신 성공했다고 간주할 수 있습니다.</p>"
         },
         "Misty Escape": {
-          "name": "안개 탈출 Misty Escape",
+          "name": "안개 탈출 - Misty Escape",
           "description": "<section class=\"secret\"><p>[[lookup @name lowercase]] 의 히트 포인트가 안식처 밖에서 <strong>0HP</strong>로 감소하면, 흐르는 물 속이나 태양광 아래 있지 않다면 대상은 의식불명 상태가 빠지는 대신 (변신자 특성처럼) 안개 구름으로 변신합니다. 변신할 수 없는 경우 대상은 파괴됩니다.</p><p>안개 형태에서 <strong>0HP</strong>가 되면 대상은 [[lookup @name lowercase]] 형태로 돌아갈 수 없으며, 2시간 이내에 안식처로 돌아가지 못하면 파괴됩니다. 한 번 안식처로 돌아가면 대상은 [[lookup @name lowercase]] 형태로 돌아갑니다. 그 다음에 대상은 적어도 <strong>1HP</strong>를 회복하기 전까지는 마비됩니다. <strong>0HP</strong>로 안식처에서 1시간을 보낸 다음, 대상은 <strong>1HP</strong>를 회복합니다.</p></section><p>사냥당한 [[lookup @name lowercase]] 이/가 의식불명 상태에 빠지는 대신 (변신자 특성처럼) 안개 구름으로 변신합니다.</p>"
         },
         "Move": {
-          "name": "이동 Move"
+          "name": "이동 - Move"
         },
         "Multiattack (Vampire Form Only)": {
-          "name": "다중공격 (흡혈귀 형태에서만) Multiattack (Vampire Form Only)"
+          "name": "다중공격 (흡혈귀 형태에서만) - Multiattack (Vampire Form Only)"
         },
         "Regeneration": {
-          "name": "재생 Regeneration",
+          "name": "재생 - Regeneration",
           "description": "<section class=\"secret\"><p>적어도 <strong>1HP</strong>가 남아 있다면, [[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p></section><p>[[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p>"
         },
         "Regional Effects": {
-          "name": "지역 효과 Regional Effects",
+          "name": "지역 효과 - Regional Effects",
           "description": "<p>전설적인 크리처는 그 존재만으로도 주변 환경에 기이하고 놀라운 효과를 자아냅니다. 전설적인 크리처가 사망하면 지역 효과는 갑작스럽게, 또는 시간이 흐르면서 점차 소멸합니다.</p>"
         },
         "Shapechanger": {
-          "name": "형태변환자 Shapechanger",
+          "name": "형태변환자 - Shapechanger",
           "description": "<section class=\"secret\"><p>[[lookup @name lowercase]] 은/는 1회의 행동으로 <strong>형태변형</strong>을 수행하여 자신이 본 적 있는 소형 또는 중형 인간형 크리처로 변신하거나 본래의 형태로 돌아갈 수 있습니다.</p><p>크기를 제외하면 모든 게임적 정보는 어떤 형태에서든 동일합니다. 대상이 착용하거나 소지한 장비는 함께 변신하지 않습니다. 대상이 사망하면 본래의 형태로 돌아옵니다.</p></section><p>[[lookup @name lowercase]] 은/는 1회의 행동으로 <strong>형태변형</strong>을 수행하여 자신이 본 적 있는 소형 또는 중형 인간형 크리처로 변신하거나 본래의 형태로 돌아갈 수 있습니다.</p>"
         },
         "Spider Climb": {
-          "name": "거미 등반 Spider Climb",
+          "name": "거미 등반 - Spider Climb",
           "description": "<p>[[lookup @name lowercase]] 은/는 능력 판정 없이도 천장에 거꾸로 매달리는 행위를 포함하여 어려운 표면을 등반할 수 있습니다.</p>"
         },
         "Unarmed Strike": {
-          "name": "비무장 공격 Unarmed Strike",
+          "name": "비무장 공격 - Unarmed Strike",
           "description": "<p></p>"
         },
         "Unarmed Strike (Vampire Form Only)": {
-          "name": "Unarmed 강타 (Vampire Form Only)",
+          "name": "비무장 공격 (Vampire - Form Only)",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+9]]{+9} 명중, 사거리 5피트, 크리처 하나. <i>명중:</i> 8 ([[/damage 1d8 + 4 type=bludgeoning]]) 피해. Instead of dealing damage, the vampire can grapple the target (escape DC <span class=\"rd__dc\">18</span>).</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Vampire Weaknesses": {
-          "name": "뱀파이어 약점 Vampire Weaknesses",
+          "name": "뱀파이어 약점 - Vampire Weaknesses",
           "description": "<p>[[lookup @name lowercase]] 에게는 다음과 같은 단점이 있습니다.</p><p><em>금제</em>. 건물 안에 있는 사람 중 누군가가 초대하지 않는 한, [[lookup @name lowercase]] 은/는 안으로 들어갈 수 없습니다<strong>. </strong></p><p><em>흐르는 물에 의한 피해</em>. 흐르는 물 속에서 턴을 마칠 경우, [[lookup @name lowercase]] 에게 20점의 <em>산성 피해</em>가 가해집니다<strong>. </strong></p><p><em>심장의 말뚝</em>. [[lookup @name lowercase]] 이/가 안식처 속에서 행동불능 상태인 동안 나무로 만들어진 관통 무기가 [[lookup @name lowercase]] 의 심장에 박히면 [[lookup @name lowercase]] 은/는 심장에 박힌 말뚝이 제거되기 전까지 마비됩니다.</p><p><em>태양광 초과민성</em>. 태양광 속에서 턴을 시작할 경우, [[lookup @name lowercase]] 에게 20점의 <em>광휘 피해</em>가 가해집니다. 태양광 속에 있을 때 [[lookup @name lowercase]] 의 공격 굴림과 능력 판정에 <strong>불리함</strong>이 적용됩니다.</p>"
         }
       }
     },
     "Vampire Spawn": {
-      "name": "뱀파이어 스폰 Vampire Spawn",
+      "name": "뱀파이어 스폰 - Vampire Spawn",
       "description": "<p>뱀파이어가 사람들을 사냥하면 그들은 뱀파이어 스폰이라는 언데드 크리처로 변하기도 합니다. 뱀파이어와 마찬가지로, 스폰 또한 자신의 관 및 무덤의 토양이 있는 범위에서 벗어날 수 없습니다. 뱀파이어 스폰의 모습은 살아있을 때와 비슷해 보이지만, 성격은 그보다 더 포악하며, 외형도 포식자처럼 변합니다.</p>\n<p><em>Token artwork by Forgotten Adventures.</em></p>",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+6]]{+6} 명중, 사거리 5피트, one willing creature, or a creature that is &amp;Reference[condition=grappled] by the vampire, &amp;Reference[condition=incapacitated], or &amp;Reference[condition=restrained]. <i>명중:</i> 6 ([[/damage 1d6 + 3 type=piercing]]) 피해에 더해 7 ([[/damage 2d6 type=necrotic]]) 피해. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Claws": {
-          "name": "발톱 Claws",
+          "name": "발톱 - Claws",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+6]]{+6} 명중, 사거리 5피트, 크리처 하나. <i>명중:</i> 8 ([[/damage 2d4 + 3 type=slashing]]) 피해. Instead of dealing damage, the vampire can grapple the target (escape DC <span class=\"rd__dc\">13</span>).</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Multiattack": {
-          "name": "다중공격 Multiattack",
+          "name": "다중공격 - Multiattack",
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Regeneration": {
-          "name": "재생 Regeneration",
+          "name": "재생 - Regeneration",
           "description": "<section class=\"secret\"><p>적어도 <strong>1HP</strong>가 남아 있다면, [[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p></section><p>[[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p>"
         },
         "Spider Climb": {
-          "name": "거미 등반 Spider Climb",
+          "name": "거미 등반 - Spider Climb",
           "description": "<p>[[lookup @name lowercase]] 은/는 능력 판정 없이도 천장에 거꾸로 매달리는 행위를 포함하여 어려운 표면을 등반할 수 있습니다.</p>"
         },
         "Vampire Weaknesses": {
-          "name": "뱀파이어 약점 Vampire Weaknesses",
+          "name": "뱀파이어 약점 - Vampire Weaknesses",
           "description": "<p>[[lookup @name lowercase]] 에게는 다음과 같은 단점이 있습니다.</p><p><em>금제</em>. 건물 안에 있는 사람 중 누군가가 초대하지 않는 한, [[lookup @name lowercase]] 은/는 안으로 들어갈 수 없습니다<strong>. </strong></p><p><em>흐르는 물에 의한 피해</em>. 흐르는 물 속에서 턴을 마칠 경우, [[lookup @name lowercase]] 에게 20점의 <em>산성 피해</em>가 가해집니다<strong>. </strong></p><p><em>심장의 말뚝</em>. [[lookup @name lowercase]] 이/가 안식처 속에서 행동불능 상태인 동안 나무로 만들어진 관통 무기가 [[lookup @name lowercase]] 의 심장에 박히면 [[lookup @name lowercase]] 은/는 심장에 박힌 말뚝이 제거되기 전까지 마비됩니다.</p><p><em>태양광 초과민성</em>. 태양광 속에서 턴을 시작할 경우, [[lookup @name lowercase]] 에게 20점의 <em>광휘 피해</em>가 가해집니다. 태양광 속에 있을 때 [[lookup @name lowercase]] 의 공격 굴림과 능력 판정에 <strong>불리함</strong>이 적용됩니다.</p>"
         }
       }
     },
     "Weasel": {
-      "name": "족제비 Weasel",
+      "name": "족제비 - Weasel",
       "items": {
         "Bite": {
-          "name": "물기 Bite",
+          "name": "물기 - Bite",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+5\" data-rolltype=\"명중\" data-rollaction=\"Bite\">+5</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 piercing 피해.</p>\n</div>"
         },
         "Keen Hearing and Smell": {
-          "name": "예리한 청각과 후각 Keen Hearing and Smell"
+          "name": "예리한 청각과 후각 - Keen Hearing and Smell"
         }
       }
     },
     "Zombie": {
-      "name": "좀비 Zombie",
+      "name": "좀비 - Zombie",
       "description": "<p>사령마법이 인간형 종족의 살을 보존하기 위해 활용되면, 좀비가 일어나 사악한 주인을 섬깁니다. 움직이는 스켈레톤이 죽음으로부터 되살아난 것과 유사한 방식으로 좀비도 이 세계로 돌아오게 됩니다. 숙련된 주문시전자가 망자를 소생시켜 새롭게 태어난 좀비에게 명령을 내릴 수도 있지만, 좀비는 사령 에너지가 포화 상태인 구역에서도 되살아날 수 있습니다. 이 경우, 좀비는 주인의 명령을 듣지 않으며 공격하여 먹어치울 만한 것을 찾아내거나 그 전에 움직이지 않는 뼈 무더기가 되어 썩어버릴 때까지 목적 없이 좁은 범위를 배회합니다.\n</p>\n<p><strong>답: 당신의 뇌.</strong> 좀비는 살아 생전의 모습을 상당히 많이 유지합니다. 좀비는 되살아날 때 생전에 사망의 원인이 되었던 상처나 질병의 흉터를 여전히 갖고 있습니다. 수많은 갓 생성된 좀비가 부풀어 오르고, 피부 껍질이 몸으로부터 벗겨지거나 폭발한 복부로부터 흘러나온 내장을 질질 끌고 다니는 등, 부패의 증상 역시 확인할 수 있습니다. 비록 좀비가 살아 생전의 모습을 닮았을 수는 있으나, 그 머릿속에서는 무심한 허기 외에는 그 어떤 것도 동작하지 않습니다. 좀비는 주인의 명령에 맹목적으로 복종할 수밖에 없는 영구적인 상태로 비틀거리며 가까스로 존재하고 있을 뿐입니다. 좀비의 이런 정신 상태 덕분에 어려운 상황에 처한 사령술사는 좀비를 매우 유용한 전사로 활용할 수 있습니다. 좀비는 단도직입적이며, 단 한 순간도 자신의 안전에 대해서는 고려하지 않고 그대로 목표를 향해 어기적거리며 직진합니다. 어떤 좀비가 화염 속이나 산 구덩이를 통과하여 적을 향해 걸어간 사례도 있습니다. 목표에 도달하면 좀비는 자신이나 적 중에 하나가 난전 끝에 쓰러질 떄까지 계속해서 치고 물어뜯을 것입니다. 좀비는 무기를 들 수는 있으나 이를 영민하게 사용하진 못합니다. 무장 해제된 경우, 좀비는 무기가 없어도 그저 부러진 손을 뻗어 손톱으로 공격할 것이기 때문에 무기를 다시 되찾지 못할 것입니다. 좀비를 필멸계에 묶어두는 마법은 초심자가 아니더라도 까다로우니, 젊은 모험가들은 주의하십시오! 좀비를 쓰러트렸다면, 이 크리처가 다시 완전하게 사망하지 않았을 수도 있다는 점에 유의해야 합니다. 던전 안으로 더 깊숙하게 파고들어가기 전에 기다리면서 이 짐승이 다시 일어나려고 시도하지는 않는지 확인하십시오.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "items": {
         "Slam": {
-          "name": "강타 Slam",
+          "name": "강타 - Slam",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+3]]{+3} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 4 ([[/damage 1d6 + 1 type=bludgeoning]]) 피해.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Undead Fortitude": {
-          "name": "언데드의 인내력 Undead Fortitude",
+          "name": "언데드의 인내력 - Undead Fortitude",
           "description": "<section class=\"secret\">\n<p>[[lookup @name lowercase]] 에 가해진 피해로 대상의 히트 포인트가 <strong>0HP</strong>로 떨어진 경우, 해당 피해가 광휘 속성이거나 치명타가 아니었다면 5 + 입은 피해량만큼의 난이도로 <strong>건강</strong> 내성 굴림을 해야만 합니다. 내성 굴림에 성공한 경우 [[lookup @name lowercase]] 의 히트 포인트는 0HP 대신 <strong>1HP</strong>로 감소합니다.</p>\n</section>\n<p>[[lookup @name lowercase]] 에 가해진 피해로 히트 포인트가 <strong>0HP</strong>로 떨어진 경우, <strong>건강</strong> 내성 굴림을 해야만 합니다.</p>"
         }
       }

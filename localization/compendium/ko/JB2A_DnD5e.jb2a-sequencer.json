@@ -2,13 +2,13 @@
   "label": "JB2A Sequencer Macros",
   "entries": {
     "Bless": {
-      "name": "축복 Bless"
+      "name": "축복 - Bless"
     },
     "Magic Circle": {
-      "name": "마법 Circle"
+      "name": "마법진 - Magic Circle"
     },
     "Shield": {
-      "name": "방패 Shield"
+      "name": "방패 - Shield"
     }
   }
 }

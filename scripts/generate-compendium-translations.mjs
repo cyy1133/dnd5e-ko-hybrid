@@ -18,17 +18,42 @@ const stripMarkup = (value = "") =>
 const hasEnglish = (value = "") => /[A-Za-z]/u.test(value);
 const hasKorean = (value = "") => /\p{Script=Hangul}/u.test(value);
 
+const splitBilingualName = (value = "") => {
+  const normalized = String(value ?? "").trim();
+  const match = normalized.match(/^(.*?)(?:\s*-\s*|\s+)([A-Za-z][A-Za-z0-9:'(),/+ -]*)$/u);
+  if (!match) return null;
+
+  const translated = match[1].trim();
+  const source = match[2].trim();
+  if (!translated || !source || !hasKorean(translated)) return null;
+
+  return { translated, source };
+};
+
 const formatBilingualName = (originalName, translatedName) => {
   const source = String(originalName ?? "").trim();
   const translated = String(translatedName ?? "").trim();
+  const sourceBilingual = splitBilingualName(source);
+  const translatedBilingual = splitBilingualName(translated);
 
   if (!source || !translated) return translated;
+  if (sourceBilingual) {
+    return `${translatedBilingual?.translated ?? sourceBilingual.translated} - ${translatedBilingual?.source ?? sourceBilingual.source}`;
+  }
+  if (translatedBilingual) {
+    return translatedBilingual.source === source
+      ? `${translatedBilingual.translated} - ${translatedBilingual.source}`
+      : source;
+  }
   if (!hasEnglish(source) || hasKorean(source)) return translated;
   if (translated === source) return translated;
-  if (translated.includes(source)) return translated;
-  if (hasEnglish(translated)) return translated;
+  if (translated.endsWith(source)) {
+    const head = translated.slice(0, -source.length).replace(/\s*-\s*$/u, "").trim();
+    if (head) return `${head} - ${source}`;
+  }
+  if (hasEnglish(translated)) return source;
 
-  return `${translated} ${source}`;
+  return `${translated} - ${source}`;
 };
 
 const GENERIC_PAGE_NAME_TRANSLATIONS = {
@@ -126,6 +151,9 @@ const findCompendiumActorEntry = (compendium, originalName) => {
 
 const translateName = (originalName, type, compendiumEntry) => {
   if (!originalName) return "";
+  if (splitBilingualName(originalName)) {
+    return formatBilingualName(originalName, compendiumEntry?.name ?? originalName);
+  }
   if (hasKorean(originalName)) return "";
   const translated =
     compendiumEntry?.name
@@ -167,6 +195,20 @@ const shouldReplaceText = (currentValue, candidateValue, originalValue = "") => 
   if (candidateHasKorean && !currentHasKorean) return true;
   if (candidateHasKorean && currentEnglishOnly) return true;
   if (candidateHasKorean && currentHasKorean && hasEnglish(current) && !candidateEnglishOnly) return true;
+
+  return false;
+};
+
+const shouldReplaceName = (currentValue, candidateValue, originalValue = "") => {
+  const current = String(currentValue ?? "").trim();
+  const candidate = String(candidateValue ?? "").trim();
+  const original = String(originalValue ?? "").trim();
+
+  if (!candidate || candidate === original) return false;
+  if (!current) return true;
+  if (shouldReplaceText(current, candidate, original)) return true;
+  if (candidate === original && hasEnglish(current) && hasKorean(current) && !current.endsWith(original)) return true;
+  if (candidate.includes(" - ") && current !== candidate && original && current.endsWith(original)) return true;
 
   return false;
 };
@@ -234,7 +276,7 @@ const main = async () => {
         case "Item": {
           const compendiumEntry = findCompendiumEntry(compendium, templateEntry.type, templateEntry.originalName);
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumEntry);
-          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
+          if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             itemNames += 1;
           }
@@ -255,7 +297,7 @@ const main = async () => {
         case "Actor": {
           const compendiumActor = findCompendiumActorEntry(compendium, templateEntry.originalName);
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumActor);
-          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
+          if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             actorNames += 1;
           }
@@ -277,7 +319,7 @@ const main = async () => {
             const existingItem = existingEntry.items[itemName] ?? {};
             const compendiumEntry = findCompendiumEntry(compendium, itemTemplate.type, itemTemplate.originalName);
             const translatedItemName = translateName(itemTemplate.originalName, itemTemplate.type, compendiumEntry);
-            if (shouldReplaceText(existingItem.name, translatedItemName, itemTemplate.originalName)) {
+            if (shouldReplaceName(existingItem.name, translatedItemName, itemTemplate.originalName)) {
               existingItem.name = translatedItemName;
               actorItemNames += 1;
             }
@@ -306,7 +348,7 @@ const main = async () => {
         }
         case "JournalEntry": {
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, null);
-          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
+          if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             journalNames += 1;
           }
@@ -315,7 +357,7 @@ const main = async () => {
           for (const [pageName, pageTemplate] of Object.entries(templateEntry.pages ?? {})) {
             const existingPage = existingEntry.pages[pageName] ?? {};
             const translatedPageName = translateName(pageTemplate.originalName, pageTemplate.type, null);
-            if (shouldReplaceText(existingPage.name, translatedPageName, pageTemplate.originalName)) {
+            if (shouldReplaceName(existingPage.name, translatedPageName, pageTemplate.originalName)) {
               existingPage.name = translatedPageName;
               journalNames += 1;
             }
@@ -344,7 +386,7 @@ const main = async () => {
         }
         default: {
           const translatedName = translateName(templateEntry.originalName ?? entryName, templateEntry.type, null);
-          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName ?? entryName)) {
+          if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName ?? entryName)) {
             existingEntry.name = translatedName;
           }
           break;

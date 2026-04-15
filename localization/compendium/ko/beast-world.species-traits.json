@@ -21,30 +21,30 @@
   },
   "entries": {
     "A Head for Knots": {
-      "name": "매듭에 밝은 머리 A Head for Knots"
+      "name": "매듭에 밝은 머리 - A Head for Knots"
     },
     "A Mean Right Hook": {
-      "name": "매서운 오른손 훅 A Mean Right Hook"
+      "name": "매서운 오른손 훅 - A Mean Right Hook"
     },
     "A Mind Outside the Box": {
-      "name": "틀을 벗어난 정신 A Mind Outside the Box"
+      "name": "틀을 벗어난 정신 - A Mind Outside the Box"
     },
     "Acid Breath": {
-      "name": "산성 브레스 Acid Breath",
+      "name": "산성 브레스 - Acid Breath",
       "description": "<section class=\"secret\"><p> [[lookup @details.type.config.label lowercase]] 타입은 직선으로 60ft, 5ft 너비 범위에 산성 물질을 뿜어냅니다. </p><p>해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 18 민첩</strong> 내성 굴림을 하여 실패하면 <strong>54(12d8)점의 <em>산성 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다. </p></section><p> [[lookup @details.type.config.label lowercase]] 타입은 직선으로 60ft, 5ft 너비 범위에 산성 물질을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
     "Armaments of the First": {
-      "name": "Armaments 의 First",
+      "name": "Armaments 의 - First",
       "description": "<p><span style=\"font-family:Signika, sans-serif\">All cervines are gifted with one of their forebears’ natural weapons. You have a @UUID[Compendium.beast-world.species-traits.Item.PvMORczp5PEhrfwN]{Hoof Stomp} and a @UUID[Compendium.beast-world.species-traits.Item.CI0i78FAZfxEV4MY]{Gore} attack (if you have antlers, which is your choice). These attacks deal 1d6 피해에 더해 your Strength modifier. The hoof stomp deals bludgeoning damage, and the gore attack deals piercing 피해.</span></p>"
     },
     "Better With an Audience": {
       "name": "Better With an 관객"
     },
     "Birthmates of the Arcana": {
-      "name": "Birthmates 의 Arcana"
+      "name": "Birthmates 의 - Arcana"
     },
     "Body of Grace": {
-      "name": "몸체 의 은총 Body of Grace",
+      "name": "몸체 의 은총 - Body of Grace",
       "description": "<p>Your natural weapons have the finesse property. When you reach 11th level, your natural weapon attacks score a critical hit on a roll of 19 or 20.</p>"
     },
     "Bounding Grace": {
@@ -60,7 +60,7 @@
       "description": "<p>Unburdened by the paralyzing effects of analytical thinking, Kobolds have a way of getting to the solution they seek (even more so if unburdened by intellect). You have a +1 bonus to any ability check you make on which you don’t have a bonus other than from your ability modifier or from the @UUID[Compendium.beast-world.species-traits.Item.xW0wE9YOwGwCuJm9]{Stackable Intellect} trait. This bonus is +2 instead if your Intelligence score is 9 or lower.</p>"
     },
     "Cold Breath": {
-      "name": "냉기 브레스 Cold Breath",
+      "name": "냉기 브레스 - Cold Breath",
       "description": "<section class=\"secret\">\n<p>**냉기 브레스.**  [[lookup @details.type.config.label lowercase]]이/가 60ft의 원뿔형 범위에 얼어붙을 듯한 바람을 뿜어냅니다. 해당하는 범위에 있던 크리처는 각자 <strong>DC 20 건강</strong> 내성 굴림을 하여 실패하면 <strong>58(13d8)점의 <em>냉기 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p>\n</section>\n<p> [[lookup @details.type.config.label lowercase]]이/가 60ft의 원뿔형 범위에 얼어붙을 듯한 바람을 뿜어냅니다. 해당하는 범위에 있던 크리처는 각자 <strong>건강</strong> 내성 굴림을 해야만 합니다.</p>"
     },
     "Collective Magic": {
@@ -70,10 +70,10 @@
       "description": "<p>You can bend your breath weapon into a unique shape depending on your lineage.</p><ul><li><em>Cove</em>. You can choose the radius of your acid breath’s splash, up to the maximum for your level.</li><li><em>Volcano</em>. You can exclude creatures of your choice from your fire breath.</li><li><em>Flatland</em>. The line of your lightning breath can change direction twice. A creature can only be affected once by the line. </li><li><em>Glacier</em>. The panels created by your ice breath do not need to be contiguous.</li></ul>"
     },
     "Crown and Scepter": {
-      "name": "Crown 및 Scepter"
+      "name": "Crown 및 - Scepter"
     },
     "Darkvision": {
-      "name": "암시야 Darkvision"
+      "name": "암시야 - Darkvision"
     },
     "Dragon Magic (Bulwark)": {
       "name": "드래곤 마법 (Bulwark)"
@@ -83,28 +83,31 @@
       "description": "<p>You can cast the @Compendium[dnd5e.spells.B0pnIcc52O6G8hi8]{Longstrider}spell with this trait, without requiring a material component. Once you reach 5th level, you can also cast the@UUID[Compendium.beast-world.spells.Item.rbb7LuJOGokbjP1t]{Perfect Respiration}  spell with it. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Charisma is your spellcasting ability for these spells when you cast them with this trait</p>"
     },
     "Dragon Magic (Monarch)": {
-      "name": "드래곤 마법 (군주) Dragon Magic (Monarch)",
+      "name": "드래곤 마법 (군주) - Dragon Magic (Monarch)",
       "description": "<p>You can cast the @Compendium[dnd5e.spells.arzCrMRgcNiQuh43]{Command} spell with this trait. Once you reach 5th level, you can also cast the @UUID[Compendium.beast-world.spells.Item.ggLjRmy42S54ceBX]{Summon Subject} spell with it. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</p><p>Charisma is your spellcasting ability for these spells when you cast them with this trait.</p>"
     },
     "Dragon Magic (Scholar)": {
-      "name": "드래곤 마법 (학자) Dragon Magic (Scholar)"
+      "name": "드래곤 마법 (학자) - Dragon Magic (Scholar)"
     },
     "Dragon Magic (Whispering)": {
-      "name": "드래곤 마법 (속삭임) Dragon Magic (Whispering)",
+      "name": "드래곤 마법 (속삭임) - Dragon Magic (Whispering)",
       "description": "<p><span class=\"fontstyle0\">You can cast the @Compendium[dnd5e.spells.82jM6qD9axLJsTrH]{Illusory Script}</span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\">spell with this trait, without requiring a material component. Once you reach 5th level, you can also cast the </span><span class=\"fontstyle2\">@UUID[Compendium.beast-world.spells.Item.asx3NHiA0tNi51WX]{Discern the Heart's Hoard} </span><span class=\"fontstyle0\">spell with it. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.</span></p><p><span class=\"fontstyle0\">Wisdom is your spellcasting ability for these spells when you cast them with this trait. </span></p>"
     },
     "Eidetic Memory": {
       "name": "Eidetic 기억"
     },
     "Fire Breath": {
-      "name": "화염 브레스 Fire Breath",
+      "name": "화염 브레스 - Fire Breath",
       "description": "<section class=\"secret\">\n<p>**화염 브레스.**  [[lookup @details.type.config.label lowercase]]이/가 너비 5ft의 직선 60ft 범위에 화염을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 18 민첩</strong> 내성 굴림을 하여 실패하면 <strong>45(13d6)점의 <em>화염 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p>\n</section>\n<p> [[lookup @details.type.config.label lowercase]]이/가 너비 5ft의 직선 60ft 범위에 화염을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
+    "Gore": {
+      "name": "뿔받기 - Gore"
+    },
     "Head Down, Feet Forward": {
-      "name": "Head Down, 발 Forward"
+      "name": "Head Down, 발 - Forward"
     },
     "Hunter's Cleave": {
-      "name": "사냥꾼's Cleave"
+      "name": "사냥꾼's - Cleave"
     },
     "Inner Spark": {
       "description": "<p>Ovine wool gives a friend a little shock, but with a bit of practice this can be honed into something extraordinary. Whenever you deal lightning damage to a creature, the creature takes an extra 1d4 lightning 피해.</p>"
@@ -114,39 +117,39 @@
       "description": "<p>Rats can make do with what’s left over, and this extends even into the arcane. As a reaction to a spell being cast on a creature you can see within 60 feet of you, if the spell's level is lower than or equal to your level divided by 3 (minimum 1st-level), you can cause the spell to additionally affect you as if you were the target. Once you use this ability you can’t use it again until you finish a long rest.</p>"
     },
     "Life's Passion": {
-      "name": "생명's Passion",
+      "name": "생명's - Passion",
       "description": "<p>You gain proficiency with one artisan’s tool of your choice, and in one skill chosen from the following: Arcana, History, Medicine, Nature, or Religion. Your proficiency bonus is doubled for any ability check you make using either of these proficiencies. Additionally, you gain proficiency with one martial melee weapon without the heavy property, which counts as a finesse and thrown (range 20/60) weapon for you.</p>"
     },
     "Lightning Breath": {
-      "name": "번개 브레스 Lightning Breath",
+      "name": "번개 브레스 - Lightning Breath",
       "description": "<section class=\"secret\"><p> [[lookup @details.type.config.label lowercase]]이/가 5ft 너비의 90ft 직선 범위에 뇌전을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 19 민첩</strong> 내성 굴림을 하여 실패하면 <strong>66(12d10)점의 <em>번개 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p><p></p></section><p> [[lookup @details.type.config.label lowercase]]이/가 5ft 너비의 90ft 직선 범위에 뇌전을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
     "Long Arms": {
       "name": "Long 무장"
     },
     "Low-Light Vision": {
-      "name": "저조도 시야 Low-Light Vision"
+      "name": "저조도 시야 - Low-Light Vision"
     },
     "Malleable Mind": {
       "name": "Malleable 정신"
     },
     "Masterpiece of Movement": {
-      "name": "Masterpiece 의 Movement"
+      "name": "Masterpiece 의 - Movement"
     },
     "Mind for Beasts": {
-      "name": "정신 for Beasts"
+      "name": "정신 - for Beasts"
     },
     "Mnemonic Mind": {
       "name": "Mnemonic 정신"
     },
     "Natural Armor (Armadillo)": {
-      "name": "천연 갑옷 (아르마딜로) Natural Armor (Armadillo)"
+      "name": "천연 갑옷 (아르마딜로) - Natural Armor (Armadillo)"
     },
     "Natural Armor (Dragon)": {
-      "name": "천연 갑옷 (드래곤) Natural Armor (Dragon)"
+      "name": "천연 갑옷 (드래곤) - Natural Armor (Dragon)"
     },
     "Natural Weapons": {
-      "name": "천연 무기 Natural Weapons",
+      "name": "천연 무기 - Natural Weapons",
       "description": "<p>Your tail, claws, and teeth are natural weapons, which you can use to make unarmed strikes. If you hit with one of them, you deal damage equal to 1d8 + your Strength modi\u0002fier, instead of the normal damage for an unarmed strike. Your tail deals bludgeoning damage, your claws deal slashing damage, and your bite deals piercing 피해. Additionally, when you take the Attack action on your turn, you can make a tail, claw, or bite attack as a bonus action.</p>"
     },
     "Noodle Body": {
@@ -157,10 +160,10 @@
       "description": "<p>You can cast the @Compendium[dnd5e.spells.kSPRpeIx3w3nihrF]{Dream} spell once with this trait and regain the ability to do so when you finish a long rest. You can also this spell using any spell slots you have of the appropriate level. Intelligence is your spellcasting ability for it when you cast it with this trait.</p><p>When you cast dream, instead of causing a messenger to appear in a creature’s dream, you can cast a mental fog over their recollection of an encounter with you. They’re unaware that they are the target of the spell, but it fails if you made a jarring impression on the creature during the encounter (such as by fighting them or using strange magic). Otherwise, the target must make an Intelligence saving throw with a DC equal to 8 + your proficiency bonus + your Intelligence modifier. A creature with an Intelligence score lower than yours automatically fails the save. If you have a body part, tuft of fur, clipping from a claw, or similar portion of the target’s body, the target makes its saving throw with disadvantage.</p><p>내성 굴림에 실패하면, the creature forgets that you were present in their memory of an encounter up to 1 hour long that happened within the last 7 days. The event isn’t erased, but your identity becomes a missed detail in the target’s long-term memory. 내성 굴림에 성공하면, the memory is unaffected and you can’t use the spell to alter the same memory again.</p>"
     },
     "Out of the Gate": {
-      "name": "Out 의 Gate"
+      "name": "Out 의 - Gate"
     },
     "Powerful Build": {
-      "name": "강인한 체격 Powerful Build"
+      "name": "강인한 체격 - Powerful Build"
     },
     "Presence": {
       "description": "<p>Monarch dragons can gather their otherworldly demeanor and project themselves to terrible or inspiring effect. As an action, creatures you choose within 30 feet must make a Wisdom saving throw with a DC equal to 8 + your proficiency bonus + your Charisma modifier. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Presence for the next 24 hours. All creatures who fail the save are subject to your choice of one of the following effects for the next 10 minutes. Once you use this ability, you can’t use it again until you finish a long rest.</p><ul><li><em><strong>Frightening Presence</strong></em>. You are the quintessence of danger. Creatures under this effect drop what they are holding and become frightened for the duration. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make another Wisdom saving throw. 내성 굴림에 성공하면, this effect ends for that creature.</li><li><em><strong>Majestic Presence</strong></em>. This expression is something more basic than the parlor trick of enchantment mind-fiddling: you are a fundamentally trustworthy force in the world. Creatures under this effect are charmed by you, and regard you as a wise and discerning leader. Once you reach 11th level, you can inflict special terror in the heart of a creature you can see affected by your Frightening Presence as an action. The creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move.</li></ul>"
@@ -176,7 +179,7 @@
       "name": "Slippery 생각"
     },
     "Slow and Steady": {
-      "name": "Slow 및 Steady"
+      "name": "Slow 및 - Steady"
     },
     "Stackable Intellect": {
       "description": "<p>You gain a bonus to ability checks based on the number of kobolds within 60 feet of you. The bonus is determined by the Kobold Stacking table below.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"2\"><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Kobold Stacking</span></strong></span></p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>Number of Kobolds</p></td><td style=\"width:36.2906%;text-align:center\"><p>Ability Check Bonus</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>2</p></td><td style=\"width:36.2906%;text-align:center\"><p>+1</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>4</p></td><td style=\"width:36.2906%;text-align:center\"><p>+2</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>8</p></td><td style=\"width:36.2906%;text-align:center\"><p>+3</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>16</p></td><td style=\"width:36.2906%;text-align:center\"><p>+4</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>32+</p></td><td style=\"width:36.2906%;text-align:center\"><p>+5</p></td></tr></tbody></table>"
@@ -201,10 +204,10 @@
       "description": "<p>Mice have an innate connection among themselves that allows them to communicate using facial tics and mannerisms too subtle for other species to detect. You can communicate silently  with any mouse who can see your face, and vice versa.</p>"
     },
     "Vulpine Deduction": {
-      "name": "여우류 Deduction"
+      "name": "여우류 - Deduction"
     },
     "Wings": {
-      "name": "날개 Wings"
+      "name": "날개 - Wings"
     }
   }
 }

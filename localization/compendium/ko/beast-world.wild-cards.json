@@ -5,11 +5,11 @@
       "name": "Abundant 마법"
     },
     "Blade of the Harvest Moon": {
-      "name": "칼날 의 수확 달 Blade of the Harvest Moon",
+      "name": "칼날 의 수확 달 - Blade of the Harvest Moon",
       "description": "<p>When you use this card as an action, you summon a scimitar forged from moonlight for 1 minute. Melee attacks made with this scimitar deal an extra 2d6 radiant 피해. A creature can swing it in an arc to expel a radiant crescent, a ranged attack that deals 1d6 + Dex mod slashing 피해에 더해 2d6 radiant 피해. Its normal range is 20 feet and its long range is 60 feet.</p>\n<p>Starting at 11th level, the extra radiant damage increases to 4d6.</p>"
     },
     "Bolt of the Cloud Jumper": {
-      "name": "Bolt 의 구름 Jumper",
+      "name": "Bolt 의 구름 - Jumper",
       "description": "<p>When you use this card as an action, a ball lightning appears in your hand. As a bonus action, a creature holding the ball can shoot it at a target within 120 feet. 대상은 민첩 내성 굴림에 성공해야 하며, 실패하면 take 3d6 lightning 피해. The ball disappears after 1 minute or after being shot.</p>\n<p>A creature can use a bonus action to pass the ball to a willing creature within 120 feet. A receiver must use its reaction to catch the ball, or it disappears. The first three times the ball is passed, the damage it deals increases by 1d6 and the save DC increases by 1.</p>\n<p>The damage added by passing the ball increases to 2d6 at level 6, and 3d6 at level 14.</p>"
     },
     "Budding Life": {
@@ -19,14 +19,14 @@
       "name": "Clarity 의 Solstice 저녁"
     },
     "Distant Star's Arrow": {
-      "name": "Distant 별's Arrow",
+      "name": "Distant 별's - Arrow",
       "description": "<p>When you use this card as a bonus action while holding up to eight pieces of ranged weapon ammunition, you imbue them with the faraway winter sun for the next 8 hours. Creatures have a +1 bonus to attack and damage rolls made with this ammunition. On a hit, the target must make a Wisdom saving throw. 내성 굴림에 실패하면, for the next minute the target cannot willingly move to a space within 30 feet of the attacker. 내성 굴림에 성공하면, the target becomes immune to this effect for the next 24 hours.</p><p>Starting at 8th level, the bonus to attack and damage rolls increases to +2 at 8th level, and +3 at 14th level. Additionally, starting at 8th level you can imbue up to twelve pieces of ammunition, and sixteen pieces at 14th level.</p>"
     },
     "Eye of the Sun": {
-      "name": "눈 의 태양 Eye of the Sun"
+      "name": "눈 의 태양 - Eye of the Sun"
     },
     "Flare of Solar Homecoming": {
-      "name": "Flare 의 태양 Homecoming"
+      "name": "Flare 의 태양 - Homecoming"
     },
     "Footprints in the Snow": {
       "name": "Footprints in the 눈"
@@ -39,23 +39,23 @@
       "description": "<p>When you use this card as an action, the drunken haze of a hummingbird eating rotten fruit overtakes foes you attack for 10 minutes. When you hit a creature with a natural weapon (including while in beast form), the target must make a Constitution saving throw. 내성 굴림에 실패하면, the target has disadvantage on Dexterity saving throws, and attacks against it have advantage for the duration.</p>\n<p>Starting at 11th level, affected creatures also have their speed halved.</p>"
     },
     "Jubilee of the Flock": {
-      "name": "Jubilee 의 Flock"
+      "name": "Jubilee 의 - Flock"
     },
     "Limbs of the Slumbering One": {
-      "name": "Limbs 의 Slumbering One"
+      "name": "Limbs 의 - Slumbering One"
     },
     "Lunar Body": {
       "name": "Lunar 몸체",
       "description": "<p>When you use this card as an action, your body takes an incorporeal form for 1 minute. You can hover up to 10 feet from the ground and your body passes through solid objects. If you end your turn inside a solid object, you are shunted out to the nearest unoccupied space you last occupied. You can’t make weapon attacks, but you are immune to bludgeoning, piercing, and slashing damage that is nonmagical. You emit bright light out to 10 feet, and dim light for a further 10 feet. The effect ends if you cast a spell or dismiss it as an action.</p><p>Starting at 8th level, you can use a bonus action to become invisible or reappear. Starting at 14th level, up to six creatures you can see within 60 feet of you also gain the benefits of this card.</p><p> </p>"
     },
     "Poison Thorn": {
-      "name": "독 Thorn"
+      "name": "독 - Thorn"
     },
     "Return to Soil": {
       "description": "<p>When you use this card as a bonus action, the approaching death of the season’s end grips you and your enemy. Choose a creature you can see within 30 feet of you. Until the end of your next turn, you and the target have vulnerability to cold and necrotic 피해.</p>"
     },
     "Scattering Snow Raven": {
-      "name": "Scattering 눈 Raven",
+      "name": "Scattering 눈 - Raven",
       "description": "<p>You use this card as a reaction to a creature you can see within 120 feet of you being reduced to 0 hit points. The creature transforms into a snow raven with 1 hit point, and can immediately use its reaction to move up to twice its speed, without provoking opportunity attacks. It retains its Intelligence, Wisdom, and Charisma scores but otherwise uses the raven’s stat block. The transformation lasts 1 minute, or until the creature dismisses it as an action.</p>\n<p>Starting at 11th level, you can use this card as a reaction to a creature taking 피해.</p>"
     },
     "Starless Night": {
@@ -63,10 +63,10 @@
       "description": "<p>When you use this card as an action, you curse an enemy with the unease of the hunted. A target you can see within 60 feet of you must make a Wisdom saving throw. Superstitious minds have disadvantage on the save. Targets that can’t be charmed automatically succeed on the save.</p>\n<p>내성 굴림에 실패하면, for the next minute the target must roll a d4 at the start of each of its turns to determine its behavior for that turn. At the end of each of its turns, the target can repeat the Wisdom saving throw. If it succeeds, the effect ends for that target.</p>\n<p>Starting at 8th level, you can target up to two creatures within range with this card.</p>\n<p>Starting at 14th level, you can target any creatures you choose within 60 feet.</p>\n<table style=\"width:100%\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">d4</td>\n<td style=\"text-align:center;width:92.4478%\">Effect</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">1</td>\n<td style=\"width:92.4478%\"><strong>Freeze.</strong> The creature doesn't move or take actions this turn.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">2</td>\n<td style=\"width:92.4478%\"><strong>Fight.</strong> The creature targets a random creature with a melee weapon attack. If there is no creature within range, the creature takes 3d6 psychic 피해.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">3</td>\n<td style=\"width:92.4478%\"><strong>Flight.</strong> The creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space with 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature takes 3d6 psychic damage and can use the dodge action.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">4</td>\n<td style=\"width:92.4478%\">The creature acts normally.</td>\n</tr>\n</tbody>\n</table>"
     },
     "Storm's Sharpened Tines": {
-      "name": "폭풍's Sharpened Tines"
+      "name": "폭풍's - Sharpened Tines"
     },
     "Twist of the Cyclone's Path": {
-      "name": "Twist 의 Cyclone's Path"
+      "name": "Twist 의 - Cyclone's Path"
     }
   }
 }

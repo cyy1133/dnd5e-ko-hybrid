@@ -4,6 +4,10 @@ const DESCRIPTION_SELECTORS = [
   ".editor-content",
   "[data-tab='description'] .tab-body",
   "[data-tab='description'] .editor",
+  "[data-tab='biography'] .tab-body",
+  "[data-tab='biography'] .editor",
+  "[data-tab='biography'] .editor-content",
+  "[data-tab='details'] .biography .editor-content",
   ".journal-page-content",
   ".journal-sheet-container .pages-list .page"
 ];
@@ -170,9 +174,16 @@ export class RuntimeOverlay {
   #onRenderActorSheet(app, html) {
     if (!this.#enabled()) return;
     const translation = this.store.getActorTranslation(app.object);
+    const context = {
+      relativeTo: app.object,
+      rollData: app.object?.getRollData?.() ?? null
+    };
     if (translation?.name) {
       setWindowTitle(html, translation.name);
       this.#applyNameInput(html[0], translation.name);
+    }
+    if (translation?.description) {
+      this.#replaceHtml(html[0], this.store.translateHtmlString(translation.description, context));
     }
     this.#translateActorSheetItems(app.object, html[0]);
     this.#decorateHtml(html[0]);
