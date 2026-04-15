@@ -1167,6 +1167,7 @@ export class TranslationStore {
     this.compendiumPackLabels = new Map();
     this.compendiumFolderLabels = new Map();
     this.compendiumSignatureIndex = new Map();
+    this.compendiumIdentifierIndex = new Map();
     this.compendiumNameIndex = new Map();
     this.compendiumActorNameIndex = new Map();
     this.sharedItems = new Map();
@@ -1631,6 +1632,43 @@ export class TranslationStore {
     return names;
   }
 
+  _normalizeIdentifier(value) {
+    return normalizeText(value)
+      .toLowerCase()
+      .replace(/-(legacy|2014|2024)$/u, "")
+      .replace(/[^a-z0-9]+/gu, "-")
+      .replace(/^-+|-+$/gu, "");
+  }
+
+  _identifierFromName(name) {
+    return this._normalizeIdentifier(
+      normalizeText(name)
+        .replace(/['’]/gu, "")
+        .replace(/\+/gu, " plus ")
+    );
+  }
+
+  _getItemLookupIdentifiers(item) {
+    const identifiers = [];
+    const pushIdentifier = (value) => {
+      const normalized = this._normalizeIdentifier(value);
+      if (!normalized || identifiers.includes(normalized)) return;
+      identifiers.push(normalized);
+    };
+
+    pushIdentifier(item?.system?.identifier);
+    pushIdentifier(item?.flags?.ddbimporter?.definition?.identifier);
+    pushIdentifier(item?.flags?.ddbimporter?.originalName);
+    pushIdentifier(item?.flags?.ddbimporter?.definition?.name);
+    pushIdentifier(item?.flags?.ddbimporter?.dndbeyond?.originalName);
+
+    for (const name of this._getItemLookupNames(item)) {
+      pushIdentifier(this._identifierFromName(name));
+    }
+
+    return identifiers;
+  }
+
   _getItemLookupSignatures(item) {
     const signatures = [];
     const descriptions = [
@@ -1787,13 +1825,63 @@ export class TranslationStore {
   _translateGeneratedDescription(description) {
     if (!description) return description;
 
-    let output = String(description ?? "");
+    const source = String(description ?? "").replace(/\u00a0/gu, " ");
+    const template = document.createElement("template");
+    template.innerHTML = source;
 
-    output = output
+    const walker = document.createTreeWalker(template.content, NodeFilter.SHOW_TEXT, {
+      acceptNode: (node) => {
+        if (!normalizeText(node.textContent)) return NodeFilter.FILTER_REJECT;
+        const parentTag = node.parentElement?.tagName?.toUpperCase?.() ?? "";
+        if (parentTag && ["SCRIPT", "STYLE"].includes(parentTag)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    for (const node of textNodes) {
+      node.textContent = this._translateGeneratedTextSegment(node.textContent);
+    }
+
+    let output = template.innerHTML
       .replace(/\u00a0/gu, " ")
-      .replace(/<span class="No-Break">([^<]+)<\/span>/gu, "$1");
+      .replace(/<span class="No-Break">([^<]+)<\/span>/gu, "$1")
+      .replace(/<h1>Description<\/h1>/gu, "<h1>설명</h1>")
+      .replace(/<h1>Class Features<\/h1>/gu, "<h1>클래스 특성</h1>")
+      .replace(/<strong>Hit Die:<\/strong>/gu, "<strong>히트 다이스:</strong>")
+      .replace(/<strong>Primary Ability:<\/strong>/gu, "<strong>주요 능력:</strong>")
+      .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>");
 
-    output = output
+    return output;
+  }
+
+  _protectFoundryInlineSyntax(text) {
+    const tokens = [];
+    const protectedText = String(text ?? "").replace(
+      /@[\w.-]+\[[^\]]+\](?:\{[^}]*\})?|&Reference\[[^\]]+\](?:\{[^}]*\})?|\[\[[\s\S]*?\]\]/gu,
+      (match) => {
+        const token = `__FVTT_TOKEN_${tokens.length}__`;
+        tokens.push(match);
+        return token;
+      }
+    );
+
+    return { text: protectedText, tokens };
+  }
+
+  _restoreFoundryInlineSyntax(text, tokens = []) {
+    return tokens.reduce(
+      (output, token, index) => output.replaceAll(`__FVTT_TOKEN_${index}__`, token),
+      String(text ?? "")
+    );
+  }
+
+  _translateGeneratedTextSegment(text) {
+    if (!text || !/[A-Za-z@&[]/u.test(text)) return text;
+
+    const { text: protectedText, tokens } = this._protectFoundryInlineSyntax(text);
+    let output = protectedText
       .replace(/Note: importing a class as an item is provided for display purposes only\. If you wish to import a class to a character sheet, please use the importer on the sheet instead\./gu, "참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.")
       .replace(/Mastery: Vex\./gu, "숙련: 벡스.")
       .replace(/Cantrips? \(at will\):/gu, "캔트립 (상시 사용 가능):")
@@ -1901,39 +1989,8 @@ export class TranslationStore {
       .replace(/The ([^.]+?) makes one ([^.]+?) attack\./gu, (_, subject, attack) => `${subjectToKo(subject)}는 ${nameToKo(attack)} 공격을 한 번 합니다.`)
       .replace(/The ([^.]+?) moves up to half its @variantrule\[Speed\|XPHB\], and it makes one ([^.]+?) attack\./gu, (_, subject, attack) => `${subjectToKo(subject)}는 자신의 @variantrule[Speed|XPHB] 절반까지 이동한 뒤 ${nameToKo(attack)} 공격을 한 번 합니다.`)
       .replace(/The ([^.]+?) uses Spellcasting to cast (.+?)\./gu, (_, subject, spellPart) => `${subjectToKo(subject)}는 주문시전을 사용해 ${spellPart}를 시전합니다.`)
-      .replace(/The ([^.]+?) casts the (.+?) spell, requiring no spell components and using Charisma as the spellcasting ability \(spell save DC <span class="rd__dc">([0-9]+)<\/span>\)\./gu, (_, subject, spellName, dc) => `${subjectToKo(subject)}는 ${spellName} 주문을 시전합니다. 이때 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 매력입니다 (주문 내성 DC <span class="rd__dc">${dc}</span>).`)
       .replace(/The ([^.]+?) casts the (.+?) spell, requiring no spell components and using Charisma as the spellcasting ability \(spell save DC ([0-9]+) ?\)\./gu, (_, subject, spellName, dc) => `${subjectToKo(subject)}는 ${spellName} 주문을 시전합니다. 이때 주문 구성 요소는 필요하지 않으며, 주문시전 능력치는 매력입니다 (주문 내성 DC ${dc}).`)
-      .replace(/<span class="entry-title-inner">Psychic Blades<\/span>/gu, "<span class=\"entry-title-inner\">정신 칼날</span>")
-      .replace(/<span class="entry-title-inner">Words of Terror<\/span>/gu, "<span class=\"entry-title-inner\">공포의 속삭임</span>")
-      .replace(/<span class="entry-title-inner">Mantle of Whispers<\/span>/gu, "<span class=\"entry-title-inner\">속삭임의 망토</span>")
-      .replace(/<span class="entry-title-inner">Shadow Lore<\/span>/gu, "<span class=\"entry-title-inner\">그림자 비전</span>")
-      .replace(/<span class="entry-title-inner">Whispers of the Dead<\/span>/gu, "<span class=\"entry-title-inner\">죽은 자의 속삭임</span>")
-      .replace(/<span class="entry-title-inner">Leporine Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">토끼 감각.</span>")
-      .replace(/<span class="entry-title-inner">Superior Darkvision\.<\/span>/gu, "<span class=\"entry-title-inner\">상급 암시야.</span>")
-      .replace(/<span class="entry-title-inner">Keen Senses\.<\/span>/gu, "<span class=\"entry-title-inner\">예리한 감각.</span>")
-      .replace(/<span class="entry-title-inner">Sunlight Sensitivity\.<\/span>/gu, "<span class=\"entry-title-inner\">햇빛 민감성.</span>")
-      .replace(/<span class="entry-title-inner">Drow Magic\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 마법.</span>")
-      .replace(/<span class="entry-title-inner">Drow Weapon Training\.<\/span>/gu, "<span class=\"entry-title-inner\">드로우 무기 수련.</span>")
-      .replace(/<span class="entry-title-inner">Shapechanger\.<\/span>/gu, "<span class=\"entry-title-inner\">변신체.</span>")
-      .replace(/<span class="entry-title-inner">Changeling Instincts\.<\/span>/gu, "<span class=\"entry-title-inner\">체인질링의 본능.</span>")
-      .replace(/<span class="entry-title-inner">Activating the Armor\.<\/span>/gu, "<span class=\"entry-title-inner\">갑옷 활성화.</span>")
-      .replace(/<span class="entry-title-inner">Augmented Physicality\.<\/span>/gu, "<span class=\"entry-title-inner\">강화된 신체 능력.</span>")
-      .replace(/<span class="entry-title-inner">Environmental Adaptation\.<\/span>/gu, "<span class=\"entry-title-inner\">환경 적응.</span>")
-      .replace(/<span class="entry-title-inner">Force Field\.<\/span>/gu, "<span class=\"entry-title-inner\">역장.</span>")
-      .replace(/<span class="entry-title-inner">Propulsion\.<\/span>/gu, "<span class=\"entry-title-inner\">추진.</span>")
-      .replace(/<span class="entry-title-inner">Replacing the Energy Cell\.<\/span>/gu, "<span class=\"entry-title-inner\">에너지 셀 교체.</span>")
-      .replace(/<span class="entry-title-inner">Harvesting Troll Blood<\/span>/gu, "<span class=\"entry-title-inner\">트롤 피 채취</span>")
-      .replace(/<span class="entry-title-inner">Instant Death and Mutations<\/span>/gu, "<span class=\"entry-title-inner\">즉사와 돌연변이</span>")
-      .replace(/<span class="entry-title-inner">Instant Death<\/span>/gu, "<span class=\"entry-title-inner\">즉사</span>")
-      .replace(/<span class="entry-title-inner">Mutations\.<\/span>/gu, "<span class=\"entry-title-inner\">돌연변이.</span>");
-
-    output = output
       .replace(/Hit:\s*([^.]+?) plus ([^.]+?)\./gu, (_, base, extra) => `명중: ${base}에 더해 ${extra}.`)
-      .replace(/<h1>Description<\/h1>/gu, "<h1>설명</h1>")
-      .replace(/<h1>Class Features<\/h1>/gu, "<h1>클래스 특성</h1>")
-      .replace(/<strong>Hit Die:<\/strong>/gu, "<strong>히트 다이스:</strong>")
-      .replace(/<strong>Primary Ability:<\/strong>/gu, "<strong>주요 능력:</strong>")
-      .replace(/<strong>Saves:<\/strong>/gu, "<strong>내성:</strong>")
       .replace(/A master of martial combat, skilled with a variety of weapons and armor/gu, "다양한 무기와 갑옷에 능숙한 무예의 대가")
       .replace(/A wielder of magic that is derived from a bargain with an extraplanar entity/gu, "차원 너머 존재와의 계약에서 비롯된 마법을 휘두르는 자")
       .replace(/You learn maneuvers that are fueled by superiority dice\./gu, "당신은 전투 우월성 주사위로 구동되는 전술 기교를 배웁니다.")
@@ -1946,9 +2003,25 @@ export class TranslationStore {
       .replace(/As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool\./gu, "행동으로 크리처 하나에 접촉해 치유력 풀에서 힘을 끌어와, 그 풀에 남아 있는 최대치까지 원하는 만큼의 HP를 회복시킬 수 있습니다.")
       .replace(/Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it\./gu, "또는 치유력 풀에서 HP 5점을 소모해 목표 하나의 질병 한 가지를 치료하거나 목표에게 영향을 주는 독 한 가지를 중화할 수 있습니다.")
       .replace(/You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one\./gu, "치유의 손길 한 번으로 여러 질병을 치료하고 여러 독을 중화할 수 있지만, 각각에 대해 HP를 따로 소모해야 합니다.")
-      .replace(/This feature has no effect on undead and constructs\./gu, "이 특성은 언데드와 구조물에게는 아무 효과가 없습니다.");
+      .replace(/This feature has no effect on undead and constructs\./gu, "이 특성은 언데드와 구조물에게는 아무 효과가 없습니다.")
+      .replace(/Healing energy radiates from you in an aura with a 30-foot radius\./gu, "치유 에너지가 당신으로부터 반경 30피트의 오라로 퍼져나갑니다.")
+      .replace(/Until the spell ends, the aura moves with you, centered on you\./gu, "주문이 끝날 때까지 이 오라는 당신을 중심으로 함께 이동합니다.")
+      .replace(/You can use a bonus action to cause one creature in the aura \(including you\) to regain ([^.]+?) hit points\./gu, (_, amount) => `보너스 행동으로 오라 안의 크리처 하나(당신 자신 포함)가 ${amount} HP를 회복하게 할 수 있습니다.`)
+      .replace(/When you drink this potion, it cures any disease afflicting you, and it removes the blinded, deafened, paralyzed, and poisoned conditions\./gu, "이 물약을 마시면 당신을 괴롭히는 모든 질병을 치료하고, 실명, 청각 상실, 마비, 중독 상태를 제거합니다.")
+      .replace(/The clear red liquid has tiny bubbles of light in it\./gu, "맑은 붉은 액체 안에는 작은 빛의 거품이 떠다닙니다.")
+      .replace(/You draw the moisture from every creature in a ([0-9-]+-foot cube) centered on a point you choose within range\./gu, (_, area) => `사거리 내 당신이 선택한 한 지점을 중심으로 한 ${area} 범위 안의 모든 크리처로부터 수분을 빨아들입니다.`)
+      .replace(/Each creature in that area must make a Constitution saving throw\./gu, "그 범위 안의 각 크리처는 건강 내성 굴림을 해야 합니다.")
+      .replace(/Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage\./gu, "구조물과 언데드는 영향을 받지 않으며, 식물과 물의 정령은 이 내성 굴림에 불리점을 받습니다.")
+      .replace(/A creature takes ([^.]+?) damage on a failed save, or half as much damage on a successful one\./gu, (_, damage) => `실패한 크리처는 ${damage} 피해를 받고, 성공한 크리처는 그 절반만 받습니다.`);
 
-    return output;
+    const normalizedOutput = normalizeText(output);
+    const translatedLabel = plainLabelToKo(normalizedOutput);
+    const restored = this._restoreFoundryInlineSyntax(
+      translatedLabel !== normalizedOutput ? translatedLabel : output,
+      tokens
+    );
+
+    return restored;
   }
 
   _getSharedItemTranslation(item) {
@@ -1969,6 +2042,7 @@ export class TranslationStore {
 
     fallbacks.push(
       this._withFormattedName(sourceName, this._getSharedItemTranslation(item)),
+      this._withFormattedName(sourceName, this._getCompendiumIdentifierFallback(item)),
       this._withFormattedName(sourceName, this._getCompendiumSignatureFallback(item)),
       this._withFormattedName(sourceName, this._getCompendiumNameFallback(item)),
       this._getGeneratedItemTranslation(item)
@@ -1980,6 +2054,14 @@ export class TranslationStore {
   _getCompendiumSignatureFallback(item) {
     for (const key of this._getItemLookupSignatures(item)) {
       const translation = this.compendiumSignatureIndex.get(key);
+      if (translation) return translation;
+    }
+    return null;
+  }
+
+  _getCompendiumIdentifierFallback(item) {
+    for (const identifier of this._getItemLookupIdentifiers(item)) {
+      const translation = this.compendiumIdentifierIndex.get(identifier);
       if (translation) return translation;
     }
     return null;
@@ -2077,6 +2159,7 @@ export class TranslationStore {
     this.compendiumPackLabels.clear();
     this.compendiumFolderLabels.clear();
     this.compendiumSignatureIndex.clear();
+    this.compendiumIdentifierIndex.clear();
     this.compendiumNameIndex.clear();
     this.compendiumActorNameIndex.clear();
   }
@@ -2140,6 +2223,7 @@ export class TranslationStore {
             if (translation) {
               this.compendiumSignatureIndex.set(key, translation);
               if (translation.name) {
+                this._addCompendiumIdentifierCandidate(document.system?.identifier ?? document.name, translation);
                 this._addCompendiumNameCandidate(collection, document.name, translation);
               }
             }
@@ -2153,6 +2237,7 @@ export class TranslationStore {
             data.entries[document.name] = translation ?? entry ?? {};
             if (data.entries[document.name]?.name) {
               this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), data.entries[document.name]);
+              this._addCompendiumIdentifierCandidate(document.system?.identifier ?? document.name, data.entries[document.name]);
               this._addCompendiumNameCandidate(collection, document.name, data.entries[document.name]);
             }
 
@@ -2177,6 +2262,7 @@ export class TranslationStore {
               });
 
               this.compendiumSignatureIndex.set(key, itemTranslation);
+              this._addCompendiumIdentifierCandidate(item.system?.identifier ?? item.name, itemTranslation);
               this._addCompendiumNameCandidate(collection, item.name, itemTranslation);
               if (itemTranslation.name) {
                 this.compendiumDocLabels.set(item.uuid, itemTranslation.name);
@@ -2217,6 +2303,7 @@ export class TranslationStore {
         const translation = data.entries?.[entry.name];
         if (!translation?.name) continue;
         this.compendiumDocLabels.set(`Compendium.${collection}.${entry.documentName ?? pack.documentName}.${entry._id}`, translation.name);
+        this._addCompendiumIdentifierCandidate(entry.system?.identifier ?? entry.name, translation);
         this._addCompendiumNameCandidate(collection, entry.name, translation);
       }
 
@@ -2251,12 +2338,22 @@ export class TranslationStore {
         if (data.documentName === "Actor") {
           this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
         }
+        this._addCompendiumIdentifierCandidate(entryName, translation);
         this._addCompendiumNameCandidate(collection, entryName, translation);
       }
       for (const [itemName, itemTranslation] of Object.entries(translation?.items ?? {})) {
         if (!itemTranslation) continue;
+        this._addCompendiumIdentifierCandidate(itemName, itemTranslation);
         this._addCompendiumNameCandidate(collection, itemName, itemTranslation);
       }
+    }
+  }
+
+  _addCompendiumIdentifierCandidate(identifierSource, translation) {
+    const identifier = this._identifierFromName(identifierSource);
+    if (!identifier || !translation) return;
+    if (!this.compendiumIdentifierIndex.has(identifier)) {
+      this.compendiumIdentifierIndex.set(identifier, translation);
     }
   }
 
