@@ -1,0 +1,20 @@
+{
+  "label": "DDB Tables",
+  "entries": {
+    "Background: Acolyte: Bond": {
+      "name": "Background: Acolyte: 결속"
+    },
+    "Background: Faction Agent: Bond": {
+      "name": "Background: Faction Agent: 결속"
+    },
+    "Background: Folk Hero: Bond": {
+      "name": "Background: Folk Hero: 결속"
+    },
+    "Background: Hermit: Life of Seclusion": {
+      "name": "Background: Hermit: 생명 의 Seclusion"
+    },
+    "Background: Soldier: Bond": {
+      "name": "Background: Soldier: 결속"
+    }
+  }
+}

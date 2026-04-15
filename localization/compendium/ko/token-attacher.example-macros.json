@@ -1,0 +1,26 @@
+{
+  "label": "(TA)Example Macros",
+  "folders": {
+    "Other": "Other",
+    "Follow": "Follow",
+    "Mounting": "Mounting",
+    "Template": "Template",
+    "Animation": "Animation",
+    "Migration": "Migration",
+    "Clean up": "Clean up"
+  },
+  "entries": {
+    "(TA)Create Template and attach to Token": {
+      "name": "(TA)Create Template 및 attach to Token"
+    },
+    "(TA)Dismount/Drop all": {
+      "name": "(TA)Dismount/낙하 all"
+    },
+    "(TA)Dismount/Drop Target": {
+      "name": "(TA)Dismount/낙하 Target"
+    },
+    "(TA)Remove Parent of selected Objects": {
+      "name": "(TA)Remove Parent 의 selected Objects"
+    }
+  }
+}

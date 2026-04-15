@@ -360,9 +360,13 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Alignment": "성향",
   "Alignment.": "성향.",
   "Alignment:": "성향:",
+  "Actor": "액터",
+  "Actors": "액터",
   "Augmented Physicality": "강화된 신체 능력",
   "Augmented Physicality.": "강화된 신체 능력.",
   "Barterers of Lore.": "지식의 교환자들.",
+  "Class Features": "클래스 특성",
+  "Classes & Class Features": "클래스 및 클래스 특성",
   "Cat's Talents.": "고양이의 재능.",
   "Changeling Instincts.": "체인질링의 본능.",
   "Changeling Names.": "체인질링 이름.",
@@ -379,42 +383,60 @@ const STATIC_LABEL_TRANSLATIONS = {
   "Gender": "성별",
   "Gender:": "성별:",
   "Harvesting Troll Blood": "트롤 피 채취",
+  "Homeland Traits": "고향 특성",
   "Inherited flaw": "타고난 결함",
   "Inherited flaw:": "타고난 결함:",
   "Instant Death": "즉사",
   "Instant Death and Mutations": "즉사와 돌연변이",
+  "Item": "아이템",
+  "Items": "아이템",
   "Keen Senses.": "예리한 감각.",
   "Languages": "언어",
   "Languages.": "언어.",
   "Leporine Senses.": "토끼 감각.",
   "Major Mutations": "중대 돌연변이",
+  "Maps": "지도",
   "Masks and Personas.": "가면과 페르소나.",
   "Minor Mutations": "경미한 돌연변이",
+  "Monsters": "몬스터",
   "More Details": "자세히 보기",
   "Mutations": "돌연변이",
   "Mutations.": "돌연변이.",
   "Personality": "성격",
   "Personality:": "성격:",
+  "Pictograms & How to Make a Picto": "픽토그램과 픽토 만드는 법",
   "Power": "능력",
   "Power:": "능력:",
   "Propulsion": "추진",
   "Propulsion.": "추진.",
   "Replacing the Energy Cell": "에너지 셀 교체",
   "Replacing the Energy Cell.": "에너지 셀 교체.",
+  "Rulebook": "규칙서",
+  "Rules": "규칙",
   "Shapechanger.": "변신체.",
   "Size": "크기",
   "Size.": "크기.",
   "Speed": "속도",
   "Speed Increase.": "속도 증가.",
   "Speed.": "속도.",
+  "Species": "종족",
+  "Species Traits": "종족 특성",
   "Superior Darkvision.": "상급 암시야.",
+  "Spells": "주문",
+  "Storied Histories League": "유서 깊은 역사 연맹",
+  "Subclasses": "서브클래스",
+  "Subclasses & Class Features": "서브클래스 및 클래스 특성",
   "Sunlight Sensitivity.": "햇빛 민감성.",
   "Tabaxi Names.": "타바시 이름.",
   "Tabaxi Personality.": "타바시 성향.",
   "The Cat Lord": "고양이 군주",
   "Tinkers and Minstrels.": "땜장이와 음유시인들.",
   "Trance.": "망아 상태.",
+  "Wagon Components": "마차 부품",
+  "Wagon Model Features": "마차 모델 특성",
+  "Wagons": "마차",
   "Wandering Outcasts.": "떠도는 이방인들.",
+  "Wild Cards": "와일드 카드",
   "Words of Terror": "공포의 속삭임"
 };
 
@@ -455,12 +477,351 @@ const formatBilingualName = (sourceName, translatedName) => {
 
 const nameToKo = (value) => {
   const normalized = normalizeText(value);
-  return COMMON_NAME_TRANSLATIONS[normalized] ?? normalized;
+  return COMMON_NAME_TRANSLATIONS[normalized] ?? autoTranslateName(normalized);
 };
 
 const plainLabelToKo = (value) => {
   const normalized = normalizeText(value);
   return STATIC_LABEL_TRANSLATIONS[normalized] ?? COMMON_NAME_TRANSLATIONS[normalized] ?? normalized;
+};
+
+const hasKoreanText = (value = "") => /[가-힣]/u.test(normalizeText(value));
+
+const NAME_FRAGMENT_TRANSLATIONS = [
+  ["Channel Divinity", "신성 변환"],
+  ["Class Features", "클래스 특성"],
+  ["Wild Card Tables", "와일드 카드 표"],
+  ["Wild Cards", "와일드 카드"],
+  ["Homeland Traits", "고향 특성"],
+  ["Species Traits", "종족 특성"],
+  ["Subclasses", "서브클래스"],
+  ["Class Features", "클래스 특성"],
+  ["Wagon Components", "마차 부품"],
+  ["Wagon Model Features", "마차 모델 특성"],
+  ["Bonus Proficiencies", "추가 숙련"],
+  ["Extra Attack", "추가 공격"],
+  ["Profane Bond", "불경한 결속"],
+  ["Powerful Build", "강인한 체격"],
+  ["Spell Storing", "주문 저장"],
+  ["Hoof Attack", "발굽 공격"],
+  ["Legendary Actions", "전설 행동"],
+  ["Legendary Resistance", "전설적 저항"],
+  ["Shapechanger", "변신체"],
+  ["Regeneration", "재생"],
+  ["Sunlight Sensitivity", "햇빛 민감성"],
+  ["Sunlight Weakness", "햇빛 약점"],
+  ["Darkvision", "암시야"],
+  ["Low-Light Vision", "저조도 시야"],
+  ["Natural Armor", "천연 갑옷"],
+  ["Natural Weapons", "천연 무기"],
+  ["Fire Breath", "화염 숨결"],
+  ["Cold Breath", "냉기 숨결"],
+  ["Lightning Breath", "번개 숨결"],
+  ["Acid Breath", "산성 숨결"],
+  ["Dragon Magic", "드래곤 마법"],
+  ["Dragon Launcher", "드래곤 발사기"],
+  ["Metamagic Crystal", "메타매직 수정"],
+  ["Soul Orb", "영혼 구체"],
+  ["Pull-Hook Launcher", "갈고리 발사기"],
+  ["Precision Railbow", "정밀 레일보우"],
+  ["Reinforced Net Thrower", "강화 그물 발사기"],
+  ["Net Thrower", "그물 발사기"],
+  ["Twin Anchor Cable Harpoon", "쌍닻 케이블 작살"],
+  ["Hand Canonball", "핸드 캐논볼"],
+  ["Twin Hand Canonball", "쌍수 핸드 캐논볼"],
+  ["Wagon Armor", "마차 장갑"],
+  ["Wall Reinforcement", "벽 보강"],
+  ["Wall-Mounted Soda Lamp", "벽걸이 소다 램프"],
+  ["Wall-Shelf Cot, Pair", "벽선반 침대 한 쌍"],
+  ["Single Full-Length Window", "전장 단일 창문"],
+  ["Two Windows", "창문 두 개"],
+  ["Floor Trapdoor", "바닥 함정문"],
+  ["Ceiling Hatch", "천장 해치"],
+  ["Ceiling Fan", "천장 선풍기"],
+  ["Cantrip Lantern", "캔트립 랜턴"],
+  ["Storage", "수납"],
+  ["Bookcase", "책장"],
+  ["Boiler", "보일러"],
+  ["Bath", "욕조"],
+  ["Basin", "세면대"],
+  ["Garden", "정원"],
+  ["Forge", "대장간"],
+  ["Forge Bequeathed", "대장간 유산"],
+  ["Laundry Machine", "세탁기"],
+  ["Toilet Closet", "화장실 칸"],
+  ["Fold-Out Patio", "접이식 파티오"],
+  ["Fold-Out Counter", "접이식 카운터"],
+  ["Retrieval Band", "회수 밴드"],
+  ["Recall Canopy", "회수 캐노피"],
+  ["Rain Cover", "빗덮개"],
+  ["Rain Wheels", "우천 바퀴"],
+  ["Cannon", "대포"],
+  ["Ballista", "발리스타"],
+  ["Blast Spike", "폭발 스파이크"],
+  ["Cascade Anvil", "폭포 모루"],
+  ["Absorbing Ram", "흡수식 충각"],
+  ["Acid Smokescreen", "산성 연막"],
+  ["Climate Control", "기후 조절"],
+  ["Restful Interior", "안락한 내부"],
+  ["Serene Sanctum", "고요한 성소"],
+  ["Gyrostable Lounge", "자이로 안정 라운지"],
+  ["Gyrostable Medicine Cabinet", "자이로 안정 약장"],
+  ["Gyrostable Wine-Rack", "자이로 안정 와인 선반"],
+  ["Transmutation-Powered Flywheel", "변환 동력 플라이휠"],
+  ["Steam-Powered Flywheel", "증기 동력 플라이휠"],
+  ["Wagon-Powered Flywheel", "마차 동력 플라이휠"],
+  ["Arcana Blinding", "비전 실명화"],
+  ["Astral Anchor", "아스트랄 닻"],
+  ["Bubble Armor", "거품 갑옷"],
+  ["Bubble Soap", "거품 비누"],
+  ["Carrion Staff", "송장 지팡이"],
+  ["Deck of the Cheated", "속임수의 덱"],
+  ["Ring of Energy Conversion", "에너지 전환 반지"],
+  ["Lantern of Unnature's Revealing", "부자연의 폭로 랜턴"],
+  ["Potion of Appending", "추가의 물약"],
+  ["Teapot of Rooted Memory", "뿌리내린 기억의 찻주전자"],
+  ["Stone of Six Strengths", "여섯 힘의 돌"],
+  ["Soil of Fecundity", "비옥함의 흙"],
+  ["Blanket of Safekeeping", "보호의 담요"],
+  ["Neckwear of Nativeness", "고향의 목장식"],
+  ["Bulls-Eye Star", "불스아이 스타"],
+  ["Single-Hand Rein", "한손 고삐"],
+  ["Autotrotter Spurs", "오토트로터 박차"],
+  ["Wainwright's Tools", "마차공 도구"],
+  ["Maintenance Kit", "정비 키트"],
+  ["Scroll of Self-Teaching", "자가 학습 두루마리"],
+  ["Very Rare", "매우 희귀"],
+  ["Uncommon", "비범"],
+  ["Common", "일반"],
+  ["Rare", "희귀"],
+  ["Moment of Resolve", "결의의 순간"],
+  ["Sphere of Shadows", "그림자의 구체"],
+  ["Forecast Harvest", "수확 예보"],
+  ["Stroke of Good Luck", "행운의 일격"],
+  ["Borrow Concentration", "집중 빌리기"],
+  ["Heart's Home", "마음의 고향"],
+  ["Swift Invisibility", "신속 투명화"],
+  ["Stagecraft", "무대 기술"],
+  ["Summon Subject", "대상 소환"],
+  ["Speaking Page", "말하는 페이지"],
+  ["Create Thrall", "권속 창조"],
+  ["Crossworld Well", "이세계 우물"],
+  ["Where's Varasta?", "바라스타는 어디에?"],
+  ["Forget I Said That", "내가 한 말은 잊어라"],
+  ["Whispers of the Netherworld", "저승의 속삭임"],
+  ["Path of", "길"],
+  ["Way of the", "수행의 길"],
+  ["Circle of the", "의 서클"],
+  ["College of", "대학"],
+  ["Oath of", "맹세"],
+  ["Mercy Domain", "자비 권역"],
+  ["The Main Event", "메인 이벤트"],
+  ["The Ghost God", "유령신"],
+  ["Somnomancy", "수면술"],
+  ["Carrion Master", "송장술 달인"],
+  ["Fell Infiltrator", "흉악한 잠입자"],
+  ["Wraith-Touched", "망령 물든 자"],
+  ["Zombie-Touched", "좀비 물든 자"],
+  ["Shadow-Touched", "그림자 물든 자"],
+  ["Ghoul-Touched", "구울 물든 자"],
+  ["Mummy-Touched", "미라 물든 자"],
+  ["Skeleton-Touched", "해골 물든 자"],
+  ["Fiend-Inhabited Vampire", "악마 깃든 뱀파이어"],
+  ["Fiend-Vessel Spawn", "악마 그릇 새끼"],
+  ["Horse, Beylik Draydriver", "말, 베일릭 화물마"],
+  ["Axe Beak, Jackal-Reared", "도끼부리, 자칼이 기른 개체"],
+  ["A Space of One's Own", "나만의 공간"],
+  ["A Mind Outside the Box", "틀을 벗어난 정신"],
+  ["A Mean Right Hook", "매서운 오른손 훅"],
+  ["A Head for Knots", "매듭에 밝은 머리"],
+  ["The Scholar", "학자"],
+  ["The Steward", "청지기"],
+  ["The Scoundrel", "악한"],
+  ["The Dread Compromise Spreads", "두려운 타협의 확산"],
+  ["The Aurora Tradition", "오로라의 전통"],
+  ["The Training of Privilege", "특권의 수련"],
+  ["The Oric Shipbuilding Tradition", "오릭 조선 전통"],
+  ["The Bouncer’s Kid", "문지기의 아이"],
+  ["Way of the Kidney Punch", "신장 타격의 길"],
+  ["Path of Thought's Tremor", "사념 진동의 길"],
+  ["Circle of the Wild Card", "와일드 카드의 서클"],
+  ["College of Witches", "마녀 대학"],
+  ["Oath of Revolution", "혁명의 맹세"],
+  ["Bovine", "우류"],
+  ["Canine", "개과"],
+  ["Cervine", "사슴류"],
+  ["Celerine", "셀러린"],
+  ["Dragon", "드래곤"],
+  ["Equine", "말류"],
+  ["Feline", "고양잇과"],
+  ["Laetine", "레이틴"],
+  ["Ligonine", "리고닌"],
+  ["Murine", "쥐류"],
+  ["Ovine", "양류"],
+  ["Tenebrine", "테네브린"],
+  ["Ursine", "곰류"],
+  ["Vulpine", "여우류"],
+  ["Armadillo", "아르마딜로"],
+  ["Bear", "곰"],
+  ["Bison", "들소"],
+  ["Dog", "개"],
+  ["Donkey", "당나귀"],
+  ["Elk", "엘크"],
+  ["Ferret", "페럿"],
+  ["Horse", "말"],
+  ["Bat", "박쥐"],
+  ["Kobold", "코볼트"],
+  ["Jackal", "자칼"],
+  ["Mole", "두더지"],
+  ["Monarch", "군주"],
+  ["Mouse", "생쥐"],
+  ["Otter", "수달"],
+  ["Possum", "포섬"],
+  ["Rabbit", "토끼"],
+  ["Raccoon", "라쿤"],
+  ["Rat", "쥐"],
+  ["Scholar", "학자"],
+  ["Sheep", "양"],
+  ["Sloth", "나무늘보"],
+  ["Squirrel", "다람쥐"],
+  ["Whispering", "속삭임"],
+  ["Wolf", "늑대"],
+  ["Brethren", "형제단"]
+];
+
+const autoTranslateName = (value) => {
+  let output = normalizeText(value);
+  if (!output || hasKoreanText(output) || !/[A-Za-z]/u.test(output)) return output;
+
+  for (const [source, target] of NAME_FRAGMENT_TRANSLATIONS) {
+    output = output.replaceAll(source, target);
+  }
+
+  output = output
+    .replace(/\bAttack\b/gu, "공격")
+    .replace(/\bArmor\b/gu, "갑옷")
+    .replace(/\bArmored\b/gu, "장갑형")
+    .replace(/\bArms\b/gu, "무장")
+    .replace(/\bAudience\b/gu, "관객")
+    .replace(/\bAura\b/gu, "오라")
+    .replace(/\bBlade\b/gu, "칼날")
+    .replace(/\bBlood\b/gu, "피")
+    .replace(/\bBond\b/gu, "결속")
+    .replace(/\bBody\b/gu, "몸체")
+    .replace(/\bCard\b/gu, "카드")
+    .replace(/\bCat\b/gu, "고양이")
+    .replace(/\bCaution\b/gu, "경계")
+    .replace(/\bCandle\b/gu, "초")
+    .replace(/\bCalls\b/gu, "위기")
+    .replace(/\bCharge\b/gu, "돌진")
+    .replace(/\bChampion\b/gu, "챔피언")
+    .replace(/\bChest\b/gu, "상자")
+    .replace(/\bChime\b/gu, "차임")
+    .replace(/\bClaw\b/gu, "발톱")
+    .replace(/\bCloud\b/gu, "구름")
+    .replace(/\bClose\b/gu, "아슬한")
+    .replace(/\bContract\b/gu, "계약")
+    .replace(/\bCounter\b/gu, "역추")
+    .replace(/\bCourage\b/gu, "용기")
+    .replace(/\bCrate\b/gu, "상자")
+    .replace(/\bCuriosity\b/gu, "호기심")
+    .replace(/\bDaydream\b/gu, "백일몽")
+    .replace(/\bDeath\b/gu, "죽음")
+    .replace(/\bDream\b/gu, "꿈")
+    .replace(/\bDoor\b/gu, "문")
+    .replace(/\bDrop\b/gu, "낙하")
+    .replace(/\bEvening\b/gu, "저녁")
+    .replace(/\bEye\b/gu, "눈")
+    .replace(/\bFeet\b/gu, "발")
+    .replace(/\bFire\b/gu, "불")
+    .replace(/\bFootlocker\b/gu, "풋락커")
+    .replace(/\bFocus\b/gu, "집중")
+    .replace(/\bFriendship\b/gu, "우정")
+    .replace(/\bFriend\b/gu, "친구")
+    .replace(/\bGarden\b/gu, "정원")
+    .replace(/\bGrace\b/gu, "은총")
+    .replace(/\bGuard\b/gu, "수호")
+    .replace(/\bHarvest\b/gu, "수확")
+    .replace(/\bHeart\b/gu, "심장")
+    .replace(/\bHidden\b/gu, "숨겨진")
+    .replace(/\bHook\b/gu, "갈고리")
+    .replace(/\bHunter\b/gu, "사냥꾼")
+    .replace(/\bInterior\b/gu, "내부")
+    .replace(/\bJump\b/gu, "도약")
+    .replace(/\bKid\b/gu, "아이")
+    .replace(/\bLamp\b/gu, "램프")
+    .replace(/\bLadder\b/gu, "사다리")
+    .replace(/\bLife\b/gu, "생명")
+    .replace(/\bLightning\b/gu, "번개")
+    .replace(/\bLock\b/gu, "잠금")
+    .replace(/\bLoft\b/gu, "다락")
+    .replace(/\bLuck\b/gu, "행운")
+    .replace(/\bMagic\b/gu, "마법")
+    .replace(/\bMemory\b/gu, "기억")
+    .replace(/\bMercy\b/gu, "자비")
+    .replace(/\bMind\b/gu, "정신")
+    .replace(/\bMoon\b/gu, "달")
+    .replace(/\bNight\b/gu, "밤")
+    .replace(/\bOrb\b/gu, "구체")
+    .replace(/\bPoison\b/gu, "독")
+    .replace(/\bPrivacy\b/gu, "사생활")
+    .replace(/\bResolve\b/gu, "결의")
+    .replace(/\bSchool\b/gu, "학파")
+    .replace(/\bShadow\b/gu, "그림자")
+    .replace(/\bShelf\b/gu, "선반")
+    .replace(/\bSilence\b/gu, "침묵")
+    .replace(/\bSnow\b/gu, "눈")
+    .replace(/\bSolar\b/gu, "태양")
+    .replace(/\bSoul\b/gu, "영혼")
+    .replace(/\bSpell\b/gu, "주문")
+    .replace(/\bSpirit\b/gu, "영혼")
+    .replace(/\bStar\b/gu, "별")
+    .replace(/\bStone\b/gu, "돌")
+    .replace(/\bStorm\b/gu, "폭풍")
+    .replace(/\bStrike\b/gu, "강타")
+    .replace(/\bSun\b/gu, "태양")
+    .replace(/\bSword\b/gu, "검")
+    .replace(/\bTable\b/gu, "테이블")
+    .replace(/\bTank\b/gu, "탱크")
+    .replace(/\bTail\b/gu, "꼬리")
+    .replace(/\bThoughts\b/gu, "생각")
+    .replace(/\bThrower\b/gu, "발사기")
+    .replace(/\bTouch\b/gu, "손길")
+    .replace(/\bTrail\b/gu, "궤적")
+    .replace(/\bTruth\b/gu, "진실")
+    .replace(/\bWindow\b/gu, "창문")
+    .replace(/\bViolence\b/gu, "폭력")
+    .replace(/\bVision\b/gu, "시야")
+    .replace(/\bWheels\b/gu, "바퀴")
+    .replace(/\bWings\b/gu, "날개")
+    .replace(/\bWinter\b/gu, "겨울")
+    .replace(/\bof the\b/gu, "의")
+    .replace(/\bof\b/gu, "의")
+    .replace(/\band\b/gu, "및")
+    .replace(/\s{2,}/gu, " ")
+    .trim();
+
+  return output;
+};
+
+const preferGeneratedText = (currentValue, generatedValue, originalValue = "") => {
+  const current = normalizeText(currentValue);
+  const generated = normalizeText(generatedValue);
+  const original = normalizeText(originalValue);
+
+  if (!generated || generated === original) return currentValue;
+  if (!current) return generatedValue;
+
+  const currentHasKorean = hasKoreanText(current);
+  const generatedHasKorean = hasKoreanText(generated);
+  const currentEnglishOnly = /[A-Za-z]/u.test(current) && !currentHasKorean;
+  const generatedEnglishOnly = /[A-Za-z]/u.test(generated) && !generatedHasKorean;
+
+  if (generatedHasKorean && !currentHasKorean) return generatedValue;
+  if (generatedHasKorean && currentEnglishOnly) return generatedValue;
+  if (generatedHasKorean && currentHasKorean && /[A-Za-z]/u.test(current) && !generatedEnglishOnly) return generatedValue;
+
+  return currentValue;
 };
 
 const abilityToKo = (value) => {
@@ -541,10 +902,13 @@ export class TranslationStore {
       const collection = this._collectionFromPath(filePath);
       this.compendium.set(collection, data);
       if (data.label) {
-        this.compendiumPackLabels.set(collection, data.label);
+        this.compendiumPackLabels.set(collection, plainLabelToKo(data.label));
       }
       if (data.folders) {
-        this.compendiumFolderLabels.set(collection, new Map(Object.entries(data.folders)));
+        this.compendiumFolderLabels.set(
+          collection,
+          new Map(Object.entries(data.folders).map(([name, label]) => [name, plainLabelToKo(label)]))
+        );
       }
     }
 
@@ -559,9 +923,15 @@ export class TranslationStore {
   getActorTranslation(actor) {
     if (!actor) return null;
     if (actor.uuid && this.world.actors.has(actor.uuid)) {
-      return this._withFormattedName(actor.name, this.world.actors.get(actor.uuid));
+      return this._mergeTranslations(
+        this._withFormattedName(actor.name, this.world.actors.get(actor.uuid)),
+        this._getGeneratedActorTranslation(actor)
+      );
     }
-    return this._withFormattedName(actor.name, this._getCompendiumActorFallback(actor));
+    return this._mergeTranslations(
+      this._withFormattedName(actor.name, this._getCompendiumActorFallback(actor)),
+      this._getGeneratedActorTranslation(actor)
+    );
   }
 
   getItemTranslation(item) {
@@ -597,10 +967,16 @@ export class TranslationStore {
       const collection = page.parent?.pack ?? page.pack;
       const entryName = page.parent?.name;
       const entry = this._getCompendiumEntry(collection, entryName);
-      return this._withFormattedName(page.name, entry?.pages?.[page.name] ?? null);
+      return this._mergeTranslations(
+        this._withFormattedName(page.name, entry?.pages?.[page.name] ?? null),
+        this._getGeneratedPageTranslation(page)
+      );
     }
 
-    return this._withFormattedName(page.name, this.world.journalPages.get(page.uuid));
+    return this._mergeTranslations(
+      this._withFormattedName(page.name, this.world.journalPages.get(page.uuid)),
+      this._getGeneratedPageTranslation(page)
+    );
   }
 
   getCompendiumPackLabel(collection) {
@@ -996,9 +1372,10 @@ export class TranslationStore {
   _getCompendiumEntry(collection, entryName) {
     const entry = this.compendium.get(collection)?.entries?.[entryName] ?? null;
     if (!entry) return null;
+    const generatedName = formatBilingualName(entryName, nameToKo(entryName));
     return {
       ...entry,
-      name: formatBilingualName(entryName, entry.name)
+      name: formatBilingualName(entryName, entry.name) || generatedName
     };
   }
 
@@ -1012,6 +1389,54 @@ export class TranslationStore {
       name: formatBilingualName(item?.name, translatedName),
       description: translatedDescription
     };
+  }
+
+  _getGeneratedActorTranslation(actor) {
+    const originalDescription = this._extractActorDescription(actor);
+    const translatedName = nameToKo(actor?.name);
+    const translatedDescription = this._translateGeneratedDescription(originalDescription);
+    if (translatedName === actor?.name && translatedDescription === originalDescription) {
+      return null;
+    }
+    return {
+      name: formatBilingualName(actor?.name, translatedName),
+      description: translatedDescription
+    };
+  }
+
+  _getGeneratedPageTranslation(page) {
+    const originalText = page?.text?.content ?? "";
+    const translatedName = nameToKo(page?.name);
+    const translatedText = this._translateGeneratedDescription(originalText);
+    if (translatedName === page?.name && translatedText === originalText) {
+      return null;
+    }
+    return {
+      name: formatBilingualName(page?.name, translatedName),
+      text: translatedText
+    };
+  }
+
+  _mergeCompendiumEntry(entry, generated, original = {}) {
+    if (!entry && !generated) return null;
+
+    const merged = {
+      ...(entry ?? {})
+    };
+
+    if (generated?.name) {
+      merged.name = preferGeneratedText(merged.name, generated.name, original.name ?? "");
+    }
+
+    if (generated?.description) {
+      merged.description = preferGeneratedText(merged.description, generated.description, original.description ?? "");
+    }
+
+    if (generated?.text) {
+      merged.text = preferGeneratedText(merged.text, generated.text, original.text ?? "");
+    }
+
+    return merged;
   }
 
   _withFormattedName(sourceName, translation) {
@@ -1260,39 +1685,67 @@ export class TranslationStore {
       const pack = game.packs.get(collection);
       if (!pack) continue;
 
-      const index = await pack.getIndex();
-      for (const entry of index.values()) {
-        const translation = data.entries?.[entry.name];
-        if (!translation?.name) continue;
-        this.compendiumDocLabels.set(`Compendium.${collection}.${entry.documentName ?? pack.documentName}.${entry._id}`, translation.name);
-        this._addCompendiumNameCandidate(collection, entry.name, translation);
+      data.entries ??= {};
+      const translatedPackLabel = plainLabelToKo(this.compendiumPackLabels.get(collection) ?? pack.metadata?.label ?? pack.title ?? collection);
+      if (translatedPackLabel) {
+        this.compendiumPackLabels.set(collection, translatedPackLabel);
       }
 
-      const journalEntries = Object.entries(data.entries ?? {}).filter(([, entry]) => entry?.pages);
+      const folderLabels = new Map(this.compendiumFolderLabels.get(collection) ?? []);
+      for (const folder of pack?.folders?.contents ?? pack?.folders ?? []) {
+        if (!folder?.name) continue;
+        folderLabels.set(folder.name, plainLabelToKo(folderLabels.get(folder.name) ?? folder.name));
+      }
+      if (folderLabels.size) {
+        this.compendiumFolderLabels.set(collection, folderLabels);
+      }
+
       const documents = await pack.getDocuments();
 
       for (const document of documents) {
-        const translation = data.entries?.[document.name];
-        if (!translation) continue;
+        const entry = data.entries?.[document.name] ?? {};
 
         if (document.documentName === "Item") {
+          const translation = this._mergeCompendiumEntry(entry, this._getGeneratedItemTranslation(document), {
+            name: document.name,
+            description: this._extractItemDescription(document)
+          });
+          if (translation) data.entries[document.name] = translation;
+
           const content = document.system?.description?.value ?? "";
           const key = signatureFor({
             type: document.type,
             name: document.name,
             content
           });
-          this.compendiumSignatureIndex.set(key, translation);
+          if (translation) {
+            this.compendiumSignatureIndex.set(key, translation);
+            if (translation.name) {
+              this._addCompendiumNameCandidate(collection, document.name, translation);
+            }
+          }
         }
 
-        if (document.documentName === "Actor" && translation?.name) {
-          this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), translation);
-        }
+        if (document.documentName === "Actor") {
+          const translation = this._mergeCompendiumEntry(entry, this._getGeneratedActorTranslation(document), {
+            name: document.name,
+            description: this._extractActorDescription(document)
+          });
+          data.entries[document.name] = translation ?? entry ?? {};
+          if (data.entries[document.name]?.name) {
+            this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), data.entries[document.name]);
+            this._addCompendiumNameCandidate(collection, document.name, data.entries[document.name]);
+          }
 
-        if (document.documentName === "Actor" && translation?.items) {
+          data.entries[document.name].items ??= {};
           for (const item of document.items ?? []) {
-            const itemTranslation = translation.items?.[item.name];
+            const itemEntry = data.entries[document.name].items?.[item.name] ?? {};
+            const itemTranslation = this._mergeCompendiumEntry(itemEntry, this._getGeneratedItemTranslation(item), {
+              name: item.name,
+              description: this._extractItemDescription(item)
+            });
             if (!itemTranslation) continue;
+            data.entries[document.name].items[item.name] = itemTranslation;
 
             const content = this._extractItemDescription(item);
             const key = signatureFor({
@@ -1308,8 +1761,37 @@ export class TranslationStore {
             }
           }
         }
+
+        if (document.documentName === "JournalEntry") {
+          const translation = data.entries?.[document.name] ?? {};
+          translation.pages ??= {};
+          for (const page of document.pages ?? []) {
+            const pageEntry = translation.pages?.[page.name] ?? {};
+            const pageTranslation = this._mergeCompendiumEntry(pageEntry, this._getGeneratedPageTranslation(page), {
+              name: page.name,
+              text: page.text?.content ?? ""
+            });
+            if (!pageTranslation) continue;
+            translation.pages[page.name] = pageTranslation;
+            if (pageTranslation.name) {
+              this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+            }
+          }
+          if (Object.keys(translation.pages).length) {
+            data.entries[document.name] = translation;
+          }
+        }
       }
 
+      const index = await pack.getIndex();
+      for (const entry of index.values()) {
+        const translation = data.entries?.[entry.name];
+        if (!translation?.name) continue;
+        this.compendiumDocLabels.set(`Compendium.${collection}.${entry.documentName ?? pack.documentName}.${entry._id}`, translation.name);
+        this._addCompendiumNameCandidate(collection, entry.name, translation);
+      }
+
+      const journalEntries = Object.entries(data.entries ?? {}).filter(([, entry]) => entry?.pages);
       if (!journalEntries.length) continue;
 
       for (const [entryName, translation] of journalEntries) {

@@ -4,6 +4,7 @@
     "localization/compendium/ko/ActiveAuras.aa-aura-items.json",
     "localization/compendium/ko/JB2A_DnD5e.jb2a-actors.json",
     "localization/compendium/ko/JB2A_DnD5e.jb2a-sequencer.json",
+    "localization/compendium/ko/LocknKey.lock-and-key.json",
     "localization/compendium/ko/beast-world.class-features.json",
     "localization/compendium/ko/beast-world.homeland-traits.json",
     "localization/compendium/ko/beast-world.items.json",
@@ -30,9 +31,15 @@
     "localization/compendium/ko/dnd5e.subclasses.json",
     "localization/compendium/ko/dnd5e.tables.json",
     "localization/compendium/ko/dnd5e.tradegoods.json",
+    "localization/compendium/ko/fxmaster.fxmaster.json",
     "localization/compendium/ko/item-piles.item-piles-custom-items.json",
+    "localization/compendium/ko/levels.levelsmacros.json",
     "localization/compendium/ko/midi-qol.midiqol-sample-items.json",
+    "localization/compendium/ko/monks-active-tiles.active-tile-macros.json",
+    "localization/compendium/ko/token-attacher.example-macros.json",
+    "localization/compendium/ko/wall-height.wall-height-macros.json",
     "localization/compendium/ko/world.ddb---ddb-monsters.json",
-    "localization/compendium/ko/world.ddb---ddb-summons.json"
+    "localization/compendium/ko/world.ddb---ddb-summons.json",
+    "localization/compendium/ko/world.ddb---ddb-tables.json"
   ]
 }

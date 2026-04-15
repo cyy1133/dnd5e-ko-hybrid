@@ -1,20 +1,78 @@
 {
   "label": "Spells",
   "entries": {
+    "Absent Mind's Aid": {
+      "name": "Absent 정신's Aid"
+    },
+    "Borrow Concentration": {
+      "name": "집중 빌리기 Borrow Concentration"
+    },
+    "Bulwark of Scales": {
+      "name": "Bulwark 의 Scales"
+    },
+    "Cheater's Caution": {
+      "name": "Cheater's 경계"
+    },
+    "Create Thrall": {
+      "name": "권속 창조 Create Thrall"
+    },
+    "Crossworld Well": {
+      "name": "이세계 우물 Crossworld Well"
+    },
     "Daisy Walk": {
       "description": "<p>Classes: Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</p><hr /><p>You fall asleep and enter the dream of another sleeping creature. You are lucid and aware of your presence in the Dreaming. If you are immune to magical sleep or do not sleep, or if the target is awake, the spell fails. The spell ends if you or the target wake up.</p><p>The target is random unless you specify a creature while casting the spell. To find a specific creature’s dream, you must have at least two first- hand memories in the Memories table below. The memories must be no more than one month old.</p><table><thead><tr><th>Memories</th></tr></thead><tbody><tr><td>The taste of the target's favorite food</td></tr><tr><td>Voice of the target's immediate family member or lover</td></tr><tr><td>Smell of standing in the target's childhood home</td></tr><tr><td>Sight of the target's laughing face</td></tr><tr><td>Touch of an object the target wore or slept with as a baby</td></tr><tr><td>Story about a dream the target had in the last month</td></tr></tbody></table><p></p><p>The dreaming creature is aware they are the target of this spell and can choose to eject you from their dream, which ends the spell and awakens you. You can interact with the target within their dream, and both of you remember it perfectly when you wake up. If you take damage in the dream, your physical body takes the same amount of psychic damage when you wake up.</p><p><em><strong>At Higher Levels:</strong></em></p><ul><li><p>3rd level or above: One additional willing creature within 30 feet can also enter the target's dream for each slot level above 2nd</p></li><li><p>4th level or above: You can choose to obscure yourself and creatures with you from the target. The target makes a Wisdom saving throw. 내성 굴림에 실패하면, you and the creatures with you appear as plausible additions to their dream. This might alter your physical appearance within the dream, but you retain your game statistics.</p></li><li><p>6th level or above: If you are holding an object outside of the dream, you can give the target the object within the dream. When you do, the object is instantly teleported from your hand and into the target's possession. The object must weigh no more than 5 pounds.</p></li><li><p>7th level or above: You can choose to end the spell as an action. When you do, you and the creatures with you are instantly teleported into the nearest unoccupied space to the target.</p></li></ul>"
     },
+    "Discern the Heart's Hoard": {
+      "name": "Discern the 심장's Hoard"
+    },
+    "Flock of Floating Disks": {
+      "name": "Flock 의 Floating Disks"
+    },
+    "Forecast Harvest": {
+      "name": "수확 예보 Forecast Harvest"
+    },
     "Forget I Said That": {
+      "name": "대장간t I Said That",
       "description": "<p>Classes: Bard, Sorcerer, Warlock, Wizard </p><hr /><p>When things go very wrong in an encounter with someone, you can ask the Arcana for a do-over. </p><p>A target creature you can see within range must make a Wisdom saving throw. A target automatically passes this saving throw if it can’t be charmed. If the target is hostile toward you, they have advantage on the save. 내성 굴림에 실패하면, the target is stunned until the end of your next turn, as they forget the events of the last minute. The target assumes they were daydreaming or lost in thought during the period of the erased memory.</p>"
+    },
+    "Heart's Home": {
+      "name": "마음의 고향 Heart's Home"
     },
     "Inflict Empathy": {
       "description": "<p>Classes: Paladin</p><hr /><p>You proclaim a divine indictment of a Humanoid you can see within range. 대상은 매력 내성 굴림을 해야 합니다. If the target is immune to being charmed, they automatically pass the save. 내성 굴림에 실패하면, the target is wracked with visions of those they have wronged, and forced to remember events from the perspective of those they harmed. They are charmed for the duration, and cannot be hostile toward other creatures. If you or any of your companions deal damage to the target, the spell ends.</p>"
+    },
+    "Moment of Resolve": {
+      "name": "결의의 순간 Moment of Resolve"
     },
     "Perfect Respiration": {
       "description": "<p>Species: Dancing Dragon<br />This spell is not on any class's spell list.</p><hr /><p>When you cast this spell, and then as an action on each of your turns until the spell ends, you can use your breath weapon without expending a use. At the end of each of your turns, make a Constitution saving throw with a DC equal to 10 + 5 times the number of rounds since casting the spell (15 on the second round, 20 on the third round, and so on). 내성 굴림에 실패하면, or if you use an action to do anything other than use your breath weapon, the effect ends.</p>"
     },
     "Provoke Hiccup": {
       "description": "<p>Classes: Bard</p><hr /><p>You attempt to trip up a target casting a spell with a verbal component. This spell fails if the target’s spell is 4th level or higher. Otherwise, the target must make a Charisma saving throw. 내성 굴림에 실패하면, they stammer and fail to cast the spell (but its slot is not expended).</p>"
+    },
+    "Speaking Page": {
+      "name": "말하는 페이지 Speaking Page"
+    },
+    "Sphere of Shadows": {
+      "name": "그림자의 구체 Sphere of Shadows"
+    },
+    "Stagecraft": {
+      "name": "무대 기술 Stagecraft"
+    },
+    "Stroke of Good Luck": {
+      "name": "행운의 일격 Stroke of Good Luck"
+    },
+    "Summon Subject": {
+      "name": "대상 소환 Summon Subject"
+    },
+    "Swift Invisibility": {
+      "name": "신속 투명화 Swift Invisibility"
+    },
+    "Where's Varasta?": {
+      "name": "바라스타는 어디에? Where's Varasta?"
+    },
+    "Whispers of the Netherworld": {
+      "name": "저승의 속삭임 Whispers of the Netherworld"
     }
   }
 }

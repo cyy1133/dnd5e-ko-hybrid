@@ -151,6 +151,26 @@ const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) 
   return "";
 };
 
+const shouldReplaceText = (currentValue, candidateValue, originalValue = "") => {
+  const current = String(currentValue ?? "").trim();
+  const candidate = String(candidateValue ?? "").trim();
+  const original = String(originalValue ?? "").trim();
+
+  if (!candidate || candidate === original) return false;
+  if (!current) return true;
+
+  const currentHasKorean = hasKorean(current);
+  const candidateHasKorean = hasKorean(candidate);
+  const currentEnglishOnly = hasEnglish(current) && !currentHasKorean;
+  const candidateEnglishOnly = hasEnglish(candidate) && !candidateHasKorean;
+
+  if (candidateHasKorean && !currentHasKorean) return true;
+  if (candidateHasKorean && currentEnglishOnly) return true;
+  if (candidateHasKorean && currentHasKorean && hasEnglish(current) && !candidateEnglishOnly) return true;
+
+  return false;
+};
+
 const hasAnyTranslation = (entry) => {
   if (!entry) return false;
   if (entry.name || entry.description || entry.text) return true;
@@ -214,46 +234,42 @@ const main = async () => {
         case "Item": {
           const compendiumEntry = findCompendiumEntry(compendium, templateEntry.type, templateEntry.originalName);
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumEntry);
-          if (translatedName && translatedName !== templateEntry.originalName && !existingEntry.name) {
+          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             itemNames += 1;
           }
 
-          if (!existingEntry.description) {
-            const translatedDescription = maybeBodyTranslation(
-              store,
-              templateEntry.originalDescription,
-              templateEntry.type,
-              compendiumEntry,
-              "items"
-            );
-            if (translatedDescription && translatedDescription !== templateEntry.originalDescription) {
-              existingEntry.description = translatedDescription;
-              itemBodies += 1;
-            }
+          const translatedDescription = maybeBodyTranslation(
+            store,
+            templateEntry.originalDescription,
+            templateEntry.type,
+            compendiumEntry,
+            "items"
+          );
+          if (shouldReplaceText(existingEntry.description, translatedDescription, templateEntry.originalDescription)) {
+            existingEntry.description = translatedDescription;
+            itemBodies += 1;
           }
           break;
         }
         case "Actor": {
           const compendiumActor = findCompendiumActorEntry(compendium, templateEntry.originalName);
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumActor);
-          if (translatedName && translatedName !== templateEntry.originalName && !existingEntry.name) {
+          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             actorNames += 1;
           }
 
-          if (!existingEntry.description) {
-            const translatedDescription = maybeBodyTranslation(
-              store,
-              templateEntry.originalDescription,
-              templateEntry.type,
-              compendiumActor,
-              "actors"
-            );
-            if (translatedDescription && translatedDescription !== templateEntry.originalDescription) {
-              existingEntry.description = translatedDescription;
-              actorBodies += 1;
-            }
+          const translatedDescription = maybeBodyTranslation(
+            store,
+            templateEntry.originalDescription,
+            templateEntry.type,
+            compendiumActor,
+            "actors"
+          );
+          if (shouldReplaceText(existingEntry.description, translatedDescription, templateEntry.originalDescription)) {
+            existingEntry.description = translatedDescription;
+            actorBodies += 1;
           }
 
           existingEntry.items = existingEntry.items ?? {};
@@ -261,23 +277,21 @@ const main = async () => {
             const existingItem = existingEntry.items[itemName] ?? {};
             const compendiumEntry = findCompendiumEntry(compendium, itemTemplate.type, itemTemplate.originalName);
             const translatedItemName = translateName(itemTemplate.originalName, itemTemplate.type, compendiumEntry);
-            if (translatedItemName && translatedItemName !== itemTemplate.originalName && !existingItem.name) {
+            if (shouldReplaceText(existingItem.name, translatedItemName, itemTemplate.originalName)) {
               existingItem.name = translatedItemName;
               actorItemNames += 1;
             }
 
-            if (!existingItem.description) {
-              const translatedDescription = maybeBodyTranslation(
-                store,
-                itemTemplate.originalDescription,
-                itemTemplate.type,
-                compendiumEntry,
-                "actorItems"
-              );
-              if (translatedDescription && translatedDescription !== itemTemplate.originalDescription) {
-                existingItem.description = translatedDescription;
-                actorItemBodies += 1;
-              }
+            const translatedDescription = maybeBodyTranslation(
+              store,
+              itemTemplate.originalDescription,
+              itemTemplate.type,
+              compendiumEntry,
+              "actorItems"
+            );
+            if (shouldReplaceText(existingItem.description, translatedDescription, itemTemplate.originalDescription)) {
+              existingItem.description = translatedDescription;
+              actorItemBodies += 1;
             }
 
             if (hasAnyTranslation(existingItem)) {
@@ -292,7 +306,7 @@ const main = async () => {
         }
         case "JournalEntry": {
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, null);
-          if (translatedName && translatedName !== templateEntry.originalName && !existingEntry.name) {
+          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
             journalNames += 1;
           }
@@ -301,23 +315,21 @@ const main = async () => {
           for (const [pageName, pageTemplate] of Object.entries(templateEntry.pages ?? {})) {
             const existingPage = existingEntry.pages[pageName] ?? {};
             const translatedPageName = translateName(pageTemplate.originalName, pageTemplate.type, null);
-            if (translatedPageName && translatedPageName !== pageTemplate.originalName && !existingPage.name) {
+            if (shouldReplaceText(existingPage.name, translatedPageName, pageTemplate.originalName)) {
               existingPage.name = translatedPageName;
               journalNames += 1;
             }
 
-            if (!existingPage.text) {
-              const translatedText = maybeBodyTranslation(
-                store,
-                pageTemplate.originalText,
-                pageTemplate.type,
-                null,
-                "journalPages"
-              );
-              if (translatedText && translatedText !== pageTemplate.originalText) {
-                existingPage.text = translatedText;
-                journalBodies += 1;
-              }
+            const translatedText = maybeBodyTranslation(
+              store,
+              pageTemplate.originalText,
+              pageTemplate.type,
+              null,
+              "journalPages"
+            );
+            if (shouldReplaceText(existingPage.text, translatedText, pageTemplate.originalText)) {
+              existingPage.text = translatedText;
+              journalBodies += 1;
             }
 
             if (hasAnyTranslation(existingPage)) {
@@ -332,7 +344,7 @@ const main = async () => {
         }
         default: {
           const translatedName = translateName(templateEntry.originalName ?? entryName, templateEntry.type, null);
-          if (translatedName && translatedName !== (templateEntry.originalName ?? entryName) && !existingEntry.name) {
+          if (shouldReplaceText(existingEntry.name, translatedName, templateEntry.originalName ?? entryName)) {
             existingEntry.name = translatedName;
           }
           break;

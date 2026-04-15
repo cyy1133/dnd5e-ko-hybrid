@@ -12,7 +12,8 @@
       "description": "<div class=\"rd__b  rd__b--3\"><p>Choose a creature that you can see within range. 대상은 건강 내성 굴림에 성공해야 하며, 실패하면 be afflicted with excruciating muscle spasms for the duration. A creature affected in this way has its speed halved and rolls attacks with disadvantage. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p></div>"
     },
     "Actor.1AK3QzLvpsTZThGz.Item.NQ0xHktdF4VH39Gw": {
-      "description": ""
+      "description": "",
+      "name": "신성 변환: Harness Divine Power"
     },
     "Actor.1AK3QzLvpsTZThGz.Item.OvwrUDJkiNPkafhG": {
       "description": ""
@@ -185,7 +186,8 @@
       "name": "지역 효과 Regional Effects"
     },
     "Actor.4kir5GIOETH7enyf.Item.P5mJiDCZRKdRfElx": {
-      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤는 주문시전을 사용해 @spell[Mind Spike|XPHB] (level 5 version)를 시전합니다.</p></div>"
+      "description": "<div class=\"rd__b  rd__b--3\"><p>드래곤는 주문시전을 사용해 @spell[Mind Spike|XPHB] (level 5 version)를 시전합니다.</p></div>",
+      "name": "정신 Invasion"
     },
     "Actor.4kir5GIOETH7enyf.Item.QbU6jyBTFSWqhQG9": {
       "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>",
@@ -239,7 +241,8 @@
       "description": ""
     },
     "Actor.6PD0igpI5xNEnDtk.Item.AHVFy94rzwlxGoaq": {
-      "description": ""
+      "description": "",
+      "name": "Student 의 War: Cook's Utensils"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.AlTeJDSj2crLuxC6": {
       "description": ""
@@ -248,17 +251,20 @@
       "description": ""
     },
     "Actor.6PD0igpI5xNEnDtk.Item.cG3A6AZjSRwmCqEu": {
-      "description": ""
+      "description": "",
+      "name": "Tactical 정신"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.g1aBFnCLoesZ8Ul4": {
       "description": "<div class=\"ddb\">\n<h1>설명</h1><p><span style=\"font-size:16px\"><em>A Master of All Arms and Armor</em></span></p>\n<p>Fighters all share an unparalleled prowess with weapons and armor, and are well acquainted with death, both meting it out and defying it.</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>주요 능력:</strong> Strength or Dexterity<br /><strong>Hit Point Die:</strong> D10<br /><strong>내성:</strong> Strength &amp; Constitution</p><h1>클래스 특성</h1>\n\n<p><b>Level 3: Combat Superiority</b></p>\n<p>Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by special dice called Superiority Dice.</p>\n<p><strong><em>Maneuvers.</em></strong> You learn three maneuvers of your choice. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.</p>\n<p>You learn two additional maneuvers of your choice when you reach Fighter levels 7, 10, and 15. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>\n<p><strong><em>Superiority Dice.</em></strong> You have four Superiority Dice, which are d8s. A Superiority Die is expended when you use it. You regain all expended Superiority Dice when you finish a Short or Long Rest.</p>\n<p>You gain an additional Superiority Die when you reach Fighter levels 7 (five dice total) and 15 (six dice total).</p>\n<p><strong><em>Saving Throws.</em></strong> If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and Proficiency Bonus.</p>\n\n<p><b>Level 3: Student of War</b></p>\n<p>You gain proficiency with one type of Artisan’s Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1.</p>\n\n<p><b>Level 3: Maneuver Options</b></p>\n<p>The maneuvers are presented here in alphabetical order.</p>\n\n<p><b>Level 7: Know Your Enemy</b></p>\n<p>As a Bonus Action, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself; you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if the creature has any, you know what they are.</p>\n<p>Once you use this feature, you can’t do so again until you finish a Long Rest. You can also restore a use of the feature by expending one Superiority Die (no action required).</p>\n\n<p><b>Level 10: Improved Combat Superiority</b></p>\n<p>Your Superiority Die becomes a d10.</p>\n\n<p><b>Level 15: Relentless</b></p>\n<p>Once per turn, when you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.</p>\n\n<p><b>Level 18: Ultimate Combat Superiority</b></p>\n<p>Your Superiority Die becomes a d12.</p>\n\n\n</div>",
       "name": "배틀 마스터 Battle Master"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.G46zdr2S1yavXQQn": {
-      "description": "<div class=\"ddb\">\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have the Frightened condition until the end of your next turn.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have the Frightened condition until the end of your next turn.</p>\n</div>",
+      "name": "Maneuver: Menacing 공격"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.H2puzxCVuENnv4gv": {
-      "description": ""
+      "description": "",
+      "name": "Student 의 War: Acrobatics"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.iLyKN1u9qacLfxef": {
       "description": "<div class=\"ddb\">\n<p>The maneuvers are presented here in alphabetical order.</p><hr /><section class=\"secret\">\n<p><strong>Ambush</strong></p>\n<p>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</p>\n<p><strong>Ambush</strong></p>\n<p>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</p>\n<p><strong>Ambush</strong></p>\n<p>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</p>\n<p><strong>Bait and Switch</strong></p>\n<p>When you’re within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn’t have the Incapacitated condition. This movement doesn’t provoke Opportunity Attacks.</p>\n<p>Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>\n<p><strong>Bait and Switch</strong></p>\n<p>When you’re within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn’t have the Incapacitated condition. This movement doesn’t provoke Opportunity Attacks.</p>\n<p>Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>\n<p><strong>Bait and Switch</strong></p>\n<p>When you’re within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn’t have the Incapacitated condition. This movement doesn’t provoke Opportunity Attacks.</p>\n<p>Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>\n<p><strong>Commander’s Strike</strong></p>\n<p>When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack’s damage roll on a hit.</p>\n<p><strong>Commander’s Strike</strong></p>\n<p>When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack’s damage roll on a hit.</p>\n<p><strong>Commander’s Strike</strong></p>\n<p>When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack’s damage roll on a hit.</p>\n<p><strong>Commanding Presence</strong></p>\n<p>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.</p>\n<p><strong>Commanding Presence</strong></p>\n<p>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.</p>\n<p><strong>Commanding Presence</strong></p>\n<p>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.</p>\n<p><strong>Disarming Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack’s damage roll. 대상은 근력 내성 굴림에 성공해야 하며, 실패하면 drop one object of your choice that it’s holding, with the object landing in its space.</p>\n<p><strong>Distracting Strike</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack’s damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p>\n<p><strong>Distracting Strike</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack’s damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p>\n<p><strong>Distracting Strike</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack’s damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p>\n<p><strong>Evasive Footwork</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p>\n<p><strong>Evasive Footwork</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p>\n<p><strong>Evasive Footwork</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p>\n<p><strong>Feinting Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing 크리처 하나 within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Feinting Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing 크리처 하나 within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Feinting Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing 크리처 하나 within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Goading Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>\n<p><strong>Goading Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>\n<p><strong>Goading Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>\n<p><strong>Lunging Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Lunging Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Lunging Attack</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack’s damage roll.</p>\n<p><strong>Maneuvering Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack’s damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>\n<p><strong>Maneuvering Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack’s damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>\n<p><strong>Maneuvering Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack’s damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>\n<p><strong>Menacing Attack</strong></p>\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack’s damage roll. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have the Frightened condition until the end of your next turn.</p>\n<p><strong>Parry</strong></p>\n<p>When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p>\n<p><strong>Parry</strong></p>\n<p>When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p>\n<p><strong>Parry</strong></p>\n<p>When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p>\n<p><strong>Precision Attack</strong></p>\n<p>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack 명중.</p>\n<p><strong>Pushing Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>\n<p><strong>Pushing Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>\n<p><strong>Pushing Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>\n<p><strong>Rally</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>\n<p><strong>Rally</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>\n<p><strong>Rally</strong></p>\n<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>\n<p><strong>Riposte</strong></p>\n<p>When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack’s 피해.</p>\n<p><strong>Riposte</strong></p>\n<p>When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack’s 피해.</p>\n<p><strong>Riposte</strong></p>\n<p>When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack’s 피해.</p>\n<p><strong>Sweeping Attack</strong></p>\n<p>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p>\n<p><strong>Sweeping Attack</strong></p>\n<p>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p>\n<p><strong>Sweeping Attack</strong></p>\n<p>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p>\n<p><strong>Tactical Assessment</strong></p>\n<p>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</p>\n<p><strong>Tactical Assessment</strong></p>\n<p>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</p>\n<p><strong>Tactical Assessment</strong></p>\n<p>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</p>\n<p><strong>Trip Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</p>\n<p><strong>Trip Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</p>\n<p><strong>Trip Attack</strong></p>\n<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack’s damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</p></section>\n</div>"
@@ -272,7 +278,8 @@
       "name": "배경 Background"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.Mc5uEikDkPpRUUeO": {
-      "description": "<div class=\"ddb\">\n<p>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack 명중.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack 명중.</p>\n</div>",
+      "name": "Maneuver: Precision 공격"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.MIu7DfqdsfMKyO9I": {
       "description": ""
@@ -290,7 +297,8 @@
       "name": "전쟁의 수련생 Student of War"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.QeYea7eQ9anVU4Ky": {
-      "description": "<div class=\"ddb\">\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack’s damage roll. 대상은 근력 내성 굴림에 성공해야 하며, 실패하면 drop one object of your choice that it’s holding, with the object landing in its space.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack’s damage roll. 대상은 근력 내성 굴림에 성공해야 하며, 실패하면 drop one object of your choice that it’s holding, with the object landing in its space.</p>\n</div>",
+      "name": "Maneuver: Disarming 공격"
     },
     "Actor.6PD0igpI5xNEnDtk.Item.S2t0JNvozqgCCtlz": {
       "description": "<div class=\"ddb\">\n<p>You gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, and Persuasion.</p><hr /><section class=\"secret\">\n<ul><li><p>Deception</p></li><li><p>Deception</p></li><li><p>Insight</p></li><li><p>Insight</p></li><li><p>Intimidation</p></li><li><p>Intimidation</p></li><li><p>Persuasion</p></li><li><p>Persuasion</p></li></ul></section>\n</div>",
@@ -417,7 +425,8 @@
       "name": "다중공격 (인간형 또는 혼성 형태에서만) Multiattack (Humanoid or Hybrid Form Only)"
     },
     "Actor.9vgWiWtDB7toHOV2.Item.TRlTqAjjk5C8aCjT": {
-      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) 피해. If the target is a humanoid, it must succeed on a [[/save ability=constitution dc=11]] saving throw or be cursed with wererat lycanthropy.</p><div class=\"rd__spc-inline-post\"></div></div>"
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 4 ([[/damage 1d4 + 2 type=piercing]]) 피해. If the target is a humanoid, it must succeed on a [[/save ability=constitution dc=11]] saving throw or be cursed with wererat lycanthropy.</p><div class=\"rd__spc-inline-post\"></div></div>",
+      "name": "Bite (쥐 or Hybrid Form Only)"
     },
     "Actor.9vgWiWtDB7toHOV2.Item.vhkfyHgOIlFI3mSJ": {
       "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) 피해.</p><div class=\"rd__spc-inline-post\"></div></div>"
@@ -786,10 +795,12 @@
       "name": "전투 우월성 Combat Superiority"
     },
     "Actor.DloJhuVlZDWpdQk2.Item.HCtFXQo5wOjAnqLw": {
-      "description": ""
+      "description": "",
+      "name": "Heavy 갑옷 Master"
     },
     "Actor.DloJhuVlZDWpdQk2.Item.j3Hyaj6aK4hvUXVO": {
-      "description": ""
+      "description": "",
+      "name": "Student 의 War: Smith's Tools"
     },
     "Actor.DloJhuVlZDWpdQk2.Item.jzWKkpRItRzY3svU": {
       "description": "<div class=\"ddb\">\n<h1>설명</h1><p>다양한 무기와 갑옷에 능숙한 무예의 대가</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>히트 다이스:</strong> d10<br /><strong>주요 능력:</strong> Strength or Dexterity<br /><strong>내성:</strong> Strength &amp; Constitution</p><h1>클래스 특성</h1>\n\n\n</div>",
@@ -877,17 +888,20 @@
       "name": "최면 패턴 Hypnotic Pattern"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.VuS3rHptvCy9oenL": {
-      "description": "<div class=\"rd__b  rd__b--3\"><p>Shadrix exhales an entwined burst of blinding radiance and unnerving shadow in a 90-foot cone. Each creature in that area must make a [[/save ability=con dc=21]] saving throw. 내성 굴림에 실패하면, a creature takes 31 ([[/damage 7d8 type=radiant]]) damage and 31 ([[/damage 7d8 type=psychic]]) damage and is &amp;Reference[condition=blinded] until the start of Shadrix's next turn. 내성 굴림에 성공하면, a creature takes half as much damage and isn't &amp;Reference[condition=blinded].</p></div>"
+      "description": "<div class=\"rd__b  rd__b--3\"><p>Shadrix exhales an entwined burst of blinding radiance and unnerving shadow in a 90-foot cone. Each creature in that area must make a [[/save ability=con dc=21]] saving throw. 내성 굴림에 실패하면, a creature takes 31 ([[/damage 7d8 type=radiant]]) damage and 31 ([[/damage 7d8 type=psychic]]) damage and is &amp;Reference[condition=blinded] until the start of Shadrix's next turn. 내성 굴림에 성공하면, a creature takes half as much damage and isn't &amp;Reference[condition=blinded].</p></div>",
+      "name": "Illuminating 그림자 Breath"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.w9tSYN20bZrzrFMd": {
-      "description": ""
+      "description": "",
+      "name": "Flash 의 Inspiration"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.WCdvv2z2RKeCwVRR": {
       "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+14]]{+14} 명중, 사거리 10피트, 목표 하나. <i>명중:</i> 10 ([[/damage 1d6 + 7 type=slashing]]) 피해. If the target is a creature, it is wracked with despair and has disadvantage on attack rolls until the end of its next turn.</p></div>",
       "name": "발톱 Claw"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.Y8rHowXz5rlJReO7": {
-      "description": ""
+      "description": "",
+      "name": "그림자 Slip"
     },
     "Actor.e03sTu5kHyaWvyWo.Item.4fRin7S1UWYhZHlU": {
       "description": "",
@@ -1007,10 +1021,12 @@
       "name": "파이터 Fighter"
     },
     "Actor.FfpfS2K7vefP6PPw.Item.DUbSxWyIPXUhT4Xc": {
-      "description": ""
+      "description": "",
+      "name": "Superior 암시야"
     },
     "Actor.FfpfS2K7vefP6PPw.Item.EdiibMTPMpDq5Crw": {
-      "description": ""
+      "description": "",
+      "name": "Maneuvers: Commander's 강타"
     },
     "Actor.FfpfS2K7vefP6PPw.Item.eg9rL3haY7badwVp": {
       "description": "<div class=\"rd__b  rd__b--3\"><p>@item[rapier|phb|rapiers], @item[shortsword|phb|shortswords], @item[hand crossbow|phb|hand crossbows]에 숙련을 갖습니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
@@ -1146,7 +1162,8 @@
       "name": "보호의 오라 Aura of Protection"
     },
     "Actor.fKd6acQLjH2SztCS.Item.mm2zY8DtVDYh58y3": {
-      "description": "<div class=\"ddb\">\n<h1>설명</h1><p>A holy warrior bound to a sacred oath</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>히트 다이스:</strong> d10<br /><strong>주요 능력:</strong> Strength &amp; Charisma<br /><strong>내성:</strong> Wisdom &amp; Charisma</p><h1>클래스 특성</h1>\n\n\n</div>"
+      "description": "<div class=\"ddb\">\n<h1>설명</h1><p>A holy warrior bound to a sacred oath</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>히트 다이스:</strong> d10<br /><strong>주요 능력:</strong> Strength &amp; Charisma<br /><strong>내성:</strong> Wisdom &amp; Charisma</p><h1>클래스 특성</h1>\n\n\n</div>",
+      "name": "맹세 the Crown"
     },
     "Actor.fKd6acQLjH2SztCS.Item.OHXOaHREx1RJtMMU": {
       "description": "<p>팔라딘은 다음과 같은 클래스 특성이 있습니다.</p><h3>히트 포인트</h3><p><strong>히트 다이스:</strong> 팔라딘 레벨당 1d10<br><strong>1레벨 히트 포인트:</strong> 10 + 건강 수정치<br><strong>레벨 상승 시의 히트 포인트:</strong> 팔라딘 레벨이 1 오를 때마다 1d10 (또는 6) + 건강 수정치</p><h3>숙련</h3><p><strong>갑옷:</strong> 모든 종류의 갑옷, 방패<br><strong>무기:</strong> 간이 무기, 군용 무기<br><strong>도구:</strong> 없음<br><strong>내성 굴림:</strong> 지혜, 매력<br><strong>기술:</strong> 운동, 통찰력, 위협, 의학, 설득, 종교학  중 2개 선택</p><h3>장비</h3><p>캐릭터가 배경에서 받는 장비에 추가로 아래의 장비를 얻고 시작합니다. </p><ul><li>(a) 군용 무기 한 개와 방패 한 개 또는 (b) 군용 무기 두 개</li><li>(a) 투창 다섯 개 또는 (b) 아무 간이 근접 무기</li><li>(a) 성직자의 꾸러미 또는 (b) 모험가의 꾸러미</li><li>체인 메일과 성표 하나</li></ul><h1>팔라딘 성장</h1><table><thead><tr><td>레벨</td><td>숙련 보너스</td><td>특성</td></tr></thead><tbody><tr><td>1레벨</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.E8ozg8avUVOX9N7u]{신성한 감각}, @UUID[Compendium.dnd5e.classfeatures.Item.OdrvL3afwLOPeuYZ]{치유의 손길}</td></tr><tr><td>2레벨</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.fbExzwNwEAl2kW9c]{전투 유파}, @UUID[Compendium.dnd5e.classfeatures.Item.ihoQHsmVZlyDbPhX]{주문시전}, @UUID[Compendium.dnd5e.classfeatures.Item.ySMPQ6zNSlvkrl2f]{신성한 강타}</td></tr><tr><td>3레벨</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.dY9yrqkyEDuF0CG2]{신성한 건강}, @UUID[Compendium.dnd5e.classfeatures.Item.olAqNsUTIef9x8xC]{성스러운 맹세}</td></tr><tr><td>4레벨</td><td>+2</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td></tr><tr><td>5레벨</td><td>+3</td><td>2레벨 주문 슬롯, @UUID[Compendium.dnd5e.classfeatures.Item.XogoBnFWmCAHXppo]{추가 공격}</td></tr><tr><td>6레벨</td><td>+3</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.carGDhkIdoduTC0I]{보호의 오라}</td></tr><tr><td>7레벨</td><td>+3</td><td>성스러운 맹세 특성</td></tr><tr><td>8레벨</td><td>+3</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td></tr><tr><td>9레벨</td><td>+4</td><td>3레벨 주문 슬롯</td></tr><tr><td>10레벨</td><td>+4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.nahSkBO6LH4HkpaT]{용기의 오라}</td></tr><tr><td>11레벨</td><td>+4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.FAk41RPCTcvCk6KI]{향상된 신성한 강타}</td></tr><tr><td>12레벨</td><td>+4</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td></tr><tr><td>13레벨</td><td>+5</td><td>4레벨 주문 슬롯</td></tr><tr><td>14레벨</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.U7BIPVPsptBmwsnV]{정화의 손길}</td></tr><tr><td>15레벨</td><td>+5</td><td>성스러운 맹세 특성</td></tr><tr><td>16레벨</td><td>+5</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td></tr><tr><td>17레벨</td><td>+6</td><td>5레벨 주문 슬롯</td></tr><tr><td>18레벨</td><td>+6</td><td>오라 향상</td></tr><tr><td>19레벨</td><td>+6</td><td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td></tr><tr><td>20레벨</td><td>+6</td><td>성스러운 맹세 특성</td></tr></tbody></table><h1>성스러운 맹세</h1><p>팔라딘이 되려면 적극적으로 악과 싸우는 길, 즉 정의라는 대의를 따르겠다는 서약이 필요합니다. 팔라딘은 3레벨에 배우는 최종 맹세로서 팔라딘이 하는 모든 훈련의 방점을 찍습니다. 이 클래스의 몇몇 캐릭터는 이 맹세를 하기 전까지 자신이 진정한 팔라딘이 아니라고 생각할지도 모릅니다. 그러나 대체로 맹세하는 행위 자체는 팔라딘의 진실한 마음을 증명하는 공식적인 증표일 뿐이며, 형식에 불과합니다.</p><p>@Compendium[dnd5e.subclasses.sZ86mbX8D5PfYuhl]{헌신의 맹세}</p><h3>맹세 위반</h3><p>팔라딘은 높은 행동 기준에 따라 행동하려 노력하지만, 가장 도덕적인 팔라딘조차 잘못을 저지를 때도 있습니다. 어떤 경우에는 옳은 길이 너무 힘겨울 때도 있으며, 어떤 경우에는 둘 중 차악의 길을 선택해야하는 상황도 있고, 또 어떤 경우에는 감정에 사로잡혀서 맹세를 깨뜨리게 될 수도 있습니다. </p><p>서약을 깨뜨린 팔라딘은 보통 같은 지위의 다른 팔라딘이나 같은 신념을 가진 클레릭을 찾아가 속죄를 청합니다. 팔라딘은 참회의 증거로 밤새 철야 기도를 하거나, 짧게 혹은 유사하게나마 금욕을 하기도 합니다. 고해와 용서의 의식이 끝나면, 팔라딘은 다시 새로운 사람이 됩니다.</p><p>만약 팔라딘이 의도적으로 맹세를 깨거나 회개의 기색이 없다면, 결과는 더 심각해집니다. GM은 재량으로 죄를 뉘우치지지 않는 팔라딘이 이 클래스를 더이상 사용하지 못하게 하여 다른 클래스로 바꾸도록 할 수 있습니다.</p>",
@@ -1160,7 +1177,8 @@
       "name": "신성한 건강 Divine Health"
     },
     "Actor.fKd6acQLjH2SztCS.Item.Pjc8qiUAvojS3OF2": {
-      "description": "<div class=\"ddb\">\nAs a bonus action, each creature of your choice within 30 ft. regains 1d6 As a bonus action, each creature of your choice within 30 ft. regains 1d6 {{modifier:cha@min:1}} HP if it has no more than half its max HP. HP if it has no more than half its max HP.<br />\n  <details>\n    <summary>\n      More Details\n    </summary>\n    <p>\n      </p><p>As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma modifier (minimum of 1) if it has no more than half of its hit points.</p>\n    <p></p>\n  </details>\n</div>"
+      "description": "<div class=\"ddb\">\nAs a bonus action, each creature of your choice within 30 ft. regains 1d6 As a bonus action, each creature of your choice within 30 ft. regains 1d6 {{modifier:cha@min:1}} HP if it has no more than half its max HP. HP if it has no more than half its max HP.<br />\n  <details>\n    <summary>\n      More Details\n    </summary>\n    <p>\n      </p><p>As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma modifier (minimum of 1) if it has no more than half of its hit points.</p>\n    <p></p>\n  </details>\n</div>",
+      "name": "신성 변환: Turn the Tide"
     },
     "Actor.fKd6acQLjH2SztCS.Item.pKl05oDCOCBNVLuX": {
       "description": "<p>당신의 축복받은 손길은 상처를 치료할 수 있습니다. 당신은 긴 휴식을 마칠 때마다 다시 채워지는 치유력 풀을 갖습니다. 이 풀에 총합 [당신의 팔라딘레벨 x 5] 점의 hp를 담아둘 수 있습니다. </p><p>행동을 사용해, 크리처에 접촉한 후 치유력 풀에서 원하는 만큼의 hp를 사용해 그 크리처를 치료할 수 있습니다. 당신은 한 번에 치유력 풀을 최대치까지 사용할 수도 있으며, 여러 번 나누어 사용할 수도 있습니다.</p><p>또한, 당신은 치유력 풀에서 hp 5점을 사용하여 목표의 질병이나 독 중 하나를 제거할 수 있습니다. 치유의 손길을 한 번 사용하여 여러 개의 독과 질병을 동시에 치료할 수 있지만, 독이나 질병 하나당 각각 Hp를 소비해야 합니다.</p><p>이 특성은 언데드나 구조물에게는 효과가 없습니다.</p>",
@@ -1171,7 +1189,8 @@
       "name": "신성 변환 Channel Divinity"
     },
     "Actor.fKd6acQLjH2SztCS.Item.rRqdRNpPLcE8rXgN": {
-      "description": "<div class=\"ddb\">\nAs a bonus action, each creature of your choice within 30 ft. must make a WIS saving throw (DC [[8 + @abilities.cha.mod + @prof]]) or it can't willingly move more than 30 ft. away from you.<br />\n  <details>\n    <summary>\n      More Details\n    </summary>\n    <p>\n      </p><p>As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. 내성 굴림에 실패하면, a creature can’t willingly move more than 30 feet away from you. This effect ends on the creature if you are &amp;Reference[incapacitated]{incapacitated} or die or if the creature is more than 30 feet away<span class=\"No-Break\"> from you.</span></p>\n    <p></p>\n  </details>\n</div>"
+      "description": "<div class=\"ddb\">\nAs a bonus action, each creature of your choice within 30 ft. must make a WIS saving throw (DC [[8 + @abilities.cha.mod + @prof]]) or it can't willingly move more than 30 ft. away from you.<br />\n  <details>\n    <summary>\n      More Details\n    </summary>\n    <p>\n      </p><p>As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. 내성 굴림에 실패하면, a creature can’t willingly move more than 30 feet away from you. This effect ends on the creature if you are &amp;Reference[incapacitated]{incapacitated} or die or if the creature is more than 30 feet away<span class=\"No-Break\"> from you.</span></p>\n    <p></p>\n  </details>\n</div>",
+      "name": "신성 변환: Champion Challenge"
     },
     "Actor.fKd6acQLjH2SztCS.Item.rYBANUm4jAVN3kVj": {
       "description": "<p>인간을 일반화하는 것은 어려운 일이지만, 당신의 인간 캐릭터는 아래와 같은 특성이 있습니다.</p><p><em><strong>능력치 점수 상승.</strong></em> 모든 능력치가 각각 1점씩 상승합니다.</p><p><em><strong>연령.</strong></em> 인간은 10대 후반에 성년이 됩니다. 수명은 100세를 맞이하는 경우가 거의 없습니다.</p><p><em><strong>성향. </strong></em>인간은 어느 한 성향으로만 기울어져 있지 않은 편입니다. 인간은 가장 선량한 자도, 가장 악한 자도 존재합니다.</p><p><em><strong>크기.</strong></em> 인간의 신장과 체격은 다양합니다. 대개 키는 5~6ft 정도입니다. 키에 관계없이, 크기는 중형입니다.</p><p><em><strong>속도.</strong></em> 인간 캐릭터의 기본 보행 이동속도는 30ft입니다.</p><p><em><strong>언어. </strong></em>인간 캐릭터는 공용어와 함께, 플레이어가 선택한 다른 한 가지 언어로 말하고 읽고 쓸 수 있습니다. 인간들은 흔히 자신들이 같이 생활하는 자들의 언어를 배우곤 하며, 널리 쓰이지 않는 사투리를 배울 때도 있습니다. 또한 이들은 다른 언어에서 빌려온 표현을 자주 사용하기도 합니다. 오크의 욕설이나 엘프어의 음악적 표현, 드워프의 군사적 문구 등이 그렇게 빌려온 표현의 좋은 예시입니다.</p>",
@@ -1263,7 +1282,8 @@
       "name": "마 밧줄 (50피트) Rope, Hempen (50 feet)"
     },
     "Actor.gs8MyGwAO6tHHSyl.Item.ArmsOfHadar1IIII": {
-      "description": "<div class=\"ddb\">\n<p>You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. 내성 굴림에 실패하면, a target takes 2d6 necrotic damage and can’t take reactions until its next turn. 내성 굴림에 성공하면, the creature takes half damage, but suffers no other effect. </p>\n<p><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p>You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. 내성 굴림에 실패하면, a target takes 2d6 necrotic damage and can’t take reactions until its next turn. 내성 굴림에 성공하면, the creature takes half damage, but suffers no other effect. </p>\n<p><strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>\n</div>",
+      "name": "무장 의 Hadar (Legacy)"
     },
     "Actor.gs8MyGwAO6tHHSyl.Item.BoomingBlade1III": {
       "description": "<div class=\"ddb\">\n<p>You brandish the weapon used in the spell’s casting and make a melee attack with it against 크리처 하나 within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.</p>\n<p>This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>\n</div>",
@@ -1301,7 +1321,8 @@
       "description": "<div class=\"ddb\">\n<p class=\"compendium-hr\"><em>Prerequisite: <span class=\"CharOverride-4\" data-content-chunk-id=\"34a145f7-c7e8-40c8-976d-e76c17c97407\">eldritch blast</span> cantrip</em></p>\n<p class=\"compendium-hr\">When you cast <span class=\"Serif-Character-Style_Italic-Serif\">eldritch blast</span>, add your Charisma modifier to the damage it deals on a hit.</p>\n</div>"
     },
     "Actor.gs8MyGwAO6tHHSyl.Item.L1N1CVAiRbx3RrSv": {
-      "description": ""
+      "description": "",
+      "name": "그림자 칼날 Shadow Blade"
     },
     "Actor.gs8MyGwAO6tHHSyl.Item.lf9DgX1hCLrFsKDL": {
       "description": "",
@@ -2376,7 +2397,8 @@
       "description": ""
     },
     "Actor.la7h5JFa9WZzm8OA.Item.njyhPUU9ftrndDqo": {
-      "description": ""
+      "description": "",
+      "name": "강인한 체격 Powerful Build"
     },
     "Actor.la7h5JFa9WZzm8OA.Item.O0CeuZOiiuKd8864": {
       "description": "",
@@ -2390,7 +2412,8 @@
       "description": ""
     },
     "Actor.la7h5JFa9WZzm8OA.Item.qerEGtSbeGD4ZiNW": {
-      "description": ""
+      "description": "",
+      "name": "Gloom Stalker 마법"
     },
     "Actor.la7h5JFa9WZzm8OA.Item.rVnuAcQRrmnz6Vax": {
       "description": ""
@@ -2595,7 +2618,8 @@
       "name": "주문 시전 Spellcasting"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.f53Wgcrd7KNEx0QQ": {
-      "description": ""
+      "description": "",
+      "name": "Protective 마법"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.f8j0F3xGv5utmRWL": {
       "description": "<p>마법의 힘으로 이루어진, 보이지 않는 방어막이 나타나 당신을 보호합니다. 당신의 다음 턴이 시작될 때까지, 당신은 AC에 +5 보너스를 받습니다. 이 AC는 발동조건이 된 공격에도 적용됩니다. 또한, 매직 미사일 주문에 의한 피해를 받지 않습니다.</p>",
@@ -2610,7 +2634,8 @@
       "name": "죽음의 손가락 Finger of Death"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.HmFwSxkL6MbAU3aH": {
-      "description": ""
+      "description": "",
+      "name": "영혼 Jar"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.i05bAoBDsms8PQK6": {
       "description": "<p>당신은 같은 세계 안에 존재하는 특정한 크리처의 모습을 염탐하고 그 소리를 들을 수 있습니다. 이 목표는 지혜 내성 굴림을 굴릴 수 있으며, 이 내성 굴림의 DC는 당신이 얼마나 해당 목표를 잘 알고 있는가, 그리고 어떤 물리적 연결이 있는가에 따라 달라집니다. 만약 목표가 당신이 주문을 시전하고 있다는 사실을 알고 있고 염탐되는 것을 바라고 있다면 자동으로 내성 굴림을 포기할 수 있습니다.</p><table border=\"1\"><tbody><tr><td><strong>지식</strong></td><td><strong>내성 수정치</strong></td></tr><tr><td>부차적 (목표에 대해 들어본 적 있음)</td><td>+5</td></tr><tr><td>일차적 (목표와 만나본 적 있음)</td><td>+0</td></tr><tr><td>친숙함 (목표를 매우 잘 알고 있음)</td><td>-5</td></tr></tbody></table><p>&nbsp;</p><table border=\"1\"><tbody><tr><td><strong>연결 정도</strong></td><td><strong>내성 수정치</strong></td></tr><tr><td>초상화나 묘사</td><td>-2</td></tr><tr><td>소지품이나 옷가지</td><td>-4</td></tr><tr><td>신체 일부, 머리카락, 손톱 등</td><td>-10</td></tr></tbody></table><p>내성에 성공하면 목표는 염탐당하지 않으며, 이후 24시간 동안 당신은 이 목표에게 다시 염탐을 시도할 수 없습니다.</p><p>내성에 실패하면 당신은 목표 주변 10ft 내에 투명한 감각기관을 만들어 낼 수 있으며, 당신이 마치 그 위치에 있는 것처럼 목표를 보고 들을 수 있습니다. 이 감각기는 목표를 따라다니며, 주문의 지속시간 동안 계속 10ft 내의 지점에 존재합니다. 투명체를 감지할 수 있는 크리처는 감각기의 존재를 알 수 있으며, 이는 당신의 주먹 크기와 비슷한 빛나는 구체 모습으로 보입니다.</p><p>당신은 크리처를 목표로 하는 대신 당신이 이전에 본 적 있는 특정한 위치를 목표로 하여 이 주문을 시전할 수 있으며, 이 경우 감각기는 당신이 정한 위치에 나타나 고정됩니다.</p>",
@@ -2710,7 +2735,8 @@
       "description": ""
     },
     "Actor.nVEBMCzBnb63I7mL.Item.aW51KkLWhzBmfWtJ": {
-      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body--Extra-Space-After-\">At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target 크리처 하나 you can see within 120 feet of you. The hound uses the dire wolf statistics (see the <span class=\"Serif-Character-Style_Italic-Serif\">Monster Manual</span> or appendix C in the <span class=\"Serif-Character-Style_Italic-Serif\">Player’s Handbook</span>), with the following changes:</p>\n<ul>\n<li class=\"Core-Styles_Core-Bulleted\">The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It appears with a number of temporary hit points equal to half your sorcerer level.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.</li>\n<li class=\"Core-Styles_Core-Bulleted--Extra-Space-After-\">At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.</li>\n</ul>\n<p class=\"Core-Styles_Core-Body\">The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body--Extra-Space-After-\">At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target 크리처 하나 you can see within 120 feet of you. The hound uses the dire wolf statistics (see the <span class=\"Serif-Character-Style_Italic-Serif\">Monster Manual</span> or appendix C in the <span class=\"Serif-Character-Style_Italic-Serif\">Player’s Handbook</span>), with the following changes:</p>\n<ul>\n<li class=\"Core-Styles_Core-Bulleted\">The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It appears with a number of temporary hit points equal to half your sorcerer level.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.</li>\n<li class=\"Core-Styles_Core-Bulleted--Extra-Space-After-\">At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.</li>\n</ul>\n<p class=\"Core-Styles_Core-Body\">The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.</p>\n</div>",
+      "name": "Hound 의 Ill Omen"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.ControlFlames1II": {
       "description": ""
@@ -2719,7 +2745,8 @@
       "description": ""
     },
     "Actor.nVEBMCzBnb63I7mL.Item.Epcz43kxGJSLOOWv": {
-      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.</p>\n<p class=\"Core-Styles_Core-Body\">After the saving throw succeeds, you can’t use this feature again until you finish a long rest.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.</p>\n<p class=\"Core-Styles_Core-Body\">After the saving throw succeeds, you can’t use this feature again until you finish a long rest.</p>\n</div>",
+      "name": "Strength 의 Grave"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.FjJ62xxZxTzIZ7mV": {
       "description": "<div class=\"ddb\">\n<p>The following options are available to your Metamagic feature. The options are presented in alphabetical order.</p>\n<p><strong>Careful Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of 크리처 하나). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.</p>\n<p><strong>Careful Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of 크리처 하나). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save.</p>\n<p><strong>Distant Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell’s range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell’s range 30 feet.</p>\n<p><strong>Distant Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell’s range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell’s range 30 feet.</p>\n<p><strong>Empowered Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.</p>\n<p>You can use Empowered Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>\n<p><strong>Empowered Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.</p>\n<p>You can use Empowered Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>\n<p><strong>Extended Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 Sorcery Point to double its duration to a maximum duration of 24 hours.</p>\n<p>If the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration.</p>\n<p><strong>Extended Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 Sorcery Point to double its duration to a maximum duration of 24 hours.</p>\n<p>If the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration.</p>\n<p><strong>Heightened Spell</strong></p>\n<p><em>Cost: 2 Sorcery Points</em></p>\n<p>When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give 목표 하나 of the spell Disadvantage on saves against the spell.</p>\n<p><strong>Heightened Spell</strong></p>\n<p><em>Cost: 2 Sorcery Points</em></p>\n<p>When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give 목표 하나 of the spell Disadvantage on saves against the spell.</p>\n<p><strong>Quickened Spell</strong></p>\n<p><em>Cost: 2 Sorcery Points</em></p>\n<p>When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can’t modify a spell in this way if you’ve already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.</p>\n<p><strong>Seeking Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.</p>\n<p>You can use Seeking Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>\n<p><strong>Seeking Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.</p>\n<p>You can use Seeking Spell even if you’ve already used a different Metamagic option during the casting of the spell.</p>\n<p><strong>Subtle Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.</p>\n<p><strong>Subtle Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.</p>\n<p><strong>Transmuted Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.</p>\n<p><strong>Transmuted Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.</p>\n<p><strong>Twinned Spell</strong></p>\n<p><em>Cost: 1 Sorcery Point</em></p>\n<p>When you cast a spell, such as Charm Person, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell’s effective level by 1.</p>\n</div>"
@@ -2744,16 +2771,20 @@
       "description": ""
     },
     "Actor.nVEBMCzBnb63I7mL.Item.leF3EWrYSJoUudtm": {
-      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, you have darkvision with a range of 120 feet.</p>\n<p class=\"Core-Styles_Core-Body\">When you reach 3rd level in this class, you learn the <span class=\"Serif-Character-Style_Italic-Serif\">darkness</span> spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, you have darkvision with a range of 120 feet.</p>\n<p class=\"Core-Styles_Core-Body\">When you reach 3rd level in this class, you learn the <span class=\"Serif-Character-Style_Italic-Serif\">darkness</span> spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.</p>\n</div>",
+      "name": "Eyes 의 Dark"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.MindSliver1IIIII": {
-      "description": "<div class=\"ddb\">\n<p>You drive a disorienting spike of psychic energy into the mind of 크리처 하나 you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.</p>\n<p>This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>\n</div>"
+      "description": "<div class=\"ddb\">\n<p>You drive a disorienting spike of psychic energy into the mind of 크리처 하나 you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.</p>\n<p>This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>\n</div>",
+      "name": "정신 Sliver (Legacy)"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.mV8G19HKRP7QnJLL": {
-      "description": ""
+      "description": "",
+      "name": "그림자 Touched"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.OTnLBPvSAJ1Ng1Vh": {
-      "description": ""
+      "description": "",
+      "name": "마법 Initiate (Wizard)"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.ShapeWater1IIIII": {
       "description": "<div class=\"ddb\">\n<p>You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>\n<ul>\n<li>\n<p>You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn’t have enough force to cause 피해.</p>\n</li>\n<li>\n<p>You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.</p>\n</li>\n<li>\n<p>You change the water’s color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.</p>\n</li>\n<li>\n<p>You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.</p>\n</li>\n</ul>\n<p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>\n</div>",
@@ -2764,16 +2795,19 @@
       "name": "마력 폭발 Sorcerous Burst"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.SPE7s7lowKr4k79r": {
-      "description": "<div class=\"ddb\">\n<h1>설명</h1><p><span style=\"font-size:16px\"><em>A Dazzling Mage Filled with Innate Magic</em></span></p>\n<p>Sorcerers harness and channel the raw, roiling power of innate magic that is stamped into their very being.</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>주요 능력:</strong> Charisma<br /><strong>Hit Point Die:</strong> D6<br /><strong>내성:</strong> Constitution &amp; Charisma</p><h1>클래스 특성</h1>\n\n<p><b>Level 3: Eyes of the Dark</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, you have darkvision with a range of 120 feet.</p>\n<p class=\"Core-Styles_Core-Body\">When you reach 3rd level in this class, you learn the <span class=\"Serif-Character-Style_Italic-Serif\">darkness</span> spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.</p>\n\n<p><b>Level 3: Strength of the Grave</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.</p>\n<p class=\"Core-Styles_Core-Body\">After the saving throw succeeds, you can’t use this feature again until you finish a long rest.</p>\n\n<p><b>Level 6: Hound of Ill Omen</b></p>\n<p class=\"Core-Styles_Core-Body--Extra-Space-After-\">At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target 크리처 하나 you can see within 120 feet of you. The hound uses the dire wolf statistics (see the <span class=\"Serif-Character-Style_Italic-Serif\">Monster Manual</span> or appendix C in the <span class=\"Serif-Character-Style_Italic-Serif\">Player’s Handbook</span>), with the following changes:</p>\n<ul>\n<li class=\"Core-Styles_Core-Bulleted\">The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It appears with a number of temporary hit points equal to half your sorcerer level.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.</li>\n<li class=\"Core-Styles_Core-Bulleted--Extra-Space-After-\">At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.</li>\n</ul>\n<p class=\"Core-Styles_Core-Body\">The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.</p>\n\n<p><b>Level 14: Shadow Walk</b></p>\n<p>At 14th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</p>\n\n<p><b>Level 18: Umbral Form</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object.</p>\n<p class=\"Core-Styles_Core-Body\">You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.</p>\n\n\n</div>"
+      "description": "<div class=\"ddb\">\n<h1>설명</h1><p><span style=\"font-size:16px\"><em>A Dazzling Mage Filled with Innate Magic</em></span></p>\n<p>Sorcerers harness and channel the raw, roiling power of innate magic that is stamped into their very being.</p>\n<p class=\"characters-statblock\" style=\"font-family:Roboto Condensed;font-size:14px\"><strong>주요 능력:</strong> Charisma<br /><strong>Hit Point Die:</strong> D6<br /><strong>내성:</strong> Constitution &amp; Charisma</p><h1>클래스 특성</h1>\n\n<p><b>Level 3: Eyes of the Dark</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, you have darkvision with a range of 120 feet.</p>\n<p class=\"Core-Styles_Core-Body\">When you reach 3rd level in this class, you learn the <span class=\"Serif-Character-Style_Italic-Serif\">darkness</span> spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.</p>\n\n<p><b>Level 3: Strength of the Grave</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 3rd level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.</p>\n<p class=\"Core-Styles_Core-Body\">After the saving throw succeeds, you can’t use this feature again until you finish a long rest.</p>\n\n<p><b>Level 6: Hound of Ill Omen</b></p>\n<p class=\"Core-Styles_Core-Body--Extra-Space-After-\">At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target 크리처 하나 you can see within 120 feet of you. The hound uses the dire wolf statistics (see the <span class=\"Serif-Character-Style_Italic-Serif\">Monster Manual</span> or appendix C in the <span class=\"Serif-Character-Style_Italic-Serif\">Player’s Handbook</span>), with the following changes:</p>\n<ul>\n<li class=\"Core-Styles_Core-Bulleted\">The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It appears with a number of temporary hit points equal to half your sorcerer level.</li>\n<li class=\"Core-Styles_Core-Bulleted\">It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.</li>\n<li class=\"Core-Styles_Core-Bulleted--Extra-Space-After-\">At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.</li>\n</ul>\n<p class=\"Core-Styles_Core-Body\">The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.</p>\n\n<p><b>Level 14: Shadow Walk</b></p>\n<p>At 14th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</p>\n\n<p><b>Level 18: Umbral Form</b></p>\n<p class=\"Core-Styles_Core-Body\">Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object.</p>\n<p class=\"Core-Styles_Core-Body\">You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.</p>\n\n\n</div>",
+      "name": "그림자 마법 (XGtE)"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.tLNcX8Ed3kvKjaOz": {
       "description": ""
     },
     "Actor.nVEBMCzBnb63I7mL.Item.uohqUPRuSgN1V9BZ": {
-      "description": ""
+      "description": "",
+      "name": "Metamagic: Twinned 주문"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.UxDM5nlCJMAWtcFl": {
-      "description": ""
+      "description": "",
+      "name": "Metamagic: Quickened 주문"
     },
     "Actor.nVEBMCzBnb63I7mL.Item.vhslatzV96n5LRHc": {
       "description": "",
@@ -2845,7 +2879,8 @@
       "name": "신속한 자 Speedster"
     },
     "Actor.okqagw2OuKVJttB0.Item.evV4TJNs0nwEow9g": {
-      "description": ""
+      "description": "",
+      "name": "Ki-Fueled 공격"
     },
     "Actor.okqagw2OuKVJttB0.Item.FisQlc7PJNePCARi": {
       "description": "",
@@ -2871,7 +2906,8 @@
       "description": ""
     },
     "Actor.okqagw2OuKVJttB0.Item.YMn7FX2AVtZqhPgh": {
-      "description": ""
+      "description": "",
+      "name": "Disciple 의 Elements"
     },
     "Actor.okqagw2OuKVJttB0.Item.YNN4X58HgXJu1lgR": {
       "description": ""
@@ -2928,7 +2964,8 @@
       "name": "우레 칼날 Booming Blade"
     },
     "Actor.oVlx5qBmiY1nWV6t.Item.EwF6DC1mPKxOj1KE": {
-      "description": ""
+      "description": "",
+      "name": "Keen 정신"
     },
     "Actor.oVlx5qBmiY1nWV6t.Item.kI826iNZgIpJQ2o8": {
       "description": "",
@@ -3519,7 +3556,8 @@
       "name": "설명 Description"
     },
     "Actor.UF8v3eDPC7oXcJoy.Item.AEWdaVHpj8G6Fi5D": {
-      "description": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or 원거리 주문 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 60피트, 목표 하나. <i>명중:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) 피해에 더해 9 ([[/damage 2d8 type=psychic]]) 피해.</p></div>"
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or 원거리 주문 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 60피트, 목표 하나. <i>명중:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) 피해에 더해 9 ([[/damage 2d8 type=psychic]]) 피해.</p></div>",
+      "name": "Ink 칼날 (Ranged)"
     },
     "Actor.UF8v3eDPC7oXcJoy.Item.c9GAxWJJC0Whv2et": {
       "description": "<div class=\"rd__b  rd__b--3\"><p>You magically emanate a sense of friendship toward 크리처 하나 you can see within range. 대상은 지혜 내성 굴림에 성공해야 하며, 실패하면 have the &amp;Reference[condition=Charmed] condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours.</p><p>The spell ends early if the target takes damage or if you make an attack roll, deal 피해, 또는 force anyone to make a saving throw. When the spell ends, the target knows it was &amp;Reference[condition=Charmed] by you.</p></div>",
@@ -3545,7 +3583,8 @@
       "name": "주문 시전 Spellcasting"
     },
     "Actor.UF8v3eDPC7oXcJoy.Item.Y2b0nqrvmMeKi7My": {
-      "description": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or 원거리 주문 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) 피해에 더해 9 ([[/damage 2d8 type=psychic]]) 피해.</p></div>"
+      "description": "<div class=\"rd__b  rd__b--3\"><p><i>Melee  or 원거리 주문 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 5피트, 목표 하나. <i>명중:</i> 5 ([[/damage 1d6 + 2 type=piercing]]) 피해에 더해 9 ([[/damage 2d8 type=psychic]]) 피해.</p></div>",
+      "name": "Ink 칼날 (Melee)"
     },
     "Actor.UL9PadS54STVzvag.Item.4fRin7S1UWYhZHlU": {
       "description": "",
@@ -3656,7 +3695,8 @@
       "name": "기이한 본성 Unusual Nature"
     },
     "Actor.WuLtkFCUbqoP9uug.Item.NImkNBrPSHNFLB0e": {
-      "description": ""
+      "description": "",
+      "name": "생명 Sense"
     },
     "Actor.WWQYP5xugXRsF2Y7.Item.rDv4w3rhDLkF4ZWp": {
       "description": "<p>이 곡선형 칼날은 감싸인 손잡이 부근에서부터 넓적하고 어숨푸레한 끝을 향해 활처럼 가늘어집니다.</p>",
@@ -3700,7 +3740,8 @@
       "description": ""
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.aMqtOBdvRYcVEN21": {
-      "description": ""
+      "description": "",
+      "name": "고양이's Talents"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.Cja1TgNLNQ44C9KV": {
       "description": "<p>이 특별한 도구들은 무언가 만들거나 거래할 때 필요한 것입니다. 장인의 도구에 대한 숙련을 지니고 있으면, 제작시 능력 판정에 숙련 보너스를 더할 수 있습니다. 장인의 도구들은 각각 다른 숙련이 필요합니다.</p>",
@@ -3729,7 +3770,8 @@
       "name": "고양이의 민첩성 Feline Agility"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.HEUH6P4aY1WXMe9e": {
-      "description": ""
+      "description": "",
+      "name": "암시야 Darkvision"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.IGdtocKRnsV43akY": {
       "description": "<p>지근 거리의 대상 하나에게 근거리 주문 공격을 가합니다. 명중하면 목표는 3d10점의 사령 피해를 받습니다.</p><p><strong><em>상위시전.</em></strong> 당신이 2레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전할 경우, 상승한 주문 슬롯 1레벨 당 1d10점씩 사령 피해가 증가합니다.</p>",
@@ -3739,7 +3781,8 @@
       "description": ""
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.iTm45CseoTQZjUPj": {
-      "description": ""
+      "description": "",
+      "name": "Tools 의 Trade"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.JvoEDKopTj8kvYhq": {
       "description": "",
@@ -3769,10 +3812,12 @@
       "name": "스터디드 레더 아머 Studded Leather Armor"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.QkXuzk5QDkNI8typ": {
-      "description": ""
+      "description": "",
+      "name": "고양이's Claws"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.SmUYyTNjLuEdRc2x": {
-      "description": ""
+      "description": "",
+      "name": "Artificer Infusions (Alternate): Belt 의 Utility"
     },
     "Actor.Ysn0Dl6caEmurTDx.Item.sy0aHQaModrulIAW": {
       "description": "<p>횃불은 1시간 동안 불을 밝히며, 주변 20ft 반경을 밝은 빛 환경으로, 추가로 20ft 반경까지는 약한 빛 환경으로 밝힙니다. 만약 당신이 불타는 횃불로 근접 공격을 가하면, 명중시 1점의 화염 피해를 가합니다.</p>",

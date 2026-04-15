@@ -14,6 +14,9 @@
     "Tasha's Bubbling Cauldron": "Tasha's Bubbling Cauldron"
   },
   "entries": {
+    "Arcane Eye": {
+      "name": "Arcane 눈"
+    },
     "Arcane Hand (Blue)": {
       "items": {
         "Clenched Fist": {
@@ -54,7 +57,16 @@
         }
       }
     },
+    "Arcane Sword (Spectral Green)": {
+      "name": "Arcane 검 (Spectral Green)",
+      "items": {
+        "Attack": {
+          "name": "공격 Attack"
+        }
+      }
+    },
     "Hound of Ill Omen": {
+      "name": "Hound 의 Ill Omen",
       "items": {
         "Bite": {
           "name": "물기 Bite",

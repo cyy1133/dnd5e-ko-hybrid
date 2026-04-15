@@ -19,6 +19,7 @@
       }
     },
     "Blood Drinker Vampire": {
+      "name": "피 Drinker Vampire",
       "items": {
         "Bite": {
           "name": "물기 Bite",
@@ -144,6 +145,9 @@
           "name": "근접 비행 Flyby",
           "description": "<p>[[lookup @name lowercase]] 은/는 적의 범위 밖으로 날아갈 때 기회 공격을 유발하지 않습니다.</p>"
         },
+        "Keen Hearing and Sight": {
+          "name": "Keen Hearing 및 Sight"
+        },
         "Talons": {
           "name": "발톱 Talons",
           "description": "<div class=\"ddb\">\n<p>근접 무기 공격: <span data-dicenotation=\"1d20+3\" data-rolltype=\"명중\" data-rollaction=\"Talons\">+3</span> 명중, 사거리 5피트, 목표 하나. <em>Hit:</em> 1 slashing 피해.</p>\n</div>"
@@ -232,6 +236,7 @@
       }
     },
     "Swarm of Zombie Limbs": {
+      "name": "Swarm 의 Zombie Limbs",
       "items": {
         "Grasping Limbs": {
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+4]]{+4} 명중, 사거리 0피트, 크리처 하나 in the swarm's space. <i>명중:</i> 7 ([[/damage 2d6 type=necrotic]]) damage, and the creature must succeed on a [[/save ability=strength dc=12]] saving throw or be &amp;Reference[condition=restrained]. The creature can repeat the saving throw at the end of each of its turns, taking 7 ([[/damage 2d6 type=necrotic]]) damage on a failed save. The creature is freed if it succeeds on this saving throw, the swarm moves out of the creature's space, or the swarm dies.</p><div class=\"rd__spc-inline-post\"></div></div>"
@@ -264,6 +269,7 @@
           "description": "<section class=\"secret\">\n<p>근거리 무기 공격: 명중 +11, 사정거리 10ft, 단일 목표. 명중 시: 17(2d10 + 6)점의 관통 피해.</p>\n</section>\n<p>[[lookup @name lowercase]] 이/가 물기 공격을 합니다.</p>"
         },
         "Bite (Bat or Vampire Form Only)": {
+          "name": "Bite (박쥐 or Vampire Form Only)",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+9]]{+9} 명중, 사거리 5피트, one willing creature, or a creature that is &amp;Reference[condition=grappled] by the vampire, &amp;Reference[condition=incapacitated], or &amp;Reference[condition=restrained]. <i>명중:</i> 7 ([[/damage 1d6 + 4 type=piercing]]) 피해에 더해 10 ([[/damage 3d6 type=necrotic]]) 피해. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a @creature[vampire spawn] under the vampire's control.</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Charm": {
@@ -313,6 +319,7 @@
           "description": "<p></p>"
         },
         "Unarmed Strike (Vampire Form Only)": {
+          "name": "Unarmed 강타 (Vampire Form Only)",
           "description": "<div class=\"rd__b  rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+9]]{+9} 명중, 사거리 5피트, 크리처 하나. <i>명중:</i> 8 ([[/damage 1d8 + 4 type=bludgeoning]]) 피해. Instead of dealing damage, the vampire can grapple the target (escape DC <span class=\"rd__dc\">18</span>).</p><div class=\"rd__spc-inline-post\"></div></div>"
         },
         "Vampire Weaknesses": {

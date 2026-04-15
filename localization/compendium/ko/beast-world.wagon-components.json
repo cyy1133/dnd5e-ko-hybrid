@@ -1,62 +1,386 @@
 {
   "label": "Wagon Components",
   "entries": {
+    "Absorbing Ram": {
+      "name": "흡수식 충각 Absorbing Ram"
+    },
+    "Absorbing Ram (G3)": {
+      "name": "흡수식 충각 (G3)"
+    },
+    "Acid Smokescreen (G3)": {
+      "name": "산성 연막 (G3)"
+    },
+    "Animated Ladder": {
+      "name": "Animated 사다리"
+    },
+    "Arcana Blinding": {
+      "name": "비전 실명화 Arcana Blinding"
+    },
+    "Armored Storage": {
+      "name": "장갑형 수납 Armored Storage"
+    },
+    "Armored Storage (G3)": {
+      "name": "장갑형 수납 (G3)"
+    },
+    "Armored Storage (G5)": {
+      "name": "장갑형 수납 (G5)"
+    },
     "Astral Capture Cube": {
       "description": "<p><strong>Grade 5</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location</strong>: Body (anywhere on the wagon’s exterior)</p><p>A spectral cube spins and wobbles on its corner somewhere on the wagon’s body. When this com\u0002ponent is used as an action, a creature the user can see within 20 feet of the cube must make a DC 17 Charisma saving throw. 내성 굴림에 실패하면, the target instantly disappears, imprisoned in a pocket of Astral space within the cube.</p><p>Every 30 days, a trapped creature can repeat the Charisma saving throw, freeing itself into the nearest unoccupied space on a success. The inside of the cube is a void of infinite darkness, where magic from sources other than an artifact are suppressed. As an action, a creature can study the cube’s faces and make a DC 13 Intelligence (Investigation) check. If it succeeds, the creature discerns the faint outline of a prisoner’s body.</p><p>By using an action to speak the cube’s command word, a trapped creature can be released and ejected into the nearest unoccupied space. The cube can only contain 크리처 하나 at a time, and can only attempt to trap a creature once before it must be replenished.</p>"
+    },
+    "Ballista": {
+      "name": "발리스타 Ballista"
     },
     "Barbed Wire": {
       "description": "<p><strong>Grade 2</strong></p><p><strong>Class:</strong> Component</p><p><strong>Location:</strong> Body (built-in)</p><p>These menacing razor coils punish a wagon’s ene\u0002mies. When the wagon collides with a creature or object (or hits with a Ram attack), it deals an extra 3d4 piercing 피해. When a creature hits the wagon with a melee attack, the attacker takes 3d4 piercing 피해. Damage dealt by this attachment ignores Enormity.</p>"
     },
+    "Barn Door": {
+      "name": "Barn 문"
+    },
+    "Basin": {
+      "name": "세면대 Basin"
+    },
+    "Bath": {
+      "name": "욕조 Bath"
+    },
     "Blast Spike": {
+      "name": "폭발 스파이크 Blast Spike",
       "description": "<p><strong>Grade 3</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (one 5-foot square on the under\u0002side of the exterior)</p><p>The head of this spike is loaded with explosives, with its tip pointed toward the ground. When used as an action, the spike penetrates sand, earth, mud, or ice, sending a magic shockwave that disrupts underground structures and burrowing creatures within 60 feet. Burrowing creatures in range must make a DC 15 Constitution saving throw.</p><p>A creature takes 10d6 thunder damage on a failed save, or half as much damage on a suc\u0002cessful one. Structures in range take 10d6 thunder 피해. Damage dealt by this component ignores Enormity. The blast spike can be used once before it must be replenished.</p><p><strong>Refit:</strong></p><p>As a grade 4 or higher component, the blast spike deals an extra 2d6 thunder damage for each grade higher than 3.</p>"
     },
     "Blast Spike (G4)": {
+      "name": "폭발 스파이크 (G4)",
       "description": "<p><strong>Grade 4</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (one 5-foot square on the under\u0002side of the exterior)</p><p>The head of this spike is loaded with explosives, with its tip pointed toward the ground. When used as an action, the spike penetrates sand, earth, mud, or ice, sending a magic shockwave that disrupts underground structures and burrowing creatures within 60 feet. Burrowing creatures in range must make a DC 15 Constitution saving throw.</p><p>A creature takes 12d6 thunder damage on a failed save, or half as much damage on a suc\u0002cessful one. Structures in range take 12d6 thunder 피해. Damage dealt by this component ignores Enormity. The blast spike can be used once before it must be replenished.</p><p></p>"
     },
     "Blast Spike (G5)": {
+      "name": "폭발 스파이크 (G5)",
       "description": "<p><strong>Grade 5</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (one 5-foot square on the under\u0002side of the exterior)</p><p>The head of this spike is loaded with explosives, with its tip pointed toward the ground. When used as an action, the spike penetrates sand, earth, mud, or ice, sending a magic shockwave that disrupts underground structures and burrowing creatures within 60 feet. Burrowing creatures in range must make a DC 15 Constitution saving throw.</p><p>A creature takes 14d6 thunder damage on a failed save, or half as much damage on a suc\u0002cessful one. Structures in range take 14d6 thunder 피해. Damage dealt by this component ignores Enormity. The blast spike can be used once before it must be replenished.</p><p></p>"
     },
     "Blast Spike (G6)": {
+      "name": "폭발 스파이크 (G6)",
       "description": "<p><strong>Grade 6</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (one 5-foot square on the under\u0002side of the exterior)</p><p>The head of this spike is loaded with explosives, with its tip pointed toward the ground. When used as an action, the spike penetrates sand, earth, mud, or ice, sending a magic shockwave that disrupts underground structures and burrowing creatures within 60 feet. Burrowing creatures in range must make a DC 15 Constitution saving throw.</p><p>A creature takes 16d6 thunder damage on a failed save, or half as much damage on a suc\u0002cessful one. Structures in range take 16d6 thunder 피해. Damage dealt by this component ignores Enormity. The blast spike can be used once before it must be replenished.</p><p></p>"
+    },
+    "Block of Privacy": {
+      "name": "Block 의 사생활"
+    },
+    "Boiler": {
+      "name": "보일러 Boiler"
+    },
+    "Bookcase": {
+      "name": "책장 Bookcase"
+    },
+    "Breadcrumb Wheels": {
+      "name": "Breadcrumb 바퀴"
+    },
+    "Candle Sconce": {
+      "name": "초 Sconce"
+    },
+    "Cannon": {
+      "name": "대포 Cannon"
+    },
+    "Cantrip Lantern": {
+      "name": "캔트립 랜턴 Cantrip Lantern"
+    },
+    "Cascade Anvil": {
+      "name": "폭포 모루 Cascade Anvil"
+    },
+    "Cascade Anvil (G4)": {
+      "name": "폭포 모루 (G4)"
+    },
+    "Ceiling Fan": {
+      "name": "천장 선풍기 Ceiling Fan"
+    },
+    "Ceiling Hatch": {
+      "name": "천장 해치 Ceiling Hatch"
     },
     "Cheiroballistra (G2)": {
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Grade 2</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Class: </strong>Components</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Location:</strong> Roof</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Damage:</strong> 2d6 piercing</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Properties:</strong> Ammunition (range 300/1500), loading, special</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">This portable version of a Ballista weighs 55 pounds and comes with an added folding mount.  The cheiroballistra can be set on its mount or removed as an action. It can’t fire while unmounted, and can’t move while mounted.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">It specializes in hitting distant targets, though its position makes it unwieldy for hitting some closer ones. The ballista can’t target Medium or smaller creatures within 30 feet of it. Damage dealt by this component ignores Enormity. This weapon can fire 20 bolts before it must be replenished.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"></p>"
     },
+    "Chest of Drawers": {
+      "name": "상자 의 Drawers"
+    },
+    "Climate Control": {
+      "name": "기후 조절 Climate Control"
+    },
+    "Crate": {
+      "name": "상자 Crate"
+    },
+    "Cushion-Top Crate": {
+      "name": "Cushion-Top 상자"
+    },
+    "Door": {
+      "name": "문 Door"
+    },
+    "Dragon Launcher": {
+      "name": "드래곤 발사기 Dragon Launcher"
+    },
+    "Dragon Launcher (G4)": {
+      "name": "드래곤 발사기 (G4)"
+    },
+    "Dragon Launcher (G5)": {
+      "name": "드래곤 발사기 (G5)"
+    },
+    "Dragon Launcher (G6)": {
+      "name": "드래곤 발사기 (G6)"
+    },
+    "Dragonbreath Interceptor": {
+      "name": "드래곤breath Interceptor"
+    },
+    "Floor Shelf": {
+      "name": "Floor 선반"
+    },
+    "Floor Trapdoor": {
+      "name": "바닥 함정문 Floor Trapdoor"
+    },
+    "Fold-Out Counter": {
+      "name": "접이식 카운터 Fold-Out Counter"
+    },
+    "Fold-Out Patio": {
+      "name": "접이식 파티오 Fold-Out Patio"
+    },
+    "Forge": {
+      "name": "대장간 Forge"
+    },
+    "Friendship Harness": {
+      "name": "우정 Harness"
+    },
+    "Furnace - Fire Elemental": {
+      "name": "Furnace - 불 Elemental"
+    },
     "Furnace - Wood-Fired": {
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Class: </strong></span>Mechanical Renovation <span style=\"font-family:Signika, sans-serif\">- Furnace - Fuel</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Price:</strong> 1,500 gp</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">Crews with unique furnishing needs can install a portable furnace in the cabin.</span></p><p>This furnace burns firewood. Ovens and boilers use a standard day’s firewood, while a forge uses quadruple for one day’s work.</p>"
+    },
+    "Furniture Loft": {
+      "name": "Furniture 다락"
+    },
+    "Garden": {
+      "name": "정원 Garden"
+    },
+    "Gyrostable Lounge": {
+      "name": "자이로 안정 라운지 Gyrostable Lounge"
+    },
+    "Gyrostable Medicine Cabinet": {
+      "name": "자이로 안정 약장 Gyrostable Medicine Cabinet"
+    },
+    "Gyrostable Wine-Rack": {
+      "name": "자이로 안정 와인 선반 Gyrostable Wine-Rack"
+    },
+    "Hand Canonball": {
+      "name": "핸드 캐논볼 Hand Canonball"
+    },
+    "Hanging Gardens": {
+      "name": "Hanging 정원s"
+    },
+    "Hidden Table": {
+      "name": "숨겨진 테이블 Hidden Table"
+    },
+    "Ice Chest": {
+      "name": "Ice 상자"
+    },
+    "Interior Wall": {
+      "name": "내부 Wall"
+    },
+    "Intruder Chime": {
+      "name": "Intruder 차임"
+    },
+    "Intruder Chime (G3)": {
+      "name": "Intruder 차임 (G3)"
+    },
+    "Ladder": {
+      "name": "사다리 Ladder"
+    },
+    "Large Water Tank": {
+      "name": "Large Water 탱크"
+    },
+    "Laundry Machine": {
+      "name": "세탁기 Laundry Machine"
     },
     "Lever 5": {
       "description": "<p><strong>Grade 3</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (5 feet adjacent to either front wheel on the wagon’s exterior, activated from driver’s seat)</p><p>This component is a lever that allows the operation of a crablike apparatus: an extending metal claw. As a bonus action, the driver can use the lever to make the following melee weapon attack:</p><p><strong>Claw</strong>. 근접 무기 공격: wagon’s Drive bonus 명중, 사거리 5피트, 목표 하나. Hit: The target is grappled (escape DC 8 + wagon’s Drive bonus).</p><p></p><section class=\"secret\" id=\"secret-HN7phKVPmZ4nCcuS\"><p><strong>Foundry note</strong></p><p>Adjust this item's to-hit bonus and escape DC as necessary</p></section>"
     },
+    "Luck Obelisk": {
+      "name": "행운 Obelisk"
+    },
+    "Metamagic Crystal": {
+      "name": "메타매직 수정 Metamagic Crystal"
+    },
+    "Metamagic Crystal (G3)": {
+      "name": "메타매직 수정 (G3)"
+    },
+    "Metamagic Crystal (G4)": {
+      "name": "메타매직 수정 (G4)"
+    },
+    "Metamagic Crystal (G5)": {
+      "name": "메타매직 수정 (G5)"
+    },
+    "Metamagic Crystal (G6)": {
+      "name": "메타매직 수정 (G6)"
+    },
+    "Morph Wheels": {
+      "name": "Morph 바퀴"
+    },
+    "Net Thrower": {
+      "name": "그물 발사기 Net Thrower"
+    },
+    "Net Thrower (G2)": {
+      "name": "그물 발사기 (G2)"
+    },
+    "Normal Water Tank": {
+      "name": "Normal Water 탱크"
+    },
+    "Notched Insert Table": {
+      "name": "Notched Insert 테이블"
+    },
+    "Oil Lamp": {
+      "name": "Oil 램프"
+    },
     "Precision Railbow": {
+      "name": "정밀 레일보우 Precision Railbow",
       "description": "<p><strong>Grade 1</strong></p><p><strong>Class: </strong>Components</p><p><strong>Location:</strong> Body (see text) or roof</p><p><strong>Damage:</strong> 1d10 piercing</p><p><strong>Properties:</strong> Ammunition (range 240/480), loading, special</p><p>This crossbow’s long rail and mount are calibrated for superb precision. It can be mounted to the roof or occupy half of the driver’s seat (if it does, only 크리처 하나 can sit in the seat). <br />Creatures proficient with hand crossbows are proficient with this weapon. Attacks using the precision railbow have advantage against targets at least 120 feet away. <br />The precision railbow can’t target Medium or smaller creatures within 30 feet of it. Damage dealt by this component ignores Enormity. The precision railbow can fire 20 bolts before it must be replenished.</p><p><strong>Refit</strong></p><p>As a grade 3 component, the weapon’s range becomes 360/480.</p>"
     },
     "Precision Railbow (G3)": {
+      "name": "정밀 레일보우 (G3)",
       "description": "<p><strong>Grade 1</strong></p><p><strong>Class: </strong>Components</p><p><strong>Location:</strong> Body (see text) or roof</p><p><strong>Damage:</strong> 1d10 piercing</p><p><strong>Properties:</strong> Ammunition (range 360/480), loading, special</p><p>This crossbow’s long rail and mount are calibrated for superb precision. It can be mounted to the roof or occupy half of the driver’s seat (if it does, only 크리처 하나 can sit in the seat). <br />Creatures proficient with hand crossbows are proficient with this weapon. Attacks using the precision railbow have advantage against targets at least 120 feet away. <br />The precision railbow can’t target Medium or smaller creatures within 30 feet of it. Damage dealt by this component ignores Enormity. The precision railbow can fire 20 bolts before it must be replenished.</p>"
     },
     "Pull-Hook Launcher": {
+      "name": "갈고리 발사기 Pull-Hook Launcher",
       "description": "<p><strong>Grade 2</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (back wall)</p><p><strong>Properties:</strong> Ammunition (Range 60/120), special</p><p>A harpoon mounted to the back of the wagon fires a hook to ensnare an enemy. A Large or smaller creature hit by a pull-hook launcher is restrained until it is freed. A pull-hook launcher has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. The hook has AC 10 and 10 hit points.</p><p>Reducing the hook to 0 hit points frees the creature without harming it, ending the effect and destroying the hook. If a creature hit by a hook is more than 10 feet away, the launcher attempts to pull it closer with the retracting mechanism to the nearest unoccupied space within 10 feet of it. The hooked creature makes a Dexterity saving throw with a DC equal to 8 plus the wagon’s Drive modifier.</p><p>내성 굴림에 실패하면, the creature is knocked prone, and takes 1 bludgeoning damage for every 10 feet dragged. If the wagon moves while the creature is restrained by the pull-hook, the creature takes 1 bludgeoning damage for every 10 feet it moves. Once fired, a new hook can be reloaded into the launcher as a bonus action. It can be fired four times before it must be replenished.</p><p><strong>Refit:</strong></p><p>As a grade 3 or higher attachment, the pull-hook launcher’s hook has 5 more hit points for each grade higher than 2.</p>"
     },
     "Pull-Hook Launcher (G3)": {
+      "name": "갈고리 발사기 (G3)",
       "description": "<p><strong>Grade 3</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (back wall)</p><p><strong>Properties:</strong> Ammunition (Range 60/120), special</p><p>A harpoon mounted to the back of the wagon fires a hook to ensnare an enemy. A Large or smaller creature hit by a pull-hook launcher is restrained until it is freed. A pull-hook launcher has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. The hook has AC 10 and 15 hit points.</p><p>Reducing the hook to 0 hit points frees the creature without harming it, ending the effect and destroying the hook. If a creature hit by a hook is more than 10 feet away, the launcher attempts to pull it closer with the retracting mechanism to the nearest unoccupied space within 10 feet of it. The hooked creature makes a Dexterity saving throw with a DC equal to 8 plus the wagon’s Drive modifier.</p><p>내성 굴림에 실패하면, the creature is knocked prone, and takes 1 bludgeoning damage for every 10 feet dragged. If the wagon moves while the creature is restrained by the pull-hook, the creature takes 1 bludgeoning damage for every 10 feet it moves. Once fired, a new hook can be reloaded into the launcher as a bonus action. It can be fired four times before it must be replenished.</p><p><strong>Refit:</strong></p><p>As a grade 4 or higher attachment, the pull-hook launcher’s hook has 5 more hit points for each grade higher than 2.</p>"
     },
     "Pull-Hook Launcher (G4)": {
+      "name": "갈고리 발사기 (G4)",
       "description": "<p><strong>Grade 4</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (back wall)</p><p><strong>Properties:</strong> Ammunition (Range 60/120), special</p><p>A harpoon mounted to the back of the wagon fires a hook to ensnare an enemy. A Large or smaller creature hit by a pull-hook launcher is restrained until it is freed. A pull-hook launcher has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. The hook has AC 10 and 20 hit points.</p><p>Reducing the hook to 0 hit points frees the creature without harming it, ending the effect and destroying the hook. If a creature hit by a hook is more than 10 feet away, the launcher attempts to pull it closer with the retracting mechanism to the nearest unoccupied space within 10 feet of it. The hooked creature makes a Dexterity saving throw with a DC equal to 8 plus the wagon’s Drive modifier.</p><p>내성 굴림에 실패하면, the creature is knocked prone, and takes 1 bludgeoning damage for every 10 feet dragged. If the wagon moves while the creature is restrained by the pull-hook, the creature takes 1 bludgeoning damage for every 10 feet it moves. Once fired, a new hook can be reloaded into the launcher as a bonus action. It can be fired four times before it must be replenished.</p><p><strong>Refit:</strong></p><p>As a grade 5 or higher attachment, the pull-hook launcher’s hook has 5 more hit points for each grade higher than 2.</p>"
     },
     "Pull-Hook Launcher (G5)": {
+      "name": "갈고리 발사기 (G5)",
       "description": "<p><strong>Grade 5</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (back wall)</p><p><strong>Properties:</strong> Ammunition (Range 60/120), special</p><p>A harpoon mounted to the back of the wagon fires a hook to ensnare an enemy. A Large or smaller creature hit by a pull-hook launcher is restrained until it is freed. A pull-hook launcher has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. The hook has AC 10 and 25 hit points.</p><p>Reducing the hook to 0 hit points frees the creature without harming it, ending the effect and destroying the hook. If a creature hit by a hook is more than 10 feet away, the launcher attempts to pull it closer with the retracting mechanism to the nearest unoccupied space within 10 feet of it. The hooked creature makes a Dexterity saving throw with a DC equal to 8 plus the wagon’s Drive modifier.</p><p>내성 굴림에 실패하면, the creature is knocked prone, and takes 1 bludgeoning damage for every 10 feet dragged. If the wagon moves while the creature is restrained by the pull-hook, the creature takes 1 bludgeoning damage for every 10 feet it moves. Once fired, a new hook can be reloaded into the launcher as a bonus action. It can be fired four times before it must be replenished.</p><p><strong>Refit:</strong></p><p>As a grade 6 attachment, the pull-hook launcher’s hook has 5 more hit points for each grade higher than 2.</p>"
     },
     "Pull-Hook Launcher (G6)": {
+      "name": "갈고리 발사기 (G6)",
       "description": "<p><strong>Grade 6</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (back wall)</p><p><strong>Properties:</strong> Ammunition (Range 60/120), special</p><p>A harpoon mounted to the back of the wagon fires a hook to ensnare an enemy. A Large or smaller creature hit by a pull-hook launcher is restrained until it is freed. A pull-hook launcher has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. The hook has AC 10 and 30 hit points.</p><p>Reducing the hook to 0 hit points frees the creature without harming it, ending the effect and destroying the hook. If a creature hit by a hook is more than 10 feet away, the launcher attempts to pull it closer with the retracting mechanism to the nearest unoccupied space within 10 feet of it. The hooked creature makes a Dexterity saving throw with a DC equal to 8 plus the wagon’s Drive modifier.</p><p>내성 굴림에 실패하면, the creature is knocked prone, and takes 1 bludgeoning damage for every 10 feet dragged. If the wagon moves while the creature is restrained by the pull-hook, the creature takes 1 bludgeoning damage for every 10 feet it moves. Once fired, a new hook can be reloaded into the launcher as a bonus action. It can be fired four times before it must be replenished.</p><p></p>"
+    },
+    "Rain Cover": {
+      "name": "빗덮개 Rain Cover"
+    },
+    "Rain Wheels": {
+      "name": "우천 바퀴 Rain Wheels"
+    },
+    "Rat Skeleton": {
+      "name": "쥐 Skeleton"
+    },
+    "Recall Canopy": {
+      "name": "회수 캐노피 Recall Canopy"
+    },
+    "Reinforced Net Thrower (G3)": {
+      "name": "강화 그물 발사기 (G3)"
+    },
+    "Reinforced Net Thrower (G4)": {
+      "name": "강화 그물 발사기 (G4)"
+    },
+    "Reinforced Net Thrower (G5)": {
+      "name": "강화 그물 발사기 (G5)"
+    },
+    "Reinforced Net Thrower (G6)": {
+      "name": "강화 그물 발사기 (G6)"
+    },
+    "Restful Interior": {
+      "name": "안락한 내부 Restful Interior"
+    },
+    "Retrieval Band": {
+      "name": "회수 밴드 Retrieval Band"
+    },
+    "Retrieval Band (G3)": {
+      "name": "회수 밴드 (G3)"
     },
     "Self Repair": {
       "description": "<p><strong>Grade 6</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Body (built-in)</p><p>The Rocksteady wagon fitted with this component has plain gray boxes installed in each of its cabin’s upper corners. When the wagon falls below half its maximum hit points, their sides automatically open to allow dozens of Tiny constructs to pour out. Each construct is little more than a metal sphere with two flexible arms, but each moves naturally along any of the wagon’s surfaces.</p><p>The constructs use tiny instruments and putty pulled from within their bodies to patch up 피해. At the start of each of the user’s turns, the wagon regains 6d6 hit points. The self-repair component lasts for 2 minutes once it activates.</p><p>At the end of the duration, the constructs fall inert until swept up and poured back into the box. Self-repair can activate once before it must be replenished</p>"
     },
+    "Serene Sanctum": {
+      "name": "고요한 성소 Serene Sanctum"
+    },
     "Shrinking Shroud": {
       "description": "<p><strong>Grade 5</strong></p><p><strong>Class:</strong> Components</p><p><strong>Location:</strong> Roof</p><p>A shroud of astralcrafted silk is embroidered with impossible geometry to allow it to exist in other worlds, then wrapped around a pole inside the roof of the wagon. When the component is used as an action, the pole springs up and spins rapidly. The silk unfurls and completely covers the wagon.</p><p>Transmutation magic in the shroud’s fibers shrink the wagon to a size 1 inch wide and 2 inches long. Finally, the tarp retracts and stows itself. Draughts and creatures on board pass through the tarp unaffected and are left in the unoccupied space. This effect lasts for 8 hours, or until a command word is spoken within 60 feet of the wagon as an action.</p><p>If the wagon returns to its normal size after being swallowed by a creature, the creature must succeed on a DC 18 Constitution saving throw or take 20d6 bludgeoning 피해. If the damage reduces it to 0 hit points, the creature is destroyed from within. Either way, the wagon appears in the nearest unoccupied space large enough for it.</p><p>If the wagon returns to its normal size inside a structure too small for it, the structure takes 20d6 bludgeoning 피해. If the structure remains standing, the wagon reappears in the nearest unoccupied space large enough for it. The shrinking shroud can shrink the wagon once before it must be replenished.</p>"
     },
+    "Single Full-Length Window": {
+      "name": "전장 단일 창문 Single Full-Length Window"
+    },
+    "Soul Orb": {
+      "name": "영혼 구체 Soul Orb"
+    },
+    "Soul Orb (G4)": {
+      "name": "영혼 구체 (G4)"
+    },
+    "Soul Orb (G5)": {
+      "name": "영혼 구체 (G5)"
+    },
+    "Soul Orb (G6)": {
+      "name": "영혼 구체 (G6)"
+    },
+    "Steam-Powered Flywheel": {
+      "name": "증기 동력 플라이휠 Steam-Powered Flywheel"
+    },
+    "Steel Footlocker": {
+      "name": "Steel 풋락커"
+    },
+    "Stone Hearth": {
+      "name": "돌 Hearth"
+    },
+    "Stop Body": {
+      "name": "Stop 몸체"
+    },
+    "Storage": {
+      "name": "수납 Storage"
+    },
+    "Sun Still": {
+      "name": "태양 Still"
+    },
     "Swiveling Twin Anchor Cable Harpoon": {
+      "name": "Swiveling 쌍닻 케이블 작살",
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Grade 5</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Class:</strong> Components</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Location:</strong> Body (built-in) </span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">The Swiveling Twin Anchor Cable Harpoon (or STACH) is a pair of harpoon launchers suspended above the wagon, attached to a steel brace running around the cabin. When used as an action, the harpoons fire up to 300 feet either directly ahead or  behind the wagon or in an angle of up to 30 degrees, each making an attack roll at a +15 bonus and dealing 10 piercing damage on a hit.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">A harpoon anchors to any object it damages without destroying. If either harpoon fails to anchor, it retracts and can be fired again as an action. Damage dealt by this component ignores Enormity. A TACH with both harpoons anchored lifts the wagon three inches. As a bonus action, the wagon can move along the line 30 feet per round by oper\u0002ating a lever.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">The line can be released as a bonus action, dropping the wagon and leaving behind the anchored harpoons. The TACH comes equipped with a single cable, which can be replenished.</span></p>"
+    },
+    "Thespian's Friend": {
+      "name": "Thespian's 친구"
+    },
+    "Toilet Closet": {
+      "name": "화장실 칸 Toilet Closet"
+    },
+    "Transmutation-Powered Flywheel": {
+      "name": "변환 동력 플라이휠 Transmutation-Powered Flywheel"
+    },
+    "Twin Anchor Cable Harpoon": {
+      "name": "쌍닻 케이블 작살 Twin Anchor Cable Harpoon"
+    },
+    "Twin Hand Canonball": {
+      "name": "Twin 핸드 캐논볼"
+    },
+    "Two Windows": {
+      "name": "창문 두 개 Two Windows"
+    },
+    "Wagon Armor": {
+      "name": "마차 장갑 Wagon Armor"
+    },
+    "Wagon Armor (G3)": {
+      "name": "마차 장갑 (G3)"
+    },
+    "Wagon Armor (G5)": {
+      "name": "마차 장갑 (G5)"
+    },
+    "Wagon-Powered Flywheel": {
+      "name": "마차 동력 플라이휠 Wagon-Powered Flywheel"
+    },
+    "Wall Reinforcement": {
+      "name": "벽 보강 Wall Reinforcement"
+    },
+    "Wall-Mounted Soda Lamp": {
+      "name": "벽걸이 소다 램프 Wall-Mounted Soda Lamp"
+    },
+    "Wall-Shelf Cot, Pair": {
+      "name": "벽선반 침대 한 쌍 Wall-Shelf Cot, Pair"
+    },
+    "Window Bars": {
+      "name": "창문 Bars"
     }
   }
 }

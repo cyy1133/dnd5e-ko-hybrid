@@ -1,11 +1,109 @@
 {
   "label": "Items",
   "entries": {
+    "Astral Anchor": {
+      "name": "아스트랄 닻 Astral Anchor"
+    },
+    "Autotrotter Spurs": {
+      "name": "오토트로터 박차 Autotrotter Spurs"
+    },
     "Bellarmure, the Beautiful Armor of Allemance": {
+      "name": "Bellarmure, the Beautiful 갑옷 의 Allemance",
       "description": "<p><em>Medium armor (Breastplate), requires attunement</em></p><p><br />This suit of breastplate is said to contain the love of the Allemagnian people, rubbed with magic seed oil every day for ten years. While wearing this armor, you gain a +3 bonus to AC. You are considered proficient with this armor even if you lack proficiency with medium armor. The armor sheds dirt and debris, and as an action you can sweep its cape to make the armor take the appearance of any outfit you wish.</p><p>Additionally, as a reaction to being targeted by an attack or harmful effect, you can speak the armor’s command word to cloak yourself in its true majesty for 10 minutes or until you are no longer wearing the armor. Any creature that targets you with an attack or harmful effect (including the triggering creature) must make a DC 19 Wisdom saving throw. Creatures immune to being charmed automatically pass the save. 내성 굴림에 실패하면, the creature is charmed by you for the effect’s duration. 내성 굴림에 성공하면, the target is unaffected and immune to this effect for the next 24 hours. Once this special action is used, you can’t use it again until the next dawn.</p>"
     },
+    "Blanket of Safekeeping": {
+      "name": "보호의 담요 Blanket of Safekeeping"
+    },
+    "Bubble Armor": {
+      "name": "거품 갑옷 Bubble Armor"
+    },
+    "Bubble Soap": {
+      "name": "거품 비누 Bubble Soap"
+    },
+    "Bulls-Eye Star": {
+      "name": "불스아이 스타 Bulls-Eye Star"
+    },
+    "Carrion Staff": {
+      "name": "송장 지팡이 Carrion Staff"
+    },
+    "Cloak of the Happy Cat": {
+      "name": "Cloak 의 Happy 고양이"
+    },
+    "Deck of the Cheated": {
+      "name": "속임수의 덱 Deck of the Cheated"
+    },
+    "Eyes of the Ineffable Archivist": {
+      "name": "Eyes 의 Ineffable Archivist"
+    },
+    "Jadu, the Boarding Cord of Al'ar": {
+      "name": "Jadu, the Boarding Cord 의 Al'ar"
+    },
+    "Jyristä, the Lightning Blade of Oria": {
+      "name": "Jyristä, the 번개 칼날 의 Oria"
+    },
+    "Lantern of Unnature's Revealing": {
+      "name": "부자연의 폭로 랜턴 Lantern of Unnature's Revealing"
+    },
     "Mabikubo, the Counterweight of the Causeway": {
+      "name": "Mabikubo, the Counterweight 의 Causeway",
       "description": "<p><em>Wondrous item, requires attunement</em><br /><br />This stone cube is engraved with the names of the Causeway’s chief builders. It was once used to haul enormous stones at the site of its construction. You can use a bonus action to speak its command word to cause the stone to magically shrink to 2 inches on a side and 5 pounds. Speaking it again causes it to grow to 2 feet on a side and 1,000 pounds.</p><p>Additionally, while the cube is miniature, you can speak the command word while using it as ammunition for a sling. The cube retains its speed in flight after growing. On a hit, the 1,000 pound cube deals an extra 6d10 bludgeoning 피해. It lands unharmed after use.</p><p>Leaving the cube on a prone creature while it is 1,000 pounds restrains them (escape DC 18).</p>"
+    },
+    "Maintenance Kit, Greater": {
+      "name": "정비 키트, Greater"
+    },
+    "Maintenance Kit, Lesser": {
+      "name": "정비 키트, Lesser"
+    },
+    "Maintenance Kit, Moderate": {
+      "name": "정비 키트, Moderate"
+    },
+    "Maintenance Kit, Superior": {
+      "name": "정비 키트, Superior"
+    },
+    "Maintenance Kit, Supreme": {
+      "name": "정비 키트, Supreme"
+    },
+    "Neckwear of Nativeness": {
+      "name": "고향의 목장식 Neckwear of Nativeness"
+    },
+    "Potion of Appending": {
+      "name": "추가의 물약 Potion of Appending"
+    },
+    "Ring of Energy Conversion": {
+      "name": "에너지 전환 반지 Ring of Energy Conversion"
+    },
+    "Scroll of Self-Teaching, Common": {
+      "name": "자가 학습 두루마리, 일반 Scroll of Self-Teaching, Common"
+    },
+    "Scroll of Self-Teaching, Rare": {
+      "name": "자가 학습 두루마리, 희귀 Scroll of Self-Teaching, Rare"
+    },
+    "Scroll of Self-Teaching, Uncommon": {
+      "name": "자가 학습 두루마리, 비범 Scroll of Self-Teaching, Uncommon"
+    },
+    "Scroll of Self-Teaching, Very Rare": {
+      "name": "자가 학습 두루마리, 매우 희귀 Scroll of Self-Teaching, Very Rare"
+    },
+    "Single-Hand Rein": {
+      "name": "한손 고삐 Single-Hand Rein"
+    },
+    "Soil of Fecundity": {
+      "name": "비옥함의 흙 Soil of Fecundity"
+    },
+    "Stone of Six Strengths": {
+      "name": "여섯 힘의 돌 Stone of Six Strengths"
+    },
+    "Teapot of Rooted Memory": {
+      "name": "뿌리내린 기억의 찻주전자 Teapot of Rooted Memory"
+    },
+    "Vine of Close Calls": {
+      "name": "Vine 의 아슬한 위기"
+    },
+    "Wainwright's Tools": {
+      "name": "마차공 도구 Wainwright's Tools"
+    },
+    "Wiletaper, the Contract Candle of Vinyot": {
+      "name": "Wiletaper, the 계약 초 의 Vinyot"
     }
   }
 }

@@ -9,6 +9,27 @@
       "name": "양초 Candle",
       "description": "<p>양초는 1시간 동안 주변 5ft 반경을 밝은 빛 환경으로, 추가 5ft까지를 약한 빛 환경으로 만듭니다.</p>"
     },
+    "Candle (No preset)": {
+      "name": "초 (No preset)"
+    },
+    "Darkvision (120 ft)": {
+      "name": "암시야 (120 ft)"
+    },
+    "Darkvision (150 ft)": {
+      "name": "암시야 (150 ft)"
+    },
+    "Darkvision (180 ft)": {
+      "name": "암시야 (180 ft)"
+    },
+    "Darkvision (30 ft)": {
+      "name": "암시야 (30 ft)"
+    },
+    "Darkvision (60 ft)": {
+      "name": "암시야 (60 ft)"
+    },
+    "Darkvision (90 ft)": {
+      "name": "암시야 (90 ft)"
+    },
     "Goggles of Night": {
       "name": "밤의 고글 Goggles of Night",
       "description": "<p><em>경이로운 물건</em></p><p>이 검은 렌즈로 이루어진 고글을 쓰고 있으면, 60ft 범위 의 암시야를 얻을 수 있습니다. 이미 암시야를 지니고 있다면, 그 암시야의 거리가 60ft 증가합니다.</p>"
@@ -17,9 +38,18 @@
       "name": "덮개 랜턴 Hooded Lantern",
       "description": "<p>덮개 랜턴은 주변 30ft 반경을 밝은 빛 환경으로, 추가로 30ft까지는 약한 빛 환경으로 밝힙니다. 일단 밝히며 기름 한 병(1 파인트)으로 6시간 정도를 사용할 수 있습니다. 당신은 행동을 사용하여 덮개를 내릴 수 있으며, 그러면 주위 5ft 반경에 약한 빛 환경으로 밝히는 것 외에는 조명이 차단됩니다.</p>"
     },
+    "Lamp (No Preset)": {
+      "name": "램프 (No Preset)"
+    },
     "Light": {
       "name": "빛 Light",
       "description": "<p>당신은 10 × 10 × 10ft 이하 크기의 물체 하나에 접촉하여 주문의 지속시간 동안 20ft까지는 밝은 빛으로, 추가로 20ft까지는 약한 빛으로 빛나게 합니다. 당신은 원하는 대로 빛의 색깔을 정할 수 있습니다. 이 물체를 완전히 가려서 빛 역시 새어 나오지 않게 할 수 있습니다. 이 주문은 지속시간이 끝나거나 당신이 이 주문을 다시 시전할 경우, 아니면 행동을 사용해 주문을 취소할 경우 효력이 종료됩니다.</p><p>적대적인 크리처가 장비하거나 들고 있는 물체에 주문을 시전한 경우, 해당 크리처는 민첩 내성 굴림을 굴려 성공할 경우 주문을 피할 수 있습니다.</p>"
+    },
+    "Moon-Touched": {
+      "name": "달-Touched"
+    },
+    "Self Vision": {
+      "name": "Self 시야"
     },
     "Torch": {
       "name": "횃불 Torch",

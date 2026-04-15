@@ -4,6 +4,9 @@
     "Bless": {
       "name": "축복 Bless"
     },
+    "Magic Circle": {
+      "name": "마법 Circle"
+    },
     "Shield": {
       "name": "방패 Shield"
     }

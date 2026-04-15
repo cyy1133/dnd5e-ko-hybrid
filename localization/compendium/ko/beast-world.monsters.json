@@ -4,7 +4,11 @@
     "Autotrotter": {
       "items": {
         "Hoof Attack": {
+          "name": "발굽 공격 Hoof Attack",
           "description": "<p>근접 무기 공격: +6 명중, 사거리 5피트, 목표 하나. Hit: 11 (2d6+4) bludgeoning 피해.</p>"
+        },
+        "Powerful Build": {
+          "name": "강인한 체격 Powerful Build"
         },
         "Spell Storing": {
           "name": "주문 저장 Spell Storing",
@@ -13,13 +17,18 @@
       }
     },
     "Axe Beak, Jackal-Reared": {
+      "name": "도끼부리, 자칼이 기른 개체 Axe Beak, Jackal-Reared",
       "items": {
         "Beak": {
           "description": "<p>Melee Weapon Atack: +6 명중, 사거리 5피트, 목표 하나. Hit: 9(2d4+4) piercing 피해.</p>"
+        },
+        "Powerful Build": {
+          "name": "강인한 체격 Powerful Build"
         }
       }
     },
     "Batwolf": {
+      "name": "박쥐wolf",
       "items": {
         "Bite": {
           "name": "물기 Bite",
@@ -40,6 +49,9 @@
     },
     "Ecclesiast": {
       "items": {
+        "Body of Two": {
+          "name": "몸체 의 Two"
+        },
         "Cloudkill": {
           "name": "죽음구름 Cloudkill",
           "description": "<p>당신은 사거리 내에서 당신이 지정한 지점을 중심으로 20ft 반경에 황록색의 유독성 안개를 만들어 냅니다. 이 안개는 모서리를 돌아 퍼져 나갑니다. 이 안개는 주문의 지속시간 동안 유지되며, 그전에도 강력한 바람이 불면 안개를 흩어놓아 사라질 수 있습니다. 이 안개가 있는 지역은 심하게 가려진 상태가 됩니다.</p><p>크리처가 자기 턴에 주문의 효과 범위로 처음 들어서거나, 주문의 범위 내에서 자기 턴을 시작할 경우 해당 크리처는 건강 내성 굴림을 굴려야 합니다. 이 내성에 실패하면 5d8점의 독성 피해를 받게 되며, 성공하면 피해는 절반으로 줄어듭니다. 숨을 참을 수 있거나 심지어 숨쉴 필요가 없는 크리처라 해도 이 피해는 적용됩니다.</p><p>당신의 턴이 시작될 때마다 이 안개는 당신으로부터 10ft 멀어지며 지면을 따라갑니다. 이 안개는 공기보다 무겁기 때문에 바닥에 깔려 있게 되며, 구멍 아래로 쓸려 들어가기도 합니다.</p><p><strong><em>상위시전.</em></strong> 당신이 6레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전한 경우, 상승한 주문 슬롯 1레벨당 피해가 1d8점 증가합니다.</p>"
@@ -76,12 +88,19 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Spellcasting of Two": {
+          "name": "Spellcasting 의 Two",
           "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 15): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
+        },
+        "Will of Two": {
+          "name": "Will 의 Two"
         }
       }
     },
     "Ecclesiast, Stalker": {
       "items": {
+        "Body of Two": {
+          "name": "몸체 의 Two"
+        },
         "Cloudkill": {
           "name": "죽음구름 Cloudkill",
           "description": "<p>당신은 사거리 내에서 당신이 지정한 지점을 중심으로 20ft 반경에 황록색의 유독성 안개를 만들어 냅니다. 이 안개는 모서리를 돌아 퍼져 나갑니다. 이 안개는 주문의 지속시간 동안 유지되며, 그전에도 강력한 바람이 불면 안개를 흩어놓아 사라질 수 있습니다. 이 안개가 있는 지역은 심하게 가려진 상태가 됩니다.</p><p>크리처가 자기 턴에 주문의 효과 범위로 처음 들어서거나, 주문의 범위 내에서 자기 턴을 시작할 경우 해당 크리처는 건강 내성 굴림을 굴려야 합니다. 이 내성에 실패하면 5d8점의 독성 피해를 받게 되며, 성공하면 피해는 절반으로 줄어듭니다. 숨을 참을 수 있거나 심지어 숨쉴 필요가 없는 크리처라 해도 이 피해는 적용됩니다.</p><p>당신의 턴이 시작될 때마다 이 안개는 당신으로부터 10ft 멀어지며 지면을 따라갑니다. 이 안개는 공기보다 무겁기 때문에 바닥에 깔려 있게 되며, 구멍 아래로 쓸려 들어가기도 합니다.</p><p><strong><em>상위시전.</em></strong> 당신이 6레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전한 경우, 상승한 주문 슬롯 1레벨당 피해가 1d8점 증가합니다.</p>"
@@ -117,7 +136,11 @@
           "description": "<p><span style=\"font-family:Signika, sans-serif\">근접 무기 공격: +10 명중, 사거리 5피트, 목표 하나. Hit: 13 (2d6 + 6) slashing 피해에 더해 7 (2d6) necrotic 피해. A creature dies if it is reduced to 0 hit points by this attack, and rises as a ghoul under the Ecclesiast’s control at the start of its next turn.</span></p>"
         },
         "Spellcasting of Two": {
+          "name": "Spellcasting 의 Two",
           "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 17): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
+        },
+        "Will of Two": {
+          "name": "Will 의 Two"
         }
       }
     },
@@ -128,11 +151,15 @@
           "description": "<p>당신의 주문은 동료들을 강화해 더 튼튼하고 결단력을 지니게 합니다. 사거리 내에서 최대 3체까지의 크리처를 목표로 지정합니다. 이 목표들은 주문의 지속시간 동안 최대 hp와 현재 hp가 5점 증가합니다.</p><p><strong>상위시전.</strong> 당신이 3레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전할 경우, 주문슬롯 레벨이 2레벨 이후로 1레벨이 상승할 때마다 목표의 hp가 5점씩 추가로 상승합니다. 예를 들어, 5레벨 주문슬롯을 사용했을 경우 hp는 15점 상승합니다.</p>"
         },
         "Attack": {
+          "name": "공격 Attack",
           "description": "<p>Ecclesiast는 Reaping Greatsword or Impostor’s Burst 공격을 한 번 합니다.</p>"
         },
         "Blight": {
           "name": "황폐화 Blight",
           "description": "<p>주문의 사거리 내에서 당신이 지정한 크리처 하나에게 사령의 힘이 몰아치며, 몸에서 물기와 생명력을 빨아들입니다. 목표는 건강 내성 굴림을 굴려야 하며, 실패할 시 8d8점의 사령 피해를 받게 됩니다. 성공하면 피해는 절반으로 줄어듭니다. 이 주문은 언데드나 구조물에는 아무런 효력도 없습니다.</p><p>만약 나무나 덤불 등 크리처가 아닌 비마법적 식물을 목표로 할 경우, 목표는 내성 굴림을 굴릴 수도 없으며 그 즉시 시들고 죽음을 맞이하게 됩니다.</p><p><strong><em>상위시전.</em></strong> 당신이 5레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전할 경우, 4레벨 이상으로 상승한 주문 슬롯 1레벨당 피해가 1d8점씩 증가합니다. 예를 들어, 6레벨 주문 슬롯을 사용한 경우 피해는 2d8점 증가합니다.</p>"
+        },
+        "Body of Legion": {
+          "name": "몸체 의 Legion"
         },
         "Chain Lightning": {
           "name": "연쇄 번개 Chain Lightning",
@@ -151,6 +178,7 @@
           "description": "<p>당신의 손가락 끝에서 밝게 빛나는 섬광이 번쩍이며 사거리 내의 원하는 지점에 날아가 불꽃을 일으키며 폭발합니다. 당신이 택한 지점에서 20ft 반경 내에 있는 모든 크리처는 민첩 내성 굴림을 굴려야 하며, 실패할 시 8d6점의 화염 피해를 받습니다. 내성에 성공할 경우 피해는 절반으로 줄어듭니다.</p><p>이 주문의 효과는 모서리를 돌아 퍼져 나갑니다. 또한 이 주문은 해당 범위 내에서 누군가 장비하거나 들고 있지 않은 가연성 물체에 모두 불을 붙입니다.</p><p><strong><em>상위시전.</em></strong> 당신이 4레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전할 경우, 상승한 주문 슬롯 1레벨당 화염 피해가 1d6점씩 증가합니다.</p>"
         },
         "Grafted Claw": {
+          "name": "Grafted 발톱",
           "description": "<p>근접 무기 공격: +12 명중, 사거리 5피트, 목표 하나. Hit: 10 (1d6 + 7) slashing 피해에 더해 14 (4d6) necrotic 피해. If the target is a creature, it must succeed on a DC 19 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage it took for 1 hour. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes.</p>"
         },
         "Greater Invisibility": {
@@ -175,15 +203,26 @@
           "description": "<p>근접 무기 공격: +12 명중, 사거리 5피트, 목표 하나. Hit: 14 (2d6 + 7) slashing 피해에 더해 7 (2d6) necrotic 피해. A creature dies if it is reduced to 0 hit points by this attack, and rises as a ghoul under the Ecclesiast’s control at the start of its next turn.</p>"
         },
         "Spellcasting of Legion": {
+          "name": "Spellcasting 의 Legion",
           "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 19): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door}, @UUID[Compendium.dnd5e.spells.Item.Opwh2PdX4runSBlm]{Aid}(as a 4th-level spell), and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater invisibility}, @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death} and @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death}, @UUID[Compendium.dnd5e.spells.Item.QbTxN5dWIbYZ4jLU]{Chain Lightning}, @UUID[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0]{Fireball}and @UUID[Compendium.dnd5e.spells.Item.pybg5MNc3lkerH4Y]{Blight}.</p>"
+        },
+        "Will of Legion": {
+          "name": "Will 의 Legion"
         }
       }
     },
     "Fiend-Inhabited Vampire": {
+      "name": "악마 깃든 뱀파이어 Fiend-Inhabited Vampire",
       "items": {
         "Bite": {
           "name": "물기 Bite",
           "description": "<section class=\"secret\">\n<p>근거리 무기 공격: 명중 +11, 사정거리 10ft, 단일 목표. 명중 시: 17(2d10 + 6)점의 관통 피해.</p>\n</section>\n<p>[[lookup @name lowercase]] 이/가 물기 공격을 합니다.</p>"
+        },
+        "Fear of Reflection": {
+          "name": "Fear 의 Reflection"
+        },
+        "Haunting Aura": {
+          "name": "Haunting 오라"
         },
         "Legendary Actions": {
           "name": "전설적 행동 Legendary Actions",
@@ -212,6 +251,9 @@
           "name": "태양광 과민성 Sunlight Sensitivity",
           "description": "<p>태양광 속에 있을 때 [[lookup @name lowercase]] 의 공격 굴림과 시각에 의존하는 지혜(감지) 판정에 <strong>불리함</strong>이 적용됩니다.</p>"
         },
+        "Triage of Shadow": {
+          "name": "Triage 의 그림자"
+        },
         "Unarmed Strike": {
           "name": "비무장 공격 Unarmed Strike",
           "description": "<p></p>"
@@ -219,6 +261,7 @@
       }
     },
     "Fiend-Vessel Spawn": {
+      "name": "악마 그릇 새끼 Fiend-Vessel Spawn",
       "items": {
         "Bite": {
           "name": "물기 Bite",
@@ -227,6 +270,9 @@
         "Claw": {
           "name": "발톱 Claw",
           "description": "<p>근접 무기 공격: +6 명중, 사거리 5피트, 크리처 하나. Hit: 8 (2d4 + 3) slashing 피해. Instead of dealing damage, the vampire can grapple the target (escape DC 13).</p>"
+        },
+        "Fear of Reflection": {
+          "name": "Fear 의 Reflection"
         },
         "Multiattack": {
           "name": "다중공격 Multiattack",
@@ -243,6 +289,7 @@
       }
     },
     "Ghoul-Touched": {
+      "name": "구울 물든 자 Ghoul-Touched",
       "items": {
         "Bite": {
           "name": "물기 Bite",
@@ -251,30 +298,49 @@
         "Claw": {
           "name": "발톱 Claw",
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB slashing 피해. </p><p>If the target is a creature other than a jackal or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to being paralyzed by the claws of the ghoul-touched for the next 24 hours.</p>"
+        },
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
         }
       }
     },
     "Horse, Beylik Draydriver": {
+      "name": "말, 베일릭 화물마 Horse, Beylik Draydriver",
       "items": {
         "Hoof Attack": {
+          "name": "발굽 공격 Hoof Attack",
           "description": "<p>근접 무기 공격: +6 명중, 사거리 5피트, 목표 하나. Hit: 9 (2d4+4) bludgeoning 피해.</p>"
+        },
+        "Powerful Build": {
+          "name": "강인한 체격 Powerful Build"
         }
       }
     },
     "Intruder": {
       "items": {
+        "Breach of Pact": {
+          "name": "Breach 의 Pact"
+        },
+        "Gift of Bliss": {
+          "name": "Gift 의 Bliss"
+        },
         "Inhabitation": {
           "description": "<p>The intruder can inhabit the body of a willing creature who performs a ritual of consumption, which takes two weeks. After doing so, the creature becomes a fiend-inhabited vampire. While inhabiting a creature, no effect can target the intruder and it is immune to 피해. The intruder can only communicate telepathically with the vampire and any of its spawn, but can do so from any distance on the same plane of existence. When the inhabited vampire dies, the intruder instantly teleports to the place the ritual was first performed. It dies if it does not inhabit a new creature within one year.</p>"
         }
       }
     },
     "Mummy-Touched": {
+      "name": "미라 물든 자 Mummy-Touched",
       "items": {
         "Dreadful Glare": {
           "name": "무시무시한 눈빛 Dreadful Glare",
           "description": "<section class=\"secret\"><p>[[lookup @name lowercase]] 이/가 주변 60ft 이내에 있으며 자신이 볼 수 있는 한 크리처를 목표로 삼습니다. 해당 목표가 [[lookup @name lowercase]] 을/를 볼 수 있는 경우 이 마법에 대항하여 <strong>DC 11 지혜</strong> 내성 굴림에 성공하지 못하면 [[lookup @name lowercase]] 의 다음 턴이 끝날 때까지 공포에 빠집니다.</p><p>해당 목표가 5번 이상 내성 굴림에 실패할 경우 동일한 시간 동안 마비 상태까지 적용됩니다. 내성 굴림에 성공한 한 목표는 다음 24시간 동안 모든 미라(단, 미라 군주는 예외)의 무시무시한 눈빛에 면역을 얻습니다.</p>\n</section>\n<p>[[lookup @name lowercase]] 이/가 주변 60ft 이내에 있으며 자신이 볼 수 있는 한 크리처를 목표로 삼니다. 해당 목표가 [[lookup @name lowercase]] 을/를 볼 수 있는 경우, 이 마법에 대항하여 <strong>지혜</strong> 내성 굴림을 해야만 합니다.</p>"
         },
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
+        },
         "Rotting Claw": {
+          "name": "Rotting 발톱",
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB slashing 피해에 더해 1d6 necrotic 피해. </p><p>If the target is a creature, it must succeed on a Constitution saving throw against your spell save DC or be cursed with mummy rot. The cursed target can’t regain hit points, and its hit point maximum decreases by 2d6 for every 24 hours that elapse. If the curse reduces the target’s hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.</p>"
         }
       }
@@ -294,10 +360,14 @@
       }
     },
     "Shadow-Touched": {
+      "name": "그림자 물든 자 Shadow-Touched",
       "items": {
         "Amorphous": {
           "name": "비정형 Amorphous",
           "description": "<p>[[lookup @name lowercase]] 은/는 억지로 끼어 들어가지 않고도 1인치 정도로 좁은 공간을 통과하여 이동할 수 있습니다.</p>"
+        },
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
         },
         "Shadow Stealth": {
           "name": "그림자 은신 Shadow Stealth",
@@ -308,12 +378,17 @@
           "description": "<p>태양광 속에 있을 때 [[lookup @name lowercase]] 의 공격 굴림, 능력 판정, 내성 굴림에 <strong>불리함</strong>이 적용됩니다.</p>"
         },
         "Withering Touch": {
+          "name": "Withering 손길",
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB necrotic 피해. </p><p>The target makes a Constitution saving throw. 내성 굴림에 실패하면, the target has disadvantage on Strength checks and melee weapon attacks until the end of its next turn.</p>"
         }
       }
     },
     "Skeleton-Touched": {
+      "name": "해골 물든 자 Skeleton-Touched",
       "items": {
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
+        },
         "Shred": {
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d4 + 3 + PB slashing 피해.</p>"
         },
@@ -323,6 +398,7 @@
       }
     },
     "Wraith-Touched": {
+      "name": "망령 물든 자 Wraith-Touched",
       "items": {
         "Incorporeal Movement": {
           "name": "실체가 없는 움직임 Incorporeal Movement",
@@ -332,6 +408,9 @@
           "name": "생명력 흡수 Life Drain",
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 2d6 + 3 + PB necrotic 피해. </p><p>The target must succeed on a Constitution saving throw against your spell save DC or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>"
         },
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
+        },
         "Sunlight Weakness": {
           "name": "태양광 취약성 Sunlight Weakness",
           "description": "<p>태양광 속에 있을 때 [[lookup @name lowercase]] 의 공격 굴림, 능력 판정, 내성 굴림에 <strong>불리함</strong>이 적용됩니다.</p>"
@@ -339,7 +418,11 @@
       }
     },
     "Zombie-Touched": {
+      "name": "좀비 물든 자 Zombie-Touched",
       "items": {
+        "Profane Bond": {
+          "name": "불경한 결속 Profane Bond"
+        },
         "Slam": {
           "name": "강타 Slam",
           "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d8 + 2 + PB bludgeoning 피해. </p><p>If a Humanoid or Beast dies from this damage, its corpse immediately rises as a zombie. This zombie is created at half of its maximum HP, and is hostile to all other creatures.</p>"

@@ -4,6 +4,18 @@
     "Angus Ram": {
       "description": "<p>A robust body and heavy ram across the yoke make the Ironaxle itself a viable weapon. At 1st level, the wagon has the following action. When the driver takes the Attack action, it can substitute one attack with this action. </p><p><strong>Ram</strong> </p><p>근접 무기 공격: wagon’s Drive bonus 명중, 사거리 10피트, 목표 하나. Hit: 2d6 bludgeoning 피해. This damage ignores Enormity. </p><p>The wagon also has the following special trait. </p><p><strong>Charge</strong> </p><p>If the wagon moves at least 20 feet in a straight line toward a target before hitting it with a Ram attack, the target takes an extra 1d6 bludg\u0002eoning 피해. If the target is a creature, it must succeed on a Strength saving throw equal to 8 + the wagon’s Drive modifier or be knocked prone.</p>"
     },
+    "Body-Reinforced Components": {
+      "name": "몸체-Reinforced Components"
+    },
+    "Brake Jump": {
+      "name": "Brake 도약"
+    },
+    "Grazing Wheels": {
+      "name": "Grazing 바퀴"
+    },
+    "Jackal-Reared Axe Beak": {
+      "name": "자칼-Reared Axe Beak"
+    },
     "Plated Shell": {
       "description": "<p>At 11th level, steel sheets turn the gaps in an Ironaxle’s armor into its strongest defenses, survi\u0002vor bias be damned. The wagon gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. Additionally, the Ironaxle treats falls as 40 feet shorter when determining fall 피해.</p>"
     },
