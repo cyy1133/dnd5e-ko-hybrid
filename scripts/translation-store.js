@@ -1105,6 +1105,7 @@ export class TranslationStore {
     if (actor.uuid && this.world.actors.has(actor.uuid)) {
       return this._mergeTranslations(
         this._withFormattedName(actor.name, this.world.actors.get(actor.uuid)),
+        this._withFormattedName(actor.name, this._getCompendiumActorFallback(actor)),
         this._getGeneratedActorTranslation(actor)
       );
     }
