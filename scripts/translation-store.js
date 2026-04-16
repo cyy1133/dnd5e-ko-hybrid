@@ -3394,6 +3394,7 @@ export class TranslationStore {
     }
 
     await this._indexCompendiumTranslations();
+    await this._indexSystemRuleReferences();
   }
 
   _clearCompendiumIndexes() {
@@ -3577,6 +3578,35 @@ export class TranslationStore {
           }
           this._indexReferencePage(collection, page, pageTranslation);
         }
+      }
+    }
+  }
+
+  async _indexSystemRuleReferences() {
+    const collection = "dnd5e.rules";
+    const pack = game.packs.get(collection);
+    const data = this.compendium.get(collection);
+    if (!pack || !data?.entries) return;
+
+    let documents = [];
+    try {
+      documents = await pack.getDocuments();
+    } catch (error) {
+      console.warn(`${MODULE_ID} | Failed to force-index ${collection} references`, error);
+      return;
+    }
+
+    for (const document of documents) {
+      if (document.documentName !== "JournalEntry") continue;
+      const entry = data.entries?.[document.name];
+      if (!entry?.pages) continue;
+
+      for (const page of document.pages ?? []) {
+        const pageTranslation = entry.pages?.[page.name] ?? {};
+        if (pageTranslation?.name) {
+          this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+        }
+        this._indexReferencePage(collection, page, pageTranslation);
       }
     }
   }
