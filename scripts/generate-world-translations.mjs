@@ -45,9 +45,16 @@ const translationScore = (value = "") => {
 };
 
 const shouldReplaceBody = (currentValue, candidateValue, originalValue = "") => {
-  if (!candidateValue || candidateValue === originalValue) return false;
-  if (!currentValue || currentValue === originalValue) return true;
-  return translationScore(candidateValue) > (translationScore(currentValue) + 10);
+  const current = String(currentValue ?? "").trim();
+  const candidate = String(candidateValue ?? "").trim();
+  const original = String(originalValue ?? "").trim();
+  const visibleCurrent = stripMarkup(current);
+  const visibleCandidate = stripMarkup(candidate);
+
+  if (!candidate || candidate === original) return false;
+  if (!current || current === original) return true;
+  if (!hasKorean(visibleCurrent) && hasKorean(visibleCandidate)) return true;
+  return translationScore(candidate) > (translationScore(current) + 10);
 };
 
 const shouldReplaceName = (currentValue, candidateValue, originalValue = "") => {
@@ -118,7 +125,10 @@ const makeSourceKey = (type = "", originalName = "") =>
 const sortObject = (object) =>
   Object.fromEntries(Object.entries(object).sort(([a], [b]) => a.localeCompare(b)));
 
-const readJson = async (filePath) => JSON.parse(await fs.readFile(filePath, "utf8"));
+const readJson = async (filePath) => {
+  const raw = await fs.readFile(filePath, "utf8");
+  return JSON.parse(raw.replace(/^\uFEFF/u, ""));
+};
 
 const findLatestTemplatePath = async () => {
   const candidates = (await fs.readdir(ROOT))

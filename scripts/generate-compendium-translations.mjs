@@ -84,6 +84,21 @@ const GENERIC_PAGE_NAME_TRANSLATIONS = {
   "Page 3": "페이지 3"
 };
 
+const TYPE_COLLECTION_SUFFIXES = {
+  background: ["backgrounds"],
+  class: ["classes"],
+  consumable: ["items", "tradegoods"],
+  container: ["items", "tradegoods"],
+  equipment: ["items", "tradegoods"],
+  loot: ["items", "tradegoods"],
+  tool: ["items", "tradegoods"],
+  weapon: ["items", "tradegoods"],
+  feat: ["class-features", "classfeatures", "monster-features", "monsterfeatures", "heroes", "wild-cards"],
+  race: ["species", "species-traits", "races"],
+  spell: ["spells"],
+  subclass: ["subclasses"]
+};
+
 const preferredCollectionsForType = (type) => {
   switch (type) {
     case "background":
@@ -110,10 +125,39 @@ const preferredCollectionsForType = (type) => {
   }
 };
 
+const preferredPackageCollectionsForType = (compendium, type, packageName = "", currentCollection = "") => {
+  if (!packageName) return [];
+
+  const packagePrefix = `${packageName}.`;
+  const packageCollections = [...compendium.keys()].filter((collection) => collection.startsWith(packagePrefix));
+  if (!packageCollections.length) return [];
+
+  const ordered = [];
+  const seen = new Set();
+  const push = (collection) => {
+    if (!collection || seen.has(collection) || !packageCollections.includes(collection)) return;
+    seen.add(collection);
+    ordered.push(collection);
+  };
+
+  push(currentCollection);
+  for (const suffix of TYPE_COLLECTION_SUFFIXES[type] ?? []) {
+    push(`${packageName}.${suffix}`);
+  }
+  for (const collection of packageCollections) {
+    push(collection);
+  }
+
+  return ordered;
+};
+
 const sortObject = (object) =>
   Object.fromEntries(Object.entries(object).sort(([a], [b]) => a.localeCompare(b)));
 
-const readJson = async (filePath) => JSON.parse(await fs.readFile(filePath, "utf8"));
+const readJson = async (filePath) => {
+  const raw = await fs.readFile(filePath, "utf8");
+  return JSON.parse(raw.replace(/^\uFEFF/u, ""));
+};
 
 const readJsonIfExists = async (filePath) => {
   try {
@@ -163,8 +207,12 @@ const loadCompendiumByCollection = async () => {
   return map;
 };
 
-const findCompendiumEntry = (compendium, type, originalName) => {
+const findCompendiumEntry = (compendium, type, originalName, options = {}) => {
   if (!originalName) return null;
+  for (const collection of preferredPackageCollectionsForType(compendium, type, options.packageName, options.collection)) {
+    const entry = compendium.get(collection)?.[originalName];
+    if (entry) return entry;
+  }
   for (const collection of preferredCollectionsForType(type)) {
     const entry = compendium.get(collection)?.[originalName];
     if (entry) return entry;
@@ -172,8 +220,12 @@ const findCompendiumEntry = (compendium, type, originalName) => {
   return null;
 };
 
-const findCompendiumActorEntry = (compendium, originalName) => {
+const findCompendiumActorEntry = (compendium, originalName, options = {}) => {
   if (!originalName) return null;
+  for (const collection of preferredPackageCollectionsForType(compendium, "actor", options.packageName, options.collection)) {
+    const entry = compendium.get(collection)?.[originalName];
+    if (entry) return entry;
+  }
   return compendium.get("dnd5e.monsters")?.[originalName]
     ?? compendium.get("dnd5e.heroes")?.[originalName]
     ?? null;
@@ -234,9 +286,12 @@ const shouldReplaceText = (currentValue, candidateValue, originalValue = "") => 
   const current = String(currentValue ?? "").trim();
   const candidate = String(candidateValue ?? "").trim();
   const original = String(originalValue ?? "").trim();
+  const visibleCurrent = stripMarkup(current);
+  const visibleCandidate = stripMarkup(candidate);
 
   if (!candidate || candidate === original) return false;
   if (!current) return true;
+  if (!hasKorean(visibleCurrent) && hasKorean(visibleCandidate)) return true;
   return translationScore(candidate, original) > translationScore(current, original);
 };
 
@@ -348,9 +403,12 @@ const main = async () => {
     for (const [entryName, templateEntry] of Object.entries(packTemplate.entries ?? {})) {
       const existingEntry = packJson.entries[entryName] ?? {};
 
-      switch (packTemplate.documentName) {
+        switch (packTemplate.documentName) {
         case "Item": {
-          const compendiumEntry = findCompendiumEntry(compendium, templateEntry.type, templateEntry.originalName);
+          const compendiumEntry = findCompendiumEntry(compendium, templateEntry.type, templateEntry.originalName, {
+            collection,
+            packageName: packTemplate.packageName
+          });
           const sharedEntry = findSharedItemEntry(
             sharedItems,
             templateEntry.type,
@@ -389,7 +447,10 @@ const main = async () => {
           break;
         }
         case "Actor": {
-          const compendiumActor = findCompendiumActorEntry(compendium, templateEntry.originalName);
+          const compendiumActor = findCompendiumActorEntry(compendium, templateEntry.originalName, {
+            collection,
+            packageName: packTemplate.packageName
+          });
           const translatedName = translateName(templateEntry.originalName, templateEntry.type, compendiumActor);
           if (shouldReplaceName(existingEntry.name, translatedName, templateEntry.originalName)) {
             existingEntry.name = translatedName;
@@ -422,7 +483,10 @@ const main = async () => {
           existingEntry.items = existingEntry.items ?? {};
           for (const [itemName, itemTemplate] of Object.entries(templateEntry.items ?? {})) {
             const existingItem = existingEntry.items[itemName] ?? {};
-            const compendiumEntry = findCompendiumEntry(compendium, itemTemplate.type, itemTemplate.originalName);
+            const compendiumEntry = findCompendiumEntry(compendium, itemTemplate.type, itemTemplate.originalName, {
+              collection,
+              packageName: packTemplate.packageName
+            });
             const sharedEntry = findSharedItemEntry(
               sharedItems,
               itemTemplate.type,

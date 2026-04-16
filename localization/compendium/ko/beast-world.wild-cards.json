@@ -6,11 +6,11 @@
     },
     "Blade of the Harvest Moon": {
       "name": "칼날 의 수확 달 - Blade of the Harvest Moon",
-      "description": "<p>When you use this card as an action, you summon a scimitar forged from moonlight for 1 minute. Melee attacks made with this scimitar deal an extra 2d6 radiant 피해. A creature can swing it in an arc to expel a radiant crescent, a ranged attack that deals 1d6 + Dex mod slashing 피해에 더해 2d6 radiant 피해. Its normal range is 20 feet and its long range is 60 feet.</p>\n<p>Starting at 11th level, the extra radiant damage increases to 4d6.</p>"
+      "description": "<p>이 카드를 행동으로 사용하면, 1분 동안 달빛으로 벼려진 시미터를 소환한다. 이 시미터로 하는 근접 공격은 추가로 2d6 광휘 피해를 준다. 생물은 이것을 휘둘러 방사형 초승달을 내보낼 수 있으며, 이는 1d6 + 민첩 수정치의 참격 피해와 더불어 2d6 광휘 피해를 주는 원거리 공격이다. 사거리는 20피트, 장거리는 60피트이다.</p><p>11레벨부터 추가 광휘 피해는 4d6으로 증가한다.</p>"
     },
     "Bolt of the Cloud Jumper": {
       "name": "Bolt 의 구름 - Jumper",
-      "description": "<p>When you use this card as an action, a ball lightning appears in your hand. As a bonus action, a creature holding the ball can shoot it at a target within 120 feet. 대상은 민첩 내성 굴림에 성공해야 하며, 실패하면 take 3d6 lightning 피해. The ball disappears after 1 minute or after being shot.</p>\n<p>A creature can use a bonus action to pass the ball to a willing creature within 120 feet. A receiver must use its reaction to catch the ball, or it disappears. The first three times the ball is passed, the damage it deals increases by 1d6 and the save DC increases by 1.</p>\n<p>The damage added by passing the ball increases to 2d6 at level 6, and 3d6 at level 14.</p>"
+      "description": "<p>이 카드를 행동으로 사용하면 손에 번개 구체가 나타난다. 생물은 보너스 행동으로 그 구체를 들고 있는 상태에서 120피트 이내의 목표에게 발사할 수 있다. 대상은 민첩 내성 굴림을 해야 하며, 실패하면 3d6 번개 피해를 입는다. 구체는 1분이 지나거나 발사되면 사라진다.</p><p>생물은 보너스 행동으로 그 구체를 자발적으로 받으려는 생물에게 전달할 수 있다. 받는 자는 반응을 사용해 구체를 받아야 하며, 그렇지 않으면 구체는 사라진다. 구체가 전달된 처음 세 번마다 피해는 1d6씩 증가하고 내성 굴림 DC는 1씩 증가한다.</p><p>구체를 전달해 추가되는 피해는 6레벨부터 2d6으로, 14레벨부터 3d6으로 증가한다.</p>"
     },
     "Budding Life": {
       "name": "Budding 생명"
@@ -20,7 +20,7 @@
     },
     "Distant Star's Arrow": {
       "name": "Distant 별's - Arrow",
-      "description": "<p>When you use this card as a bonus action while holding up to eight pieces of ranged weapon ammunition, you imbue them with the faraway winter sun for the next 8 hours. Creatures have a +1 bonus to attack and damage rolls made with this ammunition. On a hit, the target must make a Wisdom saving throw. 내성 굴림에 실패하면, for the next minute the target cannot willingly move to a space within 30 feet of the attacker. 내성 굴림에 성공하면, the target becomes immune to this effect for the next 24 hours.</p><p>Starting at 8th level, the bonus to attack and damage rolls increases to +2 at 8th level, and +3 at 14th level. Additionally, starting at 8th level you can imbue up to twelve pieces of ammunition, and sixteen pieces at 14th level.</p>"
+      "description": "<p>이 카드를 보너스 행동으로 사용해 최대 여덟 개의 원거리 무기 탄약을 들고 있으면, 그 탄약에 앞으로 8시간 동안 먼 겨울의 태양을 불어넣는다. 이 탄약으로 하는 공격 및 피해 굴림에 +1 보너스를 얻는다. 명중 시 대상은 지혜 내성 굴림을 해야 한다. 실패하면 다음 1분 동안 대상은 공격자 30피트 이내의 공간으로 자발적으로 이동할 수 없다. 성공하면 대상은 다음 24시간 동안 이 효과에 면역이 된다.</p><p>8레벨부터 공격 및 피해 굴림 보너스는 +2로 증가하고, 14레벨부터 +3으로 증가한다. 또한 8레벨부터 최대 12개의 탄약을, 14레벨부터는 16개의 탄약을 불어넣을 수 있다.</p>"
     },
     "Eye of the Sun": {
       "name": "눈 의 태양 - Eye of the Sun"
@@ -32,11 +32,11 @@
       "name": "Footprints in the 눈"
     },
     "Halting Freeze": {
-      "description": "<p>When you use this card as part of using the Wild Shape feature, your beast shape’s natural weapons are coated in hoarfrost, inflicting frostburn with mere touch. Whenever you hit a creature with a natural weapon, the target takes an extra 1d4 cold damage and must make a Constitution saving throw. 내성 굴림에 실패하면, until the end of its next turn, the target’s speed is halved, it suffers a -2 penalty to AC and Dexterity saving throws, and it can’t use reactions. Additionally, it can use either an action or a bonus action, not both. Regardless of the creature’s abilities or magic items, it can’t make more than one melee or ranged attack during its turn.</p>\n<p>Starting at 8th level, the extra cold damage increases to 2d4, and increases again to 3d4 at 14th level.</p>"
+      "description": "<p>이 카드를 와일드 셰이프 특성의 일부로 사용하면, 당신의 야수 형태 자연 무기에 서리가 내려앉아 스치기만 해도 동상을 입힌다. 자연 무기로 생물을 적중할 때마다 대상은 추가로 1d4 냉기 피해를 받고 체질 내성 굴림을 해야 한다. 실패하면 다음 자신의 차례가 끝날 때까지 대상의 속도가 절반이 되고, AC와 민첩 내성 굴림에 -2 페널티를 받으며, 반응을 사용할 수 없다. 또한 행동이나 보너스 행동 중 하나만 사용할 수 있고 둘 다는 사용할 수 없다. 생물의 능력치나 마법 아이템과 관계없이, 자신의 차례에 근접 공격 또는 원거리 공격을 1회보다 많이 할 수 없다.</p><p>8레벨부터 추가 냉기 피해는 2d4로 증가하고, 14레벨부터 다시 3d4로 증가한다.</p>"
     },
     "Intoxicating Touch": {
       "name": "Intoxicating 손길",
-      "description": "<p>When you use this card as an action, the drunken haze of a hummingbird eating rotten fruit overtakes foes you attack for 10 minutes. When you hit a creature with a natural weapon (including while in beast form), the target must make a Constitution saving throw. 내성 굴림에 실패하면, the target has disadvantage on Dexterity saving throws, and attacks against it have advantage for the duration.</p>\n<p>Starting at 11th level, affected creatures also have their speed halved.</p>"
+      "description": "<p>이 카드를 행동으로 사용하면, 썩은 과일을 먹는 벌새의 취기 어린 안개가 10분 동안 당신이 공격하는 적들을 덮친다. 자연 무기(야수 형태일 때 포함)로 생물을 적중할 때마다 대상은 체질 내성 굴림을 해야 한다. 실패하면 대상은 민첩 내성 굴림에 불리점을 받고, 이 지속 시간 동안 대상에 대한 공격은 유리점을 얻는다.</p><p>11레벨부터 영향받은 생물은 속도도 절반이 된다.</p>"
     },
     "Jubilee of the Flock": {
       "name": "Jubilee 의 - Flock"
@@ -46,21 +46,21 @@
     },
     "Lunar Body": {
       "name": "Lunar 몸체",
-      "description": "<p>When you use this card as an action, your body takes an incorporeal form for 1 minute. You can hover up to 10 feet from the ground and your body passes through solid objects. If you end your turn inside a solid object, you are shunted out to the nearest unoccupied space you last occupied. You can’t make weapon attacks, but you are immune to bludgeoning, piercing, and slashing damage that is nonmagical. You emit bright light out to 10 feet, and dim light for a further 10 feet. The effect ends if you cast a spell or dismiss it as an action.</p><p>Starting at 8th level, you can use a bonus action to become invisible or reappear. Starting at 14th level, up to six creatures you can see within 60 feet of you also gain the benefits of this card.</p><p> </p>"
+      "description": "<p>이 카드를 행동으로 사용하면 당신의 몸은 1분 동안 비물질적 형태를 취한다. 바닥에서 최대 10피트 높이까지 떠 있을 수 있으며, 몸은 고체 물체를 통과한다. 차례를 고체 물체 내부에서 끝내면, 당신이 마지막으로 점유했던 가장 가까운 빈 공간으로 밀려난다. 무기 공격은 할 수 없지만, 비마법적 타격, 관통, 참격 피해에 면역이 된다. 10피트까지 밝은 빛을 내뿜고, 그 뒤로 추가 10피트까지 약한 빛을 낸다. 주문을 시전하거나 행동으로 이 효과를 해제하면 효과가 끝난다.</p><p>8레벨부터는 보너스 행동으로 투명해지거나 다시 나타날 수 있다. 14레벨부터는 당신이 볼 수 있고 60피트 이내에 있는 최대 6명의 생물도 이 카드의 혜택을 얻는다.</p><p> </p>"
     },
     "Poison Thorn": {
       "name": "독 - Thorn"
     },
     "Return to Soil": {
-      "description": "<p>When you use this card as a bonus action, the approaching death of the season’s end grips you and your enemy. Choose a creature you can see within 30 feet of you. Until the end of your next turn, you and the target have vulnerability to cold and necrotic 피해.</p>"
+      "description": "<p>이 카드를 보너스 행동으로 사용하면, 계절의 끝이 가져오는 다가오는 죽음이 당신과 적을 움켜쥔다. 당신이 볼 수 있고 30피트 이내에 있는 생물 하나를 고른다. 다음 자신의 차례가 끝날 때까지 당신과 대상은 냉기 및 괴사 피해에 취약해진다.</p>"
     },
     "Scattering Snow Raven": {
       "name": "Scattering 눈 - Raven",
-      "description": "<p>You use this card as a reaction to a creature you can see within 120 feet of you being reduced to 0 hit points. The creature transforms into a snow raven with 1 hit point, and can immediately use its reaction to move up to twice its speed, without provoking opportunity attacks. It retains its Intelligence, Wisdom, and Charisma scores but otherwise uses the raven’s stat block. The transformation lasts 1 minute, or until the creature dismisses it as an action.</p>\n<p>Starting at 11th level, you can use this card as a reaction to a creature taking 피해.</p>"
+      "description": "<p>이 카드를 120피트 이내에서 볼 수 있는 생물이 0 히트 포인트가 되었을 때의 반응으로 사용할 수 있다. 그 생물은 1 히트 포인트를 가진 눈 까마귀로 변신하며, 즉시 반응을 사용해 자신의 속도의 두 배까지 이동할 수 있고, 기회 공격을 유발하지 않는다. 변신한 생물은 지능, 지혜, 매력 능력치는 그대로 유지하지만 그 외에는 까마귀의 능력치 블록을 사용한다. 변신은 1분 동안 지속되거나, 생물이 행동으로 해제할 때까지 지속된다.</p><p>11레벨부터는 생물이 피해를 입을 때의 반응으로도 이 카드를 사용할 수 있다.</p>"
     },
     "Starless Night": {
       "name": "Starless 밤",
-      "description": "<p>When you use this card as an action, you curse an enemy with the unease of the hunted. A target you can see within 60 feet of you must make a Wisdom saving throw. Superstitious minds have disadvantage on the save. Targets that can’t be charmed automatically succeed on the save.</p>\n<p>내성 굴림에 실패하면, for the next minute the target must roll a d4 at the start of each of its turns to determine its behavior for that turn. At the end of each of its turns, the target can repeat the Wisdom saving throw. If it succeeds, the effect ends for that target.</p>\n<p>Starting at 8th level, you can target up to two creatures within range with this card.</p>\n<p>Starting at 14th level, you can target any creatures you choose within 60 feet.</p>\n<table style=\"width:100%\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">d4</td>\n<td style=\"text-align:center;width:92.4478%\">효과</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">1</td>\n<td style=\"width:92.4478%\"><strong>Freeze.</strong> The creature doesn't move or take actions this turn.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">2</td>\n<td style=\"width:92.4478%\"><strong>Fight.</strong> The creature targets a random creature with a melee weapon attack. If there is no creature within range, the creature takes 3d6 psychic 피해.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">3</td>\n<td style=\"width:92.4478%\"><strong>Flight.</strong> The creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space with 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature takes 3d6 psychic damage and can use the dodge action.</td>\n</tr>\n<tr>\n<td style=\"text-align:center;width:7.55218%\">4</td>\n<td style=\"width:92.4478%\">The creature acts normally.</td>\n</tr>\n</tbody>\n</table>"
+      "description": "<p>이 카드를 행동으로 사용하면, 사냥당하는 자의 불안감으로 적 하나에게 저주를 건다. 당신이 볼 수 있고 60피트 이내에 있는 대상은 지혜 내성 굴림을 해야 한다. 미신에 사로잡힌 정신은 이 굴림에 불리점을 받는다. 매혹될 수 없는 대상은 자동으로 성공한다.</p><p>실패하면, 다음 1분 동안 대상은 자신의 각 차례 시작 시 d4를 굴려 그 차례의 행동을 결정해야 한다. 자신의 각 차례가 끝날 때 대상은 지혜 내성 굴림을 다시 할 수 있다. 성공하면 그 대상에 대한 효과는 종료된다.</p><p>8레벨부터는 이 카드로 범위 내 생물 최대 2명을 지정할 수 있다.</p><p>14레벨부터는 당신이 선택한 범위 60피트 이내의 모든 생물을 지정할 수 있다.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"text-align:center;width:7.55218%\">d4</td><td style=\"text-align:center;width:92.4478%\">효과</td></tr><tr><td style=\"text-align:center;width:7.55218%\">1</td><td style=\"width:92.4478%\"><strong>얼어붙기.</strong> 그 생물은 이번 차례에 움직이지도 행동하지도 않는다.</td></tr><tr><td style=\"text-align:center;width:7.55218%\">2</td><td style=\"width:92.4478%\"><strong>싸우기.</strong> 그 생물은 근처 무작위 생물 하나를 근접 무기 공격 대상으로 삼는다. 사거리 안에 생물이 없으면, 그 생물은 3d6 정신 피해를 입는다.</td></tr><tr><td style=\"text-align:center;width:7.55218%\">3</td><td style=\"width:92.4478%\"><strong>도주하기.</strong> 그 생물은 가능한 한 당신에게서 최대한 멀어지도록 이동하려 하며, 자발적으로 당신으로부터 30피트 이내의 공간으로 이동할 수 없다. 또한 반응도 사용할 수 없다. 행동으로는 대시 행동만 사용하거나, 이동을 막는 효과에서 벗어나려 시도할 수 있다. 움직일 곳이 없으면 그 생물은 3d6 정신 피해를 입고 회피 행동을 사용할 수 있다.</td></tr><tr><td style=\"text-align:center;width:7.55218%\">4</td><td style=\"width:92.4478%\">그 생물은 평소대로 행동한다.</td></tr></tbody></table>"
     },
     "Storm's Sharpened Tines": {
       "name": "폭풍's - Sharpened Tines"

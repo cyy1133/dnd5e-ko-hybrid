@@ -2,7 +2,7 @@
   "label": "Wagon Features",
   "entries": {
     "Angus Ram": {
-      "description": "<p>A robust body and heavy ram across the yoke make the Ironaxle itself a viable weapon. At 1st level, the wagon has the following action. When the driver takes the Attack action, it can substitute one attack with this action. </p><p><strong>Ram</strong> </p><p>근접 무기 공격: wagon’s Drive bonus 명중, 사거리 10피트, 목표 하나. Hit: 2d6 bludgeoning 피해. This damage ignores Enormity. </p><p>The wagon also has the following special trait. </p><p><strong>Charge</strong> </p><p>If the wagon moves at least 20 feet in a straight line toward a target before hitting it with a Ram attack, the target takes an extra 1d6 bludg\u0002eoning 피해. If the target is a creature, it must succeed on a Strength saving throw equal to 8 + the wagon’s Drive modifier or be knocked prone.</p>"
+      "description": "<p>튼튼한 차체와 멍에를 가로지르는 무거운 충각 덕분에 Ironaxle 자체가 실전 무기가 된다. 1레벨부터 이 마차는 다음 행동을 얻는다. 운전자가 Attack 행동을 할 때, 그 공격 중 하나를 이 행동으로 대체할 수 있다. </p><p><strong>충각</strong> </p><p>근접 무기 공격: 마차의 Drive 보너스 명중, 사거리 10피트, 목표 하나. 명중: 2d6 타격 피해. 이 피해는 Enormity를 무시한다. </p><p>이 마차는 또한 다음 특별 특성을 가진다. </p><p><strong>돌진</strong> </p><p>마차가 충각 공격으로 목표를 명중시키기 전에 그 목표를 향해 직선으로 최소 20피트 이동했다면, 그 목표는 추가로 1d6 타격 피해를 받는다. 대상이 크리처라면, DC 8 + 마차의 Drive 수정치의 근력 내성 굴림에 성공해야 하며, 실패하면 넘어지게 된다.</p>"
     },
     "Body-Reinforced Components": {
       "name": "몸체 - Reinforced Components"
@@ -17,10 +17,10 @@
       "name": "자칼 - Reared Axe Beak"
     },
     "Plated Shell": {
-      "description": "<p>At 11th level, steel sheets turn the gaps in an Ironaxle’s armor into its strongest defenses, survi\u0002vor bias be damned. The wagon gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. Additionally, the Ironaxle treats falls as 40 feet shorter when determining fall 피해.</p>"
+      "description": "<p>11레벨부터, 강철 판이 Ironaxle 장갑의 틈새를 가장 강력한 방어 수단으로 바꿔 놓는다. 생존자 편향 따위는 신경 쓰지 않는다. 마차는 비마법 공격이 주는 타격, 관통, 참격 피해에 대한 저항을 얻는다. 또한 Ironaxle은 추락 피해를 계산할 때 낙하 거리를 40피트 더 짧게 취급한다.</p>"
     },
     "Racing Weight": {
-      "description": "<p>This model rolls out of the wainwright’s shop ready to prove itself on the race track. At 1st level, a Windsprinter adds +2 to Drive checks made to sprint while racing. </p><p>Additionally, when the wagon moves on its turn, hostile creatures on its roof must make a Dexterity saving throw with a DC of 8 + the wagon’s Drive modifier. 내성 굴림에 실패하면, the creature is pushed 10 feet toward the back of the wagon and knocked prone.</p>"
+      "description": "<p>이 모델은 경주 트랙에서 실력을 증명할 준비를 마친 채 마차 제작소에서 굴러 나온다. 1레벨부터 Windsprinter는 경주 중 전력 질주를 위해 하는 Drive 판정에 +2를 더한다. </p><p>또한 마차가 자신의 차례에 이동하면, 그 지붕 위의 적대적 크리처는 DC 8 + 마차의 Drive 수정치의 민첩 내성 굴림을 해야 한다. 내성 굴림에 실패하면, 그 크리처는 마차 뒤쪽으로 10피트 밀려나고 넘어지게 된다.</p>"
     },
     "Steam Engine": {
       "name": "증기 엔진 - Steam Engine"
