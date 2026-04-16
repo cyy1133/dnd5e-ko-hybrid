@@ -105,41 +105,70 @@ const patchRichTooltipResult = (item, result) => {
   return result;
 };
 
+const getPrototypeChain = (prototype) => {
+  const chain = [];
+  for (let current = prototype; current && current !== Object.prototype; current = Object.getPrototypeOf(current)) {
+    chain.push(current);
+  }
+  return chain;
+};
+
+const getConstructorChain = (constructor) => {
+  const chain = [];
+  for (let current = constructor; typeof current === "function" && current !== Function.prototype; current = Object.getPrototypeOf(current)) {
+    chain.push(current);
+  }
+  return chain;
+};
+
 const installItemPresentationPatches = () => {
   if (ITEM_PRESENTATION_PATCHES.installed) return;
 
   const ItemDocument = globalThis.getDocumentClass?.("Item")
     ?? globalThis.CONFIG?.Item?.documentClass
     ?? globalThis.Item;
-  const prototype = ItemDocument?.prototype;
-  if (!prototype) return;
 
-  if (typeof prototype.getChatData === "function" && !prototype[ORIGINAL_GET_CHAT_DATA]) {
-    prototype[ORIGINAL_GET_CHAT_DATA] = prototype.getChatData;
-    prototype.getChatData = function getChatDataPatched(...args) {
-      const result = prototype[ORIGINAL_GET_CHAT_DATA].apply(this, args);
-      if (typeof result?.then === "function") {
-        return result.then((value) => patchChatDataResult(this, value));
-      }
-      return patchChatDataResult(this, result);
-    };
+  if (!ItemDocument?.prototype) return;
+
+  // dnd5e defines richTooltip/getChatData on Item5e rather than the base Item document.
+  for (const prototype of getPrototypeChain(ItemDocument.prototype)) {
+    if (Object.prototype.hasOwnProperty.call(prototype, "getChatData")
+      && typeof prototype.getChatData === "function"
+      && !prototype[ORIGINAL_GET_CHAT_DATA]) {
+      prototype[ORIGINAL_GET_CHAT_DATA] = prototype.getChatData;
+      prototype.getChatData = function getChatDataPatched(...args) {
+        const result = prototype[ORIGINAL_GET_CHAT_DATA].apply(this, args);
+        if (typeof result?.then === "function") {
+          return result.then((value) => patchChatDataResult(this, value));
+        }
+        return patchChatDataResult(this, result);
+      };
+    }
+
+    if (Object.prototype.hasOwnProperty.call(prototype, "richTooltip")
+      && typeof prototype.richTooltip === "function"
+      && !prototype[ORIGINAL_RICH_TOOLTIP]) {
+      prototype[ORIGINAL_RICH_TOOLTIP] = prototype.richTooltip;
+      prototype.richTooltip = function richTooltipPatched(...args) {
+        const result = prototype[ORIGINAL_RICH_TOOLTIP].apply(this, args);
+        if (typeof result?.then === "function") {
+          return result.then((value) => patchRichTooltipResult(this, value));
+        }
+        return patchRichTooltipResult(this, result);
+      };
+    }
   }
 
-  if (typeof prototype.richTooltip === "function" && !prototype[ORIGINAL_RICH_TOOLTIP]) {
-    prototype[ORIGINAL_RICH_TOOLTIP] = prototype.richTooltip;
-    prototype.richTooltip = function richTooltipPatched(...args) {
-      const result = prototype[ORIGINAL_RICH_TOOLTIP].apply(this, args);
-      if (typeof result?.then === "function") {
-        return result.then((value) => patchRichTooltipResult(this, value));
-      }
-      return patchRichTooltipResult(this, result);
-    };
-  }
+  for (const constructor of getConstructorChain(ItemDocument)) {
+    if (!Object.prototype.hasOwnProperty.call(constructor, "createScrollFromSpell")
+      || typeof constructor.createScrollFromSpell !== "function"
+      || constructor[ORIGINAL_CREATE_SCROLL]) {
+      continue;
+    }
 
-  if (typeof ItemDocument?.createScrollFromSpell === "function" && !ItemDocument[ORIGINAL_CREATE_SCROLL]) {
-    ItemDocument[ORIGINAL_CREATE_SCROLL] = ItemDocument.createScrollFromSpell;
-    ItemDocument.createScrollFromSpell = async function createScrollFromSpellPatched(spell, ...args) {
-      const result = await ItemDocument[ORIGINAL_CREATE_SCROLL].call(this, spell, ...args);
+    constructor[ORIGINAL_CREATE_SCROLL] = constructor.createScrollFromSpell;
+    constructor.createScrollFromSpell = async function createScrollFromSpellPatched(spell, ...args) {
+      const result = await constructor[ORIGINAL_CREATE_SCROLL].call(this, spell, ...args);
       const store = getOverlayStore();
       if (!overlayEnabled() || !store || !result) return result;
 
