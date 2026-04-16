@@ -328,8 +328,8 @@ Hooks.once("ready", async () => {
     store = new TranslationStore();
     overlay = new RuntimeOverlay(store);
 
-    await store.load();
     overlay.activate();
+    await store.load();
     overlay.rerenderOpenApplications();
     setTimeout(() => overlay?.rerenderOpenApplications?.(), 1500);
     api.loadError = null;
