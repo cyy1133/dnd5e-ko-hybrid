@@ -2,42 +2,42 @@
   "label": "Subclasses",
   "entries": {
     "Carrion Master": {
-      "name": "?≪옣???ъ씤 - Carrion Master"
+      "name": "썩은 고기 마스터 - Carrion Master"
     },
     "Circle of the Wild Card": {
-      "name": "???쒗겢 Wild 移대뱶"
+      "name": "와일드카드의 원 - Circle of the Wild Card"
     },
     "College of Witches": {
-      "name": "???- Witches",
+      "name": "마녀 대학 - College of Witches",
       "description": "<p><span class=\"fontstyle0\">마녀라고도 불리는 이 학파의 바드들은 자신의 재능에 대한 대가로 힘을 내어 놓는 청중 앞에서 공연한다. 그들은 물질 세계의 모든 것 뒤편에 드리운 회색의 빈 공간을 들여다본다. 저승은 그들의 무대다. 공연을 지켜보는 영혼들을 옆으로 따라오게 하여, 마녀는 그들의 도움을 불러낼 수 있다.<br></span></p><p><span class=\"fontstyle0\">Beast World의 대부분의 이들에게 마녀는 낯선 존재지만, 그들의 일이 반드시 불쾌한 것만은 아니다. 영혼이 관심을 구하는 일은 언제나 성가시고 때로는 위험하다. 마녀가 노는 세계를 아는 사람이라면, 자신이 아닌 </span><span class=\"fontstyle2\">다른 이 </span><span class=\"fontstyle0\">가 그들의 과도한 아첨의 대상이 되어 준다는 사실에 오히려 감사할 것이다.</span></p>"
     },
     "Fell Infiltrator": {
-      "name": "?됱븙???좎엯?? - Fell Infiltrator"
+      "name": "타락한 침입자 - Fell Infiltrator"
     },
     "Mercy Domain": {
-      "name": "?먮퉬 沅뚯뿭 - Mercy Domain",
+      "name": "?? ?? - Mercy Domain",
       "description": "<p><span class=\"fontstyle0\">자비의 신들이 필멸자에게 은혜를 내릴 때, 그들 가운데서도 가장 온화하고 자애로운 이들이 그 힘을 특별한 방식으로 다루는 자로 선택된다. 자비의 권역은 대부분의 권역과는 다른 목적에 쓰이는 신성한 힘이다. 파괴의 도구가 아니라, 다른 이들이 구원을 찾도록 돕는 강력한 수단이다. 이들은 모든 존재에게서 선을 찾고, 죽음을 휘두르는 자들을 최후의 수단으로 꾸짖는다. 이 힘을 지닌 성직자들은 용서의 문을 활짝 열어 잃어버린 영혼들이 참회의 길을 찾도록 돕는다. 선한 성향의 신들은 이 신성한 권역을 지키며, 특히 폭력을 멀리하고 용서와 분노를 견디는 의지의 강화를 중시하는 이들이 그렇다. Beast World에서는 자비 권역의 거의 모든 성직자가 Beast Mother Pirhoua를 숭배한다.</span></p><p></p><table><tbody><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p><strong>성직자 레벨</strong></p></td><td style=\"height:17px;text-align:center\"><p><strong>주문</strong></p></td></tr><tr><td style=\"height:68px;text-align:center\" data-colwidth=\"426\"><p>1st</p></td><td style=\"height:68px;text-align:center\"><p>@Compendium[dnd5e.spells.xmDBqZhRVrtLP8h2]{Protection from Evil and Good}, @Compendium[dnd5e.spells.gvdA9nPuWLck4tBl]{Sanctuary}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>3rd</p></td><td style=\"height:17px;text-align:center\"><p>@UUID[Compendium.dnd5e.spells.Item.8cse7rit0oswRPUP]{비전 자물쇠}, @Compendium[dnd5e.spells.ppWAAEul0QHtm4er]{Detect Thoughts}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>5th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.Ek45cBpVXvJdv1Qy]{Counterspell}, @Compendium[dnd5e.spells.gopnZvS0c2jD5FP8]{Tongues}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>7th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.XqzXSKNR75ZdYTA9]{Divination}, @Compendium[dnd5e.spells.da0a1t2FqaTjRZGT]{Freedom of Movement}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>9th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.JQyigMNPiDnGI18b]{Geas}, @Compendium[dnd5e.spells.W4Qx5z0id6da0vqg]{Legend Lore}</p></td></tr></tbody></table><p> </p>"
     },
     "Oath of Revolution": {
-      "name": "留뱀꽭 - Revolution",
+      "name": "혁명의 맹세 - Oath of Revolution",
       "description": "<p><span class=\"fontstyle0\">혁명의 맹세는 민중이 스스로의 힘을 쟁취하도록 돕는 데 있다. 이 맹세를 택한 팔라딘은 눈을 부릅뜨고 권세 있는 자들의 부패를 찾아낸다. 억압을 발견하면, 공동의 행동을 부를 수 있는 힘을 얻게 된다. </span></p>\n<p><span class=\"fontstyle0\">Beast World에서는 정의의 여신 Dramphine을 섬기는 일부 팔라딘들이 혁명의 맹세를 택해 권세 있는 자들을 감시하는 파수꾼이 된다. Allemance의 귀족 법정에서 Oric batkos의 회랑에 이르기까지, 혁명의 팔라딘들은 썩어 문드러진 사회 구조에 짓눌린 이들이 스스로의 운명을 움켜쥐도록 북돋운다.<br></span></p>\n<p> </p>\n<h2>혁명의 계율</h2>\n<p><span class=\"fontstyle0\">혁명의 맹세를 택한 팔라딘들은 이 세 단어를 정의로운 행동으로 이끄는 길잡이 빛으로 읊조린다. </span></p>\n<p><span class=\"fontstyle3\"><strong>판결</strong>. </span><span class=\"fontstyle0\">약하고 힘없는 이들은 당신의 분별을 신뢰한다. 그러니 당신은 정의에 따른 판결로 그들의 기대에 응해야 한다. 당신의 임무는 세상의 숨은 부패를 냉정하게 알아보는 일이다. </span></p>\n<p><span class=\"fontstyle3\"><strong>신념</strong>. </span><span class=\"fontstyle0\">사람들이 부당하게 대우받는 것을 보면, 당신의 첫 번째 임무는 그들이 행동하도록 북돋우는 것이다. 가능하다면 언제나 억압받는 이들이 스스로 더 나은 길을 세우도록 도와야 한다. 당신은 반란의 검이 아니라, 그 목자다. </span></p>\n<p><span class=\"fontstyle3\"><strong>공정</strong>. </span><span class=\"fontstyle0\">공평함의 전형이 되고, 법의 정당함을 드러내라. 지도자들은 공동체가 어떻게 정의를 실현해야 하는지 당신의 통찰을 바란다. 그 이해에 조금이라도 썩은 부분이 있다면 그것은 당신의 책임이다.</span></p>\n<p> </p>\n<p><span class=\"fontstyle0\">당신은 혁명의 맹세 주문 표에 적힌 팔라딘 레벨에서 맹세 주문을 얻는다. 맹세 주문의 작동 방식은 성스러운 맹세 클래스 특성을 참고하라.</span></p>\n<table style=\"width:100%;height:137px\" border=\"1\">\n<tbody>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\"><strong>팔라딘 레벨</strong></td>\n<td style=\"text-align:center;width:88.7206%;height:17px\"><strong>주문</strong></td>\n</tr>\n<tr style=\"height:35px\">\n<td style=\"text-align:center;width:11.2794%;height:35px\">3rd</td>\n<td style=\"text-align:center;width:88.7206%;height:35px\">@Compendium[dnd5e.spells.7p9IuWrSWFgfyQo2]{Alarm}, @Compendium[dnd5e.spells.4dSvfvTy2ZIJ3K4k]{Comprehend Languages}</td>\n</tr>\n<tr style=\"height:34px\">\n<td style=\"text-align:center;width:11.2794%;height:34px\">5th</td>\n<td style=\"text-align:center;width:88.7206%;height:34px\">@Compendium[dnd5e.spells.FSMy6VAjDnXY9vWz]{Gust of Wind}, @Compendium[dnd5e.spells.DQzlB5Y3k791W5bH]{See Invisibility}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">9th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.Ek45cBpVXvJdv1Qy]{Counterspell}, @Compendium[dnd5e.spells.I2LUSF5ogc7Bj62e]{Speak with Dead}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">13th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.P6f1PPKPd9BCb742]{Compulsion}, @Compendium[dnd5e.spells.XqzXSKNR75ZdYTA9]{Divination}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">17th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.kSPRpeIx3w3nihrF]{Dream}, @Compendium[dnd5e.spells.fVbCxFRaORalHB20]{Scrying}</td>\n</tr>\n</tbody>\n</table>"
     },
     "Path of Thought's Tremor": {
-      "name": "湲?- Thought's Tremor"
+      "name": "생각의 길 떨림 - Path of Thought's Tremor"
     },
     "Somnomancy": {
-      "name": "?섎㈃?? - Somnomancy"
+      "name": "졸음 - Somnomancy"
     },
     "The Ghost God": {
-      "name": "?좊졊?? - The Ghost God",
+      "name": "유령 신 - The Ghost God",
       "description": "<h1>유령신</h1><p>인간 신들은 죽었다. 남은 신성은 한데 쏟아져 섞였고, 이제는 Broken World로부터 부르는 하나의 의식이 되었다. 그것이 바로 유령신이다. 썩어 가는 세계에서 들려오는 후원자의 목소리로, 그들은 자신의 흑마법사들을 통해 존재를 붙들고 있다.</p><p>어린 시절부터 유령신의 흑마법사가 될 운명을 지닌 짐승과 형제들은 편두통, 기분의 급변, 이계의 속삭임이 스민 악몽에 시달린다. 미래의 후원자는 부르고 있지만, 그 목소리는 세계 사이의 장막에 가로막혀 먹먹하고 뒤틀린 채 전해진다. 다른 흑마법사들의 인도를 받으면, 이런 증상을 겪는 청소년은 자신의 힘을 받아들이고 그 부름에 응답할 수 있다. 그것을 거부하는 이들은 우주적 소음을 떨쳐 내는 법을 배워야 한다.</p><p>유령신의 뜻은 생전에 자신들이 보살피던 인간들을 지키는 데 있으며, 죽음 너머로도 이어지는 백성에 대한 헌신을 품고 있다. 이 후원자는 그 대가로 값진 선물을 건넨다. 바로 공간 그 자체에 대한 지배력이다. 그들은 무너져 가는 세계의 일부를 전해 주며, 결국 그들의 하인을 자기 자신만의 후원자로 거듭나게 한다.</p><p> </p><h2>장막의 색깔</h2><p>어린 시절부터 유령신에게 선택된 이들은 죽은 판테온의 부름을 몸에 드러낸다. 가장 흔한 징후는 비정상적인 무늬나 선명한 색을 띤 털이다. 나무늘보 흑마법사의 얼굴 한복판에는 날카로운 선이 그어져 자연스러운 색과 선명한 분홍을 가른다. 또 다른 여우의 털은 완벽한 하운드투스 무늬를 자랑한다.</p><p> </p><h2>확장 주문 목록</h2><p>다음 주문이 당신의 흑마법사 주문 목록에 추가된다.</p><table style=\"width:100%;height:136px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"text-align:center;width:19.3667%;height:17px\"><p><strong>주문 레벨</strong></p></td><td style=\"text-align:center;width:80.6333%;height:17px\"><p><strong>주문</strong></p></td></tr><tr style=\"height:34px\"><td style=\"text-align:center;width:19.3667%;height:34px\"><p>1st</p></td><td style=\"text-align:center;width:80.6333%;height:34px\"><p>@Compendium[dnd5e.spells.pub0OWVEB71XQx1n]{Feather Fall}, @Compendium[dnd5e.spells.B0pnIcc52O6G8hi8]{Longstrider}</p></td></tr><tr style=\"height:34px\"><td style=\"text-align:center;width:19.3667%;height:34px\"><p>2nd</p></td><td style=\"text-align:center;width:80.6333%;height:34px\"><p>@Compendium[dnd5e.spells.WahI41a3goVUg0x1]{Enlarge/Reduce}, @Compendium[dnd5e.spells.SleYkHovQ8NagmeV]{Locate Object}</p></td></tr><tr style=\"height:17px\"><td style=\"text-align:center;width:19.3667%;height:17px\"><p>3rd</p></td><td style=\"text-align:center;width:80.6333%;height:17px\"><p>@Compendium[dnd5e.spells.aU62xVUBYkAQWIHv]{Nondetection}, @Compendium[dnd5e.spells.GtGjNjPBgUHxGYAD]{Sending}</p></td></tr><tr style=\"height:17px\"><td style=\"text-align:center;width:19.3667%;height:17px\"><p>4th</p></td><td style=\"text-align:center;width:80.6333%;height:17px\"><p>@Compendium[dnd5e.spells.9hQXdMSmerkTsHDe]{Confusion}, @Compendium[dnd5e.spells.7Fw7Bf1k3xxDVr5L]{Fabricate}</p></td></tr><tr style=\"height:17px\"><td style=\"text-align:center;width:19.3667%;height:17px\"><p>5th</p></td><td style=\"text-align:center;width:80.6333%;height:17px\"><p>@Compendium[dnd5e.spells.JQyigMNPiDnGI18b]{Geas}, @Compendium[dnd5e.spells.d9MwcXi7Il3HROXd]{Passwall}</p></td></tr></tbody></table>"
     },
     "The Main Event": {
-      "name": "硫붿씤 ?대깽?? - The Main Event",
+      "name": "메인 이벤트 - The Main Event",
       "description": "<p>Beast World에서 가장 다양한 계층의 모험가가 바로 전사다. 전사들은 무예 상황 전반에 대한 폭넓은 숙련으로 알려져 있다. 이런 다재다능함은 직업으로 무기를 다루는 병사나 다른 이들에게는 필요치 않다. Beylik 향신료 대상단의 경비병은 사막 길을 따라 이동하며 강도를 막아 내도록 훈련받는다. 올바른 의미의 전사가 되려면, 촉수 달린 존재를 자기 몸집의 쉰 배쯤 되는 상대와 맞붙을 때만큼이나 단독 결투에서도 똑같이 강해야 한다.</p>\n<p>전사는 다른 어떤 클래스보다도 스승과 함께 성장하는 경우가 많다. 15레벨 전사조차도 마지막 스승을 만나기 위해 정기적으로 길을 나선다. 전사들 사이의 협력과 경쟁은 모든 기술을 벼린다. 지적인 전사들은 Mantle War와 그 이전의 장군들이 남긴 지혜가 담긴 존중받는 문헌에서 무예를 배운다. 책 공부를 선호하지 않는 전사들도 다른 권투가들의 피드백을 통해 성장한다. 결국 원한을 품은 못된 녀석이 주먹다짐에서 이길 수는 있겠지만, 전사들은 세계의 전투 덕후다.</p>\n<p>나이가 찰 만큼 찬 전사라면 거의 모두 Invader War에 참전했다. 많은 이들이 새롭게 생긴 전술적 위험에 대한 갈증을 채우고자 하는 베테랑으로서 출발했다. 다행히도 던전 입구가 처음 나타나자마자 그들에게는 곧바로 기회가 찾아왔다.</p>\n<p>Bat’yan과 Beylik 사이의 문화적 분열은 전사들 사이에서 가장 뚜렷하다. 울창한 열대우림 전투의 은밀한 기습 전술은 사막 대상단 야영지의 기마 전장과는 거리가 멀다. Causeway에서 힘을 합친 전사는 무척이나 효율적인 전사로 태어나, 적을 넘어뜨리며 돌진하거나 나뭇잎 위를 날듯 달려 보이지 않는 곳에서 타격을 날릴 수 있다.</p>\n<p> </p>\n<h2>무술 원형: 메인 이벤트</h2>\n<p>Storied Histories League는 연극적 전투의 세계이며, 그 전사들에게는 음식과 물만큼이나 시급한 필요가 있다. 바로 관중의 에너지를 먹고 사는 것이다. 그들은 매혹된 관중이 내뿜는 에너지를 흡수해 휘두른다. 메인 이벤트는 링 위에서도 실제 생사결투에서도 호기와 자신감의 화신이다. 보이지 않는 관중의 흥분을 이용해 비할 데 없는 육체적 완성에 이른다. 일부 전사들은 리그를 잠시 떠나 던전 탐험자가 되기도 한다. 이들이 바로 메인 이벤트 전사다.</p>"
     },
     "Way of the Kidney Punch": {
-      "name": "?섑뻾??湲?- Kidney Punch"
+      "name": "신장 펀치의 길 - Way of the Kidney Punch"
     }
   }
 }

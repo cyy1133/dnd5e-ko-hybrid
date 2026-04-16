@@ -24,7 +24,7 @@
         },
         "Whispering Aura": {
           "name": "속삭임 오라 - Whispering Aura",
-          "description": "<div class=\"ddb\">\n<p><strong><em>Whispering Aura (Mind Flayer Only).</em></strong> At the start of each of the spirit's turns, the spirit emits psionic energy if it doesn't have the Incapacitated condition. <em>지혜 내성 굴림:</em> DC equals your spell save DC, each creature (other than you) within 5 feet of the spirit. <em>Failure:</em> 2d6 Psychic 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em>속삭이는 오라(마인드 플레이어 전용).</em></strong> 영혼의 각 턴이 시작될 때 영혼은 무능력 상태가 아닌 경우 사이오닉 에너지를 방출합니다. <em>지혜택 굴림:</em> DC는 당신의 주문 저장 DC와 동일하며, 영혼으로부터 5피트 이내에 있는 각 생물(당신을 제외한)입니다. <em>실패:</em> 2d6 Psychic 측면.</p>\n</div>"
         }
       }
     },
@@ -32,7 +32,7 @@
       "items": {
         "Claw": {
           "name": "발톱 - Claw",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 1d10 + 3 + @item.level type=slashing average=true]] damage, and the target can't regain Hit Points until the start of the spirit's next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치, 사거리 5피트 <em>Hit:</em> [[/damage 1d10 + 3 + @item.level type=slashing average=true]] 피해와 동일하며 대상은 공격할 수 없습니다. 영혼의 다음 턴이 시작될 때까지 체력을 회복합니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -62,7 +62,7 @@
       "items": {
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 피해 equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 같습니다. 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 경계는 1d4 + 3(중간 이하), 2d6 + 3 + 주문 시전 능력 수정치(대형) 또는 2d12 + 3 + 주문 시전 능력 수정치(대규모).</p>\n</div>"
         }
       }
     },
@@ -70,7 +70,7 @@
       "items": {
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 피해 equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 같습니다. 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 경계는 1d4 + 3(중간 이하), 2d6 + 3 + 주문 시전 능력 수정치(대형) 또는 2d12 + 3 + 주문 시전 능력 수정치(대규모).</p>\n</div>"
         }
       }
     },
@@ -78,7 +78,7 @@
       "items": {
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 피해 equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 같습니다. 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 경계는 1d4 + 3(중간 이하), 2d6 + 3 + 주문 시전 능력 수정치(대형) 또는 2d12 + 3 + 주문 시전 능력 수정치(대규모).</p>\n</div>"
         }
       }
     },
@@ -86,7 +86,7 @@
       "items": {
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 피해 equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 같습니다. 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 경계는 1d4 + 3(중간 이하), 2d6 + 3 + 주문 시전 능력 수정치(대형) 또는 2d12 + 3 + 주문 시전 능력 수정치(대규모).</p>\n</div>"
         }
       }
     },
@@ -94,7 +94,7 @@
       "items": {
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 피해 equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 같습니다. 사거리 5피트 <em>Hit:</em> &Reference[force]{역장} 경계는 1d4 + 3(중간 이하), 2d6 + 3 + 주문 시전 능력 수정치(대형) 또는 2d12 + 3 + 주문 시전 능력 수정치(대규모).</p>\n</div>"
         }
       }
     },
@@ -106,7 +106,7 @@
       "items": {
         "Clenched Fist": {
           "name": "쥔 주먹 - Clenched Fist",
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force 피해를 받습니다.</p>"
+          "description": "<p>손이 크리처 하나 또는 5피트 이내에 있는 물체를칩니다. 게임 통계를 사용하여 근접 공격 주문을 만드세요. 명중 시, 대상은 4d8 force 외부에서 제외됩니다.</p>"
         },
         "Forceful Hand": {
           "name": "강권의 손 - Forceful Hand"
@@ -116,7 +116,7 @@
         },
         "Interposing Hand": {
           "name": "가로막는 손 - Interposing Hand",
-          "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
+          "description": "<p>손은 당신이 손에 다른 명령을 내릴 때까지 당신과 당신이 선택한 생물 사이에 개입합니다. 손이 당신과 목표 사이에 머물도록 움직여 목표에 대해 절반의 엄폐물을 제공합니다. 대상의 힘 점수가 손의 힘 점수보다 작거나 같으면 대상은 손의 공간을 통해 이동할 수 없습니다. 힘 점수가 손의 힘 점수보다 높으면 대상은 손의 공간을 통해 당신을 향해 이동할 수 있지만 그 공간은 대상에게 어려운 지형입니다.</p>"
         }
       }
     },
@@ -125,7 +125,7 @@
       "items": {
         "Clenched Fist": {
           "name": "쥔 주먹 - Clenched Fist",
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force 피해를 받습니다.</p>"
+          "description": "<p>손이 크리처 하나 또는 5피트 이내에 있는 물체를칩니다. 게임 통계를 사용하여 근접 공격 주문을 만드세요. 명중 시, 대상은 4d8 force 외부에서 제외됩니다.</p>"
         },
         "Forceful Hand": {
           "name": "강권의 손 - Forceful Hand"
@@ -135,7 +135,7 @@
         },
         "Interposing Hand": {
           "name": "가로막는 손 - Interposing Hand",
-          "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
+          "description": "<p>손은 당신이 손에 다른 명령을 내릴 때까지 당신과 당신이 선택한 생물 사이에 개입합니다. 손이 당신과 목표 사이에 머물도록 움직여 목표에 대해 절반의 엄폐물을 제공합니다. 대상의 힘 점수가 손의 힘 점수보다 작거나 같으면 대상은 손의 공간을 통해 이동할 수 없습니다. 힘 점수가 손의 힘 점수보다 높으면 대상은 손의 공간을 통해 당신을 향해 이동할 수 있지만 그 공간은 대상에게 어려운 지형입니다.</p>"
         }
       }
     },
@@ -144,7 +144,7 @@
       "items": {
         "Clenched Fist": {
           "name": "쥔 주먹 - Clenched Fist",
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force 피해를 받습니다.</p>"
+          "description": "<p>손이 크리처 하나 또는 5피트 이내에 있는 물체를칩니다. 게임 통계를 사용하여 근접 공격 주문을 만드세요. 명중 시, 대상은 4d8 force 외부에서 제외됩니다.</p>"
         },
         "Forceful Hand": {
           "name": "강권의 손 - Forceful Hand"
@@ -154,7 +154,7 @@
         },
         "Interposing Hand": {
           "name": "가로막는 손 - Interposing Hand",
-          "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
+          "description": "<p>손은 당신이 손에 다른 명령을 내릴 때까지 당신과 당신이 선택한 생물 사이에 개입합니다. 손이 당신과 목표 사이에 머물도록 움직여 목표에 대해 절반의 엄폐물을 제공합니다. 대상의 힘 점수가 손의 힘 점수보다 작거나 같으면 대상은 손의 공간을 통해 이동할 수 없습니다. 힘 점수가 손의 힘 점수보다 높으면 대상은 손의 공간을 통해 당신을 향해 이동할 수 있지만 그 공간은 대상에게 어려운 지형입니다.</p>"
         }
       }
     },
@@ -163,7 +163,7 @@
       "items": {
         "Clenched Fist": {
           "name": "쥔 주먹 - Clenched Fist",
-          "description": "<p>The hand strikes 크리처 하나 or object within 5 feet of it. Make a melee spell Attack for the hand using your game Statistics. 명중 시, 대상은 4d8 force 피해를 받습니다.</p>"
+          "description": "<p>손이 크리처 하나 또는 5피트 이내에 있는 물체를칩니다. 게임 통계를 사용하여 근접 공격 주문을 만드세요. 명중 시, 대상은 4d8 force 외부에서 제외됩니다.</p>"
         },
         "Forceful Hand": {
           "name": "강권의 손 - Forceful Hand"
@@ -173,7 +173,7 @@
         },
         "Interposing Hand": {
           "name": "가로막는 손 - Interposing Hand",
-          "description": "<p>The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p>"
+          "description": "<p>손은 당신이 손에 다른 명령을 내릴 때까지 당신과 당신이 선택한 생물 사이에 개입합니다. 손이 당신과 목표 사이에 머물도록 움직여 목표에 대해 절반의 엄폐물을 제공합니다. 대상의 힘 점수가 손의 힘 점수보다 작거나 같으면 대상은 손의 공간을 통해 이동할 수 없습니다. 힘 점수가 손의 힘 점수보다 높으면 대상은 손의 공간을 통해 당신을 향해 이동할 수 있지만 그 공간은 대상에게 어려운 지형입니다.</p>"
         }
       }
     },
@@ -263,14 +263,14 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Radiant Mace": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 1d10 + 3 + @item.level type=radiant average=true]] damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 임시 HP.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치, 사거리 5 피트 <em>Hit:</em> [[/damage 1d10 + 3 + @item.level type=radiant average=true]] 피해와 동일하며 영혼은 스스로 선택할 수 있습니다. 또는 대상으로부터 10피트 이내에서 볼 수 있는 다른 생물. 선택된 생물은 1d10 임시 HP를 얻습니다.</p>\n</div>"
         }
       }
     },
     "Conjured Air Elemental": {
       "items": {
         "Air Element": {
-          "description": "<div class=\"ddb\">\n<p> </p><p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p><p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes  [[/damage 8d8 average=true]] damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. 내성 굴림에 실패하면, the target takes 4d8 damage of the spirit's type. 내성 굴림에 성공하면, the target isn't Restrained by the spirit.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> </p><p>범위 내 비어 있는 공간에 나타나는 정령계에서 무형의 대형 영혼을 불러냅니다. 피해 유형을 결정하는 영혼의 요소(공기(번개), 대지(천둥), 불(불) 또는 물(냉기))를 선택합니다. 영혼은 지속 시간 동안 지속됩니다.</p><p>당신이 볼 수 있는 생물이 영혼의 공간에 들어가거나 영혼의 5피트 이내에서 회전을 시작할 때마다, 영혼에 억제된 생물이 없으면 해당 생물이 민첩 내성 굴림을 하도록 강제할 수 있습니다. 저장에 실패하면 대상은 영혼 유형의 [[/damage 8d8 average=true]] 피해를 입고 주문이 끝날 때까지 대상은 억제 상태를 유지합니다. 각 턴이 시작될 때 억제된 대상은 저장을 반복합니다. 굴림에 실패하면, 대상은 영혼 유형의 4d8 피해를 입습니다. 움직여 굴림에 성공하면, 대상은 정신에 의해 구속되지 않습니다.</p>\n</div>"
         }
       }
     },
@@ -284,7 +284,7 @@
     "Conjured Earth Elemental": {
       "items": {
         "Earth Element": {
-          "description": "<div class=\"ddb\">\n<p> </p><p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p><p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes  [[/damage 8d8 average=true]] damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. 내성 굴림에 실패하면, the target takes 4d8 damage of the spirit's type. 내성 굴림에 성공하면, the target isn't Restrained by the spirit.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> </p><p>범위 내 비어 있는 공간에 나타나는 정령계에서 무형의 대형 영혼을 불러냅니다. 피해 유형을 결정하는 영혼의 요소(공기(번개), 대지(천둥), 불(불) 또는 물(냉기))를 선택합니다. 영혼은 지속 시간 동안 지속됩니다.</p><p>당신이 볼 수 있는 생물이 영혼의 공간에 들어가거나 영혼의 5피트 이내에서 회전을 시작할 때마다, 영혼에 억제된 생물이 없으면 해당 생물이 민첩 내성 굴림을 하도록 강제할 수 있습니다. 저장에 실패하면 대상은 영혼 유형의 [[/damage 8d8 average=true]] 피해를 입고 주문이 끝날 때까지 대상은 억제 상태를 유지합니다. 각 턴이 시작될 때 억제된 대상은 저장을 반복합니다. 굴림에 실패하면, 대상은 영혼 유형의 4d8 피해를 입습니다. 움직여 굴림에 성공하면, 대상은 정신에 의해 구속되지 않습니다.</p>\n</div>"
         }
       }
     },
@@ -292,21 +292,21 @@
       "items": {
         "Psychic Attack": {
           "name": "정신 공격 - Psychic Attack",
-          "description": "<div class=\"ddb\">\n<p> When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. 명중 시, 대상은 &Reference[psychic]{정신} 피해 equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear를 받습니다.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> 영혼이 나타나면 5피트 이내에 있는 생물에 대해 한 번의 근접 주문 공격을 할 수 있습니다. 명중 시, 대상은 &Reference[psychic]{정신} 3d12에 당신의 주문 시전 능력 수정치를 더한 것과 동일하며, 대상은 당신의 다음 턴이 시작될 때까지 겁에 질린 상태를 가지며, 당신과 영혼 모두 공포의 근원이 됩니다.</p>\n</div>"
         }
       }
     },
     "Conjured Fire Elemental": {
       "items": {
         "Fire Element": {
-          "description": "<div class=\"ddb\">\n<p> </p><p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p><p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes  [[/damage 8d8 average=true]] damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. 내성 굴림에 실패하면, the target takes 4d8 damage of the spirit's type. 내성 굴림에 성공하면, the target isn't Restrained by the spirit.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> </p><p>범위 내 비어 있는 공간에 나타나는 정령계에서 무형의 대형 영혼을 불러냅니다. 피해 유형을 결정하는 영혼의 요소(공기(번개), 대지(천둥), 불(불) 또는 물(냉기))를 선택합니다. 영혼은 지속 시간 동안 지속됩니다.</p><p>당신이 볼 수 있는 생물이 영혼의 공간에 들어가거나 영혼의 5피트 이내에서 회전을 시작할 때마다, 영혼에 억제된 생물이 없으면 해당 생물이 민첩 내성 굴림을 하도록 강제할 수 있습니다. 저장에 실패하면 대상은 영혼 유형의 [[/damage 8d8 average=true]] 피해를 입고 주문이 끝날 때까지 대상은 억제 상태를 유지합니다. 각 턴이 시작될 때 억제된 대상은 저장을 반복합니다. 굴림에 실패하면, 대상은 영혼 유형의 4d8 피해를 입습니다. 움직여 굴림에 성공하면, 대상은 정신에 의해 구속되지 않습니다.</p>\n</div>"
         }
       }
     },
     "Conjured Water Elemental": {
       "items": {
         "Water Element": {
-          "description": "<div class=\"ddb\">\n<p> </p><p>You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold). The spirit lasts for the duration.</p><p>Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes  [[/damage 8d8 average=true]] damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. 내성 굴림에 실패하면, the target takes 4d8 damage of the spirit's type. 내성 굴림에 성공하면, the target isn't Restrained by the spirit.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> </p><p>범위 내 비어 있는 공간에 나타나는 정령계에서 무형의 대형 영혼을 불러냅니다. 피해 유형을 결정하는 영혼의 요소(공기(번개), 대지(천둥), 불(불) 또는 물(냉기))를 선택합니다. 영혼은 지속 시간 동안 지속됩니다.</p><p>당신이 볼 수 있는 생물이 영혼의 공간에 들어가거나 영혼의 5피트 이내에서 회전을 시작할 때마다, 영혼에 억제된 생물이 없으면 해당 생물이 민첩 내성 굴림을 하도록 강제할 수 있습니다. 저장에 실패하면 대상은 영혼 유형의 [[/damage 8d8 average=true]] 피해를 입고 주문이 끝날 때까지 대상은 억제 상태를 유지합니다. 각 턴이 시작될 때 억제된 대상은 저장을 반복합니다. 굴림에 실패하면, 대상은 영혼 유형의 4d8 피해를 입습니다. 움직여 굴림에 성공하면, 대상은 정신에 의해 구속되지 않습니다.</p>\n</div>"
         }
       }
     },
@@ -349,7 +349,7 @@
           "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"><em> 근접 무기 공격:</em> your spell attack modifier 명중, 사거리 5피트, 목표 하나. <em>Hit:</em>  [[/damage 1d8 + 4 + @item.level type=bludgeoning average=true]] 피해.</p>\n</div>"
         },
         "Stony Lethargy": {
-          "description": "<div class=\"ddb\">\n<p><em><strong>Stony Lethargy (Stone Only).</strong></em> When a creature the construct can see starts its turn within 10 feet of the construct, the construct can force it to make a Wisdom saving throw against your spell save DC. 내성 굴림에 실패하면, the target can't use reactions and its speed is halved until the start of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><em><strong>스토니 무기력(돌 전용).</strong></em> 구조물이 볼 수 있는 생물이 구조물의 10피트 내에서 차례를 시작하면 구조물은 강제로 DC를 저장하는 주문에 대해 지혜 내성 굴림을 하게 할 수 있습니다. 움직여 굴에 실패하면, 대상은 반응을 사용할 수 없으며 다음 턴이 시작될 때까지 속도가 절반으로 줄어듭니다.</p>\n</div>"
         }
       }
     },
@@ -377,7 +377,7 @@
     "Draconic Spirit": {
       "items": {
         "Breath Weapon": {
-          "description": "<div class=\"ddb\">\n<p><strong><em> </em></strong><em>민첩 내성 굴림:</em> DC equals your spell save DC, each creature in a 30-foot Cone. <em>Failure:</em>  [[/damage 2d6 average=true]] damage of a type this spirit has 저항: (your choice when you cast the spell). <em>Success:</em> 절반 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em> </em></strong><em>민첩 뭉 굴림:</em> DC는 30피트 원뿔에 있는 각 생물의 주문 저장 DC와 같습니다. <em>실패:</em> [[/damage 2d6 average=true]] 이 정신이 저항을 갖는 유형의 피해: (주문을 시전할 때 선택). <em>성공:</em> 하늘에서.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -446,7 +446,7 @@
         },
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> 1d10 + 4 + the spell's level Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치, 사거리 5피트 <em>Hit:</em> 1d10 + 4 + 주문 레벨과 같습니다. Bludgeoning(지구 전용), Cold(물 전용), Lightning(공기 전용) 또는 Fire(불 전용).</p>\n</div>"
         }
       }
     },
@@ -489,7 +489,7 @@
           "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 2d6 + 3 + @item.level type=force average=true]] 피해.</p>\n</div>"
         },
         "Fey Step": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit's chosen mood:</p><p><strong>Fuming.</strong> The spirit has 이점 on the next attack roll it makes before the end of this turn.</p><p><strong>Mirthful.</strong> <em>지혜 내성 굴림:</em> DC equals your spell save DC, 크리처 하나 the spirit can see within 10 feet of itself. <em>Failure:</em> The target is Charmed by you and the spirit for 1 minute or until the target takes any 피해.</p><p><strong>Tricksy.</strong> The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which lasts until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 영혼은 마법처럼 자신이 볼 수 있는 비어 있는 공간으로 최대 30피트까지 순간이동합니다. 그런 다음 영혼이 선택한 기분에 따라 다음 효과 중 하나가 발생합니다.</p><p><strong>Fuming.</strong> 영혼은 이 턴이 끝나기 전에 만드는 다음 공격 굴림에 이점을 갖습니다.</p><p><strong>Mirthful.</strong> <em>지혜 분리 굴림:</em> DC는 주문 저장 DC와 같습니다. 크리처 하나 영혼은 자신으로부터 10피트 이내를 볼 수 있습니다. <em>Failure:</em> 대상은 1분 동안 또는 대상이 아무 것도 취할 때까지 당신과 영혼에 매료됩니다.</p><p><strong>Tricksy.</strong> 영혼은 5피트 내의 10피트 큐브를 마법의 어둠으로 채웁니다. 이는 다음이 끝날 때까지 지속됩니다. 차례.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -500,7 +500,7 @@
     "Fey Spirit (Mirthful)": {
       "items": {
         "Mirthful": {
-          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> The fey can force 크리처 하나 it can see within 10 feet of it to make a Wisdom saving throw against your spell save DC. Unless the save succeeds, the target is charmed by you and the fey for 1 minute or until the target takes any 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> 페이는 크리처 하나가 10피트 이내에서 볼 수 있도록 강제하여 주문 내성 DC에 대해 지혜 내성 굴림을 하게 할 수 있습니다. 저장에 성공하지 않으면 대상은 1분 동안 또는 대상이 아무 것도 취할 때까지 당신과 페이에게 매혹됩니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -518,7 +518,7 @@
           "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 2d6 + 3 + @item.level type=force average=true]] 피해.</p>\n</div>"
         },
         "Fey Step": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit's chosen mood:</p><p><strong>Fuming.</strong> The spirit has 이점 on the next attack roll it makes before the end of this turn.</p><p><strong>Mirthful.</strong> <em>지혜 내성 굴림:</em> DC equals your spell save DC, 크리처 하나 the spirit can see within 10 feet of itself. <em>Failure:</em> The target is Charmed by you and the spirit for 1 minute or until the target takes any 피해.</p><p><strong>Tricksy.</strong> The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which lasts until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 영혼은 마법처럼 자신이 볼 수 있는 비어 있는 공간으로 최대 30피트까지 순간이동합니다. 그런 다음 영혼이 선택한 기분에 따라 다음 효과 중 하나가 발생합니다.</p><p><strong>Fuming.</strong> 영혼은 이 턴이 끝나기 전에 만드는 다음 공격 굴림에 이점을 갖습니다.</p><p><strong>Mirthful.</strong> <em>지혜 분리 굴림:</em> DC는 주문 저장 DC와 같습니다. 크리처 하나 영혼은 자신으로부터 10피트 이내를 볼 수 있습니다. <em>Failure:</em> 대상은 1분 동안 또는 대상이 아무 것도 취할 때까지 당신과 영혼에 매료됩니다.</p><p><strong>Tricksy.</strong> 영혼은 5피트 내의 10피트 큐브를 마법의 어둠으로 채웁니다. 이는 다음이 끝날 때까지 지속됩니다. 차례.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -549,7 +549,7 @@
     "Fiendish Spirit (Devil)": {
       "items": {
         "Hurl Flame": {
-          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> <em>원거리 주문 공격:</em> your spell attack modifier 명중, 사거리 150피트, 목표 하나. <em>Hit:</em>  [[/damage 2d6 + 3 + @item.level type=fire average=true]] 피해. If the target is a flammable object that isn't being worn or carried, it also catches fire.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> <em>원거리 명령 공격:</em> your Spell Attack Modifier 명중, 사거리 150 피트, 목표 하나. <em>히트:</em> [[/damage 2d6 + 3 + @item.level type=fire average=true]] 반대편. 대상이 착용하거나 운반하지 않는 가연성 물체인 경우에도 불이 붙습니다.</p>\n</div>"
         },
         "Magic Resistance": {
           "name": "마법 저항 - Magic Resistance",
@@ -565,7 +565,7 @@
       "items": {
         "Claws": {
           "name": "발톱 - Claws",
-          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> <em>근접 무기 공격:</em> your spell attack modifier 명중, 사거리 5피트, 목표 하나. <em>Hit:</em>  [[/damage 1d8 + 3 + @item.level type=slashing average=true]] 피해. Immediately after the attack hits or misses, the fiend can magically teleport up to 30 feet to an unoccupied space it can see.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p class=\"Stat-Block-Styles_Stat-Block-Body\"> <em>근접 무기 공격:</em> your 주문 공격 수정자 명중, 사거리 5 피트, 목표 하나. <em>히트:</em> [[/damage 1d8 + 3 + @item.level type=slashing average=true]] 반대편. 공격이 명중하거나 빗나간 직후, 악마는 자신이 볼 수 있는 비어 있는 공간으로 최대 30피트까지 마법처럼 순간이동할 수 있습니다.</p>\n</div>"
         },
         "Magic Resistance": {
           "name": "마법 저항 - Magic Resistance",
@@ -586,7 +586,7 @@
         },
         "Claw": {
           "name": "발톱 - Claw",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 근접 공격 굴림: <span data-dicenotation=\"1d20+5\" data-rolltype=\"to hit\" data-rollaction=\"Claw\">+5</span>, 사거리 5피트 <em>Hit:</em> 10 <span data-dicenotation=\"2d6+3\" data-rolltype=\"damage\" data-rollaction=\"Claw\" data-rolldamagetype=\"Slashing\">(2d6 + 3)</span> Slashing 피해. If the target is a non-Undead creature, it is subjected to the following effect. <em>건강 내성 굴림:</em> DC 10. <em>Failure:</em> The target has the &Reference[paralyzed]{paralyzed} condition until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 흡입 공격 굴림: <span data-dicenotation=\"1d20+5\" data-rolltype=\"to hit\" data-rollaction=\"Claw\">+5</span>, 사거리 5피트 <em>Hit:</em> 10 <span data-dicenotation=\"2d6+3\" data-rolltype=\"damage\" data-rollaction=\"Claw\" data-rolldamagetype=\"Slashing\">(2d6 + 3)</span> 슬래싱 부분입니다. 대상이 언데드가 아닌 생물이라면 다음과 같은 효과를 받습니다. <em> 건강 로그인 굴림:</em> DC 10. <em>Failure:</em> 대상은 다음 턴이 끝날 때까지 &Reference[paralyzed]{paralyzed} 조건을 갖습니다.</p>\n</div>"
         },
         "Stench": {
           "name": "악취 - Stench",
@@ -603,7 +603,7 @@
         },
         "Claw": {
           "name": "발톱 - Claw",
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 근접 공격 굴림: <span data-dicenotation=\"1d20+4\" data-rolltype=\"to hit\" data-rollaction=\"Claw\">+4</span>, 사거리 5피트 <em>Hit:</em> 4 <span data-dicenotation=\"1d4+2\" data-rolltype=\"damage\" data-rollaction=\"Claw\" data-rolldamagetype=\"Slashing\">(1d4 + 2)</span> Slashing 피해. If the target is a creature that isn't an Undead or elf, it is subjected to the following effect. <em>건강 내성 굴림:</em> DC 10. <em>Failure:</em> The target has the &Reference[paralyzed]{paralyzed} condition until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> 흡입 공격 굴림: <span data-dicenotation=\"1d20+4\" data-rolltype=\"to hit\" data-rollaction=\"Claw\">+4</span>, 사거리 5피트 <em>Hit:</em> 4 <span data-dicenotation=\"1d4+2\" data-rolltype=\"damage\" data-rollaction=\"Claw\" data-rolldamagetype=\"Slashing\">(1d4 + 2)</span> 슬래싱 부분입니다. 대상이 언데드나 엘프가 아닌 생물일 경우, 다음과 같은 효과를 받습니다. <em> 건강 로그인 굴림:</em> DC 10. <em>Failure:</em> 대상은 다음 턴이 끝날 때까지 &Reference[paralyzed]{paralyzed} 조건을 갖습니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -625,7 +625,7 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 능력 판정 없이도 천장에 거꾸로 매달리는 행위를 포함하여 어려운 표면을 등반할 수 있습니다.</p>"
         },
         "Venomous Spew": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>건강 내성 굴림:</em> Your spell save DC, 크리처 하나 the insect can see within 10 feet. <em>Failure:</em> The target has the Poisoned condition until the start of the insect's next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em> 건강 모아 굴림:</em> 주문 저장 DC, 크리처 하나 곤충은 10피트 이내에서 볼 수 있습니다. <em>실패:</em> 대상은 곤충의 다음 턴이 시작될 때까지 중독 상태를 유지합니다.</p>\n</div>"
         }
       }
     },
@@ -643,7 +643,7 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 능력 판정 없이도 천장에 거꾸로 매달리는 행위를 포함하여 어려운 표면을 등반할 수 있습니다.</p>"
         },
         "Web Bolt": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>원거리 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 60피트 <em>Hit:</em>  [[/damage 1d10 + 3 + @item.level average=true]] damage, and the target's Speed is reduced to 0 until the start of the insect's next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>원 거리 공격 굴림:</em> 보너스는 주문 공격 수정치, 사거리 60 피트 <em>Hit:</em> [[/damage 1d10 + 3 + @item.level average=true]] 피해와 동일하며 대상의 곤충의 다음 턴이 시작될 때까지 속도는 0으로 감소됩니다.</p>\n</div>"
         }
       }
     },
@@ -665,14 +665,14 @@
     "Grasping Vine": {
       "items": {
         "Vine Attack": {
-          "description": "<div class=\"ddb\">\n<p> You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine.<br><br>Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p><p></p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> 당신은 범위 내에서 볼 수 있는 당신이 선택한 빈 공간의 땅에서 싹이 트는 덩굴을 불러냅니다. 이 주문을 시전하면 덩굴이 당신이 볼 수 있는 30피트 이내의 생물체를 공격하도록 지시할 수 있습니다. 해당 생물은 민첩 내성 굴림에 성공하거나 덩굴을 향해 20피트 직접 당겨져야 합니다.<br><br>주문이 끝날 때까지 덩굴이 각 턴의 보너스 행동으로 동일한 생물이나 다른 생물을 공격하도록 지시할 수 있습니다.</p><p></p>\n</div>"
         }
       }
     },
     "Guardian of Faith": {
       "items": {
         "Guardian Aura": {
-          "description": "<div class=\"ddb\">\n<p><em><strong>Guardian Aura.</strong></em> ?</p><p>Any enemy that</p><p>A Large spectral guardian appears and hovers for the duration in an unoccupied space that you can see within range. The guardian occupies that space and is invulnerable, and it appears in a form appropriate for your deity or pantheon.</p><p>Any enemy that moves to a space within 10 feet of the guardian for the first time on a turn or starts its turn there makes a Dexterity saving throw, taking 20 &Reference[radiant]{광휘} 피해 on a failed save or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><em><strong>가디언 오라.</strong></em> ?</p><p>모든 적</p><p>A 대형 스펙트럼 가디언이 나타나 범위 내에서 볼 수 있는 비어 있는 공간에 일정 시간 동안 떠다닙니다. 가디언은 그 공간을 차지하며 무적이며, 당신의 신이나 판테온에 적합한 형태로 나타납니다.</p><p>턴에 처음으로 가디언으로부터 10피트 이내의 공간으로 이동하거나 그곳에서 턴을 시작하는 적은 민첩 내성 굴림을 하며, 내성 굴림에 실패하면 20 &Reference[radiant]{광휘}을 받거나 성공하면 절반의 피해를 입습니다. 가디언은 총 60개를 처리하면 사라집니다.</p>\n</div>"
         }
       }
     },
@@ -681,7 +681,7 @@
       "items": {
         "Bite": {
           "name": "물기 - Bite",
-          "description": "<section class=\"secret\">\n<p><em>근접 무기 공격:</em><strong>+5 명중,</strong>, <strong>5 ft.,</strong> 목표 하나. Hit: <strong>10 (2d6 + 3) <em>piercing damage</em></strong>.</p>\n<p>If the target is a creature, it must succeed on a  <strong>DC 13 Strength</strong> saving throw or be knocked prone.</p>\n</section>\n<p>The Dire Wolf attacks with its Bite. If the target is a creature, it must make a <strong>Strength</strong> saving throw or be knocked prone.</p>"
+          "description": "<section class=\"secret\">\n<p><em>근접 무기 공격:</em><strong>+5 명중,</strong>, <strong>5 ft.,</strong> 목표 하나. 적중: <strong>10 (2d6 + 3) <em>관통 피해</em></strong>.</p>\n<p>대상이 생물인 경우, <strong>DC 13 힘</strong> 내성 굴림에 성공해야 하며 그렇지 않으면 넘어지게 됩니다.</p>\n</section>\n<p>다이어 울프는 바이트(Bite)로 공격합니다. 대상이 생물인 경우 <strong>Strength</strong> 내성 굴림을 하거나 쓰러뜨려야 합니다.</p>"
         },
         "Keen Hearing and Smell": {
           "name": "예리한 청각과 후각 - Keen Hearing and Smell"
@@ -728,7 +728,7 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Rotting Fist": {
-          "description": "<div class=\"ddb\">\n<p>근접 공격 굴림: <span data-dicenotation=\"1d20+5\" data-rolltype=\"to hit\" data-rollaction=\"Rotting Fist\">+5</span>, 사거리 5피트 <em>Hit:</em> 8 <span data-dicenotation=\"1d10+3\" data-rolltype=\"damage\" data-rollaction=\"Rotting Fist\" data-rolldamagetype=\"Bludgeoning\">(1d10 + 3)</span> Bludgeoning 피해에 더해 10 <span data-dicenotation=\"3d6\" data-rolltype=\"damage\" data-rollaction=\"Rotting Fist\" data-rolldamagetype=\"Necrotic\">(3d6)</span> Necrotic 피해. If the target is a creature, it is cursed. While cursed, the target can't regain Hit Points, its Hit Point maximum doesn't return to normal when finishing a Long Rest, and its Hit Point maximum decreases by 10 <span data-dicenotation=\"3d6\" data-rolltype=\"roll\" data-rollaction=\"Rotting Fist\">(3d6)</span> every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Hit Points by this attack.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p>근접 공격 굴림: <span data-dicenotation=\"1d20+5\" data-rolltype=\"to hit\" data-rollaction=\"Rotting Fist\">+5</span>, 사거리 5피트 <em>Hit:</em> 8 <span data-dicenotation=\"1d10+3\" data-rolltype=\"damage\" data-rollaction=\"Rotting Fist\" data-rolldamagetype=\"Bludgeoning\">(1d10 + 3)</span> Bludgeoning 천국에 더해 10 <span data-dicenotation=\"3d6\" data-rolltype=\"damage\" data-rollaction=\"Rotting Fist\" data-rolldamagetype=\"Necrotic\">(3d6)</span> 괴사적인 영역. 대상이 생물이라면 저주를 받습니다. 저주에 걸린 동안 대상은 체력을 회복할 수 없으며, 긴 휴식을 마친 후에도 최대 체력이 정상으로 돌아오지 않으며, 최대 체력은 24시간마다 10 <span data-dicenotation=\"3d6\" data-rolltype=\"roll\" data-rollaction=\"Rotting Fist\">(3d6)</span>씩 감소합니다. 이 공격으로 체력이 0으로 감소하면 생물은 죽고 먼지로 변합니다.</p>\n</div>"
         }
       }
     },
@@ -742,7 +742,7 @@
           "name": "생명 결속 - Life Bond"
         },
         "Otherworldly Slam": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> 1d8 plus the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치인 사거리 5피트 <em>Hit:</em> 1d8에 주문의 Radiant 레벨을 더한 것과 같습니다. (Celestial), Psychic (Fey), or Necrotic (Fiend) 무한.</p>\n</div>"
         }
       }
     },
@@ -752,20 +752,20 @@
           "name": "생명 결속 - Life Bond"
         },
         "Otherworldly Slam": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> 1d8 plus the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치인 사거리 5피트 <em>Hit:</em> 1d8에 주문의 Radiant 레벨을 더한 것과 같습니다. (Celestial), Psychic (Fey), or Necrotic (Fiend) 무한.</p>\n</div>"
         }
       }
     },
     "Otherworldly Steed (Fiend)": {
       "items": {
         "Fell Glare": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>지혜 내성 굴림:</em> DC equals your spell save DC, 크리처 하나 within 60 feet the steed can see. <em>Failure:</em> The target has the Frightened condition until the end of your next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>지혜 군중 굴림:</em> DC는 주문 저장 DC와 동일하며 크리처 하나는 말이 볼 수 있는 60피트 이내입니다. <em>실패:</em> 대상은 다음 턴이 끝날 때까지 공포 상태를 유지합니다.</p>\n</div>"
         },
         "Life Bond": {
           "name": "생명 결속 - Life Bond"
         },
         "Otherworldly Slam": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em> 1d8 plus the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) 피해.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치인 사거리 5피트 <em>Hit:</em> 1d8에 주문의 Radiant 레벨을 더한 것과 같습니다. (Celestial), Psychic (Fey), or Necrotic (Fiend) 무한.</p>\n</div>"
         }
       }
     },
@@ -831,14 +831,14 @@
     "Spiritual Weapon": {
       "items": {
         "Move and Attack": {
-          "description": "<div class=\"ddb\">\n<p> </p><p>You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against 크리처 하나 within 5 feet of the force. 명중 시, 대상은 &Reference[force]{역장} 피해 equal to 1d8 plus your spellcasting ability modifier를 받습니다.</p><p>As a 추가 행동 on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p></p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p> </p><p>당신은 선택한 무기와 유사하고 지속 시간 동안 지속되는 떠다니는 스펙트럼 힘을 생성합니다. 힘은 당신이 선택한 공간의 범위 내에 나타나며, 힘으로부터 5피트 이내의 크리처 하나를 상대로 즉시 근접 주문 공격을 1회 할 수 있습니다. 명중 시, 대상은 &Reference[force]{역장} 1d8에 주문 시전 능력 수정자를 더한 것과 동일합니다.</p><p>나중 턴에 추가 행동으로, 힘을 최대 20피트까지 이동하고 5피트 내의 생물에 대해 공격을 반복할 수 있습니다.</p><p></p>\n</div>"
         }
       }
     },
     "Undead Spirit (Ghostly)": {
       "items": {
         "Deathly Touch": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 1d8 + 3 + @item.level type=necrotic average=true]] damage, and the target has the Frightened condition until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치, 사거리 5 피트 <em>Hit:</em> [[/damage 1d8 + 3 + @item.level type=necrotic average=true]] 피해와 동일하며 대상은 다음 턴이 끝날 때까지 공포 상태입니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
@@ -849,14 +849,14 @@
     "Undead Spirit (Putrid)": {
       "items": {
         "Festering Aura": {
-          "description": "<div class=\"ddb\">\n<p><strong><em>Festering Aura (Putrid Only).</em></strong> <em>건강 내성 굴림:</em> DC equals your spell save DC, any creature (other than you) that starts its turn within a 5-foot Emanation originating from the spirit. <em>Failure:</em> The creature has the Poisoned condition until the start of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em>Festering Aura (Putrid Only).</em></strong> <em>건강에 따른 굴림:</em> DC는 영혼에서 발생하는 5피트 발산 내에서 차례를 시작하는 DC, 모든 생물(당신 제외)을 저장하는 주문과 같습니다. <em>실패:</em> 생물은 다음 턴이 시작될 때까지 중독 상태를 유지합니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Rotting Claw": {
-          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> Bonus equals your spell attack modifier, 사거리 5피트 <em>Hit:</em>  [[/damage 1d6 + 3 + @item.level type=slashing average=true]] 피해. If the target has the Poisoned condition, it has the Paralyzed condition until the end of its next turn.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><strong><em></em></strong> <em>근접 공격 굴림:</em> 보너스는 주문 공격 수정치와 동일합니다. 대상이 중독 상태인 경우 다음 턴이 끝날 때까지 마비 상태를 유지합니다.</p>\n</div>"
         }
       }
     },
@@ -879,7 +879,7 @@
       "items": {
         "Life Drain": {
           "name": "생명력 흡수 - Life Drain",
-          "description": "<div class=\"ddb\">\n<p><em> 건강 내성 굴림:</em> DC 13, 크리처 하나 within 5 feet. <em>Failure:</em> 6 <span data-dicenotation=\"1d8+2\" data-rolltype=\"damage\" data-rollaction=\"Life Drain\" data-rolldamagetype=\"Necrotic\">(1d8 + 2)</span> &Reference[necrotic]{강령} 피해, and the target's Hit Point maximum decreases by an amount equal to the damage taken.<br> A Humanoid slain by this attack rises 24 hours later as a @UUID[world.ddb---ddb-monsters.ddbWight5195269I]{Zombie} under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time.</p>\n</div>"
+          "description": "<div class=\"ddb\">\n<p><em> 건강 진공 굴림:</em> DC 13, 크리처 하나 5피트 이내. <em>Failure:</em> 6 <span data-dicenotation=\"1d8+2\" data-rolltype=\"damage\" data-rollaction=\"Life Drain\" data-rolldamagetype=\"Necrotic\">(1d8 + 2)</span> &Reference[necrotic]{강령} 멀리, 대상의 최대 HP는 받은 피해만큼 감소합니다.<br> 이 공격으로 살해된 인간형은 24시간 후 @UUID[world.ddb---ddb-monsters.ddbWight5195269I]{Zombie} 아래에 @UUID[world.ddb---ddb-monsters.ddbWight5195269I]{Zombie}로 일어납니다. 인간형이 다시 살아나거나 그 몸이 파괴되지 않는 한 와이트의 통제권은 없습니다. 와이트는 한 번에 12마리 이상의 좀비를 통제할 수 없습니다.</p>\n</div>"
         },
         "Multiattack": {
           "name": "다중공격 - Multiattack",

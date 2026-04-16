@@ -6,14 +6,14 @@
       "description": "<p>14레벨부터 당신은 Broken World를 사악한 감옥으로 사용하는 법을 익힌다. 주문 슬롯을 소모하지 않고 @Compendium[dnd5e.spells.pxpb2eOB6bv4phAf]{Banishment} 주문을 한 번 시전할 수 있으며, 대상 수는 당신의 카리스마 수정치까지이다(최소 크리처 하나). 이렇게 추방된 대상은 자신의 원래 존재 차원과 상관없이, 주문 지속 시간 동안 Broken World 안의 당신이 지배하는 공간으로 보내진다. 대상은 무력화되고 구속되며, 모든 피해에 면역이고 정상적으로 호흡할 수 있다. 지속 시간이 끝나면, 당신은 대상을 Broken World로 내보낼 수 있다.</p>\n<p>이 특성을 한 번 사용하면, 긴 휴식을 마칠 때까지 다시 사용할 수 없다.</p>"
     },
     "Aura of Justice's Mandate": {
-      "name": "오라 의 - Justice's Mandate"
+      "name": "정의의 오라 - Aura of Justice's Mandate"
     },
     "Avatar of Just Sedition": {
-      "name": "Avatar 의 - Just Sedition",
+      "name": "정당한 소요의 아바타 - Avatar of Just Sedition",
       "description": "<p><span class=\"fontstyle0\">20레벨이 되면, 당신은 압제에 맞서는 봉기의 노래를 불러낼 수 있다. 행동 1회로 1분 동안 다음 이점을 얻는다:</span></p><ul><li><span class=\"fontstyle0\">당신은 실명, 마비, 석화, 또는 기절 상태가 되지 않는다.</span></li><li><span class=\"fontstyle0\">당신은 자신의 이동 속도와 같은 비행 속도를 얻으며, 공중에 떠 있을 수 있다.</span></li><li><span class=\"fontstyle0\">당신의 목소리는 평소보다 최대 3배 크게 울린다.</span></li><li><span class=\"fontstyle0\">주문 슬롯을 소모하지 않고, 자신의 차례마다 한 번 @Compendium[dnd5e.spells.T1vpZLam7LezjToj]{Divine Word} 주문을 시전할 수 있다.</span></li><li><span class=\"fontstyle0\">당신을 볼 수 있는 우호적인 각 크리처는 지속 시간 동안 공격 굴림, 내성 굴림, 또는 능력 판정 중 하나를 한 번 다시 굴릴 수 있다.</span></li></ul><p><span class=\"fontstyle0\">이 특성을 한 번 사용하면, 긴 휴식을 마칠 때까지 다시 사용할 수 없다.</span></p>"
     },
     "Bonus Proficiencies": {
-      "name": "추가 숙련 - Bonus Proficiencies",
+      "name": "보너스 숙련도 - Bonus Proficiencies",
       "description": "<p>3레벨에 전승 학파를 선택하면, 원하는 기술 3개에 숙련됩니다.</p>"
     },
     "Branded Sigil": {
@@ -37,10 +37,10 @@
       "name": "신성 변환: Mandate 의 - Pacifism"
     },
     "Cold Sun's Raystorm": {
-      "name": "Cold 태양's - Raystorm"
+      "name": "차가운 태양의 광선폭풍 - Cold Sun's Raystorm"
     },
     "Concord of Company": {
-      "name": "Concord 의 - Company",
+      "name": "콩코드 오브 컴퍼니 - Concord of Company",
       "description": "<p><span class=\"fontstyle0\">1레벨이 되면, 당신은 적의 마음을 흐리지 않은 채 신의 힘으로 협상의 문을 열 수 있다. </span><span class=\"fontstyle2\">@UUID[Compendium.dnd5e.spells.Item.gvdA9nPuWLck4tBl]{성역화} </span><span class=\"fontstyle0\">주문을 시전할 때, 당신은 당신의 지혜 수정치와 같은 수(최소 1)의 크리처를 대상으로 지정할 수 있다. 또한 이 주문의 사거리는 60피트가 된다.</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\"><br></p>"
     },
     "Demonstrative Destruction": {
@@ -50,7 +50,7 @@
       "description": "<p><span class=\"fontstyle0\">9레벨부터, 당신은 Facade of the Fiend를 착용하지 않은 상태에서도 악마의 외양과 현혹적인 본성을 지니게 된다. @Compendium[dnd5e.spells.CylBa7jR8DSbo8Z3]{Zone of Truth}</span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\">주문에 저항하기 위한 내성 굴림에 자동으로 성공한다. 또한, 크리처들은 당신이 말하거나 적은 거짓을 알아차리기 위한 능력 판정에 불리점을 받는다.</span></p>"
     },
     "Embrace of Slumber": {
-      "name": "Embrace 의 - Slumber"
+      "name": "잠의 포옹 - Embrace of Slumber"
     },
     "Evoke Eclipse (14th)": {
       "description": "<p><span class=\"fontstyle0\">14레벨부터, 전투에서 두려움 없이 행동할 때 당신은 Aubade의 혈호를 얻는다. 당신으로부터 5피트 이내의 적대적 크리처에게 주문으로 화염 또는 냉기 피해를 입히면, 당신은 Eclipse 상태에 들어간다. 다음 자신의 턴 시작 전까지 다음 이점을 얻는다:</span></p><ul><li><span class=\"fontstyle0\">이동 속도가 두 배가 된다.</span></li><li><span class=\"fontstyle0\"><strong>10 </strong>임시 체력을 얻는다.</span></li><li><span class=\"fontstyle0\">추가 행동 1회를 얻으며, 이 행동은 Attack(무기 공격 1회만), Dash, Disengage, Hide, 또는 Use an Object 행동에만 사용할 수 있다.</span></li><li><span class=\"fontstyle0\">당신의 근접 무기 공격은 추가로 <strong>4</strong> 화염 또는 냉기 피해(선택)를 준다. 또한 당신의 화염 피해 주문의 대상은 추가로 <strong>4</strong> 냉기 피해를 받고, 반대로 냉기 피해 주문의 대상은 추가로 <strong>4</strong> 화염 피해를 받는다.</span></li><li><span class=\"fontstyle0\">당신이 자신의 턴에 하는 첫 번째 근접 무기 공격은 이점을 가진다.</span></li></ul>"
@@ -60,17 +60,17 @@
       "description": "<p>당신은 자기 턴에 공격 행동을 할 때마다 공격을 두 번씩 할 수 있습니다.</p><p>가할 수 있는 공격 횟수는 파이터 11레벨에 3번, 20레벨에 4번으로 늘어납니다.</p>"
     },
     "Facade of the Fiend": {
-      "name": "Facade 의 - Fiend"
+      "name": "악마의 외관 - Facade of the Fiend"
     },
     "Finisher: Shooting Star Press": {
-      "name": "Finisher: Shooting 별 - Press",
+      "name": "마무리 : 슈팅스타프레스 - Finisher: Shooting Star Press",
       "description": "<p>다이브에 들어가며 공중제비를 돌고, 충돌의 힘을 적에게 곧장 꽂아 넣는다. 행동으로 Heat 3을 소비해 높은 점프를 할 수 있으며, 평소의 두 배 거리만큼 수직으로 도약하고 이동력을 소모하지 않는다. 당신이 Tiny가 아니고 Small 이상 크기의 크리처 공간에 최소 20피트 이상 낙하하면, 그 크리처는 민첩 내성 굴림을 해야 한다. 내성 굴림에 실패하면, 당신은 낙하 피해를 받지 않고 대상은 낙하로 인한 피해 + 당신의 파이터 레벨 + 당신의 민첩 수정치만큼 피해를 입는다. 또한 대상은 당신보다 두 단계 이상 큰 크기가 아니라면 쓰러진다. 내성 굴림에 성공하면, 당신은 낙하로 인한 피해의 절반만 받는다. 어느 경우든, 당신은 가장 가까운 비어 있는 공간에 착지한다.</p><p></p><section class=\"secret\" id=\"secret-YTpgfXI55HdqDCyv\"><p><em><strong>Foundry note</strong> <br><br>낙하 피해는 별도로 굴린다</em></p></section>"
     },
     "Games of Nature": {
-      "name": "Games 의 - Nature"
+      "name": "자연의 게임 - Games of Nature"
     },
     "Ghosts of the Known": {
-      "name": "Ghosts 의 - Known",
+      "name": "알려진 유령 - Ghosts of the Known",
       "description": "<p><span class=\"fontstyle0\">14레벨부터 당신은 망각이 휘젓는 것을 보면서 유령을 창조하는 방법을 배웠습니다. 당신으로부터 60피트 이내에서 당신만큼의 히트 주사위를 가진 휴머노이드가 죽어가는 것에 대한 반응으로, 당신은 그 생물의 유령을 당신으로부터 5피트 떨어진 네더월드에 각인시킬 수 있습니다. 생물이 죽었을 때 부활할 것이라는 것을 안다면(예: </span><span class=\"fontstyle2\">소생 </span><span class=\"fontstyle0\"> 주문을 사용하는 경우) 이 능력은 유령을 생성할 만큼 충분히 강한 감정을 포착하지 못합니다. 유령을 생성할 때 선택할 수 있는 다음 작업 중 하나를 수행할 수 있습니다. <br></span></p><p><span class=\"fontstyle0\">• 죽은 생물이 지난 7일 이내에 시전한 1회의 시전 시간으로 최대 5레벨까지 주문을 시전합니다. 이 주문에는 금 가격이 표시된 재료 구성 요소가 필요할 수 없습니다. <br>• 지난 7일 동안 사용했던 무기를 사용하여 죽은 생물의 공격 또는 다중 공격 행동에 허용된 무기 공격 횟수로 공격 행동을 취합니다. 무기가 레어보다 희귀도가 높은 마법 무기인 경우 대신 +1 무기로 처리됩니다.<br>• 10레벨 이상의 클래스 기능에 의해 부여되지 않는 한, 죽은 생물이 긴 휴식 후에 적어도 한 번 취할 수 있는 특별한 행동을 취합니다. 특수 행동은 단일 행동이나 보너스 행동보다 오래 걸려서는 안 됩니다.<br>• 죽은 생명체가 죽었을 때 소유하고 충전을 회복하거나 새벽에 사용하는 마법 아이템을 사용하세요. 마법 아이템의 희귀도는 희귀보다 높지 않아야 합니다.<br></span></p><p><span class=\"fontstyle0\">다음 긴 휴식을 마친 후에는 행동을 통해 Bardic Inspiration을 한 번 사용하여 알려진 유령을 강화할 수 있는 능력을 얻습니다. 그것은 당신으로부터 30피트 이내에서 볼 수 있는 빈 공간에 나타나 즉시 행동을 수행합니다. 그런 다음 사라지고 5피트 떨어진 지하 세계의 공간으로 돌아갑니다. 일단 작업을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다. 이 기능을 사용하여 다른 기능을 만들 때까지 유령은 당신과 함께 남아 있습니다.</span></p>"
     },
     "Gimmick": {
@@ -92,7 +92,7 @@
       "description": "<p>이 이식에는 거대 거미의 시체가 필요합니다. 당신의 동료는 다음 행동을 얻습니다:</p><p><strong>웹(재충전 5—6).</strong> 원거리 무기 공격: 숙련 보너스 + 민첩 수정치 명중, 사거리 30/60 피트, 크리처 하나. 히트: 대상을 거미줄로 제지합니다. 행동으로, 구속된 대상은 주문 저장 DC에 대해 힘 검사를 수행하여 성공 시 거미줄을 터뜨릴 수 있습니다. 거미줄은 공격을 받아 파괴될 수도 있습니다(AC 10; HP 5; 화염 피해에 취약함; 타격, 독 및 정신 피해에 면역).</p>"
     },
     "Grafted Webbed Feet": {
-      "name": "Grafted Webbed 발"
+      "name": "접목된 물갈퀴 발 - Grafted Webbed Feet"
     },
     "Grafted Wings": {
       "name": "Grafted 날개"
@@ -101,13 +101,13 @@
       "name": "Grim 결속"
     },
     "Haunted Consort": {
-      "description": "<p><span class=\"fontstyle0\">3레벨에 합류한 후 마녀 대학에서는 공연을 통해 명계의 유령을 유인할 수 있는 음유시인을 훈련합니다. 그러면 마녀는 유령과 교제하여 권력을 얻기 위해 관심을 교환할 수 있습니다. 긴 휴식의 일환으로 명계를 들여다보고 유령 같은 청중 앞에서 공연을 하면 눈이 흐려지고 회색이 됩니다. GM은 유령 청중 표에 따라 청중에 유령이 몇 명 있는지 결정합니다.</span></p><h2><strong>Haunted 대상자</strong></h2><table border=\"1\"><tbody><tr><td style=\"text-align:center\" data-colwidth=\"244\"><p><strong>위치</strong></p></td>__FVTTTO K_17__<p><strong>유령</strong></p></td></tr><tr><td data-colwidth=\"244\"><p><em>사막.</em> 고의적인 생물을 거의 볼 수 없습니다.</p></td><td style=\"text-align:center\"><p>3</p></td></tr><tr><td data-colwidth=\"244\"><p><em>조용함. </em>인생은 복잡하지 않습니다.</p></td><td style=\"text-align:center\"><p>4</p>__FVTTTOK_4 6__</tr><tr><td data-colwidth=\"244\"><p><em>인구가 많습니다.</em> 수천명이 모여 생활한다. 여기.</p></td><td style=\"text-align:center\"><p>5</p></td></tr><tr><td data-colwidth=\"244\"><p><em>귀신.</em> 갑작스럽고 강한 감정이나 지속적인 반복이 일반적입니다.</p></td><td style=\"text-align:center\"><p>6</p></td></tr><tr><td data-colwidth=\"244\"><p><em>불안하게 유령이 나옵니다. </em>이 장소에 대한 공포 이야기가 있습니다.</p></td><td style=\"text-align:center\"><p>7</p></td></tr></tbody></table><p> </p><p><span class=\"fontstyle0\">당신의 위치에 따라 청중의 각 유령에 대해 d6을 굴립니다. 결과는 유령 정수 표에 따라 각 유령의 능력을 결정합니다. </span></p><p><span class=\"fontstyle0\">긴 휴식이 끝나면 DC 15</span><span style=\"font-family:Signika, sans-serif\"> </span>[[/r 1d20 + @skills.prf.mod]]{카리스마(성능)}<span class=\"fontstyle0\"> 확인을 통해 하나를 유인할 수도 있습니다. 성공 시 선택한 정수의 유령이 추가됩니다. 13레벨부터 성공하면 선택한 정수를 지닌 두 명의 유령이 등장합니다.</span></p><h2><span class=\"fontstyle0\"><strong>Ghost 본질</strong></span></h2><table border=\"1\"><tbody><tr>__FVTTTOK _109__<p><strong>d6</strong></p></td><td style=\"text-align:center\">__FVTTTO K_116__<strong>에센스</strong></p></td></tr><tr>__ FVTTTOK_123__<p>1-2</p></td><td style=\"text-align:center\"><p>@UUID[Compendium.beast-world.class-features.Item.XllKicoIKfYHBmak]{청지기 - The Steward}_ _FVTTTOK_129__</td></tr><tr><td style=\"text-align:center\" data-colwidth=\"103\"><p>3-4__FVTTTOK_135_ __</td><td style=\"text-align:center\"><p>@UUID[Compendium.beast-world.class-features.Item.zD9rURrWONMvCRqS]{악한 - The Scoundrel}</p></td></tr> <tr><td style=\"text-align:center\" data-colwidth=\"103\"><p>5-6</p></td><td style=\"text-align:center\">__FVTTTOK_148 __@UUID[Compendium.beast-world.class-features.Item.GyOz41dQXG0MM0cm]{학자 - The Scholar}</p></td></tr></tbody></table><p> </p><p>청중 중에서 숙련도 보너스만큼 유령을 선택하세요. 다음 긴 휴식이 시작될 때까지 각각은 60피트 이내에서 선택한 아군 생물을 괴롭힙니다(여러 유령이 크리처 하나를 괴롭힐 수 있습니다).</p><p>보너스 행동을 사용하여 Bardic Inspiration을 사용하여 1분 동안 60피트 이내에서 볼 수 있는 생물을 유령이 유령으로 현현할 수 있습니다. <span style=\"font-family:var(--font-primary)\">각 유령은 그 본질에 따라 </span><span class=\"fontstyle0\">현현되는 동안 능력을 부여합니다. 현현이 끝나면 당신이 아닌 다른 생물을 괴롭히는 유령이 서약을 완수하고 명계로 다시 사라집니다. 당신을 괴롭히는 유령은 남아 있으며 다시 나타날 수 있습니다.</span></p><section class=\"secret\" id=\"secret-P0YdbTMyYa9b5QJu\"><p><strong>Foundry Note</strong></p><p>친구 중 한 명을 괴롭히려면 해당 에센스를 친구의 인벤토리에 추가하세요. 그 혜택을 부여하기 위해 발현되면 장착하세요.</p></section>"
+      "description": "<p><span class=\"fontstyle0\">3레벨로 합류한 후 마녀 대학에서는 공연을 통해 음유시인을 훈련하여 명계의 유령을 유인하게 됩니다. 그러면 마녀는 유령과 교제하여 권력을 얻기 위해 관심을 교환할 수 있습니다. 긴 휴식의 일환으로 명계를 들여다보고 유령 같은 청중 앞에서 공연을 하면 눈이 흐려지고 회색이 됩니다. GM은 Haunted Audience Table에 따라 청중에 유령이 몇 명 있는지 결정합니다.</span></p><h2><strong>유령의 청중</strong></h2><table border=\"1\"><tbody><tr><td style=\"text-align:center\" data-colwidth=\"244\"><p><strong>위치</strong></p></td><td style=\"text-align:center\"><p><strong>유령</strong></p></td></tr><tr><td data-colwidth=\"244\"><p><em>버려진.</em>고의적인 생물은 거의 볼 수 없습니다.</p></td><td style=\"text-align:center\"><p>3</p></td></tr><tr><td data-colwidth=\"244\"><p><em>조용한.&nbsp;</em>인생은 복잡하지 않습니다.</p></td><td style=\"text-align:center\"><p>4</p></td></tr><tr><td data-colwidth=\"244\"><p><em>인구가 많습니다.</em>수천 명이 이곳에 모여 산다.</p></td><td style=\"text-align:center\"><p>5</p></td></tr><tr><td data-colwidth=\"244\"><p><em>유령.</em>갑작스럽고 강한 감정이나 지속적인 반복이 일반적입니다.</p></td><td style=\"text-align:center\"><p>6</p></td></tr><tr><td data-colwidth=\"244\"><p><em>비참하게 유령이 나왔다.&nbsp;</em>이 장소에 대한 무서운 이야기가 있습니다.</p></td><td style=\"text-align:center\"><p>7</p></td></tr></tbody></table><p>&nbsp;</p><p><span class=\"fontstyle0\">귀하의 위치에 따라 청중의 각 유령에 대해 d6을 굴립니다. 결과는 유령 정수 표에 따라 각 유령의 능력을 결정합니다.&nbsp;</span></p><p><span class=\"fontstyle0\">긴 휴식 끝에 DC 15를 만들 수도 있습니다.</span><span style=\"font-family:Signika, sans-serif\"> </span>[[/r 1d20 + @skills.prf.mod]]{카리스마(퍼포먼스)}<span class=\"fontstyle0\">확인하면 성공 시 선택한 정수의 유령 하나를 추가로 끌어들일 수 있습니다. 13레벨부터 성공하면 당신이 선택한 정수를 지닌 유령 두 명이 끌어당깁니다.</span></p><h2><span class=\"fontstyle0\"><strong>고스트 에센스</strong></span></h2><table border=\"1\"><tbody><tr><td style=\"text-align:center\" data-colwidth=\"103\"><p><strong>d6</strong></p></td><td style=\"text-align:center\"><p><strong>본질</strong></p></td></tr><tr><td style=\"text-align:center\" data-colwidth=\"103\"><p>1-2</p></td><td style=\"text-align:center\"><p>@UUID[Compendium.beast-world.class-features.Item.XllKicoIKfYHBmak]{청지기 - The Steward}</p></td></tr><tr><td style=\"text-align:center\" data-colwidth=\"103\"><p>3-4</p></td><td style=\"text-align:center\"><p>@UUID[Compendium.beast-world.class-features.Item.zD9rURrWONMvCRqS]{악당 - The Scoundrel}</p></td></tr><tr><td style=\"text-align:center\" data-colwidth=\"103\"><p>5-6</p></td><td style=\"text-align:center\"><p>@UUID[Compendium.beast-world.class-features.Item.GyOz41dQXG0MM0cm]{학자 - The Scholar}</p></td></tr></tbody></table><p>&nbsp;</p><p>청중 중에서 숙련도 보너스와 동일한 수의 유령을 선택하십시오. 다음 긴 휴식이 시작될 때까지 각 유령은 당신으로부터 60피트 이내에서 선택한 우호적 생물을 괴롭힙니다(여러 유령이 하나의 생물을 괴롭힐 수 있습니다).</p><p>보너스 액션을 사용하여 Bardic Inspiration을 사용하여 1분 동안 60피트 내에서 볼 수 있는 생물을 괴롭히는 유령을 발현할 수 있습니다.&nbsp;<span style=\"font-family:var(--font-primary)\">각 유령은 현현하는 동안 능력을 부여합니다.</span><span class=\"fontstyle0\">본질에 의존합니다. 현현이 끝나면 당신이 아닌 다른 생물을 괴롭히는 유령이 서약을 완수하고 명계로 다시 사라집니다. 당신을 괴롭히는 유령은 여전히 ​​남아 있으며 다시 나타날 수 있습니다.</span></p><section class=\"secret\" id=\"secret-P0YdbTMyYa9b5QJu\"><p><strong>파운드리 노트</strong></p><p>친구 중 한 명을 괴롭히려면 관련 에센스를 친구의 인벤토리에 추가하세요. 발현되면 장착하여 혜택을 부여하세요.</p></section>"
     },
     "Heat": {
       "description": "<p>열은 전투의 원초적인 힘이자 순수한 ​​추진력과 스릴입니다. 당신은 극적인 싸움으로 열을 끌어내고(얻고), 그 열을 사용하여 연극적인 위업을 수행합니다. 3레벨에서 이 유형을 선택하면 전투 시작 시 주도권을 굴릴 때 열이 0이 됩니다. Heat는 3개 이상 가질 수 없습니다(초과분은 손실됩니다).</p><p></p><p>다음과 같은 경우 즉시 Heat 1개를 뽑습니다.</p><p>• 생물이 당신에게 치명타를 기록합니다.</p><p>• 체력이 5 이하로 감소합니다. 이는 6레벨에서 10 이하, 11레벨에서 15 이하, 16레벨에서 20 이하로 증가합니다.</p><p>• 생물이 당신을 공중에서 최소 10피트 들어 올립니다.</p><p>• 당신은 다음과 같은 공격 굴림으로 명중합니다. 단점.</p><p>• 생물이 삼키는 것을 피했습니다.</p><p>• 생물을 밀거나 최소 10피트 높이의 낙하에 던졌습니다.</p><p>• 우호적인 생물이 당신이 붙잡고 있는 생물을 때렸습니다. 공격.</p><p>• 즉석에서 무기 공격을 했습니다. 긴 휴식을 마칠 때까지 동일한 유형의 피해를 입히는 즉석 무기에서는 Heat를 한 번만 얻을 수 있습니다.</p><p><strong>Appeal:</strong> <span class=\"fontstyle0\">라운드당 한 번, 다른 소스에서 Heat를 가져오지 않은 경우 공격을 Appeal이라는 극적인 자신감 표시로 대체할 수 있습니다. DC 15 카리스마(성능) 체크를 하세요. 성공하면 Heat 1개를 뽑습니다.</span></p><p><em><strong>Saving Throws</strong></em>. 당신의 능력 중 일부는 목표가 그 효과에 저항하기 위해 내성굴림을 해야 합니다. 당신의 자리에 대한 저축 던지기 DC는 8 + 숙련도 보너스 + 힘 또는 민첩 수정치(선택)입니다. 참고:</strong></em></p><p>이 기능을 사용하여 전투기의 Heat 사용을 모두 추적합니다.</p></section><p></p><p> </p>"
     },
     "Improved Sun Bull's Tenacity": {
-      "name": "Improved 태양 - Bull's Tenacity"
+      "name": "향상된 Sun Bull의 끈기 - Improved Sun Bull's Tenacity"
     },
     "Inverted Pilgrimage": {
       "description": "<p> 1레벨부터 시작하여, 당신의 형상을 지닌 비마법적 물체(예: 조각상이나 그림)를 들고 있는 동안 당신은 당신의 행동을 사용하여 부서진 세계로 자신을 이동할 수 있습니다. 당신의 모습은 당신의 공간 뒤에 남아 있습니다.</p><p>깨진 세계의 위험한 풍경은 당신에게 해를 끼치지 않습니다(다양한 환경에 대한 자세한 내용은 182페이지의 부서진 세계를 참조하세요). 시간은 정상적으로 흐르고, 온도도 쾌적하고, 공기도 쾌적합니다. 그러나 당신은 부서진 세계에 존재하는 대기 이외의 위험으로부터 면제되지 않습니다.</p><p>깨진 세계에 있는 동안 당신은 행동을 사용하여 당신이 두고 온 형상과 가장 가까운 빈 공간으로 자신을 이동할 수 있습니다. 당신의 형상이 파괴되면 집으로 가는 길을 찾을 때까지 당신은 좌초됩니다.</p><p>당신이 부서진 세계에 있지 않은 동안, 당신이 그곳에서 떠나는 다른 세계의 비마법적 물체는 천천히 부패할 것입니다. 원주민이 아닌 개체는 부서진 세계에 남겨진 동안 매 시간 1의 괴사 피해를 입습니다.</p><p> 부서진 세계에서 보내는 긴 휴식의 일환으로, 당신은 풍경을 걸으며 당신이 알고 있는 모든 주문에 대한 재료 구성 요소를 수집할 수 있습니다. 이는 후원자가 남긴 \"선물\"입니다. 이러한 구성 요소는 철사와 깨진 유리로 만든 꽃과 같은 일반적인 종류의 무생물에 적합한 복제품입니다.</p><p>당신은 주문 공격 굴림과 부서진 세계의 구성 요소를 사용하여 시전하는 흑마법사 주문의 내성 던지기 DC에 +1 보너스를 얻습니다. 주문 구성 요소를 나열된 금 조각 값으로 대체할 수 없으며 부서진 세계를 떠난 후 24시간이 지나면 분해됩니다.</p><p> </p><p><span class=\"fontstyle0\">후원자의 피드백을 피하려는 흑마법사는 부서진 세계로 여행하기 전에 생각해야 합니다. 흑마법사가 그들의 영역에 있는 동안 유령 신은 그들에게 직접 말할 수 있습니다. 그러나 보내는 시간의 균형을 맞춰야 합니다. 부서진 세계에 들어가지 않고 7일이 지나면 악몽과 두통에 시달립니다. 그 후 매일 새벽에 당신은 1d6 + 당신의 흑마법사 레벨에 해당하는 정신적 피해를 입습니다. 이 피해는 어떤 방법으로도 방지할 수 없습니다.</span></p><p> </p><h3><span class=\"fontstyle0\">나는 어디로 끝나나요?</span></h3><p><span class=\"fontstyle2\">A 유령 신 흑마법사의 도착 지점 항상 똑같습니다. 대개는 멀리 흩어져 있는 폐허뿐인 광활하고 텅 빈 풍경입니다. 그것은 출혈 들판(Bleeding Fields)의 지역일 수도 있고, 유리해(Glass Sea)에 있는 섬일 수도 있고, 아니면 단순히 하얀 하늘 아래 평평하고 이름 없는 검은 대리석으로 이루어진 광활한 지역일 수도 있습니다.</span></p>"
@@ -126,11 +126,11 @@
       "name": "행운 의 - Unruly"
     },
     "Metamagic: Penetrating Spell": {
-      "name": "Metamagic: Penetrating 주문",
+      "name": "메타매직: 관통 주문 - Metamagic: Penetrating Spell",
       "description": "<p>다른 사람들이 면역력을 보이는 곳에서 당신은 약점을 봅니다. 당신은 <strong>관통 주문</strong> 메타매직 옵션을 얻습니다:</p><p><span class=\"fontstyle0\">피해를 주는 주문을 시전할 때, 2마법 포인트를 소비하여 대상 생물의 피해 유형에 대한 면역을 저항으로 처리하고 주문의 범위를 결정하기 위해 저항을 무시할 수 있습니다.</span></p>"
     },
     "Patronage of Space": {
-      "name": "Patronage 의 - Space",
+      "name": "공간의 후원 - Patronage of Space",
       "description": "<p><span class=\"fontstyle0\">10레벨에서는 부서진 세계를 정기적으로 여행하면서 예측할 수 없는 물리학을 점차적으로 마스터하게 됩니다. 당신은 Broken World의 120피트 큐브 공간에 대한 완전한 통제권을 얻습니다. 이 공간 내의 개체는 더 이상 수평선을 차지하지 않습니다.</span></p>\n<p><span class=\"fontstyle0\"> 역순례(Inverse Pilgrimage) 기능을 사용하여 공간에 접근하면 자신의 모습과 함께 5~10피트 너비의 독립형 원형 포털을 남길 수 있습니다. 포털을 열어두기만 하면 생물과 물체가 포털을 통해 이동할 수 있습니다. 10분 동안 열려 있거나 양쪽에서 5피트 이내의 동작으로 닫힐 때까지 열려 있습니다.</span></p>\n<p><span class=\"fontstyle0\">공간 내에서 8시간 동안 작업하면 다음 속성을 변경할 수 있습니다.</span></p>\n<ul>\n<li><span class=\"fontstyle0\">경계. 귀하의 공간은 더 큰 Broken World와 물리적 연속성을 가질 수도 있고 잉크처럼 검은 벽이 있는 별도의 주머니일 수도 있습니다.</span></li>\n<li><span class=\"fontstyle0\">무생물, 비마법 물질. </span>당신의 공간에 생성된 물체는 부서진 세계에서 제거된 후 재로 변하는 순간이 있습니다. 귀하의 공간은 생명을 유지할 수 없습니다. 귀하의 영역에 뿌려진 모든 씨앗은 파멸됩니다.</li>\n<li><span class=\"fontstyle0\">분위기. </span> 온도, 바람, 빛, 중력을 제어할 수 있습니다. 공기가 없는 공간에서 숨을 쉴 수 있는 특정 생물을 지정할 수도 있습니다.<span class=\"fontstyle0\"><br></span></li>\n</ul>\n<p> </p>\n<p>물리적 공간을 숙달하면 두 번째 이점이 있습니다.<br>또한 10레벨부터 당신은 후원자입니다. 유령 신을 계속 섬기면서도 자신만의 계약을 맺을 수 있습니다. 당신의 공간에서 8시간 동안의 의식(세부 사항은 당신이 결정합니다. 그것은 당신의 의식입니다)을 통해 당신은 선택한 가신과 계약을 맺습니다. 이 생물은 기꺼이 당신의 서비스에 들어가야 합니다. 의식이 끝나면 당신의 하인은 1레벨 유령 신 흑마법사가 됩니다. 단, 그들은 당신에게 응답하고 그들의 역순례가 그들을 당신이 마스터한 공간으로 인도합니다. 레벨이 오르면 흑마법사의 최대 레벨이 1씩 증가합니다(흑마법사는 11레벨에 도달하면 2레벨에 도달할 수 있습니다. 등).</p>\n<p>GM은 NPC를 제어할 수 있는 권한을 부여하지 않는 한 NPC를 묘사합니다. 대부분의 흑마법사는 당신으로부터 직접 명령을 받는 데 한 달에 최대 며칠을 보내는 데 동의합니다. 그들은 자신이나 사랑하는 사람을 당신 때문에 명백한 치명적인 위험에 빠뜨리지 않을 것입니다. 그들은 자신의 사람이라는 것을 기억하십시오. 대부분의 흑마법사는 당신이 아닌 스스로 직업을 갖고 있습니다. 유령 신은 당신이 후원자로서 행동하는 방식에 대해 유연합니다. 하지만 흑마법사에게 그들의 뜻을 배반하라고 명령할 때는 주의하세요. 당신의 부하의 행동은 유령 신의 눈에 당신의 책임입니다.</p>\n<p>흑마법사가 당신을 불쾌하게 하면 8시간 동안 의식을 수행하여 흑마법사 레벨을 1 이상 낮출 수 있으며, 이는 긴 휴식 중에 수행할 수 있습니다. 행동으로 제한을 해제할 때까지 레벨을 회복하거나 새로운 레벨을 얻을 수 없습니다. 후속 의식을 통해 흑마법사 레벨을 계속 낮출 수 있습니다. 레벨이 0인 흑마법사는 계약이 끊어지고 더 이상 여러분에게 봉사하지 않습니다. 다른 생물과 계약 의식을 수행하면 이전 계약이 끊어집니다.</p>"
     },
     "Profane Bond": {
@@ -143,17 +143,17 @@
       "name": "Provident 자비"
     },
     "Shared Dream": {
-      "name": "Shared 꿈"
+      "name": "공유된 꿈 - Shared Dream"
     },
     "Shared Precision": {
       "description": "<p><span class=\"fontstyle0\">14레벨부터 당신의 감정 통제는<br>완전해지고 당신의 동료들도 당신의 분노의 반향에 동참할 수 있습니다. 분노에 빠지기 위해 취하는 보너스 행동의 일부로 <strong> @Compendium[dnd5e.spells.uAwtVZkiSTyP6ORB]{Telepathic Bond}</strong></span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\"> 주문을 시전할 수 있으며, 구성 요소가 필요하지 않습니다. 당신의 분노가 끝날 때까지 주문에 의해 당신과 결합된 다른 생물은 라운드의 첫 번째 공격 굴림에 당신의 헌법 수정치를 추가할 수 있습니다. 지혜는 이 주문에 대한 주문 시전 능력이며 전체 지속 시간 동안 지속됩니다.</span></p>"
     },
     "Sigil of Death's Defiance": {
-      "name": "Sigil 의 죽음's - Defiance",
+      "name": "죽음의 저항의 인장 - Sigil of Death's Defiance",
       "description": "<p><span class=\"fontstyle0\">필연적으로, 마스터 Fell Infiltrator는 어떤 생물도 돌아올 수 없는 임무를 수행합니다. 하지만 그럼에도 불구하고 그들의 작업은 계속된다. 17레벨에서는 네 번째 브랜드 인장인 </span></p>에 접근할 수 있습니다.\n<p><strong><span class=\"fontstyle2\">Brust(반항).</span></strong><span class=\"fontstyle0\"> 이 표시를 물체에 태운 후, 노년을 제외한 어떤 이유로든 사망한 지 1주일 후, 몸과 몸에 남아 있는 모든 장비는 무사히 인장에서 가장 가까운 비어 있는 공간으로 순간이동합니다. </span></p>\n<p><span class=\"fontstyle0\">당신은 최대 체력으로 다시 살아납니다. 이런 식으로 부활할 때마다 Hit Dice가 1씩 감소합니다. 오직 신의 직접적인 개입만이 잃어버린 Hit Dice를 복원할 수 있습니다. Hit Dice가 0개인 경우 영구적으로 사망합니다.</span></p>\n<p><span class=\"fontstyle0\">이 인장은 한 장소에만 존재할 수 있습니다. 다른 물체에 낙인을 찍으면 이전 인장이 지워집니다. 낙인이 찍힌 물체의 일부를 파괴하여 물체에 5만큼의 피해를 주는 행동을 사용하여 제거할 수 있습니다.</span></p>"
     },
     "Sneak Attack (Facade of the Fiend)": {
-      "name": "Sneak 공격 (Facade 의 - Fiend)"
+      "name": "몰래 공격(마귀의 정면) - Sneak Attack (Facade of the Fiend)"
     },
     "Spot: Clothesline": {
       "description": "<p>당신의 손에 들어오는 생물에 대한 반응으로 당신은 1개의 열을 소비하여 그 생물에 대한 근접 무기 공격을 할 수 있습니다. 적중 시 대상은 근력 내성 굴림을 해야 합니다. 그래서 굴림에 실패하면, 대상은 쓰러지고 다음 턴이 시작될 때까지 속도가 0으로 감소합니다.</p>"
@@ -168,16 +168,16 @@
       "description": "<p><span style=\"color:#191813;font-size:13px\">생물을 붙잡는 동안 행동으로 생물을 더 타협적인 위치에 고정하려고 시도할 수 있습니다. 대상은 힘이 세서 굴림을 요구합니다. 대신 굴림에 실패하면, 히트 2장을 뽑습니다. 대상은 신체 구성 요소가 있는 주문을 시전할 수 없으며 갈고리에서 벗어날 때까지 명중 굴림에 불리한 입장을 취합니다. 추가적으로, 대상이 그래플에서 벗어날 때까지 당신은 피해의 절반만 받고, 대상은 나머지 절반을 받습니다. 한 번에 하나만을 고정할 수 있습니다.</span></p>"
     },
     "Spot: Splashing Attack": {
-      "name": "Spot: Splashing 공격"
+      "name": "스팟: 스플래싱 어택 - Spot: Splashing Attack"
     },
     "Spot: Wrenching Lock": {
-      "name": "Spot: Wrenching 잠금"
+      "name": "스팟: 렌치 잠금 장치 - Spot: Wrenching Lock"
     },
     "Spots": {
       "description": "<p>또한 3레벨에서는 화려한 기동으로 끌어온 열의 긴장을 풀어줄 수 있는 능력을 얻습니다. 3개 지점을 선택하세요. 7, 10, 15 레벨에서 추가 지점을 선택할 수 있습니다.</p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.t9ISlEtfn8OGye3Y]{Spot: Kip Up}</strong></em> 쓰러진 것에 대한 반응으로 1 Heat를 소비하여 일어 서서 당신을 쓰러뜨린 생물에 대해 근접 무기 공격을 할 수 있습니다. 경향이 있습니다.</p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.pdbd7SOi8btfL8WV]</strong></em>. 당신의 손에 들어오는 생물에 대한 반응으로 당신은 1개의 열을 소비하여 그 생물에 대한 근접 무기 공격을 할 수 있습니다. 적중 시 대상은 근력 내성 굴림을 해야 합니다. </p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.UUlfcnq1SnFTfvf8]{Spot: Hot Tag}.</strong></em> 행동으로, 당신은 2개의 열을 소비하여 자신이 아닌 생물을 접촉할 수 있습니다. 생물은 기회 공격을 유발하지 않고 즉시 반응을 사용하여 속도를 높일 수 있습니다. 움직일 때 범위 내에 있는 각 생물에 대해 한 번의 근접 무기 공격을 할 수 있으며 적중 시 전투기 레벨의 절반(내림)에 해당하는 추가 피해를 입힙니다.</p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.ZueQZmOR003EDaJw]{Spot: Perfect Reversal}</strong></em> 무기 공격으로 생물이 당신을 놓친 것에 대한 반응으로 2를 소비할 수 있습니다. 가열하여 해당 생물에 대해 무기 공격을 가합니다. 이 공격은 17-20의 굴림에서 치명타를 기록합니다.</p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.ehSskeyybQZIcOhl]{Spot: Vital Throw}</strong></em><strong>.</strong> 보너스 액션을 사용하고 2개의 열을 소비하여 붙잡힌 생물을 던질 수 있습니다. 수평으로 최대 15피트. 그것이 착지한 공간에 있는 목표와 생물은 민첩 내성 굴림에 성공해야 하며 그렇지 않으면 전투기 레벨 + 근력 수정치에 해당하는 타격 피해를 입고 넘어지기 쉽습니다. 공간이 채워져 있는 경우, 던져진 생물은 당신이 선택한 가장 가까운 비어 있는 공간에 착륙합니다.</p><p><em><strong>@UUID[Compendium.beast-world.class-features.Item.kduRfwuvC2xwFThj]{Spot: Wrenching 잠금}. </strong></em>당신이 붙잡고 있는 생물에 대해 근접 무기 공격을 할 때, 2개의 열을 소비할 수 있습니다. 명중 시, 당신은 당신의 전투기 레벨 + 힘 수정치만큼의 피해를 추가하며, 대상은 다음 턴이 끝날 때까지 갈고리를 탈출하는 능력 점검에 불이익을 받습니다.</p>"
     },
     "Sun Bull's Tenacity": {
-      "name": "태양 - Bull's Tenacity",
+      "name": "썬불의 끈기 - Sun Bull's Tenacity",
       "description": "<p><span class=\"fontstyle0\">1레벨부터 Sunblood의 돌진은 주변 세계의 속도를 늦추고 심각한 상처를 나중에 생각하게 만듭니다. 적대적인 생물로부터 5피트 이내에 있어도 원거리 주문 공격 굴림에 불이익이 가해지지 않습니다.</span></p>\n<p><span class=\"fontstyle0\">또한 덜 완고한 생물을 의식을 잃게 만드는 타격을 무시할 수 있습니다. 체력이 0으로 감소한 것에 대한 반응으로, 당신은 다음 턴이 끝날 때까지 의식을 유지할 수 있습니다(당신은 여전히 ​​평소처럼 죽음 세이브 굴림을 굴립니다). 이 능력을 사용하면 짧거나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다. </span></p>\n<p> </p>"
     },
     "The Dread Compromise Spreads": {
@@ -189,7 +189,7 @@
       "description": "<p><span class=\"fontstyle0\"> 청지기가 나타날 때, 유령이 나오는 생물은 지속 시간 동안 내성 굴림에 +1 보너스를 얻습니다. 이 보너스는 9레벨에서 +2, 15레벨에서 +3으로 증가합니다. <br></span></p><p><span class=\"fontstyle0\">학자 발현에 대한 반응으로, 유령이 나오는 생물은 일반적으로 행동이나 보너스 행동으로 아이템을 활성화할 수 있는 경우 보유한 마법 아이템을 활성화할 수 있습니다. 새벽에 마법 아이템이 다시 충전되면 활성화 비용이 1만큼 줄어듭니다. 학자가 발현되는 동안 유령이 나오는 생물은 </span><span class=\"fontstyle2\">@UUID[Compendium.dnd5e.spells.Item.ctW81uiX56xZR2c5]{ray of frost} </span><span class=\"fontstyle0\">cantrip을 시전할 수 있습니다. 카리스마는 주문에 대한 주문 시전 능력입니다. 추가적으로, 피해를 주는 유령 생물이 시전하는 캔트립은 추가로 [[/r 1d6]] 힘을 가합니다.</span> <br style=\"font-variant-numeric:normal;font-variant-east-asian:normal;line-height:normal;text-align:-webkit-auto;text-size-adjust:auto\"></p><p><span class=\"fontstyle0\">학자는 마법의 비밀을 번역할 수 있습니다. 유령 생물이 현현의 전체 지속 시간 동안 마법 두루마리를 들고 있으면 검은 불꽃이 두루마리를 불태워 파괴하고 유령 생물에게 1d3 화재를 발생시킵니다. 유령이 나오는 생물은 같은 주문의 두루마리를 들고 남아 있습니다. 유령이 나오는 생물(및 유령이 있는 생물만)은 모든 클래스, 종족 및 레벨 요구 사항을 무시하고 이 두루마리에 주문을 시전할 수 있습니다. 참고:</strong></p><p>유령 생물은 내부의 유령이 나타날 때 이 아이템을 장착하여 내성 굴림에 대한 보너스를 활성화할 수 있습니다.</p><p>레벨에 따라 효과의 값을 조정하세요.</p></section>"
     },
     "The Scoundrel": {
-      "name": "악한 - The Scoundrel",
+      "name": "악당 - The Scoundrel",
       "description": "<p><span class=\"fontstyle0\">이 유령은 유령이 나오는 생물이 직접 선택한 아이템을 소유하고 있습니다. 유령이 나오는 생물은 행동을 사용하여 악당에게 다른 아이템을 소유하도록 명령할 수 있습니다. 새로운 아이템이 선택되거나 유령이 나올 때까지 아이템은 어떤 거리에서든 소유된 상태로 유지됩니다.</span></p><p><span class=\"fontstyle0\">악당이 나타나면 유령 생물은 지속 시간 동안 능력 판정에 +1 보너스를 받습니다. 이 보너스는 9레벨에서 +2, 15레벨에서 +3으로 증가합니다.</span></p><p><span class=\"fontstyle0\">유령 생물은 현현하는 동안 소유한 아이템의 방향과 거리를 감지합니다. 이 아이템은 유령이 나오는 생물에게 단단한 물체를 통해 보이며 희미한 회색 윤곽선으로 나타납니다. 귀신 들린 생물이 소유한 아이템을 사용하여 무기 공격을 하면 적중 시 추가 [[/r 1d6]] 강제 피해를 입힙니다.</span></p><p><span class=\"fontstyle0\">귀속된 생물은 소유한 아이템을 들고 있는 동안 보너스 행동을 사용하여 악당에게 그것을 숨기라고 명령할 수 있습니다. Netherworld의 유령 생물을 따라 아이템이 사라집니다. 유령이 나오는 생물은 보너스 액션을 사용하여 자신의 손에 다시 나타나게 할 수 있습니다. </span></p><p></p><section class=\"secret\" id=\"secret-n3Veiqxp2zwORu8n\"><p><strong>Foundry 참고:</strong></p><p>유령 생물은 내부 유령이 나타나 보너스를 활성화할 때 이 아이템을 장착할 수 있습니다. 능력 점검.</p><p>레벨에 따라 효과의 값을 조정합니다.</p></section>"
     },
     "The Steward": {
@@ -197,7 +197,7 @@
       "description": "<p><span class=\"fontstyle0\">청지기가 나타날 때 유령이 나오는 생물은 해당 기간 동안 공격 굴림에 +1 보너스를 얻습니다. 이 보너스는 9레벨에서 +2, 15레벨에서 +3으로 증가합니다. 또한 The Steward는 유령이 나오는 생물 앞에 떠 다니는 검은 돌 방패로 구체화됩니다. 생물은 마치 </span><span class=\"fontstyle2\">움직이는 방패 </span><span class=\"fontstyle0\">에 능숙한 것처럼 취급됩니다.<br></span></p><p><span class=\"fontstyle0\">보너스 행동으로, 유령이 나오는 생물은 관리인에게 돌벽으로 변신하도록 명령할 수 있습니다. 한 쪽 최대 10피트, 두께 6인치, 60피트 이내의 지점에서 유령이 나오는 생물을 볼 수 있습니다. 이 벽에는 AC 15와 30의 체력이 있습니다. 유령이 나오는 생물은 15피트 이내의 보너스 행동을 사용하여 다시 </span><span class=\"fontstyle2\">애니메이션 방패 </span><span class=\"fontstyle0\">로 변환하고 휘두를 수 있습니다. </span></p><p></p><section class=\"secret\" id=\"secret-dEZ95PyUvEUy1DZn\"><p><strong>Foundry 참고:</strong></p><p>유령 생물은 내부 유령이 나타나 보너스를 활성화할 때 이 아이템을 장착할 수 있습니다. 공격 및 AC.</p><p>레벨에 따라 효과의 값을 조정합니다.</p></section>"
     },
     "Unwavering Violence": {
-      "name": "Unwavering 폭력"
+      "name": "흔들리지 않는 폭력 - Unwavering Violence"
     },
     "Wild Card": {
       "name": "Wild 카드",

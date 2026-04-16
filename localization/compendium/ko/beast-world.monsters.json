@@ -33,7 +33,7 @@
       "items": {
         "Bite": {
           "name": "물기 - Bite",
-          "description": "<p>근접 무기 공격: +5 명중, 사거리 5피트, 목표 하나. Hit: 10 (2d6 + 3) piercing damage and 7 (2d6) necrotic 피해. The target’s hit point maximum is reduced by an amount equal to the necrotic damage taken, and the batwolf regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>"
+          "description": "<p>근접 무기 공격: +5 명중, 사거리 5 피트, 목표 하나. 적중: 10(2d6 + 3) 관통 피해 및 7(2d6) 괴사 영역. 대상의 최대 생명력은 받은 괴사 피해만큼 줄어들고, 배트울프는 그 양만큼 생명력을 회복합니다. 감소는 대상이 긴 휴식을 마칠 때까지 지속됩니다. 이 효과가 체력 최대치를 0.</p>로 줄이면 대상은 죽습니다."
         },
         "Echolocation": {
           "name": "반향정위 - Echolocation",
@@ -90,7 +90,7 @@
         },
         "Spellcasting of Two": {
           "name": "Spellcasting 의 - Two",
-          "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 15): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
+          "description": "<p>전도자는 다음 주문 조합 중 하나를 동시에 시전합니다. 주문은 다른 목표를 가질 수 있습니다. 모든 주문은 주문 시전 수정자로 카리스마를 사용합니다(주문 저장 DC 15): 매일 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
         },
         "Will of Two": {
           "name": "Will 의 - Two"
@@ -134,11 +134,11 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Reaping Greatsword": {
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">근접 무기 공격: +10 명중, 사거리 5피트, 목표 하나. Hit: 13 (2d6 + 6) slashing 피해에 더해 7 (2d6) necrotic 피해. A creature dies if it is reduced to 0 hit points by this attack, and rises as a ghoul under the Ecclesiast’s control at the start of its next turn.</span></p>"
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">근접 무기 공격: +10 명중, 사거리 5피트, 목표 하나. 적중: 13(2d6 + 6) 베기 영역에 더해 7(2d6) 괴사 영역. 이 공격으로 체력이 0으로 감소하면 생물은 죽고, 다음 턴이 시작될 때 전도자의 통제를 받는 구울로 일어납니다.</span></p>"
         },
         "Spellcasting of Two": {
           "name": "Spellcasting 의 - Two",
-          "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 17): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
+          "description": "<p>전도자는 다음 주문 조합 중 하나를 동시에 시전합니다. 주문은 다른 목표를 가질 수 있습니다. 모든 주문은 주문 시전 수정자로 카리스마를 사용합니다(주문 저장 DC 17): 매일 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door} and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater Invisibility}, @UUID[Compendium.dnd5e.spells.Item.qcYitWoSMTnKkzM1]{Heal} and @UUID[Compendium.dnd5e.spells.Item.tMH6Ivn4GmE1naMj]{Harm}, @UUID[Compendium.dnd5e.spells.Item.LkvI11Uue774QBKZ]{Cloudkill} and @UUID[Compendium.dnd5e.spells.Item.5e1xTohkzqFqbYH4]{Flame strike}.</p>"
         },
         "Will of Two": {
           "name": "Will 의 - Two"
@@ -180,7 +180,7 @@
         },
         "Grafted Claw": {
           "name": "Grafted 발톱",
-          "description": "<p>근접 무기 공격: +12 명중, 사거리 5피트, 목표 하나. Hit: 10 (1d6 + 7) slashing 피해에 더해 14 (4d6) necrotic 피해. If the target is a creature, it must succeed on a DC 19 Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage it took for 1 hour. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes.</p>"
+          "description": "<p>근접 무기 공격: +12 명중, 사거리 5 피트, 목표 하나. 적중: 10(1d6 + 7) 베기 영역에 더해 14(4d6) 괴사 영역. 대상이 생물인 경우 DC 19 헌법 내성 굴림에 성공해야 합니다. 그렇지 않으면 최대 생명력이 1시간 동안 받은 괴사 피해만큼 감소합니다. 질병을 제거하는 효과는 해당 시간이 지나기 전에 생물체의 최대 생명력이 정상으로 돌아갈 수 있게 해줍니다.</p>"
         },
         "Greater Invisibility": {
           "name": "상급 투명화 - Greater Invisibility",
@@ -201,11 +201,11 @@
           "description": "<p>[[lookup @name lowercase]] 은/는 한 행동에 여러번 공격할 수 있습니다. 동일한 유형의 공격을 여러번 하거나, 여러 종류의 공격 행동을 섞어서 할 수도 있습니다.</p>"
         },
         "Reaping Greatsword": {
-          "description": "<p>근접 무기 공격: +12 명중, 사거리 5피트, 목표 하나. Hit: 14 (2d6 + 7) slashing 피해에 더해 7 (2d6) necrotic 피해. A creature dies if it is reduced to 0 hit points by this attack, and rises as a ghoul under the Ecclesiast’s control at the start of its next turn.</p>"
+          "description": "<p>근접 무기 공격: +12 명중, 사거리 5 피트, 목표 하나. 적중: 14(2d6 + 7) 베기 영역에 더해 7(2d6) 괴사 영역. 이 공격으로 체력이 0으로 감소하면 생물은 죽고, 다음 턴이 시작될 때 전도자의 통제를 받는 구울로 일어납니다.</p>"
         },
         "Spellcasting of Legion": {
           "name": "Spellcasting 의 - Legion",
-          "description": "<p>The Ecclesiast casts one of the following combinations of spells simultaneously. The spells can have different targets. All spells use Charisma as the spellcasting modifier (spell save DC 19): 각각 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door}, @UUID[Compendium.dnd5e.spells.Item.Opwh2PdX4runSBlm]{Aid}(as a 4th-level spell), and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater invisibility}, @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death} and @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death}, @UUID[Compendium.dnd5e.spells.Item.QbTxN5dWIbYZ4jLU]{Chain Lightning}, @UUID[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0]{Fireball}and @UUID[Compendium.dnd5e.spells.Item.pybg5MNc3lkerH4Y]{Blight}.</p>"
+          "description": "<p>전도자는 다음 주문 조합 중 하나를 동시에 시전합니다. 주문은 다른 목표를 가질 수 있습니다. 모든 주문은 주문 시전 수정자로 카리스마를 사용합니다(주문 저장 DC 19): 매일 하루 1회: @UUID[Compendium.dnd5e.spells.Item.A4RsPuSvB9wFtz1j]{Dimension Door}, @UUID[Compendium.dnd5e.spells.Item.Opwh2PdX4runSBlm]{Aid}(4레벨 주문), and @UUID[Compendium.dnd5e.spells.Item.tEpDmYZNGc9f5OhJ]{Greater invisibility}, @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death} and @UUID[Compendium.dnd5e.spells.Item.HPvZm8YJO91k6Qdg]{Finger of Death}, @UUID[Compendium.dnd5e.spells.Item.QbTxN5dWIbYZ4jLU]{Chain Lightning}, @UUID[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0]{Fireball}and @UUID[Compendium.dnd5e.spells.Item.pybg5MNc3lkerH4Y]{Blight}.</p>"
         },
         "Will of Legion": {
           "name": "Will 의 - Legion"
@@ -275,7 +275,7 @@
       "items": {
         "Bite": {
           "name": "물기 - Bite",
-          "description": "<p>근접 무기 공격: +6 명중, 사거리 5피트, one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing 피해에 더해 7 (2d6) necrotic 피해. The target’s hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>"
+          "description": "<p>근접 무기 공격: +6 명중, 사거리 5 피트, 의지가 있는 생물 한 마리 또는 뱀파이어에게 붙잡혀 있거나 무력화되거나 구속된 생물. 적중: 6(1d6 + 3) 피어싱 영역에 더해 7(2d6) 괴사 영역. 대상의 최대 생명력은 받은 괴사 피해만큼 줄어들고, 뱀파이어는 그 양만큼 생명력을 회복합니다. 감소는 대상이 긴 휴식을 마칠 때까지 지속됩니다. 이 효과가 체력 최대치를 0.</p>로 줄이면 대상은 죽습니다."
         },
         "Bound to a Circle": {
           "name": "원에 속박됨 - Bound to a Circle"
@@ -316,7 +316,7 @@
         },
         "Claw": {
           "name": "발톱 - Claw",
-          "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB slashing 피해. </p><p>If the target is a creature other than a jackal or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to being paralyzed by the claws of the ghoul-touched for the next 24 hours.</p>"
+          "description": "<p>근접 무기 공격: 주문 공격 수정자 명중, 사거리 5피트, 목표 하나. 적중: 1d6 + 2 + PB 슬래싱입니다. </p><p>대상이 자칼이나 언데드가 아닌 생물인 경우 DC 10 헌법 내성 굴림에 성공하지 않으면 1분 동안 마비되어야 합니다. 대상은 매 턴이 끝날 때마다 내성 굴림을 반복하여 성공 시 자신에 대한 효과를 종료할 수 있습니다. 생물의 내성 굴림이 성공하거나 효과가 종료되면 생물은 다음 24시간 동안 구울의 손길이 닿은 발톱에 의해 마비되는 것에 면역이 됩니다.</p>"
         },
         "Profane Bond": {
           "name": "불경한 결속 - Profane Bond"
@@ -344,7 +344,7 @@
           "name": "Gift 의 - Bliss"
         },
         "Inhabitation": {
-          "description": "<p>The intruder can inhabit the body of a willing creature who performs a ritual of consumption, which takes two weeks. After doing so, the creature becomes a fiend-inhabited vampire. While inhabiting a creature, no effect can target the intruder and it is immune to 피해. The intruder can only communicate telepathically with the vampire and any of its spawn, but can do so from any distance on the same plane of existence. When the inhabited vampire dies, the intruder instantly teleports to the place the ritual was first performed. It dies if it does not inhabit a new creature within one year.</p>"
+          "description": "<p>침입자는 2주가 걸리는 소비 의식을 수행하는 자발적인 생물의 몸에 거주할 수 있습니다. 그렇게 하면 그 생물은 악마가 사는 뱀파이어가 됩니다. 생물체에 서식하는 동안에는 침입자를 대상으로 하는 어떠한 효과도 없으며, 외부에 면역입니다. 침입자는 뱀파이어 및 그 모든 피조물과 텔레파시로만 통신할 수 있지만 동일한 존재 평면의 어떤 거리에서도 그렇게 할 수 있습니다. 거주하는 뱀파이어가 죽으면 침입자는 즉시 의식이 처음 수행된 장소로 순간이동합니다. 1년 이내에 새로운 생물에 서식하지 않으면 죽습니다.</p>"
         }
       }
     },
@@ -360,7 +360,7 @@
         },
         "Rotting Claw": {
           "name": "Rotting 발톱",
-          "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB slashing 피해에 더해 1d6 necrotic 피해. </p><p>If the target is a creature, it must succeed on a Constitution saving throw against your spell save DC or be cursed with mummy rot. The cursed target can’t regain hit points, and its hit point maximum decreases by 2d6 for every 24 hours that elapse. If the curse reduces the target’s hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.</p>"
+          "description": "<p>근접 무기 공격: 주문 공격 수정자 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB 슬래싱 영역에 더해 1d6 necrotic 영역. </p><p>대상이 생물인 경우, 주문 저장 DC에 대한 건강 내성 굴림에 성공해야 하며 그렇지 않으면 미라 부패로 저주를 받아야 합니다. 저주받은 대상은 체력을 회복할 수 없으며 최대 체력은 24시간마다 2d6씩 감소합니다. 저주로 인해 대상의 체력 최대치가 0으로 줄어들면 대상은 죽고 몸은 먼지로 변합니다. 저주는 저주 제거 주문이나 다른 마법으로 제거될 때까지 지속됩니다.</p>"
         }
       }
     },
@@ -399,7 +399,7 @@
         },
         "Withering Touch": {
           "name": "Withering 손길",
-          "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d6 + 2 + PB necrotic 피해. </p><p>The target makes a Constitution saving throw. 내성 굴림에 실패하면, the target has disadvantage on Strength checks and melee weapon attacks until the end of its next turn.</p>"
+          "description": "<p>근접 무기 공격: 주문 공격 수정자 명중, 사거리 5피트, 목표 하나. 적중: 1d6 + 2 + PB 괴사 영역. </p><p>대상이 건강 내성 굴림을 합니다. 강제 굴림에 실패하면, 대상은 다음 턴이 끝날 때까지 근력 판정과 근접 무기 공격에 불이익을 받습니다.</p>"
         }
       }
     },
@@ -429,7 +429,7 @@
         },
         "Life Drain": {
           "name": "생명력 흡수 - Life Drain",
-          "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 2d6 + 3 + PB necrotic 피해. </p><p>The target must succeed on a Constitution saving throw against your spell save DC or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>"
+          "description": "<p>근접 무기 공격: 주문 공격 수정자 명중, 사거리 5피트, 목표 하나. 적중: 2d6 + 3 + PB 괴사 영역. </p><p>대상은 당신의 주문 내성 DC에 대한 건강 내성 굴림에 성공해야 합니다. 그렇지 않으면 최대 체력이 받는 피해만큼 감소합니다. 이 감소는 대상이 긴 휴식을 마칠 때까지 지속됩니다. 이 효과가 체력 최대치를 0.</p>로 줄이면 대상은 죽습니다."
         },
         "Profane Bond": {
           "name": "불경한 결속 - Profane Bond"
@@ -448,7 +448,7 @@
         },
         "Slam": {
           "name": "강타 - Slam",
-          "description": "<p>근접 무기 공격: your spell attack modifier 명중, 사거리 5피트, 목표 하나. Hit: 1d8 + 2 + PB bludgeoning 피해. </p><p>If a Humanoid or Beast dies from this damage, its corpse immediately rises as a zombie. This zombie is created at half of its maximum HP, and is hostile to all other creatures.</p>"
+          "description": "<p>근접 무기 공격: 주문 공격 수정자 명중, 사거리 5피트, 목표 하나. 적중: 1d8 + 2 + PB 곤봉입니다. </p><p>인간형이나 야수가 이 피해로 죽으면 그 시체는 즉시 좀비로 부활합니다. 이 좀비는 최대 HP의 절반으로 생성되며 다른 모든 생물에게 적대적입니다.</p>"
         },
         "Undead Fortitude": {
           "name": "언데드의 인내력 - Undead Fortitude",

@@ -2,15 +2,15 @@
   "label": "Spells",
   "entries": {
     "Absent Mind's Aid": {
-      "name": "Absent 정신's - Aid",
+      "name": "부재하는 마음의 도움 - Absent Mind's Aid",
       "description": "<p>직업: Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</p><hr><p>당신은 중간 크기 이하의 물체를 만지면서 실의 고리를 약지에 감습니다. 주문 지속시간 동안 행동으로 그 실을 풀어, 대상 물체가 당신으로부터 100피트 이내에 있다면 그 위치를 알아낼 수 있습니다. 당신의 다음 턴이 끝날 때까지, 그 위치를 당신이 잘 알고 있다면 그 장소의 형상을 정신적으로 떠올리고, 그렇지 않다면 그 위치의 방향만을 알 수 있습니다. 납의 두께가 무엇이든, 얇은 판 한 장이라도 대상과 당신 사이의 직선 경로를 막고 있으면 이 주문으로 물체의 위치를 알아낼 수 없습니다. 실을 풀거나, 이 주문을 다시 시전하면 주문은 종료됩니다.</p>"
     },
     "Borrow Concentration": {
-      "name": "吏묒쨷 鍮뚮━湲? - Borrow Concentration",
+      "name": "차입농도 - Borrow Concentration",
       "description": "<p>직업: Wizard</p><hr><p>동료와 순간적인 정신 연결을 맺어 지속되는 마법의 정신적 부담을 넘겨줍니다. 당신은 사거리 내에서 볼 수 있는 <strong>우호적인 인간형</strong> 하나를 대상으로 합니다. 이 주문을 시전하는 과정의 일부로, 당신은 또한 집중을 요구하는 3레벨 이하의 준비된 주문 하나를 시전합니다. 그 주문에 대한 집중은 당신이 아니라 대상이 유지합니다. 이 주문은 다시 시전하면, 대상이 당신으로부터 30피트를 넘게 떨어지면, 또는 대상이 집중 중인 주문이 끝나면 종료됩니다.</p><p><em><strong>상위 레벨 시전.</strong></em> 5레벨 이상의 주문 슬롯으로 이 주문을 시전하면, <em>집중 빌리기</em>에 사용한 슬롯보다 한 단계 낮은 준비된 주문을 시전할 수 있습니다.</p>"
     },
     "Bulwark of Scales": {
-      "name": "Bulwark ??- Scales",
+      "name": "비늘의 보루 - Bulwark of Scales",
       "description": "<p>종족: Bulwark Dragon<br>이 주문은 어떤 직업의 주문 목록에도 없습니다.</p><hr><p>앞으로 10분 동안, 당신에 대한 치명타는 모두 일반 명중으로 바뀝니다. 내성 굴림을 해야 하는 효과에 반응하여, d20 굴림 결과를 20으로 취급할 수 있습니다. 그렇게 하면 이 주문은 종료됩니다.</p>"
     },
     "Charles' Chunk": {
@@ -35,7 +35,7 @@
       "description": "<p>직업: Bard, Sorcerer, Wizard</p><hr><p>사거리 내의 중간 크기 이하 물체 하나를 대상으로 합니다. 그 물체는 지속시간 동안 파괴할 수 없게 됩니다.</p>"
     },
     "Discern the Heart's Hoard": {
-      "name": "Discern the 심장's - Hoard",
+      "name": "마음의 보물을 식별하세요 - Discern the Heart's Hoard",
       "description": "<p>종족: Whispering Dragon<br>이 주문은 어떤 직업의 주문 목록에도 없습니다.</p><hr><p>당신은 60피트 이내에서 볼 수 있는 크리처에 대한 진실을 알아내기 위해, 아르카나 속 용의 비밀이 모인 밀실을 들여다봅니다.</p><p>그 크리처를 직접 바라보는 동안, 아래 목록에서 최대 2개의 질문을 마음속으로 던질 수 있습니다. GM은 진실한 대답을 하지만, 질문에 답할 수 없거나 불확실한 경우 맥락이 부족하거나 도움이 되지 않을 수 있습니다.</p><ul><li><p>그 크리처는 함께 사는 이들과 어떤 관계인가?</p></li><li><p>그 크리처의 유대나 결점 중 하나는 무엇인가?</p></li><li><p>그 크리처가 두려워하는 것 중 하나는 무엇인가?</p></li><li><p>그 크리처가 낯선 이에게는 말하지 않을 것은 무엇인가?</p></li><li><p>그 크리처의 가장 큰 미상환 채무와 채무자의 이름은 무엇인가?</p></li><li><p>그 크리처는 저축이 얼마나 있는가?</p></li></ul>"
     },
     "Draconic Lucubration": {
@@ -45,7 +45,7 @@
       "description": "<p>직업: Bard, Warlock</p><hr><p>지속시간 동안, 반경 내의 소리 중 하나를 보너스 행동으로 집중해 다른 소리가 고함보다 작으면 모두 차단할 수 있습니다. 또한 사거리 내에서 시전된 <em>@UUID[Compendium.dnd5e.spells.Item.icZokbgV1jIMpNCv]{전달}</em> 주문의 양쪽 대화를 자동으로 들을 수 있습니다.</p>"
     },
     "Flock of Floating Disks": {
-      "name": "Flock 의 - Floating Disks",
+      "name": "플로팅 디스크 무리 - Flock of Floating Disks",
       "description": "<p>직업: Wizard</p><hr><p>이 주문은 @UUID[Compendium.dnd5e.spells.bnjXlk13ZRJuf5d0]{Floating Disk}와 비슷하게 작동하지만 원반을 세 개 만듭니다.</p><p><em><strong>상위 레벨 시전.</strong></em> 3레벨 이상의 주문 슬롯으로 이 주문을 시전하면, 2레벨보다 높은 슬롯 레벨마다 추가 원반 1개를 만듭니다.</p>"
     },
     "Forecast Harvest": {
@@ -120,7 +120,7 @@
       "description": "<p>직업: Yes</p><hr><p>당신이 질문을 소리 내어 묻자, 아르카나는 지친 한숨과 함께 답합니다. 당신은 신 Varasta의 필멸의 아바타가 향한 방향을 감지합니다. Varasta가 움직이고 있다면, 그의 이동 방향도 알 수 있습니다. 그가 발견되길 원하지 않으면 주문은 실패합니다.</p>"
     },
     "Whispers of the Netherworld": {
-      "name": "저승의 속삭임 - Whispers of the Netherworld",
+      "name": "명계의 속삭임 - Whispers of the Netherworld",
       "description": "<p>직업: Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</p><hr><p><br>당신은 검은 양초에 불을 밝혀 Absolute Veil 너머에서 유령들의 속삭임을 정신적으로 듣습니다. DC 11 지혜(통찰) 판정을 합니다. 성공하면 GM이 비밀리에 d100을 굴리고, Whispers 표를 참고해 당신이 듣는 내용을 정합니다.</p><table border=\"1\"><tbody><tr><td style=\"text-align:center\" data-colwidth=\"332\"><p><strong>속삭임</strong></p></td><td style=\"text-align:center\"><p></p></td></tr><tr><td data-colwidth=\"332\"><p><strong>d100</strong></p></td><td style=\"text-align:center\"><p><strong>결과</strong></p></td></tr><tr><td data-colwidth=\"332\"><p>01-15</p></td><td style=\"text-align:center\"><p>알아들을 수 없는 횡설수설</p></td></tr><tr><td data-colwidth=\"332\"><p>16-30</p></td><td style=\"text-align:center\"><p>무작위 문구의 나열</p></td></tr><tr><td data-colwidth=\"332\"><p>31-50</p></td><td style=\"text-align:center\"><p>도움은 되지 않지만 알아들을 수 있는 메시지</p></td></tr><tr><td data-colwidth=\"332\"><p><em>51-85</em></p></td><td style=\"text-align:center\"><p>유용할 수도 있는 수수께끼 같은 통찰</p></td></tr><tr><td data-colwidth=\"332\"><p><em>86-99</em></p></td><td style=\"text-align:center\"><p>도움이 되는 메시지</p></td></tr><tr><td data-colwidth=\"332\"><p><em>100</em></p></td><td style=\"text-align:center\"><p>지속시간 동안 당신의 말을 듣고 응답할 수 있는 유령에게서 오는 도움이 되는 메시지</p></td></tr></tbody></table><p>같은 장소에서 이 주문을 두 번보다 더 많이 시전하면, Beast World에 모습을 드러낼 만큼 강력한 악의적인 유령의 관심을 끌 위험이 있습니다.</p>"
     }
   }

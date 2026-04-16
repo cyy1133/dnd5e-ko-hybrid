@@ -2115,6 +2115,26 @@ export class TranslationStore {
     return template.innerHTML;
   }
 
+  translateHtmlStringSync(html, { relativeTo = null, rollData = null } = {}) {
+    if (!html) return html;
+    const source = this._replaceReferenceMarkup(html);
+    let enriched = TextEditor.enrichHTML(source, {
+      async: false,
+      documents: true,
+      rolls: true,
+      secrets: false,
+      relativeTo,
+      rollData
+    });
+    if (typeof enriched !== "string") {
+      enriched = source;
+    }
+    const template = document.createElement("template");
+    template.innerHTML = enriched;
+    this.translateContentLinks(template.content);
+    return template.innerHTML;
+  }
+
   translateContentLinks(root) {
     root.querySelectorAll("a.content-link").forEach((anchor) => {
       const label = this.getLinkLabel(anchor);
@@ -2626,14 +2646,39 @@ export class TranslationStore {
     };
   }
 
+  _scoreTranslationValue(value) {
+    if (!value) return Number.NEGATIVE_INFINITY;
+    const raw = String(value ?? "");
+    const visible = stripHtmlText(raw)
+      .replace(/__FVTTTOK[_\s-]*\d+__?/gu, " ")
+      .replace(/&amp;Reference\[[^\]]+\](?:\{[^}]*\})?/gu, " ")
+      .replace(/&Reference\[[^\]]+\](?:\{[^}]*\})?/gu, " ")
+      .replace(/@[A-Za-z]+(?:\[[^\]]*\])(?:\{[^}]*\})?/gu, " ")
+      .replace(/\[\[\/[^\]]+\]\]/gu, " ");
+    const hangul = (visible.match(/[\u3131-\u318E\uAC00-\uD7A3]/gu) ?? []).length;
+    const english = (visible.match(/[A-Za-z]/gu) ?? []).length;
+    const corruption = (raw.match(/__FVTTTOK|FVT\s*TTOK|_ _FVTTTOK|\?{2,}|[�쏮먮]/gu) ?? []).length;
+    return (hangul * 3) - english - (corruption * 40);
+  }
+
+  _pickPreferredTranslationValue(currentValue, nextValue) {
+    if (!nextValue) return currentValue;
+    if (!currentValue) return nextValue;
+
+    const currentScore = this._scoreTranslationValue(currentValue);
+    const nextScore = this._scoreTranslationValue(nextValue);
+    if (nextScore > currentScore + 15) return nextValue;
+    return currentValue;
+  }
+
   _mergeTranslations(...translations) {
     const merged = {};
 
     for (const translation of translations) {
       if (!translation) continue;
-      if (!merged.name && translation.name) merged.name = translation.name;
-      if (!merged.description && translation.description) merged.description = translation.description;
-      if (!merged.text && translation.text) merged.text = translation.text;
+      merged.name = this._pickPreferredTranslationValue(merged.name, translation.name);
+      merged.description = this._pickPreferredTranslationValue(merged.description, translation.description);
+      merged.text = this._pickPreferredTranslationValue(merged.text, translation.text);
     }
 
     return Object.keys(merged).length ? merged : null;

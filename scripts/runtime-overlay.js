@@ -25,6 +25,143 @@ const uniqueTargets = (root) => {
   return [...nodes];
 };
 
+const ITEM_PRESENTATION_PATCHES = {
+  installed: false,
+  overlay: null
+};
+
+const ORIGINAL_GET_CHAT_DATA = Symbol(`${MODULE_ID}.originalGetChatData`);
+const ORIGINAL_RICH_TOOLTIP = Symbol(`${MODULE_ID}.originalRichTooltip`);
+const ORIGINAL_CREATE_SCROLL = Symbol(`${MODULE_ID}.originalCreateScrollFromSpell`);
+
+const overlayEnabled = () => {
+  try {
+    return !!game?.settings?.get(MODULE_ID, "enable-runtime-overlay");
+  } catch {
+    return false;
+  }
+};
+
+const getOverlayStore = () => ITEM_PRESENTATION_PATCHES.overlay?.store ?? null;
+
+const getItemContext = (item) => ({
+  relativeTo: item,
+  rollData: item?.getRollData?.()
+    ?? item?.parent?.getRollData?.()
+    ?? item?.actor?.getRollData?.()
+    ?? null
+});
+
+const patchChatDataResult = (item, result) => {
+  const store = getOverlayStore();
+  if (!overlayEnabled() || !store || !result) return result;
+
+  const translation = store.getItemTranslation?.(item);
+  if (!translation?.name && !translation?.description) return result;
+
+  if (translation.name && typeof result.name === "string") {
+    result.name = translation.name;
+  }
+
+  if (translation.description) {
+    const translated = store.translateHtmlStringSync(translation.description, getItemContext(item));
+    if (typeof result.description === "string") {
+      result.description = translated;
+    } else if (result.description && typeof result.description === "object") {
+      if (typeof result.description.value === "string") result.description.value = translated;
+      else if (typeof result.description.content === "string") result.description.content = translated;
+    }
+  }
+
+  return result;
+};
+
+const patchRichTooltipResult = (item, result) => {
+  const store = getOverlayStore();
+  if (!overlayEnabled() || !store || !result || typeof result.content !== "string") return result;
+
+  const translation = store.getItemTranslation?.(item);
+  if (!translation?.name && !translation?.description) return result;
+
+  const template = document.createElement("template");
+  template.innerHTML = result.content;
+  const root = template.content.firstElementChild ?? template.content;
+
+  if (translation.name) {
+    root.querySelector(".title")?.replaceChildren(translation.name);
+    const image = root.querySelector("img[alt]");
+    if (image) image.alt = translation.name;
+  }
+
+  if (translation.description) {
+    const description = root.querySelector(".description");
+    if (description) {
+      description.innerHTML = store.translateHtmlStringSync(translation.description, getItemContext(item));
+    }
+  }
+
+  store.translateContentLinks(root);
+  result.content = template.innerHTML;
+  return result;
+};
+
+const installItemPresentationPatches = () => {
+  if (ITEM_PRESENTATION_PATCHES.installed) return;
+
+  const ItemDocument = globalThis.getDocumentClass?.("Item")
+    ?? globalThis.CONFIG?.Item?.documentClass
+    ?? globalThis.Item;
+  const prototype = ItemDocument?.prototype;
+  if (!prototype) return;
+
+  if (typeof prototype.getChatData === "function" && !prototype[ORIGINAL_GET_CHAT_DATA]) {
+    prototype[ORIGINAL_GET_CHAT_DATA] = prototype.getChatData;
+    prototype.getChatData = function getChatDataPatched(...args) {
+      const result = prototype[ORIGINAL_GET_CHAT_DATA].apply(this, args);
+      if (typeof result?.then === "function") {
+        return result.then((value) => patchChatDataResult(this, value));
+      }
+      return patchChatDataResult(this, result);
+    };
+  }
+
+  if (typeof prototype.richTooltip === "function" && !prototype[ORIGINAL_RICH_TOOLTIP]) {
+    prototype[ORIGINAL_RICH_TOOLTIP] = prototype.richTooltip;
+    prototype.richTooltip = function richTooltipPatched(...args) {
+      const result = prototype[ORIGINAL_RICH_TOOLTIP].apply(this, args);
+      if (typeof result?.then === "function") {
+        return result.then((value) => patchRichTooltipResult(this, value));
+      }
+      return patchRichTooltipResult(this, result);
+    };
+  }
+
+  if (typeof ItemDocument?.createScrollFromSpell === "function" && !ItemDocument[ORIGINAL_CREATE_SCROLL]) {
+    ItemDocument[ORIGINAL_CREATE_SCROLL] = ItemDocument.createScrollFromSpell;
+    ItemDocument.createScrollFromSpell = async function createScrollFromSpellPatched(spell, ...args) {
+      const result = await ItemDocument[ORIGINAL_CREATE_SCROLL].call(this, spell, ...args);
+      const store = getOverlayStore();
+      if (!overlayEnabled() || !store || !result) return result;
+
+      const translation = store.getItemTranslation?.(spell);
+      if (!translation?.description) return result;
+
+      const translated = store.translateHtmlStringSync(translation.description, getItemContext(spell));
+      if (typeof result?.system?.description?.value === "string") {
+        result.system.description.value = translated;
+      } else if (typeof result?.data?.description?.value === "string") {
+        result.data.description.value = translated;
+      } else if (typeof result?.system?.description === "string") {
+        result.system.description = translated;
+      }
+
+      return result;
+    };
+  }
+
+  ITEM_PRESENTATION_PATCHES.installed = true;
+};
+
 export class RuntimeOverlay {
   constructor(store) {
     this.store = store;
@@ -39,6 +176,8 @@ export class RuntimeOverlay {
   activate() {
     if (this.boundHooks) return;
     this.boundHooks = true;
+    ITEM_PRESENTATION_PATCHES.overlay = this;
+    installItemPresentationPatches();
 
     Hooks.on("renderItemDirectory", this.#onRenderItemDirectory.bind(this));
     Hooks.on("renderActorDirectory", this.#onRenderActorDirectory.bind(this));

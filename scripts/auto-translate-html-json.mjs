@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { JSDOM } from "jsdom";
 
 const ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const COMPENDIUM_DIR = path.join(ROOT, "localization", "compendium", "ko");
@@ -53,25 +54,82 @@ const untokenize = (value = "", tokens = []) => {
   return restored;
 };
 
-const translateText = async (value) => {
-  const url = new URL("https://translate.googleapis.com/translate_a/single");
-  url.searchParams.set("client", "gtx");
-  url.searchParams.set("sl", "en");
-  url.searchParams.set("tl", "ko");
-  url.searchParams.set("dt", "t");
-  url.searchParams.set("q", value);
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Translate request failed: ${response.status}`);
+const MAX_QUERY_LENGTH = 3500;
+const splitForTranslation = (value = "") => {
+  if (!value || value.length <= MAX_QUERY_LENGTH) return [value];
+
+  const paragraphs = value
+    .split(/(\n{2,}|<\/p>|<\/li>|<\/h[1-6]>|<\/tr>|<\/div>)/u)
+    .filter(Boolean);
+
+  const chunks = [];
+  let current = "";
+  for (const part of paragraphs) {
+    if ((current + part).length > MAX_QUERY_LENGTH && current) {
+      chunks.push(current);
+      current = "";
+    }
+
+    if (part.length > MAX_QUERY_LENGTH) {
+      for (let index = 0; index < part.length; index += MAX_QUERY_LENGTH) {
+        const slice = part.slice(index, index + MAX_QUERY_LENGTH);
+        if (slice) chunks.push(slice);
+      }
+      continue;
+    }
+
+    current += part;
   }
-  const payload = await response.json();
-  return (payload?.[0] ?? []).map((chunk) => chunk?.[0] ?? "").join("");
+
+  if (current) chunks.push(current);
+  return chunks;
+};
+
+const translateText = async (value) => {
+  const translateSingle = async (chunk) => {
+    const url = new URL("https://translate.googleapis.com/translate_a/single");
+    url.searchParams.set("client", "gtx");
+    url.searchParams.set("sl", "en");
+    url.searchParams.set("tl", "ko");
+    url.searchParams.set("dt", "t");
+    url.searchParams.set("q", chunk);
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Translate request failed: ${response.status}`);
+    }
+    const payload = await response.json();
+    return (payload?.[0] ?? []).map((piece) => piece?.[0] ?? "").join("");
+  }
+
+  const chunks = splitForTranslation(value);
+  const translated = [];
+  for (const chunk of chunks) {
+    translated.push(await translateSingle(chunk));
+  }
+  return translated.join("");
 };
 
 const translateBody = async (value) => {
-  const { output, tokens } = tokenize(value);
-  const translated = await translateText(output);
-  return untokenize(translated, tokens)
+  const dom = new JSDOM(`<body>${value}</body>`);
+  const { document, NodeFilter } = dom.window;
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    const source = node.nodeValue ?? "";
+    const visible = source.replace(/\s+/gu, " ").trim();
+    if (!visible || !ENGLISH_RE.test(visible)) continue;
+    textNodes.push(node);
+  }
+
+  for (const node of textNodes) {
+    const { output, tokens } = tokenize(node.nodeValue ?? "");
+    const translated = await translateText(output);
+    node.nodeValue = untokenize(translated, tokens);
+  }
+
+  return document.body.innerHTML
     .replace(/\u00A0/gu, " ")
     .replace(/\r?\n/gu, "\n");
 };

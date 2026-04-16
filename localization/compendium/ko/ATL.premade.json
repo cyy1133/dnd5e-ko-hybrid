@@ -69,7 +69,7 @@
     },
     "Torch (No preset)": {
       "name": "횃불 (프리셋 없음) - Torch (No preset)",
-      "description": "<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire 피해.</p>"
+      "description": "<p>횃불은 1시간 동안 연소되어 반경 20피트에는 밝은 빛을 제공하고 추가 20피트에는 희미한 빛을 제공합니다. 불타는 횃불로 근접 공격을 하여 맞히면 1불을 줍니다.</p>"
     }
   }
 }

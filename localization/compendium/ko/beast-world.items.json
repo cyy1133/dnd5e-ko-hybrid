@@ -8,11 +8,11 @@
       "name": "오토트로터 박차 - Autotrotter Spurs"
     },
     "Bellarmure, the Beautiful Armor of Allemance": {
-      "name": "Bellarmure, the Beautiful 갑옷 의 - Allemance",
+      "name": "아름다운 Allemance의 갑옷, Bellarmure - Bellarmure, the Beautiful Armor of Allemance",
       "description": "<p><em>중갑 (가슴갑옷), 조율 필요</em></p><p><br>이 가슴갑옷 한 벌에는 알레망 사람들의 사랑이 담겨 있다고 전해지며, 10년 동안 매일 마법 씨앗 기름을 발라 왔습니다. 이 갑옷을 입고 있으면 AC에 +3 보너스를 받습니다. 중갑 숙련이 없어도 이 갑옷에 숙련된 것으로 간주됩니다. 이 갑옷은 먼지와 잔해를 털어내며, 행동으로 망토를 휘둘러 원하는 어떤 복장처럼 보이게 할 수 있습니다.</p><p>또한 공격이나 해로운 효과의 대상이 되었을 때 반응으로 갑옷의 지시어를 말하면, 10분 동안 또는 더 이상 이 갑옷을 입고 있지 않을 때까지 진정한 위엄을 두른 모습으로 자신을 감쌀 수 있습니다. 공격이나 해로운 효과로 당신을 대상으로 삼는 모든 크리처(촉발한 크리처 포함)는 DC 19 지혜 내성 굴림을 해야 합니다. 매혹 상태에 면역인 크리처는 이 내성 굴림을 자동으로 성공합니다. 내성 굴림에 실패하면, 그 크리처는 효과 지속 시간 동안 당신에게 매혹됩니다. 내성 굴림에 성공하면 대상은 아무 영향도 받지 않으며 이후 24시간 동안 이 효과에 면역이 됩니다. 이 특수 행동을 한 번 사용하면 다음 새벽이 올 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Blanket of Safekeeping": {
-      "name": "보호의 담요 - Blanket of Safekeeping"
+      "name": "보관 담요 - Blanket of Safekeeping"
     },
     "Bubble Armor": {
       "name": "거품 갑옷 - Bubble Armor",
@@ -35,10 +35,10 @@
       "description": "<p><em>불가사의한 물건</em></p><p><br>모든 카드가 서로 30피트 이내에 있는 동안, 이 카드 덱은 60피트까지 정상 시야를 가집니다. 지혜(지각)과 지혜(통찰) 판정에 +5 수정치를 더해 굴릴 수 있습니다. 게임 도중 누군가 부정행위를 하는 것을 덱이 발견하면, 그림 카드들이 1분 동안 귀를 찢는 듯한 비명을 냅니다.</p>"
     },
     "Eyes of the Ineffable Archivist": {
-      "name": "Eyes 의 - Ineffable Archivist"
+      "name": "형언할 수 없는 기록관의 눈 - Eyes of the Ineffable Archivist"
     },
     "Jadu, the Boarding Cord of Al'ar": {
-      "name": "Jadu, the Boarding Cord 의 - Al'ar",
+      "name": "알라르의 승선 끈, 자두 - Jadu, the Boarding Cord of Al'ar",
       "description": "<p><em>불가사의한 물건, 조율 필요</em></p><p><br>이 마법적으로 탄력 있고 움직이는 비단 끈은 알?셙리 화산 가장자리에서 자라는 룻기 꽃으로 붉게 물들어 있습니다. 이 끈은 AC 23, HP 100, 비행 속도 10피트를 가집니다. HP가 0이 되면 파괴됩니다. 각 라운드 시작 시 HP를 10 회복합니다. 이 끈이 화염 피해를 받으면 그 라운드에는 HP를 회복하지 않습니다.</p><p>최대 5,000파운드를 지탱할 수 있으며, 길이는 10피트에서 100피트 사이로 늘어나거나 줄어듭니다. 이 끈을 타고 오르거나 걸을 때는 몸을 굽히고 감아 균형과 이동을 돕습니다. 이 위를 기거나 걸을 때, 당신과 당신에게 우호적인 크리처는 능력 판정 없이 자신의 속도까지 이동할 수 있습니다.</p><p>이 끈을 채찍처럼 휘두를 수도 있습니다. 이 무기로 하는 공격 및 피해 굴림에 +3 보너스를 받고, 채찍 숙련이 없어도 숙련된 것으로 간주됩니다. 이 무기를 들고 있을 때 사거리는 30피트입니다.</p>"
     },
     "Jyristä, the Lightning Blade of Oria": {
@@ -50,7 +50,7 @@
       "description": "<p><em>불가사의한 물건</em><br><br>Dramphinian 성기사는 수세기 동안 이 등불을 사용해 그림자 속을 미끄러지듯 다니는 악마들을 찾아냈습니다. 이 등불은 30피트 반경에 밝은 빛을, 그 바깥 30피트에 희미한 빛을 비춥니다. 언데드, 악마, 그리고 이들의 능력 효과를 받고 있는 크리처는 등불의 빛에 비칠 때 검은 후광으로 둘러싸입니다. 이들은 투명 상태의 이점을 얻을 수 없으며, 이들을 상대로 하는 지각 판정에는 이점이 있습니다.</p>"
     },
     "Mabikubo, the Counterweight of the Causeway": {
-      "name": "Mabikubo, the Counterweight 의 - Causeway",
+      "name": "둑길의 균형추, 마비쿠보 - Mabikubo, the Counterweight of the Causeway",
       "description": "<p><em>불가사의한 물건, 조율 필요</em><br><br>이 돌 큐브에는 Causeway의 주요 건축가들의 이름이 새겨져 있습니다. 원래는 건설 현장에서 거대한 돌을 운반하는 데 사용되었습니다. 보너스 행동으로 지시어를 말하면 돌이 마법적으로 한 변 2인치, 5파운드로 줄어듭니다. 다시 말하면 한 변 2피트, 1,000파운드로 커집니다.</p><p>또한 큐브가 축소된 상태일 때, 지시어를 말해 슬링 탄환으로 사용할 수 있습니다. 큐브는 커진 뒤에도 비행 속도를 유지합니다. 명중하면 1,000파운드 큐브는 추가로 6d10 타격 피해를 줍니다. 사용 후에는 아무런 손상 없이 떨어집니다.</p><p>이 1,000파운드 상태의 큐브를 넘어진 크리처 위에 올려두면 그 크리처는 붙잡힌 상태가 됩니다(탈출 DC 18).</p>"
     },
     "Maintenance Kit, Greater": {
@@ -116,7 +116,7 @@
       "name": "마차공 도구 - Wainwright's Tools"
     },
     "Wiletaper, the Contract Candle of Vinyot": {
-      "name": "Wiletaper, the 계약 초 의 - Vinyot"
+      "name": "Vinyot의 계약 양초인 Wiletaper - Wiletaper, the Contract Candle of Vinyot"
     }
   }
 }
