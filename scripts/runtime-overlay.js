@@ -211,6 +211,9 @@ export class RuntimeOverlay {
     this.boundHooks = true;
     ITEM_PRESENTATION_PATCHES.overlay = this;
     installItemPresentationPatches();
+    for (const delay of [250, 1000, 3000, 10000]) {
+      setTimeout(() => installItemPresentationPatches(), delay);
+    }
 
     Hooks.on("renderItemDirectory", this.#onRenderItemDirectory.bind(this));
     Hooks.on("renderActorDirectory", this.#onRenderActorDirectory.bind(this));
