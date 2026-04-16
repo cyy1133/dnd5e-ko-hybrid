@@ -25,6 +25,162 @@ const NAME_FALLBACK_TYPES = new Set([
 
 const normalizeText = (value) => String(value ?? "").trim().replace(/\r\n/g, "\n");
 
+const normalizeReferenceKey = (value) =>
+  normalizeText(value)
+    .replace(/&amp;/gu, "&")
+    .replace(/['’]/gu, "")
+    .replace(/[^A-Za-z0-9]+/gu, "")
+    .toLowerCase();
+
+const normalizeReferenceType = (value) => {
+  const normalized = normalizeText(value).replace(/[^A-Za-z]+/gu, "").toLowerCase();
+  switch (normalized) {
+    case "abilities":
+      return "ability";
+    case "skills":
+      return "skill";
+    case "conditions":
+      return "condition";
+    case "damagetype":
+    case "damagetypes":
+      return "damage";
+    case "rules":
+      return "rule";
+    default:
+      return normalized;
+  }
+};
+
+const referenceAliasKey = (type, value) => {
+  const normalizedValue = normalizeReferenceKey(value);
+  if (!normalizedValue) return "";
+  const normalizedType = normalizeReferenceType(type);
+  return normalizedType ? `${normalizedType}:${normalizedValue}` : normalizedValue;
+};
+
+const stripHtmlText = (value) => {
+  const template = document.createElement("template");
+  template.innerHTML = String(value ?? "");
+  return normalizeText(template.content.textContent ?? "").replace(/\s+/gu, " ").trim();
+};
+
+const REFERENCE_TYPED_LABELS = {
+  ability: {
+    str: "Strength",
+    strength: "Strength",
+    dex: "Dexterity",
+    dexterity: "Dexterity",
+    con: "Constitution",
+    constitution: "Constitution",
+    int: "Intelligence",
+    intelligence: "Intelligence",
+    wis: "Wisdom",
+    wisdom: "Wisdom",
+    cha: "Charisma",
+    charisma: "Charisma"
+  },
+  skill: {
+    acr: "Acrobatics",
+    acrobatics: "Acrobatics",
+    ani: "Animal Handling",
+    animalhandling: "Animal Handling",
+    arc: "Arcana",
+    arcana: "Arcana",
+    ath: "Athletics",
+    athletics: "Athletics",
+    dec: "Deception",
+    deception: "Deception",
+    his: "History",
+    history: "History",
+    ins: "Insight",
+    insight: "Insight",
+    itm: "Intimidation",
+    intimidation: "Intimidation",
+    inv: "Investigation",
+    investigation: "Investigation",
+    med: "Medicine",
+    medicine: "Medicine",
+    nat: "Nature",
+    nature: "Nature",
+    prc: "Perception",
+    perception: "Perception",
+    prf: "Performance",
+    performance: "Performance",
+    per: "Persuasion",
+    persuasion: "Persuasion",
+    rel: "Religion",
+    religion: "Religion",
+    slt: "Sleight of Hand",
+    sleightofhand: "Sleight of Hand",
+    ste: "Stealth",
+    stealth: "Stealth",
+    sur: "Survival",
+    survival: "Survival"
+  },
+  condition: {
+    blinded: "Blinded",
+    charmed: "Charmed",
+    deafened: "Deafened",
+    exhaustion: "Exhaustion",
+    frightened: "Frightened",
+    grappled: "Grappled",
+    incapacitated: "Incapacitated",
+    invisible: "Invisible",
+    paralyzed: "Paralyzed",
+    petrified: "Petrified",
+    poisoned: "Poisoned",
+    prone: "Prone",
+    restrained: "Restrained",
+    stunned: "Stunned",
+    unconscious: "Unconscious"
+  },
+  damage: {
+    acid: "Acid",
+    bludgeoning: "Bludgeoning",
+    cold: "Cold",
+    fire: "Fire",
+    force: "Force",
+    lightning: "Lightning",
+    necrotic: "Necrotic",
+    piercing: "Piercing",
+    poison: "Poison",
+    psychic: "Psychic",
+    radiant: "Radiant",
+    slashing: "Slashing",
+    thunder: "Thunder"
+  },
+  spellschool: {
+    abj: "Abjuration",
+    abjuration: "Abjuration",
+    con: "Conjuration",
+    conjuration: "Conjuration",
+    div: "Divination",
+    divination: "Divination",
+    enc: "Enchantment",
+    enchantment: "Enchantment",
+    evo: "Evocation",
+    evocation: "Evocation",
+    ill: "Illusion",
+    illusion: "Illusion",
+    nec: "Necromancy",
+    necromancy: "Necromancy",
+    trs: "Transmutation",
+    transmutation: "Transmutation"
+  }
+};
+
+const referenceAliasesForPageName = (pageName) => {
+  const aliases = [];
+  const normalizedPageName = normalizeText(pageName);
+  for (const [type, mapping] of Object.entries(REFERENCE_TYPED_LABELS)) {
+    for (const [alias, canonicalLabel] of Object.entries(mapping)) {
+      if (normalizeText(canonicalLabel).toLowerCase() !== normalizedPageName.toLowerCase()) continue;
+      aliases.push(referenceAliasKey(type, alias));
+    }
+  }
+  return aliases;
+};
+
 const signatureFor = ({ type = "", name = "", content = "" } = {}) =>
   `${normalizeText(type)}::${normalizeText(name)}::${normalizeText(content)}`;
 
@@ -1650,6 +1806,8 @@ export class TranslationStore {
     this.compendiumIdentifierIndex = new Map();
     this.compendiumNameIndex = new Map();
     this.compendiumActorNameIndex = new Map();
+    this.referenceTargets = new Map();
+    this.referenceTooltips = new Map();
     this.sharedItems = new Map();
   }
 
@@ -1758,6 +1916,127 @@ export class TranslationStore {
     return null;
   }
 
+  getLinkTooltip(anchor) {
+    if (!anchor) return null;
+    const uuid = anchor.dataset.uuid;
+    if (uuid && this.referenceTooltips.has(uuid)) {
+      return this.referenceTooltips.get(uuid);
+    }
+
+    const pack = anchor.dataset.pack;
+    const id = anchor.dataset.id;
+    if (pack && id) {
+      const pageUuid = `Compendium.${pack}.JournalEntry.${anchor.closest("[data-entry-id]")?.dataset.entryId ?? ""}.JournalEntryPage.${id}`;
+      if (this.referenceTooltips.has(pageUuid)) return this.referenceTooltips.get(pageUuid);
+    }
+
+    return null;
+  }
+
+  _getCanonicalReferenceLabel(type, target) {
+    const normalizedType = normalizeReferenceType(type);
+    const normalizedTarget = normalizeReferenceKey(target);
+    if (!normalizedTarget) return "";
+
+    const typedLookup = REFERENCE_TYPED_LABELS[normalizedType];
+    if (typedLookup?.[normalizedTarget]) return typedLookup[normalizedTarget];
+
+    return normalizeText(target);
+  }
+
+  _referenceTargetPriority(collection) {
+    if (collection === "dnd5e.rules") return 2;
+    if (collection.endsWith(".rules")) return 1;
+    return 0;
+  }
+
+  _indexReferenceTarget(collection, alias, data) {
+    const key = alias.includes(":")
+      ? `${normalizeReferenceType(alias.split(":")[0])}:${normalizeReferenceKey(alias.split(":").slice(1).join(":"))}`
+      : referenceAliasKey("", alias);
+
+    if (!key) return;
+
+    const existing = this.referenceTargets.get(key);
+    const incomingPriority = this._referenceTargetPriority(collection);
+    if (existing && existing.priority > incomingPriority) return;
+
+    this.referenceTargets.set(key, {
+      ...data,
+      priority: incomingPriority
+    });
+  }
+
+  _indexReferencePage(collection, page, pageTranslation = {}) {
+    if (!page?.uuid || !page?.name) return;
+
+    const tooltip = stripHtmlText(
+      pageTranslation?.system?.tooltip
+      ?? pageTranslation?.text
+      ?? page?.system?.tooltip
+      ?? page?.text?.content
+      ?? ""
+    );
+
+    const data = {
+      uuid: page.uuid,
+      sourceName: page.name,
+      label: pageTranslation?.name ?? page.name,
+      tooltip
+    };
+
+    this._indexReferenceTarget(collection, page.name, data);
+    this._indexReferenceTarget(collection, data.label, data);
+    this._indexReferenceTarget(collection, `rule:${page.name}`, data);
+
+    for (const alias of referenceAliasesForPageName(page.name)) {
+      this._indexReferenceTarget(collection, alias, data);
+    }
+
+    if (tooltip) {
+      this.referenceTooltips.set(page.uuid, tooltip);
+    }
+  }
+
+  _resolveReferenceTarget(target, explicitLabel = "") {
+    const raw = normalizeText(target);
+    if (!raw) return null;
+
+    const [rawType, rawValue] = raw.includes("=")
+      ? raw.split(/=(.+)/u, 2)
+      : ["", raw];
+
+    const normalizedType = normalizeReferenceType(rawType);
+    const canonicalLabel = this._getCanonicalReferenceLabel(normalizedType, rawValue);
+
+    const candidates = [
+      referenceAliasKey(normalizedType, rawValue),
+      referenceAliasKey(normalizedType, canonicalLabel),
+      referenceAliasKey("", rawValue),
+      referenceAliasKey("", canonicalLabel),
+      referenceAliasKey("", explicitLabel)
+    ].filter(Boolean);
+
+    for (const candidate of candidates) {
+      const entry = this.referenceTargets.get(candidate);
+      if (entry) return entry;
+    }
+
+    return null;
+  }
+
+  _replaceReferenceMarkup(html) {
+    if (!html || !String(html).includes("Reference[")) return html;
+
+    return String(html).replace(/&(amp;)?Reference\[([^\]]+)\](?:\{([^}]+)\})?/gu, (match, _escaped, target, label) => {
+      const entry = this._resolveReferenceTarget(target, label);
+      if (!entry?.uuid) return match.replace(/^&amp;Reference/gu, "&Reference");
+
+      const displayLabel = normalizeText(label) || entry.label || entry.sourceName;
+      return `@UUID[${entry.uuid}]{${displayLabel}}`;
+    });
+  }
+
   translateAnchor(anchor, label) {
     if (!anchor || !label) return;
     const icon = anchor.querySelector("i")?.outerHTML ?? "";
@@ -1766,7 +2045,8 @@ export class TranslationStore {
 
   translateHtmlString(html, { relativeTo = null, rollData = null } = {}) {
     if (!html) return html;
-    const enriched = TextEditor.enrichHTML(html, {
+    const source = this._replaceReferenceMarkup(html);
+    const enriched = TextEditor.enrichHTML(source, {
       async: false,
       documents: true,
       rolls: true,
@@ -1775,7 +2055,7 @@ export class TranslationStore {
       rollData
     });
     const template = document.createElement("template");
-    template.innerHTML = typeof enriched === "string" ? enriched : html;
+    template.innerHTML = typeof enriched === "string" ? enriched : source;
     this.translateContentLinks(template.content);
     return template.innerHTML;
   }
@@ -1784,6 +2064,8 @@ export class TranslationStore {
     root.querySelectorAll("a.content-link").forEach((anchor) => {
       const label = this.getLinkLabel(anchor);
       if (label) this.translateAnchor(anchor, label);
+      const tooltip = this.getLinkTooltip(anchor);
+      if (tooltip) anchor.setAttribute("title", tooltip);
     });
     this.translateStaticLabels(root);
   }
@@ -3121,6 +3403,8 @@ export class TranslationStore {
     this.compendiumIdentifierIndex.clear();
     this.compendiumNameIndex.clear();
     this.compendiumActorNameIndex.clear();
+    this.referenceTargets.clear();
+    this.referenceTooltips.clear();
   }
 
   _collectionFromPath(relativePath) {
@@ -3243,6 +3527,7 @@ export class TranslationStore {
               if (pageTranslation.name) {
                 this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
               }
+              this._indexReferencePage(collection, page, pageTranslation);
             }
             if (Object.keys(translation.pages).length) {
               data.entries[document.name] = translation;
@@ -3284,8 +3569,10 @@ export class TranslationStore {
 
         for (const page of document.pages) {
           const pageTranslation = translation.pages?.[page.name];
-          if (!pageTranslation?.name) continue;
-          this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+          if (pageTranslation?.name) {
+            this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+          }
+          this._indexReferencePage(collection, page, pageTranslation);
         }
       }
     }
