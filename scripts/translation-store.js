@@ -1806,6 +1806,7 @@ export class TranslationStore {
     this.compendiumIdentifierIndex = new Map();
     this.compendiumNameIndex = new Map();
     this.compendiumActorNameIndex = new Map();
+    this.referenceLabels = new Map();
     this.referenceTargets = new Map();
     this.referenceTooltips = new Map();
     this.sharedItems = new Map();
@@ -1933,6 +1934,43 @@ export class TranslationStore {
     return null;
   }
 
+  _indexReferenceLabel(type, value, label) {
+    const normalizedLabel = normalizeText(label);
+    if (!normalizedLabel) return;
+
+    const key = referenceAliasKey(type, value);
+    if (!key || this.referenceLabels.has(key)) return;
+    this.referenceLabels.set(key, normalizedLabel);
+  }
+
+  _getReferenceDisplayLabel(type, target, explicitLabel = "") {
+    const explicit = normalizeText(explicitLabel);
+    if (explicit) return explicit;
+
+    const normalizedType = normalizeReferenceType(type);
+    const normalizedTarget = normalizeReferenceKey(target);
+    if (!normalizedTarget) return "";
+
+    const canonicalLabel = this._getCanonicalReferenceLabel(normalizedType, target);
+    const candidates = [
+      referenceAliasKey(normalizedType, target),
+      referenceAliasKey(normalizedType, canonicalLabel),
+      referenceAliasKey("", target),
+      referenceAliasKey("", canonicalLabel)
+    ].filter(Boolean);
+
+    for (const candidate of candidates) {
+      const mapped = this.referenceLabels.get(candidate);
+      if (mapped) return mapped;
+    }
+
+    const entry = this._resolveReferenceTarget(
+      normalizedType ? `${normalizedType}=${target}` : target,
+      explicit
+    );
+    return normalizeText(entry?.label ?? "");
+  }
+
   _getCanonicalReferenceLabel(type, target) {
     const normalizedType = normalizeReferenceType(type);
     const normalizedTarget = normalizeReferenceKey(target);
@@ -1985,11 +2023,15 @@ export class TranslationStore {
       tooltip
     };
 
+    this._indexReferenceLabel("", page.name, data.label);
+    this._indexReferenceLabel("rule", page.name, data.label);
     this._indexReferenceTarget(collection, page.name, data);
     this._indexReferenceTarget(collection, data.label, data);
     this._indexReferenceTarget(collection, `rule:${page.name}`, data);
 
     for (const alias of referenceAliasesForPageName(page.name)) {
+      const [aliasType, ...aliasValueParts] = alias.split(":");
+      this._indexReferenceLabel(aliasType, aliasValueParts.join(":"), data.label);
       this._indexReferenceTarget(collection, alias, data);
     }
 
@@ -2029,11 +2071,21 @@ export class TranslationStore {
     if (!html || !String(html).includes("Reference[")) return html;
 
     return String(html).replace(/&(amp;)?Reference\[([^\]]+)\](?:\{([^}]+)\})?/gu, (match, _escaped, target, label) => {
-      const entry = this._resolveReferenceTarget(target, label);
-      if (!entry?.uuid) return match.replace(/^&amp;Reference/gu, "&Reference");
+      const rawTarget = normalizeText(target);
+      const [rawType, rawValue] = rawTarget.includes("=")
+        ? rawTarget.split(/=(.+)/u, 2)
+        : ["", rawTarget];
+      const preservedReference = match.replace(/^&amp;Reference/gu, "&Reference");
+      const displayLabel = this._getReferenceDisplayLabel(rawType, rawValue, label);
+      if (displayLabel) {
+        return `&Reference[${target}]{${displayLabel}}`;
+      }
 
-      const displayLabel = normalizeText(label) || entry.label || entry.sourceName;
-      return `@UUID[${entry.uuid}]{${displayLabel}}`;
+      const entry = this._resolveReferenceTarget(target, label);
+      if (!entry?.uuid) return preservedReference;
+
+      const fallbackLabel = normalizeText(label) || entry.label || entry.sourceName;
+      return `@UUID[${entry.uuid}]{${fallbackLabel}}`;
     });
   }
 
@@ -3391,6 +3443,20 @@ export class TranslationStore {
           new Map(Object.entries(data.folders).map(([name, label]) => [name, plainLabelToKo(label)]))
         );
       }
+      if (collection === "dnd5e.rules") {
+        for (const entry of Object.values(data.entries ?? {})) {
+          for (const [pageName, pageTranslation] of Object.entries(entry?.pages ?? {})) {
+            const translatedLabel = normalizeText(pageTranslation?.name);
+            if (!translatedLabel) continue;
+            this._indexReferenceLabel("", pageName, translatedLabel);
+            this._indexReferenceLabel("rule", pageName, translatedLabel);
+            for (const alias of referenceAliasesForPageName(pageName)) {
+              const [aliasType, ...aliasValueParts] = alias.split(":");
+              this._indexReferenceLabel(aliasType, aliasValueParts.join(":"), translatedLabel);
+            }
+          }
+        }
+      }
     }
 
     await this._indexCompendiumTranslations();
@@ -3407,6 +3473,7 @@ export class TranslationStore {
     this.compendiumIdentifierIndex.clear();
     this.compendiumNameIndex.clear();
     this.compendiumActorNameIndex.clear();
+    this.referenceLabels.clear();
     this.referenceTargets.clear();
     this.referenceTooltips.clear();
   }
