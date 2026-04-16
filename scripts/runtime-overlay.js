@@ -31,6 +31,7 @@ export class RuntimeOverlay {
     this.boundHooks = false;
     this.actorSheetObservers = new WeakMap();
     this.pendingActorSheetPasses = new WeakMap();
+    this.pendingHtmlRenders = new WeakMap();
     this.pendingStoreRefresh = null;
   }
 
@@ -149,6 +150,29 @@ export class RuntimeOverlay {
     }
   }
 
+  async #applyTranslatedHtml(root, translatedHtmlPromise) {
+    if (!root || !this.#enabled()) return;
+
+    const token = (this.pendingHtmlRenders.get(root) ?? 0) + 1;
+    this.pendingHtmlRenders.set(root, token);
+
+    let translatedHtml = translatedHtmlPromise;
+    if (typeof translatedHtml?.then === "function") {
+      try {
+        translatedHtml = await translatedHtml;
+      } catch (error) {
+        console.warn(`${MODULE_ID} | Failed to translate sheet HTML`, error);
+        return;
+      }
+    }
+
+    if (!translatedHtml || !root.isConnected) return;
+    if (this.pendingHtmlRenders.get(root) !== token) return;
+
+    this.#replaceHtml(root, translatedHtml);
+    this.#decorateHtml(root);
+  }
+
   #applyNameInput(root, name) {
     root.querySelectorAll("input[name='name']").forEach((input) => {
       input.value = name;
@@ -262,7 +286,7 @@ export class RuntimeOverlay {
       this.#applyNameInput(html[0], translation.name);
     }
     if (translation?.description) {
-      this.#replaceHtml(html[0], this.store.translateHtmlString(translation.description, context));
+      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.description, context));
     }
     this.#decorateHtml(html[0]);
   }
@@ -279,7 +303,7 @@ export class RuntimeOverlay {
       this.#applyNameInput(html[0], translation.name);
     }
     if (translation?.description) {
-      this.#replaceHtml(html[0], this.store.translateHtmlString(translation.description, context));
+      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.description, context));
     }
     this.#translateActorSheetItems(app.object, html[0]);
     this.#translateFolderLabels(html[0]);
@@ -305,7 +329,7 @@ export class RuntimeOverlay {
       this.#applyNameInput(html[0], translation.name);
     }
     if (translation?.text) {
-      this.#replaceHtml(html[0], this.store.translateHtmlString(translation.text, context));
+      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.text, context));
     }
     this.#decorateHtml(html[0]);
   }

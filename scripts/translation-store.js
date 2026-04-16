@@ -2043,17 +2043,20 @@ export class TranslationStore {
     anchor.innerHTML = `${icon}${escapeHtml(label)}`;
   }
 
-  translateHtmlString(html, { relativeTo = null, rollData = null } = {}) {
+  async translateHtmlString(html, { relativeTo = null, rollData = null } = {}) {
     if (!html) return html;
     const source = this._replaceReferenceMarkup(html);
-    const enriched = TextEditor.enrichHTML(source, {
-      async: false,
+    let enriched = TextEditor.enrichHTML(source, {
+      async: true,
       documents: true,
       rolls: true,
       secrets: false,
       relativeTo,
       rollData
     });
+    if (typeof enriched?.then === "function") {
+      enriched = await enriched;
+    }
     const template = document.createElement("template");
     template.innerHTML = typeof enriched === "string" ? enriched : source;
     this.translateContentLinks(template.content);
