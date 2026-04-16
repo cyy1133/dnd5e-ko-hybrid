@@ -32,6 +32,7 @@ export class RuntimeOverlay {
     this.actorSheetObservers = new WeakMap();
     this.pendingActorSheetPasses = new WeakMap();
     this.pendingHtmlRenders = new WeakMap();
+    this.pendingDeferredPasses = new WeakMap();
     this.pendingStoreRefresh = null;
   }
 
@@ -179,6 +180,25 @@ export class RuntimeOverlay {
     });
   }
 
+  #applyStaticName(root, name) {
+    root.querySelectorAll(".document-name, .sheet-header .document-name").forEach((node) => {
+      if (node instanceof HTMLInputElement) return;
+      node.textContent = name;
+    });
+  }
+
+  #scheduleDeferredPass(root, callback, delays = [150, 600, 1500]) {
+    const existing = this.pendingDeferredPasses.get(root);
+    if (existing) existing.forEach((handle) => clearTimeout(handle));
+
+    const handles = delays.map((delay) => setTimeout(() => {
+      if (!root?.isConnected || !this.#enabled()) return;
+      callback();
+    }, delay));
+
+    this.pendingDeferredPasses.set(root, handles);
+  }
+
   #translateFolderLabels(root) {
     root.querySelectorAll(".folder .folder-name, .folder .folder-header h3").forEach((node) => {
       const translated = this.store.getPlainTextLabel(node.textContent?.trim());
@@ -276,19 +296,25 @@ export class RuntimeOverlay {
 
   #onRenderItemSheet(app, html) {
     if (!this.#enabled()) return;
+    const root = html[0];
     const translation = this.store.getItemTranslation(app.object);
     const context = {
       relativeTo: app.object,
       rollData: app.object?.getRollData?.() ?? null
     };
-    if (translation?.name) {
-      setWindowTitle(html, translation.name);
-      this.#applyNameInput(html[0], translation.name);
-    }
-    if (translation?.description) {
-      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.description, context));
-    }
-    this.#decorateHtml(html[0]);
+    const apply = () => {
+      if (translation?.name) {
+        setWindowTitle(html, translation.name);
+        this.#applyNameInput(root, translation.name);
+        this.#applyStaticName(root, translation.name);
+      }
+      if (translation?.description) {
+        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.description, context));
+      }
+      this.#decorateHtml(root);
+    };
+    apply();
+    this.#scheduleDeferredPass(root, apply);
   }
 
   #onRenderActorSheet(app, html) {
@@ -319,19 +345,25 @@ export class RuntimeOverlay {
 
   #onRenderJournalPageSheet(app, html) {
     if (!this.#enabled()) return;
+    const root = html[0];
     const translation = this.store.getJournalPageTranslation(app.object);
     const context = {
       relativeTo: app.object,
       rollData: app.object?.getRollData?.() ?? null
     };
-    if (translation?.name) {
-      setWindowTitle(html, translation.name);
-      this.#applyNameInput(html[0], translation.name);
-    }
-    if (translation?.text) {
-      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.text, context));
-    }
-    this.#decorateHtml(html[0]);
+    const apply = () => {
+      if (translation?.name) {
+        setWindowTitle(html, translation.name);
+        this.#applyNameInput(root, translation.name);
+        this.#applyStaticName(root, translation.name);
+      }
+      if (translation?.text) {
+        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.text, context));
+      }
+      this.#decorateHtml(root);
+    };
+    apply();
+    this.#scheduleDeferredPass(root, apply);
   }
 
   #onRenderChatMessage(app, html) {
