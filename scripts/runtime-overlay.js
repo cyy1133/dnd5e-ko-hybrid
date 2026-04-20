@@ -12,6 +12,49 @@ const DESCRIPTION_SELECTORS = [
   ".journal-sheet-container .pages-list .page"
 ];
 
+const DESCRIPTION_PANEL_SELECTORS = [
+  "[data-tab='description'] .editor",
+  "[data-tab='description'] .tab-body",
+  "[data-tab='biography'] .editor",
+  "[data-tab='biography'] .tab-body",
+  "[data-tab='details'] .biography",
+  ".journal-page-content",
+  ".journal-sheet-container .pages-list .page"
+];
+
+const LEAF_LABEL_SELECTORS = [
+  ".item-name h4",
+  ".item-name .name",
+  ".item-name a",
+  ".entry-name",
+  ".document-name",
+  ".name h4",
+  ".name a",
+  ".rollable h4",
+  "h4",
+  "h3",
+  "a",
+  "span"
+];
+
+const TRANSLATION_PANEL_ATTR = "data-dnd5e-ko-hybrid-panel";
+const TRANSLATION_PANEL_HEADING = "한국어 번역";
+
+const normalizeText = (value = "") => String(value ?? "").replace(/\s+/gu, " ").trim();
+const normalizeHtmlText = (value = "") => {
+  const template = document.createElement("template");
+  template.innerHTML = String(value ?? "");
+  return normalizeText(template.content.textContent ?? "");
+};
+
+const extractItemDescription = (item) => item?.system?.description?.value ?? item?.system?.description ?? "";
+const extractActorDescription = (actor) =>
+  actor?.system?.details?.biography?.value
+  ?? actor?.system?.details?.description
+  ?? actor?.system?.description?.value
+  ?? "";
+const extractJournalPageText = (page) => page?.text?.content ?? "";
+
 const setWindowTitle = (htmlOrRoot, name) => {
   const root = htmlOrRoot instanceof HTMLElement ? htmlOrRoot : htmlOrRoot?.[0];
   root?.closest(".window-app")?.querySelector(".window-title")?.replaceChildren(name);
@@ -23,6 +66,24 @@ const uniqueTargets = (root) => {
     root.querySelectorAll(selector).forEach((node) => nodes.add(node));
   }
   return [...nodes];
+};
+
+const findLeafLabelTarget = (root, selectors = LEAF_LABEL_SELECTORS) => {
+  if (!(root instanceof HTMLElement)) return null;
+
+  for (const selector of selectors) {
+    const candidates = root.matches?.(selector) ? [root, ...root.querySelectorAll(selector)] : root.querySelectorAll(selector);
+    for (const node of candidates) {
+      if (!(node instanceof HTMLElement)) continue;
+      if (node.matches("input, textarea, select")) continue;
+      if (node.querySelector("img, svg, video")) continue;
+      const text = normalizeText(node.textContent);
+      if (!text) continue;
+      return node;
+    }
+  }
+
+  return null;
 };
 
 const ITEM_PRESENTATION_PATCHES = {
@@ -199,7 +260,6 @@ export class RuntimeOverlay {
   constructor(store) {
     this.store = store;
     this.boundHooks = false;
-    this.actorSheetObservers = new WeakMap();
     this.pendingActorSheetPasses = new WeakMap();
     this.pendingHtmlRenders = new WeakMap();
     this.pendingDeferredPasses = new WeakMap();
@@ -266,9 +326,57 @@ export class RuntimeOverlay {
     return game.settings.get(MODULE_ID, "enable-runtime-overlay");
   }
 
-  #onDocumentMutation() {
+  #rerenderApplications(predicate) {
+    Object.values(ui.windows).forEach((app) => {
+      try {
+        if (predicate(app)) app.render(false);
+      } catch (error) {
+        console.warn(`${MODULE_ID} | Failed to rerender`, app, error);
+      }
+    });
+  }
+
+  #refreshSidebarForDocument(document) {
+    const name = document?.documentName ?? "";
+    if (name === "Item" || document?.parent?.documentName === "Actor") {
+      const itemsRoot = ui.sidebar?.tabs?.items?.element?.[0];
+      if (itemsRoot) {
+        this.#translateDirectory(itemsRoot, game.items, (item) => this.store.getItemTranslation(item));
+      }
+    }
+
+    if (name === "Actor" || document?.parent?.documentName === "Actor") {
+      const actorsRoot = ui.sidebar?.tabs?.actors?.element?.[0];
+      if (actorsRoot) {
+        this.#translateDirectory(actorsRoot, game.actors, (actor) => this.store.getActorTranslation(actor));
+      }
+    }
+
+    if (name === "JournalEntry" || name === "JournalEntryPage" || name === "Folder") {
+      const journalRoot = ui.sidebar?.tabs?.journal?.element?.[0];
+      if (journalRoot) {
+        this.#translateFolderLabels(journalRoot);
+        this.#decorateHtml(journalRoot);
+      }
+    }
+  }
+
+  #onDocumentMutation(document) {
     if (!this.#enabled()) return;
-    queueMicrotask(() => this.rerenderOpenApplications());
+    queueMicrotask(() => {
+      const targetUuid = document?.uuid ?? null;
+      const parentUuid = document?.parent?.uuid ?? null;
+
+      this.#rerenderApplications((app) => {
+        const object = app?.object ?? app?.document ?? null;
+        const objectUuid = object?.uuid ?? null;
+        if (targetUuid && objectUuid === targetUuid) return true;
+        if (parentUuid && objectUuid === parentUuid) return true;
+        return false;
+      });
+
+      this.#refreshSidebarForDocument(document);
+    });
   }
 
   #onImporterCompendiumMutation() {
@@ -289,7 +397,8 @@ export class RuntimeOverlay {
       } catch (error) {
         console.warn(`${MODULE_ID} | Failed to refresh translation store after importer update`, error);
       }
-      this.rerenderOpenApplications();
+      this.#rerenderApplications((app) => Boolean(app?.collection ?? app?.object ?? app?.document));
+      this.#refreshSidebarTabs();
     }, 250);
   }
 
@@ -318,15 +427,45 @@ export class RuntimeOverlay {
     this.store.translateContentLinks(root);
   }
 
-  #replaceHtml(root, translatedHtml) {
-    if (!translatedHtml) return;
-    for (const target of uniqueTargets(root)) {
-      if (!target.classList.contains("editor-content") && target.children.length && target.querySelector(".editor-content")) continue;
-      target.innerHTML = translatedHtml;
+  #findDescriptionPanelTarget(root) {
+    if (!(root instanceof HTMLElement)) return null;
+    for (const selector of DESCRIPTION_PANEL_SELECTORS) {
+      const target = root.querySelector(selector);
+      if (target instanceof HTMLElement) return target;
     }
+    return uniqueTargets(root).find((node) => node instanceof HTMLElement) ?? null;
   }
 
-  async #applyTranslatedHtml(root, translatedHtmlPromise) {
+  #clearTranslationPanels(root, key) {
+    if (!(root instanceof HTMLElement)) return;
+    root.querySelectorAll(`[${TRANSLATION_PANEL_ATTR}]`).forEach((panel) => {
+      if (!key || panel.getAttribute(TRANSLATION_PANEL_ATTR) === key) panel.remove();
+    });
+  }
+
+  #upsertTranslationPanel(root, key, translatedHtml, originalHtml = "") {
+    if (!(root instanceof HTMLElement)) return;
+    this.#clearTranslationPanels(root, key);
+
+    if (!translatedHtml) return;
+    if (normalizeHtmlText(originalHtml) === normalizeHtmlText(translatedHtml)) return;
+
+    const target = this.#findDescriptionPanelTarget(root);
+    if (!(target instanceof HTMLElement)) return;
+
+    const panel = document.createElement("section");
+    panel.className = "dnd5e-ko-hybrid-panel";
+    panel.setAttribute(TRANSLATION_PANEL_ATTR, key);
+    panel.innerHTML = `
+      <div class="dnd5e-ko-hybrid-panel__label">${TRANSLATION_PANEL_HEADING}</div>
+      <div class="dnd5e-ko-hybrid-panel__content">${translatedHtml}</div>
+    `;
+
+    target.insertAdjacentElement("afterend", panel);
+    this.#decorateHtml(panel);
+  }
+
+  async #applyTranslatedHtml(root, translatedHtmlPromise, { key = "description", originalHtml = "" } = {}) {
     if (!root || !this.#enabled()) return;
 
     const token = (this.pendingHtmlRenders.get(root) ?? 0) + 1;
@@ -345,14 +484,7 @@ export class RuntimeOverlay {
     if (!translatedHtml || !root.isConnected) return;
     if (this.pendingHtmlRenders.get(root) !== token) return;
 
-    this.#replaceHtml(root, translatedHtml);
-    this.#decorateHtml(root);
-  }
-
-  #applyNameInput(root, name) {
-    root.querySelectorAll("input[name='name']").forEach((input) => {
-      input.value = name;
-    });
+    this.#upsertTranslationPanel(root, key, translatedHtml, originalHtml);
   }
 
   #applyStaticName(root, name) {
@@ -387,7 +519,7 @@ export class RuntimeOverlay {
       const document = documents.get(row.dataset.documentId);
       const translation = translator(document);
       if (!translation?.name) return;
-      const label = row.querySelector(".entry-name, h3, h4, .document-name");
+      const label = findLeafLabelTarget(row, [".entry-name", ".document-name", "h4", "h3", "a", "span"]);
       if (label) label.textContent = translation.name;
     });
     this.#translateFolderLabels(root);
@@ -399,7 +531,7 @@ export class RuntimeOverlay {
       const item = actor.items.get(row.dataset.itemId);
       const translation = this.store.getItemTranslation(item);
       if (!translation?.name) return;
-      const label = row.querySelector(".item-name, .item-name h4, .item-name a, .name, .name a, .rollable, h4");
+      const label = findLeafLabelTarget(row, [".item-name h4", ".item-name .name", ".item-name a", ".name h4", ".name a", ".rollable h4", "h4", "a", "span"]);
       if (label) label.textContent = translation.name;
     });
   }
@@ -419,13 +551,6 @@ export class RuntimeOverlay {
     this.pendingActorSheetPasses.set(root, handle);
   }
 
-  #ensureActorSheetObserver(actor, root) {
-    if (!root || this.actorSheetObservers.has(root)) return;
-    const observer = new MutationObserver(() => this.#scheduleActorSheetPass(actor, root));
-    observer.observe(root, { childList: true, subtree: true });
-    this.actorSheetObservers.set(root, observer);
-  }
-
   #translateCompendiumEntries(app, root) {
     const pack = app.collection;
     if (!pack) return;
@@ -439,7 +564,7 @@ export class RuntimeOverlay {
       if (!entry) return;
       const translation = this.store._getCompendiumEntry(pack.collection, entry.name);
       if (!translation?.name) return;
-      const label = row.querySelector(".entry-name, h3, h4, .document-name");
+      const label = findLeafLabelTarget(row, [".entry-name", ".document-name", "h4", "h3", "a", "span"]);
       if (label) label.textContent = translation.name;
     });
 
@@ -480,16 +605,20 @@ export class RuntimeOverlay {
     const apply = () => {
       if (translation?.name) {
         setWindowTitle(html, translation.name);
-        this.#applyNameInput(root, translation.name);
         this.#applyStaticName(root, translation.name);
       }
       if (translation?.description) {
-        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.description, context));
+        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.description, context), {
+          key: "item-description",
+          originalHtml: extractItemDescription(app.object)
+        });
+      } else {
+        this.#clearTranslationPanels(root, "item-description");
       }
       this.#decorateHtml(root);
     };
     apply();
-    this.#scheduleDeferredPass(root, apply);
+    this.#scheduleDeferredPass(root, apply, [120, 450]);
   }
 
   #onRenderActorSheet(app, html) {
@@ -501,14 +630,18 @@ export class RuntimeOverlay {
     };
     if (translation?.name) {
       setWindowTitle(html, translation.name);
-      this.#applyNameInput(html[0], translation.name);
+      this.#applyStaticName(html[0], translation.name);
     }
     if (translation?.description) {
-      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.description, context));
+      void this.#applyTranslatedHtml(html[0], this.store.translateHtmlString(translation.description, context), {
+        key: "actor-description",
+        originalHtml: extractActorDescription(app.object)
+      });
+    } else {
+      this.#clearTranslationPanels(html[0], "actor-description");
     }
     this.#translateActorSheetItems(app.object, html[0]);
     this.#translateFolderLabels(html[0]);
-    this.#ensureActorSheetObserver(app.object, html[0]);
     this.#scheduleActorSheetPass(app.object, html[0]);
     this.#decorateHtml(html[0]);
   }
@@ -529,16 +662,20 @@ export class RuntimeOverlay {
     const apply = () => {
       if (translation?.name) {
         setWindowTitle(html, translation.name);
-        this.#applyNameInput(root, translation.name);
         this.#applyStaticName(root, translation.name);
       }
       if (translation?.text) {
-        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.text, context));
+        void this.#applyTranslatedHtml(root, this.store.translateHtmlString(translation.text, context), {
+          key: "journal-page-text",
+          originalHtml: extractJournalPageText(app.object)
+        });
+      } else {
+        this.#clearTranslationPanels(root, "journal-page-text");
       }
       this.#decorateHtml(root);
     };
     apply();
-    this.#scheduleDeferredPass(root, apply);
+    this.#scheduleDeferredPass(root, apply, [120, 450]);
   }
 
   #onRenderChatMessage(app, html) {

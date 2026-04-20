@@ -2658,7 +2658,8 @@ export class TranslationStore {
     const hangul = (visible.match(/[\u3131-\u318E\uAC00-\uD7A3]/gu) ?? []).length;
     const english = (visible.match(/[A-Za-z]/gu) ?? []).length;
     const corruption = (raw.match(/__FVTTTOK|FVT\s*TTOK|_ _FVTTTOK|\?{2,}|[�쏮먮]/gu) ?? []).length;
-    return (hangul * 3) - english - (corruption * 40);
+    const suspicious = (raw.match(/우주가 걸리고|다 다루셨나요|도둑질을 해야|주문 공유|강제 굴림|행돌불능|Hare-Trigger\.|Harengons|Cha \+2; Choose any other \+1|Do they have connections to other changelings|In their true form, changelings are pale/gu) ?? []).length;
+    return (hangul * 3) - english - (corruption * 40) - (suspicious * 80);
   }
 
   _pickPreferredTranslationValue(currentValue, nextValue) {
@@ -2788,6 +2789,14 @@ export class TranslationStore {
 
     const { text: protectedText, tokens } = this._protectFoundryInlineSyntax(text);
     let output = protectedText
+      .replace(/One creature of your choice that you can see within range hears a discordant melody in its mind\.\s*The target must make a Wisdom saving throw\.\s*On a failed save, it takes (__FVTT_TOKEN_\d+__) damage and must immediately use its Reaction, if available, to move as far as its Speed allows away from you\.\s*On a successful save, the target takes half as much damage only\./gu, (_, damage) => `범위 내에서 볼 수 있는 당신이 선택한 생물 하나가 마음속에서 불협화음의 선율을 듣습니다. 대상은 지혜 내성 굴림을 해야 합니다. 실패하면 ${damage} 피해를 받고, 가능하다면 즉시 반응을 사용해 속도가 허용하는 한 당신에게서 최대한 멀리 이동해야 합니다. 성공하면 피해를 절반만 받습니다.`)
+      .replace(/You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain\.\s*The target must make a Wisdom saving throw\.\s*On a failed save, it takes (__FVTT_TOKEN_\d+__) damage and must immediately use its Reaction, if available, to move as far as its speed allows away from you\.\s*The creature doesn'?t move into obviously dangerous ground, such as a fire or a pit\.\s*On a successful save, the target takes half as much damage and doesn'?t have to move away\.\s*A deafened creature automatically succeeds on the save\./gu, (_, damage) => `당신은 범위 내에서 당신이 선택한 생물 하나만 들을 수 있는 불협화음의 선율을 속삭여 끔찍한 고통을 안깁니다. 대상은 지혜 내성 굴림을 해야 합니다. 실패하면 ${damage} 피해를 받고, 가능하다면 즉시 반응을 사용해 속도가 허용하는 한 당신에게서 최대한 멀리 이동해야 합니다. 이 생물은 불이나 구덩이처럼 명백히 위험한 지형으로는 이동하지 않습니다. 성공하면 피해를 절반만 받고 이동하지 않습니다. &Reference[condition=deafened]{귀 먹음 Deafened} 상태인 생물은 이 내성 굴림에 자동으로 성공합니다.`)
+      .replace(/<strong><em>At Higher Levels\.<\/em><\/strong>\s*When you cast this spell using a spell slot of 2nd level or higher, the damage increases by (__FVTT_TOKEN_\d+__) for each slot level above 1st\./gu, (_, damage) => `<strong><em>상위 레벨 시전.</em></strong> 이 주문을 2레벨 이상의 주문 슬롯으로 시전하면, 1레벨을 초과하는 슬롯 레벨마다 피해가 ${damage}씩 증가합니다.`)
+      .replace(/<strong>At Higher Levels\.\s*<\/strong>This spell’s damage increases by (__FVTT_TOKEN_\d+__) when you cast it using a spell slot of 2nd level or higher\./gu, (_, damage) => `<strong>상위 레벨 시전.</strong> 이 주문을 2레벨 이상의 주문 슬롯으로 시전하면 피해가 ${damage}씩 증가합니다.`)
+      .replace(/Are you looking to squeeze a few extra gold pieces out of a merchant as you try to sell that weird octopus statue you liberated from the chaos temple\?\s*Or is it a tax collector you need to throw off the scent as you try to avoid paying taxes on some magical assets\?\s*Whatever the situation, you are covered\./gu, "혼돈의 사원에서 해방한 기묘한 문어 조각상을 팔면서 상인에게 금화를 몇 닢이라도 더 받아내고 싶습니까? 아니면 마법 자산에 대한 세금을 피하려고 세금 징수원의 눈을 속여야 합니까? 어떤 상황이든 이 주문이 도움이 됩니다.")
+      .replace(/You cast this spell on an object no more than 1 foot on a side, doubling the object'?s perceived value by adding illusory flourish or reducing its perceived value by half with the help of illusory scratches, dents, and other unsightly features\.\s*Anyone examining the object can ascertain its true value with a successful Intelligence \(Investigation\) check against your spell save DC\./gu, "한 변이 1피트를 넘지 않는 물체 하나에 이 주문을 걸어, 환영 장식과 광택을 더해 인지되는 가치를 두 배로 늘리거나, 환영의 흠집과 찌그러짐, 보기 흉한 결함을 더해 인지되는 가치를 절반으로 줄입니다. 그 물체를 조사하는 생물은 당신의 주문 내성 DC에 대한 지능(조사) 판정에 성공하면 물체의 진짜 가치를 알아낼 수 있습니다.")
+      .replace(/<em><strong>At Higher Levels\.<\/strong><\/em>\s*When you cast this spell using a spell slot of 2nd level or higher, the maximum size of the object increases by 1 foot for each slot level above 1st\./gu, "<em><strong>상위 레벨 시전.</strong></em> 이 주문을 2레벨 이상의 주문 슬롯으로 시전하면 1레벨을 초과하는 슬롯 레벨마다 대상으로 삼을 수 있는 물체의 최대 크기가 1피트씩 증가합니다.")
+      .replace(/You gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, and Persuasion\./gu, "다음 기술 가운데 원하는 둘의 숙련을 얻습니다: &Reference[skill=Deception]{기만 Deception}, &Reference[skill=Insight]{통찰 Insight}, &Reference[skill=Intimidation]{위협 Intimidation}, &Reference[skill=Persuasion]{설득 Persuasion}.")
       .replace(/At Higher Levels\./gu, "상위 레벨 시전.")
       .replace(/Using a Higher-Level Spell Slot\./gu, "상위 레벨 주문 슬롯 사용.")
       .replace(/Random Properties\./gu, "무작위 속성.")
@@ -3549,146 +3558,20 @@ export class TranslationStore {
         this.compendiumFolderLabels.set(collection, folderLabels);
       }
 
-      let documents = [];
-      let documentsLoaded = false;
-      try {
-        documents = await pack.getDocuments();
-        documentsLoaded = true;
-      } catch (error) {
-        console.warn(`${MODULE_ID} | Failed to index compendium documents for ${collection}`, error);
-        this._indexCompendiumDataFallback(collection, data);
-      }
-
-      if (documentsLoaded) {
-        for (const document of documents) {
-          const entry = data.entries?.[document.name] ?? {};
-
-          if (document.documentName === "Item") {
-            const generatedFallback = this._mergeTranslations(
-              ...this._getItemTranslationFallbacks(document)
-            );
-            const translation = this._mergeCompendiumEntry(entry, generatedFallback, {
-              name: document.name,
-              description: this._extractItemDescription(document)
-            });
-            if (translation) data.entries[document.name] = translation;
-
-            const content = document.system?.description?.value ?? "";
-            const key = signatureFor({
-              type: document.type,
-              name: document.name,
-              content
-            });
-            if (translation) {
-              this.compendiumSignatureIndex.set(key, translation);
-              if (translation.name) {
-                this._addCompendiumIdentifierCandidate(document.system?.identifier ?? document.name, translation);
-                this._addCompendiumNameCandidate(collection, document.name, translation);
-              }
-            }
-          }
-
-          if (document.documentName === "Actor") {
-            const translation = this._mergeCompendiumEntry(entry, this._getGeneratedActorTranslation(document), {
-              name: document.name,
-              description: this._extractActorDescription(document)
-            });
-            data.entries[document.name] = translation ?? entry ?? {};
-            if (data.entries[document.name]?.name) {
-              this.compendiumActorNameIndex.set(normalizeText(document.name).toLowerCase(), data.entries[document.name]);
-              this._addCompendiumIdentifierCandidate(document.system?.identifier ?? document.name, data.entries[document.name]);
-              this._addCompendiumNameCandidate(collection, document.name, data.entries[document.name]);
-            }
-
-            data.entries[document.name].items ??= {};
-            for (const item of document.items ?? []) {
-              const itemEntry = data.entries[document.name].items?.[item.name] ?? {};
-              const generatedFallback = this._mergeTranslations(
-                ...this._getItemTranslationFallbacks(item)
-              );
-              const itemTranslation = this._mergeCompendiumEntry(itemEntry, generatedFallback, {
-                name: item.name,
-                description: this._extractItemDescription(item)
-              });
-              if (!itemTranslation) continue;
-              data.entries[document.name].items[item.name] = itemTranslation;
-
-              const content = this._extractItemDescription(item);
-              const key = signatureFor({
-                type: item.type,
-                name: item.name,
-                content
-              });
-
-              this.compendiumSignatureIndex.set(key, itemTranslation);
-              this._addCompendiumIdentifierCandidate(item.system?.identifier ?? item.name, itemTranslation);
-              this._addCompendiumNameCandidate(collection, item.name, itemTranslation);
-              if (itemTranslation.name) {
-                this.compendiumDocLabels.set(item.uuid, itemTranslation.name);
-              }
-            }
-          }
-
-          if (document.documentName === "JournalEntry") {
-            const translation = data.entries?.[document.name] ?? {};
-            translation.pages ??= {};
-            for (const page of document.pages ?? []) {
-              const pageEntry = translation.pages?.[page.name] ?? {};
-              const pageTranslation = this._mergeCompendiumEntry(pageEntry, this._getGeneratedPageTranslation(page), {
-                name: page.name,
-                text: page.text?.content ?? ""
-              });
-              if (!pageTranslation) continue;
-              translation.pages[page.name] = pageTranslation;
-              if (pageTranslation.name) {
-                this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
-              }
-              this._indexReferencePage(collection, page, pageTranslation);
-            }
-            if (Object.keys(translation.pages).length) {
-              data.entries[document.name] = translation;
-            }
-          }
+      for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
+        if (translation?.name && data.documentName === "Actor") {
+          this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
         }
-      }
 
-      let index = [];
-      try {
-        index = await pack.getIndex();
-      } catch (error) {
-        console.warn(`${MODULE_ID} | Failed to index compendium index for ${collection}`, error);
-      }
-
-      for (const entry of index.values()) {
-        const translation = data.entries?.[entry.name];
-        if (!translation?.name) continue;
-        this.compendiumDocLabels.set(`Compendium.${collection}.${entry.documentName ?? pack.documentName}.${entry._id}`, translation.name);
-        this._addCompendiumIdentifierCandidate(entry.system?.identifier ?? entry.name, translation);
-        this._addCompendiumNameCandidate(collection, entry.name, translation);
-      }
-
-      const journalEntries = Object.entries(data.entries ?? {}).filter(([, entry]) => entry?.pages);
-      if (!journalEntries.length) continue;
-
-      for (const [entryName, translation] of journalEntries) {
-        const match = index.find((entry) => entry.name === entryName);
-        if (!match) continue;
-
-        let document = null;
-        try {
-          document = await pack.getDocument(match._id);
-        } catch (error) {
-          console.warn(`${MODULE_ID} | Failed to index compendium journal ${collection}:${match._id}`, error);
-          continue;
-        }
-        if (!document?.pages) continue;
-
-        for (const page of document.pages) {
-          const pageTranslation = translation.pages?.[page.name];
-          if (pageTranslation?.name) {
-            this.compendiumPageLabels.set(page.uuid, pageTranslation.name);
+        for (const [pageName, pageTranslation] of Object.entries(translation?.pages ?? {})) {
+          const translatedLabel = normalizeText(pageTranslation?.name);
+          if (!translatedLabel) continue;
+          this._indexReferenceLabel("", pageName, translatedLabel);
+          this._indexReferenceLabel("rule", pageName, translatedLabel);
+          for (const alias of referenceAliasesForPageName(pageName)) {
+            const [aliasType, ...aliasValueParts] = alias.split(":");
+            this._indexReferenceLabel(aliasType, aliasValueParts.join(":"), translatedLabel);
           }
-          this._indexReferencePage(collection, page, pageTranslation);
         }
       }
     }

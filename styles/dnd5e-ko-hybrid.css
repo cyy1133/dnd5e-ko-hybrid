@@ -2,3 +2,28 @@
   color: var(--color-text-light-6);
   font-size: var(--font-size-12);
 }
+
+.dnd5e-ko-hybrid-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--color-border-light-primary, #6b5f4d) 55%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-bg-option, #000) 16%, transparent);
+}
+
+.dnd5e-ko-hybrid-panel__label {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-light-6);
+  font-size: var(--font-size-12);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dnd5e-ko-hybrid-panel__content > :first-child {
+  margin-top: 0;
+}
+
+.dnd5e-ko-hybrid-panel__content > :last-child {
+  margin-bottom: 0;
+}
