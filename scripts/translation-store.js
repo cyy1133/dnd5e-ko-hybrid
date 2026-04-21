@@ -1065,9 +1065,17 @@ const nameToKo = (value) => {
   return EXTRA_AUTO_NAME_TRANSLATIONS[normalized] ?? COMMON_NAME_TRANSLATIONS[normalized] ?? autoTranslateName(normalized);
 };
 
+const EXTRA_PLAIN_LABEL_TRANSLATIONS = {
+  "Fighting Style: Thrown Weapon Fighting": "전투 방식: 투척 무기 전투",
+  "Telepathic Shroud": "텔레파시 장막"
+};
+
 const plainLabelToKo = (value) => {
   const normalized = normalizeText(value);
-  return STATIC_LABEL_TRANSLATIONS[normalized] ?? COMMON_NAME_TRANSLATIONS[normalized] ?? normalized;
+  return EXTRA_PLAIN_LABEL_TRANSLATIONS[normalized]
+    ?? STATIC_LABEL_TRANSLATIONS[normalized]
+    ?? COMMON_NAME_TRANSLATIONS[normalized]
+    ?? normalized;
 };
 
 const hasKoreanText = (value = "") => /[가-힣]/u.test(normalizeText(value));
@@ -1822,6 +1830,106 @@ const LONGFORM_DESCRIPTION_REPLACEMENTS = [
   [
     "Background: Noble",
     "배경: 귀족"
+  ],
+  [
+    "You can draw a weapon that has the thrown property as part of the attack you make with the weapon.",
+    "그 무기로 하는 공격의 일부로 던지기 속성을 지닌 무기를 뽑을 수 있습니다."
+  ],
+  [
+    "In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.",
+    "또한 투척 무기를 사용한 원거리 공격으로 명중하면 피해 굴림에 +2 보너스를 얻습니다."
+  ],
+  [
+    "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+    "운반 능력과 밀거나 끌거나 들어 올릴 수 있는 무게를 판정할 때 한 크기 더 큰 생물로 취급됩니다."
+  ],
+  [
+    "You have advantage on Wisdom (&Reference[skill=Perception]) checks that rely on hearing or smell.",
+    "청각이나 후각에 의존하는 지혜(&Reference[skill=Perception]) 판정에 이점을 받습니다."
+  ],
+  [
+    "You have advantage on Wisdom (&Reference[skill=Perception]) checks that rely on smell.",
+    "후각에 의존하는 지혜(&Reference[skill=Perception]) 판정에 이점을 받습니다."
+  ],
+  [
+    "You have advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on hearing or smell.",
+    "청각이나 후각에 의존하는 지혜(&Reference[skill=Perception]) 판정에 이점을 받습니다."
+  ],
+  [
+    "You have advantage on Wisdom (&amp;Reference[skill=Perception]) checks that rely on smell.",
+    "후각에 의존하는 지혜(&Reference[skill=Perception]) 판정에 이점을 받습니다."
+  ],
+  [
+    "The swarm is immune to any effect that would sense its emotions or read its thoughts, as well as to all divination spells.",
+    "이 무리는 감정을 감지하거나 생각을 읽는 모든 효과에 면역이며, 모든 예지계 주문의 영향도 받지 않습니다."
+  ],
+  [
+    "The swarm doesn't require air, food, drink, or sleep.",
+    "이 무리는 공기, 음식, 물, 잠이 필요하지 않습니다."
+  ],
+  [
+    "The vampirate doesn't require air or drink.",
+    "이 뱀파이어 해적은 공기나 음료를 필요로 하지 않습니다."
+  ],
+  [
+    "When the tabaxi moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the tabaxi can't use it again until it moves 0 feet on one of its turns.",
+    "타바시가 전투 중 자신의 턴에 이동할 때, 턴이 끝날 때까지 속도를 두 배로 만들 수 있습니다. 이 능력을 사용한 뒤에는 자신의 턴 중 한 번 0피트 이동할 때까지 다시 사용할 수 없습니다."
+  ],
+  [
+    "While taking a short rest, the tabaxi can spend 1 minute singing, playing an instrument, telling a story, or reciting a poem to soothe and inspire creatures other than itself. Up to five creatures of the tabaxi's choice that can see and hear its performance gain 8 temporary hit points at the end of the tabaxi's short rest.",
+    "짧은 휴식을 취하는 동안, 타바시는 1분 동안 노래를 부르거나 악기를 연주하거나 이야기를 들려주거나 시를 낭송해 자신 외의 생물들을 진정시키고 북돋울 수 있습니다. 타바시가 선택한, 그 공연을 보고 들을 수 있는 최대 다섯 생물은 타바시의 짧은 휴식이 끝날 때 8 임시 HP를 얻습니다."
+  ],
+  [
+    "When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead.",
+    "고블린이 볼 수 있는 크리처가 자신을 공격 대상으로 삼으면, 고블린은 자신으로부터 5피트 이내의 다른 고블린 하나를 선택합니다. 두 고블린은 서로 위치를 바꾸고, 선택된 고블린이 대신 공격 대상이 됩니다."
+  ],
+  [
+    "The court jester devised a deadly trap to foil anyone who sought to steal his magic fool's cap. The jester's tomb is located at the end of a 10-foot-wide, 150-foot-long hallway that descends sharply from north to south. The entrance to the tomb is a door on the eastern wall at the bottom of the slope, at the south end of the hall.",
+    "궁정 광대는 자신의 마법 어릿광대 모자를 훔치려는 자를 막기 위해 치명적인 함정을 설계했습니다. 광대의 무덤은 북쪽에서 남쪽으로 급격히 내려가는, 너비 10피트 길이 150피트의 복도 끝에 있습니다. 무덤의 입구는 복도 남쪽 끝, 경사 아래쪽 동쪽 벽에 난 문입니다."
+  ],
+  [
+    "This trap activates as soon as the door leading to the jester's coffin is opened. A magic portal opens at the northern end of the hallway and disgorges an enormous steel sphere, which hurtles down the slope. When it reaches the bottom of the slope, a second portal briefly appears and teleports the sphere back to the top of the slope to begin the process again.",
+    "이 함정은 광대의 관으로 이어지는 문이 열리자마자 작동합니다. 복도 북쪽 끝에 마법 포털이 열리며 거대한 강철 구체를 토해내고, 그 구체는 경사면 아래로 돌진합니다. 구체가 경사 아래 바닥에 도달하면 두 번째 포털이 잠시 나타나 구체를 다시 경사 꼭대기로 순간이동시켜 이 과정을 반복하게 만듭니다."
+  ],
+  [
+    "The longer it rolls, the more lethal the sphere becomes.",
+    "구체는 오래 굴러갈수록 더욱 치명적으로 변합니다."
+  ],
+  [
+    "After its turn, the sphere gains speed, represented by its damage increasing by 11 ([[/r 2d10]]). While its damage is 55 ([[/r 10d10]]) or greater, it acts on initiative count 20 and 10.",
+    "구체는 자신의 턴이 끝날 때마다 속도를 얻으며, 이는 피해가 11([[/r 2d10]])씩 증가하는 것으로 표현됩니다. 피해가 55([[/r 10d10]]) 이상이 되면, 이 함정은 우선권 20과 10에서 행동합니다."
+  ],
+  [
+    "The trap acts on initiative count 10 (but see the dynamic element below).",
+    "이 함정은 우선권 10에서 행동합니다(아래의 가변 요소 참조)."
+  ],
+  [
+    "The wererat makes two attacks, only one of which can be a bite.",
+    "웨어랫은 두 번 공격하며, 그중 한 번만 물기 공격일 수 있습니다."
+  ],
+  [
+    "The zombie doesn't require air, food, drink, or sleep.",
+    "좀비는 공기, 음식, 물, 잠이 필요하지 않습니다."
+  ],
+  [
+    "You start with the following equipment, in addition to the equipment granted by your background:",
+    "당신은 배경으로 받는 장비 외에도 다음 장비를 가지고 시작합니다:"
+  ],
+  [
+    "(a) scale mail or (b) leather armor",
+    "(a) 스케일 메일 또는 (b) 가죽 갑옷"
+  ],
+  [
+    "(a) two shortswords or (b) two simple melee weapons",
+    "(a) 숏소드 두 자루 또는 (b) 단순 근접 무기 두 개"
+  ],
+  [
+    "(a) a dungeoneer's pack or (b) an explorer's pack",
+    "(a) 던전탐험가 꾸러미 또는 (b) 탐험가 꾸러미"
+  ],
+  [
+    "A longbow and a quiver of 20 arrows",
+    "롱보우와 화살 20발이 든 화살통"
   ]
 ];
 
@@ -1975,6 +2083,18 @@ const applyLongformDescriptionReplacements = (value) => {
   }
   return output;
 };
+
+const applyActorItemLabelReplacements = (value) => String(value ?? "")
+  .replace(/<span class="entry-title-inner">Description\.?<\/span>/gu, '<span class="entry-title-inner">설명</span>')
+  .replace(/<span class="entry-title-inner">Trigger\.?<\/span>/gu, '<span class="entry-title-inner">발동 조건</span>')
+  .replace(/<span class="entry-title-inner">Dynamic Elements\.?<\/span>/gu, '<span class="entry-title-inner">가변 요소</span>')
+  .replace(/<span class="entry-title-inner">Initiative\.?<\/span>/gu, '<span class="entry-title-inner">우선권</span>')
+  .replace(/<span class="entry-title-inner">Equipment\.?<\/span>/gu, '<span class="entry-title-inner">장비</span>')
+  .replace(/<strong>Description:<\/strong>/gu, "<strong>설명:</strong>")
+  .replace(/<strong>Trigger:<\/strong>/gu, "<strong>발동 조건:</strong>")
+  .replace(/<strong>Dynamic Elements:<\/strong>/gu, "<strong>가변 요소:</strong>")
+  .replace(/<strong>Initiative:<\/strong>/gu, "<strong>우선권:</strong>")
+  .replace(/<strong>Equipment:<\/strong>/gu, "<strong>장비:</strong>");
 
 export class TranslationStore {
   constructor() {
@@ -3048,6 +3168,12 @@ export class TranslationStore {
       .replace(/Whether the check succeeds or fails, the spell scroll is destroyed\./gu, "판정 성공 여부와 관계없이 주문 두루마리는 파괴됩니다.")
       .replace(/It manifests in an unoccupied space that you can see within range\./gu, "사정거리 내에서 당신이 볼 수 있는 비어 있는 공간에 나타납니다.")
       .replace(/The creature disappears when it drops to 0 hit points or when the spell ends\./gu, "그 크리처는 HP가 0이 되거나 주문이 종료되면 사라집니다.")
+      .replace(/The ([^.]+?) is immune to any effect that would sense its emotions or read its thoughts, as well as all divination spells\./gu, (_, subject) => `${subjectToKo(subject)}는 자신의 감정을 감지하거나 생각을 읽으려는 모든 효과와 모든 예지 주문에 면역입니다.`)
+      .replace(/The ([^.]+?) doesn't need to eat, drink, or breathe\./gu, (_, subject) => `${subjectToKo(subject)}는 먹거나 마시거나 숨 쉴 필요가 없습니다.`)
+      .replace(/The ([^.]+?) doesn't need to eat, drink, breathe, or sleep\./gu, (_, subject) => `${subjectToKo(subject)}는 먹거나 마시거나 숨 쉬거나 잠잘 필요가 없습니다.`)
+      .replace(/The ([^.]+?) doesn't need to sleep and magic can't put it to sleep\./gu, (_, subject) => `${subjectToKo(subject)}는 잠잘 필요가 없으며, 마법으로도 잠들게 할 수 없습니다.`)
+      .replace(/When a creature misses you with a melee attack roll, you can use your reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you\./gu, "생물이 당신에게 근접 공격 굴림으로 빗맞히면, 당신은 반응행동을 사용해 그 공격이 공격자를 제외한 자신이 볼 수 있는 5피트 이내의 다른 크리처 하나에 적중하게 할 수 있습니다.")
+      .replace(/When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it\. The two goblins swap places, and the chosen goblin becomes the target instead\./gu, "고블린이 볼 수 있는 크리처가 자신을 공격 대상으로 삼으면, 고블린은 자신으로부터 5피트 이내의 다른 고블린 하나를 선택합니다. 두 고블린은 자리를 바꾸며, 선택된 고블린이 대신 대상이 됩니다.")
       .replace(/The creature is an ally to you and your companions\./gu, "그 크리처는 당신과 당신의 동료들에게 우호적입니다.")
       .replace(/In combat, the creature shares your initiative count, but it takes its turn immediately after yours\./gu, "전투 중에는 당신과 같은 이니셔티브 값을 사용하지만, 당신의 턴 직후에 자기 턴을 가집니다.")
       .replace(/If you don[’']t issue any, it takes the Dodge action and uses its move to avoid danger\./gu, "당신이 아무 명령도 내리지 않으면 회피 행동을 취하고, 위험을 피하는 데 이동을 사용합니다.")
@@ -3314,6 +3440,7 @@ export class TranslationStore {
       .replace(/Use the higher level wherever the spell[’']s level appears in the stat block\./gu, "능력치 블록에 주문 레벨이 적힌 곳마다 더 높은 레벨을 사용합니다.");
     output = this._translateKnownLongformText(output);
     output = applyLongformDescriptionReplacements(output);
+    output = applyActorItemLabelReplacements(output);
 
     const normalizedOutput = normalizeText(output);
     const exactDamageType = damageTypeToKo(normalizedOutput, { linked: true });
@@ -3749,9 +3876,10 @@ export class TranslationStore {
     for (const [collection, data] of this.compendium.entries()) {
       const pack = game.packs.get(collection);
       if (!pack) continue;
+      const documentName = this._getCompendiumDocumentName(pack, data);
 
       data.entries ??= {};
-      this._indexCompendiumDataFallback(collection, data);
+      this._indexCompendiumDataFallback(collection, data, documentName);
       const translatedPackLabel = plainLabelToKo(this.compendiumPackLabels.get(collection) ?? pack.metadata?.label ?? pack.title ?? collection);
       if (translatedPackLabel) {
         this.compendiumPackLabels.set(collection, translatedPackLabel);
@@ -3767,7 +3895,7 @@ export class TranslationStore {
       }
 
       for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
-        if (translation?.name && data.documentName === "Actor") {
+        if (translation?.name && documentName === "Actor") {
           this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
         }
 
@@ -3814,10 +3942,11 @@ export class TranslationStore {
     }
   }
 
-  _indexCompendiumDataFallback(collection, data) {
+  _indexCompendiumDataFallback(collection, data, documentName = null) {
+    const resolvedDocumentName = documentName ?? data.documentName ?? null;
     for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
       if (translation?.name) {
-        if (data.documentName === "Actor") {
+        if (resolvedDocumentName === "Actor") {
           this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
         }
         this._addCompendiumIdentifierCandidate(entryName, translation);
@@ -3829,6 +3958,24 @@ export class TranslationStore {
         this._addCompendiumNameCandidate(collection, itemName, itemTranslation);
       }
     }
+  }
+
+  _getCompendiumDocumentName(pack, data) {
+    const direct = normalizeText(data?.documentName ?? pack?.documentName ?? pack?.metadata?.type ?? "");
+    if (direct) {
+      const lowered = direct.toLowerCase();
+      if (lowered === "actor" || lowered === "actors") return "Actor";
+      if (lowered === "item" || lowered === "items") return "Item";
+      if (lowered === "journalentry" || lowered === "journalentrypage" || lowered === "journal") return "JournalEntry";
+      return direct;
+    }
+
+    const metadataType = normalizeText(pack?.metadata?.type ?? "").toLowerCase();
+    if (metadataType === "actor" || metadataType === "actors") return "Actor";
+    if (metadataType === "item" || metadataType === "items") return "Item";
+    if (metadataType === "journalentry" || metadataType === "journalentrypage" || metadataType === "journal") return "JournalEntry";
+
+    return null;
   }
 
   _addCompendiumIdentifierCandidate(identifierSource, translation) {
