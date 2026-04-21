@@ -57,7 +57,11 @@ const login = async (page) => {
     await page.waitForFunction((moduleId) => {
       const store = game.modules.get(moduleId)?.api?.store;
       if (!store) return false;
-      return (store.compendium?.size ?? 0) > 0 || (store.world?.items?.size ?? 0) > 0;
+      return (
+        store.compendium?.has?.("dnd5e.rules")
+        && store.compendium?.has?.("world.ddb---ddb-items")
+        && store.compendium?.has?.("world.ddb---ddb-spells")
+      ) || (store.world?.items?.size ?? 0) > 0;
     }, MODULE_ID, { timeout: 30000 });
   } catch (_error) {
     // Keep verification running even if the translation store is slow to hydrate.

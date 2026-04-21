@@ -4,6 +4,7 @@ let store = null;
 let overlay = null;
 
 const COMPENDIUM_REFRESH_DELAYS = [500, 1500, 3000, 5000, 8000, 12000];
+const REQUIRED_COMPENDIUM_COLLECTIONS = ["dnd5e.rules", "world.ddb---ddb-items", "world.ddb---ddb-spells"];
 
 const saveJson = (filename, data) => {
   const blob = JSON.stringify(data, null, 2);
@@ -283,9 +284,14 @@ const installDdbImporterCompatWithRetry = (installer, { debug = false, attempt =
   setTimeout(() => installDdbImporterCompatWithRetry(installer, { debug, attempt: attempt + 1 }), delay);
 };
 
+const hasHydratedCompendiums = () => {
+  if (!store?.compendium) return false;
+  return REQUIRED_COMPENDIUM_COLLECTIONS.every((collection) => store.compendium.has(collection));
+};
+
 const scheduleCompendiumHydration = (api, { debug = false, attempt = 0 } = {}) => {
   if (!store) return;
-  if (store.compendium?.size) return;
+  if (hasHydratedCompendiums()) return;
   if (attempt >= COMPENDIUM_REFRESH_DELAYS.length) {
     console.warn(`${MODULE_ID} | Compendium translations never hydrated after startup.`);
     return;
@@ -293,18 +299,22 @@ const scheduleCompendiumHydration = (api, { debug = false, attempt = 0 } = {}) =
 
   const delay = COMPENDIUM_REFRESH_DELAYS[attempt];
   setTimeout(async () => {
-    if (!store || store.compendium?.size) return;
+    if (!store || hasHydratedCompendiums()) return;
     try {
       await store.refreshCompendiums();
       overlay?.rerenderOpenApplications?.();
       if (debug) {
-        console.info(`${MODULE_ID} | Hydrated compendium translations`, { attempt: attempt + 1, count: store.compendium?.size ?? 0 });
+        console.info(`${MODULE_ID} | Hydrated compendium translations`, {
+          attempt: attempt + 1,
+          count: store.compendium?.size ?? 0,
+          hydrated: hasHydratedCompendiums()
+        });
       }
     } catch (error) {
       console.warn(`${MODULE_ID} | Deferred compendium hydration failed`, error);
     }
 
-    if (!store?.compendium?.size) {
+    if (!hasHydratedCompendiums()) {
       scheduleCompendiumHydration(api, { debug, attempt: attempt + 1 });
     }
   }, delay);
