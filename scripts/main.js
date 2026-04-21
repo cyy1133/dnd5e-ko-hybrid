@@ -3,6 +3,8 @@ const MODULE_ID = "dnd5e-ko-hybrid";
 let store = null;
 let overlay = null;
 
+const COMPENDIUM_REFRESH_DELAYS = [500, 1500, 3000, 5000, 8000, 12000];
+
 const saveJson = (filename, data) => {
   const blob = JSON.stringify(data, null, 2);
   saveDataToFile(blob, "application/json", filename);
@@ -281,6 +283,33 @@ const installDdbImporterCompatWithRetry = (installer, { debug = false, attempt =
   setTimeout(() => installDdbImporterCompatWithRetry(installer, { debug, attempt: attempt + 1 }), delay);
 };
 
+const scheduleCompendiumHydration = (api, { debug = false, attempt = 0 } = {}) => {
+  if (!store) return;
+  if (store.compendium?.size) return;
+  if (attempt >= COMPENDIUM_REFRESH_DELAYS.length) {
+    console.warn(`${MODULE_ID} | Compendium translations never hydrated after startup.`);
+    return;
+  }
+
+  const delay = COMPENDIUM_REFRESH_DELAYS[attempt];
+  setTimeout(async () => {
+    if (!store || store.compendium?.size) return;
+    try {
+      await store.refreshCompendiums();
+      overlay?.rerenderOpenApplications?.();
+      if (debug) {
+        console.info(`${MODULE_ID} | Hydrated compendium translations`, { attempt: attempt + 1, count: store.compendium?.size ?? 0 });
+      }
+    } catch (error) {
+      console.warn(`${MODULE_ID} | Deferred compendium hydration failed`, error);
+    }
+
+    if (!store?.compendium?.size) {
+      scheduleCompendiumHydration(api, { debug, attempt: attempt + 1 });
+    }
+  }, delay);
+};
+
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "enable-runtime-overlay", {
     name: "DND5E-KO-HYBRID.Settings.Enable.Name",
@@ -330,6 +359,7 @@ Hooks.once("ready", async () => {
 
     overlay.activate();
     await store.load();
+    scheduleCompendiumHydration(api, { debug });
     overlay.rerenderOpenApplications();
     api.loadError = null;
   } catch (error) {

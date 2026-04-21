@@ -52,6 +52,16 @@ const login = async (page) => {
 
   await page.waitForFunction(() => globalThis.game?.ready === true, null, { timeout: 120000 });
   await page.waitForTimeout(4000);
+  try {
+    await page.waitForFunction((moduleId) => !!game.modules.get(moduleId)?.api?.store, MODULE_ID, { timeout: 120000 });
+    await page.waitForFunction((moduleId) => {
+      const store = game.modules.get(moduleId)?.api?.store;
+      if (!store) return false;
+      return (store.compendium?.size ?? 0) > 0 || (store.world?.items?.size ?? 0) > 0;
+    }, MODULE_ID, { timeout: 30000 });
+  } catch (_error) {
+    // Keep verification running even if the translation store is slow to hydrate.
+  }
 };
 
 const ensureModuleEnabled = async (page) => {
