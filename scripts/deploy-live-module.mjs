@@ -6,7 +6,7 @@ const WORLD_URL = "http://codeparrotyard.com:30000/game";
 const USER_ID = "c3261v0zy76F6y8c"; // 징코DM
 const PASSWORD = "1133";
 const CHROME_PATH = "C:/Program Files/Google/Chrome/Application/chrome.exe";
-const RELEASE_DIR = path.resolve("release/dnd5e-ko-hybrid-v0.1.35");
+const RELEASE_DIR = path.resolve("release/dnd5e-ko-hybrid-v0.1.36");
 const REMOTE_ROOT = "modules/dnd5e-ko-hybrid";
 
 const MIME_TYPES = {

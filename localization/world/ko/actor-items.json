@@ -1615,8 +1615,8 @@
       "name": "빛나는 그림자 숨결 - Illuminating Shadow Breath"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.w9tSYN20bZrzrFMd": {
-      "name": "??? ?? - Flash of Inspiration",
-      "description": "<div class=\"rd__b rd__b--3\"><p>????? ?????? 60?? ???? ? ? ?? ?? ?? ??? [[/r 1d4]] @creature[inkling mascot|SCC|inkling mascots]? ???? ?????. ? ????? ?? ??? ???? ?? ??? ??? ????. ? ???? ??? ???? ?? ?? ?? ????? ?? ??? ?? ??? ??? ????. ????? 10? ?, ????? ?? ?, ?? ?? ? ??? ?? ??? ? ?????.</p></div>"
+      "name": "영감의 섬광 - Flash of Inspiration",
+      "description": "<div class=\"rd__b rd__b--3\"><p>샤드릭스는 자신으로부터 60피트 이내에서 볼 수 있는 비어 있는 공간에 [[/r 1d4]] @creature[inkling mascot|SCC|inkling mascots]을 마법으로 소환합니다. 이 잉클링들은 그의 명령에 복종하며 그의 직후에 차례를 가집니다. 이 잉클링들 가운데 하나라도 살아 있는 동안 샤드릭스는 공격 굴림과 내성 굴림에 이점을 얻습니다. 잉클링들은 10분 후, 샤드릭스가 죽을 때, 또는 그가 이 행동을 다시 사용할 때 사라집니다.</p></div>"
     },
     "Actor.DZmqGsP5VguWueJ5.Item.WCdvv2z2RKeCwVRR": {
       "description": "<div class=\"rd__b rd__b--3\"><p><i>근접 무기 공격:</i> [[/r 1d20+14]]{+14} 명중, 사거리 10 피트, 목표 하나. <i>명중:</i> 10 ([[/damage 1d6 + 7 type=slashing]]) 동안. 대상이 생물인 경우 절망에 시달리고 다음 턴이 끝날 때까지 명중 굴림에 불이익을 받습니다.</p></div>",
@@ -4390,8 +4390,8 @@
       "name": "주문 시전 - Spellcasting"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.f53Wgcrd7KNEx0QQ": {
-      "name": "?? ?? - Protective Magic",
-      "description": "<div class=\"rd__b rd__b--3\"><div data-roll-name-ancestor=\"Protective Magic\" class=\"rd__b rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"><span class=\"entry-title-inner\">?? ??.</span></span> ??? ????? ?? ???? ??? ????, ???? ???? @UUID[Actor.nBe9306a8ZoEp0s5.Item.bJa62OWecWHpTuQJ] ?? @UUID[Actor.nBe9306a8ZoEp0s5.Item.f8j0F3xGv5utmRWL]? ?????.</p></div></div>"
+      "name": "보호 마법 - Protective Magic",
+      "description": "<div class=\"rd__b rd__b--3\"><div data-roll-name-ancestor=\"Protective Magic\" class=\"rd__b rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"><span class=\"entry-title-inner\">보호 마법.</span></span> 리치는 주문시전과 같은 주문시전 능력을 사용하여, 방아쇠가 충족되면 @UUID[Actor.nBe9306a8ZoEp0s5.Item.bJa62OWecWHpTuQJ] 또는 @UUID[Actor.nBe9306a8ZoEp0s5.Item.f8j0F3xGv5utmRWL]를 시전합니다.</p></div></div>"
     },
     "Actor.nBe9306a8ZoEp0s5.Item.f8j0F3xGv5utmRWL": {
       "description": "<p>마법의 힘으로 이루어진, 보이지 않는 방어막이 나타나 당신을 보호합니다. 당신의 다음 턴이 시작될 때까지, 당신은 AC에 +5 보너스를 받습니다. 이 AC는 발동조건이 된 공격에도 적용됩니다. 또한, 매직 미사일 주문에 의한 피해를 받지 않습니다.</p>",
@@ -5416,8 +5416,8 @@
       "name": "다중공격 - Multiattack"
     },
     "Actor.QyAbyNiFDVkweDe3.Item.53S3OFLcr4XZ10ak": {
-      "name": "??? ? - Archer's Eye",
-      "description": "<div class=\"rd__b rd__b--3\"><p>??? ??? ??? ?? ???? ?? ??? ? ?? [[/r d10]]? ?? ?? ?? ? ??? ?? ? ????.</p><div class=\"rd__spc-inline-post\"></div></div>"
+      "name": "궁수의 눈 - Archer's Eye",
+      "description": "<div class=\"rd__b rd__b--3\"><p>궁수는 원거리 무기로 공격 굴림이나 피해 굴림을 한 직후 [[/r d10]]을 굴려 나온 수를 그 결과에 더할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div>"
     },
     "Actor.QyAbyNiFDVkweDe3.Item.jo6BYd1k8F840r0t": {
       "description": "<p>나무 여러 장을 덧대어 만든 두꺼운 활대를 구부려, 치명적인 화살을 먼 거리까지 발사할 수 있는 팽팽한 시위를 달았습니다.</p>",
@@ -5892,8 +5892,8 @@
       "name": "명령 - Command"
     },
     "Actor.UF8v3eDPC7oXcJoy.Item.mmX0tXvaH66InkwW": {
-      "name": "???? ?? - Rousing Verse",
-      "description": "<div class=\"rd__b rd__b--3\"><p>???? 30?? ???? ? ? ?? ??? ?? ??? ????, ???? ???? ??? ???? ?? ? ??? ?? ??? ?? ??? ? ?? ??? ???? ???.</p></div>"
+      "name": "고무적인 시구 - Rousing Verse",
+      "description": "<div class=\"rd__b rd__b--3\"><p>견습생이 30피트 이내에서 볼 수 있는 생물이 내성 굴림에 실패하면, 견습생은 고무적인 문장을 마법으로 엮어 그 생물이 내성 굴림을 다시 굴리고 더 높은 결과를 사용하게 합니다.</p></div>"
     },
     "Actor.UF8v3eDPC7oXcJoy.Item.mOZ5jr2Hrpjd3PdD": {
       "description": "<p>당신은 사거리 내에서 최대 4체까지의 횃불 크기 빛을 만들어 내며, 이들을 횃불이나 랜턴, 혹은 빛나는 구체처럼 보이게 해 지속시간 동안 허공을 날아다니게 할 수 있습니다. 당신은 또한 4개의 불빛을 모두 조합하여 중형 크기의 인간형 크리처처럼 보이도록 할 수 있습니다. 당신이 선택한 형태가 무엇이든, 각각의 불빛은 주변 10ft 반경에 약한 빛을 제공합니다.</p><p>당신의 턴마다 추가 행동을 사용하면 당신은 각각의 불빛을 60ft까지 이동시킬 수 있습니다. 이렇게 이동한 위치는 주문의 사거리 내여야 합니다. 또한 각각의 불빛은 다른 불빛과 20ft 내에 위치해야 하며, 서로의 거리에서 벗어나거나 주문의 사거리에서 벗어난 불빛은 사라지게 됩니다.</p>",

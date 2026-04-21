@@ -1,6 +1,6 @@
 {
   "name": "dnd5e-ko-hybrid",
-  "version": "0.1.35",
+  "version": "0.1.36",
   "type": "module",
   "dependencies": {
     "jsdom": "^27.4.0",
