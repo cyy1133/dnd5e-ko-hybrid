@@ -3895,8 +3895,8 @@ export class TranslationStore {
       }
 
       for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
-        if (translation?.name && documentName === "Actor") {
-          this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
+        if (documentName === "Actor" && (translation?.name || translation?.description)) {
+          this._indexCompendiumActorCandidate(entryName, translation);
         }
 
         for (const [pageName, pageTranslation] of Object.entries(translation?.pages ?? {})) {
@@ -3946,8 +3946,8 @@ export class TranslationStore {
     const resolvedDocumentName = documentName ?? data.documentName ?? null;
     for (const [entryName, translation] of Object.entries(data.entries ?? {})) {
       if (translation?.name) {
-        if (resolvedDocumentName === "Actor") {
-          this.compendiumActorNameIndex.set(normalizeText(entryName).toLowerCase(), translation);
+        if (resolvedDocumentName === "Actor" && (translation?.name || translation?.description)) {
+          this._indexCompendiumActorCandidate(entryName, translation);
         }
         this._addCompendiumIdentifierCandidate(entryName, translation);
         this._addCompendiumNameCandidate(collection, entryName, translation);
@@ -3976,6 +3976,27 @@ export class TranslationStore {
     if (metadataType === "journalentry" || metadataType === "journalentrypage" || metadataType === "journal") return "JournalEntry";
 
     return null;
+  }
+
+  _indexCompendiumActorCandidate(entryName, translation) {
+    const key = normalizeText(entryName).toLowerCase();
+    if (!key || !translation) return;
+    const current = this.compendiumActorNameIndex.get(key);
+    if (!current) {
+      this.compendiumActorNameIndex.set(key, translation);
+      return;
+    }
+
+    const currentScore = Number(Boolean(current?.description)) * 2 + Number(Boolean(current?.name));
+    const nextScore = Number(Boolean(translation?.description)) * 2 + Number(Boolean(translation?.name));
+    if (nextScore >= currentScore) {
+      this.compendiumActorNameIndex.set(key, {
+        ...current,
+        ...translation,
+        name: translation?.name ?? current?.name,
+        description: translation?.description ?? current?.description
+      });
+    }
   }
 
   _addCompendiumIdentifierCandidate(identifierSource, translation) {
