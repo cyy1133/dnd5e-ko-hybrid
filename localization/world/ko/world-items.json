@@ -2,7 +2,6 @@
   "label": "World Items",
   "entries": {
     "Item.0u27WjSfcK8ysAvK": {
-      "description": "",
       "name": "화염구 - Fireball"
     },
     "Item.10eaRKT4C0AOufzu": {
@@ -10,7 +9,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 악취 나는 탁한 자주빛 회색 액체는 아볼레스 같은 주문시전자 생명체의 녹은 뇌로 만들어집니다. 이 역겨운 혼합물을 마신 자는 [[/save ability=intelligence dc=15]] 내성 굴림을 해야 합니다. 성공하면 마신 이는 마법적 힘이 스며들어 소모한 주문 슬롯 [[/r 1d6 + 4]]개를 회복합니다. 실패하면 1일 동안 @table[short-term madness] 상태에 시달립니다. 생명체가 <i>brain juice</i>를 여러 번 복용하고 지능 내성 굴림에 세 번 연속 실패하면, 영구적으로 @table[long-term madness] 상태에 빠지며 이후 <i>brain juice</i>를 마셔서 유발되는 모든 내성 굴림에 자동으로 실패합니다.</p></div>"
     },
     "Item.1aEXXW8iFOT4NXw1": {
-      "description": "",
       "name": "전투도끼 - Battleaxe"
     },
     "Item.1BU21GOKxVpTszsY": {
@@ -18,23 +16,18 @@
       "name": "연금술 - Alchemy"
     },
     "Item.1Fmy4stIpSXQeKYQ": {
-      "description": "",
       "name": "스터디드 레더 아머 - Studded Leather Armor"
     },
     "Item.1gYfSaMm6JijsbNj": {
-      "description": "",
       "name": "먹이 - Feed"
     },
     "Item.1nVIiYU86Cz2wKld": {
-      "description": "",
       "name": "대도끼 - Greataxe"
     },
     "Item.20vRDDtmhHOCBNeY": {
-      "description": "",
-      "name": "소검 쇼트소드 - 소검 Shortsword"
+      "name": "소검 - Shortsword"
     },
     "Item.29426F1JJQiZN4QV": {
-      "description": "",
       "name": "침낭 - Bedroll"
     },
     "Item.2dApw7tk203UgRr1": {
@@ -42,7 +35,6 @@
       "name": "자비의 길 - Way of Mercy"
     },
     "Item.2PyNPph9jTrH7Z7f": {
-      "description": "",
       "name": "레더 아머 - Leather Armor"
     },
     "Item.3AMgVenIXLJ0iLz0": {
@@ -50,14 +42,15 @@
       "name": "지식 권역 - Knowledge Domain"
     },
     "Item.3c6f3aqw5CVYYS0u": {
-      "description": ""
+      "name": "미식별된 소모품"
     },
     "Item.3hGafErABhm4UO1D": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">전쟁 권역</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>전쟁에는 많은 징후가 있습니다. 그것은 평범한 사람들의 영웅이 될 수 있습니다. 탁월함과 용기의 사례를 가리는 잔인함과 비겁한 행동으로 인해 절망적이고 끔찍할 수 있습니다. 어느 경우든, 전쟁의 신들은 전사들을 지켜보고 그들의 위대한 업적에 대해 보상합니다. 그러한 신들의 성직자들은 전투에 탁월하며, 다른 사람들이 선한 싸움을 싸우도록 격려하거나 폭력적인 행위를 기도로 바칩니다. 전쟁의 신에는 명예와 기사도의 챔피언(예: @deity[Torm], @deity[Heironeous|Greyhawk] 및 @deity[Kiri-Jolith|Dragonlance]), 파괴와 약탈의 신(예: @deity[Erythnul|Greyhawk], @deity[the Fury|Eberron], @deity[Gruumsh|Nonhuman] 및 @deity[Ares|Greek])과 전쟁의 신이 포함됩니다. 정복과 지배(예: @deity[Bane], @deity[Hextor|Greyhawk] 및 @deity[Maglubiyet|Nonhuman]). 다른 전쟁 신(예: @deity[Tempus], @deity[Nike|Greek] 및 @deity[Nuada|Celtic])은 보다 중립적인 입장을 취하여 모든 형태의 전쟁을 장려하고 어떤 상황에서도 전사를 지원합니다.</p><p>표시된 각 성직자 수준에서 나열된 주문을 주문에 추가합니다. prepare.</p><table class=\"w-100 rd__table stripe-odd-table\"><caption>전쟁 도메인 주문</caption><thead><tr><th class=\"ve-col-2 ve-text-center\" data-rd-isroller=\"false\">클레릭 레벨</th><th class=\"ve-col-10\" data-rd-isroller=\"false\">주문</th></tr></thead><tbody><tr><td class=\"ve-col-2 ve-text-center\">1st</td><td class=\"ve-col-10\">@spell[divine favor], @spell[shield of faith]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">3rd</td><td class=\"ve-col-10\">@spell[magic weapon], @spell[spiritual weapon]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">5th</td><td class=\"ve-col-10\">@spell[crusader's mantle], @spell[spirit guardians]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">7번째</td><td class=\"ve-col-10\">@spell[freedom of movement], @spell[stoneskin]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">9th</td><td class=\"ve-col-10\">@spell[flame strike], @spell[hold monster]</td></tr></tbody></table><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\"> 추가 </span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>1 군인용 군용 무기와 중갑에 대한 받았습니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">전쟁 발생</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>1레벨부터 당신이 전투에 참여하는 동안 신은 당신에게 영감의 화살을 전달합니다. @action[Attack] 액션을 사용하면 보너스 액션으로 한 번의 무기 공격을 할 수 있습니다. 이 기능을 지혜 수정치만큼 여러 번(최소 한 번) 사용할 수 있습니다. 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">채널 신성: 유도 타격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨부터 채널 신성을 사용하여 공격할 수 있습니다. 초자연적인 정확성으로. 공격 굴림을 할 때 다음을 수행할 수 있습니다.채널 신성을 사용하면 판정에 +10 보너스를 얻을 수 있습니다. 굴림을 본 후 DM이 공격이 적중할지 실패할지 말하기 전에 이 선택을 합니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Channel Divinity: War God's 축복</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서 당신으로부터 30피트 내의 생물이 공격 굴림을 할 때 당신은 채널 신성을 사용하여 그 생물에게 굴림에 +10 보너스를 부여하는 반응을 사용할 수 있습니다. 굴림을 본 후 DM이 공격이 적중할지 실패할지 말하기 전에 이 선택을 합니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>8레벨에서 무기에 주입하는 능력을 얻습니다. 신성한 에너지로 공격합니다. 매 턴마다 한 번씩 무기 공격으로 생물을 공격할 때 무기가 대상에게 가하는 동일한 유형의 추가 [[/damage 1d8]] 피해를 공격으로 유발할 수 있습니다. 14레벨이 되면 추가 데미지가 [[/r 2d8]].</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner\">축복받은 것으로 증가합니다. 일격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p30</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>8레벨 성직자 @variantrule[optional class features|tce|optional feature], 신성한 일격 기능을 대체합니다</i></p><p>당신은 전투에서 신성한 힘의 축복을 받았습니다. 생물이 당신의 캔트립이나 무기 공격 중 하나로부터 피해를 입을 때, 당신은 그 생물에게 [[/damage 1d8 type=radiant]] 피해를 입힐 수도 있습니다. 이 파티션을 한 번만 시작하려면, 당신의 다음 작업을 시작하는 것은 오른쪽으로 다시 시작할 수 없습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"8\"><span class=\"entry-title-inner\">Avatar of Battle</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p63</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17레벨에서는 비마법 공격으로 인한 타격, 관통, 베기 피해에 대한 저항력을 얻습니다.</p></div></div></div></div>",
       "name": "전쟁 권역 - War Domain"
     },
     "Item.3kXYJXAat4EByb33": {
-      "description": "<p>불법적으로 유통되는 마약. 누가 만들어서 유통하고 있는지는 비밀입니다.</p><p>주사기를 사용하기 위해서는 자신에게 직접 주사하거나 다른 생명체에게 주사할 수 있습니다.</p><p></p><p>사용 시, ([[/damage 1d8 type=pshyic]]) 의 데미지를 입는 대신, 다음과 같은 효과를 얻습니다.</p><p></p><p><strong>환각 강화</strong>: 1시간 동안 <strong>모든 지각(Perception)</strong> 검사에 +5 보너스를 받습니다. 또한, <strong>환각</strong> 상태가 되어 주위 환경이 비현실적으로 보입니다.</p><p><strong>평온한 마음</strong>: 1시간 동안 <strong>모든 공포(Fear)와 매혹(Charm) 효과</strong>에 면역이 됩니다. 또한, 극도의 평온함과 행복감을 느낍니다.</p><p><strong>영감의 순간</strong>: 1시간 동안 <strong>모든 능력치 검사와 공격 굴림</strong>에 +1d4 보너스를 받습니다. 또한, 창의적이고 영감적인 생각이 자주 떠오릅니다.</p><p><br>(전투에서는 10 턴)</p><ol><li>주사기의 효과가 끝나면, 사용자는 <strong>1d2 시간 동안 탈진(Exhaustion)</strong> 상태가 됩니다.</li><li>환각 효과로 인해 현실과의 괴리감이 발생할 수 있습니다.</li></ol>"
+      "description": "<p>불법적으로 유통되는 마약. 누가 만들어서 유통하고 있는지는 비밀입니다.</p><p>주사기를 사용하기 위해서는 자신에게 직접 주사하거나 다른 생명체에게 주사할 수 있습니다.</p><p></p><p>사용 시, ([[/damage 1d8 type=pshyic]]) 의 데미지를 입는 대신, 다음과 같은 효과를 얻습니다.</p><p></p><p><strong>환각 강화</strong>: 1시간 동안 <strong>모든 지각(Perception)</strong> 검사에 +5 보너스를 받습니다. 또한, <strong>환각</strong> 상태가 되어 주위 환경이 비현실적으로 보입니다.</p><p><strong>평온한 마음</strong>: 1시간 동안 <strong>모든 공포(Fear)와 매혹(Charm) 효과</strong>에 면역이 됩니다. 또한, 극도의 평온함과 행복감을 느낍니다.</p><p><strong>영감의 순간</strong>: 1시간 동안 <strong>모든 능력치 검사와 공격 굴림</strong>에 +1d4 보너스를 받습니다. 또한, 창의적이고 영감적인 생각이 자주 떠오릅니다.</p><p><br>(전투에서는 10 턴)</p><ol><li>주사기의 효과가 끝나면, 사용자는 <strong>1d2 시간 동안 탈진(Exhaustion)</strong> 상태가 됩니다.</li><li>환각 효과로 인해 현실과의 괴리감이 발생할 수 있습니다.</li></ol>",
+      "name": "수상한 주사기"
     },
     "Item.3qIBwzrkQTMTSkUb": {
       "name": "분노 물약 - Potion of Rage",
@@ -69,14 +62,12 @@
     },
     "Item.3UoDunpfQHmO4KWS": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\">참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">소환 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>소환학파 위저드로서 당신은 무에서 물체와 생물을 만들어 내는 주문을 선호합니다. 치명적인 안개 구름을 불러내거나, 다른 곳의 크리처를 소환해 당신을 대신해 싸우게 할 수 있습니다. 숙련이 깊어질수록 이동과 운송의 주문을 배우며, 순식간에 먼 거리나 다른 차원으로 순간이동할 수도 있게 됩니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">소환 학파 비전가</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에 이 학파를 선택하는 순간부터, 소환계 주문을 주문책에 필사하는 데 필요한 시간과 금 비용이 절반으로 줄어듭니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">소환의 소기</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에 이 학파를 선택하면, 행동으로 자신으로부터 10피트 이내에서 볼 수 있는 비어 있는 공간의 바닥이나 자신의 손 위에 무생물 물체 하나를 소환할 수 있습니다. 이 물체는 한 변이 3피트를 넘을 수 없고 무게는 10파운드를 넘을 수 없으며, 자신이 본 적 있는 비마법 물체의 형태여야 합니다. 이 물체는 명백히 마법적인 것으로 보이며 5피트 반경에 희미한 빛을 발합니다.</p><p>The object disappears after 1 hour, when you use this feature again, if it takes any 피해, 또는 if it deals any 피해.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">온화한 전치</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터 행동으로 볼 수 있는 비어 있는 공간까지 최대 30피트 순간이동할 수 있습니다. 대신 범위 내에서 소형 또는 중형 크리처가 점유한 공간을 선택할 수도 있습니다. 그 크리처가 자발적이라면, 둘은 함께 순간이동하며 자리를 맞바꿉니다.</p><p>Once you use this feature, you can't use it again until you finish a long rest or you cast a conjuration spell of 1st level or higher.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">집중 소환</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>Beginning at 10th level, while you are @status[concentration||concentrating] on a conjuration spell, your @status[concentration] can't be broken as a result of taking 피해.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">Durable Summons</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터 소환계 주문으로 당신이 소환하거나 만들어낸 모든 크리처는 임시 HP 30을 얻습니다.</p></div></div></div></div>",
-      "name": "마법 학교 - School of Conjuration"
+      "name": "소환 학파 - School of Conjuration"
     },
     "Item.4Cp1er7Wc5TeVyvV": {
-      "description": "",
       "name": "산성 용액 (병) - Acid (vial)"
     },
     "Item.4QTwZeESg86OhLjj": {
-      "description": "",
       "name": "전투도끼 - Battleaxe"
     },
     "Item.4Sr9PvY36mcZIl06": {
@@ -92,15 +83,12 @@
       "description": "<p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\">방패나 신을 나타내는 다른 장치에 새겨지거나 세심하게 상감한 상징으로, 진정한 신자가 그들의 힘을 불러낼 수 있고, 그렇게 함으로써 믿음을 전파할 수 있습니다.</p><p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\"><span>소중한 유물, 성자, 또는 진정한 신자의 길을 걷기 위해 그들의 삶을 바친 다른 역사적 인물의 파편을 담은 작은 상자 또는 다른 용기입니다. 신은 이 유물을 가지고 있는 사람에게 그들의 힘을 불러내는 능력을 불어넣고 그렇게 함으로써 다시 한번 믿음을 퍼뜨립니다.</span></p><p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\"></p><p style=\"box-sizing:border-box;user-select:text;color:#191813;font-size:13px\"><strong style=\"box-sizing:border-box;user-select:text\">주문 매개체</strong><span style=\"box-sizing:border-box;user-select:text\">.</span><span style=\"box-sizing:border-box;user-select:text\"><span style=\"color:#000000;font-size:14px\">클레릭이나 팔라딘은 성표를 주문집중 매개체로 사용할 수 있습니다. 성표를 이렇게 사용하려면 시전자는 반드시 성표를 손에 들고 있거나, 보이는 곳에 착용하거나, 방패에 부착해 놓아야 합니다.</span></span></p>"
     },
     "Item.4Xu8y44hXsxJBn49": {
-      "description": "",
       "name": "중석궁 - Heavy Crossbow"
     },
     "Item.4YbkSbXr74xCE1ee": {
-      "description": "",
-      "name": "창창 - 창 Spear"
+      "name": "창 - Spear"
     },
     "Item.5HiFjnWGdtnrQcxM": {
-      "description": "",
       "name": "체인 셔츠 - Chain Shirt"
     },
     "Item.5k4SnUJuJ33caNGR": {
@@ -116,34 +104,29 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약을 마시면 언데드 생명체가 당신을 찾기 어려워집니다. 언데드 생명체는 DC 14 지혜 내성 굴림에 성공해야만 시각, 청각, 후각으로 당신을 감지하거나 위치를 파악할 수 있습니다.</p><p>맹시나 진동감지 같은 비범한 감각조차 효과가 없습니다. 당신이 광휘 에너지를 사용하는 행동을 하거나, 언데드를 퇴치하려 하거나, 언데드 생명체를 공격하면 이 효과는 자동으로 끝납니다.</p><p>그 외에는 물약의 효과가 1시간 동안 지속됩니다.</p></div>"
     },
     "Item.6bRRIVW2GDoWQc8r": {
-      "name": "은도금 레이피어 - Silvered Rapier",
-      "description": ""
+      "name": "은도금 레이피어 - Silvered Rapier"
     },
     "Item.6FmG1hslsYmCrBXJ": {
-      "description": "<p><strong>이것은 오래된 편지 조각입니다.</strong></p><p><strong>다만, 한쪽 귀퉁이에 다음과 같이 다른 여성의 필체로 추가로 최근에 무언가 기록되어 있습니다.</strong></p><p>이 쪽지의 <strong>본래 내용과는 다른 사람의 필체</strong>입니다.</p><p><strong>\"그녀의 영묘는 비어 있습니다. 그 뒤를 찾아보세요.\"<br></strong></p><hr><p><strong><br>나머지 내용은 오래 된 쪽지의 내용이 그대로 남아있습니다.</strong></p><p>고급스러운 여성의 필체로 적힌 누군가의 정보입니다.<br>나발릭은 이걸 보고 구겨버린 것이 틀림없습니다.</p><p>편지의 몇몇 부분에 날카로운 손톱 자국처럼 거친 ‘X’ 표시가 나 있어. <br>아마 이 편지를 손에 쥔 누군가가 분노에 차서 훼손하려 한 거 같습니다.</p><hr><p>사랑하는 피티팡, 이 편지를 네가 읽을 때면 벌써 열다섯 해는 훌쩍 지났을지도 모르겠네요. 아직 만나지 못했지만, 지금 내 뱃속엔 네가 있어. 네가 속에서 조용히 꿈틀댈 때마다, 엄마는 네 숨결과 맥박을 상상하곤 해요. 어떤 얼굴로 웃을지, 어떤 목소리로 이야기할지, 또 어떤 사람이 되어갈지 끊임없이 생각하게 된답니다.</p><p></p><p><strong>(약간 훼손됨)</strong></p><p>솔직히 저는 지금 조금 두렵습니다. <strong>인ㅁㅁㅁ ㅁㅁ 난 내가 뱀ㅁㅁㅁㅁㅁ ㅁ 식당하ㅁ ㅁㅁ고 느끼고 있으니까.</strong> 이 변화가 어디로 이끌지 몰라도, 네가 이 편지를 읽을 때쯤이면 아득한 옛이야기가 되어 있을지도 모르겠지요. 혹은 저에 대해 아무것도 모를지도요. 그래도 한 가지는 분명합니다. 너는 내게 너무나 소중한 아이고, 당신을 얼마나 깊이 사랑하는지 상상조차 못 할 겁니다. 당신을 위해 내가 무슨 결정을 했는지도.</p><p>피티팡, 당신의 미래가 어떨지 너무나 궁금합니다. 앉아서 쉴 때면, 얼마든지 상상하곤 합니다. 평범하고 고요한 일상을 누리며 작은 가게라도 운영하며 살고 싶다면, 그 또한 훌륭한 일이고, 반대로 큰 모험을 동경하고 영웅처럼 빛나는 업적을 세우고 싶다 해도, 그 길도 진심으로 응원하겠습니다. 무엇을 택하든, 네 마음속에 선한 뜻을 품고 올바른 일을 위해 힘쓴다면, 언제나 당신이 자랑스러울 겁니다.</p><p>아직 당신이 태어나지도 않은 지금, 이런 편지를 남기는 건 조금 이상할 지도 모르겠네요. 하지만 혹시 모르니까요. 제 가장 친한 친구에게 맡길 생각이니, 분명 미래의 당신에게 전해질 겁니다.당신이 성인이 되면 이 편지를 당신에게 내달라고 부탁했어요.</p><p></p><p><strong>(중간은 마구 지워져 있음 )</strong></p><p></p><p>피티팡이 어느 시기에 예쁜 웃음을 짓게 될지, 스무 살, 서른 살엔 어떤 모험담을 안고 살지 알 수 없습니다. 하지만, 자신을 존중하고, 소중히 여기는 것을 지키며 살아간다면 그보다 더 바랄 건 없겠지요. 그런 생각을 하면, 지금 제가 겪는 두려움과 불안함은 이겨낼 수 있는 것처럼 보입니다. 어떤 일이 있어도 당신에 대한 사랑만은 절대 흔들리지 않을 것이라 확신합니다. 그게 가족이니까요.</p><p>혹시나 나중에 힘들다면, 이 편지를 다시 펼쳐 보세요. 그러면 저의 마음이 당신 곁에 있다는 걸 깨달을 수 있을 겁니다.</p><p></p><p>사랑합니다, 피티팡. 어디서든 좋은 삶을 만들어나가길 바랍니다.</p><p>당신에게 어머니라 불리고 싶었던, 네이브린 드림.</p>"
+      "description": "<p><strong>이것은 오래된 편지 조각입니다.</strong></p><p><strong>다만, 한쪽 귀퉁이에 다음과 같이 다른 여성의 필체로 추가로 최근에 무언가 기록되어 있습니다.</strong></p><p>이 쪽지의 <strong>본래 내용과는 다른 사람의 필체</strong>입니다.</p><p><strong>\"그녀의 영묘는 비어 있습니다. 그 뒤를 찾아보세요.\"<br></strong></p><hr><p><strong><br>나머지 내용은 오래 된 쪽지의 내용이 그대로 남아있습니다.</strong></p><p>고급스러운 여성의 필체로 적힌 누군가의 정보입니다.<br>나발릭은 이걸 보고 구겨버린 것이 틀림없습니다.</p><p>편지의 몇몇 부분에 날카로운 손톱 자국처럼 거친 ‘X’ 표시가 나 있어. <br>아마 이 편지를 손에 쥔 누군가가 분노에 차서 훼손하려 한 거 같습니다.</p><hr><p>사랑하는 피티팡, 이 편지를 네가 읽을 때면 벌써 열다섯 해는 훌쩍 지났을지도 모르겠네요. 아직 만나지 못했지만, 지금 내 뱃속엔 네가 있어. 네가 속에서 조용히 꿈틀댈 때마다, 엄마는 네 숨결과 맥박을 상상하곤 해요. 어떤 얼굴로 웃을지, 어떤 목소리로 이야기할지, 또 어떤 사람이 되어갈지 끊임없이 생각하게 된답니다.</p><p></p><p><strong>(약간 훼손됨)</strong></p><p>솔직히 저는 지금 조금 두렵습니다. <strong>인ㅁㅁㅁ ㅁㅁ 난 내가 뱀ㅁㅁㅁㅁㅁ ㅁ 식당하ㅁ ㅁㅁ고 느끼고 있으니까.</strong> 이 변화가 어디로 이끌지 몰라도, 네가 이 편지를 읽을 때쯤이면 아득한 옛이야기가 되어 있을지도 모르겠지요. 혹은 저에 대해 아무것도 모를지도요. 그래도 한 가지는 분명합니다. 너는 내게 너무나 소중한 아이고, 당신을 얼마나 깊이 사랑하는지 상상조차 못 할 겁니다. 당신을 위해 내가 무슨 결정을 했는지도.</p><p>피티팡, 당신의 미래가 어떨지 너무나 궁금합니다. 앉아서 쉴 때면, 얼마든지 상상하곤 합니다. 평범하고 고요한 일상을 누리며 작은 가게라도 운영하며 살고 싶다면, 그 또한 훌륭한 일이고, 반대로 큰 모험을 동경하고 영웅처럼 빛나는 업적을 세우고 싶다 해도, 그 길도 진심으로 응원하겠습니다. 무엇을 택하든, 네 마음속에 선한 뜻을 품고 올바른 일을 위해 힘쓴다면, 언제나 당신이 자랑스러울 겁니다.</p><p>아직 당신이 태어나지도 않은 지금, 이런 편지를 남기는 건 조금 이상할 지도 모르겠네요. 하지만 혹시 모르니까요. 제 가장 친한 친구에게 맡길 생각이니, 분명 미래의 당신에게 전해질 겁니다.당신이 성인이 되면 이 편지를 당신에게 내달라고 부탁했어요.</p><p></p><p><strong>(중간은 마구 지워져 있음 )</strong></p><p></p><p>피티팡이 어느 시기에 예쁜 웃음을 짓게 될지, 스무 살, 서른 살엔 어떤 모험담을 안고 살지 알 수 없습니다. 하지만, 자신을 존중하고, 소중히 여기는 것을 지키며 살아간다면 그보다 더 바랄 건 없겠지요. 그런 생각을 하면, 지금 제가 겪는 두려움과 불안함은 이겨낼 수 있는 것처럼 보입니다. 어떤 일이 있어도 당신에 대한 사랑만은 절대 흔들리지 않을 것이라 확신합니다. 그게 가족이니까요.</p><p>혹시나 나중에 힘들다면, 이 편지를 다시 펼쳐 보세요. 그러면 저의 마음이 당신 곁에 있다는 걸 깨달을 수 있을 겁니다.</p><p></p><p>사랑합니다, 피티팡. 어디서든 좋은 삶을 만들어나가길 바랍니다.</p><p>당신에게 어머니라 불리고 싶었던, 네이브린 드림.</p>",
+      "name": "남겨졌던 쪽지"
     },
     "Item.6poN1dCbqfBYZhVe": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"TCE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">팬텀</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>많은 도적들이 자신의 목숨을 걸고 다른 사람의 생명을 앗아가며 삶과 죽음 사이의 아슬아슬한 경계를 걷고 있습니다. 그 노선에서 모험을 하는 동안 일부 도적들은 죽음 자체와 신비로운 연관성을 발견합니다. 이 도적들은 죽은 자로부터 지식을 빼앗아 부정적인 에너지에 빠져 결국 유령처럼 변합니다. 도둑 길드는 이들을 매우 효과적인 정보 수집가이자 스파이로 평가합니다.</p><p>Shadowfell의 많은 샤다르카이는 이러한 무시무시한 기술의 대가이며 일부는 기꺼이 이 길을 가르치고 있습니다. 많은 네크로맨서들이 기술을 연마하는 잊혀진 영역의 Thay나 Eberron의 Karrnath와 같은 곳에서는 팬텀이 마법사의 친구이자 오른팔이 될 수 있습니다. 죽음의 신들의 사원에서 팬텀은 죽음을 속이려는 자들을 추적하고 무덤으로 사라져 버릴 수도 있는 지식을 되찾는 대리인 역할을 할 수도 있습니다.</p><p>이 암울한 힘을 어떻게 발견하셨나요? 묘지에서 잠을 자고 새로운 능력을 깨달았나요? 아니면 죽음의 신을 모시는 절이나 도적 길드에서 재배하셨나요?</p><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">죽은 자의 속삭임</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3층 팬텀오른쪽</i></p><p>죽은 이들의 메아리가 당신에게 달라붙습니다. 짧거나 긴 휴식을 마칠 때마다 유령의 존재가 지식을 공유하면서 부족한 기술이나 도구 숙련도 하나를 선택하여 얻을 수 있습니다. 이 기능을 사용하여 자신에게 부족한 다른 숙련도를 선택하면 해당 숙련도가 상실됩니다.</p></div><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">Wails from the Grave</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3레벨 팬텀 </i></p><p>누군가를 무덤 가까이로 밀어 넣으면 죽음의 힘을 사용하여 다른 사람에게도 해를 끼칠 수 있습니다. 당신의 턴에 생물에게 몰래 공격 피해를 입힌 직후, 첫 번째 생물로부터 30피트 이내에 볼 수 있는 두 번째 생물을 목표로 삼을 수 있습니다. 당신의 레벨에 맞는 은밀 공격 주사위 수의 절반을 굴리면(반올림), 두 번째 생물은 잠시 동안 주변에서 죽은 소리가 울부짖기 때문에 굴린 총합과 같은 괴사 피해를 입습니다.</p><p>당신은 이 기능을 숙련도 보너스만큼 여러 번 사용할 수 있으며, 긴 시간을 마치면 소비한 모든 사용을 다시 얻습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">출발한 토큰</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>9레벨 팬텀 </i></p><p>인생이 당신 앞에서 끝날 때, 당신은 떠나는 영혼으로부터 생명 정수의 조각인 토큰을 빼앗을 수 있습니다.물리적인 형태를 취합니다. 당신이 볼 수 있는 생물이 당신으로부터 30피트 이내에서 죽을 때의 반응으로, 당신은 자유로운 손을 펴고 거기에 작은 장신구인 영혼 장신구가 나타나게 할 수 있습니다. DM은 장신구의 형태를 결정하거나 <i>Player's Handbook</i>의 @item[Trinket|phb|Trinkets] 테이블을 굴려서 생성하도록 합니다. 당신은 당신의 숙련도 보너스와 동일한 수의 영혼 장신구를 가질 수 있으며, 최대치에 있는 동안에는 하나를 생성할 수 없습니다.</p><p>당신은 다음과 같은 방법으로 영혼 장신구를 사용할 수 있습니다:</p><ul class=\"rd__list\"><li class=\"rd__li \">영혼 장신구가 당신의 몸에 있는 동안, 당신은 죽음 내성 굴림과 체질 내성 굴림에 유리합니다. 당신의 생명력은 개체 내의 생명 정수에 의해 강화됩니다.</li><li class=\"rd__li \">당신이 당신의 턴에 기습 공격 피해를 가할 때, 당신은 당신의 사람에게 있는 영혼 장신구 중 하나를 파괴한 다음 해당 기능을 사용하지 않고 즉시 무덤에서 통곡을 사용할 수 있습니다.</li><li class=\"rd__li \">행동으로, 당신은 영혼 장신구 중 하나를 파괴할 수 있습니다. 그것이 어디에 위치해 있는지. 그렇게 하면 장신구와 관련된 정령에게 한 가지 질문을 할 수 있습니다. 영은 당신에게 나타나 자신이 살아오면서 알고 있던 언어로 대답합니다. 진실해야 할 의무는 없으며, 자유롭기를 열망하면서 최대한 간결하게 답변합니다. 영은 DM.</li></ul></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Ghost에 의해 결정된 대로 인생에서 알고 있던 것만 알고 있습니다. 걷기</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>13 레벨 팬텀왼쪽</i></p><p>부분적으로 죽은 자의 영역으로 들어가 유령처럼 될 수 있습니다. 보너스 행동으로 당신은 스펙트럼 형태를 취합니다. 이 형태에서는 비행 속도가 10피트이고 호버링이 가능하며 공격 굴림은 불리한 점이 있습니다. 당신은 또한 생물과 물체가 &Reference[rule=difficultterrain]{difficult terrain}인 것처럼 사이로 이동할 수 있지만 생물이나 물체 내부에서 턴을 끝내면 [[/damage 1d10 type=force]] 피해를 입습니다.</p><p>당신은 10분 동안 또는 보너스 행동으로 끝날 때까지 이 형태를 유지합니다. 이 기능을 다시 사용하려면 Ghost Walk를 활성화하는 데 사용하는 보너스 액션의 일부로 긴 휴식을 끝내거나 영혼 장신구 중 하나를 파괴해야 합니다. 친구</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p62</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>17 레벨 팬텀 오른쪽</i></p><p>죽음과의 연관성이 너무 가까워져서 다음과 같은 이점을 얻을 수 있습니다.</p><ul class=\"rd__list\"><li class=\"rd__li \">무덤의 통곡을 사용하면 다음을 처리할 수 있습니다. 첫 번째와 두 번째 생물 모두에게 괴사 피해를 입힙니다.</li><li class=\"rd__li \">긴 휴식이 끝나면 영혼 장신구가 없으면 손에 영혼 장신구가 나타납니다. 죽은 자의 영혼이 끌려가기 때문입니다. 당신.</li></ul></div></div></div></div>",
       "name": "팬텀 - Phantom"
     },
     "Item.7Bj6yvs0z7lOdtYY": {
-      "description": "",
       "name": "삼지창 - Trident"
     },
     "Item.7gcLxD2o8WSIPg3T": {
-      "description": "",
       "name": "편곤 - Flail"
     },
     "Item.7p6MnbkdpXuM0B6B": {
-      "description": "",
       "name": "정향 - Cloves"
     },
     "Item.7RC9ELXxnNSFzYUU": {
-      "description": "",
       "name": "브레스트플레이트 - Breastplate"
     },
     "Item.7XylgAvRCprPAT8z": {
-      "description": "",
       "name": "그룬다의 휘장 - Grunda's Sigil"
     },
     "Item.87n6QkXAglAVSBTD": {
@@ -155,23 +138,19 @@
       "name": "로그 - Rogue"
     },
     "Item.8GLAAdxVZopfuy70": {
-      "description": "",
-      "name": "낫 낫 - 낫 Sickle"
+      "name": "낫 - Sickle"
     },
     "Item.8LVc8UgJtlaakr6r": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오려면 시트에서 가져오기를 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"TCE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\"> 생성 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p27</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>바드들은 우주를 첫 번째 드래곤들과 신들이 빚어 낸 예술 작품이라 한다. 그 창조의 작업에는 유일하게 소유할 수 있는 화음이 존재하는 것, 그 힘은 창조의 노래라 불린다. 창작 춤파의 밴드들은, 음악, 시를 통해 그 태고의 노래를 끌어내며, 그들의 스승들은 이렇게 격려합니다:</p><p>\"해와 달이 있기 전에 노래가 있었고 그 음악이 첫 새벽을 깨웠습니다. 그 멜로디가 돌과 나무를 너무나 기쁘게 하여 그들 중 일부는 그들만의 목소리를 얻었습니다. 그리고 이제 그들도 노래합니다. 노래를 배우세요, 학생들, 그러면 당신도 산에게 노래하는 법을 가르칠 수 있습니다 그리고 춤을 추세요.\"</p><p>드워프와 노움은 종종 음유시인이 창조의 노래를 배우도록 격려합니다. 그리고 드래곤본 사이에서 창조의 노래는 존경받는데, 전설에서는 가장 위대한 용인 바하무트와 티아맛을 이 노래의 첫 가수로 묘사하기 때문입니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p27</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3레벨 학파 </i></p><p> 당신이 크리처 하나에게 바드의 고양감투를 줄 때마다, 창조의 노래에서 한 에너지 흘려 Tiny 크기의 가능성의 빛무리를 만들어 그 크리처 5피트 범위에 맴돌게 할 수 있습니다. 그 빛무리하는 사람은 제외되는 부분을 제외하고, 바드의 고양감은 제외될 때까지입니다. 그 모습은 당신이 흉음표, 별, 꽃, 또는 창작이나 생명 기호를 하는 다른 표식으로 서명합니다.</p><p>생물이 바르딕 영감 주사위를 사용할 때, 티끌은 자세히 설명된 대로 주사위가 능력 판정, 공격 굴림 또는 내성 굴림에 도움이 되는지 여부에 따라 추가 효과를 제공합니다. 아래:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">능력 검사.</span> 생물이 음유시인 영감 주사위를 굴려 능력 검사에 추가할 때, 생물은 음유시인 영감 주사위를 다시 굴리고 사용할 굴림을 선택할 수 있습니다. moment.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">공격 굴림.</span> 생물이 대상에 대한 공격 굴림에 추가하기 위해 음유시인 영감 주사위를 굴린 직후, 티끌은 천둥처럼 부서집니다. 5피트 이내에 볼 수 있는 대상과 당신이 선택한 각 생물은 주문 내성 DC에 대한 건강 내성 굴림에 성공해야 합니다. 그렇지 않으면 바르딕 영감 주사위에 굴린 숫자와 동일한 천둥 피해를 입어야 합니다. 내성 굴림을 하면 부드러운 음악 소리와 함께 티끌이 사라지고, 생물은 Bardic Inspiration 주사위에 굴린 숫자에 카리스마 수정치(최소 1개의 임시 체력)를 더한 것과 동일한 임시 체력을 얻습니다. <span class=\"entry-title-inner\">생성 성능</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p27</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3 평면 칼파좌우</i></p><p>액션으로 창조 노래의 마법을 사용하여 창조 노래를 만들 수 있습니다.당신으로부터 10피트 이내의 비어있는 공간에 당신이 선택한 비마법적 아이템. 아이템은 그것을 지탱할 수 있는 표면이나 액체에 나타나야 합니다. 아이템의 gp 값은 바드 레벨의 20배를 초과할 수 없으며 아이템은 중간 이하이어야 합니다. 아이템은 부드럽게 빛나고, 생명체는 아이템을 만지면 희미하게 음악을 들을 수 있습니다. 생성된 아이템은 숙련도 보너스와 동일한 시간이 지나면 사라집니다. 생성할 수 있는 아이템의 예는 <a href=\"https://5etools-mirror-2.github.io/book.html#PHB,5\">Player's Handbook</a>의 장비 장을 참조하세요.</p><p>이 기능으로 아이템을 생성하면, 이 기능을 다시 사용하기 위해 2레벨 이상의 주문 슬롯을 소비하지 않는 한 긴 휴식을 마칠 때까지 다시 생성할 수 없습니다. 이 기능으로 한 번에 하나의 항목만 생성할 수 있습니다. 이 작업을 사용하고 이 기능의 항목이 이미 있는 경우 첫 번째 항목은 즉시 사라집니다.</p><p>이 기능으로 생성할 수 있는 항목의 크기는 6레벨(대) 및 14레벨에 도달하면 한 크기 범주씩 증가합니다. (대규모).</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">성능 애니메이션</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p27</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>6레벨 학파 </i></p><p>행동으로 착용하거나 운반하지 않는 30피트 이내의 크거나 작은 비마법적 항목 하나를 활성화할 수 있습니다. 애니메이션 아이템은 숙련도 보너스(PB)를 사용하는 @creature[Dancing Item|TCE] 통계 블록을 사용합니다. 이 아이템은 당신과 당신의 동료들에게 우호적이며 당신의 명령을 따릅니다. 체력이 0으로 줄어들거나 죽을 때까지 1시간 동안 지속됩니다.</p><p>전투에서 아이템은 당신의 이니셔티브 카운트를 공유하지만 당신의 차례 직후에 차례가 됩니다. 그것은 스스로 움직이고 반응을 사용할 수 있지만, 자신의 차례에 취하는 유일한 행동은 @action[Dodge] 행동입니다. 단, 당신이 다른 행동을 취하도록 명령하기 위해 당신의 차례에 보너스 행동을 취하지 않는 한 말입니다. 해당 작업은 통계 블록에 있는 작업일 수도 있고 다른 작업일 수도 있습니다. &Reference[condition=incapacitated]인 경우 항목은 @action[Dodge]뿐만 아니라 선택한 모든 작업을 수행할 수 있습니다.</p><p>Bardic Inspiration 기능을 사용할 때 Bardic Inspiration에 사용하는 것과 동일한 보너스 작업의 일부로 항목에 명령을 내릴 수 있습니다.</p><p>이 항목으로 항목에 애니메이션을 적용하면 이 기능을 다시 사용하기 위해 3레벨 이상의 주문 슬롯을 소비하지 않는 한 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다. 이 기능으로 한 번에 하나의 항목만 애니메이션할 수 있습니다. 이 작업을 사용하고 이 기능에서 이미 @creature[dancing item|TCE]이 있는 경우 첫 번째 항목은 즉시 비활성화됩니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Creative Crescendo</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p27</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>14레벨 작성 학파 좌측</i></p><p>생성 수행 기능을 사용하면 한 번에 두 개 이상의 항목을 생성할 수 있습니다. 아이템 수는 카리스마 수정치(최소 아이템 2개)와 같습니다. 해당 개수를 초과하는 아이템을 생성하는 경우 이전에 생성된 아이템 중 어떤 아이템이 사라지는지 선택합니다.배. 이 항목 중 하나만 생성할 수 있는 최대 크기를 가질 수 있습니다. 나머지는 Small 또는 Tiny여야 합니다.</p><p>창조 성능으로 아이템을 생성할 때 더 이상 gp 값에 의해 제한되지 않습니다.</p></div></div></div></div>",
-      "name": "창조대학 - College of Creation"
+      "name": "창조 학파 - College of Creation"
     },
     "Item.8s882CopNplsgKBh": {
-      "description": "",
       "name": "투창 - Javelin"
     },
     "Item.8WhXHrpBpqEU0EYI": {
-      "description": "",
       "name": "채찍 - Whip"
     },
     "Item.8z6Z5gXHiwhjQdTH": {
-      "description": "",
       "name": "화살 - Arrow"
     },
     "Item.90Mzrw5YsSJpFB0l": {
@@ -179,7 +158,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>특수한 바늘로 새긴 이 마법 문신은 마법적 어둠의 장막을 묘사합니다.</p><p>행동을 사용해 문신의 명령어를 말하고, 자신이 볼 수 있는 5피트 이내의 마법 아이템 하나를 만져 그 마법적 성질을 잠시 무효화할 수 있습니다. 그 마법 아이템이 생명체에 의해 착용되거나 들려 있다면, 그 생명체의 민첩 (Acrobatics) 판정에 맞서는 민첩 (Acrobatics) 판정을 해야 합니다. 성공하면 해당 마법 아이템을 만져 설명된 대로 효과를 무효화합니다. 실패하면 그 생명체가 아이템을 손이 닿지 않는 곳으로 치웁니다. 아이템의 마법은 최대 1분 동안 억제되며, 이 동안 당신은 주문 집중처럼 집중을 유지해야 합니다.</p></div>"
     },
     "Item.91VwfUTWYCkIsfXa": {
-      "description": "",
       "name": "아마포 - Linen"
     },
     "Item.94Lb5vzjTyYWqCAv": {
@@ -187,7 +165,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>일반적인 환경 위험으로부터 보호합니다. <i>endure elements</i>의 효과를 받은 대상은 8시간 동안 뜨겁거나 차가운 환경에 있어도 해를 입지 않습니다. 또한 극한 추위와 극한 더위 기상 상태의 영향에 저항하기 위한 모든 내성 굴림에 자동으로 성공합니다.*</p><p>대상의 장비도 마찬가지로 보호됩니다.</p><p>이 주문은 화염이나 냉기 피해로부터는 보호하지 않으며, 연기나 공기 부족 같은 다른 환경적 위험도 막아 주지 않습니다.</p></div>"
     },
     "Item.95kK6FhytW7W9jGa": {
-      "description": "",
       "name": "독심술의 물약 - Potion of Mind Reading"
     },
     "Item.9K9gSiglptF4GnE5": {
@@ -203,7 +180,6 @@
       "name": "광채의 보석 - Gem of Brightness"
     },
     "Item.9T9v76d4uRSQfLBn": {
-      "description": "",
       "name": "횃불 - Torch"
     },
     "Item.9TJTlh2TiEkgALuJ": {
@@ -211,7 +187,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 검은 더 긴 칼날과 한 손 반 길이의 손잡이를 갖추도록 정교하게 제련되었습니다. 이 무기는 한 손으로 휘두를 때 [[/r 1d10]] 피해를 주고, 두 손으로 휘두를 때 [[/r 2d6]] 피해를 줍니다.</p></div>"
     },
     "Item.aAwIs23nwnlBq8vN": {
-      "description": "",
       "name": "하프 플레이트 아머 - Half Plate Armor"
     },
     "Item.acba47tKJ79uC2N0": {
@@ -223,11 +198,9 @@
       "description": "<div><i>(드루이드, 워락, 위저드 조율 필요)</i></div><div class=\"rd__b rd__b--2\"><p>행동으로 이 지팡이의 명령어를 말하면, 자신으로부터 10피트 이내의 지면 위 세 지점으로 짙은 녹색 에너지의 작은 폭발 세 개를 보낼 수 있습니다. 각 폭발은 곧 연기로 변하며, 당신의 통제 아래 거대 두꺼비 하나(능력치는 MM 참조)를 드러냅니다. 각각은 자신만의 우선권 수치를 가집니다. 보너스 행동으로 다시 명령어를 말하면 두꺼비 하나를 해산시켜 짙은 녹색 연기로 되돌릴 수 있습니다.</p><p>당신의 턴 동안, 거대 두꺼비가 당신으로부터 60피트 이내에 있고 당신이 &amp;Reference[condition=incapacitated] 상태가 아니라면 정신적으로 각 두꺼비에게 명령을 내릴 수 있습니다. 다음 턴에 거대 두꺼비들이 어떤 행동을 하고 어디로 이동할지 결정하거나, 적을 공격하라거나 장소를 지켜라 같은 일반적인 명령을 각 두꺼비에게 내릴 수 있습니다.</p><p>거대 두꺼비가 HP 0으로 떨어지면 죽으며 짙은 녹색 연기 속으로 사라집니다. 세 거대 두꺼비가 모두 HP 0으로 떨어지면, 이 지팡이는 [[/r 1d8]]일 동안 힘을 잃습니다.</p></div>"
     },
     "Item.AgpqshO89nwFlklY": {
-      "description": "",
       "name": "스플린트 아머 - Splint Armor"
     },
     "Item.ai9uzhCUyaqCDlyi": {
-      "description": "",
       "name": "곤봉 - Club"
     },
     "Item.Aju5dUC4RF9JHNgn": {
@@ -235,7 +208,6 @@
       "description": "<div><i>(클레릭 또는 팔라딘의 조율 필요)</i></div><div class=\"rd__b rd__b--2\"><p>이 문장은 신이나 영적 전통의 상징입니다. 행동으로 이 문장을 갑옷 한 벌이나 방패 하나에 부착하거나 제거할 수 있습니다.</p><p>이 문장에는 3회의 충전이 있습니다. 당신 또는 당신이 볼 수 있는 30피트 이내의 생명체가 이 문장이 달린 갑옷을 착용하거나 방패를 들고 있는 동안 치명타를 맞으면, 반응을 사용해 충전 1회를 소모하여 그 치명타를 일반 명중으로 바꿀 수 있습니다.</p><p>이 문장은 매일 새벽 소모된 모든 충전을 회복합니다.</p></div>"
     },
     "Item.AnRk0jHXvpgqWn7n": {
-      "description": "",
       "name": "영웅심의 물약 - Potion of Heroism"
     },
     "Item.AX6ZMFctyNhREYcm": {
@@ -251,22 +223,18 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 점성이 높은 남색 기름은 쇠 냄새가 납니다. 이 기름은 타격 무기 하나 또는 타격 탄약 최대 5개를 코팅할 수 있습니다. 기름을 바르는 데는 1분이 걸립니다. 1시간 동안 코팅된 물건은 마법적인 것으로 취급되며, 공격 굴림과 피해 굴림에 +1 보너스를 받고 명중 시 추가로 [[/damage 1d4 type=force]] 역장 피해를 줍니다.</p></div>"
     },
     "Item.ba7b8iDvCwe093II": {
-      "description": ""
+      "name": "주문 보석:라피스라줄리 (비어 있음)"
     },
     "Item.Bc5Be9nLNCeYjDAv": {
-      "description": "",
       "name": "장창 - Pike"
     },
     "Item.bCHMBxxnWboTDoC6": {
-      "description": "",
       "name": "투창 - Javelin"
     },
     "Item.bk1pqWhtyZLWqmBY": {
-      "description": "",
       "name": "전승 학파 - College of Lore"
     },
     "Item.BlCtzrWfvCrHxjJ4": {
-      "description": "",
       "name": "산성 용액 (병) - Acid (vial)"
     },
     "Item.BOgoCpx1gAe6zE9S": {
@@ -274,18 +242,18 @@
       "name": "책략가 - Mastermind"
     },
     "Item.BQSoAl3p5GWp8Hxp": {
-      "description": ""
+      "name": "주문 보석: 쿼츠(비어 있음)"
     },
     "Item.brcMlxlctJW7dcrK": {
       "name": "+1 브레스트플레이트 - +1 Breastplate",
       "description": "<div class=\"rd__b rd__b--2\"><p>이 갑옷을 착용하고 있는 동안 AC에 +1 보너스를 받습니다.</p><p>이 갑옷은 몸에 맞춘 금속 흉갑과 유연한 가죽으로 이루어져 있습니다. 다리와 팔은 비교적 덜 보호하지만, 착용자의 중요한 장기를 효과적으로 보호하면서도 움직임을 지나치게 방해하지 않습니다.</p></div>"
     },
     "Item.BxYIF8YEElgncWPQ": {
-      "name": "독을 중화하는 물약 - Potion of Neutralize Poison",
+      "name": "독 중화 물약 - Potion of Neutralize Poison",
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약은 즉사형 독에는 효과가 없습니다. 물약은 생명체 하나에게만 영향을 줍니다. 대상이 둘 이상의 독에 걸려 있다면, 당신이 존재를 알고 있는 독 하나만 중화하거나 무작위로 하나를 중화합니다. 1시간 동안 대상은 중독 상태가 되는 것에 대한 내성 굴림에 이점을 받고, 독 피해에 대한 저항을 얻습니다.</p></div>"
     },
     "Item.C8ovHVnxqYXs7DDO": {
-      "description": ""
+      "name": "주문 보석 : 흑요석(화염 화살)"
     },
     "Item.Ca6RXTrp3nnLVIT2": {
       "name": "체인질링 - Changeling",
@@ -296,11 +264,9 @@
       "description": "<div class=\"rd__b rd__b--3\"><p>은빛 안개에 잠시 휩싸인 뒤, 당신은 자신이 볼 수 있는 비어 있는 공간으로 최대 30피트 순간이동합니다.</p></div>"
     },
     "Item.CCJDIDV23w6GcTBn": {
-      "description": "",
       "name": "단검 - Dagger"
     },
     "Item.CE8MMup5VnDudXtp": {
-      "description": "",
       "name": "하이드 아머 - Hide Armor"
     },
     "Item.cL3SD1uPTBSYHKwD": {
@@ -308,11 +274,9 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약은 생명체 하나에게 영향을 주며, 질병 하나를 치료합니다.</p></div>"
     },
     "Item.cNWu1ZjhTKRLtHJ1": {
-      "description": "",
-      "name": "책책 - 책 Book"
+      "name": "책 - Book"
     },
     "Item.cSN1n4tZ6twCYbl2": {
-      "description": "",
       "name": "방패 - Shield"
     },
     "Item.cuPOaWg2Xaj1bqLU": {
@@ -320,47 +284,37 @@
       "name": "영혼 학파 - College of Spirits"
     },
     "Item.cwUIbinSkFIjHSlC": {
-      "description": "",
-      "name": "닭치킨 - 닭 Chicken"
+      "name": "닭 - Chicken"
     },
     "Item.CZpK0SSaRbS0xSwB": {
       "name": "바람총 - Blowgun",
       "description": "<div class=\"rd__b rd__b--2\"><div data-roll-name-ancestor=\"Mastery: Vex\" data-source=\"XPHB\" class=\"rd__b rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"><span class=\"entry-title-inner help-subtle\" title=\"Source: Player’s Handbook (2024), p214\">숙련: 벡스.</span></span> 이 무기로 생물에게 명중해 피해를 입히면, 당신은 다음 차례가 끝나기 전까지 그 생물을 상대로 하는 다음 공격 굴림에 @variantrule[Advantage|XPHB]를 받습니다.</p></div></div>"
     },
     "Item.CzQNt7CrqQgjKrx2": {
-      "description": "",
       "name": "장검 - Longsword"
     },
     "Item.dC8Ps85bR4btCsHb": {
-      "description": "",
       "name": "경석궁 - Light Crossbow"
     },
     "Item.DfsKFKiAldXsh5U2": {
-      "description": "",
       "name": "레이피어 - Rapier"
     },
     "Item.dliPV8qXhTLCg5bd": {
-      "description": "",
       "name": "경량 망치 - Light Hammer"
     },
     "Item.DMMGdGm0jXg9cRso": {
-      "name": "크로스보우 볼트 (20) - Crossbow Bolts (20)",
-      "description": ""
+      "name": "크로스보우 볼트 (20) - Crossbow Bolts (20)"
     },
     "Item.dSeLRqSdBfMjnpqj": {
-      "description": "",
       "name": "플레이트 아머 - Plate Armor"
     },
     "Item.DstRR8I5RwHBQo7y": {
-      "description": "",
       "name": "단궁 - Shortbow"
     },
     "Item.dwe6k5MSspAnegFl": {
-      "description": "",
       "name": "채찍 - Whip"
     },
     "Item.e0XxoCr06jkNU0BV": {
-      "description": "",
       "name": "모닝스타 - Morningstar"
     },
     "Item.EAGpcAk5oi36kaUG": {
@@ -372,11 +326,10 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>달콤하고 기름진 검은 액체인 이 영약을 마시면, 지난 24시간 안에 한 번이라도 들은 적 있는 생물 하나의 목소리를 흉내 낼 수 있습니다. 이 효과는 3분 동안 지속됩니다.</p></div>"
     },
     "Item.Ee6qbp6Tk1l39Ow6": {
-      "description": "",
       "name": "철퇴 - Mace"
     },
     "Item.egl2RZJDKqyQXC8N": {
-      "description": ""
+      "name": "주문 보석 : 흑요석(전격의 손아귀)"
     },
     "Item.eHghRg9XeliVu5U5": {
       "name": "엘프 (드로우) - Elf (Drow)",
@@ -384,14 +337,13 @@
     },
     "Item.enoLsC0vxGO1g7fm": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"XGE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">탐정</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>전형적인 호기심이 많은 당신은 비밀을 찾아내고 미스터리를 푸는 데 탁월합니다. 당신은 세부 사항을 알아보기 위해 예리한 눈에 의존할 뿐만 아니라 다른 생물의 진정한 의도를 파악하기 위해 그들의 말과 행동을 읽는 정교하게 연마된 능력에도 의존합니다. 당신은 평범한 사람들 사이에 숨어 그들을 잡아먹는 생물을 물리치는 데 탁월하며 지식에 대한 통달과 예리한 추론 덕분에 숨겨진 악을 폭로하고 종식시킬 수 있는 능력을 갖추게 되었습니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3 수준에서 이 원형을 선택하면 거짓말을 골라내는 재능이 개발됩니다. 생물이 거짓말을 하고 있는지 확인하기 위해 지혜(&Reference[skill=Insight]) 검사를 할 때마다 [[/r d20]]에서 7 이하의 굴림을 8.</p></div><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">눈으로 처리합니다. 세부 정보</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3번째 수준에서 시작, 보너스 액션을 사용하여 지혜(&Reference[skill=Perception]) 확인을 통해 숨겨진 생물이나 물체를 찾아내거나 정보(&Reference[skill=Investigation]) 확인을 통해 단서를 찾아내거나 해독할 수 있습니다.</p></div><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Insightful 싸움</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3번째 수준에서, 당신은 상대방의 전술을 해독하고 그에 대한 대응책을 개발하는 능력을 얻습니다. 보너스 행동으로, 대상의 카리스마(&Reference[skill=Deception]) 체크에 맞서 &Reference[condition=incapacitated]가 아닌 생물에 대해 지혜(&Reference[skill=Insight]) 체크를 할 수 있습니다. 성공하면 공격 굴림에 이점이 없더라도 해당 대상에 대해 기습 공격을 사용할 수 있지만 불리한 점이 있는 경우에는 사용할 수 없습니다.</p><p>이 이점은 1분 동안 지속되거나 다른 대상에 대해 이 기능을 성공적으로 사용할 때까지 지속됩니다. 대상.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">꾸준한 눈</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>9레벨부터 지혜(&Reference[skill=Perception]) 또는 지능(&Reference[skill=Investigation])에서 이점을 얻습니다. 같은 속도로 절반 이하로 움직이지 않는지 확인하세요. 회전.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">오류 없는 눈</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>13 수준부터 시작하면 감각을 무너뜨리는 것이 거의 불가능합니다. 행동으로 당신은 환상, 원래 형태가 아닌 변신자, 그리고 30fe 이내에 감각을 속이도록 고안된 기타 마법의 존재를 감지합니다.귀하가 &Reference[condition=blinded] 또는 &Reference[condition=deafened]이 아닌 경우 귀하도 마찬가지입니다. 어떤 효과가 당신을 속이려고 한다는 것을 감지하지만 숨겨진 내용이나 그 진정한 본질에 대한 통찰력을 얻지 못합니다.</p><p>당신은 이 기능을 지혜 수정치만큼 여러 번(최소 한 번) 사용할 수 있으며, 긴 시간을 마치면 사용한 모든 사용 횟수를 다시 얻습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner\">약점을 보는 눈</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p45</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17 수준에서는 생물의 약점을 이용하는 방법을 배웁니다. 전술과 움직임을 주의 깊게 연구함으로써. 통찰력 있는 싸움 기능이 생물에 적용되는 동안 해당 생물에 대한 기습 공격 피해는 [[/r 3d6]].</p></div></div></div></div>만큼 증가합니다.",
-      "name": "알고 싶어하는 - Inquisitive"
+      "name": "탐정 - Inquisitive"
     },
     "Item.EnSSKoR3oQm10fCv": {
-      "description": "<p><em>Token artwork by Forgotten Adventures.</em></p>",
+      "description": "<p>토큰 아트워크: Forgotten Adventures</p>",
       "name": "척후병 - Scout"
     },
     "Item.eQrspkBSRVX2lpIS": {
-      "description": "",
       "name": "휴대식량 - Rations"
     },
     "Item.etehiIYWSSX40Jn0": {
@@ -399,15 +351,12 @@
       "description": "<div><hr /><div><p>전제조건: 민첩 또는 건강 13 이상</p><div class=\"rd__b rd__b--3\"><p>당신은 비범한 속도와 지구력을 지녔으며, 다음 이점을 얻습니다:</p><div class=\"rd__spc-inline-post\"></div><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">속도 증가.</span> 당신의 속도가 10피트 증가합니다.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\"><span class=\"bold rd__list-item-name\">험지 위 질주.</span> 자신의 턴에 질주 행동을 하면, 다음 턴 시작 전까지 험지가 추가 이동력을 소모시키지 않습니다.</p></li></ul></div></div></div>"
     },
     "Item.eup2V0rdBvGN6OZN": {
-      "description": "",
       "name": "스케일 메일 - Scale Mail"
     },
     "Item.eZ2eYyOZZJE3g8rM": {
-      "description": "",
       "name": "손도끼 - Handaxe"
     },
     "Item.FA94361rwNGUpzIY": {
-      "description": "",
       "name": "그물 - Net"
     },
     "Item.fBhzGqerpAVsXvlL": {
@@ -419,31 +368,25 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>후팍은 한쪽 끝에 슬링이 있고 다른 쪽 끝에는 뾰족한 촉이 달린 튼튼한 막대입니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"><span class=\"entry-title-inner\">특수.</span></span><p>이 무기로 근접 공격을 할 때는 탄약 속성을 무시합니다. 후팍을 군용 원거리 무기로 사용할 수도 있습니다. 그렇게 하면 탄약 속성을 사용하고 슬링 탄환을 사용하며, 명중 시 [[/damage 1d4 type=bludgeoning]] 타격 피해를 줍니다.</p><div class=\"rd__spc-inline-post\"></div></div></div>"
     },
     "Item.FDLh9U5oFNuoNICa": {
-      "description": "",
       "name": "경석궁 - Light Crossbow"
     },
     "Item.FIf3pIGAb2KsOLCw": {
-      "description": "",
       "name": "양초 - Candle"
     },
     "Item.fLGu25N9g2Eagtn2": {
-      "description": "",
       "name": "막대 - Rod"
     },
     "Item.FlJbXA5oUqENBrTC": {
-      "description": "",
       "name": "향수 - Perfume"
     },
     "Item.FO1jWjRusWTBVDxV": {
-      "name": "화살 (20) - Arrows (20)",
-      "description": ""
+      "name": "화살 (20) - Arrows (20)"
     },
     "Item.Fp8KZccyI4sDMb6F": {
-      "description": "",
-      "name": "방출학파 Evocation School of Evocation - 방출 학파 School of Evocation"
+      "name": "방출 학파 - School of Evocation"
     },
     "Item.Fp9Gcb11LpA0adjl": {
-      "description": ""
+      "name": "파도부름_(TideCaller)"
     },
     "Item.FsHTisIngmcZj2vi": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"XGE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">스워시버클러</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>속도, 우아함 및 매력을 동등하게 고려하여 칼날 기술에 대한 훈련에 집중합니다. 일부 전사는 무거운 갑옷을 입은 야수이지만, 당신의 전투 방식은 거의 퍼포먼스처럼 보입니다. 결투사 및 해적은 일반적으로 이 유형에 속합니다.</p><p>A 스워시버클러는 단일 전투에 탁월하며 적으로부터 안전하게 돌진하면서 두 개의 무기로 싸울 수 있습니다.</p><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">Fancy Footwork</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>이 유형을 선택할 때 3레벨에서는 공격을 가한 후 보복 없이 빠져나가는 방법을 배웁니다. 당신의 턴 동안 당신이 생물에 대해 근접 공격을 하는 경우, 그 생물은 당신의 남은 턴 동안 당신에 대해 기회 공격을 할 수 없습니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3레벨부터 자신감이 전투에 참여하게 됩니다. 당신은 자신의 주도권 굴림에 카리스마 수정치만큼 보너스를 줄 수 있습니다.</p><p>또한 몰래 공격을 사용할 수 있는 추가 방법도 얻습니다. 당신이 생물로부터 5피트 이내에 있고, 다른 생물이 당신으로부터 5피트 이내에 없고, 공격 굴림에 불이익이 없다면 생물에 대해 몰래 공격을 사용하기 위해 공격 굴림에 이점이 필요하지 않습니다. 몰래 공격에 대한 다른 모든 규칙은 여전히 ​​적용됩니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Panache</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>9레벨에서는 당신의 매력이 엄청나게 매력적으로 변합니다. 행동으로 당신은 생명체의 지혜(&Reference[skill=Insight]) 체크와 대결되는 카리스마(&Reference[skill=Persuasion]) 체크를 할 수 있습니다. 생물은 당신의 말을 들을 수 있어야 하며, 당신과 두 사람은 언어를 공유해야 합니다.</p><p>당신이 판정에 성공하고 생물이 당신에게 적대적이라면, 당신이 아닌 대상에 대한 공격 굴림에 불이익을 받고 당신 이외의 대상에 대한 기회 공격을 할 수 없습니다. 이 효과는 동료 중 한 명이 대상을 공격하거나 주문으로 영향을 미칠 때까지 또는 당신과 대상이 60피트 이상 떨어져 있을 때까지 1분 동안 지속됩니다.</p><p>당신이 판정에 성공하고 생물이 당신에게 적대적이지 않다면, 당신은 1분 동안 &Reference[condition=charmed]을 받습니다. &Reference[condition=charmed]하면서 당신을 친근한 지인으로 여깁니다. 이 효과는 귀하 또는 귀하의 동료가 해로운 행동을 하면 즉시 종료됩니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Elegant Maneuver</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>13레벨부터, 당신은 자신의 차례에 보너스 액션을 사용하여 같은 기간에 하는 다음 민첩(&Reference[skill=Acrobatics]) 또는 힘(&Reference[skill=Athletics]) 검사에서 이점을 얻을 수 있습니다. 차례.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">마스터 듀얼리스트</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p48</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17레벨부터 블레이드에 대한 숙달이 가능해집니다. 전투에서 실패를 성공으로 바꾸십시오. 공격 굴림을 놓치면 유리하게 다시 굴릴 수 있습니다. 일단 그렇게 하면 짧은 휴식이나 긴 휴식을 마칠 때까지 이 기능을 다시 사용할 수 없습니다.</p></div></div></div></div>",
@@ -454,7 +397,6 @@
       "name": "생체술사 - Biomancer"
     },
     "Item.FtsNxp9RyF25uNWY": {
-      "description": "",
       "name": "모닝스타 - Morningstar"
     },
     "Item.FW3XWH4rCKhh699J": {
@@ -463,28 +405,26 @@
     },
     "Item.fwuft4wYuN8WG1hC": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\">참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">변환 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>당신은 에너지와 물질을 변화시키는 주문을 연구하는 학도입니다. 당신에게 세계는 고정된 것이 아니라 얼마든지 바뀔 수 있는 것이며, 당신은 변화의 매개자가 되는 일을 즐깁니다. 창조의 원초적 재료를 다루며, 물리적 형태와 정신적 성질 모두를 바꾸는 법을 배웁니다. 당신의 마법은 현실이라는 대장간에서 망치를 휘두를 도구를 제공합니다.</p><p>어떤 변환학파 위저드는 장난과 실험을 즐기며 사람을 두꺼비로 바꾸거나 구리를 은으로 바꿔 재미와 약간의 이익을 얻습니다. 다른 이들은 세상을 만들고 파괴할 신들의 힘을 추구하며 치명적으로 진지한 태도로 마법 연구에 몰두합니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">변환 학파 비전가</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에 이 학파를 선택하는 순간부터, 변환계 주문을 주문책에 필사하는 데 필요한 시간과 금 비용이 절반으로 줄어듭니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">소연금술</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에 이 학파를 선택하면, 비마법 물체 하나의 물리적 성질을 일시적으로 바꾸어 한 물질을 다른 물질로 변환할 수 있습니다. 나무, 돌(보석 제외), 철, 구리, 은 가운데 하나로 전부 이루어진 물체 하나에 특별한 연금술 절차를 행해, 같은 목록 안의 다른 재질로 바꿉니다. 이 절차를 10분 수행할 때마다 최대 1세제곱피트 분량의 물질을 변환할 수 있습니다. After 1 hour, or until you lose your @status[concentration] (as if you were @status[concentration||concentrating] on a spell), the material reverts to its original substance.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">변환학자의 돌</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터 8시간을 들여 변환 마법을 저장한 변환학자의 돌을 만들 수 있습니다. 그 돌의 이점을 자신이 받을 수도 있고 다른 크리처에게 줄 수도 있습니다. 크리처는 그 돌을 지니고 있는 동안 당신이 선택한 이점 하나를 얻습니다. 돌을 만들 때 다음 선택지 중 하나를 이점으로 고르세요:</p><ul class=\"rd__list\"><li class=\"rd__li \">8장에 설명된 것처럼 60피트 범위의 암시야를 얻습니다.</li><li class=\"rd__li \">과적 상태가 아닐 때 속도가 10피트 증가합니다.</li><li class=\"rd__li \">건강 내성 굴림 숙련을 얻습니다.</li><li class=\"rd__li \">저항: acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit).</li></ul><p>1레벨 이상 변환계 주문을 시전할 때마다, 돌이 자신의 소지품 안에 있다면 그 돌의 효과를 바꿀 수 있습니다.</p><p>새로운 변환학자의 돌을 만들면 이전 돌은 기능을 잃습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">형태변환자</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10레벨이 되면, 아직 없다면 @spell[polymorph] 주문을 주문책에 추가합니다. @spell[polymorph] 주문을 주문 슬롯을 소모하지 않고 시전할 수 있습니다. When you do so, you can target only yourself and transform into a <a href=\"https://5etools-mirror-2.github.io/bestiary.html#blankhash,flstchallenge%20rating:min=&amp;0~max=&amp;1,flsttype:beast=1,flstmiscellaneous:swarm=2\">beast whose challenge rating is 1 or lower</a>.</p><p>Once you cast @spell[polymorph] in this way, you can't do so again until you finish a short or long rest, though you can still cast it normally using an available spell slot.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">대변환자</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p119</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터 행동으로 변환학자의 돌 안에 저장된 변환 마법의 비축분을 한 번에 소모할 수 있습니다. 그렇게 할 때 다음 효과 중 하나를 선택합니다. 이 경우 변환학자의 돌은 파괴되며, 긴 휴식을 마칠 때까지 다시 만들 수 없습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"><span class=\"entry-title-inner\">Major Transformation.</span></span><p>You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner\">Panacea.</span></span><p>You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"9\"><span class=\"entry-title-inner\">Restore Life.</span></span><p>You cast the @spell[raise dead] spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"10\"><span class=\"entry-title-inner\">Restore Youth.</span></span><p>You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by [[/r 3d10]] years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan.</p><div class=\"rd__spc-inline-post\"></div></div></div></div></div></div></div>",
-      "name": "변환 학교 - School of Transmutation"
+      "name": "변환 학파 - School of Transmutation"
     },
     "Item.FXHwRnWmkHK3sdpY": {
-      "description": "",
       "name": "나무 지팡이 - Wooden Staff"
     },
     "Item.FXKIFkqVbKEOV3R2": {
-      "description": "<div class=\"rd__b rd__b--3\"><p>당신은 범위 내에서 선택한 한 생명체만 들을 수 있는 불협화음을 속삭입니다. 이 불협화음은 대상에게 끔찍한 고통을 안겨줍니다. 대상은 <strong>지혜</strong> 내성 굴림을 해야 합니다. 내성에 실패할 경우, 대상은 [[/damage 3d6 type=psychic]] 피해를 받고, 즉시 자신의 반응을 사용해 가능한 한 자신의 속도만큼 멀리 이동해야 합니다. 이때, 대상은 불이나 구덩이와 같은 명백히 위험한 지형으로는 이동하지 않습니다. 내성에 성공할 경우, 대상은 피해를 절반만 받고, 멀리 이동하지 않아도 됩니다. &Reference[condition=deafened] 상태인 생명체는 자동으로 내성에 성공합니다.</p><p><strong>고레벨 시전:</strong> 이 마법을 2레벨 이상의 마법 슬롯을 사용하여 시전할 경우, 1레벨을 초과하는 슬롯 레벨마다 피해가 [[/damage 1d6]]씩 증가합니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><p></p></div></div><div class=\"rd__spc-inline-post\"><p></p></div></div>"
+      "description": "<div class=\"rd__b rd__b--3\"><p>당신은 범위 내에서 선택한 한 생명체만 들을 수 있는 불협화음을 속삭입니다. 이 불협화음은 대상에게 끔찍한 고통을 안겨줍니다. 대상은 <strong>지혜</strong> 내성 굴림을 해야 합니다. 내성에 실패할 경우, 대상은 [[/damage 3d6 type=psychic]] 피해를 받고, 즉시 자신의 반응을 사용해 가능한 한 자신의 속도만큼 멀리 이동해야 합니다. 이때, 대상은 불이나 구덩이와 같은 명백히 위험한 지형으로는 이동하지 않습니다. 내성에 성공할 경우, 대상은 피해를 절반만 받고, 멀리 이동하지 않아도 됩니다. &Reference[condition=deafened] 상태인 생명체는 자동으로 내성에 성공합니다.</p><p><strong>고레벨 시전:</strong> 이 마법을 2레벨 이상의 마법 슬롯을 사용하여 시전할 경우, 1레벨을 초과하는 슬롯 레벨마다 피해가 [[/damage 1d6]]씩 증가합니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><p></p></div></div><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+      "name": "Dissonant Whispers (불협화음의 속삭임)"
     },
     "Item.Gdzs9HojAvtgKvu2": {
-      "description": ""
+      "name": "주문 보석 : 흑요석(비어 있음)"
     },
     "Item.gEVQ0vLFsVA6B1jj": {
-      "description": "",
       "name": "일반 독 - Basic Poison"
     },
     "Item.gGwnuw0yp1tedBzH": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"XGE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">취권의 길</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>Way of the Drunken Master는 학생들에게 술고래의 변덕스럽고 예측할 수 없는 움직임으로 움직이도록 가르칩니다. 술 취한 마스터는 불안정한 발로 비틀거리며 흔들리며 교전을 좌절시키는 무능한 전투원처럼 보이는 모습을 보여줍니다. 술취한 주인의 불규칙한 비틀림에는 블록, 패리, 전진, 공격 및 후퇴의 신중하게 수행된 춤이 숨겨져 있습니다. </p><p>술취한 주인은 종종 낙담한 사람에게 기쁨을 가져다주거나 오만한 사람에게 겸손을 보여주기 위해 바보 역할을 즐깁니다. foe.</p><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\"> 추가 처리</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3레벨에서 이 전통을 선택하면 &Reference[skill=Performance] 기술을 아직 갖고 있지 않은 경우 숙련도를 얻습니다. 당신의 무술 기술은 전투 훈련과 댄서의 정확성, 광대의 익살스러움을 혼합합니다. 아직 @item[brewer's supplies|phb]이 없다면 숙련도를 얻을 수 있습니다.</p></div><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">Drunken Technique</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>3레벨에서는 Flurry of Blows의 일부로 빠르게 비틀고 돌리는 방법을 배웁니다. Flurry of Blows를 사용할 때마다 @action[Disengage] 행동의 이점을 얻고 현재 회전이 끝날 때까지 걷는 속도가 10피트만큼 증가합니다. Sway</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6일부터 시작 레벨에서는 갑자기 흔들리는 방식으로 움직일 수 있습니다. 다음과 같은 이점을 얻을 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div data-source=\"XGE\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"><span class=\"entry-title-inner help-subtle\" title=\"Source: Xanathar’s Guide to Everything, p34\">발로 도약합니다.</span></span><p>&Reference[condition=prone]일 때 5피트 이동을 소비하여 일어설 수 있습니다. 속도의 절반입니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div><div data-source=\"XGE\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6\"><span class=\"entry-title-inner help-subtle\" title=\"Source: Xanathar’s Guide to Everything, p34\">리디렉트 공격.</span></span><p>생물이 근접 공격 굴림으로 당신을 그리워할 때, 당신은 공격자 외에 5피트 이내에서 볼 수 있는 당신이 선택한 명중 크리처 하나를 공격하기 위한 반응으로 1키 포인트를 소비할 수 있습니다. you.</p><div class=\"rd__spc-inline-post\"></div></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner\">술고래 행운</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>11레벨부터 시작하면 항상 적절한 순간에 행운의 바운스를 얻는 것 같습니다. 능력 체크, 공격 굴림, 또는 s를 할 때던지고 굴림에 불이익이 있는 경우 2ki 포인트를 사용하여 해당 굴림에 대한 불이익을 취소할 수 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"8\"><span class=\"entry-title-inner\">취함 Frenzy</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p33</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17레벨에서 당신은 적군에 대해 압도적인 수의 공격을 가할 수 있는 능력을 얻습니다. Flurry of Blows를 사용할 때 각 Flurry of Blows 공격이 이번 턴에 다른 생물을 목표로 삼는다면 최대 3번의 추가 공격을 수행할 수 있습니다(최대 총 5번의 Flurry of Blows 공격).</p></div></div></div></div>",
-      "name": "술취한 달인의 길 - Way of the Drunken Master"
+      "name": "취권의 길 - Way of the Drunken Master"
     },
     "Item.gKUTtkuZ2WUodAYW": {
-      "description": "",
       "name": "유리 병 - Glass Bottle"
     },
     "Item.GNgu6F0wBYL8lUw7": {
@@ -492,19 +432,15 @@
       "name": "용맹 학파 - College of Valor"
     },
     "Item.gqNdrUoZJ5WXDYs0": {
-      "description": "",
       "name": "에드먼드의 휘장 - Edmond's Sigil"
     },
     "Item.Gs1a2nvWlDqr9Kbk": {
-      "description": "",
       "name": "고급 의상 - Fine Clothes"
     },
     "Item.gSYCDgkBj3EGcj0C": {
-      "description": "",
       "name": "만곡도 - Scimitar"
     },
     "Item.GWUWkCqOKD369cgP": {
-      "description": "",
       "name": "해독제 - Antitoxin"
     },
     "Item.Gzd29HLYiAOuEZ8A": {
@@ -516,14 +452,13 @@
       "name": "와이번 독 - Wyvern Poison"
     },
     "Item.H9ttbLDs0ZyjqrPH": {
-      "description": "<p>이 붓은 고대의 어둠 속에서 만들어진 전설적인 마법 아티팩트입니다. 손잡이는 뒤틀린 어두운 나무로 만들어졌으며, 붓의 털은 어두운 붉은색, 거의 검은 색으로, 희미하게 악의적인 빛을 발합니다. 손잡이에는 고대 룬과 마법의 기호가 새겨져 있으며, 희미하게 어두운 마법의 기운이 흐르고 있습니다.</p><p></p><ol><li><p><strong>피로 그림 그리기 (Drawing with Blood)</strong></p><ul><li><strong>사용법</strong>: 붓을 사용하여 피를 재료로 그림을 그릴 수 있습니다. 사용자는 자신의 체력(HP)을 제물로 바쳐야 합니다.</li><li><strong>자원 소모</strong>: 10 HP</li><li><strong>효과</strong>: 피로 그린 그림은 1시간 동안 실재하는 것처럼 보이며, 물리적으로 작용합니다. 예를 들어, 피로 그린 문은 실제 문처럼 작동하고, 피로 그린 생명체는 일시적으로 생명력을 가질 수 있습니다 (HP: 10, AC: 10, 공격: +3 명중, 피해: 1d6). 피로 그린 물체나 생명체는 1시간이 지나면 사라집니다.</li></ul></li><li><p><strong>생명의 제물 (Life Sacrifice)</strong></p><ul><li><strong>사용법</strong>: 자신의 HP를 20 소모하여 강력한 마법 효과를 발휘합니다. 보호 마법 문양을 활성화하면, 10분 동안 모든 공격에 대해 +2 AC를 얻으며, 어둠 속에 숨겨져 있는 동안 은신 상태로 간주됩니다.</li><li><strong>자원 소모</strong>: 20 HP</li><li><strong>효과</strong>: 강력한 마법 효과를 발휘합니다. 예를 들어, 피로 그린 보호 마법 문양은 10분 동안 사용자를 어둠의 힘으로 보호합니다. 보호 마법 문양을 활성화하면, 사용자는 10분 동안 모든 공격에 대해 +2 AC를 얻으며, 어둠 속에 숨겨져 있는 동안 은신 상태로 간주됩니다.</li></ul></li><li><p><strong>환상의 그림 (Phantasmal Drawing)</strong></p><ul><li><strong>사용법</strong>: 피로 그린 그림이 실재하는 것처럼 보이며, 일시적으로 현실에 영향을 미칩니다.</li><li><strong>자원 소모</strong>: 15 HP</li><li><strong>효과</strong>: 피로 그린 환상의 그림은 1시간 동안 실재하는 것처럼 보이며, 일시적으로 현실에 영향을 미칩니다. 예를 들어, 피로 그린 괴물은 실제 괴물처럼 공격하고 방어할 수 있습니다 (HP: 20, AC: 12, 공격: +5 명중, 피해: 2d6).</li></ul></li><li><p><strong>어둠의 보호 (Dark Protection)</strong></p><ul><li><strong>사용법</strong>: 붓을 사용하여 어둠의 보호 마법 문양을 그립니다.</li><li><strong>자원 소모</strong>: 10 HP</li><li><strong>효과</strong>: 피로 그린 어둠의 보호 마법 문양은 사용자를 어둠의 힘으로 보호합니다. 1시간 동안 사용자는 악의 존재로부터 감지되지 않으며, 모든 신체 공격에 대해 저항을 가집니다 (피해 절반 감소).</li></ul></li><li><p><strong>환경 변환 (Environmental Transformation)</strong></p><ul><li><strong>사용법</strong>: 사혈의 예술가는 붓을 휘둘러 전투 장소의 환경을 바꿀 수 있습니다. 이 능력은 보스 전투 동안 특별히 사용할 수 있습니다.</li><li><strong>자원 소모</strong>: 20 HP</li><li><strong>효과</strong>: 전투 장소의 환경을 완전히 바꿉니다. 사혈의 예술가는 자신의 창의력에 따라 새로운 환경을 창조할 수 있으며, 이 환경은 전투에 영향을 미칠 수 있습니다. 예를 들어, 그는 전장을 불바다로 만들거나, 얼어붙은 황무지로 변형시킬 수 있습니다. 이러한 변환은 1시간 동안 지속됩니다.</li></ul></li></ol>"
+      "description": "<p>이 붓은 고대의 어둠 속에서 만들어진 전설적인 마법 아티팩트입니다. 손잡이는 뒤틀린 어두운 나무로 만들어졌으며, 붓의 털은 어두운 붉은색, 거의 검은 색으로, 희미하게 악의적인 빛을 발합니다. 손잡이에는 고대 룬과 마법의 기호가 새겨져 있으며, 희미하게 어두운 마법의 기운이 흐르고 있습니다.</p><p></p><ol><li><p><strong>피로 그림 그리기 (Drawing with Blood)</strong></p><ul><li><strong>사용법</strong>: 붓을 사용하여 피를 재료로 그림을 그릴 수 있습니다. 사용자는 자신의 체력(HP)을 제물로 바쳐야 합니다.</li><li><strong>자원 소모</strong>: 10 HP</li><li><strong>효과</strong>: 피로 그린 그림은 1시간 동안 실재하는 것처럼 보이며, 물리적으로 작용합니다. 예를 들어, 피로 그린 문은 실제 문처럼 작동하고, 피로 그린 생명체는 일시적으로 생명력을 가질 수 있습니다 (HP: 10, AC: 10, 공격: +3 명중, 피해: 1d6). 피로 그린 물체나 생명체는 1시간이 지나면 사라집니다.</li></ul></li><li><p><strong>생명의 제물 (Life Sacrifice)</strong></p><ul><li><strong>사용법</strong>: 자신의 HP를 20 소모하여 강력한 마법 효과를 발휘합니다. 보호 마법 문양을 활성화하면, 10분 동안 모든 공격에 대해 +2 AC를 얻으며, 어둠 속에 숨겨져 있는 동안 은신 상태로 간주됩니다.</li><li><strong>자원 소모</strong>: 20 HP</li><li><strong>효과</strong>: 강력한 마법 효과를 발휘합니다. 예를 들어, 피로 그린 보호 마법 문양은 10분 동안 사용자를 어둠의 힘으로 보호합니다. 보호 마법 문양을 활성화하면, 사용자는 10분 동안 모든 공격에 대해 +2 AC를 얻으며, 어둠 속에 숨겨져 있는 동안 은신 상태로 간주됩니다.</li></ul></li><li><p><strong>환상의 그림 (Phantasmal Drawing)</strong></p><ul><li><strong>사용법</strong>: 피로 그린 그림이 실재하는 것처럼 보이며, 일시적으로 현실에 영향을 미칩니다.</li><li><strong>자원 소모</strong>: 15 HP</li><li><strong>효과</strong>: 피로 그린 환상의 그림은 1시간 동안 실재하는 것처럼 보이며, 일시적으로 현실에 영향을 미칩니다. 예를 들어, 피로 그린 괴물은 실제 괴물처럼 공격하고 방어할 수 있습니다 (HP: 20, AC: 12, 공격: +5 명중, 피해: 2d6).</li></ul></li><li><p><strong>어둠의 보호 (Dark Protection)</strong></p><ul><li><strong>사용법</strong>: 붓을 사용하여 어둠의 보호 마법 문양을 그립니다.</li><li><strong>자원 소모</strong>: 10 HP</li><li><strong>효과</strong>: 피로 그린 어둠의 보호 마법 문양은 사용자를 어둠의 힘으로 보호합니다. 1시간 동안 사용자는 악의 존재로부터 감지되지 않으며, 모든 신체 공격에 대해 저항을 가집니다 (피해 절반 감소).</li></ul></li><li><p><strong>환경 변환 (Environmental Transformation)</strong></p><ul><li><strong>사용법</strong>: 사혈의 예술가는 붓을 휘둘러 전투 장소의 환경을 바꿀 수 있습니다. 이 능력은 보스 전투 동안 특별히 사용할 수 있습니다.</li><li><strong>자원 소모</strong>: 20 HP</li><li><strong>효과</strong>: 전투 장소의 환경을 완전히 바꿉니다. 사혈의 예술가는 자신의 창의력에 따라 새로운 환경을 창조할 수 있으며, 이 환경은 전투에 영향을 미칠 수 있습니다. 예를 들어, 그는 전장을 불바다로 만들거나, 얼어붙은 황무지로 변형시킬 수 있습니다. 이러한 변환은 1시간 동안 지속됩니다.</li></ul></li></ol>",
+      "name": "블러드러스트 - BloodLust"
     },
     "Item.hA2GPfAMAxvRgivU": {
-      "description": "",
       "name": "시프 - Thief"
     },
     "Item.hlRS96e5LrXojotY": {
-      "description": "",
       "name": "체인 메일 - Chain Mail"
     },
     "Item.hMg0zX4wOw02kO1A": {
@@ -531,10 +466,10 @@
       "description": "<div class=\"rd__b rd__b--2\"></div>"
     },
     "Item.hMwW3ZuzfqfqthVS": {
-      "description": "<div class=\"rd__b rd__b--2\"><p>특수 바늘로 제작된 이 마법의 문신은 덤불 속에 숨겨진 은밀한 놀라움을 나타냅니다.</p><p>동작으로 문신의 명령을 말하고 양손을 땅에 눕힐 수 있습니다. 이렇게 하면 문신이 사용자로부터 분리되어 발 직경 약 5피트의 영역을 덮게 됩니다(색소 침착 유지). 1분 후 문신이 환경 속으로 위장됩니다. 문신의 위치를 ​​육안으로 검사하는 행동을 사용하는 사람은 성공적인 DC 13 지능(조사) 검사를 통해 그것이 위장된 함정임을 식별합니다.</p><p>문신을 밟는 생물은 DC 13 민첩 내성 굴림에 성공하거나 문신에서 잉크 스파이크가 튀어나오면서 [[/r 3d6]] 관통 피해를 입고 &Reference[condition=restrained]이 되어야 합니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다.</p><p>생물이 몸에서 풀려난 후 또는 무장 해제를 위해 보너스 행동을 사용하면 문신이 사라지고 피부에 다시 ​​나타납니다. 한 번 사용된 문신은 피부에 다시 ​​나타날 때까지 다시 사용할 수 없습니다.</p></div>"
+      "description": "<div class=\"rd__b rd__b--2\"><p>특수 바늘로 제작된 이 마법의 문신은 덤불 속에 숨겨진 은밀한 놀라움을 나타냅니다.</p><p>동작으로 문신의 명령을 말하고 양손을 땅에 눕힐 수 있습니다. 이렇게 하면 문신이 사용자로부터 분리되어 발 직경 약 5피트의 영역을 덮게 됩니다(색소 침착 유지). 1분 후 문신이 환경 속으로 위장됩니다. 문신의 위치를 ​​육안으로 검사하는 행동을 사용하는 사람은 성공적인 DC 13 지능(조사) 검사를 통해 그것이 위장된 함정임을 식별합니다.</p><p>문신을 밟는 생물은 DC 13 민첩 내성 굴림에 성공하거나 문신에서 잉크 스파이크가 튀어나오면서 [[/r 3d6]] 관통 피해를 입고 &Reference[condition=restrained]이 되어야 합니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다.</p><p>생물이 몸에서 풀려난 후 또는 무장 해제를 위해 보너스 행동을 사용하면 문신이 사라지고 피부에 다시 ​​나타납니다. 한 번 사용된 문신은 피부에 다시 ​​나타날 때까지 다시 사용할 수 없습니다.</p></div>",
+      "name": "미식별된 장비"
     },
     "Item.HOf7xi6HYDLb1Rdb": {
-      "description": "",
       "name": "패디드 아머 - Padded Armor"
     },
     "Item.i5AGx31x6n5G4dcz": {
@@ -546,7 +481,7 @@
       "name": "전투 마법 - War Magic"
     },
     "Item.igmtVSycqTOFgVGo": {
-      "description": ""
+      "name": "미식별된 소모품"
     },
     "Item.IlDVoHZ3TZpPaR9p": {
       "name": "연금술사의 불 - Alchemist's Fire",
@@ -558,11 +493,10 @@
     },
     "Item.iVfVzqGhhXnWxW7b": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">방호 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>절단 학교는 차단, 추방 또는 보호하는 마법을 강조합니다. 이 학교를 비방하는 사람들은 이 학교의 전통이 긍정적인 주장보다는 부정, 부정에 관한 것이라고 말합니다. 그러나 해로운 효과를 없애고, 약자를 보호하고, 악한 영향력을 추방하는 것이 결코 철학적인 공허함은 아니라는 것을 당신은 알고 있습니다. 이것은 자랑스럽고 존경받는 직업입니다.</p><p>배신자라고 불리는 이 학교의 구성원은 사악한 영혼이 퇴마를 요구할 때, 중요한 위치를 마법의 첩보로부터 보호해야 할 때, 다른 존재계로 통하는 포털을 닫아야 할 때 찾아옵니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">철폐 서번트</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서 이 학교를 선택할 때부터, 철회 주문을 주문서에 복사하는 데 소비해야 하는 골드와 시간은 절반으로 줄어듭니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">비전 와드</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨부터 보호를 위해 자신 주위에 마법을 엮을 수 있습니다. <a href=\"https://5etools-mirror-2.github.io/spells.html#blankhash,flstschool:a=1,flstlevel:0=2\">1레벨 이상의 포기 주문</a>을 시전하면 동시에 주문의 마법 가닥을 사용하여 긴 휴식을 마칠 때까지 지속되는 마법의 와드를 자신에게 만들 수 있습니다. 와드의 최대 체력은 마법사 레벨의 두 배 + 지능 수정치와 같습니다. 당신이 피해를 입을 때마다 와드는 대신 피해를 입습니다. 이 피해로 인해 와드의 체력이 0으로 줄어들면 남은 모든 부분을 가져갑니다.</p><p>와드의 체력이 0인 동안에는 피해를 흡수할 수 없지만 마법은 남아 있습니다. <a href=\"https://5etools-mirror-2.github.io/spells.html#blankhash,flstschool:a=1,flstlevel:0=2\">1레벨 이상의 포기 주문</a>을 시전할 때마다 와드는 주문 레벨의 두 배에 해당하는 내구도를 회복합니다.</p><p>와드를 일단 생성하면 긴 와드를 마칠 때까지 다시 생성할 수 없습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">예상 병동</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터 30피트 내에서 볼 수 있는 생물이 피해를 입으면, 당신의 반응을 이용해 Arcane Ward가 해당 부분을 흡수하도록 할 수 있습니다. 이 피해로 인해 와드의 체력이 0으로 줄어들면 와드를 받은 생물은 남은 모든 것을 가져갑니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Improved Abjuration</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>능력을 만들어야 하는 포기 주문을 시전할 때 10레벨부터 시작합니다. 해당 주문을 발동하는 과정의 일부로 확인합니다(@spell[counterspell]에서와 같이d @spell[dispel magic]), 해당 능력 검사에 숙련도 보너스를 추가합니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">Spell 저항</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p115</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터 당신은 주문에 대한 내성굴림에 이점을 얻습니다.</p><p>게다가, 주문 피해에 대한 저항력도 갖습니다.</p></div></div></div></div>",
-      "name": "포기의 학교 - School of Abjuration"
+      "name": "방호 학파 - School of Abjuration"
     },
     "Item.izBrqSv1f21u5IfQ": {
-      "name": "은도금 메이스 - Silvered Mace",
-      "description": ""
+      "name": "은도금 메이스 - Silvered Mace"
     },
     "Item.IZJj8QW0ihAOh4Vx": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">전투 대장장이</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p8</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>수호자 자신이 병의 역할을 하는 창장 아티피서들은 복구하는 데 도움이 되는 전문가들입니다. 전투의 활동을 위해, 전투 대장장이들은 자신만의 권위 있는 참가자 Steel Defender를 제작하고 개조했습니다.</p><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">Tools of the Trade</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p8</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p> 당신은 대장장이 도구와 중갑 돈을 얻었습니다. 이미 대장장이 도구에 능력이 있는 경우 대신 원하는 다른 장인 도구 한 종류의 능력을 얻습니다.</p><p>게다가, 당신으로부터 5피트 내의 다른 생물이 공격의 대상이 될 때, 당신은 반응을 사용하여 발동 공격 굴림에 불이익을 가할 수 있습니다. 하지만 이 반응을 사용하려면 방패나 근접 무기를 휘두르고 있어야 합니다.</p></div><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">전투 대장장이 주문</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p9</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>아래 표에 적힌 아티피서에 호소하면 주문을 배. 이 주문은 당신이 모르는 총 주문에 포함되어 있으며, 플레이 시 교체할 수도 없습니다.</p><table class=\"w-100 rd__table stripe-odd-table\"><thead><tr><th class=\"ve-col-2 ve-text-center\" data-rd-isroller=\"false\">아티피서 레벨</th><th class=\"ve-col-10\" data-rd-isroller=\"false\">주문</th></tr></thead><tbody><tr><td class=\"ve-col-2 ve-text-center\">2nd</td><td class=\"ve-col-10\">@spell[sanctuary], @spell[shield of faith]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">5th</td><td class=\"ve-col-10\">@spell[restoration|llspell], @spell[warding bond]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">9th</td><td class=\"ve-col-10\">@spell[aura of vitality], @spell[counterspell]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">13th</td><td class=\"ve-col-10\">@spell[aura of purity], @spell[death ward]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">17th</td><td class=\"ve-col-10\">@spell[circle of power], @spell[mass cure wounds]</td></tr></tbody></table></div><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">강철 장치</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p8</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>당신은 자신을 Steel Defender라 생각할 수 있습니다. 냈어요. 이 존재는 당신에게 우호적이며 당신의 복합에 종합니다. 이 존재의 회원은 다음 페이지의 Steel Defender 스 스위치 블록에 사용 권한을 부여하고 귀하의 주문을 처리하는 DC(PB)를 소유하게 됩니다. Steel Defender는 아래 규칙을 사용합니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"><span class=\"entry-title-inner\">Defender 만들기.</span></span><p>긴 휴식 중에 Smith 도구를 사용하여 1시간 동안 Steel Defender를 만들 수 있습니다. Steel Defender는 하나만 가질 수 있으며, 다른 것을 만들면 이전 Steel Defender가 파괴됩니다. Steel Defender가 죽으면 주문 슬롯을 소모하고 대장장이의 도구로 수리하는 데 1분을 소비하여 최대 체력으로 생명을 회복합니다. <span class=\"entry-title-inner\">주입.</span></span><p>강철 수비수는 부츠, 망토, 건틀릿, 헬멧 또는 슈트에 사용되는 주입을 1개 견딜 수 있습니다. armor.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"><span class=\"entry-title-inner\">전투.</span></span><p>전투에서 강철 방어자는 당신의 차례에 행동합니다. 그것은 스스로 움직이고 반응을 사용할 수 있지만, 보너스 행동을 사용하여 능력치 블록에서 행동이나 다른 행동을 취하도록 명령하지 않는 한 자신의 차례에만 회피 행동을 취합니다. 당신이 무력화되는 경우, Steel Defender는 최선을 다해 당신을 방어하기 위해 스스로 행동할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner\">Model.</span></span><p>생성 시 Steel Defender의 모델을 선택합니다. 휴머노이드 또는 사족 동물(전투 안팎에서 외형과 능력을 결정함):</p><div class=\"rd__spc-inline-post\"></div></div><ul class=\"rd__list\"><li class=\"rd__li \">@creature[Steel Defender (Humanoid)|LLAART|Humanoid]. Steel Defender는 중형 인간형 생물과 유사합니다. 방패에 능숙하며 간단한 작업을 수행하는 데 사용할 수 있는 인간형 손을 가지고 있습니다.</li><li class=\"rd__li \">@creature[Steel Defender (Quadruped)|LLAART|Quadruped]. 귀하의 강철 수비수는 귀하가 선택한 대형 야수와 유사합니다. 걷는 속도가 10피트 증가하고 마치 훈련된 탈것처럼 탈 수 있습니다.</li></ul></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"9\"><span class=\"entry-title-inner\">Minor 업그레이드</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p9</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>스틸 디펜더의 공격 능력이 향상되었습니다. 아래의 마이너 업그레이드 중 하나를 선택하세요:</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"10\"><span class=\"entry-title-inner\">Minor Arcanum.</span></span><p>시전 시간이 1인 원하는 1레벨 아티피서 주문을 강철 수비대에 주입합니다. 행동. 보너스 행동으로, 당신은 주문 시전 수정자를 사용하여 방어자에게 해당 주문을 1레벨에서 시전하도록 명령할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>강철 방어자는 이 주문의 충전을 세 번 가지며, 짧거나 길게 끝나면 모든 충전을 회복합니다. 휴식.</p></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"11\"><span class=\"entry-title-inner\">군사 공격.</span></span><p>Steel Defender's Rend의 데미지는 1d10이 되며, Rend 액션을 취하도록 명령하면 한 번 대신 두 번의 Rend 공격을 할 수 있습니다. Rend 공격을 그래플이나 밀기로 대체할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"12\"><span class=\"entry-title-inner\">모듈식 수비수</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p9</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>강철 방어자는 이제 주입 목적에 따라 몸통(갑옷 또는 망토), 다리(부츠), 머리(헬멧) 및 사용하는 팔다리 등 여러 개별 항목으로 간주됩니다. 공격을 찢습니다(건틀릿 또는 근접 무기). 각 항목은 하나의 주입을 견딜 수 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"13\"><span class=\"entry-title-inner\">상급 업그레이드</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p9</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>Steel Defender에 놀라운 능력과 기능을 불어넣을 수 있습니다. 그레이터 업그레이드 중 하나를 선택하십시오. below:</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"14\"><span class=\"entry-title-inner\">Greater Arcanum.</span></span><p>당신은 한 행동의 시전 시간으로 당신이 선택한 2레벨 아티피서 주문을 강철 수비대에 주입합니다. 보너스 행동으로, 주문 시전 수정자를 사용하여 방어자에게 2레벨에서 주입된 주문을 시전하도록 명령할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>강철 방어자는 이 주문의 충전을 세 번 가지며, 짧거나 길게 끝나면 모든 충전을 회복합니다. 휴식.</p></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"15\"><span class=\"entry-title-inner\">감정 제한.</span></span><p>Steel Defender의 인지 능력을 향상시킵니다. 지능 점수는 10이 되며 선택한 언어 1개를 말하고 읽고 쓸 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>또한 완료될 때까지 사용자가 제공하는 간단한 지침을 수행합니다. 예를 들면 '그 물체를 가져오세요</p><p>그 생물을 공격하세요' 또는 '이 문으로 아무것도 들어오지 못하게 하세요'.</p></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"16\"><span class=\"entry-title-inner\">Reinforced 도금.</span></span><p>방어력이 크게 향상되었습니다. 모든 타격, 관통 및 베기 작업에 저항력이 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"17\"><span class=\"entry-title-inner\">걸작 업그레이드</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p9</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>당신은 강철 방어자에게 놀라운 능력과 힘을 불어넣습니다. 아래의 걸작 업그레이드 중 하나를 선택하십시오:</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"18\"><span class=\"entry-title-inner\">Arcane Ward.</span></span><p>강철 방어자로부터 15피트 이내에 있는 생물은 다음과 같은 피해에 저항합니다. 주문.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"19\"><span class=\"entry-title-inner\">자폭.</span></span><p>강력한 비전을 내장했습니다. Steel Defender에서 폭발적입니다. 보너스 액션으로, Steel Defender에게 자폭을 명령하여 스스로 파괴하고 30피트 내의 모든 생명체가 민첩 내성 굴림을 하도록 강제할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>생물은 실패 시 Steel Defender의 남은 Hit Dice와 동일한 강제 피해를 입으며(최대 10d8) 절반은 피해를 입습니다. 성공에. 이 기능을 사용하면 다음 긴 휴식이 끝날 때까지 Steel Defender를 재건할 수 없습니다.</p></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"20\"><span class=\"entry-title-inner\">Major Arcanum.</span></span><p>당신은 한 번의 행동 시전 시간으로 원하는 3레벨 아티피서 주문을 사용하는 강철 수비수입니다. 보너스 행동으로, 당신은 주문 시전 수정자를 사용하여 방어자에게 해당 주문을 3레벨에서 시전하도록 명령할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>강철 방어자는 이 주문의 충전을 세 번 가지며, 짧거나 길게 끝나면 모든 충전을 회복합니다. 휴식.</p></div></div></div></div></div>",
@@ -573,7 +507,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>특수한 바늘로 새긴 이 마법 문신은 침묵을 꿰뚫는 불협화음을 나타냅니다.</p><p>행동을 사용해 문신의 명령어를 말하면, 자신을 중심으로 반경 20피트 구체에 고주파 음파를 방출합니다. 구체 안의 각 생명체는 DC 13 건강 내성 굴림을 해야 합니다. 실패하면 [[/r 6d6]] 천둥 피해를 받고 1분 동안 &amp;Reference[condition=deafened] 상태가 됩니다. 성공하면 절반 피해만 받고 &amp;Reference[condition=deafened] 상태가 되지 않습니다. 유리나 수정으로 이루어진 생명체와 물체는 이 내성 굴림에 불리점을 받습니다. 이 문신의 이 속성을 한 번 사용하면 1시간이 지나기 전까지 다시 사용할 수 없습니다.</p></div>"
     },
     "Item.j123wgC3kL4KbhQ4": {
-      "description": "",
       "name": "전쟁망치 - Warhammer"
     },
     "Item.Jg4g24W5T3GWfeuQ": {
@@ -581,7 +514,6 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 쇠구슬은 연금술 폭발물로 가득 차 있으며 짧은 도화선이 달려 있습니다. 행동으로 불을 붙여 60피트 내의 한 지점으로 던질 수 있습니다. 그 지점에서 5피트 이내의 각 생명체는 DC 12 민첩 내성 굴림을 해야 하며, 실패 시 [[/r 4d6]] 화염 피해를 받고 성공 시 절반만 받습니다. 이 물건의 무게는 1파운드입니다.</p></div>"
     },
     "Item.JLw7BTQP872gk2dc": {
-      "description": "",
       "name": "일반 독 - Basic Poison"
     },
     "Item.jmEKQQAPTqsaXgvR": {
@@ -593,8 +525,7 @@
       "description": "<div class=\"rd__b rd__b--1\"><p><i>3레벨 영혼의 대학 특성</i></p><p>당신은 영혼에게 손을 내밀어 자신과 다른 이를 인도할 수 있습니다. @spell[guidance] 소마법을 배우며, 이 소마법은 당신이 알고 있는 바드 소마법 수에 포함되지 않습니다. 당신이 이 주문을 시전할 때 사거리는 60피트가 됩니다.</p></div>"
     },
     "Item.Jo5iuQsRjucR6MlV": {
-      "description": "",
-      "name": "대검 대검 - 대검 Greatsword"
+      "name": "대검 - Greatsword"
     },
     "Item.jRLCcpnGbUhnLGKD": {
       "name": "광부의 문신 - Miner's Tattoo",
@@ -605,18 +536,16 @@
       "name": "총잡이 - Gunslinger"
     },
     "Item.k6L6W5JKN9SmzDyX": {
-      "description": ""
+      "name": "원시 보석: 자수정"
     },
     "Item.k77mnwSUzkftT8WJ": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"TCE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">질서 권역</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>질서 역은 규율, 사회나 제도에 대한 것에 대한, 그리고 그것을 규제하는 법에 대한 복종을합니다. 라브니카에서 이 영역은 법을 유지하고 집행하기 위해 이 영역을 사용하는 아조리우스 상원의 성직자들과 개인적인 이익을 위해 법과 질서를 이용하는 오르조브 신디케이트의 성직자들이 선호합니다. 다른 세계에서는 이 영역에 대한 접근 권한을 부여한 신으로는 @deity[Bane], @deity[Tyr], @deity[Majere|Dragonlance], @deity[Erathis|Dawn War|DMG], @deity[Pholtus|Greyhawk], @deity[Wee Jas|Greyhawk], @deity[Aureon|Eberron], @deity[Maglubiyet|Nonhuman] 등이 있습니다. @deity[Nuada|Celtic], @deity[Athena|Greek], @deity[Anubis|Egyptian], @deity[Forseti|Norse], and @deity[Asmodeus|Dawn War|DMG].</p><p>질서의 이상은 특정 개인이나, 그 외의 경우의 관계법령에 대한 복종을 그로. AP의 클레이릭은 보통 어떤 행동의 결과가 정의로운가보다, 일이 어떤 절차로 수행되는가를 더 중시합니다. 법을 찾기 위해 그 덩어리에 복종하는 사람들 특히 그들과 그들의 길드 또는 신들에게 이익이 될 때 더욱 중요합니다.</p><p>법률은 계층 구조를 설정합니다. 법에 의해 인도하도록 선택된 사람들은 복종해야 합니다. 순종하는 사람은 최선을 다해 순종해야 합니다. 이러한 방식으로 법은 사회가 혼란스러운 다중우주에서 질서와 보안을 구축할 수 있도록 하는 복잡한 의무 그물을 만듭니다.</p><p>표에 인형 각 클레릭 레벨이 있으면, 추가를 제거 주문에 추가합니다.</p><table class=\"w-100 rd__table stripe-odd-table\"><caption>Order Domain 주문</caption><thead><tr><th class=\"ve-col-2 ve-text-center\" data-rd-isroller=\"false\">클레릭 레벨</th><th class=\"ve-col-10\" data-rd-isroller=\"false\">주문</th></tr></thead><tbody><tr><td class=\"ve-col-2 ve-text-center\">1st</td><td class=\"ve-col-10\">@spell[command], @spell[heroism]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">3rd</td><td class=\"ve-col-10\">@spell[hold person], @spell[zone of truth]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">5th</td><td class=\"ve-col-10\">@spell[mass healing word], @spell[slow]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">7번째</td><td class=\"ve-col-10\">@spell[compulsion], @spell[locate creature]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">9th</td><td class=\"ve-col-10\">@spell[commune], @spell[dominate person]</td></tr></tbody></table><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\"> 추가 </span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>1레벨에서 이 도메인을 선택하면 중장갑에 능숙해집니다. 또한 &Reference[skill=Intimidation] 또는 &Reference[skill=Persuasion] 기술(선택)에 능숙해집니다.</p></div><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">권한의 목소리</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>1레벨부터 법의 힘을 불러내 동맹을 공격하도록 유도할 수 있습니다. 1레벨 이상의 주문 슬롯이 있는 주문을 시전하고 이 주문으로 동맹을 목표로 삼는 경우, 그 동맹은 주문 직후 반응을 사용하여 당신이 볼 수 있는 당신이 선택한 생물에 대해 한 번의 무기 공격을 할 수 있습니다.</p><p>주문이 둘 이상의 동맹을 목표로 삼는 경우, 당신은 다음을 수행할 수 있는 동맹을 선택합니다. 공격.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Chann엘 디비니티: 주문의 수요</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨부터 채널 신성을 사용하여 다른 사람에게 위협적인 존재감을 발휘할 수 있습니다.</p><p>행동으로, 당신은 당신의 신성한 상징을 제시하고, 당신으로부터 30피트 이내에서 당신을 보거나 들을 수 있는 당신이 선택한 각 생물은 지혜 내성 굴림에 성공해야 하며, 그렇지 않으면 다음 턴이 끝날 때까지 또는 &Reference[condition=charmed] 생물이 아무 거리나 취할 때까지 당신에 의해 &Reference[condition=charmed]이어야 합니다. 또한 &Reference[condition=charmed] 생물이 내성 굴림에 실패하면 보유하고 있는 것을 떨어뜨리게 할 수도 있습니다. 법칙</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서 당신은 다른 사람을 강제하기 위해 마법 에너지를 집중시키는 데 매우 능숙해집니다.</p><p>1레벨 이상의 주문 슬롯을 사용하여 마법 학교의 주문을 시전하는 경우, 주문의 시전 시간이 일반적으로 1이라면 이 시전에 대한 주문의 시전 시간을 1 보너스 행동으로 변경할 수 있습니다. action.</p><p>이 기능을 지혜 수정치만큼 여러 번 사용할 수 있으며(최소 한 번) 긴 작업을 마치면 사용한 모든 사용을 다시 얻습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">신의 일격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>8레벨에서 무기에 주입하는 능력을 얻습니다. 신성한 에너지로 공격합니다. 매 턴마다 한 번씩 무기 공격으로 생물을 공격할 때 공격이 대상에게 추가 [[/damage 1d8 type=psychic]] 피해를 입히게 할 수 있습니다. 14레벨이 되면 추가 데미지가 [[/r 2d8]].</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner\">축복받은 것으로 증가합니다. 일격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>8레벨 성직자 @variantrule[optional class features|tce|optional feature], 신성한 일격 기능을 대체합니다</i></p><p>당신은 전투에서 신성한 힘의 축복을 받았습니다. 생물이 당신의 캔트립이나 무기 공격 중 하나로부터 피해를 입을 때, 당신은 그 생물에게 [[/damage 1d8 type=radiant]] 피해를 입힐 수도 있습니다. 이 독립을 한 번만 시작하려면, 당신의 다음 차례 시작은 좌우측으로 다시 시작할 수 없습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"8\"><span class=\"entry-title-inner\">Order's 분노</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p31</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17레벨부터, 당신이 파괴하도록 지정한 적들은 당신과 당신의 동맹국의 공동 노력으로 시들해집니다. 당신의 턴에 생물에게 천상의 일격 피해를 입히면 다음 턴이 시작될 때까지 그 생물을 저주할 수 있습니다. 다음에 당신의 동맹 중 한 명이 공격으로 저주받은 생물을 칠 때, 대상도 [[/damage 2d8 type=psychic]] 피해를 입고 저주를 받습니다.끝납니다. 당신은 턴당 한 번만 이런 방식으로 생물을 저주할 수 있습니다.</p></div></div></div></div>",
       "name": "질서 권역 - Order Domain"
     },
     "Item.kN9nycZrgl27UI4o": {
-      "description": "",
       "name": "연금술사의 불 - Alchemist's Fire"
     },
     "Item.kncHnXY6rY0SGoCM": {
-      "description": "",
       "name": "양초 - Candle"
     },
     "Item.knU1oL7mfmLDYv42": {
@@ -632,19 +561,17 @@
       "name": "기만 권역 - Trickery Domain"
     },
     "Item.KXkZ4FQOr4YOZBQx": {
-      "description": ""
+      "name": "미식별된 소모품"
     },
     "Item.LHL60qGEhfcNFYT3": {
-      "description": "",
       "name": "거창 - Lance"
     },
     "Item.LhxLC0YO3mGreLpB": {
-      "description": "",
       "name": "장검 - Longsword"
     },
     "Item.lLzyTGg43N92HIfH": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"TCE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">웅변 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>웅변학 대학의 지지자들은 웅변술의 기술을 마스터합니다. 설득은 고급 기술로 간주되며, 합리적이고 잘 표현된 주장은 종종 사실보다 더 설득력이 있습니다. 이 음유시인은 논리와 연극적 말장난을 혼합하여 논리적 주장으로 회의론자와 비방자를 설득하고 심금을 자극하여 청중의 감정에 호소합니다.</p><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">은색 혀</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3레벨 웅변학파 </i></p><p>당신은 적절한 순간에 올바른 말을 하는 데 능숙합니다. 카리스마(&Reference[skill=Persuasion]) 또는 카리스마(&Reference[skill=Deception]) 체크를 할 때 9 이하의 [[/r d20]] 굴림을 10.</p></div><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">불안함으로 처리할 수 있습니다. 단어</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>3 레벨 웅변 학파중방향</i></p><p>당신은 생물을 불안하게 하고 스스로를 의심하게 만드는 마법이 담긴 단어를 뽑을 수 있습니다. 보너스 행동으로 Bardic Inspiration을 한 번 사용하고 60피트 이내에 보이는 크리처 하나를 선택할 수 있습니다. 바르딕 영감 주사위를 굴립니다. 생물은 다음 턴이 시작되기 전에 다음 내성 굴림에서 굴린 숫자를 빼야 합니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Unfailing Inspiration</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>6레벨 웅변 학파 </i></p><p>귀하의 감동적인 말은 너무나 설득력이 있어 다른 사람들도 성공하려는 의지를 느낍니다. 생물이 능력 체크, 공격 굴림 또는 내성 굴림에 음유시인 영감 주사위 중 하나를 추가하고 굴림이 실패하면 생물은 음유시인 영감 주사위를 유지할 수 있습니다. 음성</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>6레벨 웅변 학파좌우</i></p><p>당신은 모든 생물이 당신의 말을 이해할 수 있게 만드는 능력을 얻었습니다. 행동으로 당신으로부터 60피트 이내에 있는 하나 이상의 생물을 당신의 카리스마 수정치(최소 크리처 하나)만큼 선택하십시오. 선택한 생물은 귀하가 말하는 언어에 관계없이 1시간 동안 마법적으로 귀하의 말을 이해할 수 있습니다.</p><p>이 기능을 한 번 사용하면 긴 휴식을 마칠 때까지 해당 기능을 사용하기 위해 주문 슬롯을 소비하지 않는 한 다시 사용할 수 없습니다. 다시.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner\">감염 영감</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p29</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p><i>14레벨 웅변 학파좌우</i></p><p>당신이 누군가에게 성공적으로 영감을 주었을 때, 이제 당신의 웅변의 힘이 다른 사람에게 퍼질 수 있습니다. 당신으로부터 60피트 이내에 있는 생물이 당신의 음유시인 영감 주사위 중 하나를 능력 판정, 공격 굴림 또는 내성 굴림에 추가하고 굴림이 성공하면, 당신은 당신의 반응을 사용하여 당신으로부터 60피트 이내에 있는 당신의 말을 들을 수 있는 다른 생물(자신이 아닌)을 격려할 수 있으며, 음유시인 영감 사용을 소모하지 않고 그 생물에게 음유시인 영감 주사위를 줄 수 있습니다.</p><p>이 반응은 카리스마와 동일한 횟수만큼 사용할 수 있습니다. 수정자(최소 한 번)를 적용하고 긴 휴식을 마치면 소모된 모든 사용을 회복합니다.</p></div></div></div></div>",
-      "name": "웅변대학 - College of Eloquence"
+      "name": "웅변 학파 - College of Eloquence"
     },
     "Item.LRENGsXKkFqp9iom": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">탐구자</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>퀘스트 수행자는 야생에서 유물을 검색하며 새로운 보물을 발견하고 마스터하려는 열망을 가지고 있습니다. 다른 발명가들이 자신만의 발명품을 만들려고 하는 곳에서, 발명가는 잊혀진 던전 깊숙이 묻혀 있거나 잃어버렸던 놀라운 발명품을 발견합니다. 그들은 새로운 보물을 찾는 과정에서 위험에 직면할 준비가 되어 있으며 자신의 발명품을 창의적인 방식으로 사용할 준비가 되어 있습니다.</p><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">Wondrous 발견</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>여행 중에 손상된 다양한 마법 아이템을 발견했습니다. 2레벨부터 발명 포인트를 할당하여 깨진 아이템을 수리할 수 있습니다. 레벨이 오를수록 더 강력한 아이템을 수리할 수 있습니다.</p><p>2, 6, 10, 14레벨의 불가사의한 발견 테이블에서 아이템을 선택합니다. 항목을 선택하면 언제든지 발명 포인트를 할당하여 선택한 항목을 수리할 수 있습니다. 아이템은 현재 발명가 레벨이나 그보다 낮은 레벨의 목록에 있어야 합니다.</p><p>아이템과 발명 포인트 비용은 경이로운 발견 표에 나열되어 있습니다. 경이로운 발견은 조율된 마법 아이템의 최대 개수에 포함되지 않습니다. 마법 아이템은 던전 마스터 가이드에 자세히 설명되어 있습니다.</p><table class=\"w-100 rd__table stripe-odd-table\"><caption>Wondrous Discoveries</caption><thead><tr><th class=\"ve-col-3 ve-text-center\" data-rd-isroller=\"false\">아티피서 레벨</th><th class=\"ve-col-3 ve-text-center\" data-rd-isroller=\"false\">Wondrous 발견</th><th class=\"ve-col-6\" data-rd-isroller=\"false\">발명 포인트</th></tr></thead><tbody><tr><td class=\"ve-col-3 ve-text-center\">2nd</td><td class=\"ve-col-3 ve-text-center\">@item[bag of holding], @item[cap of water breathing], @item[driftglobe], @item[goggles of night], @item[sending stones]</td><td class=\"ve-col-6\">1</td></tr><tr><td class=\"ve-col-3 ve-text-center\">6th</td><td class=\"ve-col-3 ve-text-center\">@item[alchemy jug], @item[helm of comprehending languages], @item[lantern of revealing], @item[ring of swimming], @item[robe of useful items], @item[rope of climbing], @item[wand of magic detection], @item[wand of secrets]</td><td class=\"ve-col-6\">2</td></tr><tr><td class=\"ve-col-3 ve-text-center\">10th</td><td class=\"ve-col-3 ve-text-center\">@item[bag of beans], @item[chime of opening], @item[decanter of endless water], @item[eyes of minute seeing], @item[folding boat], @item[Heward's handy haversack]</td><td class=\"ve-col-6\">4</td></tr><tr><td class=\"ve-col-3 ve-text-center\">14th</td><td class=\"ve-col-3 ve-text-center\">@item[boots of striding and springing], @item[bracers of archery], @item[brooch of shielding], @item[broom of flying], @item[hat of disguise], @item[slippers of spider climbing]</td><td class=\"ve-col-6\">5</td></tr></tbody></table></div><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">던전 Delver</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서는 위험을 피할 때 던전 탐구 경험이 유리해집니다. 함정이나 주문과 같이 눈으로 볼 수 있는 효과에 대해서는 민첩 내성 굴림에 유리합니다. 이 혜택을 얻으려면 &Reference[condition=blinded], &Reference[condition=deafened] 또는 &Reference[condition=incapacitated]이 될 수 없습니다.</p><p>또한 방패와 무술에 능숙해집니다. 무기.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\"> 추가 공격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터 공격 행동을 취할 때마다 한 번이 아닌 두 번 공격할 수 있습니다. 회전.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">예외적 혁신</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서는 각 레벨 사이에 추가 시간을 두고 자발적인 혁신을 사용할 수 있습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"6\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">놀라움 발견</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서는 경이로운 발견에서 추가 아이템을 수리할 수 있습니다. 기능.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">크리에이티브 개발</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10레벨에서는 놀라운 발명품을 함정으로 배치할 수 있습니다. 잠시 시간을 투자하면 주어진 특정 상황을 유발하는 놀라운 발명품을 설정할 수 있습니다. @spell[glyph of warding] 주문을 트리거하는 규칙을 따르세요. 발명품은 1액션 이하의 시전 시간을 가져야 합니다. 한 번에 하나의 발명품만 이 방법으로 설정할 수 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"8\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">Wondrous 발견</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10레벨에서는 경이로운 발견에서 추가 아이템을 수리할 수 있습니다. 기능.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"9\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">즉흥적 Invention</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨에서는 즉석에서 발명품을 수정하여 어려운 상황에서 벗어날 수 있습니다. 긴 휴식마다 한 번, 당신은 두 가지 색다른 방법 중 하나로 놀라운 발명품을 사용할 수 있습니다:</p><p><b>Alter.</b> 당신은 발명품을 사용하여 발명품의 주문과 마법 학교를 공유하고 발명품의 주문보다 최소 1 레벨 낮은 Artificer 주문 목록에 있는 주문을 발동할 수 있습니다. level.</p><p><b>Enhance.</b> 하나의 발명품을 사용하여 다른 발명품을 강화할 수 있습니다. 당신의 발명품 중 두 가지를 선택하세요. 결합된 발명 수준과 동일한 주문 슬롯을 사용하는 것처럼 그 중 하나를 사용하여 주문을 시전합니다. 둘 다 소모됩니다. 결합된 발명 수준이 현재 최대 발명 수준(기술자 표에 표시된 대로)보다 높으면 현재 최대 발명 수준과 동일한 주문 슬롯을 사용하는 것처럼 주문이 시전됩니다. 혁신</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨에서 뛰어난 혁신 기능은 장기 휴식 대신 자발적 혁신의 두 가지 추가 사용을 허용합니다. 하나.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"tca\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"11\"><span class=\"entry-title-inner help-subtle\" title=\"Source: The Customizable Artificer\">놀라움 발견</span><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨에서는 additi를 복구할 수 있습니다.놀라운 발견 기능의 유일한 항목입니다.</p></div></div></div></div>",
@@ -655,18 +582,17 @@
       "name": "포격술사 - Artillerist"
     },
     "Item.MeZChxBPhh52DacM": {
-      "description": "<div class=\"rd__b rd__b--2\"><p><strong>원소의 타격</strong>: 자신의 턴에 이 보석을 들고 있는 동안 보너스 액션으로 무기에 원소의 힘을 주입할 수 있습니다. 다음 번에 자신의 다음 턴이 시작되기 전까지 공격으로 생물을 타격할 때, 추가로 d4의 사령 피해를 굴릴 수 있습니다.</p><p><strong>원소의 흡수</strong>: 이 보석을 들고 있는 동안 사령 피해를 받을 때 반응으로 받은 피해를 d4만큼 줄일 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><div class=\"rd__b rd__b--2\"><p>이 때, 피해를 받아 hp가 0 이 되더라도, 한 번만 hp를 1까지 유지할 수 있습니다.</p></div></div></div></div><div class=\"rd__b rd__b--2\"><p>어느 쪽이든 사용 후 보석은 파괴됩니다.<br></p></div>"
+      "description": "<div class=\"rd__b rd__b--2\"><p><strong>원소의 타격</strong>: 자신의 턴에 이 보석을 들고 있는 동안 보너스 액션으로 무기에 원소의 힘을 주입할 수 있습니다. 다음 번에 자신의 다음 턴이 시작되기 전까지 공격으로 생물을 타격할 때, 추가로 d4의 사령 피해를 굴릴 수 있습니다.</p><p><strong>원소의 흡수</strong>: 이 보석을 들고 있는 동안 사령 피해를 받을 때 반응으로 받은 피해를 d4만큼 줄일 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><div class=\"rd__b rd__b--2\"><p>이 때, 피해를 받아 hp가 0 이 되더라도, 한 번만 hp를 1까지 유지할 수 있습니다.</p></div></div></div></div><div class=\"rd__b rd__b--2\"><p>어느 쪽이든 사용 후 보석은 파괴됩니다.<br></p></div>",
+      "name": "원시 보석 : 에메랄드"
     },
     "Item.mma4F0GliToCVXt8": {
       "name": "그림자 비전 - Shadow Lore",
       "description": "<div class=\"rd__b rd__b--1\"><p>14레벨에서, 당신은 어둠의 마법을 당신의 말에 엮어 생물의 가장 깊은 두려움에 접근할 수 있는 능력을 얻습니다.</p><p>행동으로 당신은 당신의 30피트 이내에서 당신이 선택한 크리처 하나만이 들을 수 있는 문구를 마법처럼 속삭이게 됩니다. 당신의 주문에 맞서서 DC를 구해야 합니다. 귀하와 언어를 공유하지 않거나 귀하의 말을 들을 수 없는 경우 자동으로 성공합니다. 내성 굴림에 성공하면 속삭임이 알아들을 수 없는 중얼거림처럼 들리고 효과가 없습니다. </p><p> 내성 굴림에 실패하면 대상은 다음 8시간 동안 또는 여러분이나 여러분의 동료가 공격하거나 피해를 주거나 강제로 내성 굴림을 하게 될 때까지 &Reference[condition=charmed]입니다. 그것은 속삭임을 자신의 가장 굴욕적인 비밀에 대한 설명으로 해석합니다. 당신은 이 비밀에 대한 지식을 얻지 못하지만, 대상은 당신이 그것을 알고 있다고 확신합니다.</p><p> &Reference[condition=charmed] 생물은 당신이 그 비밀을 드러낼 것이라는 두려움 때문에 당신의 명령을 따릅니다. 이미 그렇게 할 의향이 있지 않는 한, 그것은 당신을 위해 목숨을 걸거나 당신을 위해 싸우지 않을 것입니다. 가까운 친구에게 제공할 호의와 선물을 제공합니다.</p><p>효과가 끝나면 생물은 왜 당신을 그런 두려움에 빠뜨렸는지 이해하지 못합니다.</p><p>이측으로 한 번 사용하면, 긴 휴식을 마칠 때 다시 볼 수 없습니다.</p></div>"
     },
     "Item.MRXLWf3hxWfFODsU": {
-      "description": "",
       "name": "마울 - Maul"
     },
     "Item.mvTiGhnpoJjH5ePR": {
-      "description": "",
       "name": "석궁 화살 - Crossbow Bolt"
     },
     "Item.MYORL2ITvgzvPaUT": {
@@ -682,14 +608,12 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>당신과 다른 자발적인 생명체가 각각 이 물약의 절반 이상을 마시면, 두 존재의 생명력이 1시간 동안 서로 연결됩니다.</p><p>생명력이 연결된 동안 당신이나 함께 물약을 마신 생명체가 피해를 받으면, 총 피해가 둘 사이에 똑같이 나뉩니다. 피해량이 홀수라면 추가 1점의 피해를 누가 받는지 무작위로 결정합니다. 두 존재가 서로 60피트보다 멀어지면 효과는 중단됩니다. 둘 중 하나라도 HP 0이 되면 효과가 끝납니다. 이 물약의 붉은 액체는 점성이 높고 금속성 맛이 납니다.</p></div>"
     },
     "Item.nIxEJ7YMEMkIO6hu": {
-      "description": ""
+      "name": "미식별된 소모품"
     },
     "Item.nNTZLSoJuyNfqr32": {
-      "description": "",
       "name": "마울 - Maul"
     },
     "Item.noii6UJ5AFj2PfB3": {
-      "description": "",
       "name": "레이피어 - Rapier"
     },
     "Item.NR2IrnRc0ztcSwA7": {
@@ -697,7 +621,6 @@
       "name": "환영 학파 - School of Illusion"
     },
     "Item.nScsXKT4QoiT3uN1": {
-      "description": "",
       "name": "대곤봉 - Greatclub"
     },
     "Item.NXXIgIQD9y3N9zxb": {
@@ -729,11 +652,9 @@
       "name": "대장간 권역 - Forge Domain"
     },
     "Item.ovYAgwWax1ncjQBD": {
-      "description": "",
       "name": "곤봉 - Club"
     },
     "Item.ozt9atqTU79yLjdG": {
-      "description": "",
       "name": "약병 - Vial"
     },
     "Item.P0GOOn7YgHjJJopy": {
@@ -741,28 +662,26 @@
       "name": "자연 권역 - Nature Domain"
     },
     "Item.p8IuMdnVSqAQUvLe": {
-      "description": ""
+      "name": "주문 보석 : 흑요석(서리 광선)"
     },
     "Item.paGdp4X9RIU415zh": {
       "name": "화염구의 목걸이 - Necklace of Fireballs",
       "description": "<p><em>경이로운 물건</em></p><p>이 목걸이는 1d6+3개의 구슬이 달려 있습니다.행동을 사용해 구슬 중 하나를 떼어내서 60ft 거리까지 던질 수 있습니다. 구슬이 목표 지점에 닿으면 즉시 폭발하여 3레벨의 @UUID[Compendium.dnd5e.spells.Item.ztgcdrWPshKRpFd0]{화염구 Fireball}주문이 됩니다 (내성 DC 15).</p><p>당신은 행동 한 번에 구슬 여러개를 던지거나, 아예 목걸이 전체를 던질 수 있습니다. 그렇게 한 경우, 추가로 던져진 구슬 하나당 화염구의 주문 슬롯 레벨이 1씩 증가합니다.</p><section class=\"secret foundry-note\" id=\"secret-BPYFYGO4aUSbDiBj\"><p><strong>파운드리 노트</strong></p><p>9개의 충전은 확인 가능한 최대의 구슬 숫자를 나타냅니다. 기타 공식 버튼을 통해 추가로 던져진 구술의 피해를 굴릴 수 있습니다.</p><p>또한, 남아있는 구슬의 개수에 따른 가격에 대한 가이드가 있습니다. 이 가격은 가이드일 뿐이므로 던전 마스터의 세계관을 따르도록 조정하십시오.:</p><table><thead><tr><td><strong>구슬 숫자\n</strong></td><td><strong>가격 (gp)</strong></td></tr></thead><tr><td>8</td><td>30,720</td></tr><tr><td>7</td><td>15,360</td></tr><tr><td>6</td><td>7680</td></tr><tr><td>5</td><td>3840</td></tr><tr><td>4</td><td>1600</td></tr><tr><td>3</td><td>960</td></tr><tr><td>2</td><td>480</td></tr><tr><td>1</td><td>300</td></tr><tbody></table></section>"
     },
     "Item.pegoBWFzNQ7tyIb3": {
-      "description": ""
+      "name": "미식별된 소모품"
     },
     "Item.PJ7idUM10zbroIGO": {
-      "description": ""
+      "name": "네이브린의 편지 (Copy)"
     },
     "Item.pOQPQYq3ZPSANm2h": {
-      "description": "",
-      "name": "대검 대검 - 대검 Greatsword"
+      "name": "대검 - Greatsword"
     },
     "Item.PXcY0cx9E4QCjAfd": {
       "name": "공포 해제 물약 - Remove Fear Potion",
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약을 마시면 1시간 동안 공포 상태에 면역이 되며, 마시기 전에 이미 공포 상태였다면 그 상태가 제거됩니다.</p></div>"
     },
     "Item.PyzWeNrhgcH8ZsQs": {
-      "description": "",
       "name": "구리 - Copper"
     },
     "Item.Q8dznsK2tvmE3m4K": {
@@ -775,7 +694,7 @@
     },
     "Item.QBSnVRTbtnhXABcK": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\">참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 캐릭터 시트로 가져오려면 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">사원소의 길</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>당신은 원소를 다루는 법을 가르치는 수도 전통을 따릅니다. 기를 집중하면 창조의 힘과 자신을 조율해 네 원소를 자신의 의지에 따라 휘어 몸의 연장처럼 사용할 수 있습니다. 어떤 수행자는 하나의 원소에 헌신하고, 또 어떤 이는 원소들을 함께 엮어 사용합니다.</p><p>이 전통의 많은 몽크들은 자신의 기의 힘을 몸에 문신으로 새기는데, 흔히 몸을 감아 도는 드래곤의 모습으로 그리지만 불사조, 물고기, 식물, 산, 또는 밀려오는 파도로 표현하기도 합니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">원소의 제자</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>네 원소의 힘을 끌어내는 마법적 수련법을 익힙니다. 수련법 하나를 사용할 때마다 기 점수를 소비해야 합니다.</p><p>원소 조율 수련과 자신이 선택한 다른 원소 수련 하나를 익힙니다. 6레벨, 11레벨, 17레벨이 되면 선택한 원소 수련 하나를 추가로 익힙니다.</p><p>새로운 원소 수련을 익힐 때마다, 이미 알고 있는 원소 수련 하나를 다른 수련으로 교체할 수도 있습니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"3\"><span class=\"entry-title-inner\">원소 주문 시전.</span></span><p>일부 원소 수련은 주문 시전을 허용합니다. See <a href=\"https://5etools-mirror-2.github.io/book.html#PHB,10\">chapter 10</a> of the Player's Handbook for the general rules of spellcasting. 이 주문들 중 하나를 시전할 때는 그 주문의 시전 시간과 다른 규칙을 따르지만, 물질 성분은 제공할 필요가 없습니다.</p><div class=\"rd__spc-inline-post\"></div><p>Once you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as @spell[burning hands] does. 추가로 소비한 기 점수 1점마다 주문의 레벨은 1 증가합니다. 예를 들어 5레벨 몽크가 Sweeping Cinder Strike로 @spell[burning hands]을 시전할 때, 기 점수 3점을 써서 2레벨 주문처럼 시전할 수 있습니다(수련의 기본 비용 2점 + 추가 1점).</p><p>이 방식으로 주문을 시전할 때 소비할 수 있는 기 점수의 최대치는(기본 비용과 레벨 상승을 위해 추가한 점수를 모두 포함해) 자신의 몽크 레벨로 정해지며, 아래 주문과 기 점수 표에 제시되어 있습니다. table. 5레벨에는 최대 3점의 기를 사용할 수 있고, 9레벨에는 4점, 13레벨에는 5점, 17레벨에는 6점으로 늘어납니다.</p><table class=\"w-100 rd__table stripe-odd-table\"><caption>Spells and Ki Points</caption><thead><tr><th class=\"ve-col-5 ve-text-center\" data-rd-isroller=\"false\">Monk Levels</th><th class=\"ve-col-7 ve-text-center\" data-rd-isroller=\"false\">Maximum Ki Points for a Spell</th></tr></thead><tbody><tr><td class=\"ve-col-5 ve-text-center\">5th-8th</td><td class=\"ve-col-7 ve-text-center\">3</td></tr><tr><td class=\"ve-col-5 ve-text-center\">9th-12th</td><td class=\"ve-col-7 ve-text-center\">4</td></tr><tr><td class=\"ve-col-5 ve-text-center\">13th-16th</td><td class=\"ve-col-7 ve-text-center\">5</td></tr><tr><td class=\"ve-col-5 ve-text-center\">17th-20th</td><td class=\"ve-col-7 ve-text-center\">6</td></tr></tbody></table></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Elemental Disciplines</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>원소 수련은 알파벳 순으로 제시됩니다. 수련에 레벨 요구 조건이 있다면, 이 클래스에서 해당 레벨에 도달해야 그 수련을 배울 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Breath of Winter (17th Level Required).</span></span><p>기 점수 6점을 소비해 @spell[cone of cold] 주문을 시전할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Clench of the North Wind (6th Level Required).</span></span><p>기 점수 3점을 소비해 @spell[hold person] 주문을 시전할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">원소 조율.</span></span><p>행동으로 자신으로부터 30피트 이내의 원소력을 잠시 제어해, 다음 효과 가운데 하나를 일으킬 수 있습니다:</p><div class=\"rd__spc-inline-post\"></div><ul class=\"rd__list\"><li class=\"rd__li \">공기, 대지, 불, 물과 관련된 무해하고 즉각적인 감각 효과 하나를 만들어냅니다.</li><li class=\"rd__li \">초, 횃불, 작은 모닥불 하나를 즉시 켜거나 끕니다.</li><li class=\"rd__li \">최대 1파운드의 무생물 물질을 1시간 동안 차갑게 하거나 따뜻하게 만듭니다.</li><li class=\"rd__li \">1피트 정육면체 안에 들어갈 수 있는 흙, 불, 물 또는 안개를 1분 동안 당신이 지정한 조잡한 형태로 빚어냅니다.</li></ul></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Eternal Mountain Defense (17th Level Required).</span></span><p>You can spend 5 ki points to cast @spell[stoneskin], targeting yourself.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"9\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Fangs of the Fire Snake.</span></span><p>When you use the @action[Attack] action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra [[/damage 1d10 type=fire]] 피해.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"10\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Fist of Four Thunders.</span></span><p>You can spend 2 ki points to cast @spell[thunderwave].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"11\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Flames of the Phoenix (11th Level Required).</span></span><p>You can spend 4 ki points to cast @spell[fireball].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"12\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Gong of the Summit (6th Level Required).</span></span><p>기 점수 3점을 소비해 @spell[shatter] 주문을 시전할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"13\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Mist Stance (11th Level Required).</span></span><p>You can spend 4 ki points to cast @spell[gaseous form], targeting yourself.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"14\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Ride the Wind (11th Level Required).</span></span><p>You can spend 4 ki points to cast @spell[fly], targeting yourself.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"15\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">River of Hungry Flame (17th Level Required).</span></span><p>You can spend 5 ki points to cast @spell[wall of fire].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"16\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Rush of the Gale Spirits.</span></span><p>You can spend 2 ki points to cast @spell[gust of wind].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"17\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Shape the Flowing River.</span></span><p>As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"18\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Sweeping Cinder Strike.</span></span><p>You can spend 2 ki points to cast @spell[burning hands].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"19\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Unbroken Air.</span></span><p>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. 내성 굴림에 실패하면, the creature takes [[/damage 3d10 type=bludgeoning]] damage, plus an extra [[/damage 1d10 type=bludgeoning]] damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it &Reference[condition=prone]. 내성 굴림에 성공하면, the creature takes half as much damage, and you don't push it or knock it &Reference[condition=prone].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"20\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Water Whip.</span></span><p>You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. 내성 굴림에 실패하면, the creature takes [[/damage 3d10 type=bludgeoning]] damage, plus an extra [[/damage 1d10 type=bludgeoning]] damage for each additional ki point you spend, and you can either knock it &Reference[condition=prone] or pull it up to 25 feet closer to you. 내성 굴림에 성공하면, the creature takes half as much damage, and you don't pull it or knock it &Reference[condition=prone].</p><div class=\"rd__spc-inline-post\"></div></div><div data-source=\"PHB\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"21\"><span class=\"entry-title-inner help-subtle\" title=\"출처: Player’s Handbook, p81\">Wave of Rolling Earth (17th Level Required).</span></span><p>기 점수 6점을 소비해 @spell[wall of stone] 주문을 시전할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"22\"><span class=\"entry-title-inner\">Extra Elemental Discipline</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>You learn one additional elemental discipline of your choice. You should know 2 elemental disciplines, as well as Elemental Attunement.</p><p>새로운 원소 수련을 익힐 때마다, 이미 알고 있는 원소 수련 하나를 다른 수련으로 교체할 수도 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"23\"><span class=\"entry-title-inner\">Extra Elemental Discipline</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>You learn one additional elemental discipline of your choice. You should know 3 elemental disciplines, as well as Elemental Attunement.</p><p>새로운 원소 수련을 익힐 때마다, 이미 알고 있는 원소 수련 하나를 다른 수련으로 교체할 수도 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"24\"><span class=\"entry-title-inner\">Extra Elemental Discipline</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p80</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>You learn one additional elemental discipline of your choice. You should know 4 elemental disciplines, as well as Elemental Attunement.</p><p>새로운 원소 수련을 익힐 때마다, 이미 알고 있는 원소 수련 하나를 다른 수련으로 교체할 수도 있습니다.</p></div></div></div></div>",
-      "name": "네 가지 요소의 길 - Way of the Four Elements"
+      "name": "사원소의 길 - Way of the Four Elements"
     },
     "Item.Qgk9qceVQzY1clrC": {
       "name": "휴대식량 - Rations",
@@ -794,26 +713,22 @@
       "description": "<div><div><div class=\"rd__b rd__b--3\"><p></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Gender:\"><span class=\"bold rd__list-item-name\">성별:</span> 여성</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Alignment:\"><span class=\"bold rd__list-item-name\">성향:</span> NE</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Personality:\"><span class=\"bold rd__list-item-name\">성격:</span> 이기적이고 잔혹함</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Inherited flaw:\"><span class=\"bold rd__list-item-name\">타고난 결함:</span> \"나는 다른 이와 나누지 않는다.\"</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Enemy:\"><span class=\"bold rd__list-item-name\">적:</span> Shagambi</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Power:\"><span class=\"bold rd__list-item-name\">능력:</span> 숙주는 손을 자유롭게 둔 채 수직 표면과 천장을 위아래로 가로질러 이동할 수 있습니다. 걷기 속도와 같은 등반 속도를 얻습니다.</p></li></ul><p></p></div></div></div>"
     },
     "Item.qRKaEcW63lphAER6": {
-      "description": "",
       "name": "사프란 - Saffron"
     },
     "Item.QRvifpC4OtdwffTl": {
-      "description": ""
+      "name": "미식별된 장비"
     },
     "Item.QYveX6dXhi5TDF2e": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오려면 시트에서 가져오기를 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"XGE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">검의 길</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p34</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>켄세이의 길의 승려들은 무기가 몸의 연장이 되는 지점까지 무기를 가지고 끊임없이 훈련합니다. 칼싸움의 숙달을 바탕으로 전통은 다양한 무기를 포함하도록 확장되었습니다.</p><p>검생은 서예가나 화가가 펜이나 붓을 대하는 것과 거의 같은 방식으로 무기를 봅니다. 무기가 무엇이든 검세는 그것을 무술의 아름다움과 정확성을 표현하는 데 사용되는 도구로 간주합니다. 그러한 숙달로 검세이를 비할 데 없는 전사로 만드는 것은 강렬한 헌신, 연습 및 연구의 부작용일 뿐입니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p34</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p> 3레벨에서 이 전통을 선택하면 특별한 무술 훈련을 통해 특정 무기의 사용을 마스터할 수 있습니다. 이 경로에는 서예나 그림의 능숙한 획에 대한 교육도 포함됩니다. 다음과 같은 이점을 얻을 수 있습니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"3\"><span class=\"entry-title-inner\">Kensei 무기.</span></span><p>켄세이 무기로 두 가지 유형의 무기(근접 무기와 원거리 무기)를 선택하세요. 이들 무기 각각은 무겁고 특별한 특성이 없는 <a href=\"https://5etools-mirror-2.github.io/items.html#blankhash,flstsource:phb=1,flstcategory:basic=1,flsttype:martial%20weapon=1~simple%20weapon=1\">간단한 무기나 군용 무기</a>일 수 있습니다. 장궁도 유효한 선택입니다. 아직 무기를 갖고 있지 않다면 이러한 무기에 대한 숙련도를 얻습니다. 선택한 유형의 무기는 수도사 무기입니다. 이 전통의 많은 기능은 검세이 무기에서만 작동합니다. 이 클래스에서 6, 11, 17 레벨에 도달하면 위의 기준에 따라 다른 유형의 무기(근접 무기 또는 원거리 무기)를 선택하여 검생 무기로 사용할 수 있습니다. <span class=\"entry-title-inner help-subtle\" title=\"Source: Xanathar’s Guide to Everything, p34\">민첩한 패리.</span></span><p>자신의 차례에 @action[Attack] 행동의 일부로 비무장 공격을 하고 검세이 무기를 들고 있는 경우, 근접 무기라면 이를 사용하여 자신을 방어할 수 있습니다. 다음 턴이 시작될 때까지 무기가 손에 있고 &Reference[condition=incapacitated].</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div><div data-source=\"XGE\" class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\">이 아닌 동안 AC에 +2 보너스를 얻습니다. <span class=\"entry-title-inner help-subtle\" title=\"Source: Xanathar’s Guide to Everything, p34\">Kensei의 사격.</span></span><p>당신은 자신의 차례에 보너스 액션을 사용하여 켄세이 무기로 원거리 공격을 더욱 치명적으로 만들 수 있습니다. 그렇게 하면 검세이 무기를 사용하여 원거리 공격으로 명중한 모든 대상은 무기 유형에 따라 추가로 [[/damage 1d4]] 피해를 입습니다. 현재 턴이 끝날 때까지 이 혜택을 유지합니다.</p><div class=\"rd__spc-inline-post\"></div></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6\"><span class=\"entry-title-inner\">Way of the Brush.</span></span><p>@item[calligrapher's supplies|phb] 또는 @item[calligrapher's supplies|phb] 중 하나를 선택하면 능숙해집니다. @item[painter's supplies|phb].</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"7\"><span class=\"entry-title-inner\">블레이드와 하나됨</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p34</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서 당신은 기를 검세이 무기로 확장하여 다음과 같은 이점을 얻습니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner\">마법 검생 무기.</span></span><p>검생 무기를 사용한 공격은 비마법 공격에 대한 저항과 면역을 극복할 목적으로 마법으로 간주됩니다. 치료법.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"9\"><span class=\"entry-title-inner\">재빠른 타격.</span></span><p>켄세이로 표적을 맞추는 경우 무기, 당신은 무기가 당신의 무술 주사위만큼 대상에게 추가 피해를 주도록 하기 위해 1 ki 포인트를 소비할 수 있습니다. 이 기능은 각 턴에 한 번만 사용할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"XGE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"10\"><span class=\"entry-title-inner\">Sharpen the 블레이드</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p34</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>11레벨에서 당신은 기를 이용해 무기를 더욱 강화할 수 있는 능력을 얻습니다. 보너스 액션으로 최대 3키 포인트를 소비하여 터치한 검성 무기 하나에 공격 시 공격 및 피해 굴림에 대한 보너스를 부여할 수 있습니다. 보너스는 귀하가 소비한 기 포인트 수와 같습니다. 이 보너스는 1분 동안 또는 이 기능을 다시 사용할 때까지 지속됩니다. 이 기능은 이미 공격 및 피해 굴림에 보너스가 있는 마법 무기에는 영향을 미치지 않습니다. 정확도</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Xanathar’s Guide to Everything\">XGE</span> p34</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>17레벨에서는 무기의 숙달로 인해 탁월한 정확도가 부여됩니다. 자신의 차례에 몽크 무기를 사용한 공격 굴림이 실패하면 다시 굴릴 수 있습니다. 이 기능은 각 턴에 한 번만 사용할 수 있습니다.</p></div></div></div></div>",
       "name": "검성의 길 - Way of the Kensei"
     },
     "Item.QzZoNCOiCXmVYhUB": {
-      "description": "",
       "name": "장궁 - Longbow"
     },
     "Item.R1R0e0090JpmXbQr": {
-      "description": "",
-      "name": "은 실버 - 은 Silver"
+      "name": "은 - Silver"
     },
     "Item.R4Cl4CYgszBlg55l": {
-      "description": "",
       "name": "류트 - Lute"
     },
     "Item.Rc7Hi7KwuZmKSRTj": {
@@ -821,27 +736,24 @@
       "name": "소울나이프 - Soulknife"
     },
     "Item.RermtRlub9y37dUi": {
-      "description": "",
       "name": "지팡이 - Staff"
     },
     "Item.RGhQoRsdjqHV6s3T": {
-      "description": "",
       "name": "엑스파치오의 메아리 - Expachio's Echo"
     },
     "Item.RJJpDChG9a3RCAVf": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">사령 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>강령술 학교는 삶, 죽음, 불사의 우주적 힘을 탐구합니다. 이 전통에 집중하면서 모든 생명체에 생명을 불어넣는 에너지를 조작하는 방법을 배우게 됩니다. 게임을 진행하면서 마법이 생명체의 몸을 파괴할 때 생물의 생명력을 흡수하여 생명 에너지를 조작할 수 있는 마법의 힘으로 변환하는 방법을 배웁니다.</p><p>대부분의 사람들은 죽음과 밀접하게 연관되어 있기 때문에 네크로맨서를 위협적이거나 심지어 악랄한 존재로 여깁니다. 모든 네크로맨서가 악한 것은 아니지만, 그들이 조종하는 세력은 많은 사회에서 금기시되는 것으로 간주됩니다. p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서 이 학교를 선택할 때부터 강령술 주문을 주문서에 복사하는 데 소비해야 하는 골드와 시간은 다음과 같습니다. 절반으로 줄었습니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">잔인한 수확</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서는 주문으로 죽인 생물로부터 생명 에너지를 얻을 수 있는 능력을 얻습니다. 턴당 한 번, 1레벨 이상의 주문으로 하나 이상의 생물을 죽일 때, 주문 레벨의 두 배에 해당하는 체력을 회복하거나, 해당 주문이 <a href=\"https://5etools-mirror-2.github.io/spells.html#blankhash,flstschool:n=1\">사령 학파</a>에 속하는 경우 레벨의 세 배를 회복합니다. 구조물이나 언데드를 처치해도 이 혜택을 얻을 수 없습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">언데드 노예</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨에서는 주문서에 @spell[animate dead] 주문을 추가합니다. 이미 거기에 없다면. @spell[animate dead]를 시전하면 하나의 추가 시체나 뼈 더미를 대상으로 삼아 적절하게 또 다른 좀비나 해골을 생성할 수 있습니다.</p><p>강령술 주문을 사용하여 언데드를 생성할 때마다 추가 이점이 있습니다.</p><ul class=\"rd__list\"><li class=\"rd__li \">생물의 최대 체력은 다음과 같은 양만큼 증가합니다. 당신의 마법사 레벨.</li><li class=\"rd__li \">생물은 무기 피해 판정에 당신의 숙련도 보너스를 추가합니다.</li></ul></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Inured to 불사</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>에서 시작 10레벨에서는 괴사 피해에 대한 저항력이 있으며 최대 체력은 줄어들 수 없습니다. 당신은 언데드와 그들을 움직이는 힘을 다루는 데 너무 많은 시간을 소비했기 때문에 그들의 최악의 효과 중 일부에 익숙해졌습니다.TOK_106__<span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p118</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터 마법을 사용하여 다른 마법사가 만든 언데드를 비롯한 언데드를 제어할 수 있습니다. 행동으로 당신은 60피트 이내에서 볼 수 있는 언데드 하나를 선택할 수 있습니다. 그 생물은 당신의 마법사 주문 저장 DC에 대해 카리스마 내성 굴림을 해야 합니다. 성공하면 이 기능을 다시 사용할 수 없습니다. 실패하면 이 기능을 다시 사용할 때까지 당신에게 친근해지고 당신의 명령을 따릅니다.</p><p>지능형 언데드는 이런 방식으로 제어하기가 더 어렵습니다. 대상의 지능이 8 이상인 경우 내성 굴림에 유리합니다. 내성 굴림에 실패하고 지능이 12 이상인 경우 성공하여 풀려날 때까지 매 시간마다 내성 굴림을 반복할 수 있습니다.",
-      "name": "강령술 학교 - School of Necromancy"
+      "name": "사령 학파 - School of Necromancy"
     },
     "Item.RJtTjXoIUUtO9enK": {
       "description": "<div class=\"rd__b rd__b--2\"><p>이 독은 일반적으로 @creature[drow]에 의해서만 만들어지며 햇빛에서 멀리 떨어진 곳에서만 만들어집니다. 이 독에 걸린 생물은 DC 13 건강 내성 굴림에 성공하거나 1시간 동안 &Reference[condition=poisoned] 상태를 유지해야 합니다. 그래서 굴림에 5 이상 변형으로 실패하면, 추가로 그 생물은 이런 식으로 &Reference[condition=unconscious]인 반면 &Reference[condition=poisoned]입니다. 별을 받아들이거나 다른 사람이 행동하는 것을 훤히 알면 그 사람은 서명합니다.</p></div>",
       "name": "드로우 독 - Drow Poison"
     },
     "Item.rxxOB8kYupkfwPOX": {
-      "description": "",
       "name": "보석세공사의 도구 - Jeweler's Tools"
     },
     "Item.SC851nhYbHACVIAy": {
-      "description": ""
+      "name": "미식별된 장비"
     },
     "Item.sqCPs7zxOkO8RRYB": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"TCE\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">칼춤 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>블레이드싱어는 검술과 춤을 결합한 마법을 결합했습니다. 도자기 엘프가 만드는 전통이지만, 엘프가 아닌 수행자들도 이것저것 여프의 방식을 보고 확장해 나가고 있습니다.</p><p>전투에서 블레이드싱어는 맞고 유연한 액세서리의 작동을 위해 흘려보내고, 파괴적인 공격과 교묘한 의무를 수행할 것을 실어보내다. 블레이드싱어의 전투를 본 많은 사람들이 삶에서 가장 아름다운 모습을 기억합니다. 노래하는 칼날과 함께하는 장엄한 춤이기 때문입니다.</p><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">Training in War and Song (Bladesinging)</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>이 전통을 2레벨에서 채택하면 경장갑 숙련도를 얻고, 한 가지 유형의 한손 근접 무기 숙련도를 얻습니다. 선택.</p><p>아직 &Reference[skill=Performance] 스킬이 없다면 숙련도도 얻을 수 있습니다.</p></div><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">Bladesong</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨부터, 중형갑옷이나 중갑을 이동식 컨테이너를 사용하지 않는 한송 가구 엘프를 불러올 수 있습니다. 블레이드송은 당신에게 초자연적인 속도, 음극성, 후원을 부여합니다.</p><p>보너스 액션을 사용하여 1분 동안 지속되는 블레이드송을 시작할 수 있습니다. &Reference[condition=incapacitated]이거나 중갑 또는 중갑옷이나 방패를 착용하거나 양손을 사용하여 무기로 공격하는 경우 일찍 종료됩니다. 또한 언제든지 선택하여 Bladesong을 해제할 수 있습니다(조치 필요 없음).</p><p>bladesong이 활성화되어 있는 동안 다음과 같은 이점을 얻습니다.</p><ul class=\"rd__list\"><li class=\"rd__li \">지능 수정치와 동일한 AC 보너스를 얻습니다(최소 +1).</li><li class=\"rd__li \">걷는 속도가 10피트 증가합니다.</li><li class=\"rd__li \">민첩(&Reference[skill=Acrobatics]) 검사에 유리합니다.</li><li class=\"rd__li \">당신은 @status[concentration]을 유지하기 위해 하는 모든 체질 내성 굴림에 보너스를 얻습니다. 철자. 보너스는 지능 수정치(최소 +1)와 같습니다.</li></ul><p>이 기능을 숙련도 보너스만큼 여러 번 사용할 수 있으며 긴 작업을 마치면 사용한 모든 사용 횟수를 다시 얻습니다. 휴식.</p></div><div class=\"rd__b-special rd__b-inset \" data-source=\"TCE\"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"4\"><h4 class=\"entry-title-inner\">블레이드싱어 스타일</h4><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link rd__title-link--inset\"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></span><p>무예이자 마술로 전환한 백싱잉은 입체검, 그리고 특별히 톰소드와 결부되어 왔습니다. 그러나 수많은 단편에 연구는 소수의 무기에 따라 여러 블레이드의 형태를 시작합니다. 이 양식의 독립은 작은 학교들에서 오직 구원받을 희망인 부분은 수련만 유일하게 남아 있을 것입니다. 가장 새로운 형태의 수백 년의 역사를 친구들이지만, 엘프의 긴 삶이 그대로 유지되는 것은 그 창시자들이 직접적으로고 있습니다. 블레이드싱잉 학교의 대부분은 에버미트나 에버레스카에 오류, 한 학교는 미스 드라노르에서 시작되었으나 도시의 손잡이와 함께 일하는 사람들은 흩어집니다.</p><p>칼날노래의 스타일은 사용하는 무기의 종류에 따라 크게 분류되며, 각 스타일은 동물의 범주와 연관되어 있습니다. 그 스타일에는 사용된 주문 유형, 마스터의 기술, 사용된 특정 무기에 따라 특정 동물 유형의 이름을 딴 전문화가 있습니다. 대가의 견습생인 블레이드싱어는 일반적으로 자신이 선택한 스타일의 동물 문신을 받습니다. 일부 블레이드싱어는 여러 스타일을 배우고 문신을 많이 하며 피부에 치명적인 기술에 대한 경고를 새깁니다.</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"><span class=\"entry-title-inner\">Cat.</span></span><p>검을 사용하는 스타일이 이 계열에 속합니다. 가장 나이가 많은 사자 스타일은 수련생에게 장검 사용 방법을 교육하며 특정 유형의 주문을 선호하지 않습니다. 표범 스타일은 쇼트소드와 환상 및 은밀한 주문에 중점을 둡니다. 그렇다면 불과 300년 전의 스타일인 호랑이는 칼날 노래를 사용하여 방어의 소용돌이 치는 춤을 추며 갑작스러운 도약과 공격을 시작합니다. <span class=\"entry-title-inner\">Bird.</span></span><p>도끼나 망치와 같은 자루 달린 무기의 사용에 초점을 맞춘 스타일은 새 스타일로 그룹화되었지만 매우 다양합니다. 상대적으로 새로운 스타일은 모두 엘프가 일반적으로 선호하지 않는 무기를 사용합니다. 독수리 스타일의 블레이드싱어는 작은 손도끼를 사용하며, 이 스타일의 많은 동작은 무기를 던지고 새 무기를 그리는 유연한 방법에 중점을 둡니다. 까마귀 스타일은 워픽을 사용하며, 이와 관련된 주문은 블레이드싱어에게 전투에서 더 많은 민첩성을 부여합니다. <span class=\"entry-title-inner\">Snake.</span></span><p>이러한 스타일의 수련자는 도리깨, 사슬 또는 채찍을 사용합니다. 바이퍼 스타일은 무기로서의 엉성함에도 불구하고 채찍을 사용하며 거의 사자 스타일과 맞먹는 역사를 가지고 있습니다. 그 주인은 채찍을 휘두르는 놀라울 정도로 빠른 리듬으로 칼날 노래를 강조하는데, 이는 많은 적들을 궁지에 몰아넣고 칼날 노래 공간에서 칼날 노래가 선호하는 독과 질병의 잔인한 주문을 시전할 수 있게 해줍니다. 스타일.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"float-clear\"></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"8\"><span class=\"entry-title-inner\"> 추가 공격</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터, 당신은 자신의 턴에 @action[Attack] 행동을 취할 때마다 한 번이 아닌 두 번 공격할 수 있습니다. 또한 이러한 공격 중 하나 대신 캔트립 중 하나를 시전할 수 있습니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"TCE\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"9\"><span class=\"entry-title-inner\">Song of Defense</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10레벨부터 마법이 피해를 흡수하도록 지시할 수 있습니다. 블레이드송이 활성화된 동안. 피해를 받으면 반응을 사용하여 주문 슬롯 하나를 소모하고 주문 슬롯 레벨의 5배에 해당하는 피해를 줄일 수 있습니다. 승리</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Tasha’s Cauldron of Everything\">TCE</span> p76</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터 다음 피해에 지능 수정치(최소 +1)를 추가합니다. Bladesong이 활성화된 동안 근접 무기가 공격합니다.</p></div></div></div></div>",
@@ -852,31 +764,24 @@
       "name": "태양혼의 길 - Way of the Sun Soul"
     },
     "Item.sVokqGWs9oBNSukP": {
-      "description": "",
       "name": "분장용 복장 - Costume Clothes"
     },
     "Item.sXuCyo50iVh9fbly": {
-      "description": "",
       "name": "바람총 - Blowgun"
     },
     "Item.sYm1OagAZefKALBg": {
-      "description": "",
       "name": "단검 - Dagger"
     },
     "Item.T9TrDJujvyLtH18a": {
-      "description": "",
-      "name": "뼈 뼈 - 뼈 Bone"
+      "name": "뼈 - Bone"
     },
     "Item.TfmigwN6cr1hjcSI": {
-      "description": "",
       "name": "바람총 - Blowgun"
     },
     "Item.tI9noeEqSqUSyEMB": {
-      "description": "",
       "name": "무릿매 - Sling"
     },
     "Item.u5V6sIZJXfeiCoFd": {
-      "description": "",
       "name": "독 제작자의 도구 - Poisoner's Kit"
     },
     "Item.u6ZrAtsQsusy0Xxd": {
@@ -896,11 +801,9 @@
       "name": "무덤 권역 - Grave Domain"
     },
     "Item.uKcya70Ce0EYCAPd": {
-      "description": "",
       "name": "철퇴 - Mace"
     },
     "Item.UMcjrmGetqaO4Ukd": {
-      "description": "",
       "name": "손석궁 - Hand Crossbow"
     },
     "Item.uq8SPZ6iVfcdYatl": {
@@ -908,11 +811,9 @@
       "name": "타바시 - Tabaxi"
     },
     "Item.UuBKaHjpSr3qEvzb": {
-      "description": "",
       "name": "전쟁 곡괭이 - War Pick"
     },
     "Item.V3wLxbvHLkKSBuw7": {
-      "description": "",
       "name": "막대 - Rod"
     },
     "Item.v983afNYR6QtOOYP": {
@@ -924,15 +825,13 @@
       "name": "긴 죽음의 길 - Way of the Long Death"
     },
     "Item.VHeAsAZR1z152uVh": {
-      "name": "은도금 크로스보우 볼트 - Silvered Crossbow Bolt",
-      "description": ""
+      "name": "은도금 크로스보우 볼트 - Silvered Crossbow Bolt"
     },
     "Item.VMlApGMcDo28ER8A": {
       "name": "이클와",
       "description": "<div class=\"rd__b rd__b--2\"><p>이클와(발음: 이크-울-와)는 촐탄 전사들의 전통 무기인 단순 근접 무기입니다. 길이 3피트의 나무 자루 끝에 최대 18인치 길이의 강철 또는 돌 칼날이 달려 있습니다. 투척 속성을 지니고는 있지만, 던지기에 적합하도록 균형이 잘 잡힌 무기는 아닙니다.</p></div>"
     },
     "Item.voa6aFi1A8cfHs1V": {
-      "description": "",
       "name": "육척봉 - Quarterstaff"
     },
     "Item.vqrGciUTfBhcB634": {
@@ -940,7 +839,6 @@
       "name": "빛 권역 - Light Domain"
     },
     "Item.vshCuVi3McMtKuDT": {
-      "description": "",
       "name": "미늘창 - Halberd"
     },
     "Item.VshCXIUNO4sBw8Om": {
@@ -948,7 +846,7 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 복장은 두꺼운 털 코트나 망토를 여러 겹의 모직 옷 위에 걸치고, 털이 덧댄 모자나 후드, 고글, 털 안감을 덧댄 가죽 장화와 장갑으로 이루어져 있습니다.</p><p>한랭지 의복이 젖지 않은 상태를 유지하는 한, 착용자는 @hazard[extreme cold]의 영향에 대한 내성 굴림에 자동으로 성공합니다.</p></div>"
     },
     "Item.VtYI3gi2ZDW38EQB": {
-      "name": "하급 회복의 물약 - Potion of Lesser Restoration",
+      "name": "하급 회복 물약 - Potion of Lesser Restoration",
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약을 마시면, 실명, 청각 상실, 마비, 중독과 같은 상태 하나를 회복합니다.</p></div>"
     },
     "Item.waUxoNTEfqet5UHE": {
@@ -956,12 +854,11 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 마법 무기로 하는 공격 굴림과 피해 굴림에 +1 보너스를 받습니다.</p></div>"
     },
     "Item.WgUgSxTkDYiq1eu7": {
-      "description": "",
       "name": "장도 - Glaive"
     },
     "Item.wIEVEGwhrKjQHvhh": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">매혹 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>마법 학교의 일원으로서 당신은 마법으로 들어와 다른 사람과 괴물을 속이는 능력을 연마했습니다. 일부 마술사들은 폭력적인 사람들을 유혹하여 무기를 내려놓고 잔인한 사람들을 유혹하여 자비를 보이도록 하는 평화를 이루는 사람들입니다. 다른 사람들은 원하지 않는 사람들을 마법처럼 자신의 봉사에 묶는 폭군입니다. 대부분의 마법부여사는 그 사이 어딘가에 속합니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">Enchantment Savant</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서 이 학교를 선택할 때부터 마법 책에 마법 주문을 복사하는 데 소비해야 하는 골드와 시간은 다음과 같습니다. 절반으로 줄었습니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">최면 시선</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>이 학교를 선택하면 2레벨부터 시작하여 부드러운 말과 매혹적인 시선이 마법처럼 다른 생명체를 사로잡을 수 있습니다. 행동으로 5피트 이내에서 볼 수 있는 크리처 하나를 선택하세요. 대상이 당신을 보거나 들을 수 있다면, 당신의 마법사 주문 저장 DC에 대한 지혜 내성 굴림에 성공해야 하며, 그렇지 않으면 다음 턴이 끝날 때까지 당신에 의해 &Reference[condition=charmed]이어야 합니다. &Reference[condition=charmed] 생물의 속도는 0으로 떨어지고 생물은 &Reference[condition=incapacitated]이며 눈에 띄게 멍해졌습니다.</p><p>다음 턴에 당신은 행동을 사용하여 이 효과를 유지하고 다음 턴이 끝날 때까지 지속 시간을 연장할 수 있습니다. 그러나 당신이 생물체로부터 5피트 이상 멀어지면, 생물체가 당신을 보거나 들을 수 없거나, 생물체가 먼 곳을 차지하면 효과는 종료됩니다.</p><p>효과가 종료되거나 생물체가 이 효과에 대한 초기 내성굴림에 성공하면, 당신은 긴 시간을 마칠 때까지 해당 생물체에 이 기능을 다시 사용할 수 없습니다. 휴식.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">본능적인 매력</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6레벨부터 시작하여, 30피트 이내에 볼 수 있는 생물이 공격 굴림을 할 때 당신에 대해, 다른 생물이 공격 범위 내에 있다면 당신은 당신의 반응을 사용하여 공격의 방향을 바꿀 수 있습니다. 공격자는 마법사 주문 저장 DC에 대해 지혜 내성 굴림을 해야 합니다. 그래야 굴림에 실패하면, 공격자는 당신이나 자신을 포함하지 않고 자신에게 가장 가까운 생물을 표적으로 삼아야 합니다. 여러 생물이 가장 가까운 경우 공격자는 어느 생물을 표적으로 삼을지 선택합니다. 강제 굴림에 성공하면 긴 휴식을 마칠 때까지 공격자에게 이 기능을 다시 사용할 수 없습니다.</p><p>공격이 적중했는지 실패했는지 알기 전에 이 기능을 사용하도록 선택해야 합니다. &Reference[condition=charmed]이 될 수 없는 생물은 이 효과에 면역입니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"5\"><span class=\"entry-title-inner\">Split Enchantment</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10번째 레벨부터 시작, 크리처 하나만을 대상으로 하는 1레벨 이상의 마법 주문을 시전할 때, 두 번째 생물을 대상으로 하게 할 수 있습니다. 추억</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p117</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨에서 당신은 생물이 당신의 마법적 영향력을 인식하지 못하게 만드는 능력을 얻습니다. 하나 이상의 생물을 매혹시키기 위해 마법 부여 주문을 시전할 때, 크리처 하나가 &Reference[condition=charmed]임을 인식하지 못하도록 크리처 하나의 이해를 변경할 수 있습니다.</p><p>또한, 주문이 만료되기 전에 한 번 행동을 사용하여 선택한 생물이 &Reference[condition=charmed]에 소비한 시간 중 일부를 잊게 만들 수 있습니다. 생물은 마법사 주문 저장 DC에 대한 지능 내성 굴림에 성공해야 합니다. 그렇지 않으면 1 + 카리스마 수정치(최소 1)에 해당하는 기억 시간을 잃습니다. 생물이 더 적은 시간을 잊게 만들 수 있으며, 그 시간은 마법 부여 주문의 지속 시간을 초과할 수 없습니다.</p></div></div></div></div>",
-      "name": "마법의 학교 - School of Enchantment"
+      "name": "매혹 학파 - School of Enchantment"
     },
     "Item.WQ2xBvUNpJg14dt8": {
       "name": "미식별된 소모품",
@@ -972,7 +869,6 @@
       "name": "속삭임 학파 - College of Whispers"
     },
     "Item.wxnuS2rKE6DlzpS4": {
-      "description": "",
       "name": "그물 - Net"
     },
     "Item.xg83FCwlZuC3hkF3": {
@@ -1008,31 +904,26 @@
       "description": "<div class=\"rd__b rd__b--2\"><p>이 물약을 마시면 마비가 치료됩니다. 피부에는 노란 기가 남습니다. 마비된 생명체에게 먹일 때는 기침하지 않도록 숟가락으로 입에 떠먹이십시오.</p></div>"
     },
     "Item.Yc8GvFTPXVYZc7hv": {
-      "description": "",
       "name": "열린 손의 길 - Way of the Open Hand"
     },
     "Item.YCPFfckVIgyeYaqE": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"PHB\" class=\"rd__b rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\">점술 학파</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>점쟁이의 조언은 왕족과 평민 모두가 추구하는 것입니다. 모두가 과거, 현재, 미래에 대한 보다 명확한 이해를 추구하기 때문입니다. 점쟁이로서 당신은 명확하게 볼 수 있도록 공간, 시간, 의식의 베일을 분리하려고 노력합니다. 당신은 분별력, 원격 보기, 초자연적 지식 및 예지력의 주문을 마스터하기 위해 노력합니다.</p><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"2\"><span class=\"entry-title-inner\">Divination Savant</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>2레벨에서 이 학교를 선택할 때부터 점술 주문을 주문서에 복사하는 데 소비해야 하는 골드와 시간은 다음과 같습니다. 절반으로 줄었습니다.</p></div><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\">Portent</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p> 이 학교를 선택하면 2레벨부터 시작하여 미래의 모습이 여러분의 인식에 나타나기 시작합니다. 긴 휴식을 마치면 [[/r d20]]을 두 번 굴리고 굴린 숫자를 기록합니다. 당신은 당신이나 당신이 볼 수 있는 생물이 행한 모든 공격 굴림, 내성굴림, 능력 검사를 이러한 예언 굴림 중 하나로 대체할 수 있습니다. 굴리기 전에 그렇게 하도록 선택해야 하며, 이 방법으로 턴당 한 번만 굴림을 교체할 수 있습니다.</p><p>각 예언 굴림은 한 번만 사용할 수 있습니다. 긴 휴식을 마치면 사용하지 않은 예언 굴림이 사라집니다.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">Expert Divination</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>6 레벨부터 점술 주문을 시전하는 것은 너무 쉽게 이루어지므로 시간만 소모합니다. 당신의 주문 시전 노력의 일부입니다. 주문 슬롯을 사용하여 <a href=\"https://5etools-mirror-2.github.io/spells.html#blankhash,flstschool:d=1\">2레벨 이상의 점술 주문</a>을 시전하면 소모된 주문 슬롯 1개를 회복합니다. 당신이 회복하는 슬롯은 당신이 시전한 주문보다 낮은 레벨이어야 하며 5레벨보다 높을 수 없습니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>10 수준부터 행동을 사용하여 지각력을 높일 수 있습니다. 그렇게 할 때, &Reference[condition=incapacitated]이 되거나 짧거나 긴 휴식을 취할 때까지 지속되는 다음 혜택 중 하나를 선택하십시오. 휴식을 마칠 때까지 이 기능을 다시 사용할 수 없습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6\"><span class=\"entry-title-inner\">암시야.</span></span><p>60 범위에서 &Reference[rule=darkvision]을 얻습니다. 피트.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"><span class=\"entry-title-inner\">Ethereal Sight.</span></span><p>당신은 can 60피트 이내의 천상계를 들여다보세요.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner\">더 큰 이해력.</span></span><p>모든 언어를 읽을 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"9\"><span class=\"entry-title-inner\">투명성을 참조하세요.</span></span><p>당신은 10피트 이내의 라인 내에 있는 &Reference[condition=invisible] 생물과 물체를 볼 수 있습니다 시력.</p><div class=\"rd__spc-inline-post\"></div></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"PHB\" class=\"rd__b rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"10\"><span class=\"entry-title-inner\">이상 Portent</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Player’s Handbook\">PHB</span> p116</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>14레벨부터, 꿈 속의 환상은 더욱 강렬해지고 앞으로 일어날 일에 대해 마음속에 더 정확한 그림을 그립니다. Portent 기능에 대해 2개가 아닌 3개의 [[/r d20]]을 굴립니다.</p></div></div></div></div>",
-      "name": "점술 학교 - School of Divination"
+      "name": "점술 학파 - School of Divination"
     },
     "Item.yCz7IwENCTgTUCw5": {
       "description": "<div class=\"mb-2 ve-flex-col\"><p><i class=\"ve-muted\"> 참고: 클래스를 아이템으로 가져오는 기능은 표시용으로만 제공됩니다. 클래스를 문자열로 가져오기 위해 시트에서 가져오기 기능을 사용하세요.</i></p><div class=\"rd__b rd__b--0\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"1\"><span class=\"entry-title-inner\"> 연금술사</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p5</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h2><p>연금술은 섬세한 예술입니다. 재료의 비율을 너무 많이 벗어나면 그 효과는 재앙이 될 수 있습니다. 연금술사는 이국적인 재료를 결합하여 다양한 재료와 효과를 생성하는 전문가입니다. 순간적으로 상처를 치유할 수 있는 치유 가뭄부터 불꽃에 닿으면 터지는 끈적끈적한 끈적이까지. 올바른 시약과 약간의 행운만 있다면 연금술사는 놀라운 비약을 사용하여 아군에게 생명을 주고 적에게서 생명력을 빼앗아갑니다. <span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p5</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>당신은 연금술사의 보급품에 능숙해집니다. 이미 연금술사의 보급품에 능숙하다면, 대신 선택한 장인의 다른 도구 세트로 숙련도를 얻습니다.</p></div><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"3\"><span class=\"entry-title-inner\"> 연금술사 주문</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p5</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>아래 표에 적힌 아티피서에 호소하면 주문을 배. 이 주문은 당신이 모르는 총 주문에 포함되어 있으며, 플레이 시 교체할 수도 없습니다.</p><table class=\"w-100 rd__table stripe-odd-table\"><thead><tr><th class=\"ve-col-2 ve-text-center\" data-rd-isroller=\"false\">아티피서 레벨</th><th class=\"ve-col-10\" data-rd-isroller=\"false\">주문</th></tr></thead><tbody><tr><td class=\"ve-col-2 ve-text-center\">2nd</td><td class=\"ve-col-10\">@spell[healing word], @spell[inflict wounds]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">5th</td><td class=\"ve-col-10\">@spell[melf's acid arrow], @spell[flaming sphere]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">9th</td><td class=\"ve-col-10\">@spell[gaseous form], @spell[mass healing word]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">13번째</td><td class=\"ve-col-10\">@spell[blight], @spell[death ward]</td></tr><tr><td class=\"ve-col-2 ve-text-center\">17번째</td><td class=\"ve-col-10\">@spell[cloudkill], @spell[reincarnate]</td></tr></tbody></table></div><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"4\"><span class=\"entry-title-inner\">연금술 비약</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p6</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>연금술에 대한 지식이 늘어남에 따라 강력한 엘릭서를 만드는 방법을 배웁니다. 강력한 주문의 효과를 모방하는 것입니다:</p><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"><span class=\"entry-title-inner\">엘릭서 주입.</span></span><p>연금술사로서 당신은 다음과 같은 독점 주입 목록에 접근할 수 있습니다. <a href=\"https://5etools-mirror-2.github.io/optionalfeatures.html#blankhash,flstfeature%20type:llaart%3aalc=1\">엘릭서 주입</a>. 3레벨과 5, 9, 13, 17레벨에서 알려진 주입 수가 1씩 증가합니다. 하지만 이러한 보너스 주입은 모두 이 전문화 끝에 포함된 엘릭서 주입 목록에서 선택해야 합니다. 설명.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"6\"><span class=\"entry-title-inner\">엘릭서 만들기.</span></span><p>각각의 긴 휴식 동안, 연금술사의 보급품을 사용하여 1시간 동안 창조할 수 있습니다.주문 슬롯을 확장하지 않고 여러분이 알고 있는 각 엘릭서의 사본 하나가 들어 있는 개별 작은 약병입니다. 엘릭서는 가장 낮은 레벨에서 주문을 생성하며 엘릭서의 모든 효과는 생성될 때 선택됩니다. 다음 번 긴 휴식이 끝나면 엘릭서는 비활성화되어 사용할 수 없게 됩니다.</p><div class=\"rd__spc-inline-post\"></div><p>액션으로, 엘릭서 주입 설명에 나열된 주문 슬롯을 확장하여 연금술사의 보급품을 사용하여 알고 있는 엘릭서 한 병 하나를 제작할 수 있습니다. 엘릭서는 생성한 작업의 일부로 사용할 수 있습니다.</p><p>예를 들어, 마이너 엘릭서 만들기를 배우고 그리스와 수면을 선택하면 긴 휴식이 끝날 때마다 그리스 엘릭서 하나와 수면 엘릭서 하나를 준비합니다. 그런 다음 생물은 이러한 엘릭서를 사용하여 주문 효과를 생성할 수 있습니다. 또한 언제든지 작업을 사용하여 1레벨 주문 슬롯을 소모하고 그리스 비약 또는 수면 비약을 추가로 생성할 수 있습니다.</p></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"><span class=\"entry-title-inner\">엘릭서 사용하기.</span></span><p>모든 생물은 개체 사용 행동을 통해 엘릭서 중 하나를 마시거나, 도달 범위 내에 있는 대상에게 투여하거나, 30피트 내에서 볼 수 있는 지점에 엘릭서를 던질 수 있습니다. 엘릭서를 던지면 충격 지점에 주문 효과가 나타납니다. 엘릭서는 Artificer를 사용하여 주문시전 능력치.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"8\"><span class=\"entry-title-inner\">집중.</span></span><p>엘릭서가 집중이 필요한 주문을 생성하는 경우 집중이 필요하지 않지만 대신 3라운드 동안만 지속됩니다(해제된 경우 더 적은 시간). 생명체가 비약을 마시면 정상적으로 주문에 집중할 수 있습니다.</p><div class=\"rd__spc-inline-post\"></div></div></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"9\"><span class=\"entry-title-inner\">강력한 물약</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p6</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>엘릭서에 포함된 시약은 효능을 증가시킵니다. 당신이 만든 엘릭서나 당신이 시전한 기술병 주문이 산, 불, 괴사 또는 독을 처리할 때마다 또는 생물의 체력을 복원할 때마다 피해나 치유 중 하나에 지능 수정치(최소 +1)를 추가할 수 있습니다. 롤.</p></div></div><div class=\"rd__b rd__b--1\"><div data-source=\"LLAART\" class=\"rd__b refreshing-brew rd__b--2\"><h3 class=\"rd__h rd__h--2\" data-title-index=\"10\"><span class=\"entry-title-inner\">복원 시약</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p6</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>당신이 만드는 모든 엘릭서에는 활력을 주는 첨가제가 포함되어 있습니다. 생물이 당신의 엘릭서 중 하나를 기꺼이 마실 때마다 당신의 기술병 레벨과 동일한 임시 체력도 얻습니다. 연금술사</span><span class=\"ve-flex-vh-center\"><span class=\"rd__title-link \"><span class=\"help-subtle\" title=\"Alternate Artificer\">LLAART</span> p6</span><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></h3><p>당신은 연금술사 기술병의 대가가 되었습니다. 당신이 그 엘릭서의 영향을 받기를 원하지 않는 한 당신은 당신이 만든 엘릭서에 의해 생성된 모든 효과에 면역입니다.</p><p>마지막으로, 당신은 개체 사용 행동을 당신의 차례에 보너스 행동으로 취할 수 있습니다.그렇게 하면 주문 슬롯을 사용하여 보너스 액션의 일부로 엘릭서를 생성할 수 있습니다.</p></div></div></div></div>",
       "name": "연금술사 - Alchemist"
     },
     "Item.ydt7YhwJWYQS962D": {
-      "description": "",
       "name": "평민 복장 - Common Clothes"
     },
     "Item.yfDYL32l1T5wv4CN": {
-      "description": "",
       "name": "다트 - Dart (Copy)"
     },
     "Item.yHI2E4ID0yA7xbIs": {
-      "description": "",
       "name": "거창 - Lance"
     },
     "Item.Yp3hPvWjfB3918K2": {
-      "description": "",
       "name": "시나몬 - Cinnamon"
     },
     "Item.Z0wRE7BfGnGEt84h": {
@@ -1040,14 +931,13 @@
       "name": "승천하는 드래곤의 길 - Way of the Ascendant Dragon"
     },
     "Item.Z9bbX0PDx2efr5gu": {
-      "description": "",
       "name": "생명 권역 - Life Domain"
     },
     "Item.ZBd0MvgPehYRAJsl": {
-      "description": "<div class=\"rd__b rd__b--2\"><p><strong>원소의 타격</strong>: 자신의 턴에 이 보석을 들고 있는 동안 보너스 액션으로 무기에 원소의 힘을 주입할 수 있습니다. 다음 번에 자신의 다음 턴이 시작되기 전까지 공격으로 생물을 타격할 때, 추가로 d4의 광휘 피해를 굴릴 수 있습니다.</p><p><strong>원소의 흡수</strong>: 이 보석을 들고 있는 동안 광휘 피해를 받을 때 반응으로 받은 피해를 d4만큼 줄일 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><div class=\"rd__b rd__b--2\"><p>이 때, 피해를 받아 hp가 0 이 되더라도, 한 번만 hp를 1까지 유지할 수 있습니다.</p></div></div></div></div><div class=\"rd__b rd__b--2\"><p>어느 쪽이든 사용 후 보석은 파괴됩니다.<br></p></div>"
+      "description": "<div class=\"rd__b rd__b--2\"><p><strong>원소의 타격</strong>: 자신의 턴에 이 보석을 들고 있는 동안 보너스 액션으로 무기에 원소의 힘을 주입할 수 있습니다. 다음 번에 자신의 다음 턴이 시작되기 전까지 공격으로 생물을 타격할 때, 추가로 d4의 광휘 피해를 굴릴 수 있습니다.</p><p><strong>원소의 흡수</strong>: 이 보석을 들고 있는 동안 광휘 피해를 받을 때 반응으로 받은 피해를 d4만큼 줄일 수 있습니다.</p><div class=\"rd__b rd__b--3\"><div class=\"rd__spc-inline-post\"><div class=\"rd__b rd__b--2\"><p>이 때, 피해를 받아 hp가 0 이 되더라도, 한 번만 hp를 1까지 유지할 수 있습니다.</p></div></div></div></div><div class=\"rd__b rd__b--2\"><p>어느 쪽이든 사용 후 보석은 파괴됩니다.<br></p></div>",
+      "name": "원시 보석 :토파즈"
     },
     "Item.zClq5OOlu2cr4ERk": {
-      "description": "",
       "name": "소금 - Salt"
     },
     "Item.ZINwTXt0hgZp1fim": {
@@ -1059,7 +949,6 @@
       "name": "야생 마법 - Wild Magic"
     },
     "Item.ZVdciVZ4025OdiaN": {
-      "description": "",
       "name": "만곡도 - Scimitar"
     }
   }

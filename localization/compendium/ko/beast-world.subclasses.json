@@ -2,20 +2,23 @@
   "label": "Subclasses",
   "entries": {
     "Carrion Master": {
-      "name": "썩은 고기 마스터 - Carrion Master"
+      "name": "사체의 대가 - Carrion Master",
+      "description": "<p>인생에는 수많은 길이 있습니다. 비극, 유혹, 혹은 도덕적 타협 때문에, 어떤 레인저들은 비정통적인 방식으로 자연의 수호를 시작합니다. 그렇게 타락한 레인저들은 생과 사의 경계를 조롱하는 죽음의 여신 베로네트의 교리를 배우는 학생이 됩니다. 어떤 이는 그 힘 자체를 지배하고자 이 길에 이끌리고, 또 어떤 이는 독을 독으로 다스리듯 더 큰 악에 맞서기 위한 수단으로 이 길을 택합니다.</p><p>겉으로 보기에는 Carrion Master가 자연을 사랑하는 마음도 다른 레인저와 다르지 않습니다. 그러나 악의에 찬 자매의 영향력에 문을 여는 순간, 되돌릴 수 없는 붕괴가 시작됩니다. 죽음을 다루는 새로운 요령 하나하나는 망각을 향한 또 다른 발걸음이며, 생명을 향한 그녀의 증오는 무한하고 타협이 없습니다.</p><p>그럼에도 힘이 제안되는 곳에는, 언제나 그 값을 치를 자가 찾아오는 법입니다…</p>"
     },
     "Circle of the Wild Card": {
-      "name": "와일드카드의 원 - Circle of the Wild Card"
+      "name": "와일드 카드의 원 - Circle of the Wild Card",
+      "description": "<p>Beast World가 태어났을 때, 혼돈의 신 Varasta는 야생의 장소들을 거닐었습니다. 그는 길들여지지 않은 자연의 힘에서 친족의식을 느꼈고, 세상의 푸른 영역을 자신의 권역으로 선포했습니다. 아를로리스의 흥청대는 도박꾼들은 Varasta를 축제와 우연의 신으로 알지만, 도시의 경계 바깥 야생의 흙을 딛고 사는 이들은 그를 자연이 벌이는 긴 게임을 사려 깊고 끈기 있게 지켜보는 존재로 공경합니다.</p><p>도시의 팽창에서 멀리 떨어진 곳에서, 기묘한 드루이드 원의 일원들은 자연의 예측 불가능성 그 자체에 경외를 바칩니다. 와일드 카드 드루이드는 무작위한 우연을 받아들이고 스스로 구현하며, 그 힘을 신성한 장소를 지키는 데 쏟아 붓습니다. 그들의 덱에 담긴 각각의 카드는 자연이 지닌 근원적 진실 하나를 그려 냅니다. 자신이 지닌 드루이드의 은총 일부를 통제 불가능한 것에 내맡김으로써, 그들은 오히려 그 힘을 더욱 증폭시킵니다.</p>"
     },
     "College of Witches": {
       "name": "마녀 대학 - College of Witches",
       "description": "<p><span class=\"fontstyle0\">마녀라고도 불리는 이 학파의 바드들은 자신의 재능에 대한 대가로 힘을 내어 놓는 청중 앞에서 공연한다. 그들은 물질 세계의 모든 것 뒤편에 드리운 회색의 빈 공간을 들여다본다. 저승은 그들의 무대다. 공연을 지켜보는 영혼들을 옆으로 따라오게 하여, 마녀는 그들의 도움을 불러낼 수 있다.<br></span></p><p><span class=\"fontstyle0\">Beast World의 대부분의 이들에게 마녀는 낯선 존재지만, 그들의 일이 반드시 불쾌한 것만은 아니다. 영혼이 관심을 구하는 일은 언제나 성가시고 때로는 위험하다. 마녀가 노는 세계를 아는 사람이라면, 자신이 아닌 </span><span class=\"fontstyle2\">다른 이 </span><span class=\"fontstyle0\">가 그들의 과도한 아첨의 대상이 되어 준다는 사실에 오히려 감사할 것이다.</span></p>"
     },
     "Fell Infiltrator": {
-      "name": "타락한 침입자 - Fell Infiltrator"
+      "name": "타락한 잠입자 - Fell Infiltrator",
+      "description": "<p>이들은 악마가 아닙니다.</p><p>Fell Infiltrator만큼 스스로를 위험 속에 던지는 이도 드뭅니다. 그들은 그림자와 유황으로 몸을 감싸고, 창조의 경계 바깥을 걸으며 불경한 영향력을 억제합니다. 이 대담한 악마 사냥꾼들은 팔라딘의 사명을 따르지만, 그 사명을 이루기 위해 정면이 아니라 뒷문으로 들어갑니다. 그들은 악마들 사이에 숨어드는 첩자이며, 배신이 일상인 영역에서 정확한 순간이 올 때까지 기다렸다가 우주에 가장 값진 선물 하나를 남깁니다. 바로, 죽은 악마 한 마리입니다. 그들의 사악한 가면은 오싹하고 때로는 공포스럽기까지 하지만, Fell Infiltrator는 자신이 흉내 내는 괴물들의 영향력에 맞서 싸웁니다. 그 목적이 그 힘을 파괴하는 데 있는지, 아니면 훔쳐 쓰는 데 있는지는 결국 개인에 달려 있습니다.</p>"
     },
     "Mercy Domain": {
-      "name": "?? ?? - Mercy Domain",
+      "name": "자비 권역 - Mercy Domain",
       "description": "<p><span class=\"fontstyle0\">자비의 신들이 필멸자에게 은혜를 내릴 때, 그들 가운데서도 가장 온화하고 자애로운 이들이 그 힘을 특별한 방식으로 다루는 자로 선택된다. 자비의 권역은 대부분의 권역과는 다른 목적에 쓰이는 신성한 힘이다. 파괴의 도구가 아니라, 다른 이들이 구원을 찾도록 돕는 강력한 수단이다. 이들은 모든 존재에게서 선을 찾고, 죽음을 휘두르는 자들을 최후의 수단으로 꾸짖는다. 이 힘을 지닌 성직자들은 용서의 문을 활짝 열어 잃어버린 영혼들이 참회의 길을 찾도록 돕는다. 선한 성향의 신들은 이 신성한 권역을 지키며, 특히 폭력을 멀리하고 용서와 분노를 견디는 의지의 강화를 중시하는 이들이 그렇다. Beast World에서는 자비 권역의 거의 모든 성직자가 Beast Mother Pirhoua를 숭배한다.</span></p><p></p><table><tbody><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p><strong>성직자 레벨</strong></p></td><td style=\"height:17px;text-align:center\"><p><strong>주문</strong></p></td></tr><tr><td style=\"height:68px;text-align:center\" data-colwidth=\"426\"><p>1st</p></td><td style=\"height:68px;text-align:center\"><p>@Compendium[dnd5e.spells.xmDBqZhRVrtLP8h2]{Protection from Evil and Good}, @Compendium[dnd5e.spells.gvdA9nPuWLck4tBl]{Sanctuary}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>3rd</p></td><td style=\"height:17px;text-align:center\"><p>@UUID[Compendium.dnd5e.spells.Item.8cse7rit0oswRPUP]{비전 자물쇠}, @Compendium[dnd5e.spells.ppWAAEul0QHtm4er]{Detect Thoughts}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>5th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.Ek45cBpVXvJdv1Qy]{Counterspell}, @Compendium[dnd5e.spells.gopnZvS0c2jD5FP8]{Tongues}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>7th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.XqzXSKNR75ZdYTA9]{Divination}, @Compendium[dnd5e.spells.da0a1t2FqaTjRZGT]{Freedom of Movement}</p></td></tr><tr><td style=\"height:17px;text-align:center\" data-colwidth=\"426\"><p>9th</p></td><td style=\"height:17px;text-align:center\"><p>@Compendium[dnd5e.spells.JQyigMNPiDnGI18b]{Geas}, @Compendium[dnd5e.spells.W4Qx5z0id6da0vqg]{Legend Lore}</p></td></tr></tbody></table><p> </p>"
     },
     "Oath of Revolution": {
@@ -23,10 +26,12 @@
       "description": "<p><span class=\"fontstyle0\">혁명의 맹세는 민중이 스스로의 힘을 쟁취하도록 돕는 데 있다. 이 맹세를 택한 팔라딘은 눈을 부릅뜨고 권세 있는 자들의 부패를 찾아낸다. 억압을 발견하면, 공동의 행동을 부를 수 있는 힘을 얻게 된다. </span></p>\n<p><span class=\"fontstyle0\">Beast World에서는 정의의 여신 Dramphine을 섬기는 일부 팔라딘들이 혁명의 맹세를 택해 권세 있는 자들을 감시하는 파수꾼이 된다. Allemance의 귀족 법정에서 Oric batkos의 회랑에 이르기까지, 혁명의 팔라딘들은 썩어 문드러진 사회 구조에 짓눌린 이들이 스스로의 운명을 움켜쥐도록 북돋운다.<br></span></p>\n<p> </p>\n<h2>혁명의 계율</h2>\n<p><span class=\"fontstyle0\">혁명의 맹세를 택한 팔라딘들은 이 세 단어를 정의로운 행동으로 이끄는 길잡이 빛으로 읊조린다. </span></p>\n<p><span class=\"fontstyle3\"><strong>판결</strong>. </span><span class=\"fontstyle0\">약하고 힘없는 이들은 당신의 분별을 신뢰한다. 그러니 당신은 정의에 따른 판결로 그들의 기대에 응해야 한다. 당신의 임무는 세상의 숨은 부패를 냉정하게 알아보는 일이다. </span></p>\n<p><span class=\"fontstyle3\"><strong>신념</strong>. </span><span class=\"fontstyle0\">사람들이 부당하게 대우받는 것을 보면, 당신의 첫 번째 임무는 그들이 행동하도록 북돋우는 것이다. 가능하다면 언제나 억압받는 이들이 스스로 더 나은 길을 세우도록 도와야 한다. 당신은 반란의 검이 아니라, 그 목자다. </span></p>\n<p><span class=\"fontstyle3\"><strong>공정</strong>. </span><span class=\"fontstyle0\">공평함의 전형이 되고, 법의 정당함을 드러내라. 지도자들은 공동체가 어떻게 정의를 실현해야 하는지 당신의 통찰을 바란다. 그 이해에 조금이라도 썩은 부분이 있다면 그것은 당신의 책임이다.</span></p>\n<p> </p>\n<p><span class=\"fontstyle0\">당신은 혁명의 맹세 주문 표에 적힌 팔라딘 레벨에서 맹세 주문을 얻는다. 맹세 주문의 작동 방식은 성스러운 맹세 클래스 특성을 참고하라.</span></p>\n<table style=\"width:100%;height:137px\" border=\"1\">\n<tbody>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\"><strong>팔라딘 레벨</strong></td>\n<td style=\"text-align:center;width:88.7206%;height:17px\"><strong>주문</strong></td>\n</tr>\n<tr style=\"height:35px\">\n<td style=\"text-align:center;width:11.2794%;height:35px\">3rd</td>\n<td style=\"text-align:center;width:88.7206%;height:35px\">@Compendium[dnd5e.spells.7p9IuWrSWFgfyQo2]{Alarm}, @Compendium[dnd5e.spells.4dSvfvTy2ZIJ3K4k]{Comprehend Languages}</td>\n</tr>\n<tr style=\"height:34px\">\n<td style=\"text-align:center;width:11.2794%;height:34px\">5th</td>\n<td style=\"text-align:center;width:88.7206%;height:34px\">@Compendium[dnd5e.spells.FSMy6VAjDnXY9vWz]{Gust of Wind}, @Compendium[dnd5e.spells.DQzlB5Y3k791W5bH]{See Invisibility}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">9th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.Ek45cBpVXvJdv1Qy]{Counterspell}, @Compendium[dnd5e.spells.I2LUSF5ogc7Bj62e]{Speak with Dead}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">13th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.P6f1PPKPd9BCb742]{Compulsion}, @Compendium[dnd5e.spells.XqzXSKNR75ZdYTA9]{Divination}</td>\n</tr>\n<tr style=\"height:17px\">\n<td style=\"text-align:center;width:11.2794%;height:17px\">17th</td>\n<td style=\"text-align:center;width:88.7206%;height:17px\">@Compendium[dnd5e.spells.kSPRpeIx3w3nihrF]{Dream}, @Compendium[dnd5e.spells.fVbCxFRaORalHB20]{Scrying}</td>\n</tr>\n</tbody>\n</table>"
     },
     "Path of Thought's Tremor": {
-      "name": "생각의 길 떨림 - Path of Thought's Tremor"
+      "name": "사유의 떨림의 길 - Path of Thought's Tremor",
+      "description": "<p>사유의 떨림의 길을 걷는 야만인은 많지 않습니다. 대개의 야만인들은 감정이 폭발하는 순간 현실에 대한 붙잡음을 놓아버리며 분노를 끌어냅니다. 그러나 이 길의 야만인은 분노를 안으로 끌어당겨 자신을 단련하는 힘으로 삼습니다. 그렇게 해서 그들은 고양된 자각과 극도의 집중 상태에 들어갑니다. 거세게 뛰는 심장박동 하나하나가 잔물결처럼 퍼져 나가며, 적을 어떻게 파괴해야 하는지 정밀한 길을 보여 줍니다.</p>"
     },
     "Somnomancy": {
-      "name": "졸음 - Somnomancy"
+      "name": "몽술 - Somnomancy",
+      "description": "<p>Beast World에서 몽술은 잠든 존재들의 풀려난 상상력이 그 규모와 형태를 결정하는 평행 세계, 즉 Dreaming을 연구합니다. 그 세계는 잠든 이들의 마음속 이미지에 따라 밀물과 썰물처럼 흔들리며, 모든 사람을 꿈의 초현실적인 경계와 논리로 연결합니다.</p><p>몽술 학파는 학계의 주변부에 자리합니다. 주류 마법학은 마법을 수행하기 위해 집중된 지적 훈련을 강조하지만, 잠의 학생들은 정신 전체를 끌어쓰는 데 관심을 둡니다. 이 학파에 발을 들인 학자들은 대개 괴짜이거나 유난히 열린 사고를 지녔으며, ‘마음-자아’를 의지를 지닌 존재들 사이에 공유되는 무엇으로 여깁니다. 몽술사는 주변 이들과 함께 꿈속으로 들어감으로써, 주문서나 물약, 그 밖의 물리적 도구 없이도 마법을 곧바로 동료의 정신 속에 새겨 넣을 수 있습니다.</p>"
     },
     "The Ghost God": {
       "name": "유령 신 - The Ghost God",
@@ -37,7 +42,8 @@
       "description": "<p>Beast World에서 가장 다양한 계층의 모험가가 바로 전사다. 전사들은 무예 상황 전반에 대한 폭넓은 숙련으로 알려져 있다. 이런 다재다능함은 직업으로 무기를 다루는 병사나 다른 이들에게는 필요치 않다. Beylik 향신료 대상단의 경비병은 사막 길을 따라 이동하며 강도를 막아 내도록 훈련받는다. 올바른 의미의 전사가 되려면, 촉수 달린 존재를 자기 몸집의 쉰 배쯤 되는 상대와 맞붙을 때만큼이나 단독 결투에서도 똑같이 강해야 한다.</p>\n<p>전사는 다른 어떤 클래스보다도 스승과 함께 성장하는 경우가 많다. 15레벨 전사조차도 마지막 스승을 만나기 위해 정기적으로 길을 나선다. 전사들 사이의 협력과 경쟁은 모든 기술을 벼린다. 지적인 전사들은 Mantle War와 그 이전의 장군들이 남긴 지혜가 담긴 존중받는 문헌에서 무예를 배운다. 책 공부를 선호하지 않는 전사들도 다른 권투가들의 피드백을 통해 성장한다. 결국 원한을 품은 못된 녀석이 주먹다짐에서 이길 수는 있겠지만, 전사들은 세계의 전투 덕후다.</p>\n<p>나이가 찰 만큼 찬 전사라면 거의 모두 Invader War에 참전했다. 많은 이들이 새롭게 생긴 전술적 위험에 대한 갈증을 채우고자 하는 베테랑으로서 출발했다. 다행히도 던전 입구가 처음 나타나자마자 그들에게는 곧바로 기회가 찾아왔다.</p>\n<p>Bat’yan과 Beylik 사이의 문화적 분열은 전사들 사이에서 가장 뚜렷하다. 울창한 열대우림 전투의 은밀한 기습 전술은 사막 대상단 야영지의 기마 전장과는 거리가 멀다. Causeway에서 힘을 합친 전사는 무척이나 효율적인 전사로 태어나, 적을 넘어뜨리며 돌진하거나 나뭇잎 위를 날듯 달려 보이지 않는 곳에서 타격을 날릴 수 있다.</p>\n<p> </p>\n<h2>무술 원형: 메인 이벤트</h2>\n<p>Storied Histories League는 연극적 전투의 세계이며, 그 전사들에게는 음식과 물만큼이나 시급한 필요가 있다. 바로 관중의 에너지를 먹고 사는 것이다. 그들은 매혹된 관중이 내뿜는 에너지를 흡수해 휘두른다. 메인 이벤트는 링 위에서도 실제 생사결투에서도 호기와 자신감의 화신이다. 보이지 않는 관중의 흥분을 이용해 비할 데 없는 육체적 완성에 이른다. 일부 전사들은 리그를 잠시 떠나 던전 탐험자가 되기도 한다. 이들이 바로 메인 이벤트 전사다.</p>"
     },
     "Way of the Kidney Punch": {
-      "name": "신장 펀치의 길 - Way of the Kidney Punch"
+      "name": "신장타의 길 - Way of the Kidney Punch",
+      "description": "<p>논란 많은 믿음을 중심에 둔 수도의 길이 하나 존재합니다. 이 수도승들은 완성에 이르는 길이란 먼지 쌓인 고전과 죽은 사부들의 반쯤 잊힌 중얼거림에 가로막혀 있다고 믿습니다. 오래된 명문 수도원들이 수 세기에 걸쳐 쌓아 올린 지혜에서 갈라져 나온 또 다른 길이 있는 것입니다. 그들의 열린 손은 이미 닫혀 있습니다. 한 손에는 싸구려 술병을, 다른 손에는 반대자의 멱살을 쥐고 있기 때문입니다. 그들은 말합니다. 명상에 덧씌워진 영성주의와 가짜 평온을 모두 벗겨 내고 나면, 수도승은 결국 단 하나의 목적을 위해 태어났다고.</p><p><strong>바로, 싸움에서 이기기 위해서.</strong></p>"
     }
   }
 }
