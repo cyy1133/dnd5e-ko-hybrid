@@ -6,6 +6,7 @@
       "description": "<p>두 개의 평행한 벽을 지탱할 수 있다면 걷는 속도와 같은 등반 속도를 갖게 됩니다.</p>"
     },
     "Blackwild Feedback (Arneria)": {
+      "name": "Blackwild 피드백 (Arneria) - Blackwild Feedback (Arneria)",
       "description": "<p>당신의 종족을 괴롭힌 종 전체의 혼란이 여전히 당신 안에 울려 퍼집니다. 괴사 피해를 입은 것에 대한 반응으로 다음 턴이 시작될 때까지 괴사 피해에 대한 저항력을 자신에게 부여할 수 있습니다. 피해의 원인은 감소된 양만큼 괴사 피해를 입습니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Born of the Bey's Head (Arneria)": {
@@ -49,6 +50,7 @@
       "description": "<p>인생은 대부분의 사람들보다 오리안 개에게 훨씬 더 복잡합니다. 당신은 예상치 못한 곳에서 친구를 사귀었고 Oric 산장 영주들의 틀에 맞지 않는 사람들과 친밀감을 공유했습니다. 당신은 오리아 출신이 아닌 서바인과 오리아 출신이 아닌 서바인을 대상으로 한 카리스마(설득) 체크에 유리합니다.</p>"
     },
     "Collective Effort (Arneria)": {
+      "name": "공동 노력(Arneria) - Collective Effort (Arneria)",
       "description": "<p>당신은 도움 행동을 사용하여 말보다 당신의 목소리를 이해하고 당신의 얼굴을 볼 수 있는 모든 생물체(예: 다른 마우스나 @UUID[Compendium.beast-world.homeland-traits.Item.dEr89xXMQDQJL9Tt]{Twitch Literacy} 특성을 사용하여 가르친 생물체)를 도울 수 있습니다.</p>"
     },
     "Corked Armor (Vinyot)": {
@@ -56,6 +58,7 @@
       "description": "<p>몸에 맞게 코르크 주머니가 박혀 있는 갑옷을 입을 수 있으며, 숙련된 갑옷을 코르크 갑옷으로 변환하는 데 24시간을 투자할 수 있습니다. 그것을 착용하는 동안 가슴 높이까지의 물은 어려운 지형으로 간주되지 않으며 통과하는 데 추가 이동 비용이 들지 않습니다. 당신의 속도는 갑옷에 의해 감소되지 않으며, 갑옷은 수영을 위한 육상 판정에 영향을 미치지 않습니다.</p>"
     },
     "Court Tinkers (Allemance)": {
+      "name": "코트 팅커스(Allemance) - Court Tinkers (Allemance)",
       "description": "<p>Tinker의 도구 사용에 능숙합니다. 1분만 연구하면 잡을 수 있거나 주요 움직이는 부품을 볼 수 있는 모든 장치를 작동하는 방아쇠나 수단을 식별할 수 있습니다.</p>"
     },
     "Cove Lineage": {
@@ -67,6 +70,7 @@
       "description": "<p>당신은 목수 도구 사용에 능숙합니다. 나무 벽과 적절한 공간이 있는 방에 있을 때, 민첩성(목수 도구) 검사를 수행하는 데 8시간을 소비하여 양쪽에 6인치의 비밀 칸을 만들 수 있습니다. 이 구획을 발견하려면 목수의 도구 검사와 동일한 DC의 지능(조사) 검사가 필요합니다. 또한, 비밀 문이나 칸막이를 찾기 위해 지능(조사) 검사를 굴릴 때 이점이 있습니다.</p>"
     },
     "Dittoed Rumors (Allemance)": {
+      "name": "같은 소문 (Allemance) - Dittoed Rumors (Allemance)",
       "description": "<p>위조 키트 사용에 능숙합니다. 또한 누군가를 사칭하기 위해 카리스마(기만) 검사를 하면 숙련된 것으로 간주되어 일반 숙련도 보너스 대신 숙련도 보너스의 두 배를 검사에 추가합니다.</p>"
     },
     "Drifting Drop (Al'ar)": {
@@ -134,6 +138,7 @@
       "description": "<p>당신은 육상 기술에 능숙합니다. 근력(운동) 판정에 성공하면 당신과 언어를 공유하고 당신을 지켜보고 있는 생명체에게 그 방법을 보여줄 수 있습니다. 동일한 작업을 수행하기 위해 근력(운동) 판정을 할 때 해당 생물은 능숙한 것으로 간주됩니다.</p>"
     },
     "Jury-Rig (Vinyot)": {
+      "name": "심사위원단(Vinyot) - Jury-Rig (Vinyot)",
       "description": "<p>기계적 문제에 대한 해결책을 즉석에서 만들어 내고 상황 변화에 맞춰 적응할 수 있습니다. 당신은 다른 사람 눈에는 잡동사니처럼 보일지 모를, 하지만 그 누구에게도 대체할 수 없는 도구 꾸러미를 지니고 있습니다. 1분간의 숙고 끝에 지능 판정을 굴려 아래 효과 중 하나를 수행할 수 있습니다. 각 효과의 DC는 아래의 Jury-Rig 표에 나와 있습니다.</p><p></p><table><tbody><tr><td data-colwidth=\"687\"><p><strong>효과</strong></p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\"><strong>DC</strong></p></td></tr><tr><td data-colwidth=\"687\"><p>문이나 해치를 열면 1d6 타격, 관통, 또는 참격 피해(선택)를 주는 함정이 발동합니다. 함정을 발견하거나 해제하는 DC는 지능 판정 결과와 같습니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">12</p></td></tr><tr><td data-colwidth=\"687\"><p>개조한 대형 이하 탈것을 24시간 동안 방수 처리해 물 위에 뜰 수 있게 합니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>개조한 대형 이하 물체의 파괴 DC를 1시간 동안 2d4만큼 높입니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>다음 1시간 동안 개조한 무기로 구조물을 공격해 처음 명중한 한 번은 치명타로 간주됩니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">20</p></td></tr></tbody></table>"
     },
     "Keepsake of a Lost Home (Broken World)": {
@@ -141,6 +146,7 @@
       "description": "<p>짐승세계에 도착한 형제들은 각자 예전 집에서 귀중한 물건을 가지고 왔습니다. 이 독특한 “형제 골동품”은 알려진 어떤 수단으로도 복제할 수 없지만, 전 세계적으로 수천 개가 유통되고 있습니다. 대부분의 형제들은 한때 겪었던 어려움을 상기시키기 위해 개인 골동품을 갖고 있습니다.</p><p>GM과 협력하여 골동품을 만드세요. 골동품은 일반적으로 1990년대 현실 세계의 대체 버전에서 가져온 휴대용 개체입니다. 때로는 실제 제품보다 휴대성이 뛰어나거나 효율적인 기능을 수행할 수도 있습니다(예: 태양열 토스터는 매우 흥미로운 제품입니다). 유용성은 상황에 따라 달라져야 하지만 골동품이 너무 멋질 필요는 없습니다! 캔트립이나 1레벨 주문을 재현할 수 있는 실제 물체는 훌륭한 골동품이 됩니다.</p><p>그 기능이 캔트립의 효과를 재현하는 경우 산성 버튼(배터리) 없이 작동합니다. 부서진 세계는 해체되기 전에 다양한 종류의 동력원을 갖고 있었습니다. 1레벨 주문의 효과를 재현하는 경우, 골동품을 직사광선에 8시간 동안 놓아 산성 버튼을 재충전하기 전에 한 번 사용할 수 있습니다. GM은 캠페인 기간 동안 골동품에 대해 더 많은 산성 버튼을 구매하여 재충전하기 전에 더 많은 용도를 허용할 수 있습니다. 그러나 귀하의 골동품은 직사광선 아래에서 8시간마다 1개의 산성 버튼만 재충전할 수 있습니다.</p><p>아래의 골동품 표는 적합한 형제 골동품에 대한 몇 가지 제안을 제공합니다.</p><table style=\"width:100%;height:133px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p><strong>Curio 이름</strong></p></td><td style=\"width:17.3391%;height:17px\"><p><strong>실제 개체</strong></p></td><td style=\"width:65.8904%;height:17px\"><p><strong>Spell 효과</strong></p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>미러 전구</p></td><td style=\"width:17.3391%;height:17px\"><p>손전등</p></td><td style=\"width:65.8904%;height:17px\">__FVT TTOK_40__@Compendium[dnd5e.spells.Bnn9Nzajixvow9xi]{Light}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>제물 실린더</p></td><td style=\"width:17.3391%;height:17px\"><p>토치</p></td><td style=\"width:65.8904%;height:17px\">_ _FVTTTOK_54__@Compendium[dnd5e.spells.5SuJewoa1CRWaj1F]{Burning Hands}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>충격 바늘</p></td><td style=\"width:17.3391%;height:17px\"><p>Taser</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.EOmsUcFQJTfG2oio]{Fire Bolt}(번개 거래 손상)</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>베이퍼 키트</p></td><td style=\"width:17.3391%;height:17px\"><p>휴대용 가습기</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.a3XtAO5n2GrqiAh5]{Create or Destroy Water}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>Nightwatch 스테이크</p></td><td style=\"width:17.3391%;height:17px\"><p>모션 감지기</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.7p9IuWrSWFgfyQo2]{Alarm}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>재사용 가능한 조명 지팡이</p></td><td style=\"width:17.3391%;height:17px\"><p>리필 가능 글로우스틱</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.nqBDWkVOfcGZt4YU]{Faerie Fire}</p></td>__FVTTTOK_ 113__<tr style=\"height:14px\"><td style=\"width:16.1637%;height:14px\"><p>이어버그</p></td><td style=\"width:17.3391%;height:14px\"><p>이어피스 그리고 옷깃mic</p></td><td style=\"width:65.8904%;height:14px\"><p>@Compendium[dnd5e.spells.icZokbgV1jIMpNCv]{Message}</p></td></tr></tbody></table>"
     },
     "Kolaçan (Arneria)": {
+      "name": "콜라칸(Arneria) - Kolaçan (Arneria)",
       "description": "<p>눈에 보이는 인식하지 못하는 대상을 따라가는 민첩성(스텔스) 검사에 유리합니다.</p>"
     },
     "Lens Master (Arneria)": {
@@ -164,6 +170,7 @@
       "description": "<p>당신은 선택한 장인의 도구 하나와 신비, 역사, 의학, 자연, 종교 기술 중 하나에 능숙합니다. 24시간을 중단 없이 공부하고 연습했다면 d20을 2개 굴려서 더 높은 결과를 저장하세요. 다음 7일 이내에 언제든지 선택한 장인의 도구나 기술에 대한 능력 검사 결과를 미리 굴린 결과로 대체할 수 있습니다. 판정 전에 그렇게 하도록 선택해야 하며 이 결과는 한 번만 사용할 수 있습니다.</p>"
     },
     "Like Herding Cats (Al'ar)": {
+      "name": "고양이를 모으는 것처럼 (Al'ar) - Like Herding Cats (Al'ar)",
       "description": "<p>알라르의 개들은 대규모 프로젝트를 위해 서로 다른 세력을 하나로 모으는 일에서 틈새 시장을 찾았습니다. 조정이 불가능한 부분을 조정하실 수 있습니다. 한 번에 두 아군의 도움 행동을 사용하여 스킬 체크를 굴릴 수 있습니다. 두 명의 아군이 당신이 수행하는 스킬 체크에 대해 도움말 액션을 사용하는 경우 해당 체크를 수행하는 데 사용하는 d20 중 하나를 다시 굴릴 수 있습니다.</p>"
     },
     "Mail Runner (Arneria)": {
@@ -175,6 +182,7 @@
       "description": "<p>군중 속에 숨기 위해 민첩(스텔스) 검사를 하면 숙련된 것으로 간주되며 일반 숙련도 보너스 대신 숙련도 보너스가 검사에 두 배로 추가됩니다.</p><p>또한 숨겨진 상태에서 단검이나 단검으로 생물을 공격하면 다음 턴이 시작될 때까지 공격의 피해나 효과를 지연하도록 선택할 수 있습니다. 생물은 효과가 발생할 때만 공격을 인식하게 됩니다. 이 능력을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Mountain to the Isles (Al'ar)": {
+      "name": "산에서 섬까지(Al'ar) - Mountain to the Isles (Al'ar)",
       "description": "<p>두 개의 장인 도구, 두 개의 악기 또는 두 가지의 조합에 능숙합니다.</p>"
     },
     "Mouse Among Giants (Oria)": {
@@ -190,6 +198,7 @@
       "description": "<p>대장장이 도구 숙련이 있습니다. 대장간과 흑요석 조각이 있다면, 8시간과 30gp를 들여 대장장이 도구로 브로치나 손에 쥐는 장난감 같은 작은 장신구를 만들 수 있습니다. 그 장신구는 비범한 마법 물건입니다. 어떤 크리처든 1레벨 주문을 시전하는 동안 그 장신구를 만질 수 있으며, 그 주문은 아무 효과도 없이 물건 안에 저장됩니다. 행동으로 그 장신구를 들고 있는 크리처는 그 주문을 시전할 수 있습니다. 이렇게 하면 주문은 제거되고 장신구는 파괴됩니다.</p><p> </p>"
     },
     "Peer Misdirection (Vinyot)": {
+      "name": "동료의 잘못된 방향(Vinyot) - Peer Misdirection (Vinyot)",
       "description": "<p>비뇨트에서는 많은 테네브린이 거리 공연자로 활동합니다(때때로 마운트뱅크로 활동하기도 함). 당신은 당신의 말이 당신으로부터 최대 60피트 떨어진 어느 지점에서나 나오는 것처럼 들리도록 선택하여 목소리를 낼 수 있습니다. 또한 민첩(Sleight of Hand) 검사에 실패하면 청중의 규모에 따라 즉석에서 잘못된 방향을 설정하여 시도를 관찰하는 이외의 생물 수와 동일한 보너스를 굴림에 추가할 수 있으며(최대 보너스 +5) 잠재적으로 실패를 성공으로 바꿀 수 있습니다. 이런 식으로 보너스를 추가하면 긴 휴식을 마칠 때까지 다시 추가할 수 없습니다.</p>"
     },
     "Pirate Drop (Al'ar)": {
@@ -221,6 +230,7 @@
       "description": "<p><span style=\"font-family:Signika, sans-serif\">창 사용에 능숙해졌습니다. 탑승한 동안 당신은 5피트 내의 생물에 대한 명중 굴림에 불이익을 가하는 창의 속성을 무시합니다.</span></p>"
     },
     "Rules Lawyer (Vinyot)": {
+      "name": "규칙 변호사 (Vinyot) - Rules Lawyer (Vinyot)",
       "description": "<p>1레벨 주문 두 개를 선택하세요. 해당 주문은 모든 클래스의 주문 목록에 있습니다.</p>"
     },
     "Sand-Whispering Outcasts (Arneria)": {
@@ -248,9 +258,11 @@
       "description": "<p>턴당 한 번, 사거리 특성이 있는 무기로 공격해 크리처를 명중시키고 그 무기의 피해 주사위 중 하나에서 최대값이 나왔다면, 대상을 넘어뜨리려 시도할 수도 있습니다. 대상이 대형 이하라면, 무기에 대한 당신의 공격 보너스에 8을 더한 DC로 근력 또는 민첩 내성 굴림(선택)을 해야 합니다. 내성 굴림에 실패하면 대상은 넘어진 상태가 됩니다.</p>"
     },
     "Sniffing Out Deals (Vinyot)": {
+      "name": "스니핑 아웃 딜(Vinyot) - Sniffing Out Deals (Vinyot)",
       "description": "<p>Vinyotians가 여러 세대에 걸쳐 가족에게 심어준 도시 상업 감각은 좋은 거래를 찾을 수 있는 능력을 제공했습니다. 대도시(인구 10,000명 이상)에서 마법이 아닌 아이템에 대한 최적의 가격을 찾기 위한 정보(조사) 검사에 유리합니다.</p>"
     },
     "Spiced Brews (Allemance)": {
+      "name": "매콤한 맥주 (Allemance) - Spiced Brews (Allemance)",
       "description": "<p>당신은 양조 용품에 능숙합니다.</p>"
     },
     "Spirited Discourse (Allemance)": {
@@ -258,9 +270,11 @@
       "description": "<p>성능 또는 설득 확인을 위해 카리스마 대신 지능을 대체할 수 있습니다. 또한 매혹을 피하기 위해 내성 굴림에 실패한 후 30피트 내의 다른 생물에 대한 반응으로 격려적인 말을 할 수 있습니다. 그렇게 하면 그 생물은 즉시 내성 굴림을 다시 할 수 있습니다. 이 특성을 사용하여 재굴림을 허용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Stash Finder (Arneria)": {
+      "name": "보관함 찾기(Arneria) - Stash Finder (Arneria)",
       "description": "<p>당신은 벽돌과 돌에 숨겨진 공간을 찾는 지능(조사) 검사에 유리합니다. 또한, 사람의 물건을 숨기기 위해 민첩성(Sleight of Hand) 검사를 하면 능숙한 것으로 간주되어 일반 숙련도 보너스 대신 숙련도 보너스의 두 배를 검사에 추가합니다.</p>"
     },
     "Stashed in a Foxhole (Vinyot)": {
+      "name": "여우 구멍에 숨겨져 있음(Vinyot) - Stashed in a Foxhole (Vinyot)",
       "description": "<p>당신이 돈을 쓸 수 없는 상황에 놓이더라도(예를 들어 도난당했거나 몰수당했다면), 항상 주변에 약간의 돈이나 그에 준하는 가치 있는 물건이 있습니다. 그것은 꿰매 넣은 주머니일 수도, 왼쪽 신발 굽일 수도, 혹은 가까운 사람에게서 받아낼 수 있는 빚의 형태일 수도 있습니다. 사용할 수 있는 금액은 당신의 레벨의 두 배와 같은 수의 금화입니다. 이 돈을 쓰면 당신의 총 금화에서 차감됩니다. 이 특성으로 “편리하게 꺼내 쓴” 돈은 주 수입원에 다시 접근할 수 있을 때까지 다시는 사용할 수 없습니다.</p><p></p>"
     },
     "Stonemovers and Surveyors (Surface)": {
@@ -303,9 +317,11 @@
       "description": "<p>더 높은 표면으로 올라갈 수 있는 상황에서 숨기기 동작을 사용할 때 민첩(스텔스)을 힘(운동)으로 대체할 수 있습니다.</p>"
     },
     "Underestimated (Vinyot)": {
+      "name": "과소평가(Vinyot) - Underestimated (Vinyot)",
       "description": "<p>지능 점수가 13 이상인 생물에 대해 카리스마(기만) 검사를 할 때마다 당신은 숙련된 것으로 간주되고 검사에 대해 숙련도 보너스가 두 배가 됩니다.</p>"
     },
     "Versatile Rider (Allemance)": {
+      "name": "다재다능한 라이더(Allemance) - Versatile Rider (Allemance)",
       "description": "<p>탑승 중 보너스 동작으로 비상 하차에 대비할 수 있도록 몸의 위치를 ​​잡을 수 있습니다. 이 행동을 취한 후에는 공격에 대한 반응으로 5피트 이내의 빈 공간으로 내릴 수 있습니다. 추가적으로, 이족 보행 생물을 장착하는 데에는 이동 비용이 5피트입니다.</p>"
     },
     "Versatile Rider (Oria)": {
