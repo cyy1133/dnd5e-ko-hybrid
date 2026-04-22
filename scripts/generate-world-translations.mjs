@@ -130,6 +130,125 @@ const readJson = async (filePath) => {
   return JSON.parse(raw.replace(/^\uFEFF/u, ""));
 };
 
+const normalizeMachineText = (value = "") =>
+  String(value ?? "")
+    .replace(/\r\n?/gu, "\n")
+    .replace(/\u00A0/gu, " ")
+    .trim();
+
+const normalizeTemplateBody = (value = "") => {
+  const normalized = value == null ? "" : String(value);
+  return normalized === "null" || normalized === "undefined" ? "" : normalized;
+};
+
+const MACHINE_TRANSLATE_TOKEN_PATTERNS = [
+  /<[^>]+>/gu,
+  /@[A-Za-z]+(?:\[[^\]]*\])(?:\{[^}]*\})?/gu,
+  /&Reference\[[^\]]*\](?:\{[^}]*\})?/gu,
+  /\[\[\/[^\]]+\]\]/gu
+];
+
+const TRANSLATE_MAX_QUERY_LENGTH = 3500;
+const plainTranslationCache = new Map();
+const markupTranslationCache = new Map();
+
+const tokenizeMachineTranslation = (value = "") => {
+  const tokens = [];
+  let output = value;
+  for (const pattern of MACHINE_TRANSLATE_TOKEN_PATTERNS) {
+    output = output.replace(pattern, (match) => {
+      const token = `__FVTTTOK_${tokens.length}__`;
+      tokens.push([token, match]);
+      return token;
+    });
+  }
+  return { output, tokens };
+};
+
+const untokenizeMachineTranslation = (value = "", tokens = []) => {
+  let restored = value;
+  for (const [token, match] of tokens) {
+    restored = restored.replaceAll(token, match);
+  }
+  return restored;
+};
+
+const splitForMachineTranslation = (value = "") => {
+  if (!value || value.length <= TRANSLATE_MAX_QUERY_LENGTH) return [value];
+  const chunks = [];
+  let cursor = 0;
+  while (cursor < value.length) {
+    let next = Math.min(cursor + TRANSLATE_MAX_QUERY_LENGTH, value.length);
+    if (next < value.length) {
+      const split = value.lastIndexOf(" ", next);
+      if (split > cursor + 500) next = split;
+    }
+    chunks.push(value.slice(cursor, next));
+    cursor = next;
+  }
+  return chunks.filter(Boolean);
+};
+
+const translateTextViaGoogle = async (value = "") => {
+  const normalized = normalizeMachineText(value);
+  if (!normalized) return "";
+  if (plainTranslationCache.has(normalized)) return plainTranslationCache.get(normalized);
+
+  const chunks = splitForMachineTranslation(normalized);
+  const translated = [];
+  for (const chunk of chunks) {
+    const url = new URL("https://translate.googleapis.com/translate_a/single");
+    url.searchParams.set("client", "gtx");
+    url.searchParams.set("sl", "en");
+    url.searchParams.set("tl", "ko");
+    url.searchParams.set("dt", "t");
+    url.searchParams.set("q", chunk);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Translate request failed: ${response.status}`);
+    const payload = await response.json();
+    translated.push((payload?.[0] ?? []).map((piece) => piece?.[0] ?? "").join(""));
+  }
+
+  const output = translated.join("").replace(/\u00A0/gu, " ").trim();
+  plainTranslationCache.set(normalized, output);
+  return output;
+};
+
+const escapeRegExp = (value = "") => String(value).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+
+const formatMachineTranslatedName = (originalName = "", translatedName = "") => {
+  const source = normalizeMachineText(originalName);
+  let translated = normalizeMachineText(translatedName);
+  if (!source || !translated || !hasKorean(translated)) return "";
+  translated = translated
+    .replace(new RegExp(`\\(\\s*${escapeRegExp(source)}\\s*\\)$`, "u"), "")
+    .replace(new RegExp(`\\s*-\\s*${escapeRegExp(source)}$`, "u"), "")
+    .trim();
+  return translated ? `${translated} - ${source}` : "";
+};
+
+const machineTranslateName = async (originalName = "") => {
+  const visible = normalizeMachineText(originalName);
+  if (!visible || hasKorean(visible) || !hasEnglish(visible)) return "";
+  const translated = await translateTextViaGoogle(visible);
+  if (!translated || translated === visible) return "";
+  return formatMachineTranslatedName(originalName, translated);
+};
+
+const machineTranslateMarkup = async (value = "") => {
+  const source = normalizeTemplateBody(value);
+  if (!source) return "";
+  if (markupTranslationCache.has(source)) return markupTranslationCache.get(source);
+  const { output, tokens } = tokenizeMachineTranslation(source);
+  const translated = await translateTextViaGoogle(output);
+  const restored = untokenizeMachineTranslation(translated, tokens)
+    .replace(/\u00A0/gu, " ")
+    .replace(/\r\n?/gu, "\n")
+    .trim();
+  markupTranslationCache.set(source, restored);
+  return restored;
+};
+
 const findLatestTemplatePath = async () => {
   const candidates = (await fs.readdir(ROOT))
     .filter((fileName) => /^dnd5e-ko-hybrid-template-.*\.json$/u.test(fileName))
@@ -211,6 +330,20 @@ const translateName = (originalName, type, compendiumEntry) => {
   return formatBilingualName(originalName, translated);
 };
 
+const getTranslatedNameCandidate = async (currentValue, originalName, type, compendiumEntry) => {
+  let candidate = translateName(originalName, type, compendiumEntry);
+  const currentVisible = normalizeMachineText(currentValue);
+  if (
+    (!candidate || candidate === originalName || !hasKorean(candidate))
+    && (!currentVisible || !hasKorean(currentVisible))
+    && hasEnglish(originalName)
+  ) {
+    const machineCandidate = await machineTranslateName(originalName);
+    if (machineCandidate) candidate = machineCandidate;
+  }
+  return candidate;
+};
+
 const inferOriginalName = (currentName = "", currentBody = "") => {
   const englishTail = extractEnglishTail(currentName);
   if (englishTail) return englishTail;
@@ -227,8 +360,9 @@ const repairBrokenName = (currentName, currentBody, originalName, type, compendi
 };
 
 const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) => {
-  if (!originalBody) return "";
-  const visibleOriginal = stripMarkup(originalBody);
+  const sourceBody = normalizeTemplateBody(originalBody);
+  if (!sourceBody) return "";
+  const visibleOriginal = stripMarkup(sourceBody);
   if (hasKorean(visibleOriginal) && !hasEnglish(visibleOriginal)) return "";
 
   const candidates = [];
@@ -241,8 +375,8 @@ const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) 
     candidates.push(compendiumEntry._sharedDescription);
   }
 
-  const generated = store._translateGeneratedDescription(originalBody);
-  if (generated !== originalBody) candidates.push(generated);
+  const generated = store._translateGeneratedDescription(sourceBody);
+  if (generated !== sourceBody) candidates.push(generated);
 
   if (mode === "journalPages" && compendiumEntry?.text) {
     candidates.push(compendiumEntry.text);
@@ -251,6 +385,33 @@ const maybeBodyTranslation = (store, originalBody, type, compendiumEntry, mode) 
   return candidates
     .filter(Boolean)
     .sort((left, right) => translationScore(right) - translationScore(left))[0] ?? "";
+};
+
+const getTranslatedBodyCandidate = async (
+  store,
+  currentValue,
+  originalBody,
+  type,
+  compendiumEntry,
+  mode
+) => {
+  const sourceBody = normalizeTemplateBody(originalBody);
+  let candidate = maybeBodyTranslation(store, sourceBody, type, compendiumEntry, mode);
+  const currentVisible = stripMarkup(currentValue);
+  const candidateVisible = stripMarkup(candidate);
+  const originalVisible = stripMarkup(sourceBody);
+
+  if (
+    (!candidate || !hasKorean(candidateVisible))
+    && (!currentVisible || !hasKorean(currentVisible))
+    && originalVisible
+    && hasEnglish(originalVisible)
+  ) {
+    const machineCandidate = await machineTranslateMarkup(sourceBody);
+    if (machineCandidate) candidate = machineCandidate;
+  }
+
+  return candidate;
 };
 
 const ensureRecord = (currentEntries, uuid, labelKey) => {
@@ -319,12 +480,24 @@ const main = async () => {
     const sourceDescription = entry.originalDescription || record.description || "";
     if (!needsTranslationPass(sourceName, sourceDescription)) continue;
     const compendiumEntry = findAnyCompendiumEntry(compendium, sourceName);
-    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    const translatedName = await getTranslatedNameCandidate(
+      record.name,
+      sourceName,
+      entry.type,
+      compendiumEntry
+    );
     if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       actorNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "actors");
+    const translatedDescription = await getTranslatedBodyCandidate(
+      store,
+      record.description,
+      sourceDescription,
+      entry.type,
+      compendiumEntry,
+      "actors"
+    );
     if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       actorBodies += 1;
@@ -340,12 +513,24 @@ const main = async () => {
     const sourceDescription = entry.originalDescription || record.description || "";
     if (!needsTranslationPass(sourceName, sourceDescription)) continue;
     const compendiumEntry = findCompendiumEntry(compendium, entry.type, sourceName);
-    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    const translatedName = await getTranslatedNameCandidate(
+      record.name,
+      sourceName,
+      entry.type,
+      compendiumEntry
+    );
     if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       itemNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "items");
+    const translatedDescription = await getTranslatedBodyCandidate(
+      store,
+      record.description,
+      sourceDescription,
+      entry.type,
+      compendiumEntry,
+      "items"
+    );
     if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       itemBodies += 1;
@@ -371,12 +556,24 @@ const main = async () => {
       entry.type,
       sourceName
     );
-    const translatedName = translateName(sourceName, entry.type, compendiumEntry);
+    const translatedName = await getTranslatedNameCandidate(
+      record.name,
+      sourceName,
+      entry.type,
+      compendiumEntry
+    );
     if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       actorItemNames += 1;
     }
-    const translatedDescription = maybeBodyTranslation(store, sourceDescription, entry.type, compendiumEntry, "actorItems");
+    const translatedDescription = await getTranslatedBodyCandidate(
+      store,
+      record.description,
+      sourceDescription,
+      entry.type,
+      compendiumEntry,
+      "actorItems"
+    );
     if (shouldReplaceBody(record.description, translatedDescription, sourceDescription)) {
       record.description = translatedDescription;
       actorItemBodies += 1;
@@ -391,12 +588,24 @@ const main = async () => {
     const sourceName = entry.originalName || inferOriginalName(record.name, record.text);
     const sourceText = entry.originalText || record.text || "";
     if (!needsTranslationPass(sourceName, sourceText)) continue;
-    const translatedName = translateName(sourceName, entry.type, null);
+    const translatedName = await getTranslatedNameCandidate(
+      record.name,
+      sourceName,
+      entry.type,
+      null
+    );
     if (shouldReplaceName(record.name, translatedName, sourceName)) {
       record.name = translatedName;
       journalNames += 1;
     }
-    const translatedText = maybeBodyTranslation(store, sourceText, entry.type, null, "journalPages");
+    const translatedText = await getTranslatedBodyCandidate(
+      store,
+      record.text,
+      sourceText,
+      entry.type,
+      null,
+      "journalPages"
+    );
     if (shouldReplaceBody(record.text, translatedText, sourceText)) {
       record.text = translatedText;
       journalBodies += 1;
