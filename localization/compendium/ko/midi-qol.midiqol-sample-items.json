@@ -8,6 +8,9 @@
       "name": "산성 화살 - Acid Arrow",
       "description": "<p>빛나는 녹색 화살이 나타나 사거리 내의, 시전자가 지정한 목표로 날아갑니다. 명중하면 강한 산이 터집니다. 목표에게 원거리 주문 공격을 합니다. 명중 시, 목표는 즉시 4d4점의 산성 피해를 받으며, 목표의 다음 턴이 끝날 때 추가로 2d4점의 산성 피해를 받습니다. 빗나갈 시, 피해는 절반으로 줄어들며 다음 턴이 끝날 때는 아무런 피해도 받지 않습니다.</p><p><strong>상위시전.</strong> 3레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전한 경우, 2레벨을 기준으로 슬롯 레벨이 1 증가할 때마다 (피해와 추가 피해 모두) 1d4점씩 증가합니다.</p>"
     },
+    "Antitoxin v4": {
+      "description": "<p>이 액체 병을 마시는 생물은 1시간 동안 독에 대한 내성 굴림에 이점을 얻습니다. 언데드나 구조물에는 아무런 이점도 주지 않습니다.</p>"
+    },
     "Arcane Ward v4": {
       "description": "<p>2레벨부터 보호를 위해 자신 주위에 마법을 엮을 수 있습니다. 1레벨 이상의 포기 주문을 시전하면 주문의 마법 한 가닥을 동시에 사용하여 긴 휴식을 마칠 때까지 지속되는 마법의 와드를 자신에게 생성할 수 있습니다. 와드의 체력은 마법사 레벨의 두 배 + 지능 수정치에 해당합니다. 당신이 피해를 입을 때마다 와드는 대신 피해를 입습니다. 이 피해로 인해 와드의 체력이 0으로 줄어들면 남은 모든 부분을 가져갑니다.</p><p>와드의 체력이 0인 동안에는 피해를 흡수할 수 없지만 마법은 남아 있습니다. 1레벨 이상의 포기 주문을 시전할 때마다 와드는 주문 레벨의 두 배에 해당하는 내구도를 회복합니다.</p><p>한 번 와드를 생성하면 긴 휴식을 마칠 때까지 다시 생성할 수 없습니다.</p>"
     },
@@ -16,7 +19,8 @@
       "description": "<p>살육의 화살은 특정 종류의 생물을 죽이기 위한 마법 무기입니다. 일부는 다른 것보다 더 집중적입니다. 예를 들어, 용을 죽이는 화살과 청룡을 죽이는 화살이 모두 있습니다. 살육의 화살과 관련된 유형, 종족, 그룹에 속하는 생물이 화살로 인해 피해를 입는 경우, 그 생물은 DC 17 건강 내성 굴림을 해야 하며, 내성에 실패할 경우 추가로 6d10 관통 피해를 입거나, 성공할 경우 절반의 추가 피해를 입습니다.<br>살살의 화살이 생물에게 추가 피해를 입히면, 비마법 화살이 됩니다.</p>"
     },
     "Aura of Courage v4": {
-      "name": "오라 의 용기 - v4"
+      "name": "오라 의 용기 - v4",
+      "description": "<p>10레벨부터 당신과 당신 주위 10피트 내의 아군 생명체는 당신이 의식이 있는 동안에는 겁을 먹을 수 없습니다.</p>\n<p>18레벨에서 이 오라의 범위는 30피트로 증가합니다.</p>\n<p>Midi-qol: 작동하려면 활성 오라가 필요합니다</p>"
     },
     "Aura of Devotion - USE CPR": {
       "name": "오라 의 - Devotion - USE CPR",
@@ -31,7 +35,8 @@
       "description": "<p>치유 에너지가 당신으로부터 반사 30 피트의 오라로 끌어나갑니다. 주문이 접수될 때까지 이 오라는 당신을 이메일로 함께 이동합니다. 보너스 액션을 사용하면 오라에 있는 크리처 하나(당신 포함)가 2d6 체력을 회복하게 할 수 있습니다.</p><p></p><p>midi-qol: 주문을 시전할 때 \"오라 활성화\"를 선택하면 주문 슬롯이 소모되고 지속 시간이 지날 때까지 두 번째 활동 \"대상 치유\"가 활성화됩니다.</p>"
     },
     "Auto Sneak Attack 10.0.10": {
-      "name": "Auto Sneak 공격 10.0.10"
+      "name": "Auto Sneak 공격 10.0.10",
+      "description": "<p>이 기능을 액터에 추가하면 확인 대화 상자가 표시되지 않고 첫 번째 기회에 몰래 공격이 자동으로 사용됩니다.</p>"
     },
     "Banishment": {
       "name": "추방 - Banishment",
@@ -47,7 +52,8 @@
       "description": "<p>6레벨부터 다른 사람에게 시전하는 치유 주문은 자신도 치유합니다.</p><p>당신이 아닌 생물의 체력을 회복하는 1레벨 이상의 주문을 시전하면 2 + 주문 레벨에 해당하는 체력을 회복합니다. </p><p><em>**파운드리 참고: 치유 공식은 2로 설정되어 있습니다. 주문 레벨에서 수동으로 추가하십시오.</em></p><p><em>Midi-qol: 캐릭터에 기능을 추가하면 치유 주문이 2 + 주문 레벨 포인트를 해당 캐릭터에 복원합니다. 캐스터.</em></p>"
     },
     "Bracers of Archery v4": {
-      "name": "Bracers 의 - Archery v4"
+      "name": "Bracers 의 - Archery v4",
+      "description": "<p><em>놀라운 아이템, (조율 필요)</em></p>\n<p>이 팔보호구를 착용하는 동안 당신은 장궁과 단궁에 능숙해지며, 그러한 무기를 사용한 원거리 공격에 대한 피해 굴림에 +2 보너스를 얻습니다.</p>"
     },
     "Branding Smite v4": {
       "description": "<p>이 주문이 끝나기 전에 다음에 무기 공격으로 생물체를 공격하면 공격할 때 무기가 별의 빛으로 빛납니다. 공격은 대상에게 2d6의 추가 복사 피해를 주며, 투명해지면 눈에 띄게 되며, 대상은 5피트 반경 내에서 희미한 빛을 발산하며 주문이 끝날 때까지 투명화되지 않습니다. 1d6 증가합니다.</p><p>조명 효과를 수행하려면 Foundry v10과 호환되는 ATE가 필요합니다</p><p></p>"
@@ -56,15 +62,23 @@
       "name": "Broach 의 - Shielding v4",
       "description": "<p><em>경이로운 아이템, (조율 필요)</em></p><p>이 브로치를 착용하는 동안 강제 피해에 대한 저항력을 가지며 <em>@Compendium[dnd5e.spells.41JIhpDyM9Anm7cs]{Magic Missile}</em>로 인한 피해에 면역이 됩니다. Spell.</p><p><strong>midi-qol</strong>: 힘에 대한 피해 저항을 구현하고 액터가 \"Magic Missile\"이라는 주문의 대상이 되는 경우 아무 작업도 수행하지 않습니다.<br>12.4.15</p>"
     },
+    "Bullseye Lantern v4": {
+      "description": "<p>불스아이 랜턴은 60피트 원뿔에 밝은 빛을 비추고 추가 60피트에 대해서는 희미한 빛을 비춥니다. 일단 불이 붙으면 기름이 담긴 플라스크(1파인트) 위에서 6시간 동안 연소됩니다.</p>"
+    },
     "Chill Touch v4": {
       "name": "Chill 손길 - v4",
       "description": "<p>범위 내에 있는 생물의 공간에 유령 같은 해골 손을 만듭니다. 무덤의 오한으로 생물을 공격하기 위해 원거리 주문 공격을 가하십시오. 명중 시, 대상은 1d8 &Reference[necrotic]{강령} 구간이며, 다음 턴이 시작될 때까지 체력을 회복할 수 없습니다. 그때까지 손은 대상에 달라붙습니다.</p><p>언데드 대상을 공격하면 다음 턴이 끝날 때까지 공격 굴림에 불리한 영향을 받습니다.</p><p>이 주문의 피해는 5레벨(2d8), 11레벨(3d8), 17레벨에 도달하면 1d8만큼 증가합니다. (4d8).</p><p></p><p>Midi-qol: 11.0.7: 서로 다른 시간에 만료되므로 두 가지 효과가 생성됩니다</p>"
     },
+    "Choose Blessing v4": {
+      "description": "<p>dnd5e v4에서는 매크로 호출이 아닌 항목에 대한 여러 활동으로 쉽게 처리됩니다.</p>"
+    },
     "Circle of Power 11.3.17": {
-      "name": "Circle 의 Power 11.3.17"
+      "name": "Circle 의 Power 11.3.17",
+      "description": "<p>철자 텍스트가 SRD에 없습니다</p><p></p><p><strong>Midi-qol:</strong> 활성 오라가 필요합니다</p>"
     },
     "Darkvision (60 ft)": {
-      "name": "암시야 (60 - ft)"
+      "name": "암시야 (60 - ft)",
+      "description": "<p>당신은 기꺼이 생물을 터치하여 어둠 속에서 볼 수 있는 능력을 부여합니다. 지속 시간 동안 해당 생물은 60피트 범위의 암흑 시야를 갖습니다.</p><p></p><p>DAE: ATL을 사용하여 60피트의 암흑 시야를 설정합니다.</p>"
     },
     "Devil's Glaive v4": {
       "description": "전방 무기 공격: +5 명중, 사거리 10피트, 목표 하나. 적중: 8(1d10 + 3) 베기 구간입니다. 대상이 언데드나 구조물이 아닌 생물인 경우 DC 12 헌법 내성 굴림에 성공해야 하며 그렇지 않으면 지옥의 상처로 인해 매 턴 시작 시 5(1d10) 체력을 잃습니다. 악마가 이 공격으로 부상당한 대상을 공격할 때마다, 상처로 인한 피해는 5(1d10)씩 증가합니다. 모든 생명체는 성공적인 DC 12 지혜(의학) 체크를 통해 상처를 지혈하기 위한 조치를 취할 수 있습니다. 대상이 마법 치유를 받으면 상처도 닫힙니다."
@@ -73,35 +87,44 @@
       "description": "<p>2레벨부터 근접 무기 공격으로 생물을 공격하면 주문 슬롯 하나를 소비하여 무기의 감시 외에 대상에 빛나는 피해를 입힐 수 있습니다.</p><p>추가 피해는 1레벨 주문 슬롯의 경우 2d8에 1레벨보다 높은 각 주문 레벨당 1d8을 추가하여 최대 5d8.</p><p>대상이 언데드나 악마인 경우 피해는 1d8씩 증가하여 최대 6d8까지 증가합니다.</p><p> </p><p><strong>midi-qol:</strong></p><p>이 아이템은 롤링을 수행하는 매크로가 아이템에 바인딩되어 언데드 대상에 대한 추가 피해를 추가하는 \"아이템 매크로\" 기능을 사용합니다.</p><p> 업데이트: 소스에 따르면(Jeremy Crawford) 향상된 신성한 강타의 도우미 텍스트에도 불구하고 향상된 신성한 강타는 신성한 강타로 인한 피해를 증가시키지 않습니다.</p>"
     },
     "Dragon Slayer - Ammunition": {
-      "name": "드래곤 - Slayer - Ammunition"
+      "name": "드래곤 - Slayer - Ammunition",
+      "description": "<p><em>무기(단순 또는 무술), 희귀</em></p><p>이 마법 무기로 만든 공격 굴림과 피해 굴림에 +1 보너스를 얻습니다.</p><p>무기는 저장 실패 시 6d6의 추가 피해를 주거나 저장 시 절반의 피해를 입힙니다. 대상이 드래곤인 경우 무기 유형입니다.</p><p>Midi: 아이템을 사용하려면 드래곤 슬레이어 효과를 탄약 아이템으로 드래그하기만 하면 드래곤에게 추가 6d6 피해를 주며 저장 시 절반의 피해를 줍니다.</p><p>이는 기발한 아이디어가 많이 포함된 새로운 Dungeons Master's Guide 주조소 프리미엄 콘텐츠의 아이디어를 기반으로 합니다. 그것.</p>"
     },
     "Dragon Slayer - Weapon": {
-      "name": "드래곤 - Slayer - Weapon"
+      "name": "드래곤 - Slayer - Weapon",
+      "description": "<p><em>무기(단순 또는 무술), 희귀</em></p><p>이 마법 무기로 만든 공격 굴림과 피해 굴림에 +1 보너스를 얻습니다.</p><p>대상이 무기인 경우 무기는 무기 유형의 추가 3d6 피해를 입힙니다. Dragon.</p><p>Midi: 아이템을 사용하려면 드래곤 슬레이어 효과를 무기에 드래그하면 드래곤에게 추가 3d6 피해를 줍니다.</p><p>이것은 기발한 아이디어가 많이 포함된 새로운 Dungeons Master's Guide 파운드리 프리미엄 콘텐츠의 아이디어를 기반으로 합니다.</p><p>Midi 버전 12.4.16</p>"
     },
     "Dragon Slayer - Weapon  Trigger Activity": {
-      "name": "드래곤 - Slayer - Weapon Trigger Activity"
+      "name": "드래곤 - Slayer - Weapon Trigger Activity",
+      "description": "<p><em>무기(단순 또는 무술), 희귀</em></p><p>이 마법 무기로 만든 공격 굴림과 피해 굴림에 +1 보너스를 얻습니다.</p><p>대상이 무기인 경우 무기는 무기 유형의 추가 3d6 피해를 입힙니다. Dragon.</p><p>Midi: 아이템을 사용하려면 드래곤 슬레이어 효과를 무기에 드래그하면 드래곤에게 추가 3d6 피해를 줍니다.</p><p>이는 기발한 아이디어가 많이 포함된 새로운 Dungeons Master's Guide 파운드리 프리미엄 콘텐츠의 아이디어를 기반으로 합니다.</p>"
     },
     "Dragon Slayer Longsword v4": {
-      "name": "드래곤 - Slayer Longsword v4"
+      "name": "드래곤 - Slayer Longsword v4",
+      "description": "<p><em>(조율 필요)</em></p><p>이 마법 무기로 하는 공격 및 피해 굴림에 +1 보너스를 얻습니다.</p><p>이 무기로 드래곤을 공격하면 드래곤은 무기 유형의 추가 3d6 피해를 입습니다. 이 무기의 목적에 따라 \"드래곤\"은 드래곤 거북이와 와이번을 포함하여 드래곤 유형의 모든 생물을 의미합니다.</p><p><strong>midi-qol</strong>: dnd5e 3.2+</p> 필요"
     },
     "Emboldening Bond v4": {
       "name": "Emboldening 결속 - v4",
       "description": "<p>Emboldeing Bond는 SRD가 아니므로 텍스트를 채워야 합니다.</p><p><br>구현됨:<br>이 기능을 롤링하면 대상 토큰에 턴 시작 시 1회 사용 보너스를 부여하여 모든 공격/저장.체크에 1d4를 추가하고 다음 시작 시까지 제거되는 효과를 제공합니다. 회전.</p><p>dnd5e v4<br>구현되지 않음: <br> 30피트 이내에 다른 채권자가 필요합니다.</p>"
     },
     "Fey Ancestry (Elven)": {
-      "name": "요정 혈통 (Elven)"
+      "name": "요정 혈통 (Elven)",
+      "description": "<p>매혹에 대한 내성 굴림에 이점이 있으며 마법은 당신을 잠들게 할 수 없습니다.</p><p><strong>midi-qol</strong>: Charmed라는 효과를 적용하거나 변경 효과 값(즉, statusEffect Charmed)으로 Charmed를 갖는 아이템 롤의 모든 저장은 다음에서 수행됩니다. 장점.</p>"
     },
     "Fleet of Foot 10.0.10": {
-      "name": "Fleet 의 Foot 10.0.10"
+      "name": "Fleet 의 Foot 10.0.10",
+      "description": "<h3><p><small><em>Race: Wood Elf</em></small></p><p></p><p>기본 걷기 속도가 <span>s에서 35로 증가합니다. 피트.</span></p><p></p></h3>"
     },
     "Giant Spider Bite": {
+      "name": "거대 거미 물림 - Giant Spider Bite",
       "description": "<section class=\"secret\" id=\"secret-5uPdkour27EIIFF3\"><p><em>근접 무기 공격:</em><strong>+5 명중,</strong>, <strong>5 ft.,</strong>처 크리 하나. 적중: <strong>7 (1d8 + 3) </strong><em><strong>관통 피해</strong></em>.</p><p>대상은 <strong>DC 11 헌법</strong> 절약을 해야 합니다. 던지기, 저장 실패 시 <strong>9 (2d8) </strong><em><strong>독 피해</strong></em>를 받거나, 성공 시 절반의 피해를 입습니다. <em>독 피해</em>가 대상의 체력을 0으로 줄이면 대상은 안정적이지만 체력을 회복한 후에도 1시간 동안 중독되고, 이런 식으로 중독된 동안 마비됩니다.</p></section><p>자이언트 거미는 바이트로 공격합니다. 대상은 <strong>Constitution</strong> 저장 던져야 합니다.</p><p>이것은 레거시(2014) 규칙에 대한 것입니다</p>"
     },
     "Goggles of Night (Item Macro Light Amplification) 10.0.37": {
-      "name": "Goggles 의 밤 (Item Macro Light Amplification) 10.0.37"
+      "name": "Goggles 의 밤 (Item Macro Light Amplification) 10.0.37",
+      "description": "<p><em>놀라운 아이템</em></p><p>이 어두운 렌즈를 착용하면 60피트 범위까지 암흑시야를 볼 수 있습니다. 이미 암흑시야가 있는 경우 고글을 착용하면 범위가 60피트 증가합니다.</p><p></p><p>Midi-qol: 아이템을 장착/장착 해제하면 활성화됩니다. 이 버전은 엄밀히 말하면 정확하지는 않습니다. 암흑시야 대신 빛 증폭을 허용하지만 훨씬 더 멋집니다. 마음에 들지 않으면 매크로를 편집하세요.</p>"
     },
     "Goggles of Night (RAW) v4": {
-      "name": "Goggles 의 밤 (RAW) - v4"
+      "name": "Goggles 의 밤 (RAW) - v4",
+      "description": "<p><em>놀라운 아이템</em></p><p>이 어두운 렌즈를 착용하면 60피트 범위까지 암흑시야를 볼 수 있습니다. 이미 암흑시야가 있는 경우 고글을 착용하면 범위가 60피트 증가합니다.</p><p></p><p>Midi-qol: 아이템을 장착/장착 해제하면 활성화됩니다. 이 버전은 엄밀히 말하면 정확하지는 않습니다. 암흑시야 대신 빛 증폭을 허용하지만 훨씬 더 멋집니다. 마음에 들지 않으면 매크로를 편집하세요.</p>"
     },
     "Greater Invisibility v4": {
       "description": "<p>당신이 접촉한 생물은 주문이 끝날 때까지 투명해집니다. 대상이 입고 있거나 소지하고 있는 모든 것은 대상의 몸에 있는 한 보이지 않습니다. 주문을 공격하거나 시전하는 대상에 대해 주문이 종료됩니다.</p><p><strong>상위 레벨 시전.</strong> 이 주문을 3레벨로 주문하여 시전하면, 2레벨을 이동 레벨마다 대상 크리처를 더 많은 수 있습니다.</p><p> * 이 버전의 Greater Invisibility는 핵심 Invisible 상태 효과를 사용합니다. 파운드리 비전 모드</p>와 상호작용합니다."
@@ -129,7 +152,7 @@
       "description": "<p>당신이 접촉한 생물은 주문이 끝날 때까지 투명해집니다. 대상이 입고 있거나 소지하고 있는 모든 것은 대상의 몸에 있는 한 보이지 않습니다. 주문을 공격하거나 시전하는 대상에 대해 주문이 종료됩니다.</p><p><strong>상위 레벨 시전.</strong> 이 주문을 3레벨로 주문하여 시전하면, 2레벨을 이동 레벨마다 대상 크리처를 더 많이 사용할 수 있습니다.</p><p data-pm-slice=\"1 1 []\">* 이 버전의 Invisibility는 핵심 투명 상태 효과를 사용하며 파운드리 비전 모드와 상호 작용</p>"
     },
     "Lantern v4": {
-      "description": "[object Object]"
+      "description": "[객체 객체]"
     },
     "Lay on Hands - USE CPR INSTEAD": {
       "description": "<p>당신의 축복받은 손길은 상처를 치유합니다. 당신은 긴 휴식을 취하면 다시 차오르는 치유력 풀을 지닙니다. 이 풀로 당신은 팔라딘 레벨 × 5와 같은 총합의 HP를 회복시킬 수 있습니다.</p><p>행동으로 크리처 하나에 접촉해 치유력 풀에서 힘을 끌어와, 그 풀에 남아 있는 최대치까지 원하는 만큼의 HP를 회복시킬 수 있습니다.</p><p>또는 치유력 풀에서 HP 5점을 소모해 목표 하나의 질병 한 가지를 치료하거나 목표에게 영향을 주는 독 한 가지를 중화할 수 있습니다. 치유의 손길 한 번으로 여러 질병을 치료하고 여러 독을 중화할 수 있지만, 각각에 대해 HP를 따로 소모해야 합니다.</p><p>이 특성은 언데드와 구조물에게는 아무 효과가 없습니다.</p>"
@@ -139,10 +162,12 @@
       "description": "<p> [[lookup @details.type.config.label lowercase]]의 내성 굴림이 실패한 경우, 대신 성공했다고 간주할 수 있습니다.</p>"
     },
     "Life Stealer - Weapon": {
-      "name": "생명 - Stealer - Weapon"
+      "name": "생명 - Stealer - Weapon",
+      "description": "<p><em>무기(모든 단순 또는 무술), 희귀</em></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">이 마법 무기로 생물을 공격하고 공격 굴림에서 20을 굴릴 때, 대상이 구조물이나 언데드가 아닌 경우 해당 대상은 추가로 3d6의 괴사 피해를 입습니다. 추가 피해를 입힌 만큼 임시 체력을 얻습니다.</span></p><p>Midi: 아이템을 사용하려면 Life Stealer 효과를 무기에 드래그하기만 하면 자연적으로 20이 나올 때 추가 피해를 줍니다.</p><p>이것은 기발한 아이디어가 많이 포함된 새로운 Dungeons Master's Guide 파운드리 프리미엄 콘텐츠의 아이디어를 기반으로 합니다. 그것.</p>"
     },
     "Longsword of Life Stealing v4": {
-      "name": "Longsword 의 생명 - Stealing v4"
+      "name": "Longsword 의 생명 - Stealing v4",
+      "description": "<p><em>(조율 필요)</em></p><p>이 마법 무기로 생물을 공격하고 공격 굴림에서 20을 굴릴 때, 대상이 구조물이나 언데드가 아닌 경우 해당 대상은 추가로 3d6의 괴사 피해를 입습니다. 추가 피해를 입힌 만큼 임시 체력을 얻습니다.</p><p><strong>midi-qo</strong>l: dnd5e 3.2+</p> 필요"
     },
     "Longsword of Sharpness v12.4.15": {
       "name": "Longsword 의 Sharpness v12.4.15",
@@ -156,6 +181,10 @@
       "name": "Longsword 의 - Wounding v4",
       "description": "<p><em>(조정 필요)</em></p>\n<p>이 무기의 피해로 인해 손실된 체력은 재생, 마법 또는 기타 수단이 아닌 짧거나 긴 휴식을 통해서만 회복할 수 있습니다.</p>\n<p>턴에 한 번, 이 마법 무기를 사용하여 생물에게 공격을 가하면 대상에게 상처를 입힐 수 있습니다. 부상당한 생명체의 턴이 시작될 때마다 상처를 입힐 때마다 1d4의 괴사 피해를 입으며 DC 15 헌법 내성굴림을 굴려 성공 시 자신에 대한 모든 상처의 효과를 끝낼 수 있습니다. 대안으로, 부상당한 생물이나 그로부터 5피트 이내의 생물은 행동을 사용하여 DC 15 지혜(의학) 체크를 하고 성공 시 그러한 상처의 효과를 종료할 수 있습니다.<br><br>이 버전은 아이템 amcro를 사용하고 턴당 한 번 규칙을 시행합니다.</p>"
     },
+    "Lucky": {
+      "name": "운이 좋은 - Lucky",
+      "description": "<p>행운의 위업은 SRD의 일부가 아니므로 설명을 직접 입력해야 합니다.</p><p></p><p><strong>액터에 추가할 때 이 기능의 이름을 Lucky로 바꿔야 합니다</strong></p>"
+    },
     "Mace of Disruption v4": {
       "name": "Mace 의 - Disruption v4",
       "description": "<p>(<em>조율 필요</em>)</p><p>이 마법 무기로 악마나 언데드를 공격하면 해당 생물은 추가로 2d6 방사능을 얻습니다. 이 피해를 입은 후 대상의 체력이 25점 이하인 경우 DC 15 지혜 내성 굴림에 성공하지 않으면 파괴됩니다. 움직여 굴림에 성공하면, 그 생물은 당신의 다음 턴이 끝날 때까지 당신을 두려워하게 됩니다.</p><p>당신이 이 무기를 들고 있는 동안, 이 무기는 20피트 반경에 밝은 빛을 비추고 추가 20피트에 대해서는 희미한 빛을 비춥니다.</p>"
@@ -164,11 +193,27 @@
       "name": "Mace 의 - Disruption v4 - no macro",
       "description": "<p>(<em>조율 필요</em>)</p><p>이 마법 무기로 악마나 언데드를 공격하면 해당 생물은 추가로 2d6 방사능을 얻습니다. 이 피해를 입은 후 대상의 체력이 25점 이하인 경우 DC 15 지혜 내성 굴림에 성공하지 않으면 파괴됩니다. 움직여 굴림에 성공하면, 그 생물은 당신의 다음 턴이 끝날 때까지 당신을 두려워하게 됩니다.</p><p>당신이 이 무기를 들고 있는 동안, 이 무기는 20피트 반경에 밝은 빛을 비추고 추가 20피트에 대해서는 희미한 빛을 비춥니다.</p>"
     },
+    "Make Miss": {
+      "name": "미스 만들기 - Make Miss"
+    },
     "Mass Cure Wounds v4": {
       "description": "<p>치유 에너지의 파동이 범위 내에서 선택한 지점에서 씻겨 나갑니다. 해당 지점을 중심으로 하는 반경 30피트 구체에서 최대 6개의 생물을 선택합니다. 각 대상은 3d8 + 주문 시전 능력 수정치에 해당하는 체력을 회복합니다. 이 주문은 언데드나 구조물에는 효과가 없습니다.</p><p><strong>상위 레벨 시전.</strong> 6레벨 이상의 주문 슬롯을 사용하여 이 주문을 시전하면 5레벨 이상의 슬롯 레벨마다 치유량이 1d8씩 증가합니다.</p>"
     },
+    "Mortar": {
+      "name": "모르타르 - Mortar",
+      "description": "<p><em>악마의 축복, 천상의 유증, 미친 실험, 숙련된 기술 등을 통해 이 무기는 무기를 소지한 사람에게 더 많은 유혈 사태를 가져올 수 있도록 강화되었습니다.</em></p>\n<p>이 마법 무기를 사용한 공격 및 피해 굴림에 보너스가 있습니다.</p>"
+    },
     "Multiattack Automation": {
+      "name": "다중 공격 자동화 - Multiattack Automation",
       "description": "<p>다중 공격이 있는 생물에 대한 모든 공격 버튼을 클릭하는 것이 너무 지루하다고 생각하는 게으른 GM을 위한 것입니다.<br><br>다중 공격 자동화 기능을 몬스터에 추가한 다음 다중 공격을 클릭하면 대상에 대한 모든 공격을 실행할 수 있습니다.<br><br>12마리의 몬스터에 대해 이것을 테스트했는데 작동하는 것 같지만 한계가 있습니다. 문제가 발생할 경우 알려 주시기 바랍니다.</p>"
+    },
+    "Nature's Ward 10.0.10": {
+      "name": "자연의 와드 10.0.10 - Nature's Ward 10.0.10",
+      "description": "<p>10레벨에 도달하면 정령이나 요정에 의해 매혹되거나 겁을 먹을 수 없으며 독과 질병에 면역이 됩니다.</p>"
+    },
+    "Never Target": {
+      "name": "대상 지정 안 함 - Never Target",
+      "description": "<p>midi-qol: 11.0.7 액터를 대상으로 지정할 수 없게 만듭니다</p>"
     },
     "Power Word Stun v4": {
       "description": "<p>당신은 범위 안에 보이는 크리처 하나의 마음을 압도하여 멍하게 만들 수 있는 힘의 말을 합니다. 대상의 체력이 150 이하인 경우 @Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{stunned}입니다. 그렇지 않으면 주문은 효과가 없습니다.</p><p>@Compendium[dnd5e.rules.w7eitkpD7QQTB6j0]{stunned} 대상은 각 턴이 끝날 때 건강 내성 굴림을 해야 합니다. 진공 굴림에 성공하면 이 놀라운 효과가 종료됩니다.</p><p></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;background-color:rgb(102, 102, 102);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Midi-qol:</strong>에는 DAE 및 편리한 효과가 필요합니다.</span></p>"
@@ -177,14 +222,37 @@
       "description": "<p>전투에서는 원시적인 잔인함으로 싸웁니다. 자신의 차례에 보너스 행동으로 분노를 입력할 수 있습니다. 격노하는 동안 중갑옷을 착용하지 않으면 다음과 같은 이점을 얻습니다.</p>\n<ul>\n<li>\n<p>당신은 근력 체크와 근력 내성 굴림에 유리합니다.</p>\n</li>\n<li>\n<p>힘을 사용하여 근접 무기 공격을 하면 야만인 테이블의 분노 피해 열에 표시된 대로 야만인으로서 레벨을 얻을 때 증가하는 피해 굴림에 보너스를 얻습니다.</p>\n</li>\n<li>\n<p>당신은 타격, 찌르기, 베기에 대한 저항력을 가지고 있습니다.</p>\n</li>\n</ul>\n<p>주문을 시전할 수 있으면 분노하는 동안에는 주문을 시전하거나 집중할 수 없습니다. </p>\n<p>당신의 분노는 1분간 지속됩니다. 당신이 의식을 잃거나 턴이 끝나고 마지막 턴 이후로 적대적인 생물을 공격하지 않았거나 그 이후로 피해를 입지 않은 경우에는 일찍 종료됩니다. 당신은 또한 당신의 차례에 보너스 행동으로 분노를 끝낼 수도 있습니다. </p>\n<p>야만인 테이블의 분노 열에 표시된 야만인 레벨에 표시된 횟수만큼 분노한 후에는 다시 분노하기 전에 긴 휴식을 취해야 합니다.</p>"
     },
     "Rakish Audacity": {
+      "name": "경박한 대담함 - Rakish Audacity",
       "description": "<p>1레벨부터 당신은 미묘하게 공격하고 적의 주의를 분산시키는 방법을 알고 있습니다. 턴당 한 번, 공격 굴림에 이점이 있는 경우 공격으로 맞은 크리처 하나에게 추가로 [[/r 1d6]] 피해를 입힐 수 있습니다. 공격은 기교나 원거리 무기를 사용해야 합니다.</p><p>대상의 다른 적이 5피트 이내에 있고, 그 적이 <a href=\"https://5e.tools/conditionsdiseases.html#incapacitated_phb\">무능력화되지 않았으며</a>, 그리고 공격 굴림에 불이익이 없다면 공격 굴림에 이점이 필요하지 않습니다.</p><p>추가 피해량이 증가합니다. Rogue 테이블의 Sneak Attack 열에 표시된 대로 이 클래스에서 레벨을 얻으면 됩니다.</p><p></p>"
     },
     "Regeneration": {
       "name": "재생 - Regeneration",
       "description": "<section class=\"secret\"><p>적어도 <strong>1HP</strong>가 남아 있다면, [[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p></section><p>[[lookup @name lowercase]] 의 턴이 시작될 때 대상은 <strong>10HP</strong>를 회복합니다.</p>"
     },
+    "Regeneration (Activity Only)": {
+      "name": "재생(활동 전용) - Regeneration (Activity Only)",
+      "description": "<section class=\"secret\"><p>{생물}은 적어도 <strong>1 체력을 가지고 있는 경우 턴 시작 시 <strong>10 체력</strong>을 회복합니다</strong>.</p></section><p>{생물}이 체력을 회복합니다 턴 시작 시 <strong>10 체력</strong>.</p>"
+    },
+    "Regeneration (activity over time)": {
+      "name": "재생(시간 경과에 따른 활동) - Regeneration (activity over time)",
+      "description": "<section class=\"secret\"><p>[[lookup @name lowercase]]는 적어도 <strong>1 체력이 있는 경우 턴 시작 시 <strong>10 체력</strong>을(를) 회복합니다.</strong>.</p></section><p>[[lookup @name 소문자]]는 턴 시작 시 <strong>10 체력</strong>을 회복합니다.</p>"
+    },
     "Regeneration v4": {
-      "name": "재생 - v4"
+      "name": "재생 - v4",
+      "description": "<section class=\"secret\"><p>{생물}은 적어도 <strong>1 체력을 가지고 있는 경우 턴 시작 시 <strong>10 체력</strong>을 회복합니다</strong>.</p></section><p>{생물}이 체력을 회복합니다 턴 시작 시 <strong>10 체력</strong>.</p>"
+    },
+    "Retribution v4": {
+      "description": "<p>공격을 받으면 공격자에게 피해를 줍니다.</p>"
+    },
+    "Shield v4": {
+      "description": "<p>마법의 힘의 장벽이 나타나 당신을 보호합니다. 다음 턴이 시작될 때까지 당신은 유발 공격을 포함하여 AC에 +5 보너스를 받고 <strong>마법 미사일</strong>.</p><p><strong>midi-qol</strong>으로 인한 피해를 입지 않습니다: verison 11.0.13</p>"
+    },
+    "Shove": {
+      "name": "밀다 - Shove",
+      "description": "<p><em>이 기능은 이름을 바꿔도 안전합니다.</em></p><p>midi-qol: 11.0.7</p>"
+    },
+    "Slayer's Prey": {
+      "name": "슬레이어의 먹이 - Slayer's Prey"
     },
     "Slayer's Prey  v4": {
       "name": "Slayer's Prey v4"
@@ -201,11 +269,21 @@
       "name": "영혼 - Guardians v4",
       "description": "<p>당신은 당신을 보호하기 위해 영혼을 불러냅니다. 그들은 지속 시간 동안 당신 주위를 15피트 거리로 날아갑니다. 당신이 선하거나 중립적이라면, 그들의 스펙트럼 형태는 천사적이거나 요정처럼 보입니다(당신의 선택). 당신이 사악하다면 그들은 사악해 보입니다.</p>\n<p>이 주문을 시전하면 해당 주문의 영향을 받지 않는 생물을 원하는 만큼 지정할 수 있습니다. 영향을 받은 생물의 속도는 해당 지역에서 절반으로 줄어들고 생물이 턴에 처음으로 해당 지역에 들어가거나 그곳에서 턴을 시작할 때 지혜 내성 굴림을 해야 합니다. 해서 굴림에 실패하면, 그 생물은 3d8의 복사 피해(당신이 선하거나 중립인 경우) 또는 3d8의 괴사 피해(당신이 악한 경우)를 받습니다. 특수굴림에 성공하면, 그 생물은 절반만큼만 가져갑니다.</p>\n<p><strong>상위 레벨 시전.</strong> 이 주문을 4레벨 이상 주문으로 시전하면, 3레벨을 넘어서는 레벨마다 1d8씩 증가합니다.</p>\n<p>Midi-qol: 작동하려면 활성 오라가 필요하며<strong>는 전투 활성이 있다고 가정합니다</strong>.<br>다음을 지원합니다:</p>\n<ol>\n<li>플레이어가 자신의 차례에 영혼 수호자 범위에 들어가면 저장하고 가져갑니다.</li>\n<li>영향을 받은 토큰 턴이 시작될 때 그들은 저장하고 &amp;&amp; 가져갑니다.</li>\n<li>효과 범위 밖으로 이동하면 더 이상 피해를 입지 않습니다.</li>\n<li>만료/집중력 상실 시 모든 효과가 제거됩니다.</li>\n<li>주문 크기 조정은 자동으로 지원됩니다.</li>\n<li>자동 애니메이션의 경우 초기 캐스팅에서만 애니메이션이 생성됩니다.</li>\n</ol>"
     },
+    "Toll the Dead v4": {
+      "description": "<p class=\"Core-Styles_Core-Body\">설명을 직접 추가해야 합니다.</p>"
+    },
+    "Uncanny Dodge v4": {
+      "description": "<p>5레벨부터 눈에 보이는 공격자가 공격으로 당신을 공격할 때, 당신은 반응을 이용해 공격의 피해를 절반으로 줄일 수 있습니다.</p>"
+    },
     "Warding Bond v4": {
       "name": "Warding 결속 - v4",
       "description": "<p>이 주문은 당신이 만지는 의지가 있는 생물을 보호하고 주문이 끝날 때까지 당신과 대상 사이에 신비로운 연결을 만듭니다. 대상이 당신으로부터 60피트 이내에 있는 동안 AC 및 내성 굴림에 +1 보너스를 얻고 모든 먼 곳에 저항을 갖습니다. 또한, 피해를 입을 때마다 같은 양만큼만 받습니다.</p><p>HP가 0이 되거나 대상과 60피트 이상 떨어지면 주문이 종료됩니다. 연결된 생물 중 하나에 주문이 다시 시전되면 종료됩니다. 또한 주문을 행동으로 해제할 수도 있습니다.</p>"
     },
+    "Warding Flare v4": {
+      "description": "<p>설명은 SRD의 일부가 아니므로 직접 입력해야 합니다.</p>"
+    },
     "Wounding Weapon": {
+      "name": "부상 무기 - Wounding Weapon",
       "description": "<p><em>무기(Any Simple or Martial), </em></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">이 무기의 피해로 인해 손실된 체력은 재생, 마법 또는 기타 방법이 아닌 짧거나 긴 휴식을 통해서만 회복될 수 있습니다. </span></p><p style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);margin:0.5em 0px;color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(248, 244, 241);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:'Roboto Condensed', sans-serif\">턴에 한 번, 이 마법 무기를 사용하는 공격으로 생물을 공격하면 대상에게 상처를 입힐 수 있습니다. 부상당한 생명체의 턴이 시작될 때마다 상처를 입힐 때마다 1d4의 괴사 피해를 입으며 DC 15 헌법 내성굴림을 굴려 성공 시 자신에 대한 모든 상처의 효과를 끝낼 수 있습니다. 대안으로, 부상당한 생물이나 그로부터 5피트 이내에 있는 생물은 행동을 사용하여 DC 15 지혜(의학) 체크를 하고 성공 시 그러한 상처의 효과를 종료할 수 있습니다.</span></p><p>Midi: 아이템을 사용하려면 부상 무기 효과를 무기에 대고 성공적인 명중은 대상에게 부상 효과를 적용하고(턴당 최대 한 번) 각 턴에 대상에게 출혈을 막기 위해 내성굴림을 굴리게 합니다. 저장이 이루어지지 않으면 출혈 피해가 적용됩니다.<br>여러 스택을 지원합니다.<br><br><span style=\"font-family:'Roboto Condensed', sans-serif\">이는 기발한 아이디어가 많이 포함된 새로운 Dungeons Master's Guide 파운드리 프리미엄 콘텐츠의 아이디어를 기반으로 합니다.</span></p>"
     }
   }

@@ -1,8 +1,29 @@
 {
   "label": "Active Tile Macros",
   "entries": {
+    "Activate all Tiles": {
+      "name": "모든 타일 활성화 - Activate all Tiles"
+    },
     "Damage From Attack": {
       "name": "Damage From 공격"
+    },
+    "Generate Macro from Tile": {
+      "name": "타일에서 매크로 생성 - Generate Macro from Tile"
+    },
+    "Hover Over Script": {
+      "name": "스크립트 위에 마우스를 올리면 - Hover Over Script"
+    },
+    "Remove Corrupted Conditions": {
+      "name": "손상된 조건 제거 - Remove Corrupted Conditions"
+    },
+    "Setup Token Move Tile": {
+      "name": "토큰 이동 타일 설정 - Setup Token Move Tile"
+    },
+    "Teleport to a Random Location": {
+      "name": "무작위 위치로 순간이동 - Teleport to a Random Location"
+    },
+    "Token Move Tile": {
+      "name": "토큰 이동 타일 - Token Move Tile"
     }
   }
 }

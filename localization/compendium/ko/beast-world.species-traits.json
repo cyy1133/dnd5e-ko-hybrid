@@ -2,42 +2,91 @@
   "label": "Species Traits",
   "entries": {
     "A Head for Knots": {
-      "name": "매듭에 밝은 머리 - A Head for Knots"
+      "name": "매듭에 밝은 머리 - A Head for Knots",
+      "description": "<p>수달은 선박의 장비를 쉽게 시각화할 수 있습니다. 로프를 사용하기 위해 수행하는 민첩성 또는 지능 검사에 대해 숙련도 보너스가 두 배가 됩니다.</p>"
     },
     "A Mean Right Hook": {
-      "name": "매서운 오른손 훅 - A Mean Right Hook"
+      "name": "매서운 오른손 훅 - A Mean Right Hook",
+      "description": "<p>나무늘보는 기어오르거나 싸울 때 사용할 수 있도록 길고 갈고리 모양의 발톱을 가지고 있습니다. 게다가, 당신의 발톱은 비무장 공격에 사용할 수 있는 천연 무기입니다. 명중 시, 비무장 공격의 일반적인 타격 피해 대신 1d6 + 힘 수정치에 해당하는 베기 피해를 입힙니다.</p>"
     },
     "A Mind Outside the Box": {
-      "name": "틀을 벗어난 정신 - A Mind Outside the Box"
+      "name": "틀을 벗어난 정신 - A Mind Outside the Box",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">서로 다른 리고닌 아종은 독특한 관점을 공유합니다. 특정 스킬의 사용을 허용하지 않는 지능, 지혜, 카리스마 판정을 하면 능숙한 것으로 간주됩니다.</span></p>"
     },
     "Acid Breath": {
       "name": "산성 브레스 - Acid Breath",
       "description": "<section class=\"secret\"><p> [[lookup @details.type.config.label lowercase]] 타입은 직선으로 60ft, 5ft 너비 범위에 산성 물질을 뿜어냅니다. </p><p>해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 18 민첩</strong> 내성 굴림을 하여 실패하면 <strong>54(12d8)점의 <em>산성 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다. </p></section><p> [[lookup @details.type.config.label lowercase]] 타입은 직선으로 60ft, 5ft 너비 범위에 산성 물질을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
+    "Ageless": {
+      "name": "영원한 - Ageless",
+      "description": "<p>당신은 부자연스러운 속도로 당신을 노화시키는 모든 효과에 면역입니다.</p>"
+    },
+    "Alert Sleeper": {
+      "name": "경고 슬리퍼 - Alert Sleeper",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">고양이는 수면과의 특이한 관계를 통해 폭력적인 수단으로 무력화되더라도 야수 세계와 꿈 세계 사이의 경계를 넘나들 수 있습니다. 당신이 무의식 상태에 있을 때에도 당신은 주변 환경을 계속 인식하고 있습니다. 당신은 듣는 것을 기억하지만 볼 수는 없습니다. 또한, 비마법적 수면 상태에 있을 때, 듣는 모든 것에 반응하여 깨어날 수 있습니다.</span></p>"
+    },
+    "Altered Arcana": {
+      "name": "변경된 아르카나 - Altered Arcana",
+      "description": "<p>당신은 마법사 클래스에서 원하는 두 가지 Metamagic 옵션을 얻습니다. 옵션에 달리 명시되지 않는 한 주문을 시전할 때 주문에 하나의 Metamagic 옵션만 사용할 수 있습니다. 능력 점수 향상 기능을 부여하는 레벨에 도달할 때마다 이러한 Metamagic 옵션 중 하나를 소서러 클래스의 다른 옵션으로 교체할 수 있습니다.</p><p>Metamagic에 소비할 수 있는 마법 포인트 4점을 얻으며, 이 포인트는 다른 소스에서 보유한 마법 포인트에 추가됩니다. 긴 휴식을 마치면 소모한 마법 포인트를 모두 회복합니다. 11레벨에 도달하면 소서러 클래스에서 또 다른 Metamagic 옵션과 2개의 추가 마법 포인트를 얻습니다. 이 특성에서 최대 6점을 얻을 수 있습니다.</p>"
+    },
+    "Ancestral Librarian": {
+      "name": "고대 사서 - Ancestral Librarian",
+      "description": "<p>선비 용의 눈은 글의 지혜를 마시기 위해 태어났습니다. 신비, 역사, 의학, 자연, 종교에 능숙해지면 이러한 기술 중 다른 하나에도 능숙해집니다. 추가적으로, 당신은 정상 속도의 5배 속도로 읽고, 정상 속도의 5배 속도로 주문서를 주문서에 복사할 수 있습니다.</p>"
+    },
+    "Arcane Alacrity": {
+      "name": "신비한 기민함 - Arcane Alacrity",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">비전의 불꽃은 셀레린의 반사 신경을 자연 법칙의 미묘한 변화에 맞춰 조정합니다. 주문 및 기타 마법 효과에 대한 민첩 내성 굴림에 이점이 있습니다.</span></p>"
+    },
     "Armaments of the First": {
       "name": "최초의 무기 - Armaments of the First",
       "description": "<p><span style=\"font-family:Signika, sans-serif\">모든 서바인은 조상의 천연 무기 중 하나를 선물로 받았습니다. @UUID[Compendium.beast-world.species-traits.Item.PvMORczp5PEhrfwN]{Hoof Stomp} 및 @UUID[Compendium.beast-world.species-traits.Item.CI0i78FAZfxEV4MY]{뿔받기 - Gore} 공격이 있습니다(뿔이 있는 경우 선택 사항입니다). 이 공격은 1d6 피해에 힘 수정치를 더한 피해를 입힙니다. 발굽 구르기는 강타 피해를 입히고, 유혈 공격은 관통 피해를 입힙니다.</span></p>"
     },
+    "Astral Echoes": {
+      "name": "아스트랄 메아리 - Astral Echoes",
+      "description": "<p>박쥐의 목소리는 동시에 두 세계에 공명하며, 반향되는 소리를 듣기 위해 아스트랄 톤으로 말할 수 있습니다. 보너스 액션으로 비스트 월드에서는 조용하지만 아스트랄해에서는 큰 비명을 지르는 소리를 낼 수 있습니다. 당신으로부터 120피트 이내를 가로지르는 아스트랄 바다 부분에 있는 모든 것(예: 에테르성 주문을 사용하는 생물)은 당신의 다음 턴이 끝날 때까지 당신에게 보입니다. 아스트랄 바다에 있는 동안 이 능력은 대신 120피트 범위의 실명 감지 기능을 제공합니다. 이 능력은 숙련도 보너스만큼 여러 번 사용할 수 있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p>"
+    },
+    "Below the Belt": {
+      "name": "벨트 아래 - Below the Belt",
+      "description": "<p>포섬은 긴 꼬리를 쓸어 의심하지 않는 적으로부터 다리를 빼낼 수 있습니다. 당신이 한 크기 범주 이하이고 당신으로부터 5피트 이내에 있는 생물로부터 숨겨져 있을 때, 당신은 보너스 행동을 사용하여 근력(운동) 또는 민첩(곡예) 판정을 할 수 있습니다. 목표는 당신의 능력 체크와 동일한 DC로 근력 내성 굴림에 성공해야 하며 그렇지 않으면 넘어지기 쉽습니다. 추가적으로, 근접 무기 공격은 취약한 생물체에 대해 1d4의 추가 피해를 입힙니다.</p>"
+    },
     "Better With an Audience": {
-      "name": "청중과 함께하면 더 좋습니다 - Better With an Audience"
+      "name": "청중과 함께하면 더 좋습니다 - Better With an Audience",
+      "description": "<p>당신이 볼 수 있는 아군이 3명 이상 30피트 이내에 있으면 카리스마 판정에 +2 보너스를 받습니다.</p>"
     },
     "Birthmates of the Arcana": {
-      "name": "아르카나의 동족 - Birthmates of the Arcana"
+      "name": "아르카나의 동족 - Birthmates of the Arcana",
+      "description": "<p>Seelie가 자칼 종을 고양시키는 것은 유아 Arcana를 간호하는 것과 동시에 이루어졌으며, 그것과의 근본적인 연결은 그들에게 주문과 같은 능력을 부여합니다. 당신은 @Compendium[dnd5e.spells.Z9p1vezIn95jw1Yw]{Eldritch Blast} cantrip을 알고 있습니다.</p><p>추가로, 마법사 주문 목록에서 의식 태그가 있는 1레벨 주문 두 개를 선택하세요. 이 특성을 사용하면 표시된 비용 없이 재료 구성 요소를 무시하고 각각을 시전할 수 있습니다. 이 특성으로 선택한 주문 중 하나를 시전하면 긴 휴식을 마칠 때까지 해당 주문을 다시 시전할 수 없습니다. 적절한 레벨의 주문 슬롯을 사용하여 이러한 주문을 시전할 수도 있습니다.</p><p>지능은 이 특성으로 이러한 주문을 시전할 때 이러한 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Body of Grace": {
       "name": "몸체 의 은총 - Body of Grace",
       "description": "<p>자연 무기에는 기교 속성이 있습니다. 11레벨에 도달하면 자연 무기 공격이 19 또는 20의 굴림에서 치명타를 기록합니다.</p>"
     },
+    "Bottlebottoms": {
+      "name": "병바닥 - Bottlebottoms",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">두더지는 근시입니다. 시력과 관련된 인지 검사에 불이익을 받습니다. 자신을 위해 제작된 안경을 착용하는 동안에는 이 특성으로 인한 불이익을 받지 않고 대신 시력과 관련된 능력 검사에 대한 지각 능력에 능숙한 것으로 간주됩니다. 8시간 50gp를 사용하여 DC 15 민첩성(유리 송풍기 도구) 검사를 통해 새 쌍을 만들 수 있습니다. 다른 사람이 이 작업을 수행할 수 있지만 제작되는 동안 귀하가 참석해야 합니다.</span></p>"
+    },
     "Bounding Grace": {
-      "name": "Bounding 은총"
+      "name": "Bounding 은총",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">치키투 고양이는 달리는 동안 위험을 헤쳐나가는 탁월한 재주를 가지고 있습니다. 대시 액션을 취할 때마다 회피 액션의 이점도 얻습니다.</span></p>"
     },
     "Brittle Shieldscales": {
+      "name": "부서지기 쉬운 방패비늘 - Brittle Shieldscales",
       "description": "<p style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;color:#191813;font-size:13px\">저울에는 사용자를 보호하기 위해 부서지는 단단한 외부 껍질이 있습니다. 긴 휴식을 마칠 때마다 [[/r 5 * @prof]](숙련도 보너스의 5배)에 해당하는 임시 체력과 AC에 +2 보너스를 얻습니다.</p><p style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;color:#191813;font-size:13px\">또한 저울은 사소한 손상 원인을 차단합니다. 피해량이 4 미만인 단일 효과로는 피해를 입지 않습니다. 11레벨에 도달하면 이 임계값은 6으로 증가합니다. 최대 체력 아래로 떨어지면 이 면역력과 AC 보너스를 잃고 긴 휴식을 마칠 때까지 회복되지 않습니다.</p>"
     },
+    "Bullheaded": {
+      "name": "멍멍이 - Bullheaded",
+      "description": "<p>당신을 세게 공격하는 적은 당신의 주의를 집중시킵니다. 단일 공격으로 최대 체력의 절반 이상 피해를 입으면 1분 동안 또는 공격으로 다른 생물을 목표로 삼을 때까지 근접 무기 공격 굴림에서 이점을 얻습니다.</p>"
+    },
+    "Burrow": {
+      "name": "굴 - Burrow",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">양손을 자유롭게 사용할 때 굴착 속도는 10피트입니다.</span></p>"
+    },
     "Cheiropocket": {
+      "name": "케이로포켓 - Cheiropocket",
       "description": "<p>모든 박쥐는 다른 세계에 있는 동안 아스트랄해와 연결됩니다. 이 케이로포켓은 날개의 내부 막을 통해 접근할 수 있는 평면 외 공간입니다. 보너스 동작으로 날개 안쪽을 터치하여 큐로포켓을 열거나 다시 닫을 수 있습니다. 열려 있는 동안 날개는 아스트랄 해의 빛을 발산하며 행동으로 물건을 보관하거나 회수할 수 있습니다.</p><p>체로포켓은 지능 수정치의 최대 12배(최소 12입방피트)까지 무생물 입방피트를 담을 수 있습니다. 생물체나 너무 큰 물건을 수납하려고 하면 날개를 뚫고 뒤쪽 땅으로 떨어집니다. 주머니의 내용물이 내부에 가하는 손상을 입습니다. 체력이 0으로 떨어지거나 죽으면 주머니의 내용물이 무사히 쏟아져 나옵니다.</p><p>당신의 몸도 거기에 있다면 당신의 치로포켓 공간은 아스트랄 바다에 존재할 수 없습니다. 아스트랄로 여행하는 순간 당신의 치로포켓이 붕괴되고 그 내용물이 당신의 공간에 남겨집니다.</p>"
     },
     "Clumsy Competence": {
+      "name": "서투른 능력 - Clumsy Competence",
       "description": "<p>분석적 사고의 마비 효과에 부담을 느끼지 않는 Kobolds는 자신이 추구하는 해결책에 도달할 수 있는 방법을 가지고 있습니다(지성에 부담이 없다면 더욱 그렇습니다). 능력 수정치나 @UUID[Compendium.beast-world.species-traits.Item.xW0wE9YOwGwCuJm9]{Stackable Intellect} 특성 외에 보너스가 없는 능력 검사에 +1 보너스를 받습니다. 대신 지능 점수가 9 이하인 경우 이 보너스는 +2입니다.</p>"
     },
     "Cold Breath": {
@@ -45,19 +94,28 @@
       "description": "<section class=\"secret\">\n<p>**냉기 브레스.**  [[lookup @details.type.config.label lowercase]]이/가 60ft의 원뿔형 범위에 얼어붙을 듯한 바람을 뿜어냅니다. 해당하는 범위에 있던 크리처는 각자 <strong>DC 20 건강</strong> 내성 굴림을 하여 실패하면 <strong>58(13d8)점의 <em>냉기 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p>\n</section>\n<p> [[lookup @details.type.config.label lowercase]]이/가 60ft의 원뿔형 범위에 얼어붙을 듯한 바람을 뿜어냅니다. 해당하는 범위에 있던 크리처는 각자 <strong>건강</strong> 내성 굴림을 해야만 합니다.</p>"
     },
     "Collective Magic": {
-      "name": "집단마법 - Collective Magic"
+      "name": "집단마법 - Collective Magic",
+      "description": "<p>주문에 대한 집중력이 떨어지는 것을 볼 수 있는 60피트 내의 다른 생물에 대한 반응으로(교란 또는 지속 시간 종료로 인해), 최소한 주문 레벨의 주문 슬롯을 소비하여 주문이 계속되도록 할 수 있습니다. 지속 시간은 일반 최대값</p>만큼 연장됩니다."
     },
     "Contorted Breathing": {
+      "name": "일그러진 호흡 - Contorted Breathing",
       "description": "<p>혈통에 따라 호흡 무기를 독특한 모양으로 구부릴 수 있습니다.</p><ul><li><em>Cove</em>. 산성 숨이 튀는 반경을 레벨에 따른 최대값까지 선택할 수 있습니다.</li><li><em>Volcano</em>. 불 숨결에서 원하는 생물을 제외할 수 있습니다.</li><li><em>Flatland</em>. 번개 숨결의 선은 방향을 두 번 바꿀 수 있습니다. 생물은 라인에 의해 한 번만 영향을 받을 수 있습니다. </li><li><em>Glacier</em>. 얼음 숨결로 생성된 패널은 연속되어 있을 필요는 없습니다.</li></ul>"
     },
     "Crown and Scepter": {
-      "name": "왕관과 홀 - Crown and Scepter"
+      "name": "왕관과 홀 - Crown and Scepter",
+      "description": "<p>당신은 협박과 설득 스킬에 능숙합니다.</p>"
     },
     "Darkvision": {
-      "name": "암시야 - Darkvision"
+      "name": "암시야 - Darkvision",
+      "description": "<p> 60피트 이내의 어두운 빛에서는 마치 밝은 빛인 것처럼 볼 수 있고, 어둠 속에서는 희미한 빛인 것처럼 볼 수 있습니다. 어둠 속에서는 색상을 식별할 수 없으며 회색 음영만 식별할 수 있습니다.</p>"
+    },
+    "Defensive Ball": {
+      "name": "수비볼 - Defensive Ball",
+      "description": "<p>전투 중에 갑옷을 입은 가죽을 몸 주위로 감쌀 수 있고 심지어 몸을 구르기도 합니다. 돌진, 철수, 회피 행동을 취하면 마법이 아닌 공격으로 인해 받는 타격, 관통, 베기 피해가 다음 턴이 시작될 때까지 3만큼 감소합니다. 또한 대시 동작을 수행할 때 직선으로 이동하면 속도가 걷는 속도의 두 배로 증가합니다(걷는 속도만 증가).</p>"
     },
     "Dragon Magic (Bulwark)": {
-      "name": "드래곤 마법 (Bulwark)"
+      "name": "드래곤 마법 (Bulwark)",
+      "description": "<p>이 특성으로 @Compendium[dnd5e.spells.z1mx84ONwkXKUZd7]{Shield} 주문을 시전할 수 있습니다. 5레벨에 도달하면 @UUID[Compendium.beast-world.spells.Item.9yOxHTv1EcOGA8Ye]{Bulwark of Scales} 주문을 시전할 수도 있습니다. 이 특성으로 이러한 주문 중 하나를 시전하면 긴 휴식을 마칠 때까지 해당 주문을 다시 시전할 수 없습니다. 적절한 레벨의 주문 슬롯을 사용하여 이러한 주문 중 하나를 시전할 수도 있습니다.</p><p>카리스마는 이 특성으로 이러한 주문을 시전할 때 이러한 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Dragon Magic (Dancing)": {
       "name": "드래곤 마법 (Dancing)",
@@ -68,34 +126,84 @@
       "description": "<p>이 특성으로 @Compendium[dnd5e.spells.arzCrMRgcNiQuh43]{Command} 주문을 시전할 수 있습니다. 5레벨에 도달하면 @UUID[Compendium.beast-world.spells.Item.ggLjRmy42S54ceBX]{대상 소환 - Summon Subject} 주문을 시전할 수도 있습니다. 이 특성으로 이러한 주문 중 하나를 시전하면 긴 휴식을 마칠 때까지 해당 주문을 다시 시전할 수 없습니다. 적절한 레벨의 주문 슬롯을 사용하여 이러한 주문 중 하나를 시전할 수도 있습니다.</p><p>카리스마는 이 특성으로 이러한 주문을 시전할 때 이러한 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Dragon Magic (Scholar)": {
-      "name": "드래곤 마법 (학자) - Dragon Magic (Scholar)"
+      "name": "드래곤 마법 (학자) - Dragon Magic (Scholar)",
+      "description": "<p>이 특성을 사용하면 @Compendium[dnd5e.spells.3OZnNhunvRtPOQmH]{Identify} 주문(재료 구성 요소 필요 없음)과 마법사 주문 목록에 있는 다른 1레벨 주문 두 개를 시전할 수 있습니다. 5레벨에 도달하면 이 특성을 가진 마법사 주문 목록에서 @UUID[Compendium.beast-world.spells.Item.Tn8Pk1fSZFGVr22Q]{Draconic Lucubration} 주문과 최대 3레벨까지 두 개의 추가 주문을 시전할 수 있습니다. 이 특성으로 주문을 시전하면 긴 휴식을 마칠 때까지 해당 주문을 다시 시전할 수 없습니다. 적절한 레벨의 주문 슬롯을 사용하여 이러한 주문을 시전할 수도 있습니다.</p><p>지능은 이 특성으로 이러한 주문을 시전할 때 이러한 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Dragon Magic (Whispering)": {
       "name": "드래곤 마법 (속삭임) - Dragon Magic (Whispering)",
       "description": "<p><span class=\"fontstyle0\">이 특성을 사용하면 재료 구성 요소 없이도 @Compendium[dnd5e.spells.82jM6qD9axLJsTrH]{Illusory Script}</span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\"> 주문을 시전할 수 있습니다. 5레벨에 도달하면 </span><span class=\"fontstyle2\">@UUID[Compendium.beast-world.spells.Item.asx3NHiA0tNi51WX]{Discern the 심장's - Hoard} </span><span class=\"fontstyle0\"> 주문을 시전할 수도 있습니다. 이 특성으로 이러한 주문 중 하나를 시전하면 긴 휴식을 마칠 때까지 해당 주문을 다시 시전할 수 없습니다. 적절한 레벨의 주문 슬롯을 사용하여 이러한 주문 중 하나를 시전할 수도 있습니다.</span></p><p><span class=\"fontstyle0\">지혜는 이 특성으로 이러한 주문을 시전할 때 이러한 주문에 대한 주문 시전 능력입니다. </span></p>"
     },
+    "Ears Towards Danger": {
+      "name": "위험을 향한 귀 - Ears Towards Danger",
+      "description": "<p>선천적인 반사 신경으로 자동으로 자신을 방어하면 마법 공격에 대해 추가 보호를 받을 수 있습니다. 당신은 놀란 동안 당신에게 시전되는 마법의 함정이나 주문을 피하거나 저항하기 위해 내성 굴림에 유리합니다. 또한, 이니셔티브 롤에 추가 1d4를 추가합니다.</p><section id=\"secret-GEQ94XvIaVJidifP\" class=\"secret\"><p><strong>Foundry 참고:</strong></p><p>이니셔티브 롤링 시 상황 보너스에 이 보너스를 추가합니다</p></section>"
+    },
+    "Efficient Metabolism": {
+      "name": "효율적인 대사 - Efficient Metabolism",
+      "description": "<p>양은 다른 종의 입맛에 맞지 않는 다양한 음식을 먹을 수 있습니다. 당신은 (즐겁게!) 어떤 녹색 초목에서도 무한정 버틸 수 있습니다.</p>"
+    },
     "Eidetic Memory": {
-      "name": "Eidetic 기억"
+      "name": "Eidetic 기억",
+      "description": "<p>곰은 모든 세부 사항을 가두어 저장하는 기이한 기억을 가지고 있습니다. 당신은 당신이 보거나 들은 모든 것을 정확하게 기억할 수 있습니다. 추가적으로, 생물의 비마법적 능력에 대해 힘이나 민첩 내성 굴림을 하면, 같은 생물이 나중에 해당 능력을 사용할 때 내성 굴림에 유리합니다.</p>"
+    },
+    "Escaper's Keepers": {
+      "name": "탈출자의 수호자 - Escaper's Keepers",
+      "description": "<p>당신은 Sleight of Hand 스킬에 능숙합니다. 기회 공격의 표적이 된 것에 대한 반응으로 공격 생물의 지혜(지각) 체크와 경쟁하는 민첩(재빠른 손놀림) 체크를 할 수 있습니다. 성공하면 공격이 실패하고, 공격자가 착용하거나 들고 있는 물건(그러나 들고 있는 물건은 제외)을 눈치채지 못한 채 가져갈 수 있습니다. 물건은 한 손에 딱 들어맞고 무게가 5파운드를 넘지 않아야 합니다. 어느 쪽이든, 이 능력을 사용한 후 당신을 볼 수 있는 모든 생물(대상 포함)은 24시간 동안 이 능력에 면역이 됩니다.</p>"
+    },
+    "Extraordinary Panache": {
+      "name": "특별한 위엄 - Extraordinary Panache",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">피르호아는 유머 감각이 있어요. 당신은 캔 트립 @UUID[Compendium.dnd5e.spells.Item.udsLtG0BugXHR2JQ]{prestidigitation}을 알고 있습니다. 카리스마는 당신의 주문 시전 능력입니다.</span></p>"
+    },
+    "Eyes on the Horizon": {
+      "name": "지평선을 바라보는 눈 - Eyes on the Horizon",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">선발 굴림에 지혜 보너스를 추가합니다.</span></p><p></p><section class=\"secret\" id=\"secret-ayYvcCwkcxFaSzLV\"><p><strong>Foundry Note</strong></p><p>할 수 있습니다 제공된 활성 효과를 사용하거나 캐릭터 시트의 이니셔티브 config</p></section>의 보너스 필드에 @ability.wis.mod를 입력하여 이 효과를 활성화하세요."
     },
     "Fire Breath": {
       "name": "화염 브레스 - Fire Breath",
       "description": "<section class=\"secret\">\n<p>**화염 브레스.**  [[lookup @details.type.config.label lowercase]]이/가 너비 5ft의 직선 60ft 범위에 화염을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 18 민첩</strong> 내성 굴림을 하여 실패하면 <strong>45(13d6)점의 <em>화염 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p>\n</section>\n<p> [[lookup @details.type.config.label lowercase]]이/가 너비 5ft의 직선 60ft 범위에 화염을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
+    "Flight": {
+      "name": "비행 - Flight",
+      "description": "<p>당신의 비행 속도는 걷는 속도와 같습니다.</p>"
+    },
     "Gore": {
-      "name": "뿔받기 - Gore"
+      "name": "뿔받기 - Gore",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">모든 서바인은 조상의 천연 무기 중 하나를 선물로 받았습니다. 뿔이 있는 경우(선택 사항), 유혈 공격은 1d6에 힘 수정치를 더한 것과 동일한 관통 피해를 입힙니다.</span></p>"
+    },
+    "Hardy Stomach": {
+      "name": "튼튼한 위 - Hardy Stomach",
+      "description": "<p>당신은 섭취된 독극물에 저항하기 위한 내성굴림에 이점을 얻습니다.</p>"
     },
     "Head Down, Feet Forward": {
-      "name": "머리는 아래로, 발은 앞으로 - Head Down, Feet Forward"
+      "name": "머리는 아래로, 발은 앞으로 - Head Down, Feet Forward",
+      "description": "<p>당신의 턴의 일부로 생물을 향해 직선으로 최소 10피트 이상 이동하면 해당 생물에 대한 첫 번째 근접 공격이 유리하게 이루어집니다. 이 공격이 치명타를 기록하면 무기의 피해 주사위 중 하나를 한 번 더 굴려 치명타의 추가 피해에 추가할 수 있습니다.</p>"
+    },
+    "Herding Tactics": {
+      "name": "군집 전술 - Herding Tactics",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">생물의 동맹 중 하나가 5피트 이내에 있고 해당 생물이 무력화되지 않은 경우 생물에 대한 공격 굴림에 유리합니다.</span></p>"
+    },
+    "Hoof Stomp": {
+      "name": "발굽 구르기 - Hoof Stomp",
+      "description": "<p>모든 서바인은 조상의 천연 무기 중 하나를 선물로 받았습니다. 발굽 구르기는 1d6에 힘 수정치를 더한 것과 같은 타격 피해를 입힙니다.</p>"
     },
     "Hunter's Cleave": {
-      "name": "사냥꾼's - Cleave"
+      "name": "사냥꾼's - Cleave",
+      "description": "<p>당신의 턴에 근접 무기 공격으로 생물의 체력을 0으로 줄이면 즉시 또 다른 근접 무기 공격을 할 수 있습니다.</p>"
     },
     "Inner Spark": {
+      "name": "내부 스파크 - Inner Spark",
       "description": "<p>Ovine wool은 친구에게 약간의 충격을 주지만, 약간의 연습을 통해 연마하면 놀라운 결과를 얻을 수 있습니다. 당신이 생물에게 번개 피해를 입힐 때마다, 그 생물은 추가로 1d4의 번개 피해를 입습니다.</p>"
+    },
+    "Lair Builders": {
+      "name": "소굴 빌더 - Lair Builders",
+      "description": "<p>백룡과 은룡의 정신은 창조의 주인입니다. 도구 숙련도를 얻을 때마다 원하는 두 번째 도구 숙련도도 얻게 됩니다.</p>"
     },
     "Leftover Magic": {
       "name": "Leftover 마법",
       "description": "<p>쥐는 남은 것을 처리할 수 있으며 이는 신비한 일에도 적용됩니다. 60피트 이내의 생물에게 주문을 시전하는 것에 대한 반응으로, 주문의 레벨이 레벨을 3으로 나눈 값(최소 1레벨)보다 낮거나 같을 경우, 마치 타겟인 것처럼 주문이 추가로 영향을 미치게 할 수 있습니다. 이 기능을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Legs For Pouncing": {
+      "name": "뛰어다니는 다리 - Legs For Pouncing",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">고양이과 동물의 일부 특징은 생물학에 여전히 남아 있기 때문에 향상되었습니다. 점프 거리를 결정할 때 근력 점수는 6점 더 높은 것으로 간주됩니다.</span></p>"
     },
     "Life's Passion": {
       "name": "생명's - Passion",
@@ -105,93 +213,225 @@
       "name": "번개 브레스 - Lightning Breath",
       "description": "<section class=\"secret\"><p> [[lookup @details.type.config.label lowercase]]이/가 5ft 너비의 90ft 직선 범위에 뇌전을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>DC 19 민첩</strong> 내성 굴림을 하여 실패하면 <strong>66(12d10)점의 <em>번개 피해</em></strong>를 입고, 성공하면 그 절반의 피해를 입습니다.</p><p></p></section><p> [[lookup @details.type.config.label lowercase]]이/가 5ft 너비의 90ft 직선 범위에 뇌전을 뿜어냅니다. 해당하는 직선 범위에 있던 크리처는 각자 <strong>민첩</strong> 내성 굴림을 해야만 합니다.</p>"
     },
+    "Listening in Shadows": {
+      "name": "그림자 속에서 듣기 - Listening in Shadows",
+      "description": "<p>속삭이는 용들이 그림자 속으로 섞여 들어갑니다. 그들은 먹이를 찾아내고 비밀을 \"도청\"하는 데 탁월합니다. 당신은 스텔스 및 인지 기술에 능숙합니다</p>"
+    },
     "Long Arms": {
-      "name": "Long 무장"
+      "name": "Long 무장",
+      "description": "<p>비무장 공격의 범위가 평소보다 5피트 더 깁니다.</p>"
     },
     "Low-Light Vision": {
-      "name": "저조도 시야 - Low-Light Vision"
+      "name": "저조도 시야 - Low-Light Vision",
+      "description": "<p>쥐과 동물은 어둠 속에서도 잘 볼 수 있지만 지하나 밤에 사는 종만큼은 아닙니다. 당신에게는 희미한 빛이 밝은 빛이 됩니다.</p>"
     },
     "Malleable Mind": {
-      "name": "Malleable 정신"
+      "name": "Malleable 정신",
+      "description": "<p>당신은 대부분의 사람들에게 자동으로 나타나는 본능을 통제할 수 있으며 집중과 신중함을 통해 작업에 대한 마음의 준비를 할 수 있습니다. 긴 휴식 끝에 통찰, 조사, 지각, 생존 스킬 중 하나를 선택하세요. 다른 기술을 선택할 때까지 해당 기술에 능숙합니다.</p>"
+    },
+    "March on Hooves": {
+      "name": "발굽으로 행진하다 - March on Hooves",
+      "description": "<p>강제 행군으로 인한 피로를 피하기 위해 내성 굴림에 유리합니다.</p>"
     },
     "Masterpiece of Movement": {
-      "name": "움직임의 걸작 - Masterpiece of Movement"
+      "name": "움직임의 걸작 - Masterpiece of Movement",
+      "description": "<p>춤추는 드래곤은 초자연적인 민첩성과 신체 인식 능력을 갖고 태어났습니다. 곡예 및 연주 기술에 능숙합니다</p>"
+    },
+    "Mazeproof": {
+      "name": "미로 방지 - Mazeproof",
+      "description": "<p>지난 7일 동안 의식이 있는 동안 이동한 경로를 되돌리면 길을 잃지 않습니다. 추가적으로, 당신은 @Compendium[dnd5e.spells.clwv2PWOcT822hlr]{Maze} 주문의 목적상 미노타우로스로 취급됩니다.</p>"
     },
     "Mind for Beasts": {
-      "name": "정신 - for Beasts"
+      "name": "정신 - for Beasts",
+      "description": "<p>모든 야수를 이해하고 말로 소통할 수 있습니다. 그들의 지식과 인식은 지능에 의해 제한되지만, 최소한 동물은 지난 24시간 동안 본 것에 대한 정보를 제공할 수 있습니다. GM의 재량에 따라 야수를 설득하여 작은 호의를 베풀 수도 있습니다.</p><p>추가로, 이 특성을 사용하면 @Compendium[dnd5e.spells.X8w9EzYLGc4vQ1H2]{Animal Messenger} 주문을 2레벨 주문으로 한 번 시전할 수 있으며 긴 휴식을 마친 후에 그렇게 할 수 있는 능력을 다시 얻습니다. 지혜는 당신의 주문 시전 능력입니다.</p>"
     },
     "Mnemonic Mind": {
-      "name": "Mnemonic 정신"
+      "name": "Mnemonic 정신",
+      "description": "<p>당신에게서 60피트 이내에 있는 생물이 당신의 주문 목록에 있는 주문을 시전하면, 당신은 반응을 사용하여 그것을 기억할 수 있습니다. 앞으로 7일 이내에 신비한 도서관이나 대학을 방문하여 기억을 연구하고 주문을 거는 방법을 배울 수 있습니다. 그러기 위해서는 주문 레벨당 8시간의 연구가 필요합니다. 주문서를 주문서에 추가하는 경우 두루마리에서 복사하는 데 드는 비용의 두 배를 지불해야 합니다.</p><p>연구를 마친 후 10 + 주문 레벨과 같은 DC로 지능(아르카나) 판정을 합니다. 확인에 성공하면 해당 주문을 알려진 주문에 추가하거나 두루마리에 접근할 수 있는 것처럼 주문서에 복사합니다.</p><p>이 특성을 사용하여 알려진 주문에 주문을 추가하면 이 방식으로 추가한 이전 주문은 모두 손실됩니다.</p>"
     },
     "Natural Armor (Armadillo)": {
-      "name": "천연 갑옷 (아르마딜로) - Natural Armor (Armadillo)"
+      "name": "천연 갑옷 (아르마딜로) - Natural Armor (Armadillo)",
+      "description": "<p>당신은 튼튼한 보호 껍질을 가지고 있습니다. 갑옷을 입고 있지 않을 때 AC는 14 + 민첩 수정치입니다. 착용하는 갑옷으로 인해 AC가 낮아지는 경우 자연 갑옷을 사용하여 AC를 결정할 수 있습니다. 자연 방어구를 사용하는 동안에는 방패의 이점이 정상적으로 적용됩니다.</p>"
     },
     "Natural Armor (Dragon)": {
-      "name": "천연 갑옷 (드래곤) - Natural Armor (Dragon)"
+      "name": "천연 갑옷 (드래곤) - Natural Armor (Dragon)",
+      "description": "<p>저울은 보호의 원천이자 자부심입니다<span style=\"color:#191813;font-size:13px\">. 갑옷을 입고 있지 않을 때 AC는 13 + 민첩 수정치입니다. 착용하는 갑옷으로 인해 AC가 낮아지는 경우 자연 갑옷을 사용하여 AC를 결정할 수 있습니다. 자연 방어구를 사용하는 동안에는 방패의 이점이 정상적으로 적용됩니다.</span></p>"
     },
     "Natural Weapons": {
       "name": "천연 무기 - Natural Weapons",
       "description": "<p>꼬리, 발톱, 이빨은 비무장 공격에 사용할 수 있는 천연 무기입니다. 그 중 하나에 맞으면 비무장 공격에 대한 일반적인 피해 대신 1d8 + 힘 수정 계수에 해당하는 피해를 줍니다. 꼬리는 곤봉 피해를 입히고, 발톱은 베는 피해를 주며, 물기는 관통 피해를 줍니다. 또한, 자신의 차례에 공격 행동을 취할 때 보너스 행동으로 꼬리, 발톱, 물기 공격을 할 수 있습니다.</p>"
     },
+    "Nature's Conduit": {
+      "name": "자연의 도관 - Nature's Conduit",
+      "description": "<p>엘크의 동물 조상은 비스트 월드가 창조되기 전에 산을 돌아다녔습니다. 오리아가 된 광활한 공간에는 여전히 구세계의 마법이 빛나고 있습니다. 당신의 유산은 여전히 ​​당신의 눈에서 희미한 빛으로 나타나거나 뿔 끝에 핀 바늘로 찔린 빛으로 나타납니다. 주문 시전 초점 대신 신체의 이 부분을 사용할 수 있습니다. 추가적으로, 최대 4개의 마법 아이템을 조율할 수 있습니다. </p>"
+    },
     "Noodle Body": {
-      "name": "Noodle 몸체"
+      "name": "Noodle 몸체",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">당신의 길고 유연한 몸은 누구보다 좁은 공간에 비집고 들어갈 수 있습니다. 당신이 찻잔에 쏟아지는 것을 거의 상상할 수 있습니다. 당신의 몸이 무엇에 들어갈 수 있는지 결정할 때 당신은 아주 작은 사람으로 취급됩니다. 예를 들어, 머리가 들어갈 수 있는 구멍(보통 약 6인치)을 통해 비집고 들어갈 수 있습니다. 또한, 당신보다 크기 범주가 적어도 한 단계 더 큰 생물이 있는 공간을 통과할 수 있으므로 추가 이동 비용이 들지 않습니다.</span></p>"
     },
     "Obscuring Dream": {
       "name": "흐릿한 꿈 - Obscuring Dream",
       "description": "<p>이 특성을 사용하면 @Compendium[dnd5e.spells.kSPRpeIx3w3nihrF]{Dream} 주문을 한 번 시전할 수 있으며 긴 휴식을 마치면 다시 시전할 수 있습니다. 당신은 또한 당신이 가지고 있는 적절한 레벨의 주문 슬롯을 사용하여 이 주문을 할 수 있습니다. 이 특성으로 지능을 시전할 때 지능은 주문 시전 능력입니다.</p><p>꿈을 시전할 때 생물의 꿈에 메신저가 나타나게 하는 대신, 당신과의 만남에 대한 기억에 정신적 안개를 던질 수 있습니다. 그들은 자신이 주문의 대상이라는 사실을 인식하지 못하지만, 조우 중에 생물에게 충격적인 인상을 주면(예를 들어 그들과 싸우거나 이상한 마법을 사용하여) 실패합니다. 그렇지 않으면 대상은 DC 8 + 숙련 보너스 + 지능 수정치로 지능 내성굴림을 해야 합니다. 당신보다 지능 점수가 낮은 생물은 자동으로 저장에 실패합니다. 신체 부위, 털 다발, 발톱에서 잘린 부분 또는 대상 신체의 유사한 부분이 있는 경우 대상은 불리한 내성 굴림을 합니다.</p><p>저장에 실패하면 생물은 지난 7일 이내에 발생한 최대 1시간 동안의 만남에 대한 기억에 당신이 존재했다는 사실을 잊어버립니다. 사건은 지워지지 않지만 당신의 신원은 대상의 장기 기억에서 누락된 세부 사항이 됩니다. 성공적으로 저장되면 메모리는 영향을 받지 않으며 동일한 메모리를 다시 변경하기 위해 주문을 사용할 수 없습니다.</p>"
     },
     "Out of the Gate": {
-      "name": "아웃 오브 더 게이트 - Out of the Gate"
+      "name": "아웃 오브 더 게이트 - Out of the Gate",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">말은 위험이 닥쳐올 때 놀라운 민첩성을 발휘합니다. 첫 번째 전투 라운드 동안 속도가 두 배로 증가합니다.</span></p>"
+    },
+    "Polar Sense": {
+      "name": "극지 감각 - Polar Sense",
+      "description": "<p>불핀은 무의식적으로 가구와 기타 물건을 남북 방향으로 배열하는 것을 선호하며, 기회가 주어지면 머리를 북쪽을 향하게 하고 잠을 잔다. 당신은 항상 자북을 알고 있습니다.</p>"
     },
     "Powerful Build": {
-      "name": "강인한 체격 - Powerful Build"
+      "name": "강인한 체격 - Powerful Build",
+      "description": "<p>운반 능력과 밀거나 끌거나 들어올릴 수 있는 무게를 결정할 때 한 사이즈 더 큰 것으로 계산됩니다.</p><p></p><section class=\"secret\" id=\"secret-AvGaB0Nvhaf4EdBW\"><p><strong>Foundry 참고</strong></p><p><span style=\"font-family:Signika, sans-serif\">이 속성은 속성 탭의 특수 특성 구성에 있는 캐릭터 시트에서 또는 제공된 활성 효과를 통해 활성화할 수 있습니다.</span></p></section>"
     },
     "Presence": {
+      "name": "있음 - Presence",
       "description": "<p>제왕 드래곤은 초자연적인 태도를 모아 자신을 끔찍하거나 영감을 주는 효과로 투사할 수 있습니다. 행동으로 30피트 이내에 선택한 생물은 DC 8 + 숙련 보너스 + 카리스마 수정치에 해당하는 지혜 내성 굴림을 해야 합니다. 생물의 내성 굴림이 성공하거나 효과가 종료되면 해당 생물은 다음 24시간 동안 당신의 존재에 면역이 됩니다. 저장에 실패한 모든 생물은 다음 10분 동안 다음 효과 중 하나를 선택하게 됩니다. 이 기능을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p><ul><li><em><strong>Frightening Presence</strong></em>. 당신은 위험의 정수입니다. 이 효과를 받은 생물은 자신이 들고 있는 것을 떨어뜨리고 지속 시간 동안 겁을 먹습니다. 생물이 당신의 시야에 들어오지 않는 위치에서 턴을 마치면, 그 생물은 또 다른 지혜 내성 굴림을 할 수 있습니다. 성공적으로 저장하면 해당 생물에 대해 이 효과가 종료됩니다.</li><li><em><strong>Majestic Presence</strong></em>. 이 표현은 마음을 조작하는 마법의 속임수보다 더 기본적인 것입니다. 당신은 세상에서 근본적으로 신뢰할 수 있는 힘입니다. 이 효과를 받는 생물은 당신에게 매력을 느끼고 당신을 현명하고 분별력 있는 리더로 여깁니다. 11레벨에 도달하면 행동으로 무서운 존재의 영향을 받는 것으로 보이는 생물의 심장에 특별한 공포를 가할 수 있습니다. 생물은 대시 행동을 취하고 매 턴마다 가장 안전한 경로로 당신에게서 멀어져야 합니다. 단, 움직일 곳이 없다면 말이죠.</li></ul>"
+    },
+    "Preternatural Sense": {
+      "name": "초자연적인 감각 - Preternatural Sense",
+      "description": "<p>보너스 액션으로 물체의 환영을 검사할 수 있으며, 이를 탐지하기 위한 지능(조사) 검사에 유리합니다. 또한 효과에 따라 민첩 내성 굴림이 필요한 경우 대신 지능 내성 굴림을 굴릴 수 있습니다. 이런 식으로 세이브를 대체하면 긴 휴식을 마칠 때까지 다시 대체할 수 없습니다.</p>"
+    },
+    "Pristine-Blooded": {
+      "name": "순수한 피 - Pristine-Blooded",
+      "description": "<p>모든 테네브린은 질병에 대한 초자연적 면역의 축복을 받았습니다. 당신은 마법적 질병과 비마법적 질병에 면역입니다. 추가적으로, 최소 1파인트의 혈액을 주입한 생물은 다음 건강 내성 굴림에서 다음 24시간 내에 질병에 저항하거나 극복할 수 있는 이점을 갖습니다. 피 한 파인트를 잃으면 1레벨의 탈진 상태가 됩니다.</p>"
     },
     "Prolonging Focus": {
       "name": "초점 연장 - Prolonging Focus",
       "description": "<p>불핀스는 순수한 집중력을 사용하여 초자연적인 것의 추가 티끌을 끌어내는 능력으로 뭉쳤습니다. 지속 시간이 1시간 이상인 주문에 집중하면 해당 주문을 연장할 수 있습니다. 지속 시간이 끝나면 <span style=\"font-family:var(--font-primary)\">DC 10 지능 내성굴림을 합니다. </span><span class=\"fontstyle0\">저장에 실패하면 주문이 평소대로 종료됩니다. 그렇지 않으면 집중하는 동안 주문이 계속됩니다. 그 후 10분마다 주문이 연장된 10분당 10 + 2에 해당하는 DC로 또 다른 지능 내성 굴림을 합니다(10분 후 12번, 20분 후 14번 등). 주문은 집중을 멈추기로 선택하거나 저장에 실패할 때까지 계속됩니다.</span></p><p><span class=\"fontstyle0\">이런 방식으로 집중을 지속하는 동안 관찰자에게는 눈에 띄게 주의가 산만해지며 피해를 받으면 주문이 자동으로 종료됩니다. </span></p>"
     },
+    "Prowling Between the Lines": {
+      "name": "선 사이를 배회하다 - Prowling Between the Lines",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">고양이는 마법의 눈으로 보면 초자연적인 미끈함을 가지고 있습니다. 주문에 자아 범위가 없으면 5레벨 이하의 점술 주문의 대상이 될 수 없습니다. 마법의 점술 센서로도 인식할 수 없습니다. 5레벨 이하의 주문 슬롯을 사용하여 시전하는 보호 주문의 경보 및 문양은 당신의 존재를 감지할 수 없습니다.</span></p>"
+    },
+    "Quick Fix": {
+      "name": "빠른 수정 - Quick Fix",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">수리와 수리에 대한 당신의 타고난 친화력은 Arcana 자체의 도움을 받습니다. 당신은 수선 캔 트립 @UUID[Compendium.dnd5e.spells.Item.kjmjY0zlE6IEiQVL]{Mending}을 알고 있습니다. 지능은 주문 시전 능력입니다.</span></p>"
+    },
+    "Root Connected": {
+      "name": "루트 연결됨 - Root Connected",
+      "description": "<p>액션으로 식물을 터치하여 1분 동안 식물과 통신할 수 있습니다. 지난 하루 동안 식물 주변 30피트 반경 내에서 또는 뿌리가 지하에 닿는 곳까지(둘 중 더 먼 곳) 발생한 사건에 대해 물어볼 수 있습니다. 식물은 얼마나 많은 작거나 큰 생물이 그 지역을 여행했는지 알고 있으며, 자신의 고향 토양을 교란시키는 모든 것을 설명할 수도 있습니다. 범위 내의 사물에 대한 기본적인 시각적 설명을 제공할 수 있습니다. 예를 들어, 옷의 색깔과 생물의 종은 알지만 개체를 ​​구별할 수는 없습니다. 또한 식물이 자라는 데 어려움을 겪고 있는지 여부와 그 이유를 확인할 수도 있습니다.</p>"
+    },
     "Rulers of Dragons": {
-      "name": "Rulers 의 드래곤s"
+      "name": "Rulers 의 드래곤s",
+      "description": "<p>수천년에 걸친 마법과 번식은 의심할 여지 없는 특권으로 정점에 달했습니다. 군주 드래곤의 타고난 재능은 간단합니다. 바로 다른 드래곤을 지배하는 힘입니다. 당신은 공격 굴림, 내성 굴림, 드래곤에 대한 능력 확인 및 그들의 능력에 저항하는 데 유리합니다.</p>"
+    },
+    "Scent Tracking": {
+      "name": "향기 추적 - Scent Tracking",
+      "description": "<p>지난 7일 동안 생물이 착용했거나 운반했던 물건이 있는 경우 생물을 추적하는 데 사용되는 지혜(생존) 판정에 유리합니다.</p>"
+    },
+    "Shepherd Step": {
+      "name": "셰퍼드 스텝 - Shepherd Step",
+      "description": "<p>세계의 가파른 언덕은 당신이 첫 발을 내딛은 이후로 당신의 놀이터였습니다. 가파른 수직 표면이 아닌 곳에서는 15피트의 등반 속도를 가지며 그렇게 하는 동안 손은 자유롭게 유지됩니다.</p>"
+    },
+    "Skittish Instinct": {
+      "name": "변덕스러운 본능 - Skittish Instinct",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">도망가기 위해 만들어진 생명체의 일부가 당신 안에 남아 있습니다. 의식이 있는 동안에는 놀라실 수 없습니다.</span></p>"
+    },
+    "Sleepwalker": {
+      "name": "몽유병자 - Sleepwalker",
+      "description": "<p>당나귀는 계속 움직입니다. 무슨 일이 있어도 그들은 계속 움직인다. 긴 휴식의 이점을 얻으려면 4시간만 자면 됩니다. 또한, 비마법적 수면 상태에서는 의식이 절반인 상태에서 자신의 차례에 맞춰 최대 속도로 걸을 수 있습니다. 이 상태에서는 지혜(지각) 판정에 불이익을 받으며, 잠든 동안 운반 능력의 절반 이상을 운반하면 속도가 0으로 떨어집니다.</p>"
     },
     "Slippery Thoughts": {
-      "name": "Slippery 생각"
+      "name": "Slippery 생각",
+      "description": "<p>당신은 정신적 피해에 대한 저항력을 갖고 있으며, 다른 라에틴이 시전하지 않는 한 생각 감지 주문에 면역입니다. </p>"
     },
     "Slow and Steady": {
-      "name": "느리고 꾸준한 - Slow and Steady"
+      "name": "느리고 꾸준한 - Slow and Steady",
+      "description": "<p>당신이 0피트를 이동했고 마지막 턴에 보너스 행동을 취하지 않았고 그 이후로 반응을 사용하지 않았다면, 당신은 당신의 턴에 생물에 대해 하는 힘이나 민첩을 사용하는 첫 번째 공격 굴림이나 능력 체크에서 이점을 얻습니다.</p>"
     },
     "Soil Sense": {
+      "name": "토양 감각 - Soil Sense",
       "description": "<p><span style=\"font-family:Signika, sans-serif\">두더지는 일시적으로 세상을 인식하는 새로운 방법을 얻기 위해 시력을 닫습니다. 보너스 액션을 사용하면 다음 1분 동안 15피트 범위의 떨림을 얻을 수 있습니다. 이 능력을 사용하는 동안 당신은 전통적인 방법으로 볼 수 있는 능력을 잃게 되며, 암흑시야의 이점도 잃게 됩니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</span><br class=\"Apple-interchange-newline\" /></p>"
     },
     "Stackable Intellect": {
+      "name": "쌓을 수 있는 지능 - Stackable Intellect",
       "description": "<p>60피트 이내의 코볼트 수에 따라 능력 검사에 보너스를 받습니다. 보너스는 아래 Kobold 스태킹 표에 따라 결정됩니다.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"2\"><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">코볼트 쌓기</span></strong></span></p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>코볼트의 수</p></td><td style=\"width:36.2906%;text-align:center\"><p>능력치 체크 보너스</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>2</p></td><td style=\"width:36.2906%;text-align:center\"><p>+1</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>4</p></td><td style=\"width:36.2906%;text-align:center\"><p>+2</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>8</p></td><td style=\"width:36.2906%;text-align:center\"><p>+3</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>16</p></td><td style=\"width:36.2906%;text-align:center\"><p>+4</p></td></tr><tr><td style=\"width:63.7094%;text-align:center\"><p>32+</p></td><td style=\"width:36.2906%;text-align:center\"><p>+5</p></td></tr></tbody></table>"
     },
+    "Superheated Tailwind": {
+      "name": "과열된 순풍 - Superheated Tailwind",
+      "description": "<p><span class=\"fontstyle0\"><em><strong>과열 순풍</strong></em>. </span><span class=\"fontstyle2\">비행 속도가 10피트 증가하고 호버링할 수 있습니다.</span></p>"
+    },
+    "Sure-Footed Stomp": {
+      "name": "확실한 발 구르기 - Sure-Footed Stomp",
+      "description": "<p>생물의 공간을 통해 이동하는 것은 그것이 자신보다 하나 이상의 크기 범주가 작거나 동일한 크기 범주이고 경향이 있는 경우 어려운 지형으로 간주되지 않습니다. 이 특성을 가진 생물의 공간을 이동하기 위해 이동을 소비하면 해당 생물에 대해 비무장 공격을 할 수 있습니다. 적중 시, 당신은 1d4 + 힘 수정치에 해당하는 타격 피해를 주며, 대상은 당신의 턴이 끝날 때까지 당신에게 기회 공격을 할 수 없습니다. 이 능력을 사용하면 다음 턴이 시작될 때까지 동일한 생물에 대해 사용할 수 없습니다.</p>"
+    },
     "Survivable": {
+      "name": "생존 가능 - Survivable",
       "description": "<p>쥐들은 인내합니다. 먹거나 마시지 않고도 평소보다 두 배 더 오래 살아남을 수 있습니다 </p>"
     },
+    "Swim": {
+      "name": "헤엄 - Swim",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">걷는 속도와 동일한 수영 속도를 가지며 최대 15분 동안 숨을 참을 수 있습니다.</span></p>"
+    },
+    "Think With Your Hands": {
+      "name": "손으로 생각해보세요 - Think With Your Hands",
+      "description": "<p>너구리는 뛰어난 촉각을 가지고 있으며 메커니즘의 기능을 느낄 수 있습니다. 열쇠의 톱니 위로 손가락을 움직이는 동작을 사용하면 다음 7일 동안 자물쇠를 열기 위해 수행되는 민첩 판정에 이점을 얻게 됩니다. 또한 민첩 체크를 통해 이전에 열었던 자물쇠를 열기 위해 수행된 민첩 체크를 자동으로 통과합니다.</p>"
+    },
+    "Toughen Up": {
+      "name": "강화하다 - Toughen Up",
+      "description": "<p>당신의 조상의 인내심은 당신의 피 속에 흐르고 있으며, 싸움에서 자신을 단련할 수 있는 능력을 제공합니다. 주도권을 굴릴 때 레벨의 절반까지(최소 1) Hit Dice를 사용할 수도 있습니다. 이런 식으로 Hit Dice를 소비하면 헌법 수정치를 추가하지 않고도 굴린 총합과 동일한 임시 체력을 얻을 수 있습니다. 이러한 임시 체력은 10분 동안 지속됩니다.</p>"
+    },
     "True Hearing": {
+      "name": "진정한 청력 - True Hearing",
       "description": "<p><span class=\"fontstyle0\">최대 2피트 높이의 돌이나 유사한 장애물 물질을 무시하는 소리를 들을 수 있습니다. 11레벨에 도달하면, 초자연적인 거리에서 듣는 행동으로 자신에게 집중할 수도 있습니다. 300피트 이내의 원하는 공간에 서 있는 것처럼 소리를 들을 수 있습니다. 이 능력은 재료와 두께에 상관없이 단단한 물체를 무시하지만 @Compendium[dnd5e.spells.5VhqFROQYjr1P9lp]{Silence} 주문을 물리치지는 못합니다.</span></p>"
     },
+    "Tunnel Sense": {
+      "name": "터널 감지 - Tunnel Sense",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">지하에서는 자신이 차지하는 공간의 크기는 물론 야외로 도달하는 최단 경로를 항상 알 수 있습니다. 또한 물이 60피트 이내에 있으면 위쪽으로 파면 수역으로 이어지는지 알 수 있습니다.</span></p>"
+    },
     "Unbroken Focus": {
-      "name": "Unbroken 집중"
+      "name": "Unbroken 집중",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">당나귀는 지속적인 리듬을 유지하는 데 탁월하며 쉽게 흔들리지 않습니다. 주문에 계속 집중하려면 건강 내성 굴림에 이점이 있습니다.</span></p>"
+    },
+    "Unit Tactics": {
+      "name": "유닛 전술 - Unit Tactics",
+      "description": "<p>동맹자 중 최소 2명 이상이 생물로부터 5피트 이내에 있고 동맹국이 무력화되지 않은 경우 생물에 대한 공격 굴림에 유리합니다.</p>"
+    },
+    "Unreal Grip": {
+      "name": "언리얼 그립 - Unreal Grip",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">큰 무기는 들소의 거대한 손바닥에 자연스럽게 맞습니다. 양손 근접 무기를 사용하고 다른 무기를 사용하지 않는 경우 한 손으로 휘두를 수 있습니다. 추가적으로, 다재다능한 속성을 지닌 근접 무기를 한 손으로 휘두르면 마치 두 손으로 휘두르는 것처럼 데미지를 줍니다.</span></p>"
+    },
+    "Unreal Potential": {
+      "name": "언리얼 잠재력 - Unreal Potential",
+      "description": "<p><span style=\"color:#191813;font-size:13px\">모든 능력 점수의 최대값은 22입니다.</span></p>"
     },
     "Unshakable Guard": {
-      "name": "흔들리지 않는 수호병 - Unshakable Guard"
+      "name": "흔들리지 않는 수호병 - Unshakable Guard",
+      "description": "<p>서덩굴은 튼튼하고 넓으며, 키가 커서 발을 딛고 버틸 수 있습니다. 효과로 인해 쓰러질 경우 반응을 사용하여 서 있을 수 있습니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Urbanite's Fortune": {
+      "name": "도시인의 행운 - Urbanite's Fortune",
+      "description": "<p>테네브린은 도시에서 더 운이 좋기 때문에 도시에 끌리거나, 테네브린이 도시에 끌리기 때문에 도시에서 더 운이 좋습니다. 10,000명 이상의 인구가 있는 도시에서는 공격 굴림, 능력 검사 또는 싫어하는 내성 굴림을 한 번 다시 굴릴 수 있습니다. 두 번째 롤을 사용해야 합니다. 이 특성을 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Vaulting Poise": {
+      "name": "높이뛰기 자세 - Vaulting Poise",
+      "description": "<p>당신의 작은 조상처럼 당신도 높은 곳에 도달하는 데 탁월합니다(오르는 도중에 멈추지 않는 한). 이동 중에 넘어지지 않고 수직 표면을 따라 속도를 높일 수 있습니다.</p>"
     },
     "Venomous Claw": {
       "name": "Venomous 발톱",
       "description": "<p>당신의 발톱은 정교한 무기입니다. 발톱을 이용한 자연 공격으로 생명체를 공격하면 상처에 독의 충격을 전달할 수 있습니다. 목표는 8 + 당신의 숙련 보너스 + 민첩 보너스에 해당하는 건강 내성 굴림을 해야 합니다. 저장에 실패하면 추가로 1d12의 독 피해를 입고 1시간 동안 중독됩니다. 내성굴림에 성공하면 생물은 절반의 피해를 입고 중독되지 않습니다. 11레벨에 도달했을 때, 내성이 5 이상 실패하면 대상도 이런 식으로 중독된 상태에서 의식을 잃게 됩니다. 생명체는 피해를 입거나 누군가가 잠든 생명체를 흔들거나 때리는 동작을 사용하면 깨어납니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
+    "Vigilant Senses": {
+      "name": "경계하는 감각 - Vigilant Senses",
+      "description": "<p>주변의 보이지 않는 필드에 적응함으로써 무언가가 그 필드를 통해 움직이는지 감지할 수 있습니다. 움직이지 않고 최소 1시간을 보낸 후에는 생물이 주변 90피트 영역에 들어오는지 여부와 해당 크기 범주를 알 수 있습니다. 피드백은 당신이 허락하기로 선택하면 당신을 깨울 만큼 강력하며, 당신이 움직일 때까지 지속됩니다.</p>"
+    },
     "Voiceless Speech": {
+      "name": "무성 연설 - Voiceless Speech",
       "description": "<p>생쥐는 다른 종이 감지하기에는 너무 미묘한 얼굴 틱과 버릇을 사용하여 의사소통할 수 있는 타고난 연결을 가지고 있습니다. 귀하의 얼굴을 볼 수 있는 모든 마우스와 조용히 대화할 수 있으며 그 반대의 경우도 마찬가지입니다.</p>"
     },
+    "Voltaic Arc": {
+      "name": "볼타 아크 - Voltaic Arc",
+      "description": "<p><em><strong>볼타 아크</strong></em>. 행동으로 섬광을 통해 목적지와 연결할 수 있으며, 볼 수 있는 빈 공간으로 최대 60피트까지 순간이동할 수 있습니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
     "Vulpine Deduction": {
-      "name": "여우류 - Deduction"
+      "name": "여우류 - Deduction",
+      "description": "<p><span class=\"fontstyle0\">여우는 직관적인 점들을 연결하여 순간적으로 현명한 결정을 내립니다. 행동으로서 당신은 직면한 폐쇄형 결정에 집중할 수 있습니다. 즉, 결정에는 제한된 잠재적 선택이 있어야 합니다. 몇 가지 예로는 던전에서 어느 출구로 나가야 하는지, 범죄 혐의가 있는 것으로 의심되는 곳, 디저트를 먹을 파이 두 개 중 어느 쪽이 포함되는지 등이 있습니다.</span></p><p><span class=\"fontstyle0\">DC 10 지능 판정을 합니다. 성공하면 GM은 가능한 결정 중 하나에 대해 알려줍니다. 예를 들어, “동쪽 출구는 위험한 것 같아요.”, “범죄가 발생한 날 밤에 노인은 마을에 없었어요.”, “블루베리는 파이에 맛이 안 좋아요.” 일반적으로 성공 시에는 비밀스러우나 도움이 되는 것을 배우게 됩니다.</span></p><p><span class=\"fontstyle0\">이 특성을 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</span></p>"
     },
     "Wings": {
-      "name": "날개 - Wings"
+      "name": "날개 - Wings",
+      "description": "<p>박쥐의 날개는 아스트랄해 밖으로 날아갈 수 없지만, 여전히 아래로 미풍이 부는 부유물로 치명적인 하강을 할 수 있습니다. 팔이 자유롭고 무거운 갑옷을 입지 않은 동안 날개를 펴서 라운드당 30피트의 속도로 떨어질 수 있습니다. 내려오는 모든 발에 대해 발을 수평으로 이동할 수도 있습니다(이렇게 하면 평소와 같이 이동 비용이 발생합니다). 활공하는 동안에는 낙하 피해를 받지 않습니다.</p><p>아스트랄 바다에 있는 동안 박쥐는 착용한 갑옷에 관계없이 40피트의 비행 속도를 가지며 호버링할 수 있습니다.</p>"
     }
   }
 }

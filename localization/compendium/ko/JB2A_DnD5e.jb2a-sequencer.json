@@ -1,14 +1,44 @@
 {
   "label": "JB2A Sequencer Macros",
   "entries": {
+    "Arrows - Bolts": {
+      "name": "화살표 - 볼트 - Arrows - Bolts"
+    },
     "Bless": {
       "name": "축복 - Bless"
+    },
+    "Bomb Throw": {
+      "name": "폭탄 투척 - Bomb Throw"
+    },
+    "Energy Field": {
+      "name": "에너지 분야 - Energy Field"
+    },
+    "Energy Strands": {
+      "name": "에너지 가닥 - Energy Strands"
+    },
+    "Flask Throw": {
+      "name": "플라스크 던지기 - Flask Throw"
+    },
+    "Icosahedron": {
+      "name": "정이십면체 - Icosahedron"
     },
     "Magic Circle": {
       "name": "마법진 - Magic Circle"
     },
+    "MoltenEarth Orange Shield": {
+      "name": "녹아내린 대지의 주황색 방패 - MoltenEarth Orange Shield"
+    },
     "Shield": {
       "name": "방패 - Shield"
+    },
+    "Vortex": {
+      "name": "와동 - Vortex"
+    },
+    "Weapon Throw with Return": {
+      "name": "복귀와 함께 무기 던지기 - Weapon Throw with Return"
+    },
+    "Whirl": {
+      "name": "회전 - Whirl"
     }
   }
 }

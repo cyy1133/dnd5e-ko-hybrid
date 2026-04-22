@@ -2,13 +2,16 @@
   "label": "Actors",
   "entries": {
     "Actor.1E0deR9jjBXy713T": {
-      "name": "경비병 딘"
+      "name": "경비병 딘",
+      "description": ""
     },
     "Actor.1KSH0A35mX6vH4Kb": {
-      "name": "뱀파이어 해적 - Vampirate"
+      "name": "뱀파이어 해적 - Vampirate",
+      "description": ""
     },
     "Actor.1To0Pai6CAaUznbb": {
-      "name": "구울"
+      "name": "구울",
+      "description": ""
     },
     "Actor.2xWKKNHRmU6SIJEy": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>사제 수행자는 믿음이 크지만 마법 능력은 미미합니다. 일부는 종교 단체의 수련생이거나 열성적인 군대의 군인일 수도 있고, 다른 일부는 소규모 공동체의 신앙 지도자이거나 순례 여행을 떠나는 방랑자일 수도 있습니다. <p><i>필멸자와 신의 중재자</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:any=1\">Any</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> 개인, @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>사제들은 믿음의 힘을 활용하여 기적을 행합니다. 이러한 종교적 지지자들은 그들이 따르는 신앙만큼 다양합니다. 어떤 사람들은 신과 그 종들에게 순종하는 반면, 다른 사람들은 오래된 신조에 따라 살아갑니다. 신념은 사제의 행동과 마법을 안내하며, 이를 통해 사제는 자신의 이데올로기에 따라 세상을 형성합니다.</p><p>사제 역할 표에서 결과를 선택하거나 선택하여 다양한 종류의 사제에게 영감을 주세요.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Priest Roles\"><caption>프리스트 역할</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"true\">[[/r 1d10]]</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">사제 ...</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"rd__th ve-col-10 \">악령을 지키는 수행자 bay.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"rd__th ve-col-10 \">교회를 대변하는 장로 dead.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"rd__th ve-col-10 \">악인을 사냥하는 퇴마사 영혼.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"rd__th ve-col-10 \">아무도 들어본 적이 없는 신의 추종자 of.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"rd__th ve-col-10 \">전통의 중재자이자 교사 방법.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"rd__th ve-col-10 \">개념, 다중우주적 관점 또는 평면에 전념하는 철학자 존재.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"rd__th ve-col-10 \">고대 신앙의 환생 Leader.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"rd__th ve-col-10 \">팅크와 공연을 사용하여 Divine.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"9\" data-roll-max=\"9\">9</td><td class=\"rd__th ve-col-10 \">약으로 많은 사람들을 완화시키는 무당 병.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"10\" data-roll-max=\"10\">10</td><td class=\"rd__th ve-col-10 \">신을 위해 전쟁을 벌이는 열광자 원인.</td></tr></tbody></table><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\">_ _FVTTTOK_110__</span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>빛나는 하나, 내 영혼에 불을 붙이시고, 내 행동에 영감을 주시어, 내 길에서 그림자를 쫓아주시고, 당신의 광채 가운데 걷게 하소서.</p><p><span class=\"rd__quote-by\">— <i>아침 기도 Pelor</i></span></p></div></div></div>",
@@ -19,35 +22,44 @@
       "name": "트롤 - Troll"
     },
     "Actor.3Xs1pTS69MXEBJvc": {
-      "name": "짐꾼"
+      "name": "짐꾼",
+      "description": ""
     },
     "Actor.4kir5GIOETH7enyf": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>고대 녹색 용은 전설의 생물로, 하인이나 적의 눈에 거의 띄지 않습니다. 마법과 잘 숨겨진 요원을 통해 이 용들은 아군 사이에 의심을 불러일으키고 고귀한 업적을 훼손합니다. 유대가 약해짐에 따라 드래곤은 더 큰 부와 통제라는 보상을 얻습니다. 결국 고대 녹색 용의 야망은 제국, 평면 영역 또는 죽음 자체에 대한 통제권을 추구하면서 자신의 영토를 넘어 확장됩니다. <p><i>기만과 조롱의 용</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:forest=1\">숲</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> @table[Random Magic Items - Arcana|XDMG|Arcana]</p></li></ul><p>금단의 숲 깊은 곳에서 그린 드래곤은 세상에 악을 속삭이고 듣는 사람들의 삶을 조종합니다. 파악하기 어렵고, 기만적이며, 이기적인 이 크로매틱 드래곤은 단명하는 존재의 두려움을 참을성 있게 잡아먹고, 그들을 타락시키고 고립시킵니다. 녹색 용은 자신을 드러내지 않은 채 수세기 동안 미로 같은 황야에 숨어 있을 수도 있습니다. 그들의 가장 헌신적인 추종자들조차도 그들을 숲의 목소리나 꿈속의 속삭임으로만 알 수 있습니다.</p><p>그들의 힘에도 불구하고 대부분의 그린 드래곤은 신체적 폭력을 경멸하며 전투를 하인의 일로 여기고 적을 속여 위험하거나 착취적인 시나리오를 만드는 것을 선호합니다. 이 드래곤들은 조작의 그물을 구현하고 문서, 가보, 감상적인 보물 등을 훼손하는 강탈 도구 역할을 하는 \"장신구\"를 수집합니다. 용은 고대 숲에 은신처를 두고 있으며, 종종 거대한 나무를 가지와 속이 빈 줄기, 그리고 거대한 뿌리 가운데 동굴이 얽힌 혼합물로 만듭니다. 그들은 숲이 우거진 폐허, 특히 그들이 정복한 사람들의 이전 집에 거주할 수도 있습니다.</p><p>성체 또는 고대 녹색 용의 둥지가 있는 지역은 그 존재로 인해 뒤틀려 다음과 같은 효과를 생성합니다.</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Beast Spies\"><span class=\"bold rd__list-item-name\">Beast 스파이.</span> 작은 짐승은 마법적으로 드라코닉을 이해할 수 있는 능력을 얻고 둥지에서 1마일 이내에 있는 동안 용과 텔레파시로 통신할 수 있습니다.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Poisonous Thicket\"><span class=\"bold rd__list-item-name\">독성 덤불.</span> 1마일 이내에 자라는 일반 식물 은신처는 주변 공기를 독살합니다. 드래곤이나 그 동료가 아닌 생물이 해당 지역에서 @variantrule[Long Rest|XPHB]을 완료할 때마다 [[/save ability=con dc=15]] 내성 굴림에 성공하거나 1시간 동안 &Reference[condition=Poisoned] 조건을 유지해야 합니다.</p></li></ul><p>드래곤이 죽거나 둥지를 다른 곳으로 옮기면 이 효과는 끝납니다. 즉시.</p></div></div>",
       "name": "그린 드래곤 원시체 - Ancient Green Dragon"
     },
     "Actor.55RQaolnMLBuDIra": {
-      "name": "좀비 역병 전파자 - Zombie Plague Spreader"
+      "name": "좀비 역병 전파자 - Zombie Plague Spreader",
+      "description": ""
     },
     "Actor.62KHEBVWxK1i0j2f": {
-      "name": "경비병 - guard"
+      "name": "경비병 - guard",
+      "description": ""
     },
     "Actor.6GWPl99fessqM3u0": {
-      "name": "발리스타 - Ballista"
+      "name": "발리스타 - Ballista",
+      "description": ""
     },
     "Actor.6PD0igpI5xNEnDtk": {
-      "name": "에델린 - Edeline"
+      "name": "에델린 - Edeline",
+      "description": ""
     },
     "Actor.7wX17bEyiJ2AJ8Jq": {
-      "name": "좀비"
+      "name": "좀비",
+      "description": ""
     },
     "Actor.8d7Lwm6BGNkQkKV3": {
-      "name": "영겁의 잠 함정 - Sleep of Ages Trap"
+      "name": "영겁의 잠 함정 - Sleep of Ages Trap",
+      "description": ""
     },
     "Actor.8JnHjtGPykuf6PCM": {
-      "name": "화염을 내뿜는 석상 - Fire-Breathing Statue"
+      "name": "화염을 내뿜는 석상 - Fire-Breathing Statue",
+      "description": ""
     },
     "Actor.8nCD64GXgIYwdsHe": {
-      "name": "옹"
+      "name": "옹",
+      "description": ""
     },
     "Actor.8sOv5gtNIxAeYPsk": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>고대 레드 드래곤은 다중 우주에서 가장 두렵고 파괴적인 존재 중 하나입니다. 파멸을 향해 마음을 돌리는 고대 붉은 용의 분노를 견딜 수 있는 사람은 거의 없습니다. 이 용의 탐욕은 파멸적인 잠재력과 일치하며, 유서 깊은 보물과 마법 아이템이 박힌 막대한 보물을 수집합니다. 그들의 은신처는 종종 화산 깊이에 접근하고 존재의 다른 차원을 뚫고 불의 정령계나 하층계의 하인들을 그들의 서비스로 데려옵니다.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Red Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">적색 <p><i>탐욕과 파괴의 용</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">Habitat:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:hill=1\">Hill</a>, <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:mountain=1\">산</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> Any</p></li></ul><p>적색 드래곤은 원하는 것은 무엇이든 가져가고 앞을 가로막는 모든 것을 불태워 버립니다. 이 크로매틱 드래곤은 끝없이 더 많은 것을 원합니다. 더 많은 마법, 영토, 보물, 기타 그들의 잔인한 야망을 불타오르게 하는 모든 것입니다.</p><p>적색 드래곤은 위험한 절벽과 화산 가운데 둥지를 만듭니다. 내부에서 그들은 보물을 축적하고 맹렬하게 보호하며, 많은 사람들이 보물의 내용물과 수집한 모든 것의 위치를 ​​완벽하게 기억합니다. 무엇이든 없어지면 레드 드래곤이 격노합니다. 그들은 보물을 되찾고 도둑들이 불태워질 때까지 쉬지 않습니다.</p><p>적색 드래곤은 자신이 모든 드래곤 중에서 가장 위대하고 더 나아가 모든 생물 중에서 가장 위대하다고 믿습니다. 그들에게는 약탈과 정복이 그들의 권리입니다. 보물은 그들의 비축물보다 더 영예로운 장소를 찾을 수 없으며, 다른 생물들은 그것을 섬기는 특권을 누리고 있습니다. 화산 산, 불타는 황무지, 다른 생물에게서 훔친 폐허 등 그을려 접근하기 어려운 장소에 은신처를 만듭니다.</p><p>성체 또는 고대 레드 드래곤의 은신처가 포함된 지역은 그 존재로 인해 뒤틀려 다음과 같은 현상이 발생합니다. 효과:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Burning Heat\"><span class=\"bold rd__list-item-name\">불타는 열기.</span> 은신처에서 1마일 이내의 지역은 극심한 열기 지역입니다. 불타는 생물이나 물체는 매 턴 시작 시 추가로 [[/damage 1d4 type=fire]] 피해를 입습니다.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Smoldering Haze\"><span class=\"bold rd__list-item-name\">그을린 안개.</span> 은신처에서 1마일 이내의 지역은 재구름으로 인해 @variantrule[Lightly Obscured|XPHB]입니다. 드래곤이나 그 동료 중 하나가 아닌 생물이 해당 지역에서 @variantrule[Long Rest|XPHB]을 완료할 때마다, 그 생물은 [[/save ability=con dc=15]] 내성 굴림에 성공하거나 1시간 동안 &Reference[condition=Poisoned] 조건을 유지해야 합니다.</p></li></ul><p>드래곤이 죽거나 둥지를 다른 곳으로 옮기면 이러한 효과는 다음과 같습니다. 즉시 종료하십시오.</p></div></div>",
@@ -62,123 +74,156 @@
       "name": "도적 - Bandit"
     },
     "Actor.aNniuJiISkD70HMo": {
-      "name": "쥐떼"
+      "name": "쥐떼",
+      "description": ""
     },
     "Actor.ApQtDfiiZLVjr5fi": {
-      "name": "좀비"
+      "name": "좀비",
+      "description": ""
     },
     "Actor.AsFFRQ3RGODJxmqf": {
-      "name": "늑대 - Wolf"
+      "name": "늑대 - Wolf",
+      "description": ""
     },
     "Actor.AtFlOtNJ3YMQowXO": {
-      "name": "피를 마시는 뱀파이어 - Blood Drinker Vampire"
+      "name": "피를 마시는 뱀파이어 - Blood Drinker Vampire",
+      "description": "<p>피를 마시는 뱀파이어는 정교한 무기술과 흡혈 능력을 함께 사용하는 언데드 포식자입니다. 이들은 희생자를 교란한 뒤 이빨을 박아 생명력을 빨아들이고, 빼앗은 활력으로 스스로를 회복합니다. 굶주림이 깊어질수록 사냥은 더욱 대담하고 잔혹해집니다.</p>"
     },
     "Actor.AY16C6tqdnFno9g6": {
-      "name": "균형과 파멸 - Balance and Ruin"
+      "name": "균형과 파멸 - Balance and Ruin",
+      "description": ""
     },
     "Actor.bhITvhsWKSt9OHeC": {
-      "name": "새 액터 - New Actor"
+      "name": "새 액터 - New Actor",
+      "description": ""
     },
     "Actor.C92i32kelQfBMSQe": {
-      "name": "레"
+      "name": "레",
+      "description": ""
     },
     "Actor.CozHUk6z3DE8uKCZ": {
-      "name": "태양의 표면 - Surface of the Sun"
+      "name": "태양의 표면 - Surface of the Sun",
+      "description": ""
     },
     "Actor.d5e5ki51B7IuKXZd": {
-      "name": "옹"
+      "name": "옹",
+      "description": ""
     },
     "Actor.ddRxpWgCnnl8MpKz": {
-      "name": "화염을 내뿜는 석상 - Fire-Breathing Statue"
+      "name": "화염을 내뿜는 석상 - Fire-Breathing Statue",
+      "description": ""
     },
     "Actor.DloJhuVlZDWpdQk2": {
-      "name": "배시 윈드리버"
+      "name": "배시 윈드리버",
+      "description": ""
     },
     "Actor.dNqQhcYiB6aNg4do": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>마인드 플레이어는 쥐에게 사이오닉 에너지를 폭격하여 두개골 쥐를 만듭니다. 두개골 쥐는 일반 쥐보다 다소 똑똑하고 그렇게 행동합니다. 충분한 양의 두개골 쥐가 모여서 떼를 형성한다면, 그들은 그들의 마음을 떼의 모든 구성 요소에 대한 축적된 기억과 함께 하나의 지능으로 통합합니다. 결과적으로 쥐는 더 똑똑해지고 떼가 지속되는 동안 높은 지능을 유지합니다. 떼는 또한 마인드 플레이어 제작자가 각 두개골 쥐에 이식한 잠재적 사이오닉 능력을 깨워 떼 사이오닉 능력을 부여합니다.</p><p>두개골 쥐 한 마리는 타고난 텔레파시를 사용하여 배고픔, 공포 및 기타 기본적인 감정을 전달합니다. 텔레파시로 소통하는 두개골 쥐 떼는 크리처 하나라고 \"말하며\", 종종 집단 대명사 \"우리\"와 \"우리\"를 사용하여 자신을 지칭합니다. 일부 마인드 플레이어 식민지에서는 두개골 쥐를 스파이로 사용합니다. 쥐들은 공동체에 침입하여 군집의 장뇌의 눈과 귀 역할을 하며, 떼를 지어 장로 뇌의 텔레파시 범위 내에 있을 때 자신의 생각을 전달합니다.</p></div>",
       "name": "두개골 쥐 떼 - Swarm of Cranium Rats"
     },
     "Actor.DZmqGsP5VguWueJ5": {
-      "name": "샤드릭스 실버퀼 - Shadrix Silverquill"
+      "name": "샤드릭스 실버퀼 - Shadrix Silverquill",
+      "description": ""
     },
     "Actor.e03sTu5kHyaWvyWo": {
-      "name": "피티팡 스톰웨더 - Pytipan Stormweather (Copy)"
+      "name": "피티팡 스톰웨더 - Pytipan Stormweather (Copy)",
+      "description": ""
     },
     "Actor.e0fyyWZp5VsYUZzw": {
       "description": "<p>오물 속의 거주자이자 하수구의 청소부, 감염의 매개체인 쥐처럼 인류의 삶에 큰 영향을 미칠 수 있는 단일 동물은 없다고 봐도 좋습니다. 무질서하게 개발된 대도시의 도심부터 가난한 농부의 작은 헛간까지, 쥐는 재빠르게 들어갈 수 있을 만한 곳이라면 구석구석 어디에나 퍼져 있습니다. 손바닥보다 크지 않은 크기부터 (꼬리를 포함하여) 팔뚝만 한 길이까지 다양한 이 작은 설치류는 사뭇 수완이 좋은 작은 도둑입니다. 쥐들은 문 아랫부분 사이의 틈처럼 좁은 공간에도 몸을 욱여넣을 수 있을 정도로 자신의 몸을 압축할 수 있습니다. 수영할 수 있으며 어둠 속에서도 길을 찾을 수 있으므로, 어떤 쥐들은 작은 배관용 파이프를 기어 올라와 터널을 날쌔게 통과하여 상인의 집으로 들어가는 모습이 관측되기도 합니다.</p>\n<p><strong>정말 대단하쥐.</strong> 많은 사람은 쥐를 평범한 유해동물 그 이상으로 생각하지 않지만, 마법적인 패밀리어로 활용되지 않는 쥐조차도 매우 지능이 뛰어납니다. 연구자들은 쥐가 복잡한 미로를 통과하고, 지렛대 방식의 퍼즐을 풀고, 다른 동물에게는 찾아볼 수 없었던 수준으로 주변 세계를 이해하고 있다는 사실을 관측해냈습니다. 어떤 머리 좋은 거리의 주민은 쥐를 훈련시켜 적절한 보상을 받는 대가로 음식을 훔치거나 남들이 보고 있지 않을 때 동전 지갑에서 몇 개의 반짝거리는 동전을 훔쳐내도록 하기도 합니다. 그러나 동료로 쥐를 선택할 때는 신중하게 고려하는 것이 좋습니다. 어떤 쥐들은 그 짧은 털가죽 사이에 거주하는 곤충을 통해 감염되는 치명적인 질병을 옮길 수도 있기 때문입니다. 날카롭고 꼭 달라붙는 발톱과 함께, 쥐는 가늘고 길쭉한 앞니로 세게 물어버릴 수도 있습니다. 젊은 영웅이여, 근처에 쥐가 있다면 주의를 기울이십시오. 그렇게 단순한 작은 동물조차도 그 까맣고 깜빡이지 않는 눈 속에 비밀을 품고 있을 수도 있으니 말입니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>\n",
       "name": "거대 쥐 - Giant Rat"
     },
     "Actor.e16QsYwPL51Ub3ey": {
-      "name": "낙하 그물 - Falling Net"
+      "name": "낙하 그물 - Falling Net",
+      "description": ""
     },
     "Actor.E3SqVhQfN3m5c2Ve": {
       "description": "<blockquote>\n<p>“.... 그러더니 그 녀석이 내게 이렇게 말하더군. “믹! 또 왕실 경비대를 속일 수 있다고 생각한 건 아니죠? 이번에는 절대 안 됩니다!” 그렇게 말했지. 글쎄다, 이 미키 어르신은 이런 경우를 대비해서 한두 가지 속임수를 준비해 두고 있거든. 그리고 늙은 머나밴드 대장이 언제나 지껄여대는 퍼플 포지스 스피리츠 한 병이면 속임수를 쓰고 도망칠 필요도 없단 말이지. 미키 텐티스만큼이나 똑똑하고 잘생긴 경비대원은 없다네!”</p>\n</blockquote>\n<p>- 친근한 플럼프 여관에서 엿들은 이야기.</p>\n<p>왕국 국민 중 살면서 경비대원 부류와 아직 한 번이라도 교류해보지 않은 사람이 누가 있을까요? 넓은 지역에 걸친 해안 도시에 거주하는 사람들은 거리를 순찰하고, 출입구를을 지키고, 화물을 검사하고, 물론 공정한 도시의 시민들을 지원(하거나 체포)하는 무장한 경비대를 매일 가까이서 봅니다. 그러나 경비대원은 도시의 성곽이나 문에만 있는 것이 아닙니다. 용병이든 전문직이든, 경비대원은 종종 상대적으로 덜 안정적인 지역을 여행하면서 길을 순찰하고 길 잃은 동물이나 도적 떼를 쓸어버리거나, 소중한 화물이나 중요한 시민을 보호하기 위해 경계하곤 합니다. 이 서적에서 다뤘던 도적이나 사교도처럼, 경비대원은 그 종류가 매우 다양합니다. 많은 경비대원이 고도로 훈련되고 조직된 것처럼 보일 수도 있지만, 대부분의 경비대원은 시장의 번화한 거리에서 몸싸움을 하거나 뒤집힌 마차에서 떨어진 물건을 줍는 도적 몇 명을 해산시키는 것 외에는 별다른 행동을 관찰하지 않는다는 점을 고려해야 합니다. 경비대원은 조직 상부에서 흔히 연상하곤 하는, 머리가 희끗희끗해진 단련된 전직 군인 유형의 인물들이 아닙니다. 젊은 모험가여, 세심하게 관찰하고 법의 경고를 주의 깊게 관찰하십시오. 그대들의 악랄한 시선에 경비대원은 별다른 위협처럼 보이지 않을 수도 있지만, 도시의 지하 감옥에서 기다리고 있는 것들은 이런 위협을 감수할 가치가 없을지도 모릅니다!</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "name": "경비대원 - Guard"
     },
     "Actor.e7dBzDD3FJRaV6uK": {
-      "name": "거트리퍼(뱀파이어) - Gutripper (Vampire)"
+      "name": "거트리퍼(뱀파이어) - Gutripper (Vampire)",
+      "description": ""
     },
     "Actor.eFex5A5Z9pneezWd": {
-      "name": "아이린 - Irene"
+      "name": "아이린 - Irene",
+      "description": ""
     },
     "Actor.EIopSkVDOZ0PgDZM": {
       "description": "<p> </p>\n<blockquote>\n<p>직접 점멸 개를 목욕시키는 것은 그 자체로 일련의 도전입니다. 종종 당신의 소중한 강아지가 청소를 마치자마자 가장 가까운 진흙 웅덩이로 순간이동해 버릴 가능성이 높기 때문에, (상황이 허락하는 한) 이 야수가 스스로 청결을 유지하게끔 하는 것이 가장 좋습니다.\n<br /><em>당신의 점멸 개 돌보기, 46페이지.\n</em></p>\n</blockquote>\n<p>점멸 개는 일반적인 개과 동물 중에서도 주목할 만한 특이한 짐승입니다. 외관만 보았을 때, 이 개는 황갈색을 띤 노리끼리한 털결을 지니고 높이가 약 2.5~3ft에 달하는 평균적인 크기에 특이점이 있다고 볼 만한 흔적이 없으므로, 일견 대부분의 사냥개와 비슷해 보입니다. 하지만, 이 개의 진정한 비밀은 그 안에 내재되어 있습니다. 점멸 개는 원하는 대로 눈 깜빡할 사이에 한 장소에서 다른 장소로 “점멸”하거나 순간이동하는 기이한 능력이 있습니다. 마법사들이 순식간에 먼 거리를 이동하기 위해 사용하는 주문과 비슷한 맥락으로, 점멸 개는 현실의 구조를 찢어발겨 즉시 사라져 원래의 장소로부터 최대 40ft 이상 떨어진 장소에 나타납니다. 점멸 개가 살아있는 것을 운반하여 같이 이동할 수는 없으나, 개가 소지하고 있는 장비나 물건은 모두 함께 순간이동됩니다. 점멸 개는 다른 개과 동물과 비교했을 때 평균을 넘어선 지능을 보유하며, 다른 개과 동물에게 “점멸 개 언어”라고 하는 자신만의 언어로 말할 수 있습니다. 이들이 무슨 말을 하는지는 비밀에 싸여 있으나, 점멸 개는 또다른 에테리얼 네발 야수에게 달려드는 것으로 알려져 있으므로 아마도 이들에 대한 강력한 증오심을 토로하는 것이 아닐까 추측되고 있습니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "name": "점멸 개 - Blink Dog"
     },
     "Actor.FgjHoHXVAcGEUlH5": {
-      "name": "낫날 함정 - Scything Blade Trap"
+      "name": "낫날 함정 - Scything Blade Trap",
+      "description": ""
     },
     "Actor.fKd6acQLjH2SztCS": {
-      "name": "테오노르 스톰웨더 - Theonor Stormweather"
+      "name": "테오노르 스톰웨더 - Theonor Stormweather",
+      "description": ""
     },
     "Actor.fLhbxn6TKO9zvY50": {
-      "name": "에드먼드 - Edmund"
+      "name": "에드먼드 - Edmund",
+      "description": ""
     },
     "Actor.flxEMNBsvEt68dPT": {
-      "name": "화염 폭발 함정 - Fiery Blast Trap"
+      "name": "화염 폭발 함정 - Fiery Blast Trap",
+      "description": ""
     },
     "Actor.FoYfFjFGNEuuO2Wu": {
-      "name": "절멸의 구 - Sphere of Annihilation"
+      "name": "절멸의 구 - Sphere of Annihilation",
+      "description": ""
     },
     "Actor.FRLqkRgtXFnygciY": {
-      "name": "밴시 - Banshee"
+      "name": "밴시 - Banshee",
+      "description": ""
     },
     "Actor.FuABr7JiKTNzOFLw": {
-      "name": "폴"
+      "name": "폴",
+      "description": ""
     },
     "Actor.FxyAWzWVDD0G0egT": {
-      "name": "키메라 쥐 - Chimeric Rat"
+      "name": "키메라 쥐 - Chimeric Rat",
+      "description": ""
     },
     "Actor.g3avmNINO9QDjjBh": {
-      "name": "고블린"
+      "name": "고블린",
+      "description": ""
     },
     "Actor.gBovuWOm8K1NVOeh": {
-      "name": "붕괴하는 천장 - Collapsing Roof"
+      "name": "붕괴하는 천장 - Collapsing Roof",
+      "description": ""
     },
     "Actor.gs8MyGwAO6tHHSyl": {
-      "name": "레포렘 - Leporem"
+      "name": "레포렘 - Leporem",
+      "description": ""
     },
     "Actor.GvoeSryLGcE6B3HA": {
       "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>전쟁 뿔피리가 울리고, 투석기에서 돌이 날아가고, 홉고블린이 전투를 위해 행진하는 동안 수천 개의 부츠를 신은 발의 천둥소리가 땅을 가로질러 메아리칩니다. 문명의 국경을 넘어 정착민과 정착민은 정복에 대한 갈증이 결코 충족되지 않는 공격적인 인간형 동물과 싸워야 합니다.</p><p>홉고블린의 피부는 짙은 주황색 또는 붉은 주황색 피부를 갖고 있으며, 머리카락은 짙은 적갈색에서 짙은 회색까지 다양합니다. 북극 또는 짙은 갈색 눈은 딱정벌레 같은 눈썹 아래를 내다보고 있으며 넓은 입은 날카롭고 누런 이빨을 자랑합니다. 수컷 홉고블린은 큰 파란색 또는 빨간색 코를 가지고 있는데, 이는 고블린킨 사이의 정력과 힘을 상징합니다. Hobgoblin은 인간만큼 오래 살 수 있지만 전쟁과 전투에 대한 사랑은 극소수만이 가능하다는 것을 의미합니다.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Goblinoids.</span></span> <p>Hobgoblin은 고블리노이드라고 불리는 생물 계열에 속합니다. 그들은 종종 자신의 사촌, 작은 고블린, 사나운 버그베어를 다스리는 모습으로 발견됩니다. <p>홉 고블린은 체력과 무용으로 미덕을 측정하며 전투에서 기술과 교활함을 보여줄 기회 외에는 아무것도 신경 쓰지 않습니다. 높은 군사 계급의 홉고블린은 무력으로 지위를 획득한 다음 엄격한 조치를 통해 권위를 강요하여 그 지위를 유지합니다.</p><div class=\"rd__spc-inline-post\"></div><p>홉고블린은 다양한 무기를 사용하여 싸우도록 훈련하고 무기, 갑옷, 공성 엔진 및 기타 군사 장치를 제작하는 데 뛰어난 기술을 가지고 있습니다. 조직적이고 규율이 잘 잡혀 있는 그들은 무기, 갑옷, 개인 소유물을 각별히 관리합니다. 그들은 부족과 관련된 대담한 색상을 선호하며, 종종 정교한 유니폼을 핏빛 붉은색 파이핑과 검은색으로 염색된 가죽으로 장식합니다. <p>홉고블린은 군단이라고 알려진 부족 집단으로 스스로를 조직합니다. 무술 사회에서 모든 홉 고블린에는 강력한 지도자와 챔피언부터 일반 보병, 창 끝에서 최전선으로 몰려드는 고블린에 이르기까지 계급이 있습니다. 군단은 군벌이 이끄는데, 그 지휘하에 여러 명의 대장이 복무합니다. 홉고블린 군벌은 군대를 전투로 이끄는 것보다 전략, 승리, 영광, 평판 및 지배력에 더 관심이 있는 무자비한 폭군입니다.</p><div class=\"rd__spc-inline-post\"></div><p>홉고블린이 자신의 군단에 속해 있는 것처럼 충성스럽고 규율이 잘 잡혀 있는 것처럼, 라이벌 군단은 명성과 지위를 위해 끊임없이 경쟁합니다. 군대가 제지되지 않으면 군단 간의 회의는 폭력으로 이어지며, 오직 매우 강력한 지도자만이 군단이 전장에서 협력하도록 강요할 수 있습니다. <p>홉고블린은 전술과 규율에 대한 강한 이해력을 갖고 있으며 전략적 사고를 가진 지도자의 지시에 따라 정교한 전투 계획을 수행할 수 있습니다. 그러나 그들은 엘프를 싫어하고 전투에서 다른 적보다 먼저 그들을 공격합니다. 비록 그렇게 하는 것이 전술적 오류가 될지라도 말입니다.</p><div class=\"rd__spc-inline-post\"></div><p>군단은 종종 고블린을 포함하여 덜 신뢰할 수 있고 더 소모적인 군대로 대열을 보충합니다.ugbears, orcs, 사악한 인간, 오우거 및 거인.</p></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Beast Trainers.</span></span> <p>Hobgoblins는 봉사할 동물을 훈련해 온 오랜 역사를 가지고 있습니다. 좀 더 문명화된 종족처럼 그들은 소와 말을 이용해 물품과 무기를 장거리로 운반합니다. 이들은 훈련된 까마귀를 이용해 서로 소통하고, 포악한 늑대를 키워 포로를 지키고 홉고블린 수용소를 보호한다. 홉고블린 기병대는 고블린이 늑대를 타는 것과 같은 방식으로 훈련된 늑대를 말로 사용합니다. 일부 부족에서는 육식성 유인원을 싸우는 짐승으로 키우기도 합니다. <p>홉고블린은 풍부한 자원이 있는 땅을 차지하며 숲과 산, 광산 근처, 인간 정착지, 나무, 금속 및 잠재적인 노예를 찾을 수 있는 모든 곳에서 찾을 수 있습니다. 그들은 전략적으로 유리한 위치에 요새를 건설하고 정복한 다음 이를 집결지로 사용하여 영토를 확장합니다.</p><div class=\"rd__spc-inline-post\"></div><p>홉고블린 군벌은 결코 전투에 지치지 않지만 가볍게 무기를 들지도 않습니다. 공격하기 전에 홉고블린은 철저한 정찰을 수행하여 적의 강점과 약점을 측정합니다. 요새를 공격할 때 그들은 먼저 요새를 포위하여 탈출로와 보급선을 차단한 다음 천천히 적을 굶겨 죽입니다.</p><p>홉고블린은 자신의 소유지를 강화하고 자신만의 혁신으로 기존 방어를 강화합니다. 동굴 단지, 던전, 폐허 또는 숲에 은신처를 두고 도랑, 울타리, 문, 감시탑, 구덩이 함정, 투석기 또는 발리스타로 요새를 보호합니다.</p></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Legion of Maglubiyet.</span></span> <p>Hobgoblins는 고블린의 더 큰 신인 Mighty One인 Maglubiyet을 숭배합니다. 이 수치가 끔찍하기는 하지만, 홉고블린은 죽음을 두려워하지 않으며, 전투에서 죽으면 그들의 영혼이 차원에 있는 마글루비예트 군대의 명예로운 대열에 합류한다고 믿습니다. Acheron.</p><div class=\"rd__spc-inline-post\"></div></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud \"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\">__FVTTT OK_89__<span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>그들은 우리의 방패보다 먼저 부수고,</i></p><p class=\"rd__quote-line \"><i>그들은 우리의 칼날 아래로 떨어졌습니다.</i></p><p class=\"rd__quote-line \"><i>그들의 집은 우리의 것입니다. 정복하라,</i></p><p class=\"rd__quote-line \"><i>그들의 아이들은 우리의 노예이다.</i></p><p class=\"rd__quote-line \"><i>아케론! 아케론!</i></p><p class=\"rd__quote-line rd__quote-line--last\"><i>승리는 우리의 것입니다!</i>”</p><p><span class=\"rd__quote-by\">— 홉고블린 전쟁의 번역 찬트</span></p></div><div class=\"float-clear\"></div></div></div>",
       "name": "홉고블린"
     },
     "Actor.H6IdaQAUZWCkKpev": {
-      "name": "고블린 뱀파이어 스폰 - Goblin Vampire Spawn"
+      "name": "고블린 뱀파이어 스폰 - Goblin Vampire Spawn",
+      "description": ""
     },
     "Actor.hK0fBl7nF0viERd2": {
-      "name": "춤추는 불빛 (청록/파랑) - Dancing Lights (Blue Teal)"
+      "name": "춤추는 불빛 (청록/파랑) - Dancing Lights (Blue Teal)",
+      "description": ""
     },
     "Actor.HO1veItHcsjHy03r": {
-      "name": "독성 폭풍 - Poisoned Tempest"
+      "name": "독성 폭풍 - Poisoned Tempest",
+      "description": ""
     },
     "Actor.huzvGd2s5UGAEUPW": {
-      "name": "썰매개 - Sled Dog"
+      "name": "썰매개 - Sled Dog",
+      "description": ""
     },
     "Actor.I5VkfLYVmRpfupJJ": {
-      "name": "일반인(여성)"
+      "name": "일반인(여성)",
+      "description": ""
     },
     "Actor.iBw0nThhKPnlZtu0": {
-      "name": "브렛 장 - Brett Jang"
+      "name": "브렛 장 - Brett Jang",
+      "description": ""
     },
     "Actor.ihUbscpiPEvMuMnf": {
       "description": "<p>언더다크의 깊숙한 곳에 은신처를 만드는 딥 드래곤은 크로매틱 드래곤의 악몽 같은 사촌입니다. 지하 세계의 뒤틀린 마법 에너지는 그들에게 두려움을 심어주고 마음에 상처를 주는 마법 포자를 내뿜는 능력을 부여합니다.</p>\n<p>딥 드래곤의 검은색과 회색의 가죽은 도롱뇽처럼 매끄럽고 눈은 창백합니다. 나이가 들수록 포자 호흡으로 인해 피부, 특히 머리와 목 주위에 곰팡이가 피어납니다. 날개는 앞다리에 부착되어 몸 가까이 접힐 수 있어 딥 드래곤이 상대적으로 좁은 터널을 쉽게 통과할 수 있습니다.</p>\n<p>딥 드래곤은 종종 비밀을 쌓아두고 머나먼 땅에 대한 지식을 기뻐합니다. 많은 사람들은 언더다크의 다른 주민들을 상대로 사용할 수 있는 새로운 통찰력과 트릭을 찾고 있으며, 전투에서 힘을 쏟는 것보다 사회적 조작과 교활한 거래를 선호합니다. 딥 드래곤은 자신에게 유용하지 않은 모든 생물을 무시하지만 부족한 지식에 대해서는 기꺼이 협상합니다.</p>\n<h3 id=\"CreatingaDeepDragon\" class=\"compendium-hr\">딥 드래곤 만들기</h3>\n<p>Deep Dragon 성격 특성 및 Deep Dragon 이상 표를 사용하여 독특한 Deep Dragon 캐릭터 묘사에 영감을 주고 Deep Dragon 주문 시전 표를 사용하여 주문 시전 드래곤에 대한 주문을 선택하는 데 도움을 주세요.</p>\n<h4 id=\"DeepDragonPersonalityTraits\" class=\"compendium-hr quick-menu-exclude\">딥 드래곤 성격 특성</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d8</th>\n<th>특성</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>나는 더 약한 생물의 손에 부상을 입을 위험이 없습니다. 특히 그들을 서로 대항하고 그들이 나를 대신하여 싸우게 할 수 있는 동안에는 더욱 그렇습니다.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>용족이 아닌 사람이 내 생각의 뒤틀린 미로에 침투하는 것은 어렵습니다.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>나는 다른 드래곤의 의견에 동의하지 않을 수도 있지만, 우리는 우월한 존재이므로 직접적인 갈등으로 자신을 낮추어서는 안 됩니다.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>나는 지상 세계로 가는 데 관심이 없습니다. 하인을 보내는 곳입니다.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>다른 생물들의 사소한 말다툼이 나를 지루하고 짜증나게 하는 동안, 나는 조개나 살을 빼낸 것과 같은 진미를 가져다줌으로써 삶의 더 좋은 것들에 대한 감사를 표현하는 사람들의 말을 들을 수도 있습니다.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>나는 마인드 플레이어를 제거하기 위해 기꺼이 노력할 수도 있습니다. 저 역겨운 생물들을 막아야 합니다.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>나는 바다의 가장 깊은 곳을 보는 꿈을 꿉니다.</td>\n</tr>\n<tr>\n<td>8</td>\n<td>나는 사람들이 나의 진정한 본성을 알지 못하는 한 사람들과 함께 있는 것을 더 좋아합니다.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"DeepDragonIdeals\" class=\"compendium-hr quick-menu-exclude\">딥 드래곤 이상</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d6</th>\n<th>이상적</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1__FVTTT알았어_89__\n<td><strong>이해.</strong> 진정한 힘은 다른 생물이 당신의 동기를 식별하는 것보다 다른 생물의 동기를 더 잘 식별하는 능력에서 나옵니다. (모두)</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Kindred.</strong> 모든 드래곤은 서로 친척이며, 우리 모두는 그러한 친척 관계를 우선시하는 것이 좋습니다. (모든)</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>미스테리.</strong> 대답할 수 없는 질문에 감사하기 때문에 다른 생명체에게 수수께끼가 되려고 노력합니다. (모두)</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>적응성.</strong> 새로운 형태를 취하든, 새로운 동맹을 맺든, 새로운 전략을 시도하든 유연성은 사람을 젊게 유지합니다. (혼돈)</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>우월성.</strong> 약한 생물은 믿을 수 없으므로 나는 내 신하들에게 내 힘을 끊임없이 상기시킵니다. (악)</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>인내심.</strong> 모든 생명체는 나에게 무언가를 가르쳐 줄 수 있으며, 나는 서둘러 행동하기보다는 그것이 무엇인지 기꺼이 기다리고 알아내려고 합니다. (좋아요)</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"DeepDragonSpellcasting\" class=\"compendium-hr quick-menu-exclude\">딥 드래곤 주문 시전</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>연령</th>\n<th>맞춤법 저장 DC</th>\n<th>알려진 주문</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>고대 딥 드래곤;고대</td>\n<td>19</td>\n<td>명령, 불협화음의 속삭임, 요정의 불, 통로, 수중 호흡</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3 id=\"DeepDragonAdventures\" class=\"compendium-hr\">딥 드래곤 어드벤처</h3>\n<p>Deep Dragon Adventure Hooks 테이블은 딥 드래곤과 관련된 이야기와 모험에 대한 제안을 제공합니다.</p>\n<h4 id=\"DeepDragonAdventureHooks\" class=\"compendium-hr quick-menu-exclude\">딥 드래곤 어드벤처 후크</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d8</th>\n<th>어드벤처 후크</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>익숙하지 않은 드로우 모험가들이 밤에 도시의 거리를 배회하다가 그들이 섬기는 용에 대해 이야기하는 것을 우연히 듣게 되었습니다.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Svirfneblin은 딥 드래곤 이웃에게 경의를 표하기 위해 캐릭터를 고용합니다.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>변장한 딥 드래곤은 해산물 운송 사업에 협력하려는 파티에게 희귀한 유물에 대한 접근 권한을 제공합니다.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>재능있는 젊은 레인저가 사냥 파트너를 원하는 딥 드래곤에게 납치됩니다.</td>\n</tr>\n<tr>\n<td>5</td>\n<td>친절한 젊은 구리 드래곤은 구리 드래곤의 유산을 신뢰하고 있는 딥 드래곤에게 좋은 인상을 주기 위해 측근을 찾습니다.</td>\n</tr>\n<tr>\n<td>6</td>\n<td>딥 드래곤은 언더다크 호수에 바다 괴물이 있다는 소문이 사실인지 알고 싶어서 조사를 위해 모험가를 고용합니다.</td>\n</tr>\n<tr>\n<td>7</td>\n<td>두 개의 언더다크 정착지가 딥 드래곤에 의해 조심스럽게 조종되면서 전쟁을 앞두고 있습니다. 절박한 통치자는 적대감의 진짜 원인을 밝혀낼 수 있는 사람에게 보상을 제공합니다.</td>\n</tr>\n<tr>\n<td>8</td>\n<td>딥 드래곤은 누군가가 도시를 보호하겠다는 오랜 약속에서 드래곤을 구출할 시나리오를 만들어 주기를 원합니다.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h4 id=\"ConnectedCreatures7\" class=\"compendium-hr\">연결된 생물</h4>\n<p>딥 드래곤은 다른 드래곤과 함께 있는 것을 높이 평가합니다. 그들은 대부분의 다른 종을 용족보다 열등하다고 여기며 하인이나 도구로만 가치가 있다고 생각하지만, 그들에게 깊은 인상을 주는 희귀한 개인은 비록 후배이기는 하지만 때때로 파트너로서 존경을 받을 수 있습니다.</p>\n<h4 id=\"AncientDeepDragonConnections\" class=\"compendium-hr quick-menu-exclude\">고대 딥 드래곤 연결</h4>\n<div class=\"table-overflow-wrapper\">\n<table class=\"compendium-left-aligned-table\">\n<thead>\n<tr>\n<th>d4</th>\n<th>연결된 생물</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>고대 딥 드래곤이 어린 붉은 그림자 드래곤을 제자로 삼았습니다.</td>\n</tr>\n<tr>\n<td>2</td>\n<td>고대 드래곤을 사랑하는 두 사람(고대 깊은 드래곤 한 명, 딥 드래곤 한 명과 고대 화이트 드래곤 한 명, 화이트)은 치명적인 사냥을 위한 대상을 선택할 때 백년에 한 번만 서로를 봅니다.</td>\n</tr>\n<tr>\n<td>3</td>\n<td>두 명의 고대 딥 드래곤이 영토를 두고 싸웁니다. 그들은 서로 직접적으로 대항하는 것을 꺼려하며 지역 정착지와 유능한 방문객을 투쟁의 볼모로 사용합니다.</td>\n</tr>\n<tr>\n<td>4</td>\n<td>고대 딥 드래곤은 도시의 사람들에게 광활한 지하 소금 호수의 중심에 드래곤을 통치할 대도시를 건설하도록 일하게 했습니다.</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3 id=\"DeepDragonLairs\" class=\"compendium-hr\">딥 드래곤 레어즈</h3>\n<p>딥 드래곤은 언더다크의 깊숙한 곳에 은신처를 만듭니다. 종종 동맹이나 적대 관계에 있는 사람들의 정착지 근처에 있습니다. 그들의 은신처는 매우 개별적입니다. 일부는 살아있는 곰팡이 네트워크로 짜여져 있습니다. 다른 것들은 고대 도시의 폐허 위에 지어졌거나 지하 호수 근처의 동굴을 깎아 만든 것입니다.</p>\n<p>딥 드래곤의 은신처는 드래곤의 탐험을 위한 기지 역할을 할 뿐만 아니라 드래곤의 보물을 안전하게 보관하는 역할도 합니다. 이 호기심 많은 생물들은 집을 떠나 새로운 환경을 찾고 새로운 풍경을 볼 때 일반적으로 서비터, 동맹, 마법, 함정 또는 이러한 보호 장치의 조합으로 보호되는 은신처를 떠납니다.</p>\n<h4 id=\"DeepDragonLairFeatures\" class=\"compendium-hr\">Deep Dragon Lair 기능</h4>\n<p>딥 드래곤 은신처는 <a title=\"map 5.12\" href=\"https://www.dndbeyond.com/sources/ftod/draconomicon-continued#Map512sapphiredragonlair\">지도 5.12</a>에 표시된 사파이어 드래곤 은신처와 동일한 기본 구조를 공유할 수 있지만, 돌로 형성되는 대신 지하 강 근처에서 자라는 곰팡이 네트워크 내에서 빈 공간으로 구성될 수 있습니다. 그 자체가 무엇이든텁, 딥 드래곤이 소굴의 곰팡이 벽 사이의 좁고 구불구불한 통로를 마법적이고 평범한 함정으로 장식합니다. 일반적인 은신처에는 다음과 같은 특징이 있습니다:</p>\n<p><strong>연결 통로.</strong> 딥 드래곤은 돌을 형성하는 사파이어 드래곤의 능력이 부족하기 때문에 다른 방법으로는 접근할 수 없는 방에 몇 개의 연결 통로나 비밀 문을 추가하고, 아마도 은신처 입구로 인접한 지하 하천에 대한 연결을 포함할 수도 있습니다.</p>\n<p><strong>접수 홀.</strong> 드래곤은 은신처에 있는 큰 방 중 하나를 아군과 서비터를 위한 리셉션 홀로 사용합니다. 나머지 은신처와 마찬가지로 이 방도 부드러운 녹색, 파란색, 보라색 빛을 발산하는 인광성 곰팡이 꽃으로 밝혀졌습니다.</p>\n<p><strong>비축실.</strong> 드래곤의 비축물은 좀 더 먼 방에 숨겨져 있으며, 환상 주문으로 덮여 있고 함정과 마법 경보기로 보호됩니다. 경보가 실행되면 해당 경보는 드래곤의 하수인과 아군을 먼저 소환한 다음 드래곤을 소환합니다.</p>\n<p><strong>지하 강.</strong> 지하 강이 은신처의 바깥 가장자리를 따라 흐르는 곳에 용은 바위로 된 댐을 만들어 흐름을 늦추어 목욕을 하고 수산물을 키울 수 있는 작은 웅덩이를 만들었습니다.</p>\n<p><strong>게스트 스위트룸.</strong> 지도 하단에 보이는 것과 같이 작은 방들이 연결된 큰 방은 용을 방문하는 게스트 숙소로 사용되는 방을 형성합니다. 호스트 드래곤에게 상당한 재정적 또는 감정적 가치가 있는 보물은 보호된 보물함에 보관되어 있지만, 세련되게 꾸며진 방문객 방에는 방문객의 호기심을 자극하고 호스트가 이러한 항목에 대한 이야기를 전할 구실을 제공하기 위해 선택된 접근하기 어렵거나 유명한 지역의 작은 보물이 포함되어 있습니다.</p>",
@@ -189,57 +234,72 @@
       "name": "베스페라 - Vespera"
     },
     "Actor.IM9dg7QrKx837ojP": {
-      "name": "브렛 장 - Brett Jang (Copy)"
+      "name": "브렛 장 - Brett Jang (Copy)",
+      "description": ""
     },
     "Actor.ipzfw0zMsanbUHrk": {
-      "name": "코르복 아이언스카 - Korvok Ironscar"
+      "name": "코르복 아이언스카 - Korvok Ironscar",
+      "description": ""
     },
     "Actor.iRhlspeR87QY5NJS": {
-      "name": "떡대"
+      "name": "떡대",
+      "description": ""
     },
     "Actor.iy2Ss3Jrr2RCP1sg": {
-      "name": "경비병 로운"
+      "name": "경비병 로운",
+      "description": ""
     },
     "Actor.JC0nNWK1up5BiVc1": {
-      "name": "낙하 그물 - Falling Net"
+      "name": "낙하 그물 - Falling Net",
+      "description": ""
     },
     "Actor.JKbjZyWANp9J6Ghe": {
-      "name": "레포렘 (옛날꺼)"
+      "name": "레포렘 (옛날꺼)",
+      "description": ""
     },
     "Actor.jnLhZkHi88HASdJW": {
-      "name": "브렛 장 - Brett Jang"
+      "name": "브렛 장 - Brett Jang",
+      "description": ""
     },
     "Actor.JpXEGUfKECDnwDpe": {
-      "name": "칼날의 길 - Path of Blades"
+      "name": "칼날의 길 - Path of Blades",
+      "description": ""
     },
     "Actor.K2MmHacMgH3RrNyG": {
       "description": "<p>토큰 아트워크: Forgotten Adventures</p>",
       "name": "불량배 - Thug"
     },
     "Actor.KfMUrhocj3cFqbBF": {
-      "name": "일반인(남성)"
+      "name": "일반인(남성)",
+      "description": ""
     },
     "Actor.KGezOxu0Qm81kPGD": {
-      "name": "그물 함정 - Net Trap"
+      "name": "그물 함정 - Net Trap",
+      "description": ""
     },
     "Actor.Kgg4YVY2c8js6oLU": {
-      "name": "에어로사우루스 - Aerosaur"
+      "name": "에어로사우루스 - Aerosaur",
+      "description": ""
     },
     "Actor.KJxxXeB9VWoqct9r": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>고대 검은 용들은 왕국 전체를 파멸시킬 음모를 꾸몄습니다. 그들은 땅을 타락시키고, 언데드 무리를 일으키고, 악마를 묶고, 마법의 재앙을 재현하는 마법을 추구합니다. 고대 블랙 드래곤은 남아 있는 가장 위대한 존재인 광대하고 죽은 영역을 만들기 위해 노력합니다.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Black Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">흑색 Dragons</span></h1> <p><i>Dragons of Decay and 절망</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:swamp=1\">늪</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>흑색 용은 고난과 파멸을 기뻐합니다. 다른 크로매틱 드래곤이 권력과 부를 위해 계획을 세우는 동안, 이 드래곤은 자신이 보는 모든 것을 파괴하고 남은 것을 지배하려고 합니다.</p><p>흑색 드래곤은 구부러진 뿔과 사악한 두개골을 암시하는 시든 얼굴을 가진 무서운 생물입니다. 그들은 일반적으로 정체된 늪, 무너져가는 폐허, 마법이나 환경이 오염된 장소에 거주합니다. 그들의 산성 숨결은 그들의 영토에 상처를 입히고 고대 조각상의 특징을 침식하고 자연에 곪아터지는 상처를 남깁니다.</p><p>흑색 용들은 변색된 희망의 상징과 몰락한 제국의 유물을 비축합니다. 보물을 찾는 사람이 많을수록 블랙 드래곤은 그것을 소중히 여깁니다. 특히 보물을 잃어버린 데 책임이 있는 경우 더욱 그렇습니다.</p><div data-roll-name-ancestor=\"Black Dragon Lairs\" class=\"rd__b  rd__b--1\"><h2 class=\"rd__h rd__h--1\" data-title-index=\"2\"> <span class=\"entry-title-inner\">흑색 Dragon Lairs</span></h2> <p>흑색 드래곤은 음울한 폐허, 오염된 습지, 또는 부패로 뒤덮인 다른 장소.</p><p>성체 또는 고대 흑룡의 둥지가 포함된 지역은 그 존재로 인해 뒤틀려 다음과 같은 효과를 생성합니다.</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Acrid Haze\"><span class=\"bold rd__list-item-name\">매운 안개.</span> 냄새나고 숨막히는 안개 덮개 은신처에서 1마일 이내의 지역으로 해당 지역을 @variantrule[Lightly Obscured|XPHB]로 렌더링합니다. 드래곤과 그 동료가 아닌 다른 생물의 여행은 해당 지역에서 평소보다 두 배의 시간이 걸립니다.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Foul Water\"><span class=\"bold rd__list-item-name\">오염된 물.</span> 둥지에서 1마일 이내의 수원은 초자연적으로 오염되었습니다. 그러한 물을 마시는 생물은 [[/save ability=con dc=15]] 내성 굴림에 성공하거나 1시간 동안 &Reference[condition=Poisoned] 상태를 유지해야 합니다.</p></li></ul><p>용이 죽거나 둥지를 다른 곳으로 옮기면 이러한 효과는 끝납니다. 즉시.</p></div></div>",
       "name": "블랙 드래곤 원시체 - Ancient Black Dragon"
     },
     "Actor.kUxsMINQ3ejZ7aeN": {
-      "name": "레포렘"
+      "name": "레포렘",
+      "description": ""
     },
     "Actor.kVpDaTb0N2z77vyG": {
-      "name": "독 다트 - Poison Darts"
+      "name": "독 다트 - Poison Darts",
+      "description": ""
     },
     "Actor.kyfXSKhgNrJZ6p8X": {
-      "name": "독침 함정 - Poison Needle Trap"
+      "name": "독침 함정 - Poison Needle Trap",
+      "description": ""
     },
     "Actor.KZW3pnEO5K3o6Kn4": {
-      "name": "곰덫 - Bear Trap"
+      "name": "곰덫 - Bear Trap",
+      "description": ""
     },
     "Actor.l9VQ7lYuEYbJwtfO": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>사제 수행자는 믿음이 크지만 마법 능력은 미미합니다. 일부는 종교 단체의 수련생이거나 열성적인 군대의 군인일 수도 있고, 다른 일부는 소규모 공동체의 신앙 지도자이거나 순례 여행을 떠나는 방랑자일 수도 있습니다. <p><i>필멸자와 신의 중재자</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:any=1\">Any</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> 개인, @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>사제들은 믿음의 힘을 활용하여 기적을 행합니다. 이러한 종교적 지지자들은 그들이 따르는 신앙만큼 다양합니다. 어떤 사람들은 신과 그 종들에게 순종하는 반면, 다른 사람들은 오래된 신조에 따라 살아갑니다. 신념은 사제의 행동과 마법을 안내하며, 이를 통해 사제는 자신의 이데올로기에 따라 세상을 형성합니다.</p><p>사제 역할 표에서 결과를 선택하거나 선택하여 다양한 종류의 사제에게 영감을 주세요.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Priest Roles\"><caption>프리스트 역할</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"true\">[[/r 1d10]]</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">사제 ...</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"rd__th ve-col-10 \">악령을 지키는 수행자 bay.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"rd__th ve-col-10 \">교회를 대변하는 장로 dead.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"rd__th ve-col-10 \">악인을 사냥하는 퇴마사 영혼.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"rd__th ve-col-10 \">아무도 들어본 적이 없는 신의 추종자 of.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"rd__th ve-col-10 \">전통의 중재자이자 교사 방법.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"rd__th ve-col-10 \">개념, 다중우주적 관점 또는 평면에 전념하는 철학자 존재.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"rd__th ve-col-10 \">고대 신앙의 환생 Leader.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"rd__th ve-col-10 \">팅크와 공연을 사용하여 Divine.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"9\" data-roll-max=\"9\">9</td><td class=\"rd__th ve-col-10 \">약으로 많은 사람들을 완화시키는 무당 병.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"10\" data-roll-max=\"10\">10</td><td class=\"rd__th ve-col-10 \">신을 위해 전쟁을 벌이는 열광자 원인.</td></tr></tbody></table><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\">_ _FVTTTOK_110__</span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>빛나는 하나, 내 영혼에 불을 붙이시고, 내 행동에 영감을 주시어, 내 길에서 그림자를 쫓아주시고, 당신의 광채 가운데 걷게 하소서.</p><p><span class=\"rd__quote-by\">— <i>아침 기도 Pelor</i></span></p></div></div></div>",
@@ -250,30 +310,36 @@
       "name": "로퍼 - Roper"
     },
     "Actor.lQgacBGNCx5aLVOB": {
-      "name": "젠타림 불량배 - Zhentarim Thug"
+      "name": "젠타림 불량배 - Zhentarim Thug",
+      "description": ""
     },
     "Actor.Lr18Ru97DKml4N1P": {
-      "name": "나"
+      "name": "나",
+      "description": ""
     },
     "Actor.lVXqXvhULDaYlWkc": {
       "description": "<p>드루이드는 다음과 같은 클래스 특성을 보유합니다.</p><h3>히트 포인트</h3><p><strong>히트 다이스:</strong> 드루이드 레벨당 1d8<br><strong>1레벨 히트 포인트:</strong> 8 + 건강 수정치<br><strong>레벨 상승 시의 히트 포인트:</strong> 드루이드 레벨 1 상승 시마다 1d8 (또는 5) + 건강 수정치</p><h3>숙련</h3><p><strong>갑옷:</strong> 경장갑, 중장갑, 방패 (드루이드는 철로 된 갑옷이나 방패를 장비하지 않습니다)<br><strong>무기:</strong> 곤봉, 단검, 다트, 투창, 철퇴, 육척봉, 만곡도, 낫, 무릿매, 창<br><strong>도구:</strong> 약초학 키트<br><strong>내성 굴림:</strong> 지능, 지혜<br><strong>기술:</strong> 비전학, 동물조련, 통찰력, 의학, 자연학, 감지, 종교학, 생존술 중 2개 선택</p><h3>장비</h3><p>캐릭터가 배경에서 받는 장비에 추가로 아래의 장비를 얻고 시작합니다.</p><ul><li>(a) 나무 방패 한 개 (b) 아무 간이 무기</li><li>(a) 만곡도 한 개 (b) 간이 근접 무기</li><li>레더 아머, 모험가의 꾸러미, 드루이드 매개체</li></ul><h1>드루이드 성장</h1><table><thead><tr><td>레벨</td><td>숙련 보너스</td><td>기능</td></tr></thead><tbody><tr><td>1레벨</td><td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.LzJ5ayHt0OlSVGxi]{드루이드어}, @UUID[Compendium.dnd5e.classfeatures.Item.i6tPm3FNK13Ftc9v]{주문시전}</td>\n</tr>\n<tr>\n<td>2레벨</td>\n<td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생변신 (최대 CR ¼}, @UUID[Compendium.dnd5e.classfeatures.Item.u6Du2P9s81SWuGbi]{드루이드 회합}</td>\n</tr>\n<tr>\n<td>3레벨</td>\n<td>+2</td>\n<td>2레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>4레벨</td>\n<td>+2</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생변신 (최대 CR ½}, @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>5레벨</td>\n<td>+3</td>\n<td>3레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>6레벨</td>\n<td>+3</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>7레벨</td>\n<td>+3</td>\n<td>4레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>8레벨</td>\n<td>+3</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.swK0r5TOIxredxWS]{야생 변신 (최대 CR 1}, @UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>9레벨</td>\n<td>+4</td>\n<td>5레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>10레벨</td>\n<td>+4</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>11레벨</td>\n<td>+4</td>\n<td>6레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>12레벨</td>\n<td>+4</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>13레벨</td>\n<td>+5</td>\n<td>7레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>14레벨</td>\n<td>+5</td>\n<td>드루이드 회합 특성</td>\n</tr>\n<tr>\n<td>15레벨</td>\n<td>+5</td>\n<td>8레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>16레벨</td>\n<td>+5</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>17레벨</td>\n<td>+6</td>\n<td>9레벨 주문 슬롯</td>\n</tr>\n<tr>\n<td>18레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.cVDEQo0ow1WJT7Wl]{시간을 초월한 몸}, @UUID[Compendium.dnd5e.classfeatures.Item.xvgPu1O57DgXCM86]{야수 주문}</td>\n</tr>\n<tr>\n<td>19레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.s0Cc2zcX0JzIgam5]{능력치 향상}</td>\n</tr>\n<tr>\n<td>20레벨</td>\n<td>+6</td>\n<td>@UUID[Compendium.dnd5e.classfeatures.Item.ip4bvmGoz3qkoqes]{대드루이드}</td>\n</tr>\n</tbody>\n</table>\n<div class=\"sidebar-block\"><h4>신성한 식물과 나무</h4><p>드루이드는 특정한 식물을 신성하게 여깁니다. 특히 신성하게 여기는 식물은 오리나무, 물푸레나무, 자작나무, 딱총나무, 개암나무, 호랑가시나무, 향나무, 겨우살이, 참나무, 마가목, 버드나무, 주목나무입니다. 드루이드는 이러한 식물을 주문시전 매개체의 일부로써 사용하곤 하는데, 참나무나 주목나무, 혹은 겨우살이의 잔가지 길이를 주문시전 매개체에 함께 포함시켜 사용합니다.</p><p>이와 비슷한 맥락으로, 드루이드는 이러한 나무를 무기나 방패와 같은 다른 물건을 만들 때에도 사용합니다. 주목나무는 죽음이나 소생과 관련지어 생각하기 때문에, 만곡도나 낫과 같은 무기의 손잡이는 주목나무로 만들기도 합니다. 물푸레나무는 생명, 참나무는 힘과 관련이 있습니다. 이러한 나무는 물건에 손잡이를 만드는 데 쓰거나, 곤봉이나 육척봉 같이 하나의 무기를 만드는데 쓰이기도 하며, 방패로 만들기도 합니다. 오리나무는 바람과 관련이 있어 다트나 투창같은 투척 무기를 만드는데 쓰이곤 합니다.</p><p>위에서 언급한 식물이 적은 지역에 사는 드루이드는 물건을 만들 때 다른 식물을 선택합니다. 예를 들어, 사막 지역에 사는 드루이드는 유카나무나 선인장과 식물 등을 더욱 많이 활용할 것입니다.</p></div><div class=\"sidebar-block\"><h4>드루이드와 신</h4><p>일부 드루이드는 자연의 힘 그 자체를 숭배하지만, 대부분의 드루이드들은 멀티버스의 자연신 중 하나를 섬깁니다(@UUID[Compendium.dnd5e.rules.JournalEntry.udVPA9JW5wy5t3G5]{부록 B}에 그러한 신을 정리한 목록이 실려 있습니다). 이러한 신들에 대한 숭배는 클레릭과 시골 사람들의 신앙보다 더 오래된 전통입니다.</p></div><h1>드루이드 회합</h1><p>@Compendium[dnd5e.subclasses.4Ae2SPZRXEVbVs0M]{대지의 회합 Circle of Land}</p>",
       "name": "드루이드 - Druid"
     },
     "Actor.M6F0l7ujPbU74Qi5": {
-      "name": "젠타림 불량배 - Zhentarim Thug"
+      "name": "젠타림 불량배 - Zhentarim Thug",
+      "description": ""
     },
     "Actor.MBm4pIqgYC9vtYDT": {
-      "name": "기본 아이템 더미 - Default Item Pile"
+      "name": "기본 아이템 더미 - Default Item Pile",
+      "description": ""
     },
     "Actor.MDWcGjtNaF07bFdC": {
-      "name": "뱀파이어 해적 마법사 - Vampirate Mage"
+      "name": "뱀파이어 해적 마법사 - Vampirate Mage",
+      "description": ""
     },
     "Actor.nBe9306a8ZoEp0s5": {
       "description": "<p>토큰 아트워크: Forgotten Adventures</p>",
       "name": "리치 - Lich"
     },
     "Actor.ns5JqQiFrQ5vwkEJ": {
-      "name": "구덩이 함정 - Pit Trap"
+      "name": "구덩이 함정 - Pit Trap",
+      "description": ""
     },
     "Actor.NwL1Ye1YLZUFqckK": {
       "description": "<p>죽음의 개는 평원과 사막을 배회하는, 머리가 둘 달린 못생긴 사냥개입니다. 죽음의 개의 심장에는 증오가 타오르고 있으며, 인간형 종족의 살점에 대한 들끓는 식욕으로 여행자와 탐험가들을 공격합니다. 죽음의 개 타액은 역병을 유발하는데, 그 타액에 당한 희생자는 살점이 천천히 썩어 뼈에서 떨어지게 됩니다.</p>\n<p></p><p><em>Token artwork by Forgotten Adventures.</em></p>",
@@ -284,161 +350,204 @@
       "name": "카르타스 데 톰 - Cartas de Tom"
     },
     "Actor.Oiv4u0IyEmhF98gQ": {
-      "name": "들개 - Wild Dog"
+      "name": "들개 - Wild Dog",
+      "description": ""
     },
     "Actor.OPAAvQQmDKDFe09B": {
-      "name": "타바시 사냥꾼 - Tabaxi Hunter"
+      "name": "타바시 사냥꾼 - Tabaxi Hunter",
+      "description": ""
     },
     "Actor.opXOilaFe459dy3s": {
-      "name": "붕괴하는 천장 - Collapsing Roof"
+      "name": "붕괴하는 천장 - Collapsing Roof",
+      "description": ""
     },
     "Actor.OzQoWnvESBhfB2xO": {
-      "name": "드로우 수행자 - Drow Acolyte"
+      "name": "드로우 수행자 - Drow Acolyte",
+      "description": ""
     },
     "Actor.PdkolBw8zfeBLcBL": {
-      "name": "공허한 달의 시험 - Test of the Empty Moon"
+      "name": "공허한 달의 시험 - Test of the Empty Moon",
+      "description": ""
     },
     "Actor.pgp1eqpxWXwt8Evw": {
-      "name": "쥐 - Rat"
+      "name": "쥐 - Rat",
+      "description": ""
     },
     "Actor.pIXBuisn5wcfyvMt": {
-      "name": "고블린 보스"
+      "name": "고블린 보스",
+      "description": ""
     },
     "Actor.pRnPkWLkLrWehiIn": {
-      "name": "독침 - Poison Needle"
+      "name": "독침 - Poison Needle",
+      "description": ""
     },
     "Actor.PZNOeLyJ0zf1hDs7": {
-      "name": "그룬다 - Grunda"
+      "name": "그룬다 - Grunda",
+      "description": ""
     },
     "Actor.q0SFDcB9t7yyoiSR": {
-      "name": "춤추는 불빛 (파랑/노랑) - Dancing Lights (Blue Yellow)"
+      "name": "춤추는 불빛 (파랑/노랑) - Dancing Lights (Blue Yellow)",
+      "description": ""
     },
     "Actor.Q8GclUPBWiVQ0bn6": {
-      "name": "네이브린 스톰웨더"
+      "name": "네이브린 스톰웨더",
+      "description": ""
     },
     "Actor.QaQ8vLcyp5XgCIJI": {
-      "name": "피티팡 스톰웨더 - Pytipan Stormweather (Copy)"
+      "name": "피티팡 스톰웨더 - Pytipan Stormweather (Copy)",
+      "description": ""
     },
     "Actor.QnBUbafM27QsjnEd": {
-      "name": "크로스보우 함정 - Crossbow Trap"
+      "name": "크로스보우 함정 - Crossbow Trap",
+      "description": ""
     },
     "Actor.QOJjovNwwb6oeHay": {
-      "name": "나"
+      "name": "나",
+      "description": ""
     },
     "Actor.QQ0x0fGJsWBrRFwg": {
-      "name": "경비병 - guard"
+      "name": "경비병 - guard",
+      "description": ""
     },
     "Actor.QyAbyNiFDVkweDe3": {
-      "name": "궁수 - Archer"
+      "name": "궁수 - Archer",
+      "description": ""
     },
     "Actor.REbEvkienhIhnVpY": {
-      "name": "용융 마그마 로퍼 - Molten Magma Roper"
+      "name": "용융 마그마 로퍼 - Molten Magma Roper",
+      "description": ""
     },
     "Actor.ri2dpaAV2axzUXH9": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>고대 블루 드래곤은 단명한 하인 집단을 지배하는 것 이상을 생각합니다. 대신 그들은 다른 용들과 세계에서 가장 강력한 주민들보다 우위에 있는 자신의 자리를 차지하려고 합니다. 세계 지배가 너무 지루하거나 진부해 보인다면, 이 드래곤들은 외계 영역, 다세계 제국, 현실의 힘(예: 생명, 폭풍, 시간 그 자체)을 장악하려고 할 수도 있습니다.</p></div><hr class=\"rd__hr rd__hr--section\"><div data-roll-name-ancestor=\"Blue Dragons\" class=\"rd__b  rd__b--0\"><h1 class=\"rd__h rd__h--0\" data-title-index=\"1\"> <span class=\"entry-title-inner\">청색 용</span></h1> <p><i>폭정과 폭풍우의 용</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:desert=1\">사막</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>오만하고 오만한 블루 드래곤은 다른 드래곤이 보물을 모으는 것처럼 통제를 갈망하고 추종자를 모으는 색채 드래곤입니다. 그들은 자신의 영토를 국가가 두려워하는 제국, 즉 제국으로 바꾸려고 합니다.</p><p>청색 드래곤은 날카로운 뿔과 사파이어부터 폭풍우 치는 하늘의 그늘에 이르는 비늘을 지닌 날카로운 특징을 가지고 있습니다. 그들은 사막과 황무지, 특히 꼭대기에서 수 마일까지 볼 수 있는 극적인 첨탑이 있는 지역에 거주합니다. 그들은 버려진 거인의 요새, 몰락한 제국의 거상, 그들의 추종자들이 세운 기념물과 같은 상징적인 힘이 있는 장소 근처의 은신처를 찾습니다.</p><p>통치권과 예술적 걸작이 블루 드래곤의 보물을 가득 채웁니다. 이 드래곤은 평범하거나 결함이 있는 보물에는 관심이 없으며, 독특한 보석, 타락한 왕족의 왕관, 드래곤의 영향력을 퍼뜨릴 수 있는 마법 아이템을 선호합니다. <p>청색 용은 건조한 땅에 산다. 그들의 은신처는 침입자를 가두기 위한 죽음의 함정일 수도 있고 그들이 지배를 계획하는 과시적인 요새일 수도 있습니다.</p><p>성체 또는 고대 블루 드래곤의 은신처가 포함된 지역은 그 존재에 따라 변경되어 다음과 같은 결과를 생성합니다. 효과:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Sinkholes\"><span class=\"bold rd__list-item-name\">싱크홀.</span> 싱크홀은 소굴에서 1마일 이내의 지역에서 더 자주 형성됩니다. 드래곤과 그 동료가 아닌 그 지역의 생물이 @variantrule[Long Rest|XPHB]를 끝낼 때마다 [[/r 1d20]]을 굴립니다. 1이 나오면 생물 아래에 싱크홀이 열리고 생물은 [[/save ability=dex dc=15]] 내성 굴림에 성공하거나 싱크홀 속으로 [[/r 2d4 * 10]]{2d4 × 10}피트 떨어져야 합니다.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Spiteful Storms\"><span class=\"bold rd__list-item-name\">심술궂은 폭풍.</span> 은신처에서 1마일 이내에 먼지 악마와 뇌우가 맹위를 떨치고 있습니다. 해당 지역은 @variantrule[Lightly Obscured|XPHB]입니다.</p></li></ul><p>용이 죽거나 둥지를 다른 곳으로 옮기면 이러한 효과는 즉시 종료됩니다.</p></div></div>",
       "name": "블루 드래곤 원시체 - Ancient Blue Dragon"
     },
     "Actor.rnrXVG8BrNqzQlOk": {
-      "name": "일반인(남성)"
+      "name": "일반인(남성)",
+      "description": ""
     },
     "Actor.S4sblYwZ9NKOwSh2": {
       "description": "<p>뱀파이어가 사람들을 사냥하면 그들은 뱀파이어 스폰이라는 언데드 크리처로 변하기도 합니다. 뱀파이어와 마찬가지로, 스폰 또한 자신의 관 및 무덤의 토양이 있는 범위에서 벗어날 수 없습니다. 뱀파이어 스폰의 모습은 살아있을 때와 비슷해 보이지만, 성격은 그보다 더 포악하며, 외형도 포식자처럼 변합니다.</p>\n<p><em>Token artwork by Forgotten Adventures.</em></p>",
       "name": "뱀파이어 스폰 - Vampire Spawn"
     },
     "Actor.SbPbh7A89iSN7KXk": {
-      "name": "일반인"
+      "name": "일반인",
+      "description": ""
     },
     "Actor.SmrB1etW3geF5Yr2": {
       "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Ixitxachitl(ick-zit-zah-chit-ul로 발음)은 쥐가오리를 닮은 수생 생물로, \"날개\" 끝에 작고 발톱이 달린 손이 있고 사악한 지능으로 빛나는 검은 눈이 있습니다. 많은 생물이 ixitxachitl을 일반적인 만타 가오리로 착각하지만 이는 치명적인 실수로 판명될 수 있습니다. 익시차치틀(ixitxachitl)은 교활하면서도 사악하기 때문에 공통적으로 \"악마 광선\"이라는 별명이 붙습니다. 그들은 민물과 바닷물에 서식하지만 그들의 폭력적인 성격으로 인해 그들에 대해 알려진 바가 거의 없습니다.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">생존을 위한 투쟁.</span></span> <p> Ixitxachitl은 알에서 작은 생물로 나타납니다. 너비가 손바닥 한 뼘보다 조금 더 넓습니다. 그때부터 그들은 어떤 대가를 치르더라도 살아남기 위해 애쓰며 평생 동안 성장합니다. 생존의 비밀을 터득한 ixitxachitl은 재생 능력을 얻고 다른 생물의 생명력을 섭취합니다. <p>Ixitxachitl은 산호초나 기타 자연 수생 지형을 비워 미로 굴을 만들고, 종종 포획한 수생 생물을 노예로 삼아 도움을 요청합니다. 그들은 일반적으로 새로운 비옥한 땅으로 이동하기 전에 한 지역을 맨손으로 벗겨내고 버려진 굴을 남겨 둡니다. ixitxachitl의 학교는 종종 먹이 장소와 영토를 차지하기 위해 다른 수생 생물과 전쟁을 벌입니다. <p>ixitxachitl은 다양한 악마, 특히 그들이 후원자이자 창조자로 간주하는 Demogorgon을 숭배하고 섬깁니다. 그들은 그들 중 누가 악마 왕자의 가장 위대하고 가장 총애받는 종인지를 두고 치열한 경쟁을 벌이고 있습니다. Cleric.</span></span> <p>일부 ixitxachitl과 뱀파이어 ixitxachitl은 신성한 주문을 시전할 수 있습니다. 이러한 생물은 다음 기능을 얻습니다.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> <p>ixitxachitl은 다음을 사용하는 5레벨 주문 시전자입니다. 주문 시전 능력으로서의 지혜(주문 내성 DC 11, 주문 공격 시 명중 +3). ixitxachitl에는 다음과 같은 성직자 주문이 준비되어 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>캔트립(상시 사용 가능): 안내, 기적술</p><p>1레벨(4슬롯): 사람을 매혹, 생성 또는 파괴 water</p><p>2단계(3슬롯): 사람 붙잡기, 침묵</p><p>3단계(2슬롯): @spell[dispel magic], 방언</p></div></div></div></div>",
       "name": "뱀파이어 익시차치틀 성직자 - Vampiric Ixitxachitl Cleric"
     },
     "Actor.Stjz0jlXwQl1xWVB": {
-      "name": "해골 쥐 떼 - Skeletal Rats"
+      "name": "해골 쥐 떼 - Skeletal Rats",
+      "description": ""
     },
     "Actor.sXDxHvFgYqhtnfSF": {
       "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><p>끝없는 밤에 깨어난 뱀파이어들은 자신들이 잃어버린 생명에 굶주리고, 산 자의 피를 마셔 그 굶주림을 채웁니다. 뱀파이어는 햇빛을 싫어합니다. 햇빛에 닿으면 화상을 입기 때문입니다. 그들은 결코 그림자나 반사를 드리우지 않으며, 생명체 사이에서 눈에 띄지 않게 움직이기를 원하는 뱀파이어는 어둠 속에 머물며 반사 표면에서 멀리 떨어져 있습니다.</p><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Dark Desires.</span></span> <p>뱀파이어가 전생의 기억을 간직하고 있는지 여부에 관계없이 감정적 애착은 시들어집니다. 한때 순수했던 감정이 언데드에 의해 뒤틀리기 때문입니다. 사랑은 배고픈 집착으로 변하고, 우정은 쓰라린 질투로 변합니다. 뱀파이어는 감정 대신 자신이 갈망하는 물질적 상징을 추구하므로, 사랑을 추구하는 뱀파이어는 젊은 미인에 집착하게 된다. 젊음과 잠재력에 집착하는 뱀파이어에게 어린아이는 매혹의 대상이 될 수도 있습니다. 다른 사람들은 예술품, 책 또는 자신이 죽인 생물의 트로피나 고문 장치와 같은 불길한 물건으로 자신을 둘러싸고 있습니다. <p>뱀파이어의 희생자 대부분은 피에 대한 뱀파이어의 굶주림을 지닌 뱀파이어 생성-게걸스러운 생물이 되지만 그들을 창조한 뱀파이어의 통제를 받습니다. 진정한 뱀파이어가 스폰이 자신의 몸에서 피를 뽑도록 허용하면 스폰은 더 이상 주인의 통제를 받지 않는 진정한 뱀파이어로 변합니다. 이러한 방식으로 자신의 통제권을 포기하려는 뱀파이어는 거의 없습니다. 뱀파이어 생성은 생성자가 죽으면 자유 의지가 됩니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">무덤에 묶여 있습니다.</span></span> <p>모든 뱀파이어 관, 지하실, 무덤에 묶여 있으며 낮에는 그곳에서 쉬어야 합니다. 뱀파이어가 공식적인 매장을 받지 못했다면, 언데드로 변하는 지점인 1피트 아래에 놓여 있어야 합니다. 뱀파이어는 관이나 상당한 양의 무덤을 다른 장소로 운반하여 매장지를 이동할 수 있습니다. 일부 뱀파이어는 이런 식으로 여러 개의 휴식처를 설정합니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Undead Nature.</span></span> <p>뱀파이어도 뱀파이어도 아닙니다. 스폰에는 공기가 필요합니다.</p><div class=\"rd__spc-inline-post\"></div></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">A 뱀파이어의 소굴.</span></span> <p>A 뱀파이어는 웅장하면서도 방어 가능한 위치를 선택합니다. 성, 요새화된 저택, 벽으로 둘러싸인 수도원과 같은 은신처. 뱀파이어 스폰이나 밤에 충성하는 다른 생물들이 지키는 지하 지하실이나 금고에 관을 숨깁니다. Vampires</h4><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></span><p>뱀파이어 스폰으로 변신한 후 뱀파이어가 되는 플레이어 캐릭터의 게임 통계는 변경되지 않습니다. 단, 캐릭터의 힘, 민첩, 체질 점수가 더 높지 않으면 18이 됩니다. 또한 캐릭터는 뱀파이어의 피해 저항, &Reference[rule=darkvision], 특성 및 행동을 얻습니다. 뱀파이어의 공격에 대한 공격 및 피해 굴림은 힘을 기반으로 합니다.</p><p>참의 저장 DC는 8 + 뱀파이어입니다.e의 숙련도 보너스 + 뱀파이어의 카리스마 수정치. 캐릭터의 성향은 질서악이 되며, 뱀파이어주의가 @spell[wish] 주문으로 반전되거나 캐릭터가 죽고 다시 돌아올 때까지 DM이 캐릭터를 제어할 수 있습니다. life.</p><div class=\"float-clear\"></div></div><div class=\"rd__b-special rd__b-inset \"><span class=\"rd__h rd__h--2-inset\" data-title-index=\"7\"><h4 class=\"entry-title-inner\">Strahd von Zarovich</h4><span class=\"ve-flex-vh-center\"><span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></span><p>훌륭한 사상가이자 유능한 전사인 Strahd von Zarovich는 국민을 위해 수많은 전투에서 싸웠습니다. 전쟁과 살인으로 마침내 그의 젊음과 힘이 앗아가자 그는 외딴 바로비아 계곡에 정착하여 자신의 땅을 내려다볼 수 있는 우뚝 솟은 첨탑에 성을 지었습니다. 그의 형제 Sergei는 Castle Ravenloft에서 그와 함께 살기 위해 왔고 Strahd의 조언자이자 변함없는 동반자가 되었습니다.</p><p>형에게서 Strahd는 그가 잃은 모든 것을 보았습니다. 세르게이는 잘생기고 젊었지만, 스트라드는 늙고 상처투성이었다. 원한이 그들의 관계를 물들였고 결국 증오로 변했습니다. Strahd의 사랑하는 Tatyana는 Sergei와 결혼하겠다고 약속했지만 그를 쫓아냈습니다.</p><p>Tatyana의 마음을 얻으려는 필사적인 시도로 Strahd는 그를 불멸의 존재로 만드는 어둠의 힘과 조약을 맺었습니다. Sergei와 Tatyana의 결혼식에서 그는 그의 형제와 대결하여 그를 죽였습니다. 타티아나는 도망쳐 레이븐로프트의 성벽에서 몸을 던졌습니다. Strahd의 경비병은 그를 괴물로 보고 그를 화살로 쏘았습니다. 그러나 그는 죽지 않았습니다. 많은 현자들에 따르면 그는 뱀파이어, 즉 최초의 뱀파이어가 되었습니다.</p><p>그가 변신한 이후 수세기 동안 스트라드의 삶과 젊음에 대한 욕망은 더욱 커졌습니다. 그는 자신이 잃어버린 것을 훔쳐갔다고 산 자를 저주하며, 자신이 겪은 비극에 결코 자신의 손을 대지 않았다는 이유로 자신의 어두운 성에 고민합니다. 생성됨.</p><div class=\"float-clear\"></div></div><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud \"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\">__FVTTTOK_92 __<span class=\"rd__h-toggle ml-2 clickable no-select no-print lst-is-exporting-image__hidden\" data-rd-h-special-toggle-button=\"true\" title=\"Toggle Visibility (CTRL to Toggle All)\">[–]</span></span></span><div class=\"rd__quote\"><p class=\"rd__quote-line rd__quote-line--last\">“<i>I 나는 고대인이고, 나는 땅이다. 나의 시작은 과거의 어둠 속에 사라졌다. 나는 전사였고, 정의로운 신의 분노처럼 땅을 휩쓸었지만, 바람이 돌을 모래로 깎아내리듯 전쟁의 세월과 살육의 세월이 내 영혼을 쇠약하게 만들었다. Zarovich</span></p></div><div class=\"float-clear\"></div></div></div></div>",
       "name": "불완전한 뱀파이어 스폰"
     },
     "Actor.tBe1qGZz5TzU6AjV": {
-      "name": "폴"
+      "name": "폴",
+      "description": ""
     },
     "Actor.TKjdBr65jC9Qdfrv": {
-      "name": "드로우 일반인 - Drow Commoner"
+      "name": "드로우 일반인 - Drow Commoner",
+      "description": ""
     },
     "Actor.TufsqpwR0UZVQqtt": {
       "description": "<div class=\"rd__b  rd__b--0\"><p>사제 수행자는 믿음이 크지만 마법 능력은 미미합니다. 일부는 종교 단체의 수련생이거나 열성적인 군대의 군인일 수도 있고, 다른 일부는 소규모 공동체의 신앙 지도자이거나 순례 여행을 떠나는 방랑자일 수도 있습니다. <p><i>필멸자와 신의 중재자</i></p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Habitat:\"><span class=\"bold rd__list-item-name\">서식지:</span> <a href=\"https://5e.tools/bestiary.html#blankhash,flstenvironment:any=1\">Any</a></p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Treasure:\"><span class=\"bold rd__list-item-name\">보물:</span> 개인, @table[Random Magic Items - Relics|XDMG|Relics]</p></li></ul><p>사제들은 믿음의 힘을 활용하여 기적을 행합니다. 이러한 종교적 지지자들은 그들이 따르는 신앙만큼 다양합니다. 어떤 사람들은 신과 그 종들에게 순종하는 반면, 다른 사람들은 오래된 신조에 따라 살아갑니다. 신념은 사제의 행동과 마법을 안내하며, 이를 통해 사제는 자신의 이데올로기에 따라 세상을 형성합니다.</p><p>사제 역할 표에서 결과를 선택하거나 선택하여 다양한 종류의 사제에게 영감을 주세요.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Priest Roles\"><caption>프리스트 역할</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"true\">[[/r 1d10]]</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">사제 ...</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"1\" data-roll-max=\"1\">1</td><td class=\"rd__th ve-col-10 \">악령을 지키는 수행자 bay.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"2\" data-roll-max=\"2\">2</td><td class=\"rd__th ve-col-10 \">교회를 대변하는 장로 dead.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"3\" data-roll-max=\"3\">3</td><td class=\"rd__th ve-col-10 \">악인을 사냥하는 퇴마사 영혼.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"4\" data-roll-max=\"4\">4</td><td class=\"rd__th ve-col-10 \">아무도 들어본 적이 없는 신의 추종자 of.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"5\" data-roll-max=\"5\">5</td><td class=\"rd__th ve-col-10 \">전통의 중재자이자 교사 방법.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"6\" data-roll-max=\"6\">6</td><td class=\"rd__th ve-col-10 \">개념, 다중우주적 관점 또는 평면에 전념하는 철학자 존재.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"7\" data-roll-max=\"7\">7</td><td class=\"rd__th ve-col-10 \">고대 신앙의 환생 Leader.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"8\" data-roll-max=\"8\">8</td><td class=\"rd__th ve-col-10 \">팅크와 공연을 사용하여 Divine.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"9\" data-roll-max=\"9\">9</td><td class=\"rd__th ve-col-10 \">약으로 많은 사람들을 완화시키는 무당 병.</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \" data-roll-min=\"10\" data-roll-max=\"10\">10</td><td class=\"rd__th ve-col-10 \">신을 위해 전쟁을 벌이는 열광자 원인.</td></tr></tbody></table><div class=\"rd__b-special rd__b-inset rd__b-inset--readaloud\"><span class=\"rd__h rd__h--2-inset rd__h--2-inset-no-name\">_ _FVTTTOK_110__</span></span><div class=\"rd__quote\"><p class=\"rd__quote-line \">“<i>빛나는 하나, 내 영혼에 불을 붙이시고, 내 행동에 영감을 주시어, 내 길에서 그림자를 쫓아주시고, 당신의 광채 가운데 걷게 하소서.</p><p><span class=\"rd__quote-by\">— <i>아침 기도 Pelor</i></span></p></div></div></div>",
       "name": "티베리우스 - Tiberius"
     },
     "Actor.tuLXLYd8OZw1KQeu": {
-      "name": "타바시 음유시인 - Tabaxi Minstrel"
+      "name": "타바시 음유시인 - Tabaxi Minstrel",
+      "description": ""
     },
     "Actor.u68qEvx7qvjXcwP8": {
-      "name": "절멸의 구 - Sphere of Annihilation"
+      "name": "절멸의 구 - Sphere of Annihilation",
+      "description": ""
     },
     "Actor.UF8v3eDPC7oXcJoy": {
-      "name": "실버퀼 수습생 - Silverquill Apprentice"
+      "name": "실버퀼 수습생 - Silverquill Apprentice",
+      "description": ""
     },
     "Actor.UL9PadS54STVzvag": {
-      "name": "피티팡 스톰웨더 - Pytipan Stormweather"
+      "name": "피티팡 스톰웨더 - Pytipan Stormweather",
+      "description": ""
     },
     "Actor.uUjZ271VxYDwR9ro": {
-      "name": "구덩이 - Pits"
+      "name": "구덩이 - Pits",
+      "description": ""
     },
     "Actor.VC0g1cT4VKEmLvW9": {
       "description": "<p>세계 곳곳의 도적은 그 형태와 규모가 다양합니다. 하플링 소매치기에서부터 불운한 선박을 약탈하는 속이 시커먼 드래곤본 선장까지, 이들은 다양한 형태를 취하고 있습니다. 여기에서 “도적” 등급의 범죄자로 간주되는 존재들의 공통점을 알아보겠습니다. 이 정보를 검토하면서, 모든 도적을 경멸의 눈으로 봐야 하는 것은 아니라는 점에 유의하세요. 많은 도적이 목표에게 해를 입히거나 재물을 탐하지만, 어떤 도적은 불공평하기 그지없는 세계에서 살아남고자 도둑질을 합니다.</p>\n<p><strong>좋은 놈.</strong> “고결한 범죄자”로 간주할 수 있는 도적들부터 시작하겠습니다. 이런 도적들은 국민 중에서도 가장 짓밟혀 왔던 사람들, 자신이 손에 쥘 수 있는 일말의 위안이나마 필사적으로 긁어모으기 위해 가난과 압제에 시달리며 투쟁해 온 사람들입니다. 어떤 사람이 강도 행위를 저지르거나 마을 거리에서 공개적으로 도둑질을 했다면, 왜 이런 선택을 할 정도로 절박한 상황에 몰렸을지 그 이유를 생각해 보세요. 더 고결한 부류의 도적이라고 해도, 훔쳐낸 것으로 자기 자신이나 직계 가족의 삶을 풍요롭게 하는 등 자신이 약탈한 수익을 두고 이기적으로 굴 수 있습니다. 하지만 어떤 도적들은 자신들이 훔쳐낸 물건을 사용하여 더 가난한 주민들의 삶을 개선하려고 하기도 합니다. 이러한 도적들은 특히나 강도 행위를 저지를 때 자포자기하고 겁에 질려 있는 경우가 많다는 점에 유의하세요. 이들은 두려움에 질려 있고, 열악한 환경 탓에 범죄를 저지르게 되었으므로 피해자에게 신체적인 위해를 가하지 않는 경우가 더 많으므로 이들을 해산시키는 데에는 폭력이 필요하지 않을 수도 있습니다. 젊은 모험가들을 위해 조언하자면, 세계를 여행할 때 편견은 내려놓고 상황이 바뀌었다면 이렇게 작은 범죄 행위에 대해 자비를 바라는 것은 당신이었을 수도 있음을 기억하세요.</p>\n<p><strong>나쁜 놈, 이상한 놈.</strong> 마음씨 고운 자들은 지나치게 많이 가진 자들에게 빼앗아 불운한 자들에게 이를 주기도 하지만, 때때로 가까운 길가의 덤불 속에 숨어 이상한 낌새를 알아차리지 못한 희생자를 덮치려고 기다리는, 진짜 악한들도 존재하는 법입니다. 모험가들이 여행할 때 맞닥뜨리게 되는 강도 행위란 대개 이런 형태일 것입니다. 검, 몽둥이, 활로 무장한 더 부도덕한 도적들은 언덕과 나무 그늘 속에 숨어 목표를 습격할 순간을 기다리며, 눈치채지 못한 여행자 일행을 붙잡곤 합니다. 이 위험한 도둑들은 자신들의 수가 더 적을 때는 일행을 갈라 속임수를 써서 목표가 방심하도록 유도할 것입니다. 도적에게는 국경이나 지역의 경계가 없으므로, 숲이 우거진 길을 걷고 있든, 명성을 얻기 위해 섬에서 섬을 오가며 외해로 항해할 때든 조심해야 합니다. 세계 곳곳에는 위험이 도사리고 있으니, 모험가들은 도적단과 마주치더라도 미리 대비하고 분별력 있게 행동하여 자신의 행적이 전설로 기록되기 전에 먼저 모험이 끝장나 버리는 일이 없도록 주의해야 합니다.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
       "name": "도적 - Bandit"
     },
     "Actor.VcRFUXSmn2nQhY9I": {
-      "name": "좀비 사지 떼 - Swarm of Zombie Limbs"
+      "name": "좀비 팔다리 떼 - Swarm of Zombie Limbs",
+      "description": "<p>잘려 나간 언데드의 팔과 다리가 뒤엉켜 하나의 흉측한 떼를 이룬 존재입니다. 이 집합체는 살아 있는 자를 휘감아 붙들고, 썩어 가는 팔다리의 무게로 짓누르며, 사령 에너지에 이끌려 비틀거리듯 움직입니다.</p>"
     },
     "Actor.vDfSk5VuDDlburtU": {
-      "name": "굴러가는 구체 - Rolling Sphere"
+      "name": "굴러가는 구체 - Rolling Sphere",
+      "description": ""
     },
     "Actor.VGOe2YE3jqjL4nA7": {
-      "name": "독침 - Poison Needle"
+      "name": "독침 - Poison Needle",
+      "description": ""
     },
     "Actor.vVbTiYSI2e5yiZuo": {
-      "name": "일반인(여성)"
+      "name": "일반인(여성)",
+      "description": ""
     },
     "Actor.wJBvHA0vqIJT0uQq": {
-      "name": "거르족 남성"
+      "name": "거르족 남성",
+      "description": ""
     },
     "Actor.WmPavoD3FOBN7pjc": {
-      "name": "짐수레 말 - Draft Horse"
+      "name": "짐수레 말 - Draft Horse",
+      "description": ""
     },
     "Actor.wT4SiXyviOZqrQvy": {
-      "name": "파멸의 압쇄 구체 - Sphere of Crushing Doom"
+      "name": "파멸의 압쇄 구체 - Sphere of Crushing Doom",
+      "description": ""
     },
     "Actor.WuLtkFCUbqoP9uug": {
-      "name": "생명흡수 안개"
+      "name": "생명흡수 안개",
+      "description": ""
     },
     "Actor.WWQYP5xugXRsF2Y7": {
-      "name": "레"
+      "name": "레",
+      "description": ""
     },
     "Actor.xUscL13UUIs95hVX": {
       "description": "<div class=\"rd__b  rd__b--1\"><div class=\"rd__b  rd__b--2\"><div class=\"rd__b  rd__b--3\"><p>Ixitxachitl(ick-zit-zah-chit-ul로 발음)은 쥐가오리를 닮은 수생 생물로, \"날개\" 끝에 작고 발톱이 달린 손이 있고 사악한 지능으로 빛나는 검은 눈이 있습니다. 많은 생물이 ixitxachitl을 일반적인 만타 가오리로 착각하지만 이는 치명적인 실수로 판명될 수 있습니다. 익시차치틀(ixitxachitl)은 교활하면서도 사악하기 때문에 공통적으로 \"악마 광선\"이라는 별명이 붙습니다. 그들은 민물과 바닷물에 서식하지만 그들의 폭력적인 성격으로 인해 그들에 대해 알려진 바가 거의 없습니다.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">생존을 위한 투쟁.</span></span> <p> Ixitxachitl은 알에서 작은 생물로 나타납니다. 너비가 손바닥 한 뼘보다 조금 더 넓습니다. 그때부터 그들은 어떤 대가를 치르더라도 살아남기 위해 애쓰며 평생 동안 성장합니다. 생존의 비밀을 터득한 ixitxachitl은 재생 능력을 얻고 다른 생물의 생명력을 섭취합니다. <p>Ixitxachitl은 산호초나 기타 자연 수생 지형을 비워 미로 굴을 만들고, 종종 포획한 수생 생물을 노예로 삼아 도움을 요청합니다. 그들은 일반적으로 새로운 비옥한 땅으로 이동하기 전에 한 지역을 맨손으로 벗겨내고 버려진 굴을 남겨 둡니다. ixitxachitl의 학교는 종종 먹이 장소와 영토를 차지하기 위해 다른 수생 생물과 전쟁을 벌입니다. <p>ixitxachitl은 다양한 악마, 특히 그들이 후원자이자 창조자로 간주하는 Demogorgon을 숭배하고 섬깁니다. 그들은 그들 중 누가 악마 왕자의 가장 위대하고 가장 총애받는 종인지를 두고 치열한 경쟁을 벌이고 있습니다. Cleric.</span></span> <p>일부 ixitxachitl과 뱀파이어 ixitxachitl은 신성한 주문을 시전할 수 있습니다. 이러한 생물은 다음 기능을 얻습니다.</p><div class=\"rd__spc-inline-post\"></div><div class=\"rd__b  rd__b--3\"><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Spellcasting.</span></span> <p>ixitxachitl은 다음을 사용하는 5레벨 주문 시전자입니다. 주문 시전 능력으로서의 지혜(주문 내성 DC 11, 주문 공격 시 명중 +3). ixitxachitl에는 다음과 같은 성직자 주문이 준비되어 있습니다.</p><div class=\"rd__spc-inline-post\"></div><p>캔트립(상시 사용 가능): 안내, 기적술</p><p>1레벨(4슬롯): 사람을 매혹, 생성 또는 파괴 water</p><p>2단계(3슬롯): 사람 붙잡기, 침묵</p><p>3단계(2슬롯): @spell[dispel magic], 방언</p></div></div></div></div>",
       "name": "뱀파이어 익시차치틀 - Vampiric Ixitxachitl"
     },
     "Actor.Yj0atgRvhV6CnHIw": {
-      "name": "굴러가는 구체 - Rolling Sphere"
+      "name": "굴러가는 구체 - Rolling Sphere",
+      "description": ""
     },
     "Actor.Ywax7BUGWqW9qVMX": {
-      "name": "독 다트 - Poison Darts"
+      "name": "독 다트 - Poison Darts",
+      "description": ""
     },
     "Actor.yYVBSI3bdEbAGWFm": {
-      "name": "병사 - Soldier"
+      "name": "병사 - Soldier",
+      "description": ""
     },
     "Actor.z0HZn0xdWSjI4Qqm": {
-      "name": "떨어지는 쇠창살 문 - Falling Portcullis"
+      "name": "떨어지는 쇠창살 문 - Falling Portcullis",
+      "description": ""
     },
     "Actor.Z3QC5S44dUVrc7J2": {
-      "name": "고블린 일반인 - Goblin Commoner"
+      "name": "고블린 일반인 - Goblin Commoner",
+      "description": ""
     },
     "Actor.ZbvP0AbowyPPZAI3": {
-      "name": "포텐시아 - Potentia"
+      "name": "포텐시아 - Potentia",
+      "description": ""
     },
     "Actor.ZOCXhpLULSsU5xG2": {
-      "name": "변신한 로퍼 - Shapechanged Roper"
+      "name": "변신한 로퍼 - Shapechanged Roper",
+      "description": ""
     }
   }
 }

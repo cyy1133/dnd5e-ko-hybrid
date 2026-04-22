@@ -1,0 +1,14 @@
+{
+  "label": "Token Animation Macros",
+  "entries": {
+    "Conclude Token Animations": {
+      "name": "토큰 애니메이션 종료 - Conclude Token Animations"
+    },
+    "Disable Token Animations": {
+      "name": "토큰 애니메이션 비활성화 - Disable Token Animations"
+    },
+    "Enable Token Animations": {
+      "name": "토큰 애니메이션 활성화 - Enable Token Animations"
+    }
+  }
+}

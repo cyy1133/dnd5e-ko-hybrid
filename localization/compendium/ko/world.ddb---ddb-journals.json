@@ -1,4 +1,257 @@
 {
   "label": "DDB Journals",
-  "entries": {}
+  "entries": {
+    "Acquisitions Incorporated": {
+      "name": "인수 합병 - Acquisitions Incorporated",
+      "pages": {
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Elemental Evil Player's Companion": {
+      "name": "원소악 플레이어의 동반자 - Elemental Evil Player's Companion",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Fizban's Treasury of Dragons": {
+      "name": "피즈반의 용의 보물 - Fizban's Treasury of Dragons",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Icewind Dale: Rime of the Frostmaiden": {
+      "name": "아이스윈드 데일: 서리소녀의 노래 - Icewind Dale: Rime of the Frostmaiden",
+      "pages": {
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Player’s Handbook": {
+      "name": "플레이어 핸드북 - Player’s Handbook",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Paladin Spell List": {
+          "name": "성기사 주문 목록 - Paladin Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Player’s Handbook (2014)": {
+      "name": "플레이어 핸드북(2014) - Player’s Handbook (2014)",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Paladin Spell List": {
+          "name": "성기사 주문 목록 - Paladin Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Strixhaven: A Curriculum of Chaos": {
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Sword Coast Adventurer's Guide": {
+      "name": "소드 코스트 모험가 가이드 - Sword Coast Adventurer's Guide",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Tasha’s Cauldron of Everything": {
+      "name": "타샤의 모든 것의 가마솥 - Tasha’s Cauldron of Everything",
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Paladin Spell List": {
+          "name": "성기사 주문 목록 - Paladin Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    },
+    "Xanathar's Guide to Everything": {
+      "pages": {
+        "Artificer Spell List": {
+          "name": "기술병 주문 목록 - Artificer Spell List"
+        },
+        "Bard Spell List": {
+          "name": "음유시인 주문 목록 - Bard Spell List"
+        },
+        "Cleric Spell List": {
+          "name": "성직자 주문 목록 - Cleric Spell List"
+        },
+        "Druid Spell List": {
+          "name": "드루이드 주문 목록 - Druid Spell List"
+        },
+        "Paladin Spell List": {
+          "name": "성기사 주문 목록 - Paladin Spell List"
+        },
+        "Ranger Spell List": {
+          "name": "레인저 주문 목록 - Ranger Spell List"
+        },
+        "Sorcerer Spell List": {
+          "name": "마법사 주문 목록 - Sorcerer Spell List"
+        },
+        "Warlock Spell List": {
+          "name": "흑마법사 주문 목록 - Warlock Spell List"
+        },
+        "Wizard Spell List": {
+          "name": "마법사 주문 목록 - Wizard Spell List"
+        }
+      }
+    }
+  }
 }

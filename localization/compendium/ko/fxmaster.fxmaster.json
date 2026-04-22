@@ -3,6 +3,15 @@
   "entries": {
     "Cast Spell": {
       "name": "Cast 주문"
+    },
+    "Filter": {
+      "name": "필터 - Filter"
+    },
+    "Switch Weather": {
+      "name": "날씨 전환 - Switch Weather"
+    },
+    "Update Weather": {
+      "name": "날씨 업데이트 - Update Weather"
     }
   }
 }

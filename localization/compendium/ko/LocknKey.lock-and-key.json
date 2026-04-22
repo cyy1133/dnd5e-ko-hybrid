@@ -1,8 +1,41 @@
 {
   "label": "Lock & Key",
   "entries": {
+    "Break lock": {
+      "name": "잠금 해제 - Break lock"
+    },
+    "Copy hovered lock": {
+      "name": "마우스오버된 잠금 복사 - Copy hovered lock"
+    },
+    "Creat new key for hovered lock": {
+      "name": "호버 잠금을 위한 새 키 생성 - Creat new key for hovered lock"
+    },
+    "Create new custom key": {
+      "name": "새 맞춤 키 만들기 - Create new custom key"
+    },
+    "Offer loot to player": {
+      "name": "플레이어에게 전리품 제공 - Offer loot to player"
+    },
+    "Paste hovered lock": {
+      "name": "호버 잠금 붙여넣기 - Paste hovered lock"
+    },
+    "Pick lock": {
+      "name": "자물쇠 따기 - Pick lock"
+    },
+    "Pick pocket": {
+      "name": "소매치기 - Pick pocket"
+    },
+    "Toggle hovered lock": {
+      "name": "호버 잠금 전환 - Toggle hovered lock"
+    },
     "Update Lock & Key world formulas": {
       "name": "Update 잠금 & - Key world formulas"
+    },
+    "Use custom check": {
+      "name": "사용자 정의 검사 사용 - Use custom check"
+    },
+    "Use Key": {
+      "name": "키 사용 - Use Key"
     }
   }
 }

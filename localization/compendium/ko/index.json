@@ -2,6 +2,7 @@
   "files": [
     "localization/compendium/ko/ATL.premade.json",
     "localization/compendium/ko/ActiveAuras.aa-aura-items.json",
+    "localization/compendium/ko/ActiveAuras.aa-zone-actors.json",
     "localization/compendium/ko/JB2A_DnD5e.jb2a-actors.json",
     "localization/compendium/ko/JB2A_DnD5e.jb2a-sequencer.json",
     "localization/compendium/ko/LocknKey.lock-and-key.json",
@@ -14,6 +15,7 @@
     "localization/compendium/ko/beast-world.species.json",
     "localization/compendium/ko/beast-world.spells.json",
     "localization/compendium/ko/beast-world.subclasses.json",
+    "localization/compendium/ko/beast-world.wagon-classes.json",
     "localization/compendium/ko/beast-world.wagon-components.json",
     "localization/compendium/ko/beast-world.wagon-model-features.json",
     "localization/compendium/ko/beast-world.wild-cards.json",
@@ -37,6 +39,7 @@
     "localization/compendium/ko/levels.levelsmacros.json",
     "localization/compendium/ko/midi-qol.midiqol-sample-items.json",
     "localization/compendium/ko/monks-active-tiles.active-tile-macros.json",
+    "localization/compendium/ko/token-animation-tools.token-animation-macros.json",
     "localization/compendium/ko/token-attacher.example-macros.json",
     "localization/compendium/ko/wall-height.wall-height-macros.json",
     "localization/compendium/ko/world.Actor-3HGKHcBlySVxaPA9.json",

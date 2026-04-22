@@ -13,12 +13,27 @@ const saveJson = (filename, data) => {
 
 const hasEnglish = (value = "") => /[A-Za-z]/.test(String(value));
 const normalizeText = (value = "") => String(value ?? "").trim();
-const extractItemDescription = (item) => item?.system?.description?.value ?? item?.system?.description ?? "";
+const normalizeExtractedBody = (value = "") => {
+  const normalized = value == null ? "" : String(value);
+  return normalized === "null" || normalized === "undefined" ? "" : normalized;
+};
+const firstExtractedBody = (...values) => {
+  for (const value of values) {
+    const normalized = normalizeExtractedBody(value);
+    if (normalized) return normalized;
+  }
+  return "";
+};
+const extractItemDescription = (item) =>
+  firstExtractedBody(item?.system?.description?.value, item?.system?.description);
 const extractActorDescription = (actor) =>
-  actor?.system?.details?.biography?.value
-  ?? actor?.system?.details?.description
-  ?? actor?.system?.description?.value
-  ?? "";
+  firstExtractedBody(
+    actor?.system?.details?.biography?.value,
+    actor?.system?.details?.biography?.public,
+    actor?.system?.details?.description,
+    actor?.system?.description?.value,
+    actor?.system?.description
+  );
 const normalizePackFilter = (packFilter) => {
   if (!packFilter) return null;
   if (packFilter instanceof Set) return packFilter;

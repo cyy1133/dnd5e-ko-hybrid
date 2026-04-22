@@ -1,8 +1,26 @@
 {
   "label": "Wall Height Macros",
   "entries": {
+    "Set Elevation": {
+      "name": "고도 설정 - Set Elevation"
+    },
+    "Wall Height - Migrate Compendiums": {
+      "name": "벽 높이 - 개요서 마이그레이션 - Wall Height - Migrate Compendiums"
+    },
+    "Wall Height - Migrate Current Scene": {
+      "name": "벽 높이 - 현재 장면 마이그레이션 - Wall Height - Migrate Current Scene"
+    },
+    "Wall Height - Migrate Everything": {
+      "name": "벽 높이 - 모든 것을 마이그레이션 - Wall Height - Migrate Everything"
+    },
+    "Wall Height - Migrate Token Height": {
+      "name": "벽 높이 - 마이그레이션 토큰 높이 - Wall Height - Migrate Token Height"
+    },
     "Wall Height - Reduce Top By  One": {
-      "name": "Wall Height - Reduce Top By One"
+      "name": "벽 높이 - 상단을 하나씩 줄입니다. - Wall Height - Reduce Top By  One"
+    },
+    "Wall Height - Set Wall Bounds": {
+      "name": "벽 높이 - 벽 경계 설정 - Wall Height - Set Wall Bounds"
     }
   }
 }

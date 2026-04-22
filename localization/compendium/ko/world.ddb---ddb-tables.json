@@ -1,6 +1,12 @@
 {
   "label": "DDB Tables",
   "entries": {
+    "Absorbing Tattoo: Damage Resistance": {
+      "name": "흡수 문신: 손상 저항 - Absorbing Tattoo: Damage Resistance"
+    },
+    "Amulet of the Planes: Destination": {
+      "name": "차원의 부적: 목적지 - Amulet of the Planes: Destination"
+    },
     "Background: Acolyte: Bond": {
       "name": "배경: 수행사제: 유대 - Background: Acolyte: Bond"
     },
@@ -57,6 +63,114 @@
     },
     "Background: Soldier: Specialty": {
       "name": "배경: 병사: 전문 분야 - Background: Soldier: Specialty"
+    },
+    "Bag of Beans: Effect": {
+      "name": "콩 주머니: 효과 - Bag of Beans: Effect"
+    },
+    "Bag of Tricks: Gray Bag of Tricks": {
+      "name": "트릭 가방: 회색 트릭 가방 - Bag of Tricks: Gray Bag of Tricks"
+    },
+    "Bag of Tricks: Rust Bag of Tricks": {
+      "name": "트릭 가방: 러스트 트릭 가방 - Bag of Tricks: Rust Bag of Tricks"
+    },
+    "Baphomet: Madness of Baphomet": {
+      "name": "바포메트: 바포메트의 광기 - Baphomet: Madness of Baphomet"
+    },
+    "Candle of Invocation: Alignment": {
+      "name": "기원의 양초: 정렬 - Candle of Invocation: Alignment"
+    },
+    "Candle of Invocation: Outer Plane": {
+      "name": "기원의 양초: 외부 차원 - Candle of Invocation: Outer Plane"
+    },
+    "Cartographer's Map Case: Possible Map Mission Landmarks": {
+      "name": "지도 제작자의 지도 사례: 가능한 지도 임무 랜드마크 - Cartographer's Map Case: Possible Map Mission Landmarks"
+    },
+    "Chaos Bolt: Damage Type": {
+      "name": "카오스 볼트: 피해 유형 - Chaos Bolt: Damage Type"
+    },
+    "Confusion: Behavior": {
+      "name": "혼란: 행동 - Confusion: Behavior"
+    },
+    "Confusion: Behavior for the Turn": {
+      "name": "혼란: 차례를 위한 행동 - Confusion: Behavior for the Turn"
+    },
+    "Crook of Rao: Extraplanar Reversal": {
+      "name": "라오의 사기꾼: 외평면 반전 - Crook of Rao: Extraplanar Reversal"
+    },
+    "Deck of Illusions: Illusion*": {
+      "name": "환상의 덱: 환상* - Deck of Illusions: Illusion*"
+    },
+    "Demogorgon: Madness of Demogorgon": {
+      "name": "데모고르곤: 데모고르곤의 광기 - Demogorgon: Madness of Demogorgon"
+    },
+    "Efreeti Bottle: Effect": {
+      "name": "에프리티 병: 효과 - Efreeti Bottle: Effect"
+    },
+    "Gray Bag of Tricks: Gray Bag of Tricks": {
+      "name": "회색 트릭 가방: 회색 트릭 가방 - Gray Bag of Tricks: Gray Bag of Tricks"
+    },
+    "Hat of Many Spells: Effect": {
+      "name": "많은 주문의 모자: 효과 - Hat of Many Spells: Effect"
+    },
+    "Iron Flask: Contents": {
+      "name": "철 플라스크: 내용물 - Iron Flask: Contents"
+    },
+    "Luba's Tarokka of Souls: Prisoners of Fate": {
+      "name": "루바의 영혼의 타로카: 운명의 포로 - Luba's Tarokka of Souls: Prisoners of Fate"
+    },
+    "Nathair's Mischief: Mischievous Surge": {
+      "name": "나타헤어의 장난: 장난스러운 급증 - Nathair's Mischief: Mischievous Surge"
+    },
+    "Necklace of Prayer Beads: Six types of magic beads exist": {
+      "name": "염주의 목걸이 : 6종의 마법구슬이 존재합니다. - Necklace of Prayer Beads: Six types of magic beads exist"
+    },
+    "Occultant Abacus: Ways to Read the Kill": {
+      "name": "오컬턴트 주판: 살인을 읽는 방법 - Occultant Abacus: Ways to Read the Kill"
+    },
+    "Orcus: Madness of Orcus": {
+      "name": "오르커스: 매드니스 오브 오르커스 - Orcus: Madness of Orcus"
+    },
+    "Prismatic Spray (Helm of Brilliance): Ray": {
+      "name": "분광 스프레이(광휘의 투구): 광선 - Prismatic Spray (Helm of Brilliance): Ray"
+    },
+    "Prismatic Spray: Ray": {
+      "name": "프리즘 스프레이: 레이 - Prismatic Spray: Ray"
+    },
+    "Reincarnate: Race": {
+      "name": "환생: 인종 - Reincarnate: Race"
+    },
+    "Reincarnate: Species": {
+      "name": "환생 : 종 - Reincarnate: Species"
+    },
+    "Robe of Useful Items: Patch": {
+      "name": "유용한 아이템의 로브: 패치 - Robe of Useful Items: Patch"
+    },
+    "Scroll of Protection: Creature Type": {
+      "name": "보호의 두루마리: 생물 유형 - Scroll of Protection: Creature Type"
+    },
+    "Sending Stone: Quirks of Your Sending Stone": {
+      "name": "보내는 돌: 보내는 돌의 특징 - Sending Stone: Quirks of Your Sending Stone"
+    },
+    "Sphere of Annihilation: Result": {
+      "name": "파멸의 구체: 결과 - Sphere of Annihilation: Result"
+    },
+    "Sphere of Annihilation: Sphere Interactions": {
+      "name": "절멸의 구체: 구체 상호작용 - Sphere of Annihilation: Sphere Interactions"
+    },
+    "Summon Lesser Demons: Demons Summoned": {
+      "name": "하급 악마 소환: 악마 소환 - Summon Lesser Demons: Demons Summoned"
+    },
+    "Tan Bag of Tricks: Tan Bag of Tricks": {
+      "name": "트릭의 탄 백: 트릭의 탄 백 - Tan Bag of Tricks: Tan Bag of Tricks"
+    },
+    "Wand of Wonder: Effect": {
+      "name": "원더 오브 원더: 효과 - Wand of Wonder: Effect"
+    },
+    "Whisper Jar: RECORDING": {
+      "name": "속삭임 항아리: 녹음 중 - Whisper Jar: RECORDING"
+    },
+    "Yeenoghu: Madness of Yeenoghu": {
+      "name": "이노후: 이노후의 광기 - Yeenoghu: Madness of Yeenoghu"
     }
   }
 }

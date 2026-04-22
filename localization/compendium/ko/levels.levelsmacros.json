@@ -1,8 +1,20 @@
 {
   "label": "Levels Macros",
   "entries": {
+    "Fix Overhead Tiles in Level Tiles": {
+      "name": "레벨 타일의 오버헤드 타일 수정 - Fix Overhead Tiles in Level Tiles"
+    },
     "Levels-Preset: Church with crypt and belltower": {
       "name": "Levels-Preset: Church with crypt 및 - belltower"
+    },
+    "Levels-Preset: Two Story House": {
+      "name": "레벨 사전 설정: 2층집 - Levels-Preset: Two Story House"
+    },
+    "Levels-Preset: Two Story House with Basement": {
+      "name": "레벨 사전 설정: 지하실이 있는 2층 주택 - Levels-Preset: Two Story House with Basement"
+    },
+    "Reverse Levels": {
+      "name": "역방향 레벨 - Reverse Levels"
     },
     "Toggle Player Elevation Lock": {
       "name": "Toggle Player Elevation 잠금"

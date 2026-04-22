@@ -1,48 +1,85 @@
 {
   "label": "Wagon Components",
   "entries": {
+    "Absolute Shell": {
+      "name": "절대 쉘 - Absolute Shell",
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 본문 (내장)</p><p>이 구성 요소가 포함된 Ironaxle은 캐빈 바닥에 숨겨진 아다만틴 벽으로 강화되었습니다. 구성 요소를 액션으로 사용하면 금강 셔터가 튀어 나와 마차 벽 주위에 부딪칩니다. 숨은 확장 장치가 외풍을 퍼뜨리고, 뚫을 수 없는 마법 장벽이 껍질 전체를 둘러싸고 있습니다. 마차 내부에 있는 모든 것이 담겨 있습니다. 마차의 속도는 0.</p><p>물리적 물체, 에너지 또는 기타 주문 효과를 제외한 어떤 것도 껍질 안팎으로 통과할 수 없습니다. 하지만 껍질 안의 생명체는 그곳에서 숨을 쉴 수 있습니다. 껍질은 모든 피해에 면역이며, 내부의 생물이나 물체는 외부에서 발생하는 공격이나 효과에 의해 피해를 입을 수 없으며, 껍질 내부의 생물은 외부의 모든 것에 피해를 줄 수 없습니다.</p><p>껍질 내부의 생물은 껍질을 통해 외부를 볼 수 있지만 외부의 모든 사람에게는 어두운 회색 상자가 보입니다. 셸은 8시간 동안 또는 사용자가 셸을 집어 넣어 보관하기 위해 활성화 레버를 당길 때까지 닫힌 상태로 유지됩니다. 절대 쉘은 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
+    },
     "Absorbing Ram": {
-      "name": "흡수식 충각 - Absorbing Ram"
+      "name": "흡수식 충각 - Absorbing Ram",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">1학년</strong></span></p><p><strong>학급: </strong>Component</p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치: </strong>본체(내장)</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">왜건 본체에 삽입된 에칭된 준보석 다양한 유형의 에너지를 흡수하고 방향을 바꿀 수 있습니다. 흡수 램이 장착된 마차가 화재, 번개 또는 천둥 피해를 입으면 운전자는 그 반응을 사용하여 [[/r 2d6]]만큼 피해를 줄일 수 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">다음 1분 동안 마차가 램 공격에 부딪히면 2d6의 추가 화재, 번개 또는 천둥 피해를 입히고 에너지가 방출됩니다. 운전자가 손상 유형을 선택합니다. 흡수 램은 보충되기 전에 추가 피해를 흡수하고 처리할 수 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Refit</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">등급 3 구성 요소인 흡수 램은 탑승한 승무원이 받는 피해도 줄일 수 있습니다. 또한 구성 요소는 마차가 냉기 또는 산성 피해를 입을 때 활성화될 수 있으며, 램 공격으로 해당 유형에 추가 피해를 줄 수 있습니다.</span></p>"
     },
     "Absorbing Ram (G3)": {
-      "name": "흡수식 충각 (G3)"
+      "name": "흡수식 충각 (G3)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">3학년</strong></span></p><p><strong>학급: </strong>Component</p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치: </strong>본체(내장)</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">왜건 본체에 삽입된 에칭된 준보석 다양한 유형의 에너지를 흡수하고 방향을 바꿀 수 있습니다. 흡수 램이 장착된 마차가 불, 번개, 냉기, 산성 또는 천둥 피해를 입으면 운전자는 그 반응을 사용하여 피해를 [[/r 2d6]]만큼 줄일 수 있습니다. 피해 감소는 승무원에게도 영향을 미칩니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">다음 1분 동안 마차가 램 공격에 맞으면 추가로 2d6의 불, 번개, 냉기, 산성 또는 천둥 피해를 입히고 에너지가 방출됩니다. 운전자가 손상 유형을 선택합니다. 흡수 램은 보충되기 전에 한 번 추가 피해를 흡수하고 처리할 수 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"></p>"
     },
     "Acid Smokescreen (G3)": {
       "name": "산성 연막 (G3)",
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">등급 1</strong></span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">분류: </strong>부품</span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 지붕</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">사용하면 이 관이 폭발 캡을 터뜨리며 유리 바이알을 깨뜨리고 추적자를 혼란시키는 가스를 내뿜는다.<br style=\"box-sizing:border-box;user-select:text\">행동으로 사용하면, 사용자의 다음 차례가 시작되기 전에 마차가 앞으로 움직였을 경우 불투명한 흰 연기 원뿔이 마차 뒤로 최대 120피트까지 퍼진다. 이 효과를 받는 구역은 1분 동안 짙게 가려지며, 중간 이상 세기(최소 시속 10마일)의 바람이 불 때까지 유지된다. 이 연막은 다시 채워 넣기 전까지 한 번 사용할 수 있다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">개조</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">등급 3 부품이 되면, 이 부착물은 산성 연막이 된다. 원뿔 구역의 생물들은 체질 내성 굴림 DC 15을 해야 하며, 실패하면 매 차례 시작 시 5d8 산성 피해를 입고, 성공하면 절반의 피해를 입는다. 물체는 한 라운드마다 5d8 산성 피해를 입는다. 이 부품이 주는 피해는 거대함을 무시한다.</span></p>"
     },
+    "Air Compressor": {
+      "name": "공기 압축기 - Air Compressor",
+      "description": "<p><strong>클래스:</strong> 기계 개조 - 플라이휠</p><p><strong>가격:</strong> 100gp </p><p><strong>무게:</strong> 70 파운드 </p><p><strong>치수:</strong> 2x2x2 ft. </p><p>이 장치는 마법의 도움을 받아 정밀하게 제작된 강철 실린더로 만들어져 플라이휠에 연결된 피스톤 주위에 밀폐된 씰을 형성합니다. 이로 인해 배출구를 통해 공기가 강제로 유입되어 일부 가구가 작동하게 됩니다.</p>"
+    },
+    "Alchemist & Brewer": {
+      "name": "연금술사와 양조업자 - Alchemist & Brewer",
+      "description": "<p><em>요구 사항: 플라이휠, 배관, 용광로</em></p><p><strong>클래스: </strong>기계적 혁신 - 장인 작업 스테이션</p><p><strong>가격:</strong> 1,500gp </p><p><strong>무게:</strong> 400lbs. </p><p><strong>치수:</strong> 10x5x5 ft. </p><p>이 작업 스테이션은 마차의 움직임이 배치를 망치는 것을 방지하기 위해 자이로스코프가 안정된 벤치에 설치됩니다. 여기에는 증류기, 유리 제품, 플라이휠 구동 원심분리기가 포함됩니다. 습도 챔버와 제어된 버너를 통해 이전에는 대학에서만 가능했던 정밀 촉매화가 가능해졌습니다.</p>"
+    },
     "Animated Ladder": {
-      "name": "Animated 사다리"
+      "name": "Animated 사다리",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>이 장치를 동작으로 활성화하면 나무 레일을 통해 연결된 두 개의 애니메이션 로프가 마차 지붕에서 올라옵니다. 사다리는 라운드당 15피트의 속도로 최대 120피트 높이까지 확장됩니다. 부속품을 다시 활성화하면 사다리가 천천히 내려가거나 즉시 무너질 수 있습니다.</p>"
+    },
+    "Annihilation Box": {
+      "name": "파멸의 상자 - Annihilation Box",
+      "description": "<p><strong>클래스: </strong>편안함 및 편의성</p><p><strong>가격:</strong> 90,000gp </p><p><strong>무게:</strong> 750파운드 </p><p><strong>치수:</strong> 5x5x5 ft. </p><p>이 가구를 갖춘 마차에 탑승하면 궁극의 전멸의 편리함이 손끝에 있습니다. 검은색 금속 상자에는 삼중 안전 걸쇠와 중간 에어록이 있습니다. 상자에 비워진 무생물은 현실의 틈새로 떨어져 쓰레기를 완전히 파괴합니다. 마법 아이템이나 생물은 영향을 받지 않지만, 신의 개입이나 소원 주문을 통해서만 절멸 상자에 떨어진 다른 모든 것을 되살릴 수 있습니다. 결혼반지 조심하세요!</p>"
     },
     "Arcana Blinding": {
-      "name": "비전 실명화 - Arcana Blinding"
+      "name": "비전 실명화 - Arcana Blinding",
+      "description": "<p><strong>5학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>비스트 월드에서 가장 박식한 마법사도 피할 수 있는 이유로, 던전 장치의 기어에서 나오는 희귀한 오일은 마차 벽의 목재에 문지르면 내부 공간을 신성화하는 아르카나의 능력을 제거합니다. </p><p>마차와 그 내부, 그 안에 있는 생물은 점술 주문의 대상이 될 수 없으며 마법의 점술 센서를 통해 감지될 수 없습니다. 또한 마차 내부에 있는 생물은 정신적 피해와 매혹 상태에 면역입니다.</p>"
     },
     "Armored Storage": {
-      "name": "장갑형 수납 - Armored Storage"
+      "name": "장갑형 수납 - Armored Storage",
+      "description": "<p><strong>1등급 </strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>이 철제 금고는 마차의 프레임에 내장되어 있습니다. 상자의 벽 두께는 2인치이며 각 측면에 2피트의 사용 가능한 공간이 있습니다. AC 19, 체력 50, 피해 임계값 4입니다. 자물쇠를 따려면 도둑 도구에 능숙한 생물이 수행하는 DC 17 민첩 판정이 필요합니다. </p><p><strong>재맞춤:</strong> 3등급 이상 피팅으로서 자물쇠의 선택 DC는 25입니다. 또한 상자에는 노크 주문이 60피트 이내에서 시전될 때 발동되는 반격 주문이 장착되어 있습니다. 5등급 피팅으로서 상자에는 평면 외 내부가 있습니다. </p><p>상자는 여전히 정상적으로 물체를 담을 수 있지만, 명령을 말하면 상자가 돌벽으로 된 한 측면이 10피트인 아스트랄 바다의 입방형 주머니로 열립니다. 벽에 설치된 벨을 누르면 안쪽에서 금고 문이 열립니다.</p>"
     },
     "Armored Storage (G3)": {
-      "name": "장갑형 수납 (G3)"
+      "name": "장갑형 수납 (G3)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">3학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급:</strong> 피팅</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> Cabin</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 철제 금고는 왜건의 프레임에 내장되어 있습니다. 상자의 벽 두께는 2인치이며 각 측면에 2피트의 사용 가능한 공간이 있습니다. AC 19, 50 내구도, 피해 임계값 4입니다. 자물쇠를 선택하려면 도둑 도구에 능숙한 생물이 수행하는 DC 25 민첩 판정이 필요합니다.</span></p><p><span style=\"font-family:Signika, sans-serif\">추가로, 상자에는 노크 주문이 60피트 이내에서 시전될 때 발동되는 반격 주문이 장착되어 있습니다. it.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Refit:</strong> </span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"> 5등급 피팅으로서 상자에는 평면 외 평면이 있습니다. inside.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">상자는 여전히 정상적으로 물체를 담을 수 있지만, 명령을 말하면 상자가 돌벽으로 된 측면 10피트의 아스트랄 해(Astral Sea)에 있는 입방형 주머니로 열립니다. 벽에 설치된 벨을 누르면 안쪽에서 금고 문이 열립니다.</span></p>"
     },
     "Armored Storage (G5)": {
-      "name": "장갑형 수납 (G5)"
+      "name": "장갑형 수납 (G5)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">5학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급:</strong> 피팅</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> Cabin</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 철제 금고는 왜건의 프레임에 내장되어 있습니다. 상자의 벽 두께는 2인치이며 각 측면에 2피트의 사용 가능한 공간이 있습니다. AC 19, 50 내구도, 피해 임계값 4입니다. 자물쇠를 선택하려면 도둑 도구에 능숙한 생물이 수행하는 DC 25 민첩 판정이 필요합니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">추가로, 상자에는 노크 주문이 60피트 이내에서 시전될 때 발동되는 반격 주문이 장착되어 있습니다. it.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">등급 5 피팅으로서 상자에는 외부 평면 내부가 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">상자는 여전히 물체를 정상적으로 담을 수 있지만 명령 단어를 말하면 Astral의 입방체 주머니로 열립니다. 바다, 한 쪽이 10피트이고 돌벽이 있습니다. 벽에 설치된 벨을 누르면 안쪽에서 금고 문이 열립니다.</span></p>"
     },
     "Astral Capture Cube": {
+      "name": "아스트랄 캡처 큐브 - Astral Capture Cube",
       "description": "<p><strong>등급 5</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치</strong>: 본체(마차 외부 어느 곳이든)</p><p>유령 같은 정육면체가 마차 본체 어딘가의 모서리 위에서 빙글빙글 돌며 흔들린다. 이 부품을 행동으로 사용하면, 큐브에서 20피트 이내에 있고 사용자가 볼 수 있는 생물 하나는 매력 내성 굴림 DC 17을 해야 한다. 실패하면 대상은 즉시 사라지며, 큐브 내부의 아스트랄 공간 주머니에 갇힌다.</p><p>갇힌 생물은 30일마다 매력 내성 굴림을 다시 할 수 있으며, 성공하면 가장 가까운 빈 공간으로 풀려난다. 큐브 내부는 무한한 어둠의 공허로, 유물 외의 출처에서 온 마법은 억제된다. 행동으로 큐브의 면을 살펴보고 지능(조사) 판정 DC 13을 굴릴 수 있으며, 성공하면 갇힌 자의 몸 형태가 희미하게 보인다.</p><p>행동으로 큐브의 명령어를 말하면 갇힌 생물은 풀려나 가장 가까운 빈 공간으로 내던져진다. 이 큐브는 한 번에 한 생물만 가둘 수 있으며, 한 번 포획을 시도한 뒤에는 다시 채워 넣기 전까지 추가로 포획을 시도할 수 없다.</p>"
     },
+    "Auto Raft": {
+      "name": "자동 뗏목 - Auto Raft",
+      "description": "<p><strong>등급 4</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>수생 괴물의 가죽을 아마씨 기름으로 처리하여 구멍이 나지 않는 뗏목을 만들어 마차의 하부 구조에 깔끔하게 보관하고 처마에는 감겨진 천 돛을 보관합니다. 마차가 5피트보다 깊은 물에 들어가면 뗏목이 자동으로 부풀어 오르고 돛은 지붕 중앙에서 망원경으로 볼 수 있는 마스트에 배치됩니다. 마차의 속도는 물 위에서 30피트입니다(드래프트 플랫폼을 사용하면 래프팅 마차에 드래프트가 동반될 수 있습니다).</p>"
+    },
     "Ballista": {
-      "name": "발리스타 - Ballista"
+      "name": "발리스타 - Ballista",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">1학년</strong></span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급: </strong>구성 요소</span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 지붕</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">손상:</strong> 2d6 피어싱</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">속성:</strong> 탄약(범위 300/1500), 장전, 특수</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 대형 석궁이 지붕 마운트에 장착되어 있습니다. 이 무기는 멀리 있는 표적을 공격하는 데 특화되어 있지만, 그 위치 때문에 더 가까운 표적을 공격하기에는 불편합니다. 발리스타는 30피트 이내에 있는 중형 이하의 생물을 목표로 삼을 수 없습니다. 이 구성요소가 가하는 피해는 거대함을 무시합니다. 이 무기는 보충되기 전에 20발의 볼트를 발사할 수 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Refit</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">2등급 구성품으로, 이 구성 요소는 접이식 마운트가 추가된 무게가 55파운드인 휴대용 버전인 치로발리스트라(cheiroballistra)가 됩니다. 케이로발리스트라는 마운트에 설치하거나 액션으로 제거할 수 있습니다. 마운트 해제된 동안에는 발사할 수 없으며, 마운트된 동안 이동할 수 없습니다.</span></p>"
     },
     "Barbed Wire": {
+      "name": "가시 철사 - Barbed Wire",
       "description": "<p><strong>등급 2</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 본체(내장형)</p><p>이 위협적인 가시 코일은 마차의 적들을 벌한다. 마차가 생물이나 물체와 충돌하거나 돌진 공격에 적중하면 추가로 3d4 관통 피해를 준다. 생물이 근접 공격으로 마차를 적중하면, 공격자는 3d4 관통 피해를 입는다. 이 부착물의 피해는 거대함을 무시한다.</p>"
     },
     "Barn Door": {
-      "name": "Barn 문"
+      "name": "Barn 문",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 180 gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p><strong>치수:</strong> 20피트 벽 옵션</p><p>하나의 긴 벽은 바깥쪽으로 미끄러지는 두 개의 5피트 문으로 다시 장착됩니다.</p>"
     },
     "Basin": {
-      "name": "세면대 - Basin"
+      "name": "세면대 - Basin",
+      "description": "<p><em>요구 사항: 배관</em></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 60 gp</p><p><strong>무게:</strong> 70 lbs.</p><p><strong>치수:</strong> 2x2x4 ft.</p><p>이 나무 세면대는 작은 기둥으로 올라갑니다. 풋 페달 펌프와 옵션으로 제공되는 물 탱크 연결을 통해 세면대를 자동으로 채울 수 있습니다. </p><p><strong>선택 사항:</strong> </p><p>15gp의 경우 용광로로 가열된 저수조에 부착된 두 번째 파이프로 유역을 업그레이드할 수도 있습니다.</p>"
     },
     "Bath": {
-      "name": "욕조 - Bath"
+      "name": "욕조 - Bath",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 및 편의성</span></p><p><strong>가격:</strong> 70gp </p><p><strong>무게:</strong> 60lbs. </p><p><strong>치수:</strong> 5x5x3피트 </p><p>이것은 최대 50갤런의 물을 담을 수 있는 어두운 나무 판자로 만든 원형 방수 욕조입니다. 까다로운 탐험가의 필수품으로, 마차 바닥에 부착되어 미끄러짐을 방지합니다. </p><p><strong>업그레이드:</strong> </p><p><em>배관 필요</em> </p><p>30gp의 경우 욕조는 물 탱크에 연결됩니다. 편리한 채우기 및 배수.</p>"
+    },
+    "Bellows Fan": {
+      "name": "벨로우즈 팬 - Bellows Fan",
+      "description": "<p><em>요구 사항: 플라이휠, 공기 압축기</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 120gp </p><p><strong>무게:</strong> 40lbs. </p><p><strong>치수:</strong> 2x3x4 </p><p>이 가구는 노즐을 통해 공기를 밀어 넣어 비오는 날 젖은 모피, 목욕 후 젖은 모피, 수중 모험 후 젖은 모피 또는 기타 모피가 젖어 있는 모피를 건조시킵니다. 젖어.</p>"
     },
     "Blast Spike": {
       "name": "폭발 스파이크 - Blast Spike",
@@ -61,145 +98,307 @@
       "description": "<p><strong>등급 6</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 본체(외부 아래쪽의 5피트 정사각형 하나)</p><p>이 가시의 머리에는 폭약이 장전되어 있고, 끝은 땅을 향하고 있다. 행동으로 사용하면, 가시는 모래, 흙, 진흙, 얼음을 뚫고 들어가며 60피트 이내의 지하 구조물과 땅굴 생물을 교란하는 마법 충격파를 방출한다. 범위 내의 땅굴 생물은 체질 내성 굴림 DC 15을 해야 한다.</p><p>생물은 실패하면 16d6 천둥 피해를, 성공하면 절반의 피해를 입는다. 범위 내의 구조물은 16d6 천둥 피해를 입는다. 이 부품이 주는 피해는 거대함을 무시한다. 폭발 가시는 다시 채워 넣기 전까지 한 번 사용할 수 있다.</p><p></p>"
     },
     "Block of Privacy": {
-      "name": "Block 의 사생활"
+      "name": "Block 의 사생활",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>한 쪽의 2피트 분필 블록이 마차 중앙에 놓여 있습니다. 블록 중앙에는 소음을 흡수하는 윤곽 구멍이 있습니다. 프라이버시가 차단된 마차 내부에서 나는 소리는 벽 너머로는 들을 수 없습니다.</p>"
     },
     "Boiler": {
-      "name": "보일러 - Boiler"
+      "name": "보일러 - Boiler",
+      "description": "<p><strong>클래스: </strong>기계 개조 - 용광로 - 기능</p><p><strong>가격:</strong> +200gp</p><p><strong>무게:</strong> 400 lbs.</p><p><strong>치수:</strong> 2x4x2피트(굴뚝 포함)</p><p>탱크에서 물을 끓이도록 설계된 철 스토브(아래 참조). 보일러는 증기를 생성하여 식수로 증류하거나 파이프를 통해 엔진이나 기타 가구로 보낼 수 있습니다.</p>"
     },
     "Bookcase": {
-      "name": "책장 - Bookcase"
+      "name": "책장 - Bookcase",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 30gp </p><p><strong>무게:</strong> 50lbs. </p><p><strong>치수:</strong> 2x5x5피트 </p><p>포함된 천 스트랩은 거친 도로의 경우 선반에 있는 책을 지탱할 수 있습니다.</p>"
     },
     "Breadcrumb Wheels": {
-      "name": "Breadcrumb 바퀴"
+      "name": "Breadcrumb 바퀴",
+      "description": "<p><strong>3등급</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>마법의 가루가 마차 타이어의 채널을 채웁니다. 피팅이 보너스 동작으로 활성화되면 이동하면서 보이지 않는 흔적이 남습니다. 운전석에 앉은 생명체는 빛나는 형광 녹색 흔적으로 가루를 볼 수 있습니다. 운전자는 마차가 지난 10마일 동안 이동한 경로를 볼 수 있습니다. </p><p>가루는 잔잔한 물 위에 떠 있고, 마차가 날고 있으면 공중에 매달려 있습니다. 피팅이 활성화되면 휠의 채널을 보충하기 전에 한 번 사용할 수 있습니다.</p>"
+    },
+    "Cafe Service": {
+      "name": "카페 서비스 - Cafe Service",
+      "description": "<p><strong>클래스: </strong>리노베이션</p><p><strong>가격:</strong> 450 gp</p><p><strong>무게:</strong> 50 lbs.</p><p><strong>치수:</strong> 20피트 벽 옵션</p><p>긴 벽 하나를 접어서 매장 카운터 또는 워크업 서비스 공간으로 사용합니다.</p>"
+    },
+    "Calligrapher, Cartographer, & Painter": {
+      "name": "서예가, 지도 제작자, 화가 - Calligrapher, Cartographer, & Painter",
+      "description": "<p><strong>클래스:</strong> 기계 개조 - 장인 작업 스테이션</p><p><strong>가격:</strong> 200gp </p><p><strong>무게:</strong> 200lbs. </p><p><strong>크기:</strong> 10x5x5 </p><p>잘 작성된 서신보다 더 가치 있는 것은 없습니다. 이 워크스테이션은 왕실 법령과 어머니에게 보내는 편지를 모두 용이하게 작성합니다. 넓은 제도 테이블과 책상은 견고한 가구 제작과 매끄러운 표면에 세심한 주의를 기울여 제작되었습니다. 선명한 재현과 추적을 위해 라이트 박스가 포함되어 있습니다. 보너스로 이동식 제지 생산을 위해 테이블 ​​뒤에는 목재 펄프 프레스가 있고 전체 패키지에는 좋아하는 깃펜, 잉크병, 붓, 페인트를 안전하게 보관할 수 있는 충분한 저장 공간이 있습니다.</p>"
     },
     "Candle Sconce": {
-      "name": "초 - Sconce"
+      "name": "초 - Sconce",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 2gp </p><p><strong>무게:</strong> 0lbs. </p><p><strong>치수:</strong> 벽에 1피트 </p><p>광택 강철로 만든 간단한 고정 장치로 왁스 양초를 단단히 고정하고 왜건 내부에 부드러운 빛을 제공합니다. 양초는 포함되어 있지 않습니다.</p>"
     },
     "Cannon": {
-      "name": "대포 - Cannon"
+      "name": "대포 - Cannon",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 지붕</p><p><strong>속성:</strong> 탄약(범위 300/1000), 특수</p><p><strong>피해:</strong> 5d10 타격 Damage</p><p>대포는 30피트 이내에 있는 중형 이하의 생물을 목표로 삼을 수 없습니다. 일단 발사되면 대포는 재장전하기 위해 두 가지 조치를 취하며, 대포로부터 5피트 내의 모든 생물이 이를 수행할 수 있습니다. 이 무기의 피해는 거대함을 무시하고 구조물과 물체에 두 배의 피해를 줍니다. 대포는 보충되기 전까지 4번 발사할 수 있습니다.</p>"
     },
     "Cantrip Lantern": {
-      "name": "캔트립 랜턴 - Cantrip Lantern"
+      "name": "캔트립 랜턴 - Cantrip Lantern",
+      "description": "<p><strong>요구 사항:</strong> 왜건 레벨 5</p><p><strong>클래스: </strong>가구 </p><p><strong>가격:</strong> 500gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 벽에 1피트 </p><p>영구 춤추는 조명 주문이 있는 팔각형 램프, 두 번의 스타카토 손뼉을 치면 켜지고 꺼집니다. 클래퍼는 조명의 색상을 선택합니다</p><p></p>"
+    },
+    "Capture Paint": {
+      "name": "페인트 캡처 - Capture Paint",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 5,000gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p><strong>치수:</strong> 벽 또는 천장</p><p>이 페인트 통은 200제곱피트의 평평한 표면을 덮습니다. 포함된 렌즈는 명령어(기본적으로 \"치즈\")로 이미지를 캡처할 수 있습니다. 페인팅된 표면에서 10피트 이내에서 다시 말하면 주변 조명을 모방하여 이미지를 영구적으로 재현합니다. 이미지는 관점을 바꿀 수 없으므로 통과한 검사 이상을 속일 수 없습니다.</p>"
+    },
+    "Carpenter & Woodcarver": {
+      "name": "목수 및 목공예가 - Carpenter & Woodcarver",
+      "description": "<p><em>요구 사항: 플라이휠</em> </p><p><strong>클래스: </strong>기계 개조 - 장인 작업 스테이션</p><p><strong>가격:</strong> 450gp </p><p><strong>무게:</strong> 450lbs. </p><p><strong>치수:</strong> 10x5x5피트 </p><p>이 워크스테이션을 사용하면 어디를 가든 모든 종류의 목공 작업을 손끝에서 할 수 있습니다. 설치된 플라이휠은 자동 선반과 모든 기능을 갖춘 테이블 톱에 전원을 공급합니다. 으깬 조개껍질과 접착제를 묻힌 종이 벨트도 플라이휠의 힘으로 회전합니다. 형제의 바닥처럼 매끄러운 목재로 고객을 놀라게하려면 작업을 수행하십시오. 마지막으로 작업대에는 바이스가 장착된 벤치와 필요한 모든 수공구를 보관할 수 있는 상자가 있습니다.</p>"
     },
     "Cascade Anvil": {
-      "name": "폭포 모루 - Cascade Anvil"
+      "name": "폭포 모루 - Cascade Anvil",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스: </strong>Components</p><p><strong>위치:</strong> Roof</p><p>이 진홍색 모루는 마차 바퀴를 통해 땅과 접촉하는 금속 고리에 맞춰 지붕 판에서 1인치 떨어져 떠 있습니다. 보너스 동작으로 금속 근접 무기를 모루에 평평하게 놓으면 동일한 주파수로 윙윙거리고 진동합니다. 사용자의 다음 턴이 끝날 때까지 무기의 공격은 1d6의 천둥 피해를 추가로 주며 피해는 Enormity를 무시합니다.</p><p><strong>Refit:</strong></p><p>4등급 구성 요소로서 모루의 효과는 1 동안 지속됩니다. 분.</p>"
     },
     "Cascade Anvil (G4)": {
-      "name": "폭포 모루 (G4)"
+      "name": "폭포 모루 (G4)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">4학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급: </strong>Components</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Location:</strong> Roof</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 진홍색 모루는 접시에서 1인치 떨어져 떠 있습니다. 지붕에는 마차 바퀴를 통해 땅과 접촉하는 금속 고리에 맞춰져 있습니다. 보너스 동작으로 금속 근접 무기를 모루에 평평하게 놓으면 동일한 주파수로 윙윙거리고 진동합니다. 1분 동안 무기의 공격은 1d6의 천둥 피해를 추가로 주며 피해는 거대함을 무시합니다.</span></p>"
     },
     "Ceiling Fan": {
-      "name": "천장 선풍기 - Ceiling Fan"
+      "name": "천장 선풍기 - Ceiling Fan",
+      "description": "<p><em>요구 사항: 플라이휠</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 및 편의성 </span></p><p><strong>가격:</strong> 100gp </p><p><strong>무게:</strong> 30lbs. </p><p><strong>치수:</strong> 3피트 천장 </p><p>플라이휠에 부착된 가죽 밴드는 기울어진 나무 블레이드의 4분의 1을 회전시킵니다. 밴드에 저장된 장력을 풀기 위해 레버를 던지면 최대 8시간 동안 팬이 회전하여 쾌적한 공기 순환을 제공합니다.</p>"
     },
     "Ceiling Hatch": {
-      "name": "천장 해치 - Ceiling Hatch"
+      "name": "천장 해치 - Ceiling Hatch",
+      "description": "<p><strong>클래스: </strong>인테리어 사용자 정의</p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 5피트 천장 </p><p>나무 해치 및 걸쇠를 사용하면 옥상에 접근할 수 있습니다. 누출을 방지하기 위해 좁은 연금술사 고무 스트립으로 날씨를 밀봉했습니다.</p>"
+    },
+    "Chasmic Pylon": {
+      "name": "캐스믹 파일론 - Chasmic Pylon",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>화석화된 생물의 갈비뼈로 만든 3피트짜리 말뚝 4개가 마차 측면에 장착된 공압 튜브에 실려 있습니다. 보너스 액션으로 사용하면 튜브가 흙이나 유사한 물질, 돌에 말뚝을 발사합니다. 공압 장치는 말뚝을 완전히 묻습니다. 생물은 말뚝이 어디에 묻혀 있는지 인식하기 위해 DC 13 지혜(지각) 판정에 성공해야 합니다.</p><p>하나를 제거하려면 DC 20 힘 판정이 필요하거나 1분 동안 땅을 파서 말뚝 길이의 최소 절반을 굴착해야 합니다. 말뚝 4개를 모두 묻혀서 한 변이 100피트 이하인 모양의 모서리를 형성하면 사용자는 1마일 이내에서 이를 액션으로 활성화할 수 있습니다. 경계 내의 땅은 일시적으로 아스트랄 해로 들어가고 40피트 깊이의 구덩이를 남깁니다.</p><p>가장자리에 서 있는 생물은 추락을 피하기 위해 DC 18 민첩 내성 굴림을 할 수 있지만, 그 지역 내의 다른 모든 것은 구덩이로 곤두박질칩니다. 흙, 돌, 물, 얼음 이외의 물질은 바닥으로 떨어집니다. 재료에 관계없이 인공 구조물도 남겨집니다. 효과는 1시간 동안 지속되거나, 사용자가 1마일 이내의 명령어를 행동으로 말할 때까지 지속됩니다. 효과가 끝나면 땅은 그대로 다시 나타나고 구덩이에 남아 있는 모든 것은 묻혀지며 말뚝은 땅에서 튀어나옵니다. 구성 요소를 다시 사용하려면 먼저 검색해야 합니다. 캐스믹 파일런은 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
     },
     "Cheiroballistra (G2)": {
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">등급 2</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">분류: </strong>부품</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 지붕</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">피해:</strong> 2d6 관통</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">특성:</strong> 탄약(사거리 300/1500), 장전, 특수</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 휴대용 발리스타는 55파운드이며, 접이식 거치대가 함께 달려 있다. 케이로발리스트라는 행동으로 거치대에 설치하거나 분리할 수 있다. 분리된 상태에서는 발사할 수 없고, 거치된 상태에서는 이동할 수 없다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 무기는 먼 표적을 맞히는 데 특화되어 있지만, 그 위치 때문에 가까운 표적을 맞히기는 다루기 어렵다. 이 발리스타는 자신으로부터 30피트 이내의 중형 이하 생물을 목표로 삼을 수 없다. 이 부품이 주는 피해는 거대함을 무시한다. 이 무기는 보충하기 전까지 볼트 20발을 발사할 수 있다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"></p>"
     },
     "Chest of Drawers": {
-      "name": "상자 의 - Drawers"
+      "name": "상자 의 - Drawers",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 50gp </p><p><strong>무게:</strong> 50lbs. </p><p><strong>치수:</strong> 5x3x5ft. </p><p>참나무 서랍장+넓은 서랍 6개. 불안정한 주행 중에 또는 호기심 많은 유아를 돌볼 때 실수로 열리지 않도록 손가락 걸쇠가 장착되어 있습니다.</p>"
+    },
+    "Chilling Fan": {
+      "name": "냉각 팬 - Chilling Fan",
+      "description": "<p><em>요구 사항: 플라이휠, 공기 압축기</em></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 및 편의성</span> </p><p><strong>가격:</strong> 3,000gp </p><p><strong>무게:</strong> 100lbs. </p><p><strong>치수:</strong> 벽의 3x2피트 </p><p>어떤 사람들은 이것을 연금술 성취의 정점이라고 부릅니다. 플라이휠에 부착하면 이 팬은 정밀하게 증류된 고가의 솔벤트로 냉각된 공기를 불어냅니다. 이것이 바얀을 여행하는 모든 오리크 탐험가들이 탐내는 최고의 편안함의 힘입니다.</p>"
     },
     "Climate Control": {
-      "name": "기후 조절 - Climate Control"
+      "name": "기후 조절 - Climate Control",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스: </strong>Fitting</p><p><strong>위치:</strong> 캐빈 </p><p>라에틴 연금술사는 수축 왁스를 사용하여 마차 창문의 두꺼운 유리판을 밀봉하는 새로운 (그리고 값비싼) 기술을 고안했습니다. 벽은 부서진 세계에서 수집한 푹신한 분홍색 물질로 단열되어 있어 과도한 열을 흡수하는 동시에 추운 객실을 따뜻하게 해줍니다. </p><p>텐트는 마차 프레임 상단의 통풍구 위로 확장되어 휴식 중에도 동일한 편안함을 제공합니다. 허리케인, 눈보라, 베일리크의 뜨거운 태양 속에서도 왜건은 건조하고 편안한 상태를 유지합니다.</p>"
+    },
+    "Cobbler & Leatherworker": {
+      "name": "구두수선공 및 가죽세공인 - Cobbler & Leatherworker",
+      "description": "<p><em>요구 사항: 배관</em> </p><p><strong>클래스: </strong>기계 개조 - 장인 작업 스테이션</p><p><strong>가격:</strong> 300gp </p><p><strong>무게:</strong> 200lbs. </p><p><strong>치수:</strong> 10x5x5피트 </p><p>모든 델버는 어떤 방식의 가죽을 입습니다. 올바른 도구를 갖춘 장인은 조기 퇴직을 할 수 있습니다. 작업대 뒤에는 태닝 선반이 벽에 설치되어 있고, 높은 유리 캐비닛을 사용하면 탱크에서 순환되는 물로 습도를 조절할 수 있습니다.</p>"
+    },
+    "Compacting Mattress": {
+      "name": "압축 매트리스 - Compacting Mattress",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 100gp</p><p><strong>무게:</strong> 30 lbs.</p><p><strong>치수:</strong> 팽창 시 6x3x1피트 </p><p>밀폐 깃털 매트리스는 평평하게 펴서 보관할 수 있습니다. 수동식 공기 펌프가 포함되어 있습니다.</p>"
     },
     "Crate": {
-      "name": "상자 - Crate"
+      "name": "상자 - Crate",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 3cp </p><p><strong>무게:</strong> 70lbs. </p><p><strong>치수:</strong> 5x5x5피트 </p><p>이것은 상자입니다.</p>"
     },
     "Cushion-Top Crate": {
-      "name": "Cushion-Top 상자"
+      "name": "Cushion-Top 상자",
+      "description": "<p><strong>클래스:</strong> 가구 </p><p><strong>가격:</strong> 5gp </p><p><strong>무게:</strong> 20lbs. </p><p><strong>치수:</strong> 2x2x2피트 </p><p>손으로 수놓은 쿠션을 제거하면 수납 상자가 드러납니다.</p>"
+    },
+    "Cushioned High-Back": {
+      "name": "쿠션감 있는 하이백 - Cushioned High-Back",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 50gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 세웠을 때 2x2x5피트 </p><p>등받이가 높은 쿠션 의자는 접어서 보관할 수 있습니다.</p>"
+    },
+    "Dimension Dorm": {
+      "name": "디멘션 기숙사 - Dimension Dorm",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 500gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 벽에 10x5피트 </p><p>벽 해치는 포함된 유아용 침대와 리넨에서 밤에 잠을 잘 수 있을 만큼 충분히 큰 약한 존재하는 데미플레인으로 수직으로 열립니다. 제거하면 내용물이 사라집니다. 침대 평면은 점유된 동안에만 존재합니다. 떠난 후 내부에 남은 모든 것은 가장 가까운 빈 공간에 나타납니다. 차원 기숙사는 한 번에 최대 4개의 데미플레인을 생성할 수 있으며 문 손잡이에 있는 숫자 다이얼을 통해 접근할 수 있습니다. 점유 중인 차원 기숙사가 파괴되면 침대 평면에 있는 모든 것이 비어 있는 공간 외부에 나타납니다.</p>"
+    },
+    "Dinner Bench": {
+      "name": "디너 벤치 - Dinner Bench",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 30lbs. </p><p><strong>치수:</strong> 8x3x4피트 </p><p>8피트 벤치는 옻칠한 Bat'yan 목재로 제작되었으며 등받이 전체가 편안합니다. 실내 및 실외에서 사용 가능하며 보관을 위해 평평하게 접을 수 있습니다.</p>"
+    },
+    "Disc-Supported Undercarriage": {
+      "name": "디스크 지지 차대 - Disc-Supported Undercarriage",
+      "description": "<p><strong>등급 2</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>왜건의 하부 구조는 넓고 얇은 흰색 금속 디스크로 지지됩니다. 디스크 표면에는 Arneria의 둑길을 건설한 것과 동일한 마법이 담겨 있습니다. 마차의 바퀴가 손상되면 디스크가 활성화되어 마차가 세 개의 바퀴로만 굴러갈 수 있습니다. 고장으로 인한 바퀴 손상으로 인해 마차의 속도가 감소하지 않습니다.</p>"
+    },
+    "Diving Wainbody": {
+      "name": "다이빙 웨인바디 - Diving Wainbody",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>전신 변환을 통해 마차는 물 속에서 이동하고 표면 아래로 잠수할 수 있습니다. 차대에 있는 플라이휠은 동봉된 운전자가 피팅 레버를 작동할 때 하강하는 프로펠러를 회전시킵니다. 두 번째 레버를 사용하면 두 개의 측면 탱크가 채워지거나 비워지고 마차가 잠기거나 떠오르게 됩니다. </p><p>생물은 두 문 사이의 5피트 공간에서 회전을 종료하여 수중 에어록 문을 통해 이동할 수 있습니다(이 공간은 내부의 일부일 수도 있고 벽에서 연장될 수도 있음). 마차는 30피트의 수영 속도를 가지며, 객실에는 8시간 동안 최대 6마리의 중형 생물을 지탱할 수 있는 충분한 공기가 들어 있습니다. 다이빙 웨인바디는 900피트 깊이까지 안전하게 이동할 수 있으며, 10피트 깊이마다 압력으로 인해 2d6의 타격 피해를 입습니다</p>"
     },
     "Door": {
-      "name": "문 - Door"
+      "name": "문 - Door",
+      "description": "<p><strong>클래스:</strong> 혁신</p><p><strong>가격:</strong> 170gp*</p><p><strong>무게:</strong> 포함됨</p><p><strong>치수:</strong> 10피트 벽 옵션</p><p>입구 또는 출구를 허용하는 목재 프레임 포털. 요청에 따라 사슴뿔 너비 또는 작음.</p>"
     },
     "Dragon Launcher": {
-      "name": "드래곤 발사기 - Dragon Launcher"
+      "name": "드래곤 발사기 - Dragon Launcher",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>이 돌 원통의 한쪽 끝은 머리에 끌리는 모양을 닮았고, 다른 쪽 끝은 가연성 젤로 채워져 있습니다. 드래곤 발사기는 액션으로 발사될 수 있습니다. 120피트 내의 지점을 중심으로 하는 반경 20피트 구체의 생물과 물체는 DC 15 민첩 내성 굴림을 해야 합니다.</p><p>대상은 내성 실패 시 8d6 화염 피해를 입거나, 성공 시 절반의 피해를 입습니다. 추가로, 저장에 실패하면 대상은 각 턴이 시작될 때 2d6의 화염 피해를 입습니다. 생물은 불을 끄기 위해 DC 10 민첩 판정을 하는 행동을 사용하여 이 피해를 끝낼 수 있습니다. 이 부착물로 인한 피해는 거대함을 무시합니다. 드래곤 발사기는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>4등급 이상의 구성품으로, 드래곤 발사기는 3등급 이상일 때마다 추가 시간을 사용할 수 있습니다. 보충되었습니다.</p>"
     },
     "Dragon Launcher (G4)": {
-      "name": "드래곤 발사기 (G4)"
+      "name": "드래곤 발사기 (G4)",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>이 돌 원통의 한쪽 끝은 머리에 끌리는 모양을 닮았고, 다른 쪽 끝은 가연성 젤로 채워져 있습니다. 드래곤 발사기는 액션으로 발사될 수 있습니다. 120피트 내의 지점을 중심으로 하는 반경 20피트 구체의 생물과 물체는 DC 15 민첩 내성 굴림을 해야 합니다.</p><p>대상은 내성 실패 시 8d6 화염 피해를 입거나, 성공 시 절반의 피해를 입습니다. 추가로, 저장에 실패하면 대상은 각 턴이 시작될 때 2d6의 화염 피해를 입습니다. 생물은 불을 끄기 위해 DC 10 민첩 판정을 하는 행동을 사용하여 이 피해를 끝낼 수 있습니다. 이 부착물로 인한 피해는 거대함을 무시합니다. 드래곤 발사기는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>4등급 이상의 구성품으로, 드래곤 발사기는 3등급 이상일 때마다 추가 시간을 사용할 수 있습니다. 보충되었습니다.</p>"
     },
     "Dragon Launcher (G5)": {
-      "name": "드래곤 발사기 (G5)"
+      "name": "드래곤 발사기 (G5)",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>이 돌 원통의 한쪽 끝은 머리에 끌리는 모양을 닮았고, 다른 쪽 끝은 가연성 젤로 채워져 있습니다. 드래곤 발사기는 액션으로 발사될 수 있습니다. 120피트 내의 지점을 중심으로 하는 반경 20피트 구체의 생물과 물체는 DC 15 민첩 내성 굴림을 해야 합니다.</p><p>대상은 내성 실패 시 8d6 화염 피해를 입거나, 성공 시 절반의 피해를 입습니다. 추가로, 저장에 실패하면 대상은 각 턴이 시작될 때 2d6의 화염 피해를 입습니다. 생물은 불을 끄기 위해 DC 10 민첩 판정을 하는 행동을 사용하여 이 피해를 끝낼 수 있습니다. 이 부착물로 인한 피해는 거대함을 무시합니다. 드래곤 발사기는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>5등급 이상의 구성품으로, 드래곤 발사기는 3등급 이상일 때마다 추가 시간을 사용할 수 있습니다. 보충되었습니다.</p>"
     },
     "Dragon Launcher (G6)": {
-      "name": "드래곤 발사기 (G6)"
+      "name": "드래곤 발사기 (G6)",
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>이 돌 원통의 한쪽 끝은 머리에 끌리는 모양을 닮았고, 다른 쪽 끝은 가연성 젤로 채워져 있습니다. 드래곤 발사기는 액션으로 발사될 수 있습니다. 120피트 내의 지점을 중심으로 하는 반경 20피트 구체의 생물과 물체는 DC 15 민첩 내성 굴림을 해야 합니다.</p><p>대상은 내성 실패 시 8d6 화염 피해를 입거나, 성공 시 절반의 피해를 입습니다. 추가로, 저장에 실패하면 대상은 각 턴이 시작될 때 2d6의 화염 피해를 입습니다. 생물은 불을 끄기 위해 DC 10 민첩 판정을 하는 행동을 사용하여 이 피해를 끝낼 수 있습니다. 이 부착물로 인한 피해는 거대함을 무시합니다. 드래곤 발사기는 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
     },
     "Dragonbreath Interceptor": {
-      "name": "드래곤breath - Interceptor"
+      "name": "드래곤breath - Interceptor",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>에너지를 끌어당기는 구체 세트가 마차 프레임의 각 모서리 기둥에 부착되어 있습니다. 이 피팅을 설치할 때 손상 유형(산성, 냉기, 화재 또는 번개)을 선택하십시오. 마차는 선택한 유형에 대한 저항력을 얻습니다. 마차에 두 개 이상의 용숨결 요격기를 설치할 수 있으며, 매번 새로운 피해 유형을 선택합니다.</p>"
+    },
+    "Draught Platform": {
+      "name": "초안 플랫폼 - Draught Platform",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>이 피팅은 다른 부착물과 동시에 트리거되도록 설계될 수 있습니다. 마차의 하부 구조에서 연장된 이 두 개의 견고한 플랫폼 위로 드래프트가 올라와 마차가 떠다니거나, 썰매를 타거나, 벽돌 벽을 향해 공중으로 돌진하는 등의 다른 수단으로 이동할 때 안전하게 서 있을 수 있는 장소를 제공합니다.</p>"
+    },
+    "Eighty-Eights": {
+      "name": "여든여덟 - Eighty-Eights",
+      "description": "<p><strong>등급 5</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>심사원이 조작한 이 바퀴 테두리는 각각 순간 이동 원의 1/4을 차지합니다. 마차가 회전할 때 직선으로 최소 180피트를 이동하는 것에 대한 반응으로 운전자는 마차가 이전에 이동했던 위치를 상상하고 스위치를 던질 수 있습니다. </p><p>마차는 우주의 구멍을 통해 튀어 나와 즉시 해당 위치(또는 적어도 가까운 곳)로 순간 이동합니다. 마차는 의도한 목적지에서 1d10-2마일 떨어진(최소 0마일) 비어 있는 공간에 나타납니다. 여든에잇은 한 번 사용하면 일주일 동안 다시 활성화할 수 없습니다.</p>"
+    },
+    "Extraspacial Floor Space": {
+      "name": "특별한 바닥 공간 - Extraspacial Floor Space",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 1500gp </p><p><strong>무게:</strong> 150 파운드 </p><p><strong>치수:</strong> 바닥에서 5x5피트 </p><p>왜건 바닥에 설치된 금속 해치는 견고한 철제 벽이 있는 2피트 공간 외 볼륨으로 열립니다. 걸쇠에는 바닥과 같은 높이에 고정되는 강철 고리가 있습니다.</p>"
+    },
+    "Extraspatial Folding Bed": {
+      "name": "공간외 접이식 침대 - Extraspatial Folding Bed",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 2,000gp </p><p><strong>무게:</strong> 150lbs. </p><p><strong>치수:</strong> 10x10피트 벽 공간 </p><p>벽에 Broken World 공간을 조금 더 추가하면 델버는 물리적으로 가능한 것보다 더 넓은 침대를 즐길 수 있습니다. 발로 들어 올려 보관하면 8피트 너비의 침대가 찬장 문 뒤로 사라지고 바닥 공간이 깨끗해집니다</p>"
+    },
+    "Faerie Lights": {
+      "name": "요정의 불빛 - Faerie Lights",
+      "description": "<p><strong>요구 사항:</strong> 왜건 레벨 5 </p><p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 500gp </p><p><strong>무게:</strong> 0파운드. </p><p><strong>치수:</strong> 벽에 10피트 </p><p>매 3인치마다 반짝이는 빛 포인트가 있는 10피트 길이의 마법 와이어. 이 라인은 5피트의 밝은 빛을 비추고 추가로 5피트의 어두운 빛을 비춥니다. 명령 단어를 동작으로 말하여 조명을 켜거나 끌 수 있습니다.</p>"
+    },
+    "False Stars": {
+      "name": "거짓 별 - False Stars",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 350 gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p><strong>치수:</strong> 벽 또는 천장</p><p>평평하고 연한 녹색 보석은 측면 최대 20피트의 평평한 표면에 부착됩니다. 그들의 명령을 말하면 밤하늘의 환상적 이미지가 표면에 나타납니다. 이미지는 벽에 닿거나 마법의 감지를 사용하지 않으면 실제 하늘과 구별할 수 없습니다.</p>"
+    },
+    "Filtering Distillery": {
+      "name": "필터링 증류소 - Filtering Distillery",
+      "description": "<p><strong>클래스: </strong>가구 - 물 탱크 - 기능</p><p><strong>가격:</strong> +100gp </p><p><strong>무게:</strong> 40파운드 </p><p>구리 코일과 숯 필터를 사용하는 이 물 탱크 부착 장치는 미지근한 늪지 물이나 소금물을 깨끗하고 마실 수 있는 식수로 바꿔줍니다. 증류수는 또한 많은 연금술 화합물의 중요한 성분이기도 합니다. 보일러와 함께 설치할 수 있어 자동 필터링이 편리합니다. 일반적인 사용 시 3개월마다 새 필터가 필요합니다(각 2gp).</p>"
     },
     "Floor Shelf": {
-      "name": "Floor 선반"
+      "name": "Floor 선반",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 2x2x3피트 </p><p>두 개의 선반과 사이드 테이블 역할을 하는 평평한 래커 표면이 있는 정사각형 스탠드입니다. 하단 후크는 바닥에 부착되어 미끄러짐을 방지하고 위치를 변경할 수 있습니다.</p>"
     },
     "Floor Trapdoor": {
-      "name": "바닥 함정문 - Floor Trapdoor"
+      "name": "바닥 함정문 - Floor Trapdoor",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>인테리어 사용자 정의</span></p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 5피트 바닥 </p><p>은폐 러그는 포함되지 않습니다.</p>"
     },
     "Fold-Out Counter": {
-      "name": "접이식 카운터 - Fold-Out Counter"
+      "name": "접이식 카운터 - Fold-Out Counter",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 40gp </p><p><strong>무게:</strong> 40lbs. </p><p><strong>치수:</strong> 벽에서 10피트 </p><p>이 4인용 카운터는 벽으로 접힙니다.</p>"
     },
     "Fold-Out Patio": {
-      "name": "접이식 파티오 - Fold-Out Patio"
+      "name": "접이식 파티오 - Fold-Out Patio",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 1,000gp</p><p><strong>무게:</strong> 250 lbs.</p><p><strong>치수:</strong> 20피트 벽 옵션</p><p>잠금 해제 작업을 몇 분만 하면 왜건의 긴 벽 하나가 튀어 나와 평평하게 놓입니다. 이 변형은 야외 테라스로 만들어 마차 내부의 공기를 개방합니다.</p>"
+    },
+    "Folding Stool": {
+      "name": "접는 의자 - Folding Stool",
+      "description": "<p><strong>클래스:</strong> 가구 </p><p><strong>가격:</strong> 30gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 세웠을 때 2x2x3피트 </p><p>등받이 없는 스툴로 2피트 정사각형의 견목으로 접힙니다. 스냅으로 집어넣으세요.</p>"
+    },
+    "Force Pyramid": {
+      "name": "포스 피라미드 - Force Pyramid",
+      "description": "<p><strong>등급 5</strong></p><p><strong>클래스:</strong> 구성 요소</p><p><strong>위치:</strong> 본체(왜건의 5피트 공간 아래) 외관)</p><p>크리스탈 비즈로 채워진 아다만틴 피라미드가 마차 아래쪽에 설치되어 있습니다. 작업의 일환으로 승무원은 피라미드를 사용하여 부품 중심에 있는 움직이지 않고 보이지 않는 힘의 피라미드를 불러일으킬 수 있습니다.</p><p>이 정사각형 피라미드는 측면이 60피트, 높이가 120피트입니다. 피라미드가 형성되면 그 안에 있는 생물과 물체는 자유롭게 이동할 수 있습니다. 다른 모든 생물과 물체는 통과할 수 없습니다. 주문 및 기타 마법 효과는 피라미드를 통해 확장되거나 시전될 수 없습니다.</p><p>공간 내부의 분위기는 외부 날씨에 관계없이 편안하고 건조합니다. 피라미드는 12시간 동안 지속되거나 명령 단어가 다시 나올 때까지 지속됩니다. 힘 피라미드는 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
     },
     "Forge": {
-      "name": "대장간 - Forge"
+      "name": "대장간 - Forge",
+      "description": "<p><strong>클래스:</strong> 기계 개조 - 용광로 - 기능</p><p><strong>가격:</strong> 500gp</p><p><strong>무게:</strong> 1,200파운드.</p><p><strong>치수:</strong> 5x5x10피트(굴뚝 포함)</p><p>강철을 작업할 수 있을 만큼 뜨거워지도록 설계된 둥근 구덩이. 이 기능은 이 카탈로그 뒷부분에 설명된 일부 장인 작업 스테이션에 필요합니다.</p>"
     },
     "Friendship Harness": {
-      "name": "우정 - Harness"
+      "name": "우정 - Harness",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 내부</p><p>5개의 무지개 빛깔의 벨트가 이 구성 요소에 포함되어 있으며 각 벨트에는 60피트 테더가 있습니다. 보너스 액션으로 내부 벽, 외부 벽 또는 지붕 주변을 둘러싸는 막대에 밧줄을 부착하거나 제거할 수 있습니다. 각 밧줄과 막대는 최대 300파운드의 무게를 지탱합니다. 마구를 착용하는 동안 생물은 마구를 착용한 다른 생물에게 접촉 범위의 주문을 전달할 수 있습니다.</p>"
     },
     "Furnace - Fire Elemental": {
-      "name": "Furnace - 불 - Elemental"
+      "name": "Furnace - 불 - Elemental",
+      "description": "<p><strong>클래스: </strong>기계 개조 - 용광로 - 연료</p><p><strong>가격:</strong> 9,000gp</p><p>특정한 가구 요구 사항이 있는 승무원은 휴대용 용광로를 설치할 수 있습니다. Cabin.</p><p>친구들과 함께하면 요리가 더 맛있어요! 이 용광로에는 임차인이 함께 제공됩니다. 작은 불의 정령은 단철 프레임에 거주하며 연료를 소비하거나 음식을 요리하거나 금속을 가열하는 정규 작업이 주어지면 남아 있습니다. 용광로의 거주자가 잃으면 대부분의 대도시의 마법사가 대체자를 유치할 수 있습니다.</p>"
     },
     "Furnace - Wood-Fired": {
+      "name": "용광로 - 장작불 - Furnace - Wood-Fired",
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">분류: </strong></span>기계 개조 <span style=\"font-family:Signika, sans-serif\">- 화덕 - 연료식</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">가격:</strong> 1,500 gp</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">특별한 비품이 필요한 선원은 객실에 휴대용 화덕을 설치할 수 있다.</span></p><p>이 화덕은 장작을 태운다. 오븐과 보일러는 하루치 표준 장작을 사용하고, 대장간은 하루 작업에 그 네 배를 사용한다.</p>"
     },
     "Furniture Loft": {
-      "name": "Furniture 다락"
+      "name": "Furniture 다락",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 40lbs. </p><p><strong>치수:</strong> 10x5x2피트 </p><p>객실 천장을 따라 이어지는 견고한 목재 로프트. 사용하지 않는 가구를 쉽게 보관할 수 있습니다.</p>"
     },
     "Garden": {
-      "name": "정원 - Garden"
+      "name": "정원 - Garden",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 400gp</p><p><strong>무게:</strong> 마차에 포함됨 Weight</p><p>자연의 물보라로 장착된 전쟁 도구를 보완하고, 자생 식물로 식단을 보충하세요. Littfeld Delver Caravan에 의뢰된 새로운 마차에는 기본적으로 이 지붕이 있습니다.</p>"
+    },
+    "Gazebo": {
+      "name": "전망대 - Gazebo",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 3,000gp</p><p><strong>무게:</strong> 300 lbs.</p><p>왜 이렇게 비싸요? 상태 기호입니다. 환상적이고 실용적이지 않은 좌석으로 친구와 적 모두에게 깊은 인상을 남겨주세요.</p>"
+    },
+    "Grounding Bola": {
+      "name": "접지 볼라 - Grounding Bola",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 지붕</p><p><strong>속성:</strong> 탄약(범위 120/300), 특수</p><p>공압 레일은 날개와 지상 비행 생물을 엉키도록 설계된 엉키는 볼라를 발사합니다. 적중 시 생물의 비행 속도는 0으로 감소합니다. 생물은 자신의 행동을 사용하여 DC 15 힘 검사를 수행하고 성공 시 스스로를 해방할 수 있습니다. 볼라의 체력은 AC 19와 20입니다. 볼라의 체력을 0으로 줄이면 볼라가 파괴되고 생물이 다시 날 수 있게 됩니다. 볼라는 보너스 액션으로 다시 로드할 수 있으며, 보충되기 전까지 4번 사용할 수 있습니다.</p>"
     },
     "Gyrostable Lounge": {
-      "name": "자이로 안정 라운지 - Gyrostable Lounge"
+      "name": "자이로 안정 라운지 - Gyrostable Lounge",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 및 편의성</span></p><p><strong>가격:</strong> 200gp </p><p><strong>무게:</strong> 200lbs. </p><p><strong>치수:</strong> 5x5x2 ft. </p><p>이 화려한 소파에는 자이로스코프 프레임이 있어 로얄 레이징과 심한 왜건 멀미에 적합합니다.</p>"
     },
     "Gyrostable Medicine Cabinet": {
-      "name": "자이로 안정 약장 - Gyrostable Medicine Cabinet"
+      "name": "자이로 안정 약장 - Gyrostable Medicine Cabinet",
+      "description": "<p><strong>클래스: </strong> 가구</p><p><strong>가격:</strong> 300gp </p><p><strong>무게:</strong> 30lbs. </p><p><strong>치수:</strong> 벽에 2x2피트 </p><p>거친 지형에서의 이동을 보상하는 자이로스코프 프레임에 내장된 목재 캐비닛.</p>"
     },
     "Gyrostable Wine-Rack": {
-      "name": "자이로 안정 와인 선반 - Gyrostable Wine-Rack"
+      "name": "자이로 안정 와인 선반 - Gyrostable Wine-Rack",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 300gp </p><p><strong>무게:</strong> 100lbs. </p><p><strong>치수:</strong> 4x3x5피트 </p><p>꼼꼼한 소믈리에에게는 자이로스코픽으로 안정된 와인 랙이 기념품을 소중한 갓 태어난 새끼처럼 취급할 것입니다. 선반은 마차가 완전히 뒤집히지 않는 한 같은 각도로 물건을 보관합니다(이 경우 더 큰 문제가 발생합니다).</p>"
+    },
+    "Hammock": {
+      "name": "해먹 - Hammock",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 2gp </p><p><strong>무게:</strong> 0lbs. </p><p><strong>치수:</strong> 6x3x3피트 </p><p>설치용 후크가 포함되어 있습니다. 졸린 탐험가 또는 장비를 최대 250파운드까지 지원합니다.</p>"
     },
     "Hand Canonball": {
-      "name": "핸드 캐논볼 - Hand Canonball"
+      "name": "핸드 캐논볼 - Hand Canonball",
+      "description": "<p><strong>학년 1</strong></p><p><strong>클래스: </strong>Components</p><p><strong>위치:</strong> 지붕</p><p><strong>손상:</strong> 2d6 타격</p><p><strong>속성:</strong> 투척(범위 15/30), 특별</p><p>이 50파운드짜리 철구는 마차에 볼트로 고정된 체인 윈치에 부착되어 있습니다. 던진 후 윈치는 체인을 수축시켜 거의 즉시 공을 사용자에게 다시 끌어옵니다. 이 무기를 사용하려면 힘 점수 15가 필요하며 피해량은 거대함을 무시합니다.</p><p><strong>Refit</strong></p><p>2등급 구성 요소인 이 구성 요소는 두 개의 공이 윈치에 연결되어 있는 쌍손 포탄이 됩니다. 사용자.</p>"
     },
     "Hanging Gardens": {
-      "name": "Hanging 정원s"
+      "name": "Hanging 정원s",
+      "description": "<p><strong>클래스: </strong>리노베이션</p><p><strong>가격:</strong> 250 gp</p><p><strong>무게:</strong> 50 lbs.</p><p><strong>치수:</strong> 10피트 벽 옵션</p><p>후면 벽의 외부를 사용하면 이동하는 델퍼가 작은 정원 작물이나 꽃을 재배할 수 있습니다.</p>"
+    },
+    "Hanging Pole": {
+      "name": "행잉 폴 - Hanging Pole",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 15gp </p><p><strong>무게:</strong> 20lbs. </p><p><strong>치수:</strong> 5x5x10피트 </p><p>이 기둥은 천장에 매달려 있어 박쥐, 나무늘보 또는 거꾸로 자는 사람이 편안하게 잠을 잘 수 있습니다. 최대 300파운드를 지원합니다.</p>"
     },
     "Hidden Table": {
-      "name": "숨겨진 테이블 - Hidden Table"
+      "name": "숨겨진 테이블 - Hidden Table",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 300gp</p><p><strong>무게:</strong> 60 lbs.</p><p><strong>치수:</strong> 바닥에서 5x5피트</p><p>5피트 정사각형 테이블, 아래에 9인치 발밑 공간이 있습니다. 바닥과 같은 높이로 앉기 위해 몸을 숙입니다.</p>"
+    },
+    "Hose": {
+      "name": "호스 - Hose",
+      "description": "<p><em>요구 사항: 배관</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 150gp </p><p><strong>무게:</strong> 40lbs. </p><p><strong>치수:</strong> 5피트 벽 </p><p>물을 전달하기 위해 핸드 펌프와 함께 사용할 수 있는 50피트 길이의 유연하고 속이 빈 튜브입니다. 포함된 황동 노즐에서 물이 30피트 떨어진 곳으로 분사됩니다.</p>"
+    },
+    "Hybrid Furnace": {
+      "name": "하이브리드로 - Hybrid Furnace",
+      "description": "<p><strong>클래스: </strong>가구 - 용광로 - 기능</p><p><strong>가격:</strong> 1,000gp</p><p><strong>무게:</strong> 1,400파운드.</p><p><strong>치수:</strong> 5x5x10피트(굴뚝 포함)</p><p>결정적이지 않습니까? 이 용광로는 이전에 설명한 세 가지 기능을 모두 수행합니다!</p>"
     },
     "Ice Chest": {
-      "name": "얼음 상자 - Ice Chest"
+      "name": "얼음 상자 - Ice Chest",
+      "description": "<p><em>요구 사항: 플라이휠, 공기 압축기</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 3,500gp </p><p><strong>무게:</strong> 200lbs. </p><p><strong>치수:</strong> 5x5x3피트 </p><p>냉각 팬과 동일한 원리이지만 식품 및 기타 부패하기 쉬운 보존을 위한 단열 용기를 추가합니다. 서랍장의 도어 씰은 플라이휠이 회전하지 않는 시간에도 내용물을 낮은 온도로 유지합니다. 몇 번 이상 열리지 않는 한.</p>"
     },
     "Interior Wall": {
-      "name": "내부 벽 - Interior Wall"
+      "name": "내부 벽 - Interior Wall",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>인테리어 사용자 정의</span></p><p><strong>가격:</strong> 5 gp/ft.</p><p><strong>무게:</strong> 20lbs./ft.</p><p>추가 벽. 마차를 미로로 바꿔보세요!</p><p></p><section id=\"secret-9yjosZkAgCcdtGqd\" class=\"secret\"><p><strong>Foundry 참고:</strong></p><p>벽의 크기에 맞게 이 항목의 세부정보(및 아이콘)를 편집할 수 있습니다. 구매.</p></section>"
     },
     "Intruder Chime": {
-      "name": "Intruder 차임"
+      "name": "Intruder 차임",
+      "description": "<p><strong>1학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Cabin</p><p>사용자는 마차 문 손잡이 위에 있는 황동 열쇠를 돌려 침입에 대비해 이 마법의 방호물을 활성화할 수 있습니다. 와드는 마차의 각 벽에서 바깥쪽으로 5피트 뻗어 있습니다.</p><p>와드를 발동시키지 않는 생물을 지정할 수 있지만, 다른 생물이 그 영역에 들어오면 120피트 내에서 30초 동안 큰 소리를 냅니다. 와드는 열쇠를 다시 돌릴 때까지 활성 상태를 유지합니다.</p><p><strong>수리:</strong> 3등급 피팅으로 침입자 차임 소리는 마차 승무원이 10마일 이내에 정신적으로 들을 수 있습니다.</p>"
     },
     "Intruder Chime (G3)": {
-      "name": "Intruder 차임 (G3)"
+      "name": "Intruder 차임 (G3)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">3학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급:</strong> Fitting</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Location:</strong> Cabin</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"> 작업으로 사용자는 왜건 문 손잡이 위의 황동 키를 돌릴 수 있습니다. 침입에 대비해 이 마법의 와드를 활성화합니다. 와드는 각 마차의 벽에서 바깥쪽으로 5피트 뻗어 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">와드를 작동시키지 않는 생물을 지정할 수 있지만, 다른 생물이 그 영역에 들어오면 120피트 내에서 들을 수 있는 큰 소리를 30초 동안 방출하며, 10마일 내의 승무원도 정신적으로 들을 수 있습니다. 그것의. 와드는 열쇠를 다시 돌릴 때까지 활성 상태로 유지됩니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"></p>"
+    },
+    "Kieli Boards": {
+      "name": "키엘리 보드 - Kieli Boards",
+      "description": "<p><strong>등급 2</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>왜건의 내부 베이스보드에는 복잡한 언어를 풀기 위해 사용되는 Oric 신비한 문자가 새겨져 있습니다. 선실에 있는 생물은 10분 동안 대화를 듣고 선실에 있는 다른 생물이 말하는 언어를 이해할 수 있습니다. 이 효과는 생물이 마차를 떠날 때까지 지속됩니다.</p>"
     },
     "Ladder": {
-      "name": "사다리 - Ladder"
+      "name": "사다리 - Ladder",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 불가사의하게, 1 sp</p><p><strong>무게:</strong> 25 lbs.</p><p><strong>치수:</strong> 내부 또는 외부 벽의 2피트</p><p>극심한 경쟁과 가격 인하로 인해 사다리는 무게 기준으로 Beast World에서 가장 저렴한 목공 작품 중 하나가 되었습니다. 더 빠른 지붕 상승 또는 하강을 허용합니다.</p>"
     },
     "Large Water Tank": {
-      "name": "Large Water 탱크"
+      "name": "Large Water 탱크",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>용량: </strong>100gal</p><p><strong>무게: </strong>200lbs (가득 차면 1000)</p><p><strong>크기: </strong>2x2x4 ft.</p><p><strong>비용: </strong>180 gp</p><p>물탱크는 삶과 죽음의 차이가 되기 전까지는 귀족의 사치품입니다. 먼저 탱크 크기를 선택하십시오. 그런 다음 추가 기능을 선택하십시오. 중간 크기의 생물이 정상적으로 생존하려면 하루에 1갤런의 물이 필요합니다. Draydriver에는 10이 필요합니다.</p>"
     },
     "Laundry Machine": {
-      "name": "세탁기 - Laundry Machine"
+      "name": "세탁기 - Laundry Machine",
+      "description": "<p><em>요구사항: 배관, 플라이휠</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 500gp </p><p><strong>무게:</strong> 60lbs. </p><p><strong>치수:</strong> 5x5x5ft. </p><p>이 원형 배럴에는 기어 샤프트에 연결된 또 다른 작은 배럴이 포함되어 있습니다. 측면의 레버를 당기면 내부 배럴이 회전하여 내부의 의류를 세탁할 수 있습니다. 그런 다음 내부 배럴에 있는 구멍을 통해 뒷면의 배출구를 통해 물이 배출됩니다. 배관을 연결하면 연결된 파이프에서 물을 직접 펌핑할 수 있습니다.</p>"
     },
     "Lever 5": {
+      "name": "레버 5 - Lever 5",
       "description": "<p><strong>등급 3</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 본체(마차 외부의 앞바퀴 양쪽에서 5피트 떨어진 곳, 운전석에서 작동)</p><p>이 부품은 게와 비슷한 장치, 즉 뻗어 나가는 금속 발톱을 조작하는 레버이다. 운전자는 보너스 행동으로 이 레버를 사용해 다음 근접 무기 공격을 할 수 있다:</p><p><strong>발톱</strong>. 근접 무기 공격: 마차의 주행 보너스로 명중, 사거리 5피트, 목표 하나. 명중: 대상은 붙잡힘 상태가 된다(탈출 DC 8 + 마차의 주행 보너스).</p><p></p><section class=\"secret\" id=\"secret-HN7phKVPmZ4nCcuS\"><p><strong>파운드리 노트</strong></p><p>필요에 따라 이 항목의 명중 보너스와 탈출 DC를 조정하십시오.</p></section>"
     },
     "Luck Obelisk": {
-      "name": "행운 - Obelisk"
+      "name": "행운 - Obelisk",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Interior</p><p>이 흑요석 건물은 내부 벽에 설치되어 거의 들리지 않는 윙윙거리는 소리를 끊임없이 내뿜습니다. 마차의 승무원이 마차로부터 30피트 이내에서 공격 굴림, 능력 판정 또는 내성 굴림을 하면 행운 오벨리스크를 사용하라는 명령어를 말할 수 있어 굴림에서 이점을 얻을 수 있습니다.</p><p>마차가 굴리기 전에 구성 요소를 사용하도록 선택해야 합니다. 또한, 마차로부터 30피트 이내의 공격 대상이 된 것에 대한 대응으로 승무원은 명령을 말하고 돌격을 소모하여 공격에 불이익을 가할 수 있습니다. 행운의 오벨리스크는 보충되기 전까지 3번 사용할 수 있습니다.</p>"
     },
     "Metamagic Crystal": {
       "name": "메타매직 수정 - Metamagic Crystal",
@@ -222,22 +421,68 @@
       "description": "<p><strong>등급 6</strong></p><p><strong>분류: </strong>부품</p><p><strong>위치:</strong> 지붕</p><p>빛나는 수정 육각십이면체가 지붕 위 받침대에 놓인다. 수정의 색은 메타매직 수정 표에 따라 특정 마법 변형을 뜻한다. 일부 색은 더 높은 등급의 부품에서만 설치할 수 있다(아래 참조). 드물게 한 수정 안에 두 색이 소용돌이치듯 섞인 것을 살 수 있지만, 설치 비용은 50% 더 든다. 생물이 이 수정을 주문 시전 집중구로 사용하면, 자신의 술법 점수를 써서 이 수정을 통해 해당 마법 변형을 주문에 적용할 수 있다. 이 수정은 술법 점수 10점을 지니며, 매일 새벽에 1d4+1 술법 점수를 회복한다.</p><p><strong>메타매직 수정:<br></strong></p><table><tbody><tr><td data-colwidth=\"188\"><p><strong>색상</strong></p></td><td><p><strong>마법 변형</strong></p></td></tr><tr><td data-colwidth=\"188\"><p>청색</p></td><td><p>@UUID[Compendium.dnd5e.classfeatures.Item.DZpAa3LzMNBexbmX]{마법 변형: 머나먼 주문}</p></td></tr><tr><td data-colwidth=\"188\"><p>녹색</p></td><td><p>@UUID[Compendium.dnd5e.classfeatures.Item.tQxlKyAx9sgPrbgj]{마법 변형: 확장된 주문}</p></td></tr><tr><td data-colwidth=\"188\"><p>적색</p></td><td><p>@UUID[Compendium.dnd5e.classfeatures.Item.tNG2qi9zhmXEkecA]{마법 변형: 상향화 주문}</p></td></tr><tr><td data-colwidth=\"188\"><p>보라색</p></td><td><p>@UUID[Compendium.dnd5e.classfeatures.Item.nViGf6bZ6DQAJhkw]{마법 변형: 신속한 주문}</p></td></tr><tr><td data-colwidth=\"188\"><p>흑색</p></td><td><p>@UUID[Compendium.dnd5e.classfeatures.Item.Qb391hakCfmH4w8p]{마법 변형: 2연속 주문}</p></td></tr></tbody></table>"
     },
     "Morph Wheels": {
-      "name": "Morph 바퀴"
+      "name": "Morph 바퀴",
+      "description": "<p><strong>등급 5</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>이 피팅은 마차의 바퀴와 드래프트의 신발을 아스트랄 박쥐 마법 연구실에서 발명된 불안정하고 무정형의 재료로 대체합니다. </p><p>변형 바퀴가 달린 마차는 험난한 지형을 무시하고 잡거나 구속되지 않습니다. 또한 마차는 페널티 없이 액체 위에서 굴러갈 수 있으며 용암으로 인한 피해도 받지 않습니다.</p>"
+    },
+    "Mural Canvas": {
+      "name": "벽화 캔버스 - Mural Canvas",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 225 gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p>예술 작품에 적합한 매끄러운 흰색 지붕.</p>"
     },
     "Net Thrower": {
-      "name": "그물 발사기 - Net Thrower"
+      "name": "그물 발사기 - Net Thrower",
+      "description": "<p><strong>1학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 10 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 5의 베기 피해(AC 10)를 가하면 생명체가 피해를 입지 않고 풀려나고 효과가 종료되고 그물이 파괴됩니다. 그물 투척기는 보충되기 전에 생물을 두 번 칠 수 있습니다.</p><p><strong>Refit</strong></p><p>등급 3 이상의 구성 요소인 이 구성 요소는 강화 DC 13을 사용하여 강화된 그물 투척기가 됩니다. 강화된 그물 투척기의 그물은 15를 차지할 수 있습니다. 파괴되기 전에 큰 피해를 입힙니다.</p><p>또한 보충되기 전에 1등급보다 높은 각 등급에 대해 1번의 추가 공격을 가할 수 있습니다.</p>"
     },
     "Net Thrower (G2)": {
-      "name": "그물 발사기 (G2)"
+      "name": "그물 발사기 (G2)",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 10 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 5의 베기 피해(AC 10)를 가하면 생명체가 피해를 입지 않고 풀려나고 효과가 종료되고 그물이 파괴됩니다. 그물 투척기는 보충되기 전에 생물을 두 번 칠 수 있습니다.</p><p><strong>Refit</strong></p><p>등급 3 이상의 구성 요소인 이 구성 요소는 강화 DC 13을 사용하여 강화된 그물 투척기가 됩니다. 강화된 그물 투척기의 그물은 15를 차지할 수 있습니다. 파괴되기 전에 큰 피해를 입힙니다.</p><p>또한 보충되기 전에 1등급보다 높은 각 등급에 대해 1번의 추가 공격을 가할 수 있습니다.</p>"
+    },
+    "Nightcloak Lacquer": {
+      "name": "밤망토 래커 - Nightcloak Lacquer",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>이 바디 래커는 고요함 속에서 빛을 흡수합니다. 마차는 1분 동안 움직이지 않으면 희미한 빛이나 어둠 속에서 보이지 않습니다.</p>"
     },
     "Normal Water Tank": {
-      "name": "Normal Water 탱크"
+      "name": "Normal Water 탱크",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>용량: </strong>50gal</p><p><strong>무게: </strong>100lbs (가득 차면 500)</p><p><strong>크기: </strong>2x2x2 ft.</p><p><strong>비용: </strong>100 gp</p><p>물탱크는 삶과 죽음의 차이가 되기 전까지는 귀족의 사치품입니다. 먼저 탱크 크기를 선택하십시오. 그런 다음 추가 기능을 선택하십시오. 중간 크기의 생물이 정상적으로 생존하려면 하루에 1갤런의 물이 필요합니다. Draydriver에는 10이 필요합니다.</p>"
     },
     "Notched Insert Table": {
-      "name": "Notched Insert 테이블"
+      "name": "Notched Insert 테이블",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 400gp </p><p><strong>무게:</strong> 100 파운드 </p><p><strong>치수:</strong> 5x5x5피트 </p><p>견목 테이블과 스툴 4개가 결합되어 5피트 큐브로 쉽게 보관할 수 있습니다. Laetine Delvers를 위한 선택적 퍼즐 상자 변형입니다.</p>"
     },
     "Oil Lamp": {
-      "name": "Oil 램프"
+      "name": "Oil 램프",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 5gp </p><p><strong>무게:</strong> 0lbs. </p><p><strong>치수:</strong> 벽 위 1피트 </p><p>벽에 후크와 랜턴을 설치하여 분위기를 밝고 아늑하게 유지하세요. 15피트 반경에는 밝은 빛을 비추고 추가 15피트 반경에는 희미한 빛을 비춥니다. 일단 불이 켜지면 램프는 기름 플라스크(1파인트)당 6시간 동안 연소됩니다.</p>"
+    },
+    "Outdoor Fold-Out": {
+      "name": "야외용 접이식 - Outdoor Fold-Out",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 40gp </p><p><strong>무게:</strong> 20lbs. </p><p><strong>치수:</strong> 5x10피트 벽 </p><p>외벽에서 접힌 표면, 벤치나 테이블로 적합.</p>"
+    },
+    "Oven": {
+      "name": "오븐 - Oven",
+      "description": "<p><strong>클래스: </strong>기계 개조 - 용광로 - 기능</p><p><strong>가격:</strong> 0 gp</p><p><strong>무게:</strong> 800 lbs.</p><p><strong>치수:</strong> 4x4x4피트(굴뚝 포함)</p><p>장작을 효율적으로 사용하여 하루 종일 구울 수 있는 돌과 철 오븐. 삶의 질이 크게 향상됩니다.</p>"
+    },
+    "Overhang": {
+      "name": "위에 걸리다 - Overhang",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 200gp</p><p><strong>무게:</strong> 60 lbs.</p><p>긴 벽을 따라 5피트 x 20피트의 지붕이 있는 쉼터를 추가하는 야외 가구.</p>"
+    },
+    "Pilvakaasu": {
+      "name": "필바카아수 - Pilvakaasu",
+      "description": "<p><strong>등급 2</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>오릭 땜장이 오르스투르(Orstur)는 이 연금술 물질을 고안했는데, 그는 \"구름 가스\"를 뜻하는 오리어 단어의 이름을 따서 명명했습니다. 이상한 가스가 마차의 하부 구조를 따라 있는 구리 파이프를 채우고 프레임을 들어 올립니다.</p><p>필비카수를 장착한 마차는 500파운드 더 가볍습니다. 이 피팅을 사용하면 왜건을 100파운드 미만으로 만들 수 없습니다. </p><p><strong>Refit:</strong> </p><p>등급 3 이상 피팅인 pilvikaasu는 2등급보다 높은 각 등급에 대해 추가로 500파운드만큼 왜건을 가볍게 할 수 있습니다(그러나 여전히 100파운드 이상).</p>"
+    },
+    "Pilvakaasu (G3)": {
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>오릭 땜장이인 오르스투르(Orstur)는 이 연금술 물질을 고안했는데, 그는 \"구름 가스\"를 뜻하는 오리어 단어의 이름을 따서 명명했습니다. 이상한 가스가 마차 하부 구조를 따라 있는 구리 파이프를 채우고 프레임을 들어 올립니다.</p><p>pilvikaasu가 장착된 마차는 1000파운드 더 가볍습니다. 이 피팅을 사용하면 마차를 100파운드 미만으로 만들 수 없습니다.</p><p><strong>수리:</strong></p><p>등급 4 이상의 피팅인 pilvikaasu는 2등급보다 높은 각 등급에 대해 추가로 500파운드씩 왜건을 가볍게 할 수 있습니다(그러나 여전히 그 이하 100파운드 이상).</p>"
+    },
+    "Pilvakaasu (G4)": {
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>오릭 땜장이인 오르스투르(Orstur)는 이 연금술 물질을 고안했는데, 그는 \"구름 가스\"를 뜻하는 오리어 단어의 이름을 따서 명명했습니다. 이상한 가스가 마차 하부 구조를 따라 있는 구리 파이프를 채우고 프레임을 들어 올립니다.</p><p>pilvikaasu가 장착된 마차는 1500파운드 더 가볍습니다. 이 피팅을 사용하면 마차를 100파운드 미만으로 만들 수 없습니다.</p><p><strong>수리:</strong></p><p>5등급 이상의 피팅인 pilvikaasu는 2등급보다 높은 각 등급에 대해 추가로 500파운드씩 왜건을 가볍게 할 수 있습니다(그러나 여전히 그 이상은 아닙니다). 100파운드 이상).</p>"
+    },
+    "Pilvakaasu (G5)": {
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>오릭 땜장이인 오르스투르(Orstur)는 이 연금술 물질을 고안했는데, 그는 \"구름 가스\"를 뜻하는 오리어 단어의 이름을 따서 명명했습니다. 이상한 가스가 마차 하부 구조를 따라 구리 파이프를 채우고 프레임을 들어 올립니다.</p><p>pilvikaasu가 장착된 마차는 2000파운드 더 가볍습니다. 이 피팅을 사용하면 마차를 100파운드 미만으로 만들 수 없습니다.</p><p><strong>수리:</strong></p><p>6등급 피팅으로서 pilvikaasu는 2등급보다 높은 각 등급에 대해 추가로 500파운드만큼 왜건을 가볍게 할 수 있습니다(그러나 여전히 100파운드).</p>"
+    },
+    "Pilvakaasu (G6)": {
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>오릭 땜장이인 오르스투르(Orstur)는 이 연금술 물질을 고안했는데, 그는 \"구름 가스\"를 뜻하는 오리어 단어의 이름을 따서 명명했습니다. 이상한 가스가 마차 하부 구조를 따라 구리 파이프를 채우고 프레임을 들어 올립니다.</p><p>pilvikaasu가 장착된 마차는 2500파운드 더 가볍습니다. 이 피팅을 사용하면 왜건을 100파운드 미만으로 만들 수 없습니다.</p><p></p>"
+    },
+    "Potter & Mason": {
+      "name": "포터 앤 메이슨 - Potter & Mason",
+      "description": "<p><em>요구 사항: 플라이휠, 배관</em> </p><p><strong>클래스:</strong> <span style=\"font-family:Signika, sans-serif\">기계적 혁신 - 장인 작업 스테이션</span></p><p><strong>가격:</strong> 300gp </p><p><strong>무게:</strong> 200lbs. </p><p><strong>치수:</strong> 10x5x5피트 </p><p>공예품을 사용하고 도로에서 생계를 유지하려는 도공이나 석공에게 이것은 귀중한 세트입니다. 플라이휠은 물레를 작동시켜 던지는 사람의 발목이 페달에서 벗어나는 것을 방지합니다. 포함된 가마 수리를 통해 용광로에서 Bey</p>에 적합한 세라믹을 소성할 수 있습니다."
     },
     "Precision Railbow": {
       "name": "정밀 레일보우 - Precision Railbow",
@@ -246,6 +491,10 @@
     "Precision Railbow (G3)": {
       "name": "정밀 레일보우 (G3)",
       "description": "<p><strong>등급 1</strong></p><p><strong>분류: </strong>부품</p><p><strong>위치:</strong> 본체(본문 참조) 또는 지붕</p><p><strong>피해:</strong> 1d10 관통</p><p><strong>특성:</strong> 탄약(사거리 360/480), 장전, 특수</p><p>이 석궁의 긴 레일과 거치대는 뛰어난 정밀도를 위해 보정되어 있다. 이 부품은 지붕에 설치할 수도 있고, 운전석의 절반을 차지할 수도 있다(그럴 경우 운전석에는 크리처 하나만 앉을 수 있다).<br>손쇠뇌에 숙련된 생물은 이 무기에도 숙련되어 있다. 정밀 레일보우로 하는 공격은 최소 120피트 떨어진 목표에 대해 유리점을 얻는다.<br>정밀 레일보우는 자신으로부터 30피트 이내의 중형 이하 생물을 목표로 삼을 수 없다. 이 부품이 주는 피해는 거대함을 무시한다. 정밀 레일보우는 다시 채워 넣기 전까지 볼트 20발을 발사할 수 있다.</p>"
+    },
+    "Proxy Lens": {
+      "name": "프록시 렌즈 - Proxy Lens",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p>18인치 유리 렌즈는 마차 지붕과 같은 높이에 위치하며 풋 페달을 누르면 장착 암 위로 올라갑니다. 렌즈를 통해 30피트에서 240피트 사이에 있는 아군 생물을 보면서 사용자는 관찰된 생물의 공간에 서 있는 것처럼 주문을 시전할 수 있습니다.</p><p>사용자가 접촉 범위로 주문을 시전하면 관찰된 생물은 마치 주문을 시전한 것처럼 주문을 전달할 수 있습니다. 주문을 시전할 때 주문을 전달하려면 반응을 사용해야 합니다. 공격 굴림이 필요한 주문은 시전자의 공격 수정자를 사용합니다.</p>"
     },
     "Pull-Hook Launcher": {
       "name": "갈고리 발사기 - Pull-Hook Launcher",
@@ -267,129 +516,273 @@
       "name": "갈고리 발사기 (G6)",
       "description": "<p><strong>등급 6</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 본체(뒷벽)</p><p><strong>특성:</strong> 탄약(사거리 60/120), 특수</p><p>마차 뒤쪽에 장착된 작살이 갈고리를 발사해 적을 휘감는다. 갈고리 발사기에 맞은 대형 이하 생물은 풀려날 때까지 속박된다. 갈고리 발사기는 형체가 없거나 거대형 이상인 생물에게는 효과가 없다. 생물은 행동을 사용해 근력 판정 DC 13을 굴릴 수 있으며, 성공하면 자신이나 손이 닿는 범위 안의 다른 생물 하나를 풀어 줄 수 있다. 갈고리의 AC는 10이고 HP는 30이다.</p><p>갈고리의 HP가 0이 되면 대상에게 피해를 주지 않고도 풀어 주며, 효과는 끝나고 갈고리는 파괴된다. 갈고리에 맞은 생물이 10피트보다 멀리 있다면, 발사기는 되감기 장치로 그 생물을 자신으로부터 10피트 이내의 가장 가까운 빈 공간까지 끌어당기려 한다. 갈고리에 걸린 생물은 민첩 내성 굴림 DC 8 + 마차의 Drive 수정치를 해야 한다.</p><p>실패하면 그 생물은 넘어지고, 끌려온 10피트마다 1 타격 피해를 입는다. 생물이 갈고리에 묶인 동안 마차가 움직이면, 그 생물은 마차가 이동한 10피트마다 1 타격 피해를 입는다. 한 번 발사하면 보너스 행동으로 새 갈고리를 다시 장전할 수 있다. 보충이 필요해지기 전까지 네 번 발사할 수 있다.</p><p></p>"
     },
+    "Quick-Retract Winch": {
+      "name": "신속 후퇴 윈치 - Quick-Retract Winch",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong>클래스: </strong>Components</span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 본체(1개의 5피트 지붕 가장자리 오버행)</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">이 견고한 줄은 마차 지붕 가장자리에 부착되어 있어 빠른 이동이 가능합니다. 생물이 고리에 발을 삽입하고 줄에 무게를 가하면 윈치는 이동 비용 없이 줄을 지붕으로 끌어당깁니다. 라인은 라운드당 30피트, 최대 길이는 150피트까지 확장될 수 있습니다. 윈치는 라운드당 최대 400파운드(30피트)를 들어 올릴 수 있습니다.</span></p>"
+    },
+    "Quick-Switch Hatches": {
+      "name": "퀵 스위치 해치 - Quick-Switch Hatches",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>빠른 해제 메커니즘을 갖춘 해치를 사용하면 왜건 안팎으로 쉽게 이동할 수 있습니다. 마차에 탄 생물은 5피트 이내에 있는 다른 생물과 공간이나 좌석을 바꿀 수 있습니다. 5피트의 이동을 소비함으로써 전환된 생물은 활성화 생물의 공간에 남게 됩니다</p>"
+    },
     "Rain Cover": {
-      "name": "빗덮개 - Rain Cover"
+      "name": "빗덮개 - Rain Cover",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 200 gp</p><p><strong>무게:</strong> 80 lbs.</p><p>운전자가 앞좌석 위에 설치된 이 차양을 높이 평가할 것입니다.</p>"
     },
     "Rain Wheels": {
-      "name": "우천 바퀴 - Rain Wheels"
+      "name": "우천 바퀴 - Rain Wheels",
+      "description": "<p><strong>등급 1</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>큰 사각형 트레드가 있는 넓은 연금술 고무 타이어를 사용하면 마차가 다른 사람들이 가라앉고 갇히는 곳에서도 행복하게 퍼팅할 수 있습니다. 마차는 최대 1피트 깊이의 진흙이나 물로 인한 험난한 지형을 무시합니다.</p>"
     },
     "Rat Skeleton": {
-      "name": "쥐 - Skeleton"
+      "name": "쥐 - Skeleton",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>마차의 연결부와 드래프트 하네스는 부서진 세계 폐허에서 회수한 금속으로 교체되어 이전 형제 집의 공간 왜곡 특성을 부여합니다. 마차는 5피트 너비의 틈을 통해 이동할 수 있지만 이동한 매 1피트당 4피트의 이동 시간을 소비해야 합니다. 이 특별한 움직임은 왜건의 내부 공간을 바꾸지 않습니다.</p>"
     },
     "Recall Canopy": {
-      "name": "회수 캐노피 - Recall Canopy"
+      "name": "회수 캐노피 - Recall Canopy",
+      "description": "<p><strong>등급 6</strong></p><p><strong>클래스:</strong> 피팅</p><p>이 캐노피는 일부 신비주의자들이 절대 베일 자체의 직물이라고 믿는 것으로 짜여져 있습니다. 마차가 들어갈 만큼 넓은 빈 공간에 캐노피를 설치하는 데 1분을 소비한 후 캐노피는 사라집니다. 캐노피가 설치되어 있는 동안 생물은 명령을 말하고 운전석 아래의 레버를 당겨 마차와 탑승한 모든 것을 캐노피 아래 공간으로 순간이동시킬 수 있습니다. 캐노피 영역에 있는 모든 항목은 가장 가까운 빈 공간으로 이동됩니다. 캐노피는 마법을 동작으로 무시하여 눈에 띄게 만들고 보관할 수 있습니다. 한번 사용된 리콜 캐노피는 다음 날 새벽까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Reflecting Pool": {
+      "name": "반사 풀 - Reflecting Pool",
+      "description": "<p><em>요구 사항: 물 탱크</em></p><p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 240 gp</p><p><strong>무게:</strong> 1,500lbs.</p><p>이것은 2피트 깊이의 3x3피트 수영장이며 모든 초안 짐승의 분노입니다. 레인 커버는 포함되어 있지만 나뭇잎을 덮는 그물은 포함되어 있지 않습니다.</p>"
     },
     "Reinforced Net Thrower (G3)": {
-      "name": "강화 그물 발사기 (G3)"
+      "name": "강화 그물 발사기 (G3)",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 15의 베기 피해(AC 10)를 가하면 생물이 피해를 입지 않고 풀려나 효과가 종료되고 그물이 파괴됩니다. 그물 던지는 생물은 보충되기 전에 세 번 공격할 수 있습니다.</p><p></p>"
     },
     "Reinforced Net Thrower (G4)": {
-      "name": "강화 그물 발사기 (G4)"
+      "name": "강화 그물 발사기 (G4)",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 15의 베기 피해(AC 10)를 가하면 생물이 피해를 입지 않고 풀려나 효과가 종료되고 그물이 파괴됩니다. 그물 던지는 생물은 보충되기 전에 생물을 4번 공격할 수 있습니다.</p><p></p>"
     },
     "Reinforced Net Thrower (G5)": {
-      "name": "강화 그물 발사기 (G5)"
+      "name": "강화 그물 발사기 (G5)",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 15의 베기 피해(AC 10)를 가하면 생물이 피해를 입지 않고 풀려나 효과가 종료되고 그물이 파괴됩니다. 그물 던지는 생물은 보충되기 전에 생물을 5번 공격할 수 있습니다.</p><p></p>"
     },
     "Reinforced Net Thrower (G6)": {
-      "name": "강화 그물 발사기 (G6)"
+      "name": "강화 그물 발사기 (G6)",
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Roof</p><p><strong>속성:</strong> 탄약(범위 60/120), 특수</p><p>이 개조된 대포는 무거운 그물을 발사하여 거대한 생물을 덫에 빠뜨립니다. 그물은 수축되어 실패하면 다시 발사될 수 있습니다. 명중 시 거대하거나 작은 생물은 풀려날 때까지 구속됩니다. 그물은 형태가 없는 생물에게는 효과가 없습니다. 생물은 자신의 행동을 사용하여 DC 13 힘 검사를 수행하여 성공 시 자신이나 손이 닿는 범위 내에 있는 다른 생물을 자유롭게 할 수 있습니다. 그물에 15의 베기 피해(AC 10)를 가하면 생물이 피해를 입지 않고 풀려나 효과가 종료되고 그물이 파괴됩니다. 그물 던지는 생물은 보충되기 전에 생물을 6번 공격할 수 있습니다.</p><p></p>"
     },
     "Restful Interior": {
-      "name": "안락한 내부 - Restful Interior"
+      "name": "안락한 내부 - Restful Interior",
+      "description": "<p><strong>등급 2</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>향긋한 실크가 마차 천장에 매달려 있어 고요한 분위기를 조성합니다. 마차 내부에서 체력을 회복하기 위해 Hit Dice를 사용하는 생물은 굴린 각 주사위의 결과에 1을 더합니다.</p>"
     },
     "Retrieval Band": {
-      "name": "회수 밴드 - Retrieval Band"
+      "name": "회수 밴드 - Retrieval Band",
+      "description": "<p><strong>1학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> Frame</p><p>120피트 연금술 고무 밴드가 마차 프레임 상단의 기둥에 부착되어 있습니다. 행동으로 생명체의 허리띠에 부착할 수 있으며, 이를 통해 생명체는 5피트의 이동만으로 지상에서 지붕에 도달할 수 있습니다.</p><p>밴드는 허리띠의 어느 부분에나 10의 베기 피해를 가하면 부러질 수 있습니다. length.</p><p><strong>재맞춤:</strong></p><p>3등급 피팅으로 회수 밴드의 폴에는 리트랙팅 스풀이 장착되어 있습니다. 생물이 부착되어 있고 기둥에서 60피트 이내에 있는 동안 30피트 이상 떨어지면 흔들리며 마차 지붕에 안전하게 착지합니다.</p>"
     },
     "Retrieval Band (G3)": {
-      "name": "회수 밴드 (G3)"
+      "name": "회수 밴드 (G3)",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임</p><p>120피트 연금술 고무 밴드는 마차 프레임 상단에 장착된 접이식 스풀이 장착된 기둥에 부착됩니다. 이는 행동으로 생물의 허리띠에 부착될 수 있으며, 이를 통해 생물은 단지 5피트의 이동만으로 지상에서 지붕에 도달할 수 있습니다. 생물이 부착되어 있고 기둥에서 60피트 이내에 있는 동안 30피트 이상 떨어지면 마차 지붕에 안전하게 착지합니다.</p><p>밴드는 길이의 어느 부분에든 10의 절단 피해를 가하면 부러질 수 있습니다.</p><p></p>"
+    },
+    "Roll Without Trace": {
+      "name": "흔적 없는 롤 - Roll Without Trace",
+      "description": "<p><strong>등급 4</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>마차의 타이어와 외풍의 발은 계절에 따라 공기 정령의 피부가 벗겨지는 처리를 받습니다. 그 결과 마차와 지면 사이에 거의 감지할 수 없는 공기 틈이 생겼습니다. 그 움직임은 조용하고 마법적인 수단 외에는 추적할 수 없습니다. 흔적이나 통과의 다른 흔적을 남기지 않습니다.</p>"
+    },
+    "Running Board": {
+      "name": "러닝 보드 - Running Board",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 15 gp</p><p><strong>무게:</strong> 40 lb.</p><p><strong>치수:</strong> 외벽의 10피트</p><p>왜건 외부 바닥에 못으로 고정된 평평한 목재 표면. 생물이 땅에 닿지 않고 외부에서 원을 그리며 회전할 수 있습니다.</p>"
+    },
+    "Sabotage Spinner": {
+      "name": "방해공작 스피너 - Sabotage Spinner",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 지붕</p><p><strong>속성:</strong> 탄약(범위 60/120), 장전, 특수</p><p><strong>손상:</strong> 1d10</p><p>Rocksteady 왜건의 디자이너는 단순성에 대한 강조에서 드물게 벗어나 이 구성 요소에 맞게 프레임을 특별히 조정했습니다. 이 튜브 모양의 랙과 발사기는 지면을 따라 이동하고 다른 델버 왜건의 하부 구성품 아래로 이동하는 디스크를 발사합니다. 상단의 후크가 축에 걸리면 대량의 파쇄 케이블이 방출되어 아래의 섬세한 메커니즘에 큰 피해를 입힙니다.</p><p>사보타주 스피너가 다른 마차에 부딪히면 두 배의 피해를 입히고 남은 내구도에 관계없이 즉시 고장이 납니다. 사보타주 스피너는 보충되기 전까지 4번 사용할 수 있습니다.</p>"
+    },
+    "Second Story Addition": {
+      "name": "두 번째 이야기 추가 - Second Story Addition",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 2,500gp</p><p><strong>무게:</strong> 1,500 lbs.</p><p>이렇게 하면 마차 지붕에 10피트 x 10피트 x 6피트 공간이 추가되어 메인 캐빈 천장이 1피트 낮아집니다. 20피트 높이의 마차가 낮은 다리를 무너뜨리거나 급회전 중에 넘어지지 않도록 주의하세요.</p>"
     },
     "Self Repair": {
+      "name": "자가 수리 - Self Repair",
       "description": "<p><strong>등급 6</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 본체(내장형)</p><p>이 부품이 장착된 Rocksteady 마차의 객실 각 위쪽 모서리에는 평범한 회색 상자가 설치되어 있다. 마차의 현재 히트 포인트가 최대치의 절반 아래로 떨어지면, 상자 옆면이 자동으로 열리며 수십 마리의 소형 구조물이 쏟아져 나온다. 각 구조물은 두 개의 유연한 팔을 가진 금속 구체에 불과하지만, 마차의 표면 어디든 자연스럽게 움직일 수 있다.</p><p>이 구조물들은 몸체 안에서 꺼낸 작은 도구와 퍼티를 사용해 피해를 수선한다. 사용자의 각 차례 시작 시, 마차는 6d6 히트 포인트를 회복한다. 이 자가 수리 부품은 한 번 활성화되면 2분 동안 지속된다.</p><p>지속 시간이 끝나면 구조물들은 쓸모없어진 채로 남아 있다가, 쓸어 담아 상자에 다시 붓기 전까지는 움직이지 않는다. 자가 수리는 다시 채워 넣기 전까지 한 번만 활성화할 수 있다.</p>"
     },
     "Serene Sanctum": {
-      "name": "고요한 성소 - Serene Sanctum"
+      "name": "고요한 성소 - Serene Sanctum",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 캐빈 </p><p>마차에 있는 5피트 길이의 벽감은 비스트 월드와 흑마법사의 후원자의 거주지 사이의 경계 공간으로 예약되어 있습니다. 고요한 성소에서 최소 15분을 보내는 흑마법사는 짧은 휴식의 혜택을 받습니다.</p>"
+    },
+    "Shade Gatherers": {
+      "name": "그늘 수집가 - Shade Gatherers",
+      "description": "<p><strong>등급 3</strong></p><p><strong>클래스: </strong>Fitting</p><p><strong>위치:</strong> 프레임 </p><p>바얀의 나무 참은 마차 차체 처마에 매달려 있어 주변의 빛을 미묘하게 약화시킵니다. 마차 벽에서 30피트 이내에서는 희미한 빛이 어둠으로 변합니다.</p>"
     },
     "Shrinking Shroud": {
+      "name": "수축하는 장막 - Shrinking Shroud",
       "description": "<p><strong>등급 5</strong></p><p><strong>분류:</strong> 부품</p><p><strong>위치:</strong> 지붕</p><p>다른 세계에도 존재할 수 있도록 불가능한 기하학으로 수놓은 아스트랄 제작 비단 망토를 마차 지붕 안쪽의 장대에 감아 둔다. 이 부품을 행동으로 사용하면, 장대가 솟아오르며 빠르게 회전한다. 비단은 풀려나와 마차 전체를 완전히 덮는다.</p><p>망토의 섬유에 깃든 변성 마법이 마차를 너비 1인치, 길이 2인치 크기로 줄인다. 마지막으로 방수포가 스스로 말려 들어가 정리된다. 마차에 탄 짐마차 동물과 생물은 방수포를 아무런 영향 없이 통과하며, 비어 있는 공간에 남겨진다. 이 효과는 8시간 동안 지속되거나, 마차로부터 60피트 이내에서 행동으로 명령어를 말할 때까지 지속된다.</p><p>마차가 생물에게 삼켜진 뒤 원래 크기로 돌아가면, 그 생물은 체질 내성 굴림 DC 18에 성공해야 하며, 실패하면 20d6 타격 피해를 입는다. 이 피해로 히트 포인트가 0이 되면, 그 생물은 내부에서 파괴된다. 어느 쪽이든 마차는 자신이 들어갈 수 있을 만큼 충분히 큰 가장 가까운 빈 공간에 나타난다.</p><p>마차가 자신에게 너무 작은 구조물 안에서 원래 크기로 돌아가면, 그 구조물은 20d6 타격 피해를 입는다. 구조물이 그대로 서 있다면, 마차는 자신이 들어갈 수 있을 만큼 충분히 큰 가장 가까운 빈 공간에 다시 나타난다. 이 축소 망토는 다시 채워 넣기 전까지 마차를 한 번만 줄일 수 있다.</p>"
     },
+    "Single Bed": {
+      "name": "싱글 침대 - Single Bed",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 50gp </p><p><strong>무게:</strong> 70lbs. </p><p><strong>치수:</strong> 6x3x3피트 </p><p>중형 생물에 적합한 단단한 나무 프레임, 오리 깃털 매트리스, 양모 담요 및 베개. 아래에는 18인치의 수납 공간이 있습니다. 델버 왜건은 기본적으로 4개가 제공됩니다.</p>"
+    },
     "Single Full-Length Window": {
-      "name": "전장 단일 창문 - Single Full-Length Window"
+      "name": "전장 단일 창문 - Single Full-Length Window",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 600gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p><strong>치수:</strong> 10피트 벽 옵션</p><p>후면 벽을 견목처럼 탄력이 있지만 수정처럼 투명한 100제곱피트 강화 유리로 교체합니다.</p>"
+    },
+    "Skylight": {
+      "name": "채광창 - Skylight",
+      "description": "<p><strong>클래스:</strong> 혁신</p><p><strong>가격:</strong> 430gp</p><p><strong>무게:</strong> </p><p>5 x 10피트 창이 포함되어 있어 너무 오랫동안 들여다보려면 목에 부담이 갑니다. 누워있지 않는 이상. 강화유리는 단단한 나무처럼 탄력이 있습니다.</p>"
+    },
+    "Sled Treads": {
+      "name": "썰매 보행 - Sled Treads",
+      "description": "<p><strong>1등급 </strong> </p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>바퀴가 스키로 교체되어 마차가 눈 덮인 곳과 모래가 있는 지역을 횡단할 수 있습니다. 마차는 눈이나 모래로 인한 어려운 지형을 무시하지만 다른 모든 지형에서는 속도가 5피트입니다.</p>"
+    },
+    "Smith & Glassblower": {
+      "name": "스미스 앤 글래스블로어 - Smith & Glassblower",
+      "description": "<p><em>요구 사항: 플라이휠, 배관, 용광로</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>기계적 혁신 - 장인 작업 스테이션</span></p><p><strong>가격:</strong> 1,200gp </p><p><strong>무게:</strong> 1,200lbs. </p><p><strong>치수:</strong> 10x5x5 ft. </p><p>산에 있든 도로에 있든 강철이 부르면 대장장이는 응답해야 합니다. 이 작업대는 대장장이와 유리공이 광석과 모래를 전쟁터와 장식품으로 만드는 데 필요한 모든 것을 제공할 수 있는 장비를 갖추고 있습니다. 룬으로 굳어진 거인의 돌 탁자 아래에는 모루가 놓여 있고, 제련소는 필요한 정화의 열기를 견뎌냅니다. 냉수 순환이 가능한 물통을 사용하면 대장장이가 동료의 목욕을 방해하지 않고 작업할 수 있습니다. 올해 새로 포함됨: 고강도 바이스 클램프가 테이블에 단단히 고정됩니다.</p>"
     },
     "Smokescreen": {
+      "name": "연막 - Smokescreen",
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">등급 1</strong></span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">분류: </strong>부품</span></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 지붕</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">사용하면 이 관이 폭발 캡을 터뜨리며 유리 바이알을 깨뜨리고 추적자를 혼란시키는 가스를 내뿜는다.<br style=\"box-sizing:border-box;user-select:text\">행동으로 사용하면, 사용자의 다음 차례가 시작되기 전에 마차가 앞으로 움직였을 경우 불투명한 흰 연기 원뿔이 마차 뒤로 최대 120피트까지 퍼진다. 이 효과를 받는 구역은 1분 동안 짙게 가려지며, 중간 이상 세기(최소 시속 10마일)의 바람이 불 때까지 유지된다. 이 연막은 다시 채워 넣기 전까지 한 번 사용할 수 있다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">개조</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">등급 3 부품이 되면, 이 부착물은 산성 연막이 된다. 원뿔 구역의 생물들은 체질 내성 굴림 DC 15을 해야 하며, 실패하면 매 차례 시작 시 5d8 산성 피해를 입고, 성공하면 절반의 피해를 입는다. 물체는 한 라운드마다 5d8 산성 피해를 입는다. 이 부품이 주는 피해는 거대함을 무시한다.</span></p>"
     },
     "Soul Orb": {
-      "name": "영혼 구체 - Soul Orb"
+      "name": "영혼 구체 - Soul Orb",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 인테리어</p><p>이 10인치 구체는 Ki 기능이 없는 사람에게는 평범한 회색 구체로 보이지만, 영혼의 에너지에 적응된 사람들은 부드러운 황금빛 발광을 볼 수 있습니다. 구체를 터치하는 동안 사용자는 3ki 포인트를 소비하고 눈을 감아 최대 120피트 떨어진 곳에 자신의 눈부신 사본을 투사할 수 있습니다. 사본은 반경 15피트에 밝은 빛을 투사하고 추가로 15피트에 희미한 빛을 투사하는 황금 에너지로 만들어졌습니다. 사용자는 이미지가 투사된 곳에 서 있는 것처럼 보고 듣습니다.</p><p>이미지는 무기 공격이 Enormity를 무시하는 빛나는 피해를 준다는 점을 제외하면 사용자와 동일한 게임 통계 및 장비를 갖습니다. 카피와 사용자는 히트 포인트를 공유합니다. 하나가 치유되거나 손상되면 다른 하나도 똑같이 영향을 받습니다. 사본이 마차에서 120피트 이상 떨어지면 사라집니다. 복사본의 체력이 0으로 줄어들면 즉시 사라집니다. 복사본은 10분 동안 지속되거나 사용자가 구체 터치를 멈추거나 눈을 뜰 때까지 지속됩니다. 영혼 구체는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>4등급 이상의 구성 요소로서 영혼 구슬의 복사본은 추가로 10분 동안 지속되며 3.</p>"
     },
     "Soul Orb (G4)": {
-      "name": "영혼 구체 (G4)"
+      "name": "영혼 구체 (G4)",
+      "description": "<p><strong>4학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 인테리어</p><p>이 10인치 구체는 Ki 기능이 없는 사람에게는 평범한 회색 구체로 보이지만, 영혼의 에너지에 적응된 사람들은 부드러운 황금빛 발광을 볼 수 있습니다. 구체를 터치하는 동안 사용자는 3ki 포인트를 소비하고 눈을 감아 최대 240피트 떨어진 곳에 자신의 눈부신 사본을 투사할 수 있습니다. 사본은 반경 15피트에 밝은 빛을 투사하고 추가로 15피트에 희미한 빛을 투사하는 황금 에너지로 만들어졌습니다. 사용자는 이미지가 투사된 곳에 서 있는 것처럼 보고 듣습니다.</p><p>이미지는 무기 공격이 Enormity를 무시하는 빛나는 피해를 준다는 점을 제외하면 사용자와 동일한 게임 통계 및 장비를 갖습니다. 카피와 사용자는 히트 포인트를 공유합니다. 하나가 치유되거나 손상되면 다른 하나도 똑같이 영향을 받습니다. 사본이 마차에서 240피트 이상 떨어지면 사라집니다. 복사본의 체력이 0으로 줄어들면 즉시 사라집니다. 복사본은 20분 동안 지속되거나 사용자가 구체 터치를 멈추거나 눈을 뜰 때까지 지속됩니다. 영혼 구체는 보충되기 전에 한 번 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>등급 5 이상의 구성 요소로서 영혼 구슬의 복사본은 추가로 10분 동안 지속되며 다음보다 높은 각 등급에 대해 120피트 더 멀리 이동할 수 있습니다. 3.</p>"
     },
     "Soul Orb (G5)": {
-      "name": "영혼 구체 (G5)"
+      "name": "영혼 구체 (G5)",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 인테리어</p><p>이 10인치 구체는 Ki 기능이 없는 사람에게는 평범한 회색 구체로 보이지만, 영혼의 에너지에 적응된 사람들은 부드러운 황금빛 발광을 볼 수 있습니다. 구체를 터치하는 동안 사용자는 3키 포인트를 소비하고 눈을 감아 최대 360피트 떨어진 곳에 자신의 눈부신 사본을 투사할 수 있습니다. 사본은 반경 15피트에 밝은 빛을 투사하고 추가로 15피트에 희미한 빛을 투사하는 황금 에너지로 만들어졌습니다. 사용자는 이미지가 투사된 곳에 서 있는 것처럼 보고 듣습니다.</p><p>이미지는 무기 공격이 Enormity를 무시하는 빛나는 피해를 준다는 점을 제외하면 사용자와 동일한 게임 통계 및 장비를 갖습니다. 카피와 사용자는 히트 포인트를 공유합니다. 하나가 치유되거나 손상되면 다른 하나도 똑같이 영향을 받습니다. 사본이 마차에서 360피트 이상 멀어지면 사라집니다. 복사본의 체력이 0으로 줄어들면 즉시 사라집니다. 복사본은 30분 동안 지속되거나 사용자가 구체 터치를 멈추거나 눈을 뜰 때까지 지속됩니다. 영혼 구체는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p><strong>Refit:</strong></p><p>6등급 구성 요소인 영혼 구슬의 사본은 추가로 10분 동안 지속되며 다음보다 높은 각 등급에 대해 120피트 더 멀리 이동할 수 있습니다. 3.</p>"
     },
     "Soul Orb (G6)": {
-      "name": "영혼 구체 (G6)"
+      "name": "영혼 구체 (G6)",
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 인테리어</p><p>이 10인치 구체는 Ki 기능이 없는 사람에게는 평범한 회색 구체로 보이지만, 영혼의 에너지에 적응된 사람들은 부드러운 황금빛 발광을 볼 수 있습니다. 구체를 터치하는 동안 사용자는 3ki 포인트를 소비하고 눈을 감아 최대 480피트 떨어진 곳에 자신의 눈부신 사본을 투사할 수 있습니다. 사본은 반경 15피트에 밝은 빛을 투사하고 추가로 15피트에 희미한 빛을 투사하는 황금 에너지로 만들어졌습니다. 사용자는 이미지가 투사된 곳에 서 있는 것처럼 보고 듣습니다.</p><p>이미지는 무기 공격이 Enormity를 무시하는 빛나는 피해를 준다는 점을 제외하면 사용자와 동일한 게임 통계 및 장비를 갖습니다. 카피와 사용자는 히트 포인트를 공유합니다. 하나가 치유되거나 손상되면 다른 하나도 똑같이 영향을 받습니다. 사본이 마차에서 480피트 이상 떨어지면 사라집니다. 복사본의 체력이 0으로 줄어들면 즉시 사라집니다. 복사본은 40분 동안 지속되거나 사용자가 구체 터치를 멈추거나 눈을 뜰 때까지 지속됩니다. 영혼 오브는 보충되기 전에 한 번만 사용할 수 있습니다.</p><p></p>"
+    },
+    "Speed Mirage": {
+      "name": "스피드 미라지 - Speed Mirage",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 본문 (하부 구성품)</p><p>이 구성 요소는 시각적 스펙트럼에서 잔물결을 방출하는 왜건의 후방 차축을 감싸는 속이 빈 유리 실린더입니다. 충분한 속도로 회전하면 내부의 환영 마법이 마차 주위로 투사됩니다. 마차가 기동성을 사용하여 추가 이동을 얻으면 3개의 환상적인 복제물이 앞뒤로 무작위로 나타나 실제와는 구별할 수 없습니다.</p><p>1분 동안 생물이 마차나 탑승한 생물을 공격 대상으로 삼을 때마다 d20을 굴려 공격이 대신 신기루 중 하나를 대상으로 하는지 결정합니다. 공격 대상을 중복 대상으로 변경하려면 6 이상이 나와야 합니다. 공격이 중복된 공격에 도달하면 아무 일도 일어나지 않습니다. 스피드 신기루는 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
+    },
+    "Spring Portal": {
+      "name": "스프링 포털 - Spring Portal",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 및 편의성</span></p><p><strong>가격:</strong> 3,000gp </p><p><strong>무게:</strong> 100lbs. </p><p><strong>치수:</strong> - </p><p>욕조 바닥에 설치되는 이 평평한 6인치 강석은 탐구 후 휴식을 그 어느 때보다 쉽게 ​​만듭니다. 돌에서 신선한 화산 샘물이 분출되도록 하는 동작으로 명령어를 말할 수 있습니다. 그 효과는 30갤런의 김이 나는 물을 생성합니다. 돌의 기공을 통해 물이 다시 유입되면 최대 2시간 동안 새로운 샘물이 순환됩니다. 한번 활성화된 스프링 포탈은 다음 날 새벽까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Static Tile": {
+      "name": "정적 타일 - Static Tile",
+      "description": "<p><strong>등급 4</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>5피트 정사각형의 광택나는 회색 대리석이 마차 지붕에 부착되어 있습니다. 네 가지 분야에 걸친 공간 마법은 마차의 질량을 사용하여 이 타일을 신비한 공간의 절대 지점에 고정하고 마법사 모르게인이 발견한 허점을 이용합니다. </p><p>마차가 움직일 때에도 광장에 있는 모든 것은 주문 목적에 따라 움직이지 않는 것으로 간주됩니다(예: 와드 문양이나 마법진).</p>"
     },
     "Steam-Powered Flywheel": {
-      "name": "증기 동력 플라이휠 - Steam-Powered Flywheel"
+      "name": "증기 동력 플라이휠 - Steam-Powered Flywheel",
+      "description": "<p><strong>클래스: </strong>기계 개조 - 플라이휠</p><p><strong>가격:</strong> 150gp </p><p><strong>무게:</strong> 300파운드 </p><p><strong>치수:</strong> 1x1x10피트 샤프트 </p><p>장작이 너무 많고 귀리가 부족한 승무원용. 증기로 구동되는 플라이휠은 마차가 저녁에 멈춰도 재단사가 재봉틀에서 계속 작업할 수 있도록 해줍니다. 이 플라이휠에는 물 탱크와 보일러가 필요합니다.</p>"
     },
     "Steel Footlocker": {
-      "name": "Steel 풋락커"
+      "name": "Steel 풋락커",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 8gp </p><p><strong>무게:</strong> 60lbs. </p><p><strong>치수:</strong> 5x2x2 ft. </p><p>이것은 풋락커(강철)입니다.</p>"
     },
     "Stone Hearth": {
-      "name": "돌 - Hearth"
+      "name": "돌 - Hearth",
+      "description": "<p><strong>클래스:</strong> 혁신</p><p><strong>가격:</strong> 850 gp</p><p><strong>무게:</strong> 300 lbs.</p><p><strong>치수:</strong> 벽</p><p>석재 벽난로가 필요한 단열재 및 균형추 엔지니어링과 함께 벽에 설치되었습니다. 시원한 밤에는 따뜻한 사람들과 함께 시간을 보내거나 주전자를 데우세요.</p>"
     },
     "Stop Body": {
-      "name": "Stop 몸체"
+      "name": "Stop 몸체",
+      "description": "<p><strong>학년 6</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 본문 (내장)</p><p>이 구성 요소가 설치되면 Windsprinter 왜건의 모든 못, 리벳 및 나무 조인트가 정지 애니메이션에서 최소 1년을 보낸 경금속으로 교체됩니다. 구성요소가 액션으로 사용되면 이 금속은 기본 비활성 상태로 돌아가고 마차의 나머지 부분도 함께 끌어당깁니다.</p><p>마차와 탑승한 물체 또는 생물을 제외한 모든 것에서는 시간의 흐름이 멈춥니다. 다른 생명체에게는 시간이 흐르지 않으며, 마차와 그 탑승자는 연속으로 1d4+1 턴을 합니다.</p><p>이 효과는 이 기간 동안 사용된 행동 중 하나 또는 이 기간 동안 생성된 효과가 마차 탑승자가 아닌 생물이나 마차 탑승자가 아닌 다른 사람이 착용하거나 운반하는 물체에 영향을 미치는 경우 종료됩니다. 또한 마차나 그 탑승자가 정지 몸체가 활성화된 곳에서 1,000피트 이상 이동하면 효과가 종료됩니다. 이 구성품은 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
     },
     "Storage": {
-      "name": "수납 - Storage"
+      "name": "수납 - Storage",
+      "description": "<p><strong>클래스:</strong> 혁신</p><p><strong>가격:</strong> 240gp</p><p><strong>무게:</strong> 포함됨</p><p>보관용으로 10피트 정사각형을 다시 장착합니다. 방수 상자가 영구적으로 설치되어 있으며 방수 방수포와 스트랩이 포함되어 있습니다.</p>"
     },
     "Sun Still": {
-      "name": "태양 - Still"
+      "name": "태양 - Still",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 30 gp</p><p><strong>무게:</strong> 20 lbs.</p><p>이 장치는 왜건 지붕에 설치됩니다. 화창한 날씨에는 하루에 1쿼트의 물을 수동적으로 증류합니다. 소금, 천연 불순물, 독극물을 제거합니다</p>"
     },
     "Swiveling Twin Anchor Cable Harpoon": {
       "name": "Swiveling 쌍닻 케이블 작살",
       "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">등급 5</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">분류:</strong> 부품</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 본체(내장형)</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">스위블링 트윈 앵커 케이블 하푼(STACH)은 객실을 둘러싼 강철 버팀대에 매달린 한 쌍의 작살 발사기로, 마차 위에 매달려 있다. 행동으로 사용하면, 작살은 마차의 바로 앞이나 뒤로 최대 300피트, 또는 30도 이내의 각도로 발사되며 각각 +15 보너스로 공격 굴림을 하고 명중 시 10 관통 피해를 준다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">작살은 파괴되지 않는 한 자신이 입힌 어떤 물체에도 고정된다. 어느 한쪽 작살도 고정에 실패하면 다시 수축되며, 행동으로 다시 발사할 수 있다. 이 부품이 주는 피해는 거대함을 무시한다. 두 작살이 모두 고정된 STACH는 마차를 3인치 들어 올린다. 보너스 행동으로, 마차는 레버를 조작해 1라운드에 30피트씩 줄을 따라 이동할 수 있다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">그 줄은 보너스 행동으로 풀 수 있으며, 이 경우 마차는 떨어지고 고정된 작살만 남는다. STACH에는 케이블이 하나 장착되어 있으며, 이를 보충할 수 있다.</span></p>"
     },
+    "Tankard Holders": {
+      "name": "탱커드 홀더 - Tankard Holders",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 20 gp</p><p><strong>무게:</strong> 20 lbs.</p><p>견목을 조각하여 영구적으로 설치했습니다. \"Big Quaff\" 큰 잔은 적합이 보장되지 않습니다.</p>"
+    },
+    "Telepathic Timber": {
+      "name": "텔레파시 목재 - Telepathic Timber",
+      "description": "<p><strong>학년 5</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> Interior</p><p>보름달 빛 아래에서 수확한 목재에 마법의 가마솥에서 만든 래커를 칠해 오두막 내부 벽을 장식합니다. 이 구성 요소를 행동으로 사용한 후 24시간 동안 마차에 탑승하거나 마차로부터 5피트 이내에 있는 생물은 마치 텔레파시 결합 주문의 효과를 받는 것처럼 이 범위 내의 다른 생물과 텔레파시 연결을 얻습니다. 이 구성품은 보충되기 전에 한 번만 사용할 수 있습니다.</p>"
+    },
     "Thespian's Friend": {
-      "name": "Thespian's 친구"
+      "name": "Thespian's 친구",
+      "description": "<p><em>요구 사항: 왜건 레벨 9</em> </p><p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 3,000gp </p><p><strong>무게:</strong> 150lbs. </p><p><strong>치수:</strong> 5x5x10피트 </p><p>유니버설 심포니의 장식 선조와 멜로디 소절이 새겨진 대형 옷장. Thespian의 친구는 의상을 최대 100개까지 저장할 수 있습니다. 행동으로 옷장 안에 있는 생물이 명령어를 말하여 저장된 의상으로 즉시 교체할 수 있습니다. Thespian의 친구는 갑옷을 저장할 수 있지만 생물의 AC를 변경하지 않는 무대 소품만 보관할 수 있습니다.</p>"
+    },
+    "Tinker & Jeweler": {
+      "name": "팅커 앤 주얼러 - Tinker & Jeweler",
+      "description": "<p><em>요구 사항: 플라이휠, 용광로</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>기계적 혁신 - 장인 작업 스테이션</span></p><p><strong>가격:</strong> 1,200gp </p><p><strong>무게:</strong> 300lbs. </p><p><strong>치수:</strong> 10x5x5ft. </p><p>이 워크스테이션의 회전식 벤치도 의자를 안정시킵니다. 이를 통해 북부 베일리크의 바위가 많은 황무지에서도 꼼꼼하고 정확한 작업이 가능합니다. 장착된 돋보기가 광택나는 금속 테이블을 내려다보고 있습니다. 유연한 와이어의 집게가 작업물을 안정적으로 고정합니다. 대중의 요구에 따라 이 작업 스테이션에는 이제 귀금속 성형을 위한 소형 제련소가 탑재되었습니다.</p>"
     },
     "Toilet Closet": {
-      "name": "화장실 칸 - Toilet Closet"
+      "name": "화장실 칸 - Toilet Closet",
+      "description": "<p><em>요구 사항: 배관</em> </p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>편안함 & 편의성</span></p><p><strong>가격:</strong> 125gp </p><p><strong>무게:</strong> 25lbs. </p><p><strong>치수:</strong> 코너에서 5x5x10피트 </p><p>내부 코너에 설치되는 이 밀폐형 변소는 물탱크를 사용하여 더욱 편안하게 이동할 수 있습니다.</p>"
+    },
+    "Towing Hitch": {
+      "name": "견인 히치 - Towing Hitch",
+      "description": "<p><strong>등급 1</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>견고한 히치가 마차의 하부 구조에 부착되어 있어 지면에서 1,000파운드를 끌거나 최대 4,000파운드의 바퀴 달린 차량을 견인할 수 있습니다.</p>"
     },
     "Transmutation-Powered Flywheel": {
-      "name": "변환 동력 플라이휠 - Transmutation-Powered Flywheel"
+      "name": "변환 동력 플라이휠 - Transmutation-Powered Flywheel",
+      "description": "<p><strong>클래스:</strong> 플라이휠</p><p><strong>가격:</strong> 1,500gp </p><p><strong>무게:</strong> 300lbs. </p><p><strong>치수:</strong> 1x1x10피트 샤프트</p><p>창의적인 트랜스뮤터는 이 플라이휠과 함께 애니메이션 기어를 패키지했습니다. 새벽 사이에 최대 8시간까지 회전하도록 명령할 수 있습니다.</p>"
+    },
+    "Travailen Gaol": {
+      "name": "트라바일렌 감옥 - Travailen Gaol",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>인테리어 사용자 정의</span></p><p><strong>가격:</strong> 600gp </p><p><strong>무게:</strong> 2,500lbs. </p><p><strong>치수:</strong> 5x5x7피트 </p><p>1인치 돌담과 강철 막대 문은 객실의 모서리를 중형 생물 한 마리를 위한 방으로 변환합니다. 열쇠가 없으면 도둑의 도구에 능숙한 생물은 DC 15 민첩 판정에 성공하여 자물쇠를 열 수 있습니다.</p>"
+    },
+    "Tremor Caps": {
+      "name": "트레머 캡 - Tremor Caps",
+      "description": "<p><strong>등급 4</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 바퀴 </p><p>바퀴 테두리에는 윤이 나는 대지 정령 덩어리가 새겨져 있어 승무원에게 육감을 선사합니다. 바퀴가 지면에 닿는 동안 마차의 모든 승무원은 벽에서 60피트 범위까지 떨림을 느낍니다.</p>"
+    },
+    "Triple Bunk": {
+      "name": "트리플 벙크 - Triple Bunk",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 120gp </p><p><strong>무게:</strong> 150lbs. </p><p><strong>치수:</strong> 6x3x10피트 </p><p>3개의 쌓인 침대는 공간을 절약하려는 승무원에게 적합하지만 뿔이나 뿔이 있는 탐험가는 정리 문제에 직면할 수 있습니다. 사다리가 달린 원목 프레임이 마차 내부 위로 솟아오릅니다</p>"
     },
     "Twin Anchor Cable Harpoon": {
-      "name": "쌍닻 케이블 작살 - Twin Anchor Cable Harpoon"
+      "name": "쌍닻 케이블 작살 - Twin Anchor Cable Harpoon",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 본문 (내장)</p><p>쌍둥이 앵커 케이블 작살(또는 TACH)은 마차 위에 매달려 있는 한 쌍의 작살 발사기이며, 객실 주위를 움직이는 강철 버팀대에 부착되어 있습니다. 행동으로 사용하면 작살은 마차 바로 앞과 뒤에서 최대 300피트까지 발사되며 각각 +15 보너스로 명중 굴림을 하고 적중 시 10의 관통 피해를 입힙니다.</p><p>작살은 파괴하지 않고 피해를 주는 모든 물체에 고정됩니다. 작살 중 하나라도 정박에 실패하면 수축되어 다시 발사될 수 있습니다. 이 구성요소가 가하는 피해는 거대함을 무시합니다. 두 작살이 모두 고정된 TACH는 마차를 3인치 들어 올립니다. 보너스 액션으로 마차는 레버를 조작하여 라인을 따라 라운드당 30피트씩 이동할 수 있습니다.</p><p>라인은 보너스 액션으로 풀려 마차를 떨어뜨리고 고정된 작살을 남겨둘 수 있습니다. TACH에는 보충할 수 있는 단일 케이블이 장착되어 있습니다.</p><p><strong>재장착:</strong></p><p>등급 5 구성품인 이 부착물은 회전식 트윈 앵커 케이블 하분(STACH)이 됩니다. STACH는 발사 각도를 조정하여 마차가 최대 30도 각도로 이동할 수 있도록 합니다.</p>"
     },
     "Twin Hand Canonball": {
-      "name": "Twin 핸드 캐논볼"
+      "name": "Twin 핸드 캐논볼",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스: </strong>Component</p><p><strong>위치:</strong> 지붕</p><p><strong>손상:</strong> 2d6 타격</p><p><strong>속성:</strong> 투척(범위 15/30), 특별</p><p>트윈 핸드 캐논볼은 마차에 볼트로 고정된 체인 윈치에 부착된 두 개의 50파운드 철 구체로 구성됩니다. 던진 후 윈치는 체인을 수축시켜 거의 즉시 공을 사용자에게 다시 끌어옵니다. 이 무기를 사용하려면 힘 점수 15가 필요하며 피해량은 거대함을 무시합니다.</p><p>체인 윈치에 대포알이 하나만 연결되어 있는 것이 아니라 두 개가 있기 때문에 이 구성 요소는 두 사람이 사용할 수 있습니다.</p><p></p>"
     },
     "Two Windows": {
-      "name": "창문 두 개 - Two Windows"
+      "name": "창문 두 개 - Two Windows",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 250 gp</p><p><strong>무게:</strong> 마차에 포함됨 무게</p><p><strong>치수:</strong> 20피트 벽 옵션</p><p>새로운 델버 왜건의 두 긴 벽에 포함됩니다. 20피트 벽을 따라 두 개의 중간 창문이 있습니다.</p>"
     },
     "Wagon Armor": {
-      "name": "마차 장갑 - Wagon Armor"
+      "name": "마차 장갑 - Wagon Armor",
+      "description": "<p><strong>등급 1</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임 </p><p>마차를 개조하면 더욱 강력한 공격을 견딜 수 있습니다. 마차는 마차 갑옷을 장착할 때 AC에 +1 보너스를 얻습니다. </p><p><strong>Refit:</strong> </p><p>3등급 피팅으로 왜건 갑옷은 AC에 +2 보너스를 부여합니다. 5등급 피팅으로 AC.</p>에 +3 보너스를 부여합니다."
     },
     "Wagon Armor (G3)": {
-      "name": "마차 장갑 (G3)"
+      "name": "마차 장갑 (G3)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">3학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급:</strong> 피팅</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 프레임</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">왜건을 개조하면 더 강력한 공격을 견딜 수 있습니다. 마차는 마차 갑옷을 장착할 때 AC에 +2 보너스를 얻습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">Refit:</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"> 5등급 피팅하면 AC.</span></p>에 +3 보너스를 부여합니다."
     },
     "Wagon Armor (G5)": {
-      "name": "마차 장갑 (G5)"
+      "name": "마차 장갑 (G5)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">5학년</strong></span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">학급:</strong> 피팅</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">위치:</strong> 프레임</span></p><p style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Signika, sans-serif\">왜건을 개조하면 더 강력한 공격을 견딜 수 있습니다. 마차는 마차 갑옷을 장착할 때 AC에 +3 보너스를 얻습니다.</span></p>"
+    },
+    "Wagon Spring": {
+      "name": "왜건 스프링 - Wagon Spring",
+      "description": "<p><strong>3학년</strong></p><p><strong>클래스:</strong> 구성요소</p><p><strong>위치:</strong> 본문 (내장)</p><p>두 개의 철 프리즘이 마차의 요크에 고정되어 있으며 프레임에는 한 줄의 평평한 스프링이 장착되어 있습니다. 왜건 스프링을 액션으로 사용할 수 있습니다. 멍에가 마차에서 분리되고, 통풍구가 즉시 풀리고, 프리즘이 마법으로 잠시 동안 공간에 고정시킵니다. 동시에, 무거운 스프링이 풀리고 고정된 요크를 밀어서 마차를 직선으로 120피트 뒤로 발사합니다.</p><p>마차는 거대하거나 더 큰 물체나 생물에 부딪힐 때만 멈춥니다. 마차의 경로에 있는 생물과 물체는 DC 18 민첩 내성 굴림에 성공해야 하며 그렇지 않으면 10d10의 타격 피해를 입고 넘어지기 쉽습니다. 이 구성요소가 가하는 피해는 거대함을 무시합니다. 정지된 마차는 연결되지 않았습니다. 마차 스프링의 멍에를 이용해 생물을 마차에 연결하는 데 1분이 걸립니다. 왜건 스프링은 보충하기 전에 한 번만 사용할 수 있습니다.</p>"
     },
     "Wagon-Powered Flywheel": {
-      "name": "마차 동력 플라이휠 - Wagon-Powered Flywheel"
+      "name": "마차 동력 플라이휠 - Wagon-Powered Flywheel",
+      "description": "<p><strong>클래스: </strong> 기계 개조 - 플라이휠</p><p><strong>가격:</strong> 150gp </p><p><strong>무게:</strong> 300 파운드 </p><p><strong>치수:</strong> 1x1x10피트 샤프트 </p><p>원심분리기로 증류기에서 불순물을 뽑아내고, 선반으로 멋진 의자 다리를 만들고, 세탁물에서 물을 휘저어보세요. 모든 것은 여기서부터 시작됩니다.</p>"
+    },
+    "Wall Pouch Chain": {
+      "name": "월 파우치 체인 - Wall Pouch Chain",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 10gp </p><p><strong>무게:</strong> 10lbs. </p><p><strong>치수:</strong> 벽에 10x5피트 </p><p>긴 벽에 강철 체인이 부착되어 있으며 포함된 삼베 자루를 걸 수 있는 4개의 후크가 있습니다. 최대 500파운드를 지원합니다.</p>"
     },
     "Wall Reinforcement": {
-      "name": "벽 보강 - Wall Reinforcement"
+      "name": "벽 보강 - Wall Reinforcement",
+      "description": "<p><strong>학년 2</strong></p><p><strong>클래스:</strong> 피팅</p><p><strong>위치:</strong> 프레임</p><p>마차 내부를 따라 장착된 강철 빔은 마차가 손상되지 않는 한 벽이 무너지는 것을 방지합니다. 고장으로 인해 벽이 무너질 수는 없습니다. 이 피팅에는 강철 도어도 포함되어 있습니다. 이 문을 통해 내부로 침입하는 강도 판정 DC는 20.</p>입니다."
     },
     "Wall-Mounted Soda Lamp": {
-      "name": "벽걸이 소다 램프 - Wall-Mounted Soda Lamp"
+      "name": "벽걸이 소다 램프 - Wall-Mounted Soda Lamp",
+      "description": "<p><strong>클래스: </strong>가구</p><p><strong>가격:</strong> 300gp</p><p><strong>무게:</strong> 10 lbs.</p><p><strong>치수:</strong> 벽에 2피트</p><p>램프에 <strong>소렌의 신틸레이팅 소다</strong>를 채운 램프와 위원이 선택한 모양의 유리관. 밝은 색의 빛을 15피트까지 투사하고 추가로 15피트 동안 어두운 빛을 투사합니다. 한 파인트의 기름으로 탄산음료를 8시간 동안 가열할 수 있습니다.</p>"
     },
     "Wall-Shelf Cot, Pair": {
-      "name": "벽선반 침대 한 쌍 - Wall-Shelf Cot, Pair"
+      "name": "벽선반 침대 한 쌍 - Wall-Shelf Cot, Pair",
+      "description": "<p><strong>클래스:</strong> 가구</p><p><strong>가격:</strong> 20gp </p><p><strong>무게:</strong> 30lbs. </p><p><strong>치수:</strong> 벽의 10피트 </p><p>중형 생물에 적합한 2개의 적층형 침대, 사용하지 않을 때 벽의 틈에 밀어넣는 걸쇠 포함.</p>"
+    },
+    "Weatherproof Loveseat": {
+      "name": "비바람에 견디는 러브시트 - Weatherproof Loveseat",
+      "description": "<p><strong>클래스:</strong> 리노베이션</p><p><strong>가격:</strong> 75 gp</p><p><strong>무게:</strong> 30 lb.</p><p>프런트 엔드 구성, 2인용 최대 편안함. 운전자에게 친구가 필요한 경우. \"Dramphine은 나의 부조종사이지만 다른 회사를 이용할 수도 있습니다.\"</p>"
+    },
+    "Weaver & Tailor": {
+      "name": "직공 및 재단사 - Weaver & Tailor",
+      "description": "<p><em>요구 사항: 플라이휠</em></p><p><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">클래스: </strong>기계적 혁신 - 장인 작업 스테이션</span></p><p><strong>가격:</strong> 700gp </p><p><strong>무게:</strong> 300lbs. </p><p><strong>치수:</strong> 10x5x5 ft. </p><p>가장 독점적인 Louvain 셀러린 실크 하우스의 승인을 받은 Weaver & Tailor 워크 스테이션은 유행을 선도하는 사람들의 비밀 무기입니다. 베틀과 다목적 플라이휠 스피너를 사용하면 직공이 면화와 양털로 옷을 만드는 사람의 기술의 모든 단계를 제어할 수 있습니다. 포함된 염색 대야는 착색 과정 중에 진행 중인 작업을 안전하게 유지합니다. 장인정신과 예술의 교차점에 있는 넓은 커팅 테이블, 조정 가능한 마네킹, 플라이휠 구동 재봉틀은 여행하는 재단사에게 Alley 패션계의 선두주자들이 누리는 것과 동일한 편리함을 가지고 자신을 표현할 수 있는 도구를 제공합니다.</p>"
     },
     "Window Bars": {
-      "name": "창문 - Bars"
+      "name": "창문 - Bars",
+      "description": "<p><strong>클래스: </strong>Renovation</p><p><strong>가격:</strong> 30 gp</p><p><strong>무게:</strong> 10 lb.</p><p><strong>치수:</strong> 5ft. 벽 옵션(창)</p><p>철창을 창에 삽입하여 횡단과 유연성을 희생하는 대신 안전한 내부를 만듭니다. 바에는 브레이크 DC 20, AC 19 및 35 체력이 있습니다.</p>"
     }
   }
 }

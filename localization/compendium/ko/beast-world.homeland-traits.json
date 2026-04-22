@@ -2,14 +2,19 @@
   "label": "Homeland Traits",
   "entries": {
     "Alley Cat (Allemance)": {
-      "name": "Alley 고양이 (Allemance)"
+      "name": "Alley 고양이 (Allemance)",
+      "description": "<p>두 개의 평행한 벽을 지탱할 수 있다면 걷는 속도와 같은 등반 속도를 갖게 됩니다.</p>"
+    },
+    "Blackwild Feedback (Arneria)": {
+      "description": "<p>당신의 종족을 괴롭힌 종 전체의 혼란이 여전히 당신 안에 울려 퍼집니다. 괴사 피해를 입은 것에 대한 반응으로 다음 턴이 시작될 때까지 괴사 피해에 대한 저항력을 자신에게 부여할 수 있습니다. 피해의 원인은 감소된 양만큼 괴사 피해를 입습니다. 이 능력을 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Born of the Bey's Head (Arneria)": {
       "name": "Born 의 - Bey's Head (Arneria)",
       "description": "<p>전쟁 곡괭이 숙련이 있습니다. 전투 첫 라운드 동안 전쟁 곡괭이로 하는 공격 굴림으로 크리처를 명중시키면, 그 크리처는 추가로 2d6 관통 피해를 받습니다.</p>"
     },
     "Burst of Air (Al'ar)": {
-      "name": "Burst 의 - Air (Al'ar)"
+      "name": "Burst 의 - Air (Al'ar)",
+      "description": "<p>Al'ari celerines는 선물을 안전과 편안함의 영역으로 만듭니다. 이 능력을 행동으로 활성화하면 당신은 당신을 담을 수 있을 만큼 충분히 큰 투명한 공기 방울로 둘러싸이게 됩니다. 기포는 쾌적한 온도에서 통기성이 좋은 공기로 채워져 있으며 물과 기타 액체 표면에 떠 있습니다. 거품의 가장자리를 밀어 육지나 물 속에서 속도의 절반으로 이동할 수 있습니다. 보너스 행동으로, 당신은 거품이 당신의 속도의 절반까지 물속에 잠기거나 떠오르도록 정신적으로 명령할 수 있습니다. 피해를 입거나 피해를 주는 효과가 있는 생물이나 물체를 목표로 삼으면 거품이 사라집니다. 그렇지 않으면 1분 동안 지속됩니다. 이 능력을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Burst of Color (Allemance)": {
       "name": "Burst 의 - Color (Allemance)",
@@ -20,26 +25,49 @@
       "description": "<p>오릭의 토끼와 다람쥐는 아르카나의 흔적을 이용해 휘몰아치는 흑단빛 촉수를 불러냅니다. 이 능력을 행동으로 사용하면 당신을 둘러싼 반지름 5피트 구역에 촉수가 퍼져 1분 동안 험난한 지형으로 바뀝니다. 크리처가 그 지역에 처음 들어가거나 그곳에서 턴을 시작하면 DC 13 민첩 내성 굴림에 성공해야 하며, 실패하면 1d6 타격 피해를 받고 촉수에 붙잡힌 상태가 됩니다. 이미 촉수에 붙잡힌 채 그 지역에서 턴을 시작한 크리처는 1d6 타격 피해를 받습니다. 촉수에 붙잡힌 크리처는 행동을 사용해 DC 13 근력 또는 민첩 판정(선택)에 성공하면 스스로를 풀어낼 수 있습니다. 크리처가 풀려나면 촉수는 흩어지고 효과는 종료됩니다. 또한 당신이 이동하거나 행동으로 이 효과를 해제해도 종료됩니다. 이 능력을 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Burst of Silence (Vinyot)": {
-      "name": "Burst 의 침묵 (Vinyot)"
+      "name": "Burst 의 침묵 (Vinyot)",
+      "description": "<p>산만해지기 쉬운 셀러린은 마법의 재능을 조용한 휴식으로 활용하여 비뇨티아 도시의 빽빽하고 좁은 거리에 대처합니다. 행동으로 당신은 자신을 중심으로 한 반경 5피트 구체에 1분 동안 침묵의 장벽을 세웁니다. 이 구체 내에서는 어떤 소리도 생성되거나 통과할 수 없습니다. 구체 안에 완전히 들어있는 모든 생물이나 물체는 천둥 피해에 면역이며, 생물은 완전히 안에 있는 동안 귀가 먹먹해집니다. 그곳에서는 언어적 요소가 포함된 주문을 발동하는 것이 불가능합니다. 이 효과를 행동으로 무시할 수 있습니다. 이 능력을 사용하면 긴 휴식을 완료할 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Burst of Speed (Arneria)": {
-      "name": "Burst 의 - Speed (Arneria)"
+      "name": "Burst 의 - Speed (Arneria)",
+      "description": "<p>아르네리안 코즈웨이(Arnerian Causeway)는 본토의 셀러린 인구 대부분이 거주하는 곳이기 때문에 그들은 도로에서 더 나은 여행을 위해 그들의 신비한 기이함을 사용합니다. 행동으로 1분 동안 자신 주위의 속도를 모아 속도와 멀리뛰기 거리를 10피트 증가시킵니다. 각 턴이 시작될 때, 당신으로부터 5피트 이내에서 선택한 생물은 다음 턴이 끝날 때까지 속도와 점프 거리가 증가합니다. 이 효과를 행동으로 무시할 수 있습니다. 이 능력을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Carriers of the Good Word (Vinyot)": {
-      "name": "Carriers 의 - Good Word (Vinyot)"
+      "name": "Carriers 의 - Good Word (Vinyot)",
+      "description": "<p>당신은 종교에 능숙합니다. 또한 미묘한 표시와 스크립트 변경을 통해 내용을 명백하게 변경하지 않고도 책의 다른 글 안에 쓰여진 메시지를 숨길 수 있습니다. 1시간 동안 동료에게 특정 코드를 식별하는 방법을 가르치고, 다양한 사람들을 위한 다양한 코드를 개발할 수 있습니다. 책에 숨겨진 메시지가 있다는 것을 인식하려면 한 시간 동안 읽고 DC 15 정보(조사) 검사에 성공해야 합니다. 키 없이 메시지를 디코딩하려면 별도의 DC 25 Intelligence(조사) 확인이 필요합니다.</p>"
     },
     "Cat's Got Your Tongue (Oria)": {
       "name": "고양이's - Got Your Tongue (Oria)",
       "description": "<p>당신이 60피트 이내에서 시전되는 주문을 들을 수 있을 때, 반응으로 그 주문의 언어 성분을 꼬이게 만드는 한마디를 할 수 있습니다. 시전자는 자신의 주문시전 능력을 사용한 내성 굴림을 해야 하며, DC는 8 + 당신의 숙련 보너스와 같습니다. 내성 굴림에 실패하면 그 주문은 실패하고 아무 효과도 없습니다. 이 능력을 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
+    "Cats Stuck in the Family Tree (Al'ar)": {
+      "name": "가계도에 갇힌 고양이(알아르) - Cats Stuck in the Family Tree (Al'ar)",
+      "description": "<p>당신은 수영에 대한 근력(운동) 판정에 유리합니다. 추가적으로, 당신은 삼지창에 능숙하며, 볼 수 없는 대상을 삼지창으로 공격할 때 공격 굴림에 불이익을 받지 않습니다.</p>"
+    },
+    "Charm with Outsiders (Oria)": {
+      "name": "아웃사이더와의 매력(오리아) - Charm with Outsiders (Oria)",
+      "description": "<p>인생은 대부분의 사람들보다 오리안 개에게 훨씬 더 복잡합니다. 당신은 예상치 못한 곳에서 친구를 사귀었고 Oric 산장 영주들의 틀에 맞지 않는 사람들과 친밀감을 공유했습니다. 당신은 오리아 출신이 아닌 서바인과 오리아 출신이 아닌 서바인을 대상으로 한 카리스마(설득) 체크에 유리합니다.</p>"
+    },
+    "Collective Effort (Arneria)": {
+      "description": "<p>당신은 도움 행동을 사용하여 말보다 당신의 목소리를 이해하고 당신의 얼굴을 볼 수 있는 모든 생물체(예: 다른 마우스나 @UUID[Compendium.beast-world.homeland-traits.Item.dEr89xXMQDQJL9Tt]{Twitch Literacy} 특성을 사용하여 가르친 생물체)를 도울 수 있습니다.</p>"
+    },
     "Corked Armor (Vinyot)": {
-      "name": "Corked 갑옷 (Vinyot)"
+      "name": "Corked 갑옷 (Vinyot)",
+      "description": "<p>몸에 맞게 코르크 주머니가 박혀 있는 갑옷을 입을 수 있으며, 숙련된 갑옷을 코르크 갑옷으로 변환하는 데 24시간을 투자할 수 있습니다. 그것을 착용하는 동안 가슴 높이까지의 물은 어려운 지형으로 간주되지 않으며 통과하는 데 추가 이동 비용이 들지 않습니다. 당신의 속도는 갑옷에 의해 감소되지 않으며, 갑옷은 수영을 위한 육상 판정에 영향을 미치지 않습니다.</p>"
+    },
+    "Court Tinkers (Allemance)": {
+      "description": "<p>Tinker의 도구 사용에 능숙합니다. 1분만 연구하면 잡을 수 있거나 주요 움직이는 부품을 볼 수 있는 모든 장치를 작동하는 방아쇠나 수단을 식별할 수 있습니다.</p>"
     },
     "Cove Lineage": {
+      "name": "코브 혈통 - Cove Lineage",
       "description": "<p><em><strong>수생</strong></em>. 당신의 수영 속도는 이동 속도와 같습니다. 공기와 물을 모두 호흡할 수 있습니다.</p><p><em><strong>산성 비늘</strong></em>. 산성 피해에 저항이 있습니다.</p><p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.KKAkAur7CabVNXTK]{산성 숨결}. </strong></em>당신의 브레스 웨폰은 물체를 파괴하는 목표형 산성 분출입니다. 행동으로, 30피트 이내에서 볼 수 있는 크리처나 물체 하나를 겨냥해 집중된 산성 분사구를 내뿜을 수 있으며, 명중 시 5피트 반경에 튑니다. 대상과 그 주변 5피트 이내의 각 크리처와 물체는 DC 8 + 당신의 숙련 보너스 + 당신의 체력 또는 민첩 수정치(선택)에 대한 민첩 내성 굴림을 해야 합니다. 대상은 실패 시 4d4 산성 피해를 받고, 성공 시 절반 피해를 받습니다. 대상 주변 5피트 이내의 각 크리처와 물체는 실패 시 절반 피해를 받고, 성공 시 피해를 받지 않습니다. 산성 숨결은 물체와 구조물에 두 배 피해를 줍니다.</p><p>아래의 산성 숨결 표에 따라 피해, 사거리, 튀는 반경이 모두 증가합니다. 당신은 숙련 보너스와 같은 횟수만큼 이 브레스 웨폰을 사용할 수 있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p><table style=\"width:100%\" border=\"1\"><tbody><tr><td style=\"width:100%\" colspan=\"4\"><p><span style=\"text-decoration:underline\"><em><strong><span style=\"text-decoration:underline\">산성 숨결</span></strong></em></span></p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>레벨</p></td><td style=\"text-align:center;width:19.1542%\"><p>사거리</p></td><td style=\"text-align:center;width:24.1294%\"><p>피해</p></td><td style=\"text-align:center;width:41.0448%\"><p>튀는 반경</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>1레벨</p></td><td style=\"text-align:center;width:19.1542%\"><p>30피트</p></td><td style=\"text-align:center;width:24.1294%\"><p>4d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>5피트</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>5레벨</p></td><td style=\"text-align:center;width:19.1542%\"><p>60피트</p></td><td style=\"text-align:center;width:24.1294%\"><p>8d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>10피트</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>11레벨</p></td><td style=\"text-align:center;width:19.1542%\"><p>90피트</p></td><td style=\"text-align:center;width:24.1294%\"><p>16d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>15피트</p></td></tr><tr><td style=\"text-align:center;width:15.6716%\"><p>17레벨</p></td><td style=\"text-align:center;width:19.1542%\"><p>120피트</p></td><td style=\"text-align:center;width:24.1294%\"><p>32d4</p></td><td style=\"text-align:center;width:41.0448%\"><p>20피트</p></td></tr></tbody></table><p> </p>"
     },
     "Deadman's Drop (Al'ar)": {
-      "name": "Deadman's 낙하 (Al'ar)"
+      "name": "Deadman's 낙하 (Al'ar)",
+      "description": "<p>당신은 목수 도구 사용에 능숙합니다. 나무 벽과 적절한 공간이 있는 방에 있을 때, 민첩성(목수 도구) 검사를 수행하는 데 8시간을 소비하여 양쪽에 6인치의 비밀 칸을 만들 수 있습니다. 이 구획을 발견하려면 목수의 도구 검사와 동일한 DC의 지능(조사) 검사가 필요합니다. 또한, 비밀 문이나 칸막이를 찾기 위해 지능(조사) 검사를 굴릴 때 이점이 있습니다.</p>"
+    },
+    "Dittoed Rumors (Allemance)": {
+      "description": "<p>위조 키트 사용에 능숙합니다. 또한 누군가를 사칭하기 위해 카리스마(기만) 검사를 하면 숙련된 것으로 간주되어 일반 숙련도 보너스 대신 숙련도 보너스의 두 배를 검사에 추가합니다.</p>"
     },
     "Drifting Drop (Al'ar)": {
       "name": "Drifting 낙하 (Al'ar)",
@@ -49,98 +77,243 @@
       "name": "Drifting 낙하 (Vinyot)",
       "description": "<p>1분 동안 준비하면, 발목에 돛(또는 한 변이 최소 10피트인 다른 사각 천)을 묶을 수 있습니다. 이 천을 두른 채 나머지 두 모서리를 양손으로 잡으면, 매 라운드 60피트씩 떨어지며 낙하 피해를 받지 않습니다. 행동으로 천을 벗을 수 있습니다.</p>"
     },
+    "Dune Dagger (Arneria)": {
+      "name": "듄 대거(아르네리아) - Dune Dagger (Arneria)",
+      "description": "<p><span class=\"fontstyle0\">자신의 턴에 1레벨 이상의 주문을 시전한 직후 단검으로 무기 공격을 할 수 있습니다.</span></p>"
+    },
     "Dweller in Leaves (Canopy)": {
+      "name": "나뭇잎 속의 거주자(캐노피) - Dweller in Leaves (Canopy)",
       "description": "<p>당신은 평생 나무 꼭대기 너머와 저 멀리를 바라보며 살아왔습니다. 안경을 쓴다면 머리끈의 중요성을 일찍 배웠을 것입니다! 1마일 너머도 어려움 없이 볼 수 있으며, 마치 자신에게서 100피트 이내의 것을 보는 것처럼 세밀한 부분까지 분간할 수 있습니다. 또한 손잡이를 이용해 몸을 휘둘러 위험한 추락을 안전한 도약으로 바꿀 수 있습니다. 당신은 곡예 숙련이 있습니다. 최소 10피트 이상 떨어졌고 붙잡을 만한 적절한 지점(나뭇가지나 바위 돌출부 같은 것)이 있다면, DC 12에 떨어진 10피트마다 1씩 더한 민첩(곡예) 판정을 굴릴 수 있습니다. 판정에 성공하면 손잡이를 중심으로 몸을 돌려 추락한 거리만큼 곧은 방향으로 앞으로 이동합니다. 이렇게 하면 낙하 피해를 계산할 때의 거리도 무효화됩니다.</p>"
     },
     "Find a Friend in Fauna (Arneria)": {
-      "name": "Find a 친구 - in Fauna (Arneria)"
+      "name": "Find a 친구 - in Fauna (Arneria)",
+      "description": "<p>주위를 1분 동안 관찰하면 1마일 이내에서 가장 높은 CR 야수의 종류와 수, 위치까지의 방향을 식별할 수 있습니다. 또한 포식자나 침입자로부터 도망치기 위해 생물이 예기치 않게 움직여야 했는지 여부도 알 수 있습니다. 이 특성을 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Flatland Lineage": {
+      "name": "평지 혈통 - Flatland Lineage",
       "description": "<p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.IL0OoG50s9hwc8gx]{번개의 아크}</strong></em>. 행동으로 한 줄기 빛을 통해 목적지와 자신을 연결해 최대 60피트 떨어진 볼 수 있는 비어 있는 공간으로 순간이동할 수 있습니다. 이 능력을 한 번 사용하면 짧은 휴식이나 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p><p><em><strong>절연 비늘</strong></em>. 번개 피해에 저항이 있습니다.</p><p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.yBSZ47CAKS6JRn1v]{번개 숨결} </strong></em>당신의 브레스 웨폰은 적들이 무기를 떨어뜨리게 만드는 번개 화살입니다. 행동으로 30피트 길이, 5피트 너비의 선을 이루는 번개를 내뿜을 수 있습니다. 선 안의 각 크리처는 DC 8 + 당신의 숙련 보너스 + 당신의 체력 또는 민첩 수정치(선택)에 대한 민첩 내성 굴림을 해야 합니다. 실패하면 크리처는 2d10 번개 피해를 받고 들고 있던 금속 물체를 떨어뜨립니다. 내성 굴림에 성공하면 절반 피해만 받고 들고 있던 물체를 떨어뜨리지 않습니다.</p><p>아래의 번개 숨결 표에 따라 피해와 길이가 증가합니다. 당신은 숙련 보너스와 같은 횟수만큼 이 브레스 웨폰을 사용할 수 있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p><table style=\"width:100%;height:102px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"width:100%;height:17px\" colspan=\"3\"><p><span style=\"text-decoration:underline\"><em><strong><span style=\"text-decoration:underline\">번개 숨결</span></strong></em></span></p></td></tr><tr style=\"height:17px\"><td style=\"width:25.1673%;height:17px;text-align:center\"><p>레벨</p></td><td style=\"width:33.763%;height:17px;text-align:center\"><p>사거리</p></td><td style=\"width:41.0696%;height:17px;text-align:center\"><p>피해</p></td></tr><tr style=\"height:17px\"><td style=\"width:25.1673%;height:17px;text-align:center\"><p>1레벨</p></td><td style=\"width:33.763%;height:17px;text-align:center\"><p>30피트</p></td><td style=\"width:41.0696%;height:17px;text-align:center\"><p>2d10</p></td></tr><tr style=\"height:17px\"><td style=\"width:25.1673%;height:17px;text-align:center\"><p>5레벨</p></td><td style=\"width:33.763%;height:17px;text-align:center\"><p>60피트</p></td><td style=\"width:41.0696%;height:17px;text-align:center\"><p>4d10</p></td></tr><tr style=\"height:17px\"><td style=\"width:25.1673%;height:17px;text-align:center\"><p>11레벨</p></td><td style=\"width:33.763%;height:17px;text-align:center\"><p>90피트</p></td><td style=\"width:41.0696%;height:17px;text-align:center\"><p>8d10</p></td></tr><tr style=\"height:17px\"><td style=\"width:25.1673%;height:17px;text-align:center\"><p>17레벨</p></td><td style=\"width:33.763%;height:17px;text-align:center\"><p>120피트</p></td><td style=\"width:41.0696%;height:17px;text-align:center\"><p>16d10</p></td></tr></tbody></table>"
     },
     "Forge Bequeathed (Oria)": {
-      "name": "대장간 - Bequeathed (Oria)"
+      "name": "대장간 - Bequeathed (Oria)",
+      "description": "<p>일반적으로 필요한 것보다 20% 적은 재료로 값비싼 부품을 사용하여 주문을 시전할 수 있습니다. 유리하게 마법 아이템을 만드는 데 사용되는 능력 검사를 굴리면 그렇게 하는 데 드는 금 재료 비용이 20% 낮아집니다.</p>"
     },
     "Glacier Lineage": {
+      "name": "빙하 혈통 - Glacier Lineage",
       "description": "<p><span class=\"fontstyle0\"><em><strong>Tunneling Horns</strong></em>. </span><span class=\"fontstyle2\">당신의 굴착 속도는 15피트입니다.</span></p><p><span class=\"fontstyle0\" style=\"color:#242021\"><em><strong>Icy Scales</strong></em>. </span><span class=\"fontstyle2\">냉기 피해에 저항이 있습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;color:#191813;font-size:13px\"><span class=\"fontstyle0\" style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;color:#242021\"> <em><strong>@UUID[Compendium.beast-world.species-traits.Item.cScQjaBAXpDmflAF]{냉기 숨결} </strong></em></span><span class=\"fontstyle2\" style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000\">당신의 브레스 웨폰은 초냉각된 공기의 포효로 얼음 벽을 만들어 냅니다. 행동으로, 30피트 이내에 있는 한 변 10피트의 정사각형 판 두 개로 이루어진 벽을 세울 수 있습니다. 각 판은 다른 판과 맞닿아 있어야 합니다. 벽의 두께는 1인치이며 1분 동안 지속됩니다. 벽이 나타났을 때 크리처의 공간을 가로지르면, 그 범위 안의 크리처는 벽의 한쪽으로 밀려나고 DC 8 + 당신의 숙련 보너스 + 당신의 체력 또는 민첩 수정치(선택)에 대한 건강 내성 굴림을 해야 합니다. 크리처는 실패 시 1d8 냉기 피해를 받고, 성공 시 절반의 피해를 받습니다.</span></p><p style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;color:#191813;font-size:13px\"><span class=\"fontstyle2\" style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000\">벽은 피해를 받아 손상될 수 있는 물체입니다. 각 10피트 구역은 AC 12와 HP 5를 가지며, 화염 피해에 취약합니다. 벽의 피해, 사거리, 크기, 지속 시간은 아래의 냉기 숨결 표에 따라 증가합니다. 당신은 숙련 보너스와 같은 횟수만큼 이 브레스 웨폰을 사용할 수 있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</span></p><table style=\"user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:397px;border-top:1px solid var(--color-border-light-tertiary);border-bottom:1px solid var(--color-border-light-tertiary);color:#191813;font-size:13px;height:102px\" border=\"1\"><tbody><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:395.999px;height:17px\" colspan=\"4\"><p><span style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;text-decoration-line:underline\"><strong style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000\">냉기 숨결</strong></span></p></td></tr><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:50.9844px;height:17px;text-align:center\"><p>레벨</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:102.75px;height:17px;text-align:center\"><p>사거리</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:94.312px;height:17px;text-align:center\"><p>피해</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:147.953px;height:17px;text-align:center\"><p>보드 수</p></td></tr><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:50.9844px;height:17px;text-align:center\"><p>1레벨</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:102.75px;height:17px;text-align:center\"><p>30피트</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:94.312px;height:17px;text-align:center\"><p>2d10</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:147.953px;height:17px;text-align:center\"><p>1</p></td></tr><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:50.9844px;height:17px;text-align:center\"><p>5레벨</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:102.75px;height:17px;text-align:center\"><p>60피트</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:94.312px;height:17px;text-align:center\"><p>4d10</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:147.953px;height:17px;text-align:center\"><p>2</p></td></tr><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:50.9844px;height:17px;text-align:center\"><p>11레벨</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:102.75px;height:17px;text-align:center\"><p>90피트</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:94.312px;height:17px;text-align:center\"><p>8d10</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:147.953px;height:17px;text-align:center\"><p>3</p></td></tr><tr style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;height:17px\"><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:50.9844px;height:17px;text-align:center\"><p>17레벨</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:102.75px;height:17px;text-align:center\"><p>120피트</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:94.312px;height:17px;text-align:center\"><p>16d10</p></td><td style=\"box-sizing:border-box;user-select:text;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 0000;width:147.953px;height:17px;text-align:center\"><p>5</p></td></tr></tbody></table>"
     },
+    "Gliding Descent (Vinyot)": {
+      "name": "글라이딩 디센트(비뇨트) - Gliding Descent (Vinyot)",
+      "description": "<p>보통 또는 강한 바람에서 @UUID[Compendium.beast-world.homeland-traits.Item.fFB1uTHDyQImxybB]{Drifting Drop} 특성을 사용하는 동안 이동 비용 없이 해당 방향으로 속도를 높일 수 있습니다. 강한 바람이 불 때는 라운드당 0~60피트 사이에서 낙하 속도를 선택할 수도 있습니다.</p>"
+    },
+    "Hammer Masters (Al'ar)": {
+      "name": "해머 마스터(알아르) - Hammer Masters (Al'ar)",
+      "description": "<p>당신은 워해머에 능숙하며, 워해머로 물체에 두 배의 피해를 줍니다.</p>"
+    },
     "Holders of History (Allemance)": {
-      "name": "Holders 의 - History (Allemance)"
+      "name": "Holders 의 - History (Allemance)",
+      "description": "<p>당신은 역사 스킬에 능숙합니다. Orian, Allemagnian 또는 cervine의 가계를 식별하려고 할 때 지능(역사) 검사를 굴리는 것이 유리합니다. 해당 체크에 성공하면 다음 시간 동안 해당 생물에 대해 카리스마 체크를 굴립니다.</p>"
     },
     "Horseshoes in the Drifts (Oria)": {
-      "name": "말shoes - in the Drifts (Oria)"
+      "name": "말shoes - in the Drifts (Oria)",
+      "description": "<p>당신은 북극 환경에서 이루어지는 지혜(생존) 판정에 이점을 얻습니다. 눈과 얼음은 당신에게 어려운 지형이 아닙니다. 또한, 당신은 투창에 능숙하며, 당신보다 한 단계 이상 작은 대상에 대한 투창 공격에 유리합니다.</p>"
     },
     "Hunter Legacy (Allemance)": {
-      "name": "사냥꾼 - Legacy (Allemance)"
+      "name": "사냥꾼 - Legacy (Allemance)",
+      "description": "<p>던전이 세상에 등장하기 오래 전에, 골목 말들은 조국의 가장 어두운 곳에서 뱀파이어들을 불태웠습니다. 당신의 가족 중 누군가가 이 끝없는 사냥에 참여했고 당신은 그들의 정신에 영향을 미치는 힘으로부터 자신을 보호하기 위한 몇 가지 비밀 기술을 배웠습니다. 당신은 매혹에 대한 내성 굴림에 이점이 있습니다.</p>"
+    },
+    "Ingenuity In Artificing (Oria)": {
+      "name": "인공적인 독창성(오리아) - Ingenuity In Artificing (Oria)",
+      "description": "<p>오릭 소는 동족들 사이에서 비법을 공유합니다. 24시간 동안 작업하면 깨진 마법 아이템을 수리하여 마법 속성을 복원할 수 있습니다. 사용되는 도구는 항목 유형에 따라 다릅니다. 예를 들어, 직원은 민첩성(목각사의 도구) 검사를 요구합니다. 비용과 DC는 마법 아이템의 희귀도에 따라 결정됩니다. 성공적인 확인을 통해 Arcana에 대한 손상된 연결을 복구하고 항목의 마법을 복원할 수 있습니다. 파손되었을 때와 동일한 횟수의 충전 또는 사용을 유지합니다. 체크 실패 시 재료가 소모되지 않으나, 복원을 시도할 때마다 아이템 수리 시간이 2배로 늘어납니다. 실패했습니다.</p><table><tbody><tr><td><p>Rarity__FVTTTOK_7 __</p></td><td><p>비용</p></td><td><p>수리 DC</p></td></tr><tr><td><p>공통</p></td><td><p>25 gp</p></td><td><p>18</p></td></tr><tr><td><p>특이함</p></td><td><p>100 gp</p></td><td><p>20</p></td></tr><tr><td><p>드문</p></td><td><p>1.000 gp</p></td><td><p>25</p></td></tr><tr><td><p>매우 드물다</p></td><td><p>10.000 gp</p></td><td><p>30</p></td></tr><tr><td><p>전설</p>__FVTT TOK_78__</td><td><p>-</p></td><td><p>불가능</p></td></tr></tbody></table>__F VTTTOK_32____ FVTTTOK_46__"
     },
     "Insistent Strike (Allemance)": {
-      "name": "Insistent 강타 (Allemance)"
+      "name": "Insistent 강타 (Allemance)",
+      "description": "<p>Allemagnian 송곳니 징집병의 병사들은 적의 허를 찌르는 잔혹한 백스윙으로 실패한 공격을 추적하는 훈련을 받았습니다. 자신의 턴에 라운드당 한 번, 근접 무기 공격으로 빗나가면 대상에게 해당 무기 유형의 1d4 피해를 입힐 수 있습니다(다른 모든 목적에서는 여전히 빗나가는 공격입니다). 이 능력을 사용하면 근접 무기 공격으로 적중할 때까지 동일한 대상에 대해 다시 사용할 수 없습니다.</p>"
+    },
+    "Instructive Muscle (Al'ar)": {
+      "name": "교육적인 근육(알아르) - Instructive Muscle (Al'ar)",
+      "description": "<p>당신은 육상 기술에 능숙합니다. 근력(운동) 판정에 성공하면 당신과 언어를 공유하고 당신을 지켜보고 있는 생명체에게 그 방법을 보여줄 수 있습니다. 동일한 작업을 수행하기 위해 근력(운동) 판정을 할 때 해당 생물은 능숙한 것으로 간주됩니다.</p>"
     },
     "Jury-Rig (Vinyot)": {
       "description": "<p>기계적 문제에 대한 해결책을 즉석에서 만들어 내고 상황 변화에 맞춰 적응할 수 있습니다. 당신은 다른 사람 눈에는 잡동사니처럼 보일지 모를, 하지만 그 누구에게도 대체할 수 없는 도구 꾸러미를 지니고 있습니다. 1분간의 숙고 끝에 지능 판정을 굴려 아래 효과 중 하나를 수행할 수 있습니다. 각 효과의 DC는 아래의 Jury-Rig 표에 나와 있습니다.</p><p></p><table><tbody><tr><td data-colwidth=\"687\"><p><strong>효과</strong></p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\"><strong>DC</strong></p></td></tr><tr><td data-colwidth=\"687\"><p>문이나 해치를 열면 1d6 타격, 관통, 또는 참격 피해(선택)를 주는 함정이 발동합니다. 함정을 발견하거나 해제하는 DC는 지능 판정 결과와 같습니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">12</p></td></tr><tr><td data-colwidth=\"687\"><p>개조한 대형 이하 탈것을 24시간 동안 방수 처리해 물 위에 뜰 수 있게 합니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>개조한 대형 이하 물체의 파괴 DC를 1시간 동안 2d4만큼 높입니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">15</p></td></tr><tr><td data-colwidth=\"687\"><p>다음 1시간 동안 개조한 무기로 구조물을 공격해 처음 명중한 한 번은 치명타로 간주됩니다.</p></td><td data-colwidth=\"30\" style=\"width:10%\"><p style=\"text-align:center\">20</p></td></tr></tbody></table>"
     },
     "Keepsake of a Lost Home (Broken World)": {
-      "name": "Keepsake 의 - a Lost Home (Broken World)"
+      "name": "Keepsake 의 - a Lost Home (Broken World)",
+      "description": "<p>짐승세계에 도착한 형제들은 각자 예전 집에서 귀중한 물건을 가지고 왔습니다. 이 독특한 “형제 골동품”은 알려진 어떤 수단으로도 복제할 수 없지만, 전 세계적으로 수천 개가 유통되고 있습니다. 대부분의 형제들은 한때 겪었던 어려움을 상기시키기 위해 개인 골동품을 갖고 있습니다.</p><p>GM과 협력하여 골동품을 만드세요. 골동품은 일반적으로 1990년대 현실 세계의 대체 버전에서 가져온 휴대용 개체입니다. 때로는 실제 제품보다 휴대성이 뛰어나거나 효율적인 기능을 수행할 수도 있습니다(예: 태양열 토스터는 매우 흥미로운 제품입니다). 유용성은 상황에 따라 달라져야 하지만 골동품이 너무 멋질 필요는 없습니다! 캔트립이나 1레벨 주문을 재현할 수 있는 실제 물체는 훌륭한 골동품이 됩니다.</p><p>그 기능이 캔트립의 효과를 재현하는 경우 산성 버튼(배터리) 없이 작동합니다. 부서진 세계는 해체되기 전에 다양한 종류의 동력원을 갖고 있었습니다. 1레벨 주문의 효과를 재현하는 경우, 골동품을 직사광선에 8시간 동안 놓아 산성 버튼을 재충전하기 전에 한 번 사용할 수 있습니다. GM은 캠페인 기간 동안 골동품에 대해 더 많은 산성 버튼을 구매하여 재충전하기 전에 더 많은 용도를 허용할 수 있습니다. 그러나 귀하의 골동품은 직사광선 아래에서 8시간마다 1개의 산성 버튼만 재충전할 수 있습니다.</p><p>아래의 골동품 표는 적합한 형제 골동품에 대한 몇 가지 제안을 제공합니다.</p><table style=\"width:100%;height:133px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p><strong>Curio 이름</strong></p></td><td style=\"width:17.3391%;height:17px\"><p><strong>실제 개체</strong></p></td><td style=\"width:65.8904%;height:17px\"><p><strong>Spell 효과</strong></p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>미러 전구</p></td><td style=\"width:17.3391%;height:17px\"><p>손전등</p></td><td style=\"width:65.8904%;height:17px\">__FVT TTOK_40__@Compendium[dnd5e.spells.Bnn9Nzajixvow9xi]{Light}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>제물 실린더</p></td><td style=\"width:17.3391%;height:17px\"><p>토치</p></td><td style=\"width:65.8904%;height:17px\">_ _FVTTTOK_54__@Compendium[dnd5e.spells.5SuJewoa1CRWaj1F]{Burning Hands}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>충격 바늘</p></td><td style=\"width:17.3391%;height:17px\"><p>Taser</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.EOmsUcFQJTfG2oio]{Fire Bolt}(번개 거래 손상)</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>베이퍼 키트</p></td><td style=\"width:17.3391%;height:17px\"><p>휴대용 가습기</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.a3XtAO5n2GrqiAh5]{Create or Destroy Water}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>Nightwatch 스테이크</p></td><td style=\"width:17.3391%;height:17px\"><p>모션 감지기</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.7p9IuWrSWFgfyQo2]{Alarm}</p></td></tr><tr style=\"height:17px\"><td style=\"width:16.1637%;height:17px\"><p>재사용 가능한 조명 지팡이</p></td><td style=\"width:17.3391%;height:17px\"><p>리필 가능 글로우스틱</p></td><td style=\"width:65.8904%;height:17px\"><p>@Compendium[dnd5e.spells.nqBDWkVOfcGZt4YU]{Faerie Fire}</p></td>__FVTTTOK_ 113__<tr style=\"height:14px\"><td style=\"width:16.1637%;height:14px\"><p>이어버그</p></td><td style=\"width:17.3391%;height:14px\"><p>이어피스 그리고 옷깃mic</p></td><td style=\"width:65.8904%;height:14px\"><p>@Compendium[dnd5e.spells.icZokbgV1jIMpNCv]{Message}</p></td></tr></tbody></table>"
+    },
+    "Kolaçan (Arneria)": {
+      "description": "<p>눈에 보이는 인식하지 못하는 대상을 따라가는 민첩성(스텔스) 검사에 유리합니다.</p>"
+    },
+    "Lens Master (Arneria)": {
+      "name": "렌즈마스터(아르네리아) - Lens Master (Arneria)",
+      "description": "<p>유리 송풍기 도구 및 보석 세공 도구 사용에 능숙합니다. 행동을 통해 마법이 아닌 식물이나 보석의 시장 가치를 정확하게 평가할 수 있습니다. 1분만 공부하면 보석, 유리, 렌즈(예: 보석이 박힌 지팡이나 무기)로 눈에 띄는 마법 아이템도 식별할 수 있습니다. 또한 일반적인 1시간이 아닌 1분의 관찰로 자신이나 10피트 내의 아군이 이러한 마법 아이템에 적응할 수 있습니다.</p>"
+    },
+    "Lesser Lineage": {
+      "name": "하급 혈통 - Lesser Lineage",
+      "description": "<p>그들의 이미지대로 만들어졌고 이제 그들의 오만함을 일깨워주는 코볼트는 그들의 용 창조자의 특성을 보여줍니다.</p>\n<p>산, 불, 번개, 냉기 중 하나를 선택하세요. 해당 유형의 피해를 받으면 피해가 1d6만큼 감소합니다. 이 감소는 <strong>9번째 수준</strong>에서 <strong> 2d6 </strong> 및 <strong>3d6 </strong>at<strong> 17번째 수준</strong>.</p>로 증가합니다."
     },
     "Life Among Others": {
-      "name": "생명 - Among Others"
+      "name": "생명 - Among Others",
+      "description": "<p>쥐 문화는 수세기 전에 Arneria에서 출발한 것으로 정의됩니다. 다른 고향의 종들 사이에서 여러 세대에 걸친 생명과 그들의 마법에 대한 타고난 적응은 그들을 새로운 서식지에 원활하게 혼합시켰습니다. Arneria 출신이라면 <em>@UUID[Compendium.beast-world.homeland-traits.Item.VQeVKtmAr1urXCh3]{Blackwild Feedback}</em> 고향 특성을 가지고 있습니다. 다른 고향 출신이라면 쥐를 제외한 모든 종의 목록에서 고향 특성을 선택할 수 있습니다.</p>"
+    },
+    "Light-Touched Farmhand (Al'ar)": {
+      "name": "빛의 손길을 받은 농장 일꾼(알아르) - Light-Touched Farmhand (Al'ar)",
+      "description": "<p>세대에 걸쳐 Al'ari 소의 식습관과 습관으로 인해 본토 사촌보다 몸집이 작아졌습니다. 당신은 스텔스 스킬에 능숙합니다. 또한 육지를 여행할 때 추적당하는 것을 피하기 위해 민첩성(스텔스) 검사를 굴립니다.</p>"
     },
     "Ligonine Focus (Loamlink)": {
-      "name": "리고닌 집중 (Loamlink)"
+      "name": "리고닌 집중 (Loamlink)",
+      "description": "<p>당신은 선택한 장인의 도구 하나와 신비, 역사, 의학, 자연, 종교 기술 중 하나에 능숙합니다. 24시간을 중단 없이 공부하고 연습했다면 d20을 2개 굴려서 더 높은 결과를 저장하세요. 다음 7일 이내에 언제든지 선택한 장인의 도구나 기술에 대한 능력 검사 결과를 미리 굴린 결과로 대체할 수 있습니다. 판정 전에 그렇게 하도록 선택해야 하며 이 결과는 한 번만 사용할 수 있습니다.</p>"
+    },
+    "Like Herding Cats (Al'ar)": {
+      "description": "<p>알라르의 개들은 대규모 프로젝트를 위해 서로 다른 세력을 하나로 모으는 일에서 틈새 시장을 찾았습니다. 조정이 불가능한 부분을 조정하실 수 있습니다. 한 번에 두 아군의 도움 행동을 사용하여 스킬 체크를 굴릴 수 있습니다. 두 명의 아군이 당신이 수행하는 스킬 체크에 대해 도움말 액션을 사용하는 경우 해당 체크를 수행하는 데 사용하는 d20 중 하나를 다시 굴릴 수 있습니다.</p>"
+    },
+    "Mail Runner (Arneria)": {
+      "name": "메일러너(아르네리아) - Mail Runner (Arneria)",
+      "description": "<p>균형을 유지하거나 넘어지는 것을 방지하기 위해 민첩(곡예) 검사 또는 민첩 내성 굴림을 할 때 d20 결과 9 이하를 10으로 처리할 수 있습니다. 또한 탐색 목적으로 수행된 지혜 검사에 이점이 있습니다.</p>"
+    },
+    "Mosquito in the Crowd (Oria)": {
+      "name": "군중속의 모기(오리아) - Mosquito in the Crowd (Oria)",
+      "description": "<p>군중 속에 숨기 위해 민첩(스텔스) 검사를 하면 숙련된 것으로 간주되며 일반 숙련도 보너스 대신 숙련도 보너스가 검사에 두 배로 추가됩니다.</p><p>또한 숨겨진 상태에서 단검이나 단검으로 생물을 공격하면 다음 턴이 시작될 때까지 공격의 피해나 효과를 지연하도록 선택할 수 있습니다. 생물은 효과가 발생할 때만 공격을 인식하게 됩니다. 이 능력을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Mountain to the Isles (Al'ar)": {
+      "description": "<p>두 개의 장인 도구, 두 개의 악기 또는 두 가지의 조합에 능숙합니다.</p>"
     },
     "Mouse Among Giants (Oria)": {
-      "name": "생쥐 - Among Giants (Oria)"
+      "name": "생쥐 - Among Giants (Oria)",
+      "description": "<p>크기 범주가 하나 이상 더 큰 생물이 절반 엄폐를 제공한다면 대신 4분의 3 엄폐를 갖게 됩니다.</p>"
+    },
+    "Netfisher Noodle (Al'ar)": {
+      "name": "그물낚시 국수 (알아르) - Netfisher Noodle (Al'ar)",
+      "description": "<p>당신은 인터넷에 능숙합니다. 그물의 기능을 개선하는 데 15gp와 8시간을 투자하면 탈출하기가 더 어려워지고 파괴하기가 더 어려워집니다. 탈출 DC는 15로 증가하고, 생물은 스스로 풀려나기 위해 그물에 10의 절단 피해(AC 15)를 가해야 합니다.</p>"
     },
     "Obsidian Bauble (Oria)": {
+      "name": "흑요석 값싼 물건(오리아) - Obsidian Bauble (Oria)",
       "description": "<p>대장장이 도구 숙련이 있습니다. 대장간과 흑요석 조각이 있다면, 8시간과 30gp를 들여 대장장이 도구로 브로치나 손에 쥐는 장난감 같은 작은 장신구를 만들 수 있습니다. 그 장신구는 비범한 마법 물건입니다. 어떤 크리처든 1레벨 주문을 시전하는 동안 그 장신구를 만질 수 있으며, 그 주문은 아무 효과도 없이 물건 안에 저장됩니다. 행동으로 그 장신구를 들고 있는 크리처는 그 주문을 시전할 수 있습니다. 이렇게 하면 주문은 제거되고 장신구는 파괴됩니다.</p><p> </p>"
     },
+    "Peer Misdirection (Vinyot)": {
+      "description": "<p>비뇨트에서는 많은 테네브린이 거리 공연자로 활동합니다(때때로 마운트뱅크로 활동하기도 함). 당신은 당신의 말이 당신으로부터 최대 60피트 떨어진 어느 지점에서나 나오는 것처럼 들리도록 선택하여 목소리를 낼 수 있습니다. 또한 민첩(Sleight of Hand) 검사에 실패하면 청중의 규모에 따라 즉석에서 잘못된 방향을 설정하여 시도를 관찰하는 이외의 생물 수와 동일한 보너스를 굴림에 추가할 수 있으며(최대 보너스 +5) 잠재적으로 실패를 성공으로 바꿀 수 있습니다. 이런 식으로 보너스를 추가하면 긴 휴식을 마칠 때까지 다시 추가할 수 없습니다.</p>"
+    },
     "Pirate Drop (Al'ar)": {
-      "name": "Pirate 낙하 (Al'ar)"
+      "name": "Pirate 낙하 (Al'ar)",
+      "description": "<p>표류 낙하 특성을 사용하는 동안 한 손에 무기를 잡을 수 있으며, 이런 식으로 최소 10피트 떨어진 후 즉시 생물에 대해 근접 무기 공격을 가할 수 있습니다.</p>"
+    },
+    "Piratical Boldness (Al'ar)": {
+      "name": "해적의 대담함(알아르) - Piratical Boldness (Al'ar)",
+      "description": "<p>이동하는 동안 공격(기회 공격 등)에 맞으면 다음 턴이 끝나기 전에 수행되는 다음 공격 굴림에서 이점을 얻습니다.</p>"
     },
     "Position of Strength (Vinyot)": {
-      "name": "Position 의 - Strength (Vinyot)"
+      "name": "Position 의 - Strength (Vinyot)",
+      "description": "<p>귀하는 능력과 기술의 모든 조합을 사용하여 상품과 서비스 비용을 협상할 수 있습니다. 예를 들어, 여우 보디빌더는 다이어트 요법과 리프팅 기술에 대한 조언을 제공하고 지능(운동) 검사를 한 후 아침 식사 가격에서 은화 몇 푼을 할인해 달라는 친절한 요청을 통해 상인으로부터 할인을 받을 수 있습니다.</p>"
     },
     "Pounce of the North (Al'ar)": {
-      "name": "Pounce 의 - North (Al'ar)"
+      "name": "Pounce 의 - North (Al'ar)",
+      "description": "<p>생물을 향해 최소 20피트 직선으로 이동한 후 같은 턴에 첫 번째 무기 특성의 자연 무기 공격을 받으면 대상은 DC 8 + 숙련도 보너스 + 힘 수정치로 힘 내성 굴림에 성공해야 하며 그렇지 않으면 넘어지기 쉽습니다. 대상이 이미 엎드린 상태라면 대신 보너스 행동으로 자연 공격을 할 수 있습니다.</p>"
+    },
+    "Practiced Astralcrafter (Astral Sea)": {
+      "name": "숙련된 아스트랄크래프터(아스트랄해) - Practiced Astralcrafter (Astral Sea)",
+      "description": "<p>성기의 바다 구석구석을 가득 채우는 옅은 푸른 아스트라는 모든 세계의 모든 것을 담는 무한한 물질입니다. 모든 고의적인 생물은 아스트라를 조작할 수 있는 기본적인 힘을 가지고 있지만, 그 빛 속에서 자란 박쥐는 이 기술의 진정한 주인입니다. 아스트랄크래프팅을 수행하기 위해 지능 검사에 숙련도 보너스를 추가할 수 있습니다. 또한 @UUID[Compendium.beast-world.spells.Item.vQyqsUUDBYqd1Mdd]{Charles' Chunk} 캔트립을 알고 있습니다. 지능은 이 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Reader of Maps and Moss (Arneria)": {
-      "name": "Reader 의 Maps 및 - Moss (Arneria)"
+      "name": "Reader 의 Maps 및 - Moss (Arneria)",
+      "description": "<p>길을 찾고 개척하는 오래된 Beylik 소의 방식은 그들의 전통에 깊이 뿌리박혀 있습니다. 당신은 지도제작자의 도구에 능숙합니다. 지하 공간에서 자라는 식물을 1분 동안 만지면 표면으로 향하는 경로를 식별할 수 있습니다. 또한 식물로부터 300피트 이내의 인간형이나 야수를 제외한 가장 일반적인 생물 유형을 배웁니다. 이 능력을 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Royal Lancer (Allemance)": {
+      "name": "로얄 랜서(알레망스) - Royal Lancer (Allemance)",
+      "description": "<p><span style=\"font-family:Signika, sans-serif\">창 사용에 능숙해졌습니다. 탑승한 동안 당신은 5피트 내의 생물에 대한 명중 굴림에 불이익을 가하는 창의 속성을 무시합니다.</span></p>"
+    },
+    "Rules Lawyer (Vinyot)": {
+      "description": "<p>1레벨 주문 두 개를 선택하세요. 해당 주문은 모든 클래스의 주문 목록에 있습니다.</p>"
     },
     "Sand-Whispering Outcasts (Arneria)": {
-      "name": "Sand-속삭임 - Outcasts (Arneria)"
+      "name": "Sand-속삭임 - Outcasts (Arneria)",
+      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.cdrYKaFi98YWaBMw]{Vicious Mockery} 캔트립을 알고 있습니다. 카리스마는 주문에 대한 주문 시전 능력입니다. 자신의 차례에 공격 행동을 취하면 보너스 행동으로 악의적인 조롱을 발동할 수 있습니다. 이 특성을 사용하여 카리스마 보너스와 동일한 횟수만큼 캔트립을 보너스 행동으로 시전할 수 있으며, 긴 휴식을 마치면 소모된 모든 사용을 회복합니다.</p>"
+    },
+    "Schematic Sense (Oria)": {
+      "name": "도식적 감각(오리아) - Schematic Sense (Oria)",
+      "description": "<p>보너스 액션으로 지능(지각) 판정을 굴려 눈에 보이는 인공 구조물의 약점을 파악할 수 있습니다. DC는 구조물을 세우기 위해 굴린 장인의 도구 검사 결과와 같습니다. 몇 가지 DC 예가 아래에 나와 있습니다. 확인에 성공하면 다음 효과 중 하나를 선택합니다.</p><p>• 보이는 구조물 벽의 5피트 부분에 두 배의 피해를 입힙니다.</p><p>• 천장, 지지대 또는 기둥의 부분을 부수면 60피트 내에서 선택한 공간을 양쪽에 약 5피트 잔해 더미로 채우는 붕괴를 일으킬 수 있습니다. 잔해는 천장에 구멍을 남기고 공간에 있는 모든 생물에게 3d6의 타격 피해를 입히고 10피트 떨어질 때마다 1d6의 추가 피해를 입힙니다.</p><p>확인에 실패하면 동일한 구조의 결함을 다시 인식하기 위해 굴릴 수 없습니다.</p><p><strong>Schematic Sense 예</strong></p><table><tbody><tr><td><p>구조</p></td><td><p>인식 DC</p></td></tr><tr><td><p>헛간 또는 Hovel</p></td><td><p>10</p></td></tr><tr><td><p>Ho 사용</p></td><td><p>12</p></td></tr><tr><td><p>Lodge 주택 또는 저택</p></td><td><p>15</p></td></tr><tr><td><p>성 또는 던전</p></td><td><p>18</p></td></tr></tbody></table>"
     },
     "School Teacher (Al'ar)": {
-      "name": "학파 - Teacher (Al'ar)"
+      "name": "학파 - Teacher (Al'ar)",
+      "description": "<p>물 속에 사는 생물에게 @Compendium[dnd5e.spells.X8w9EzYLGc4vQ1H2]{Animal Messenger} 주문을 시전하면 숙련도 보너스와 동일한 주문을 가진 여러 생물에 영향을 미칠 수 있습니다. 이런 식으로 영향을 받는 각 생물에 대해 다른 메시지와 목적지를 지정할 수 있습니다.</p>"
+    },
+    "Self-Sufficient Herder (Oria)": {
+      "name": "자급자족하는 목동(오리아) - Self-Sufficient Herder (Oria)",
+      "description": "<p><span class=\"fontstyle2\">극한의 추운 날씨에서 생존하기 위해 체질 내성 굴림에 자동으로 성공합니다. 또한 당신은 생존에 능숙하며 드루이드 주문 목록에서 원하는 캔트립 하나를 알고 있습니다. 지혜는 당신의 주문 시전 능력입니다.</span></p>"
+    },
+    "Sense for Betrayers (Allemance)": {
+      "name": "배신자를 위한 감각(알레망스) - Sense for Betrayers (Allemance)",
+      "description": "<p>당신은 속임수에 능숙합니다. 당신은 또한 누군가가 당신에 대해 비밀스러운 동기를 갖고 있는지 판단하기 위해 지혜(통찰) 판정에 유리합니다. 또한 누군가와 8시간을 지속적으로 보내면 통찰 굴림에서 다음 24시간 동안 그 사람에 대한 비밀 동기를 감지하는 데 유리합니다.</p>"
     },
     "Shepherds on the Green (Allemance)": {
+      "name": "셰퍼드 온 더 그린(알레망스) - Shepherds on the Green (Allemance)",
       "description": "<p>턴당 한 번, 사거리 특성이 있는 무기로 공격해 크리처를 명중시키고 그 무기의 피해 주사위 중 하나에서 최대값이 나왔다면, 대상을 넘어뜨리려 시도할 수도 있습니다. 대상이 대형 이하라면, 무기에 대한 당신의 공격 보너스에 8을 더한 DC로 근력 또는 민첩 내성 굴림(선택)을 해야 합니다. 내성 굴림에 실패하면 대상은 넘어진 상태가 됩니다.</p>"
+    },
+    "Sniffing Out Deals (Vinyot)": {
+      "description": "<p>Vinyotians가 여러 세대에 걸쳐 가족에게 심어준 도시 상업 감각은 좋은 거래를 찾을 수 있는 능력을 제공했습니다. 대도시(인구 10,000명 이상)에서 마법이 아닌 아이템에 대한 최적의 가격을 찾기 위한 정보(조사) 검사에 유리합니다.</p>"
+    },
+    "Spiced Brews (Allemance)": {
+      "description": "<p>당신은 양조 용품에 능숙합니다.</p>"
+    },
+    "Spirited Discourse (Allemance)": {
+      "name": "의기양양한 담화(알레망스) - Spirited Discourse (Allemance)",
+      "description": "<p>성능 또는 설득 확인을 위해 카리스마 대신 지능을 대체할 수 있습니다. 또한 매혹을 피하기 위해 내성 굴림에 실패한 후 30피트 내의 다른 생물에 대한 반응으로 격려적인 말을 할 수 있습니다. 그렇게 하면 그 생물은 즉시 내성 굴림을 다시 할 수 있습니다. 이 특성을 사용하여 재굴림을 허용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p>"
+    },
+    "Stash Finder (Arneria)": {
+      "description": "<p>당신은 벽돌과 돌에 숨겨진 공간을 찾는 지능(조사) 검사에 유리합니다. 또한, 사람의 물건을 숨기기 위해 민첩성(Sleight of Hand) 검사를 하면 능숙한 것으로 간주되어 일반 숙련도 보너스 대신 숙련도 보너스의 두 배를 검사에 추가합니다.</p>"
     },
     "Stashed in a Foxhole (Vinyot)": {
       "description": "<p>당신이 돈을 쓸 수 없는 상황에 놓이더라도(예를 들어 도난당했거나 몰수당했다면), 항상 주변에 약간의 돈이나 그에 준하는 가치 있는 물건이 있습니다. 그것은 꿰매 넣은 주머니일 수도, 왼쪽 신발 굽일 수도, 혹은 가까운 사람에게서 받아낼 수 있는 빚의 형태일 수도 있습니다. 사용할 수 있는 금액은 당신의 레벨의 두 배와 같은 수의 금화입니다. 이 돈을 쓰면 당신의 총 금화에서 차감됩니다. 이 특성으로 “편리하게 꺼내 쓴” 돈은 주 수입원에 다시 접근할 수 있을 때까지 다시는 사용할 수 없습니다.</p><p></p>"
     },
     "Stonemovers and Surveyors (Surface)": {
-      "name": "Stonemovers 및 - Surveyors (Surface)"
+      "name": "Stonemovers 및 - Surveyors (Surface)",
+      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.bnjXlk13ZRJuf5d0]{Floating Disk} 주문을 한 번 시전할 수 있으며 긴 휴식을 마치면 다시 시전할 수 있습니다. 캐스팅하면 최대 1,000파운드를 운반할 수 있는 최대 10피트 너비의 디스크를 만들 수 있습니다. 최대 20피트 너비의 틈 위로 이동할 수 있지만 경사면을 넘어 이동하지 않으면 높이가 변경될 수 없습니다. 지능은 이 주문에 대한 주문 시전 능력입니다. 또한 건물 내부에 있을 때 건물 아래 최대 300피트까지 지하실이나 터널이 있다는 것을 감지할 수 있습니다.</p>"
     },
     "Strafing Strike (Arneria)": {
-      "name": "Strafing 강타 (Arneria)"
+      "name": "Strafing 강타 (Arneria)",
+      "description": "<p>당신은 여전히 ​​베일릭과 바얀을 똑같이 돌아다니는 사막 개과의 뺑소니 전술에 맞서 싸웁니다. 가벼운 무기를 사용하여 공격을 가할 때 더 큰 피해 주사위를 굴릴 수 있습니다. d4는 d6, d8, d10, d12가 됩니다(d12 또는 2d6 피해 굴림의 크기는 증가할 수 없습니다). 이 능력을 사용하면 최소 10피트 이상 움직일 때까지 다시 사용할 수 없습니다.</p>"
     },
     "Tenacious Curiosity (Allemance)": {
-      "name": "Tenacious 호기심 (Allemance)"
+      "name": "Tenacious 호기심 (Allemance)",
+      "description": "<p>Allemagnian 여가 학습에 대한 소의 고집은 엄청난 것입니다. 귀하의 지능 수정치는 언어 또는 도구 숙련도 훈련 목적으로 3보다 높은 것으로 간주됩니다.</p>"
     },
     "The Aurora Tradition (Oria)": {
       "name": "오로라의 전통 (Oria)",
       "description": "<p>당신이 볼 수 있거나 구성요소를 들을 수 있는 주문이 60피트 이내에서 시전되면, 그 주문의 학파를 자동으로 직감합니다. 또한 1레벨 이상의 주문을 시전할 때 그 주문을 다른 어떤 학파의 주문인 것처럼 취급할 수 있습니다. 이 특성을 이렇게 한 번 사용하면 긴 휴식을 마칠 때까지 다시 사용할 수 없습니다.</p><p> </p>"
     },
     "The Bouncer’s Kid (Vinyot)": {
-      "name": "문지기의 아이 (Vinyot)"
+      "name": "문지기의 아이 (Vinyot)",
+      "description": "<p>기도로 평생을 보내고 싶지 않은 소들은 다른 길을 찾습니다. 모든 Vinyotian 소 가족에는 도박장에서 중공업자로 일하는 삼촌이나 사촌이 있으며 그들은 그 직업에 대한 지식을 전수합니다. 귀하는 인식 기술에 능숙하며 원하는 게임 세트 하나를 선택할 수 있습니다. 당신은 당신이 능숙하게 사용할 수 있는 게임 세트로 부정 행위를 하는 사람을 발견하기 위한 지혜(지각) 검사에 유리합니다.</p>"
     },
     "The Oric Shipbuilding Tradition (Vinyot)": {
-      "name": "오릭 조선 전통 (Vinyot)"
+      "name": "오릭 조선 전통 (Vinyot)",
+      "description": "<p>차량을 제작하거나 제작을 감독할 때 차량이 견고하고 전체적인 프레임을 갖추고 있는지 확인해야 합니다. 차량이 이동 중에 생물이나 물체와 충돌할 때마다 차량이 받는 피해는 3d6만큼 감소합니다. 타격을 받은 생물이나 물체는 이런 방식으로 방지된 피해량과 동일한 타격 피해를 입습니다.</p>"
     },
     "The Training of Privilege (Al'ar)": {
-      "name": "특권의 수련 (Al'ar)"
+      "name": "특권의 수련 (Al'ar)",
+      "description": "<p>당신은 당신에게 호의를 베풀고 싶어하는 지식이 풍부한 지인 몇 명과 함께 어린 시절에 축복을 받았습니다. 당신은 이 열정적인 교사가 무료로 가르치는 하나의 기술이나 선택한 하나의 도구에 능숙합니다. 또한 실제로 돈에 빠져 자랐는지 여부에 관계없이 방송하는 연습도 있습니다. 당신이 만나는 사람에게 당신의 부를 확신시키기 위해 능력 판정을 할 때, d20 결과를 15로 처리하도록 선택할 수 있습니다. 판정을 하기 전에 그렇게 하기로 결정해야 하며, 이 능력은 누군가를 처음 만날 때만 사용할 수 있습니다. 첫인상은 오해하기 쉽습니다.</p>"
+    },
+    "Tusk Bequeathed (Oria)": {
+      "name": "물려받은 엄니(오리아) - Tusk Bequeathed (Oria)",
+      "description": "<p>첫 번째 전투 턴에 공격으로 자신보다 크기 범주가 하나 이상 큰 생물을 공격하면 공격은 생물에 2d6의 추가 피해를 입힙니다. 이 특성은 전투당 한 번만 사용할 수 있습니다.</p>"
+    },
+    "Twitch Literacy (Arneria)": {
+      "description": "<p>30일 동안 하루에 최소 2시간씩 연습하면 최소한 하나의 언어를 공유하는 생명체에게 귀하의 무성어를 이해하도록 가르칠 수 있습니다. 텔레파시 유대 주문의 공유 효과를 받고 있다면 대신 2시간 안에 이 기술을 가르칠 수 있습니다.</p>"
+    },
+    "Uncanny Navigator (Arneria)": {
+      "name": "언캐니 네비게이터(아르네리아) - Uncanny Navigator (Arneria)",
+      "description": "<p>더 높은 표면으로 올라갈 수 있는 상황에서 숨기기 동작을 사용할 때 민첩(스텔스)을 힘(운동)으로 대체할 수 있습니다.</p>"
+    },
+    "Underestimated (Vinyot)": {
+      "description": "<p>지능 점수가 13 이상인 생물에 대해 카리스마(기만) 검사를 할 때마다 당신은 숙련된 것으로 간주되고 검사에 대해 숙련도 보너스가 두 배가 됩니다.</p>"
+    },
+    "Versatile Rider (Allemance)": {
+      "description": "<p>탑승 중 보너스 동작으로 비상 하차에 대비할 수 있도록 몸의 위치를 ​​잡을 수 있습니다. 이 행동을 취한 후에는 공격에 대한 반응으로 5피트 이내의 빈 공간으로 내릴 수 있습니다. 추가적으로, 이족 보행 생물을 장착하는 데에는 이동 비용이 5피트입니다.</p>"
+    },
+    "Versatile Rider (Oria)": {
+      "name": "다재다능한 라이더(오리아) - Versatile Rider (Oria)",
+      "description": "<p>탑승 중 보너스 동작으로 비상 하차에 대비할 수 있도록 몸의 위치를 ​​잡을 수 있습니다. 이 행동을 취한 후에는 공격에 대한 반응으로 5피트 이내의 빈 공간으로 내릴 수 있습니다. 추가적으로, 이족 보행 생물을 장착하는 데에는 이동 비용이 5피트입니다.</p>"
     },
     "Volcano Lineage": {
+      "name": "화산 혈통 - Volcano Lineage",
       "description": "<p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.TXc1wEkY9QT6oIyQ]{과열된 꼬리바람}. </strong></em>당신의 비행 속도는 10피트 증가하며, 호버할 수 있습니다.</p><p><em><strong>불태우는 비늘</strong>. </em>화염 피해에 저항이 있습니다.</p><p><em><strong>@UUID[Compendium.beast-world.species-traits.Item.tKwyUM14B7ml0qVC]{화염 숨결}</strong></em><span style=\"font-family:var(--font-primary)\"><em style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\"><strong> </strong></em>당신의 브레스 웨폰은 다른 브레스 웨폰보다 더 넓은 범위를 초토화하는 화염 원뿔입니다. 행동으로, 15피트 원뿔 안에 화염을 내뿜을 수 있습니다. 그 범위 안의 각 크리처는 DC 8 + 당신의 숙련 보너스 + 당신의 체력 또는 민첩 수정치(선택)에 대한 민첩 내성 굴림을 해야 합니다. 실패하면 크리처는 3d6 화염 피해를 받고, 성공하면 절반의 피해를 받습니다.</span></p><p>아래의 화염 숨결 표에 따라 피해와 사거리가 증가합니다. 당신은 숙련 보너스와 같은 횟수만큼 이 브레스 웨폰을 사용할 수 있으며, 긴 휴식을 마치면 소모한 사용 횟수를 모두 회복합니다.</p><p></p><table><tbody><tr><td colspan=\"3\" data-colwidth=\"0,0,276\"><p><span style=\"text-decoration:underline\"><em><strong><span style=\"text-decoration:underline\">화염 숨결</span></strong></em></span></p></td></tr><tr><td style=\"text-align:center\"><p>레벨</p></td><td style=\"text-align:center\"><p>사거리</p></td><td style=\"text-align:center\" data-colwidth=\"276\"><p>피해</p></td></tr><tr><td style=\"text-align:center\"><p>1레벨</p></td><td style=\"text-align:center\"><p>15피트</p></td><td style=\"text-align:center\" data-colwidth=\"276\"><p>3d6</p></td></tr><tr><td style=\"text-align:center\"><p>5레벨</p></td><td style=\"text-align:center\"><p>30피트</p></td><td style=\"text-align:center\" data-colwidth=\"276\"><p>6d6</p></td></tr><tr><td style=\"text-align:center\"><p>11레벨</p></td><td style=\"text-align:center\"><p>60피트</p></td><td style=\"text-align:center\" data-colwidth=\"276\"><p>12d6</p></td></tr><tr><td style=\"text-align:center\"><p>17레벨</p></td><td style=\"text-align:center\"><p>90피트</p></td><td style=\"text-align:center\" data-colwidth=\"276\"><p>24d6</p></td></tr></tbody></table>"
     }
   }
