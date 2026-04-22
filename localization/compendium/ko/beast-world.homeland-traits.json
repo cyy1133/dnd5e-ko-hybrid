@@ -219,7 +219,7 @@
     },
     "Practiced Astralcrafter (Astral Sea)": {
       "name": "숙련된 아스트랄크래프터(아스트랄해) - Practiced Astralcrafter (Astral Sea)",
-      "description": "<p>성기의 바다 구석구석을 가득 채우는 옅은 푸른 아스트라는 모든 세계의 모든 것을 담는 무한한 물질입니다. 모든 고의적인 생물은 아스트라를 조작할 수 있는 기본적인 힘을 가지고 있지만, 그 빛 속에서 자란 박쥐는 이 기술의 진정한 주인입니다. 아스트랄크래프팅을 수행하기 위해 지능 검사에 숙련도 보너스를 추가할 수 있습니다. 또한 @UUID[Compendium.beast-world.spells.Item.vQyqsUUDBYqd1Mdd]{Charles' Chunk} 캔트립을 알고 있습니다. 지능은 이 주문에 대한 주문 시전 능력입니다.</p>"
+      "description": "<p>성기의 바다 구석구석을 가득 채우는 옅은 푸른 아스트라는 모든 세계의 모든 것을 담는 무한한 물질입니다. 모든 고의적인 생물은 아스트라를 조작할 수 있는 기본적인 힘을 가지고 있지만, 그 빛 속에서 자란 박쥐는 이 기술의 진정한 주인입니다. 아스트랄크래프팅을 수행하기 위해 지능 검사에 숙련도 보너스를 추가할 수 있습니다. 또한 @UUID[Compendium.beast-world.spells.Item.vQyqsUUDBYqd1Mdd]{찰스 청크 - Charles' Chunk} 캔트립을 알고 있습니다. 지능은 이 주문에 대한 주문 시전 능력입니다.</p>"
     },
     "Reader of Maps and Moss (Arneria)": {
       "name": "Reader 의 Maps 및 - Moss (Arneria)",
@@ -235,7 +235,7 @@
     },
     "Sand-Whispering Outcasts (Arneria)": {
       "name": "Sand-속삭임 - Outcasts (Arneria)",
-      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.cdrYKaFi98YWaBMw]{Vicious Mockery} 캔트립을 알고 있습니다. 카리스마는 주문에 대한 주문 시전 능력입니다. 자신의 차례에 공격 행동을 취하면 보너스 행동으로 악의적인 조롱을 발동할 수 있습니다. 이 특성을 사용하여 카리스마 보너스와 동일한 횟수만큼 캔트립을 보너스 행동으로 시전할 수 있으며, 긴 휴식을 마치면 소모된 모든 사용을 회복합니다.</p>"
+      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.cdrYKaFi98YWaBMw]{잔혹한 모욕} 캔트립을 알고 있습니다. 카리스마는 주문에 대한 주문 시전 능력입니다. 자신의 차례에 공격 행동을 취하면 보너스 행동으로 악의적인 조롱을 발동할 수 있습니다. 이 특성을 사용하여 카리스마 보너스와 동일한 횟수만큼 캔트립을 보너스 행동으로 시전할 수 있으며, 긴 휴식을 마치면 소모된 모든 사용을 회복합니다.</p>"
     },
     "Schematic Sense (Oria)": {
       "name": "도식적 감각(오리아) - Schematic Sense (Oria)",
@@ -279,7 +279,7 @@
     },
     "Stonemovers and Surveyors (Surface)": {
       "name": "Stonemovers 및 - Surveyors (Surface)",
-      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.bnjXlk13ZRJuf5d0]{Floating Disk} 주문을 한 번 시전할 수 있으며 긴 휴식을 마치면 다시 시전할 수 있습니다. 캐스팅하면 최대 1,000파운드를 운반할 수 있는 최대 10피트 너비의 디스크를 만들 수 있습니다. 최대 20피트 너비의 틈 위로 이동할 수 있지만 경사면을 넘어 이동하지 않으면 높이가 변경될 수 없습니다. 지능은 이 주문에 대한 주문 시전 능력입니다. 또한 건물 내부에 있을 때 건물 아래 최대 300피트까지 지하실이나 터널이 있다는 것을 감지할 수 있습니다.</p>"
+      "description": "<p>당신은 @UUID[Compendium.dnd5e.spells.Item.bnjXlk13ZRJuf5d0]{부유 원반} 주문을 한 번 시전할 수 있으며 긴 휴식을 마치면 다시 시전할 수 있습니다. 캐스팅하면 최대 1,000파운드를 운반할 수 있는 최대 10피트 너비의 디스크를 만들 수 있습니다. 최대 20피트 너비의 틈 위로 이동할 수 있지만 경사면을 넘어 이동하지 않으면 높이가 변경될 수 없습니다. 지능은 이 주문에 대한 주문 시전 능력입니다. 또한 건물 내부에 있을 때 건물 아래 최대 300피트까지 지하실이나 터널이 있다는 것을 감지할 수 있습니다.</p>"
     },
     "Strafing Strike (Arneria)": {
       "name": "Strafing 강타 (Arneria)",
